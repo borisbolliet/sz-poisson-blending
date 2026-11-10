@@ -1,0 +1,55 @@
+"""Single-neighbour Poisson model for contamination (catalog-level B2).
+
+For a target observed with the scale-k filter whose own contribution is c, the expected number of *individual*
+neighbours contributing more than t = f*c is
+    lambda(k, t) = sum_b n_b * pi * r*_b(k, t)^2 ,   r*_b: Y_b R_k(r*; theta_b) = t
+with n_b the surface density of halos in a (ln theta500, ln Y500) bin (all halos M>=1e13, from the 108 patches).
+By Slivnyak's theorem, for an unselected halo of the Poisson process the neighbours are again Poisson, so
+    P(>=1 neighbour with c_j > f c) = 1 - exp(-lambda)      ('f = 1 - exp(-Sigma A)' with A = pi r*^2 per bin).
+"""
+import numpy as np
+import q2lib as L
+
+NP = 108
+import os
+RCAP = float(os.environ.get('RCAP', 'inf'))
+
+
+class B2Model:
+    def __init__(self, npatch=NP, pids=None):
+        pids = list(range(npatch)) if pids is None else list(pids); npatch = len(pids)
+        tab = L.build_tables()
+        th, Y = [], []
+        for p in pids:
+            d = L.load_patch(p); th.append(d["theta500"]); Y.append(d["Y500"])
+        th = np.concatenate(th); Y = np.concatenate(Y)
+        self.lth_e = np.linspace(np.log(0.02), np.log(80), 81)
+        self.lY_e = np.linspace(np.log(Y.min()) - 1e-6, np.log(Y.max()) + 1e-6, 161)
+        H, _, _ = np.histogram2d(np.log(th), np.log(Y), [self.lth_e, self.lY_e])
+        self.nb = H / (npatch * L.LBOX ** 2)
+        # Y-weighted mean ln Y per bin is close to the centre for these narrow bins; use bin centres
+        self.lthc = 0.5 * (self.lth_e[1:] + self.lth_e[:-1]); self.lYc = 0.5 * (self.lY_e[1:] + self.lY_e[:-1])
+        self.nz = np.argwhere(self.nb > 0)
+        self.tab = tab
+
+    def lam(self, k_arr, thr_arr):
+        k_arr = np.asarray(k_arr, int); thr_arr = np.asarray(thr_arr, float)
+        out = np.zeros(thr_arr.size)
+        for kk in np.unique(k_arr):
+            s = k_arr == kk; thr = thr_arr[s]
+            for it in np.unique(self.nz[:, 0]):
+                # linear interpolation of the response table in ln theta at the bin centre
+                t = (self.lthc[it] - L.LNTH0) / L.DLNTH
+                i0 = int(np.clip(np.floor(t), 0, L.NTH - 2)); w = np.clip(t - i0, 0, 1)
+                rg = np.linspace(0, max(self.tab["rR"][i0], self.tab["rR"][i0 + 1]), 4 * L.NR)
+                R = (1 - w) * np.interp(rg, np.linspace(0, self.tab["rR"][i0], L.NR), self.tab["resp"][kk, i0], right=0) \
+                    + w * np.interp(rg, np.linspace(0, self.tab["rR"][i0 + 1], L.NR), self.tab["resp"][kk, i0 + 1], right=0)
+                R = np.minimum.accumulate(R)
+                iyb = self.nz[self.nz[:, 0] == it, 1]
+                Yb = np.exp(self.lYc[iyb])
+                tt = thr[:, None] / Yb[None, :]
+                rstar = np.interp(-tt, -R, rg, left=0.0, right=0.0)
+                rstar[tt >= R[0]] = 0.0
+                rstar = np.minimum(rstar, RCAP)          # REPAIR: optional neighbour-distance cap (env RCAP, default none)
+                out[s] += (np.pi * rstar ** 2 * self.nb[it, iyb][None, :]).sum(1)
+        return out

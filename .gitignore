@@ -1,0 +1,13 @@
+.venv/
+data/
+*.npz
+*.npy
+*.h5
+*.hdf5
+*.fits
+*.pkl
+__pycache__/
+*.pyc
+.DS_Store
+*.aux
+*.log
