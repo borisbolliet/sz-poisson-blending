@@ -163,6 +163,34 @@ Two more checks:
 
 ![robustness](figures/robustness/robustness_scaling.png)
 
+The figure re-runs the simulation in 13 configurations. Each configuration changes one thing (noise, beam, neighbour mass floor, maximum redshift, Y–M scatter or mass function) and uses 40 full skies. Each point is one configuration.
+
+**Top left: close pairs follow the same Poisson curve in every setup.**
+- The x-axis is λ = Σ_det × aperture area, the expected number of other detections in the circle for that configuration. The y-axis is how often the simulations find at least 1 (circles) or at least 2 (squares) other detections.
+- The lines are the Poisson predictions, 1 − e^(−λ) and 1 − e^(−λ)(1 + λ). At small λ these become λ and λ²/2, so they have slopes 1 and 2.
+- All configurations lie on the lines (χ² = 124 for 124 points). Noise, beam, scatter and mass function only change Σ_det, which moves a point along the curve.
+- To answer question 1 for any survey, you only need Σ_det.
+
+**Top right: what sets the number of detections.**
+- This panel shows detections per deg² at q > 5 when the noise (blue) or the beam (orange) is scaled relative to the baseline (black dot, 2.08 deg⁻²). Lines are analytic; points are simulations.
+- Noise matters most. Counts scale as noise^(−1.6 to −1.7) near the baseline: halving the noise gives about three times more detections.
+- The beam matters less. Counts scale as beam^(−0.3 to −1.1), because typical detected clusters (about 2′) are as large as the 1.4′ beam or larger.
+- The red star is a Planck-like setup: a 7.3′ beam and about three times more noise give 0.094 deg⁻². That is about 20 times fewer detections, so close-pair probabilities are about 20 times smaller.
+
+**Bottom left: blending fractions are fairly stable.**
+- At q_cut = 5, the panel shows contaminated detections (Y inflated by more than 10%) and boosted detections. Circles and squares have the map mean removed (the physical case); triangles are the raw map.
+- With the mean removed, contamination stays at 11–22% and boosting at 6–11%, even though the number of detections changes about 60-fold.
+- More sensitive surveys blend more (×1.3 at half the noise), because they detect fainter clusters, closer to the confusion background.
+- A larger beam blends more (×1.4 at 5′), because the filter collects more neighbours.
+- Scatter and the choice of mass function hardly matter.
+- On the raw map the fractions are 2–5 times higher and unstable, up to 90% at a 5′ beam. This is the mean-y trap.
+
+**Bottom right: the mean boost is exactly predictable.**
+- The y-axis is the average extra signal-to-noise that neighbours add to a detection on the raw map, from the simulations.
+- The x-axis is the analytic prediction: mean sky y × the filter's response to a uniform background, in noise units (Campbell's theorem for Poisson sums).
+- All configurations lie on the 1:1 line. The boost runs from 0.4σ (neighbour floor 10¹⁴) to 2σ (5′ beam), and is about 1σ at baseline.
+- This is the offset that mean removal subtracts. Because it can be computed analytically, you can correct for it without simulations, or remove it with a compensated filter.
+
 ---
 
 ## 5. Recipe for another survey
