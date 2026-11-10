@@ -45,9 +45,11 @@ where $\Sigma$ is the number of clusters of the chosen kind per unit area.
 
 \begin{figure}[H]
 \centering
-\begin{minipage}[c]{0.31\textwidth}\includegraphics[width=\linewidth]{f1p.png}\end{minipage}\hfill
-\begin{minipage}[c]{0.64\textwidth}
-\small
+\begin{minipage}[c]{0.52\textwidth}\includegraphics[width=\linewidth]{f1_readable.png}\end{minipage}\hfill
+\begin{minipage}[c]{0.45\textwidth}\caption{\textbf{How to read the plot.} Draw a circle of radius $\theta$ around a detected cluster. Each curve is the probability that the circle holds exactly $n$ \emph{other} detected clusters. Dots: 120 simulated skies. Lines: the Poisson formula, with nothing fitted. Small circles are almost always empty (black $\approx1$). The chance of one neighbour grows as $\theta^2$ (blue): 0.7\% at 2\amin. Near 23\amin\ the circle holds one other cluster on average ($\mu=1$), and beyond that several neighbours become typical.}\end{minipage}
+\end{figure}
+
+\begin{center}\small
 \begin{tabular}{@{}lcccc@{}}
 \toprule
 \multicolumn{5}{@{}l}{\textbf{Chance that a detected cluster ($q>5$) has a neighbour}}\\
@@ -60,9 +62,8 @@ any halo $>3\times10^{13}M_\odot$ & 9\% & 32\% & 91\% & 100\%\\
 close pairs of detections, full sky & 78 & 312 & 1950 & 7800\\
 \bottomrule
 \end{tabular}
-\captionof{figure}{Left: the probability of finding $n$ other detected clusters within radius $\theta$ of a detected cluster. Dots are 120 simulated skies; lines are the Poisson formula, with nothing fitted. Colours run from $n=0$ (dark) to $n\ge6$ (yellow). They agree everywhere.}
-\end{minipage}
-\end{figure}
+\end{center}
+
 
 \textbf{Caveat.} Real clusters are clustered, and these simulated ones are not. Clustering raises close-pair probabilities by about 15--25\% at 1--5\amin. To include it, multiply $\mu$ by that factor.
 

@@ -67,9 +67,16 @@ So a detected cluster rarely has a detected neighbour nearby. It very often has 
 
 ### Did the simulations agree?
 
-Yes. We ran 120 full-sky realisations, plus thousands of extra skies for rare configurations. Every probability above matched the formula within the statistical noise. The figure shows the counts (points) against the Poisson prediction (lines) for N = 0 to 6, with residuals below.
+Yes. We ran 120 full-sky realisations, plus thousands of extra skies for rare configurations. Every probability above matched the formula within the statistical noise.
 
-![P(N) vs aperture](figures/q1_aperture/PN_vs_theta.png)
+How to read the figure:
+- Draw a circle of radius θ around a detected cluster.
+- Each curve gives the probability that the circle holds exactly n *other* detected clusters.
+- Dots are the simulations; lines are the Poisson formula, with nothing fitted.
+- Small circles are almost always empty (black curve ≈ 1). The chance of one neighbour grows as θ² (blue): 0.7% at 2′.
+- Near 23′ the circle holds one other cluster on average, and beyond that several neighbours become typical.
+
+![P(N) vs aperture](figures/q1_aperture/PN_readable.png)
 
 ### Caveat
 
@@ -189,7 +196,7 @@ Two more checks:
 | figure | script |
 |---|---|
 | figures/build/dNdz_Nabove.png | analysis/build/validate_sampler.py |
-| figures/q1_aperture/PN_vs_theta.png | analysis/q1_aperture/q1_compare_fullsky.py |
+| figures/q1_aperture/PN_readable.png | analysis/q1_aperture/q1_twopager_figure.py |
 | figures/blending/PD_ccdf_random_points.png | analysis/blending/b06_figures.py |
 | figures/q2_maps/blending_fractions_ALL.png | analysis/q2_maps/analysis_blend.py (PIDS=0:324 TAG=_ALL) |
 | figures/robustness/robustness_scaling.png | analysis/robustness/aggregate.py |
