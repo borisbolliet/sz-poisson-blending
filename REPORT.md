@@ -235,12 +235,38 @@ We added blending to a standard cluster-count likelihood. The likelihood is binn
 
 <p align="center"><img src="figures/cosmo/bias_bars_v2.png" width="900"></p>
 
-**How to read the plot:**
-- Each row frees more of the scaling relation. Row a fixes it; row e frees mass bias (1−b), slope α and scatter σlnY with no prior.
-- Each dot shows how far the best fit lands from the truth, in units of the statistical error. The grey band is ±1σ.
-- **Blue:** the "truth" comes from the P(D) model.
-- **Orange:** the truth comes from simulated maps with spurious detections removed. It agrees with blue to within about 20–30%.
-- **Green:** the maps keep all detections, including fragments and noise peaks. This is a pipeline problem, not a blending one, and it is larger.
+**What this figure shows.** It answers one question: *if you analyse cluster counts with the standard model, which ignores blending, how wrong are the cosmological parameters you get?*
+
+**The experiment.**
+- We generate the counts that a real survey would see, which *do* include blending.
+- We then fit them with the standard model that assumes no blending.
+- The data are the exact expected counts, with no random noise. So any offset between the fit and the true cosmology is a systematic bias caused only by ignoring blending.
+
+**Layout.**
+- **Two blocks.** The top block is an SO-like survey covering 40% of the sky (16,500 deg²). The bottom block is the full sky. Same experiment; the bigger survey has smaller error bars, so the same offset counts for more σ.
+- **Three columns**, one per parameter: Ωm, σ8, and S8 = σ8 (Ωm/0.3)^0.5.
+- **x-axis:** the bias, best fit minus truth, in units of the statistical error σ. Zero means no bias. The grey band marks |bias| < 1σ, where the error is smaller than the statistical uncertainty. Points outside it are significant biases.
+- **Five rows, a–e.** Each row lets more parameters of the mass–SZ (Y–M) scaling relation float in the fit. Parameters not listed are fixed at their true values.
+  - **a:** only Ωm and σ8 are fitted. The scaling relation is assumed perfectly known.
+  - **b:** also fit the mass bias (1−b), with no prior.
+  - **c:** also fit (1−b) and the scatter σlnY.
+  - **d:** also fit (1−b), the slope α and σlnY, with a 4% prior on (1−b). This is the most realistic case, like a weak-lensing mass calibration.
+  - **e:** same as d, but with no prior on (1−b).
+
+**Three versions of the "data".**
+- **Blue dots:** counts predicted by our blending (P(D)) model.
+- **Orange squares:** counts measured in simulated maps, with spurious detections (cluster fragments and noise peaks) removed. The error bars come from resampling map patches.
+- **Green triangles:** the same maps, keeping every detection. This mixes blending with defects of the detection pipeline.
+
+**How to read it.**
+- Orange sits close to blue in every row, so the blending model captures what the maps show. Orange is about 20–30% smaller.
+- **Row a:** S8 comes out low by about 4σ (SO-like) or 6σ (full sky). The fit can only adjust cosmology, so it bends cosmology to mimic blending.
+- **Rows b and c:** freeing the mass bias brings S8 back into the grey band. However, Ωm is still off by 1–2σ.
+- **Rows d and e:** once the slope α is also free, the fit tilts the scaling relation to imitate blending. This pushes σ8 and S8 *high*, by about 1–2σ (SO-like) and 2–3σ (full sky).
+- So freeing nuisance parameters does not remove the bias; it changes which parameter absorbs it, and in which direction.
+- **Green** points are often far off, in either direction. They show that the detection pipeline itself (fragments, noise peaks) must be calibrated on simulations, and that this is a bigger effect than blending.
+
+**Bottom line.** If blending is ignored, a realistic SO-like analysis (row d) gets S8 too high by about 1σ, and a full-sky one by about 2σ.
 
 | what is fitted | SO-like, 16,500 deg² | full sky |
 |---|---|---|
