@@ -1,9 +1,10 @@
 # Close pairs and blending of SZ clusters on a Poisson sky
 
-We simulated a full sky of galaxy clusters to answer two questions:
+We simulated a full sky of galaxy clusters to answer three questions:
 
 1. How likely is it to find two (or N) clusters inside a given aperture?
 2. For a given detection threshold, how often are detections blended?
+3. Does blending bias cosmology from cluster counts, and can a likelihood account for it?
 
 ## In short
 
@@ -11,6 +12,7 @@ We simulated a full sky of galaxy clusters to answer two questions:
 - **Close pairs of detected clusters are rare.** At a signal-to-noise cut of 5, only 0.7% of detections have another detection within 2 arcmin.
 - **Blending is common anyway.** About 15% of detections have their SZ signal inflated by more than 10%. The cause is mostly faint, undetectable clusters along the same line of sight at other redshifts.
 - **So blending is a confusion problem, not a pair problem.** It has to be computed from the summed signal of all faint neighbours. A "two clusters within some radius" picture misses it.
+- **Ignoring blending biases cosmology.** A cluster-count analysis that ignores it gets S8 wrong by about 1σ (SO-like) to 2σ (full sky), and usually passes goodness-of-fit. Modelling it exactly is cheap (Section 6).
 - **Two traps can triple the answer.** Forgetting to remove the mean SZ signal of the map does this. Ignoring that a signal-to-noise cut prefers boosted objects also biases the answer low.
 
 ---
@@ -206,7 +208,74 @@ The figure re-runs the simulation in 13 configurations. Each configuration chang
 
 ---
 
-## 6. Things not fully settled
+## 6. Does blending bias cosmology from cluster counts?
+
+We added blending to a standard cluster-count likelihood. The likelihood is binned in redshift and observed signal-to-noise (q > 5). We then asked what happens to Ωm, σ8 and S8 if blending is ignored. Full numbers are in `REPORT_cosmo_detailed.md`.
+
+### Short answer
+
+- **Yes, it can be modelled exactly.** Add the summed-neighbour signal (P(D)) to the usual noise in the selection function. Two rules are essential:
+  - remove the map mean;
+  - count each peak once, under its brightest cluster.
+- **It is cheap.** One P(D) table costs 0.5–2.5 minutes. You do not need to recompute it at every likelihood step. Either one recomputation at the first best fit, or a small emulator, brings the residual bias below 0.05σ.
+- **If you ignore it, expect a silent bias of about 1σ in S8 for an SO-like survey (16,500 deg²), and about 2σ on the full sky.** The exact size depends on how freely the mass–observable relation is fitted (table below).
+- **The fit would usually look fine.** A goodness-of-fit test catches the problem in only 7–54% of realisations.
+
+### What blending does to the counts
+
+<p align="center"><img src="figures/cosmo/blended_vs_naive_zq.png" width="900"></p>
+
+- **Left:** percentage change in counts per (z, q) bin.
+  - Nearby, faint detections are lost, up to −12% at z < 0.1 and 5 < q < 6. They are big on the sky, so the mean subtraction lowers them, and the extra scatter pushes many below the cut.
+  - Distant detections gain +2–5%. They are small, sit on top of the confusion, and get boosted over the cut.
+- **Right:** the same change in units of Poisson noise on the full sky. It reaches 3σ per bin at low z.
+- **The total change is only −1.6%.** The danger is the *shape*: fewer low-z clusters and more high-z clusters look like a change of cosmology.
+
+### Bias in cosmological parameters if blending is ignored
+
+<p align="center"><img src="figures/cosmo/bias_bars_v2.png" width="900"></p>
+
+**How to read the plot:**
+- Each row frees more of the scaling relation. Row a fixes it; row e frees mass bias (1−b), slope α and scatter σlnY with no prior.
+- Each dot shows how far the best fit lands from the truth, in units of the statistical error. The grey band is ±1σ.
+- **Blue:** the "truth" comes from the P(D) model.
+- **Orange:** the truth comes from simulated maps with spurious detections removed. It agrees with blue to within about 20–30%.
+- **Green:** the maps keep all detections, including fragments and noise peaks. This is a pipeline problem, not a blending one, and it is larger.
+
+| what is fitted | SO-like, 16,500 deg² | full sky |
+|---|---|---|
+| Ωm, σ8 only (scaling relation fixed) | S8 −4.0σ | S8 −6.3σ |
+| + mass bias (1−b) | S8 −0.5σ, Ωm −1.2σ | S8 −0.8σ, Ωm −1.8σ |
+| + (1−b) with 4% prior, slope α, scatter σlnY | S8 +1.1σ, σ8 +1.8σ | S8 +2.1σ, σ8 +3.1σ |
+| all four relation parameters, Planck-like priors | S8 +1.1σ | S8 +2.2σ |
+| same, plus 4 free "confusion" parameters | ≤ 0.5σ | ≤ 0.7σ |
+
+**What the nuisance parameters do:**
+- **They do not absorb the bias.** The shift in S8 stays the same size or grows when nuisances are freed. It only looks smaller in σ units because the error bars grow.
+- **(1−b) takes up the overall amplitude, but not the redshift tilt.** The truth is still excluded at about 5σ jointly on the full sky.
+- **The slope α mimics the tilt.** It rises by about 2σ and drags σ8 up. This is why the sign of the bias flips between rows b and d.
+- **Raising the cut to q > 6** roughly halves every bias.
+
+<p align="center"><img src="figures/cosmo/mcmc_contours_v2.png" width="900"></p>
+
+*MCMC for the SO-like survey, row d.* Grey shows the naive model fitted to data without blending, centred on the truth. Blue shows the naive model fitted to blended data. σ8 moves up by about 1.5σ, and α moves to compensate.
+
+### What to do in practice
+
+1. **Best:** put the P(D) convolution into the selection function. Compute it once at a fiducial cosmology, then once more at the first best fit; or use an 81-point emulator (about 40 CPU-minutes, residual bias ≤ 0.02σ).
+2. **Cheap fallback:** add an extra Gaussian scatter and offset that both depend on the cluster's angular size, with 4 free parameters. This removes most of the bias (≤ 0.7σ remains) and widens σ(Ωm) by about 40%.
+3. **Not good enough:** a single constant scatter, a shift in the (1−b) prior, or a log-normal rescaling of Y. These leave about half the misfit.
+4. **Whatever you do, calibrate the detection pipeline on injected maps.** Peak-finding (fragments, noise peaks, the maximum over filter scales) changes counts by +4–6%. That is more than blending does.
+
+### Open points
+
+- **Maps vs model.** Simulated maps show about 0.77 ± 0.11 of the blending deficit the model predicts. If this shortfall is real, the biases above are about 20% too large.
+- **Highest-q bin (q > 50).** Two codes disagree at the 1–2% level. This affects σ8 biases by about 0.2σ.
+- **Missing ingredients.** The setup has no CMB, foregrounds or masks, no weak-lensing mass calibration, and no halo clustering. h, Ωb, ns and the mass function are fixed.
+
+---
+
+## 7. Things not fully settled
 
 - At q > 7 the boosted fraction from maps is 7.2–7.9%, depending on the run (a 2–3σ spread).
 - The "pushed below threshold" loss fraction at q > 5 is 4.8% in one run and 5.2% in another.
@@ -228,3 +297,6 @@ The figure re-runs the simulation in 13 configurations. Each configuration chang
 | figures/blending/PD_ccdf_random_points.png | analysis/blending/b06_figures.py |
 | figures/q2_maps/blending_fractions_ALL.png | analysis/q2_maps/analysis_blend.py (PIDS=0:324 TAG=_ALL) |
 | figures/robustness/robustness_scaling.png | analysis/robustness/aggregate.py |
+| figures/cosmo/blended_vs_naive_zq.png | analysis/cosmo/likelihood/c07_figures.py |
+| figures/cosmo/bias_bars_v2.png | analysis/cosmo/bias/c17_figures_v2.py |
+| figures/cosmo/mcmc_contours_v2.png | analysis/cosmo/bias/c17_figures_v2.py |

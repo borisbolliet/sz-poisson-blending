@@ -1,13 +1,14 @@
 # Close pairs and blending of SZ galaxy clusters
 
-Full-sky Poisson simulations of galaxy clusters seen through the thermal Sunyaev–Zel'dovich (SZ) effect, used to answer two questions:
+Full-sky Poisson simulations of galaxy clusters seen through the thermal Sunyaev–Zel'dovich (SZ) effect, used to answer three questions:
 
 1. **What is the probability of finding two (or N) clusters within an aperture?**
 2. **Given a detection signal-to-noise threshold, how often are detections blended?**
+3. **Does ignoring blending bias cosmology from cluster counts, and can a likelihood account for it?**
 
 Every number below was computed by a script in this repository. Each one was also checked by an independent re-implementation, or re-run on fresh random seeds.
 
-📄 **Two-page summary:** [`twopager/twopager.pdf`](twopager/twopager.pdf) · 📘 **Report:** [`REPORT.md`](REPORT.md) · 🔬 **All numbers and tests:** [`REPORT_detailed.md`](REPORT_detailed.md)
+📄 **Two-page summary:** [`twopager/twopager.pdf`](twopager/twopager.pdf) · 📘 **Report:** [`REPORT.md`](REPORT.md) · 🔬 **All numbers and tests:** [`REPORT_detailed.md`](REPORT_detailed.md), [`REPORT_cosmo_detailed.md`](REPORT_cosmo_detailed.md)
 
 ---
 
@@ -17,6 +18,7 @@ Every number below was computed by a script in this repository. Each one was als
 - **Detected clusters rarely sit together.** At signal-to-noise q > 5, only **0.7%** of detections have another detection within 2′.
 - **Blending is common anyway.** About **15%** of detections have their SZ signal inflated by more than 10%. About **8%** are detected only because of that boost, and about **10%** of real clusters are lost. The cause is mostly faint, undetectable halos at *other redshifts* along the line of sight.
 - **So blending is a confusion problem, not a pair problem.** It has to be computed from the summed signal of all faint neighbours (a "P(D)" calculation), not from pairs within a radius.
+- **Ignoring blending biases cosmology.** A cluster-count fit that ignores it shifts S8 by about **1σ** for an SO-like survey and **2σ** on the full sky. It usually passes goodness-of-fit, and mass-calibration nuisances do not absorb it. Modelling it exactly is cheap: about one minute per P(D) table, and it does not need recomputing at every step.
 - **Two traps.**
   - Not removing the map's mean SZ signal roughly *triples* every blending fraction.
   - Not computing fractions on the *detected* sample underestimates blending by 1.3–1.5×.
@@ -114,6 +116,46 @@ This reproduces the simulated maps to within about 2 percentage points.
 
 ---
 
+## Question 3: impact on cosmology
+
+We put blending into a binned (z, q) Poisson count likelihood and fitted the usual *no-blending* model to blended data.
+
+**What blending does to the counts.**
+- Nearby, faint detections are lost: down to −12% at z < 0.1.
+- Distant ones gain 2–5%.
+- The total changes by only −1.6%, but the tilt in redshift looks like a change of cosmology.
+
+<p align="center"><img src="figures/cosmo/blended_vs_naive_zq.png" width="900"></p>
+
+<p align="center"><img src="figures/cosmo/bias_bars_v2.png" width="900"></p>
+
+*Each dot is the best-fit offset from the truth in units of the statistical error. The grey band is ±1σ. Rows free more of the Y–M relation from bottom to top.*
+- *Blue:* the truth comes from the P(D) model.
+- *Orange:* the truth comes from simulated maps with spurious peaks removed.
+- *Green:* the maps keep all detections, which shows that the pipeline itself must be calibrated.
+
+| fitted | SO-like 16,500 deg² | full sky |
+|---|---|---|
+| Ωm, σ8 (Y–M fixed) | S8 −4.0σ | S8 −6.3σ |
+| + (1−b) | S8 −0.5σ, Ωm −1.2σ | S8 −0.8σ, Ωm −1.8σ |
+| + (1−b) 4% prior, α, σlnY | S8 +1.1σ, σ8 +1.8σ | S8 +2.1σ, σ8 +3.1σ |
+| all Y–M params, Planck-like priors | S8 +1.1σ | S8 +2.2σ |
+| same + 4 free confusion params | ≤ 0.5σ | ≤ 0.7σ |
+
+**How to handle it.**
+- **Exact:** convolve the selection kernel with the compound-Poisson P(D). Remove the map mean and count each peak once.
+  - Compute it at the fiducial cosmology, then once more at the first best fit. This leaves ≤ 0.05σ.
+  - Alternatively, use an 81-point emulator, which leaves ≤ 0.02σ.
+- **Cheap:** use a Gaussian offset plus scatter that depends on angular size, with 4 free parameters.
+- **Not enough:** a constant extra scatter, or a shifted (1−b) prior.
+- **Bigger than blending:** peak-finding artefacts (fragments, noise peaks, scale maximisation) change counts by +4–6%. Calibrate the pipeline with injected maps.
+
+**Open points.**
+- Maps show 0.77 ± 0.11 of the predicted blending deficit, so the biases may be about 20% smaller.
+- There is no CMB, foreground or mask, and no weak-lensing calibration. See [`REPORT.md`](REPORT.md) §6.
+
+---
+
 ## Robustness
 
 | change | effect on contamination / boosting |
@@ -148,18 +190,18 @@ This reproduces the simulated maps to within about 2 percentage points.
 
 ```
 szsim/        library: mass function tables, full-sky Poisson sampler, SZ signal, matched-filter noise (see szsim/README.md)
-analysis/     analysis scripts and logs, one folder per topic (build, q1_aperture, blending, q2_maps, robustness)
-verify/       independent verification scripts (two lenses per topic: derivation, reproduction)
+analysis/     analysis scripts and logs, one folder per topic (build, q1_aperture, blending, q2_maps, robustness, cosmo)
+verify/       independent verification scripts (two lenses per topic: derivation, reproduction); verify_cosmo/ for Q3
 figures/      all figures
 twopager/     two-page PDF summary and LaTeX source
 REPORT.md     readable report;  REPORT_detailed.md: every number, test and open disagreement
 ```
 
-Simulated catalogues and maps (`data/`, ~7 GB) are not included. Regenerate them with `szsim` and the scripts in `analysis/`; each figure's script is listed in `REPORT.md`.
+Simulated catalogues and maps (`data/`, ~7 GB, and `data_cosmo/`, ~0.5 GB) are not included. Regenerate them with `szsim` and the scripts in `analysis/`; each figure's script is listed in `REPORT.md`.
 
-**Requirements:** Python 3.12 with numpy, scipy, colossus, numba, healpy, matplotlib and astropy.
+**Requirements:** Python 3.12 with numpy, scipy, colossus, numba, healpy, matplotlib, astropy (and emcee for the MCMC).
 
 ```bash
 uv venv --python 3.12 .venv
-uv pip install --python .venv/bin/python numpy scipy colossus numba healpy matplotlib astropy
+uv pip install --python .venv/bin/python numpy scipy colossus numba healpy matplotlib astropy emcee
 ```
