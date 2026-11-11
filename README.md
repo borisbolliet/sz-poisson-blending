@@ -10,6 +10,8 @@ Every number below was computed by a script in this repository. Each one was als
 
 📄 **Two-page summary:** [`twopager/twopager.pdf`](twopager/twopager.pdf) · 📘 **Report:** [`REPORT.md`](REPORT.md) · 🔬 **All numbers and tests:** [`REPORT_detailed.md`](REPORT_detailed.md), [`REPORT_cosmo_detailed.md`](REPORT_cosmo_detailed.md)
 
+📈 **Latest: progress report, realistic Simons Observatory setup and next steps:** [`PROGRESS.md`](PROGRESS.md)
+
 ---
 
 ## Key results
@@ -167,8 +169,10 @@ We put blending into a binned (z, q) Poisson count likelihood and fitted the usu
 | Ωm, σ8 (Y–M fixed) | S8 −4.0σ | S8 −6.3σ |
 | + (1−b) | S8 −0.5σ, Ωm −1.2σ | S8 −0.8σ, Ωm −1.8σ |
 | + (1−b) 4% prior, α, σlnY | S8 +1.1σ, σ8 +1.8σ | S8 +2.1σ, σ8 +3.1σ |
-| all Y–M params, Planck-like priors | S8 +1.1σ | S8 +2.2σ |
+| all Y–M params, Planck-like priors | S8cl +1.1σ | S8cl +2.2σ |
 | same + 4 free confusion params | ≤ 0.5σ | ≤ 0.7σ |
+
+*S8 = σ8(Ωm/0.3)^0.5; the analysis behind the last two rows uses S8cl = σ8(Ωm/0.3)^0.3.*
 
 **How to handle it.**
 - **Exact:** convolve the selection kernel with the compound-Poisson P(D). Remove the map mean and count each peak once.
@@ -181,6 +185,23 @@ We put blending into a binned (z, q) Poisson count likelihood and fitted the usu
 **Open points.**
 - Maps show 0.77 ± 0.11 of the predicted blending deficit, so the biases may be about 20% smaller.
 - There is no CMB, foreground or mask, and no weak-lensing calibration. See [`REPORT.md`](REPORT.md) §6.
+
+---
+
+## Towards a realistic SO analysis (in progress)
+
+The results above use an idealised telescope. We are now repeating them with a realistic model of the Simons Observatory (SO) large-aperture telescope: six frequency channels, atmospheric noise, the CMB and a multi-frequency matched filter. The full summary is in [`PROGRESS.md`](PROGRESS.md).
+
+<p align="center"><img src="figures/visual/patch_so.png" width="900"></p>
+
+*The same simulated halos seen in SO's six channels (top), and the S/N maps of the SO filter and the idealised filter (bottom).*
+
+- **Step 1 (done, independently verified): blending is about halved but does not go away.**
+  - At q > 5, 8.8% (baseline noise) and 10.4% (goal noise) of detections have their Y boosted by more than 10%, against 16.2% for the idealised telescope.
+  - As a noise term, faint-halo SZ adds only 5–8% to the SO filter noise, in line with Raghunathan et al. (2022).
+  - Details: [`analysis/realistic/step1/RESULTS.md`](analysis/realistic/step1/RESULTS.md).
+- **Step 2 (running):** the cosmology bias with the SO filter.
+- **Step 3 (next):** a realistic cluster finder, reimplementing the iterative matched filter of SZiFi.
 
 ---
 
@@ -218,18 +239,21 @@ We put blending into a binned (z, q) Poisson count likelihood and fitted the usu
 
 ```
 szsim/        library: mass function tables, full-sky Poisson sampler, SZ signal, matched-filter noise (see szsim/README.md)
-analysis/     analysis scripts and logs, one folder per topic (build, q1_aperture, blending, q2_maps, robustness, cosmo)
-verify/       independent verification scripts (two lenses per topic: derivation, reproduction); verify_cosmo/ for Q3
+analysis/     analysis scripts and logs, one folder per topic (build, q1_aperture, blending, q2_maps, robustness, cosmo,
+              realistic = SO setup, visual = patch pictures, finder = cluster-finder work)
+verify/       independent verification scripts (two lenses per topic: derivation, reproduction); verify_cosmo/ for Q3;
+              verify_real/ for the realistic SO setup
 figures/      all figures
 twopager/     two-page PDF summary and LaTeX source
 REPORT.md     readable report;  REPORT_detailed.md: every number, test and open disagreement
+PROGRESS.md   progress report: results so far, methods, next steps
 ```
 
-Simulated catalogues and maps (`data/`, ~7 GB, and `data_cosmo/`, ~0.5 GB) are not included. Regenerate them with `szsim` and the scripts in `analysis/`; each figure's script is listed in `REPORT.md`.
+Simulated catalogues and maps (`data/`, ~7 GB, `data_cosmo/`, ~0.5 GB, and `data_real/`, ~0.5 GB) are not included. Regenerate them with `szsim` and the scripts in `analysis/`; each figure's script is listed in `REPORT.md`.
 
-**Requirements:** Python 3.12 with numpy, scipy, colossus, numba, healpy, matplotlib, astropy (and emcee for the MCMC).
+**Requirements:** Python 3.12 with numpy, scipy, colossus, numba, healpy, matplotlib, astropy, camb (for the SO setup) and emcee (for the MCMC).
 
 ```bash
 uv venv --python 3.12 .venv
-uv pip install --python .venv/bin/python numpy scipy colossus numba healpy matplotlib astropy emcee
+uv pip install --python .venv/bin/python numpy scipy colossus numba healpy matplotlib astropy camb emcee
 ```

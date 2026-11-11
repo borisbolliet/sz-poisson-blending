@@ -1,0 +1,28 @@
+patch 0: 71,291 halos M500 > 1e13 in 100 deg^2; max theta500 15.2'
+[check] recomputed candidates (Q >= 3.5): 613 vs stored 613; identical pixels: True; max |dQ| = 2.86e-06
+detections q > 5 (merge 2.0'): 237  neighbours < 10% of signal: 186, neighbours > 10% of signal: 23, detected only thanks to neighbours: 23, no real cluster (noise/confusion): 5, fragment of a brighter detection: 0
+example A: cls=boosted Q=11.94 own=11.13 noise=-0.60 others/main=+0.127 scale=4.42'; main: z=0.47, M=3.3e+14, own S/N 11.1 | #1: z=0.52, M=1.9e+14, 9% of main | #2: z=0.27, M=1.1e+14, 6% of main | #3: z=1.14, M=9.8e+13, 3% of main
+example B: cls=needs Q=6.68 own=4.55 noise=-0.03 others/main=+0.473 scale=1.49'; main: z=0.90, M=2.3e+14, own S/N 4.6 | #1: z=0.63, M=1.1e+14, 56% of main | #2: z=0.54, M=6.0e+13, 2% of main | #3: z=0.58, M=1.4e+13, 1% of main
+example C: cls=none Q=6.36 own=1.85 noise=+1.62 others/main=+1.558 scale=10.00'; main: z=0.33, M=2.0e+14, own S/N 1.9 | #1: z=0.53, M=1.6e+14, 75% of main | #2: z=0.86, M=1.2e+14, 34% of main | #3: z=1.38, M=8.5e+13, 30% of main
+wrote /Users/boris/GitHub/sz-poisson-blending/figures/visual/patch_idealised.png  [5s]
+[B] painted y with a 0.8' beam: sum check 0.9974 (should be ~1)  [15s]
+[B check] MMF sigma on the grid / library sigma_Y - 1 at theta = 0.50': +0.0000, 0.66': +0.0000, 0.86': +0.0000, 1.13': +0.0000, 1.49': +0.0000, 1.95': +0.0000, 2.56': -0.0000, 3.36': -0.0000, 4.42': +0.0000, 5.80': +0.0000, 7.62': -0.0000, 10.00': -0.0000
+[B] sigma_Y MMF baseline / idealised at the 12 scales: 0.80 0.82 0.84 0.88 0.93 1.01 1.12 1.29 1.55 1.93 2.49 3.32
+[B] SO baseline MMF detections q > 5: 228 (idealised filter: 237); 168 of them within 2' of an idealised detection
+[B] noise-free signal S/N at the SO detections: median 5.77; 5 below 2 (noise peaks)
+[B] brightest halos (catalogue q = idealised mean S/N): measured S/N, idealised filter vs SO baseline MMF
+    q= 45.6 theta500= 4.57' z=0.29 M500=6.6e+14: idealised  47.4  SO MMF  29.4 (best scale 4.42')
+    q= 35.2 theta500=11.29' z=0.07 M500=2.7e+14: idealised  34.1  SO MMF   9.2 (best scale 10.00')
+    q= 34.3 theta500=14.02' z=0.05 M500=2.2e+14: idealised  34.1  SO MMF   7.8 (best scale 10.00')
+    q= 33.1 theta500= 3.75' z=0.37 M500=6.7e+14: idealised  33.5  SO MMF  22.9 (best scale 3.36')
+    q= 28.1 theta500= 3.51' z=0.40 M500=6.4e+14: idealised  28.7  SO MMF  19.7 (best scale 3.36')
+    q= 28.1 theta500= 3.29' z=0.40 M500=5.3e+14: idealised  28.7  SO MMF  20.9 (best scale 4.42')
+    q= 27.1 theta500= 3.79' z=0.38 M500=7.4e+14: idealised  27.1  SO MMF  19.8 (best scale 3.36')
+    q= 27.1 theta500= 3.95' z=0.33 M500=5.9e+14: idealised  27.3  SO MMF  19.1 (best scale 3.36')
+[B] channel 27 GHz: high-passed map rms 125.3 uK
+[B] channel 39 GHz: high-passed map rms 77.5 uK
+[B] channel 93 GHz: high-passed map rms 56.7 uK
+[B] channel 145 GHz: high-passed map rms 59.4 uK
+[B] channel 225 GHz: high-passed map rms 79.6 uK
+[B] channel 280 GHz: high-passed map rms 120.9 uK
+wrote /Users/boris/GitHub/sz-poisson-blending/figures/visual/patch_so.png  [17s]

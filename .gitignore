@@ -17,3 +17,5 @@ verify_real/**/out/
 # logs of the realistic-setup steps are the evidence cited in their RESULTS.md files
 !analysis/realistic/**/*.log
 !verify_real/**/*.log
+!analysis/visual/*.log
+!analysis/finder/*.log

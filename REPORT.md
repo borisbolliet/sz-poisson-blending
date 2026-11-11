@@ -273,8 +273,10 @@ We added blending to a standard cluster-count likelihood. The likelihood is binn
 | Ωm, σ8 only (scaling relation fixed) | S8 −4.0σ | S8 −6.3σ |
 | + mass bias (1−b) | S8 −0.5σ, Ωm −1.2σ | S8 −0.8σ, Ωm −1.8σ |
 | + (1−b) with 4% prior, slope α, scatter σlnY | S8 +1.1σ, σ8 +1.8σ | S8 +2.1σ, σ8 +3.1σ |
-| all four relation parameters, Planck-like priors | S8 +1.1σ | S8 +2.2σ |
+| all four relation parameters, Planck-like priors | S8cl +1.1σ | S8cl +2.2σ |
 | same, plus 4 free "confusion" parameters | ≤ 0.5σ | ≤ 0.7σ |
+
+*S8 = σ8(Ωm/0.3)^0.5; the analysis behind the last two rows uses S8cl = σ8(Ωm/0.3)^0.3.*
 
 **What the nuisance parameters do:**
 - **They do not absorb the bias.** The shift in S8 stays the same size or grows when nuisances are freed. It only looks smaller in σ units because the error bars grow.

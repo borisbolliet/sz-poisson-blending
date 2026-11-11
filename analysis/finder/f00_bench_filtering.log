@@ -1,0 +1,6 @@
+SZiFi-style: 11.4 s for 12 scales (0.95 s per scale)
+lean:        0.09 s once + 0.23 s for 12 scales (0.019 s per scale) -> x36 faster
+theta 0.66': interior S/N rms 2.564 vs 2.564; max |difference| 4.17e+00
+theta 4.42': interior S/N rms 3.388 vs 3.387; max |difference| 1.40e+00
+theta 0.66': best alignment shift (-1, -1) px -> max |difference| 2.52e-06
+theta 4.42': best alignment shift (-1, -1) px -> max |difference| 3.33e-06
