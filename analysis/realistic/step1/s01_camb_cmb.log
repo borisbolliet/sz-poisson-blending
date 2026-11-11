@@ -1,0 +1,59 @@
+# first attempt (run A lmax 12000 lpa 2, run B lmax 14000 lpa 4) - rejected, lensed tail not converged near lmax:
+#     l=   100: D_l(B) =  2712.5985 uK^2 ; A/B - 1 = -4.77e-05; lensed/unlensed = 1.001
+#     l=   500: D_l(B) =  2457.1506 uK^2 ; A/B - 1 = +1.47e-05; lensed/unlensed = 0.998
+#     l=  1000: D_l(B) =  1065.3234 uK^2 ; A/B - 1 = -3.97e-04; lensed/unlensed = 1.033
+#     l=  2000: D_l(B) =   231.9846 uK^2 ; A/B - 1 = -7.39e-05; lensed/unlensed = 1.009
+#     l=  3000: D_l(B) =    28.2448 uK^2 ; A/B - 1 = -9.94e-04; lensed/unlensed = 1.102
+#     l=  4000: D_l(B) =     3.8833 uK^2 ; A/B - 1 = -9.15e-03; lensed/unlensed = 1.658
+#     l=  5000: D_l(B) =     1.0190 uK^2 ; A/B - 1 = -4.11e-02; lensed/unlensed = 5.791
+#     l=  6000: D_l(B) =     0.5485 uK^2 ; A/B - 1 = -8.57e-02; lensed/unlensed = 25.506
+#     l=  8000: D_l(B) =     0.2899 uK^2 ; A/B - 1 = -1.87e-01; lensed/unlensed = 71.731
+#     l= 10000: D_l(B) =     0.1859 uK^2 ; A/B - 1 = -3.17e-01; lensed/unlensed = 121.325
+#     l= 11000: D_l(B) =     0.1536 uK^2 ; A/B - 1 = -4.21e-01; lensed/unlensed = 151.519
+#   power-law fit l in [8000,11000]: C_l ~ l^-3.989; held-out [11000,13500] max |pred/CAMB-1| = 0.292
+#   stored extrapolation: fit [10000,13000] slope -4.264; C_20000 = 6.202e-10 uK^2 -> D_20000 = 0.039 uK^2
+# second attempt (A: lmax 24000 lpa 4; B: lmax 26000 lpa 8): A/B-1 = -0.29 at l=20000 -> lpa 4 not converged; replaced run A by lpa 12 + boost 1.5
+# ---- final run ----
+   CAMB NonLinear setting: NonLinear_lens
+As for sigma8=0.8102: 2.10454e-09 (sigma8 at As=2.1e-9 was 0.80933)
+   CAMB NonLinear setting: NonLinear_lens
+run A done 19s  sigma8=0.81025  ombh2=0.022432 omch2=0.119342
+   CAMB NonLinear setting: NonLinear_lens
+run B done 32s  sigma8=0.81025
+  l=   100: D_l(B) =  2712.5977 uK^2 ; A/B - 1 = -1.41e-07; lensed/unlensed = 1.001
+  l=   500: D_l(B) =  2457.1372 uK^2 ; A/B - 1 = +7.26e-09; lensed/unlensed = 0.998
+  l=  1000: D_l(B) =  1065.3004 uK^2 ; A/B - 1 = -2.68e-06; lensed/unlensed = 1.033
+  l=  2000: D_l(B) =   231.9670 uK^2 ; A/B - 1 = -6.47e-06; lensed/unlensed = 1.009
+  l=  3000: D_l(B) =    28.2447 uK^2 ; A/B - 1 = +2.29e-05; lensed/unlensed = 1.102
+  l=  4000: D_l(B) =     3.8883 uK^2 ; A/B - 1 = +2.75e-04; lensed/unlensed = 1.660
+  l=  5000: D_l(B) =     1.0255 uK^2 ; A/B - 1 = +1.05e-03; lensed/unlensed = 5.829
+  l=  6000: D_l(B) =     0.5560 uK^2 ; A/B - 1 = +1.93e-03; lensed/unlensed = 25.854
+  l=  8000: D_l(B) =     0.2991 uK^2 ; A/B - 1 = +3.84e-03; lensed/unlensed = 74.002
+  l= 10000: D_l(B) =     0.1966 uK^2 ; A/B - 1 = +6.48e-03; lensed/unlensed = 128.331
+  l= 12000: D_l(B) =     0.1409 uK^2 ; A/B - 1 = +1.01e-02; lensed/unlensed = 202.974
+  l= 15000: D_l(B) =     0.0937 uK^2 ; A/B - 1 = +1.74e-02; lensed/unlensed = 357.548
+  l= 18000: D_l(B) =     0.0667 uK^2 ; A/B - 1 = +2.75e-02; lensed/unlensed = 566.453
+  l= 20000: D_l(B) =     0.0545 uK^2 ; A/B - 1 = +3.60e-02; lensed/unlensed = 736.468
+  l= 22000: D_l(B) =     0.0452 uK^2 ; A/B - 1 = +4.62e-02; lensed/unlensed = 930.631
+first acoustic peak: l = 220, D_l = 5757.5 uK^2 (Planck 2018 best fit: l~220, ~5700-5800 uK^2)
+run A vs run B over 2 <= l <= 20000: max |A/B-1| = 3.60e-02; over l <= 6000: 1.93e-03
+stored extrapolation: fit [18000,22000] slope -3.936; C_20000 = 8.556e-10 uK^2 -> D_20000 = 0.054 uK^2
+saved /Users/boris/GitHub/sz-poisson-blending/data_real/cmb_lensed_TT_camb.npz; total 32s
+       32.71 real       124.62 user         1.27 sys
+          3188539392  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              205248  page reclaims
+                 137  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 643  voluntary context switches
+                2003  involuntary context switches
+       1154747441950  instructions retired
+        384164863622  cycles elapsed
+          3165789120  peak memory footprint

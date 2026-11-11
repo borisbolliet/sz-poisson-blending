@@ -12,3 +12,8 @@ __pycache__/
 *.aux
 *.log
 data_cosmo/
+data_real/
+verify_real/**/out/
+# logs of the realistic-setup steps are the evidence cited in their RESULTS.md files
+!analysis/realistic/**/*.log
+!verify_real/**/*.log

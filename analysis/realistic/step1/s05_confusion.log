@@ -1,0 +1,99 @@
+population: 3,939,280 points; N full sky = 29,301,858; ybar = 3.5895e-07 (Y500 units; b03: 3.5895e-07)  [2s]
+C_l^yy binned vs direct sum (3000-point subset) at l=[np.int64(300), np.int64(1000), np.int64(3000), np.int64(8000)]: rel diff [ 0.  0. -0. -0.]
+
+=== white: confusion variance in units of the filter noise variance (var_conf / sigma_A^2) ===
+   theta_A [']        0.52     0.95     1.98     4.15     7.50    15.72    32.94
+   all               0.774     1.07     1.92     3.97     7.32     15.1     28.7
+   c0              0.00634  0.00771   0.0106   0.0152   0.0203   0.0285    0.038
+   c1               0.0496   0.0629    0.094     0.15    0.219    0.341    0.501
+   c2                0.718    0.999     1.82     3.81     7.08     14.8     28.2
+   subthr            0.121    0.152    0.221    0.326    0.422    0.526    0.595
+   mu (DC)           0.413     0.51    0.778     1.39     2.37     4.85     10.1   (Campbell mean shift, noise units)
+   fraction of neighbour Y^2 power in sub-threshold halos at l=3000: 0.310
+   tSZ Poisson power of the population: 1e12 l(l+1)C_l^yy/2pi at l=3000 = 1.128; D_3000 at 145 GHz = 8.65 uK^2; at 150 GHz = 7.62 uK^2
+   (b03 white, class 0/1 variances at thA = 0.52/1.10/2.30/4.15/8.70/18.23': 0.006/0.008/0.011/0.015/0.022/0.030 and 0.05/0.068/0.103/0.15/0.24/0.37 (x<500 only))
+      thA= 0.52': Parseval c0 0.0063 (b03 0.006); c1 0.0495 (b03 0.05)
+      thA= 1.10': Parseval c0 0.0082 (b03 0.008); c1 0.0677 (b03 0.068)
+      thA= 2.30': Parseval c0 0.0114 (b03 0.011); c1 0.1029 (b03 0.103)
+      thA= 4.15': Parseval c0 0.0152 (b03 0.015); c1 0.1498 (b03 0.15)
+      thA= 8.70': Parseval c0 0.0218 (b03 0.022); c1 0.2397 (b03 0.24)
+      thA=18.23': Parseval c0 0.0303 (b03 0.03); c1 0.3702 (b03 0.37)
+   [9s]
+
+=== baseline: confusion variance in units of the filter noise variance (var_conf / sigma_A^2) ===
+   theta_A [']        0.52     0.95     1.98     4.15     7.50    15.72    32.94
+   all               0.294     0.33    0.384    0.416    0.396     0.31    0.206
+   c0              0.00761  0.00821  0.00885  0.00853   0.0071  0.00446  0.00241
+   c1               0.0453   0.0496   0.0549    0.055   0.0476   0.0317   0.0179
+   c2                0.242    0.273     0.32    0.353    0.341    0.273    0.185
+   subthr            0.113    0.124    0.139    0.142    0.125   0.0856   0.0498
+   mu (DC)               0        0        0        0        0        0        0   (Campbell mean shift, noise units)
+   fraction of neighbour Y^2 power in sub-threshold halos at l=3000: 0.318
+   variant: filter knows C^yy(all): sigma_Y/sigma_Y(default) =  1.123  1.139  1.165  1.182  1.174  1.136  1.089 ; var_conf/sigma^2 =   0.186    0.21   0.248   0.274   0.265   0.213   0.145
+   variant: filter knows C^yy(subthr): sigma_Y/sigma_Y(default) =  1.053  1.058  1.066  1.067  1.059  1.040  1.023 ; var_conf/sigma^2 =  0.0936   0.103   0.116   0.119   0.105  0.0726  0.0425
+   [10s]
+
+=== goal: confusion variance in units of the filter noise variance (var_conf / sigma_A^2) ===
+   theta_A [']        0.52     0.95     1.98     4.15     7.50    15.72    32.94
+   all               0.421    0.473    0.552    0.596    0.563    0.434    0.285
+   c0               0.0119   0.0128   0.0138   0.0133   0.0111  0.00704  0.00389
+   c1               0.0685   0.0751   0.0833   0.0832    0.072   0.0482   0.0278
+   c2                 0.34    0.385    0.455    0.499     0.48    0.379    0.253
+   subthr            0.141    0.155    0.174    0.176    0.154    0.105   0.0614
+   mu (DC)               0        0        0        0        0        0        0   (Campbell mean shift, noise units)
+   fraction of neighbour Y^2 power in sub-threshold halos at l=3000: 0.260
+   variant: filter knows C^yy(all): sigma_Y/sigma_Y(default) =  1.165  1.189  1.226  1.249  1.236  1.180  1.116 ; var_conf/sigma^2 =    0.23   0.261    0.31   0.342   0.329   0.261   0.175
+   variant: filter knows C^yy(subthr): sigma_Y/sigma_Y(default) =  1.065  1.072  1.081  1.082  1.072  1.048  1.028 ; var_conf/sigma^2 =   0.113   0.125    0.14   0.142   0.125  0.0853  0.0499
+   [11s]
+
+=== baseline_l36: confusion variance in units of the filter noise variance (var_conf / sigma_A^2) ===
+   theta_A [']        0.52     0.95     1.98     4.15     7.50    15.72    32.94
+   all               0.294     0.33    0.384    0.416    0.396     0.31    0.205
+   c0              0.00761  0.00821  0.00885  0.00853   0.0071  0.00446  0.00241
+   c1               0.0453   0.0496   0.0549    0.055   0.0476   0.0317   0.0179
+   c2                0.242    0.273     0.32    0.353    0.341    0.273    0.185
+   subthr            0.113    0.124    0.139    0.142    0.125   0.0856   0.0497
+   mu (DC)               0        0        0        0        0        0        0   (Campbell mean shift, noise units)
+   fraction of neighbour Y^2 power in sub-threshold halos at l=3000: 0.318
+   [12s]
+
+=== goal_l36: confusion variance in units of the filter noise variance (var_conf / sigma_A^2) ===
+   theta_A [']        0.52     0.95     1.98     4.15     7.50    15.72    32.94
+   all               0.421    0.473    0.552    0.596    0.563    0.434    0.285
+   c0               0.0119   0.0128   0.0138   0.0133   0.0111  0.00704  0.00389
+   c1               0.0685   0.0751   0.0833   0.0832    0.072   0.0482   0.0278
+   c2                 0.34    0.385    0.455    0.499     0.48    0.379    0.253
+   subthr            0.141    0.155    0.174    0.176    0.154    0.105   0.0614
+   mu (DC)               0        0        0        0        0        0        0   (Campbell mean shift, noise units)
+   fraction of neighbour Y^2 power in sub-threshold halos at l=3000: 0.260
+   [13s]
+
+=== method 2: real-space integral of rho^2 vs Parseval (MMF baseline), 30 theta_B bins ===
+   thA=  1.0': per-bin |real/Parseval - 1|: max 1.58e-02, Y^2-weighted mean 3.20e-05
+      [all   ] var_conf/sigma^2: real-space 0.33691  Parseval 0.33692  (rel -3.20e-05); C_l^yy route (1200 bins) 0.33419
+      [subthr] var_conf/sigma^2: real-space 0.12559  Parseval 0.12559  (rel -2.79e-05); C_l^yy route (1200 bins) 0.12525
+   thA=  4.0': per-bin |real/Parseval - 1|: max 1.01e-02, Y^2-weighted mean 4.60e-05
+      [all   ] var_conf/sigma^2: real-space 0.41882  Parseval 0.41884  (rel -4.60e-05); C_l^yy route (1200 bins) 0.41543
+      [subthr] var_conf/sigma^2: real-space 0.14235  Parseval 0.14235  (rel -4.11e-05); C_l^yy route (1200 bins) 0.14191
+   thA= 16.0': per-bin |real/Parseval - 1|: max 3.18e-03, Y^2-weighted mean 1.37e-04
+      [all   ] var_conf/sigma^2: real-space 0.30891  Parseval 0.30895  (rel -1.37e-04); C_l^yy route (1200 bins) 0.30705
+      [subthr] var_conf/sigma^2: real-space 0.084746  Parseval 0.084758  (rel -1.40e-04); C_l^yy route (1200 bins) 0.084627
+total 278s
+      278.49 real       277.04 user         1.34 sys
+           997769216  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               71016  page reclaims
+                 112  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 316  voluntary context switches
+                3085  involuntary context switches
+       5128808117308  instructions retired
+        892553818612  cycles elapsed
+           957680960  peak memory footprint

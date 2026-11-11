@@ -1,0 +1,43 @@
+=== template FT from 2D FFT images ===
+   image theta500 = 32 px: built+FFT 0.2s; sum(tau dA) = 1.7965912548 (RATIO 1.7964399013, rel +8.43e-05); max |Im| = 2.0e-16
+   image theta500 = 256 px: built+FFT 0.2s; sum(tau dA) = 1.7964648907 (RATIO 1.7964399013, rel +1.39e-05); max |Im| = 9.5e-17
+   anisotropy (rms over directions / g(0)): fine image u<=5 max 2.8e-03, u<=25 max 2.8e-03; coarse image u<=100 max 1.7e-02
+   overlap u = [ 8. 10. 12. 14. 16. 18. 20. 22. 24.] 
+      fine/coarse - 1: [0.00088 0.00206 0.00358 0.00521 0.00786 0.01122 0.01512 0.0203  0.02594] 
+      (fine - coarse)/g(0): [4.60e-05 6.25e-05 6.84e-05 6.57e-05 6.86e-05 7.03e-05 6.99e-05 7.15e-05
+ 7.08e-05]
+   saved g_of_u_2dfft.npz: 1954 nodes, u in [0, 300.0], g(0) = 1.79659125, g(umax)/g(0) = 2.34e-06
+
+=== comparison with the old szsim Hankel table (J0 quadrature; data/template_hankel_arnaud_5R500.npz) ===
+   u =    0.00: g_2dfft = 1.796591e+00   g_hankel = 1.796473e+00   diff/g(0) = +6.60e-05
+   u =    0.01: g_2dfft = 1.796517e+00   g_hankel = 1.796403e+00   diff/g(0) = +6.37e-05
+   u =    0.10: g_2dfft = 1.789590e+00   g_hankel = 1.789491e+00   diff/g(0) = +5.50e-05
+   u =    0.30: g_2dfft = 1.735900e+00   g_hankel = 1.735808e+00   diff/g(0) = +5.15e-05
+   u =    1.00: g_2dfft = 1.322679e+00   g_hankel = 1.322571e+00   diff/g(0) = +5.97e-05
+   u =    2.00: g_2dfft = 8.356875e-01   g_hankel = 8.355839e-01   diff/g(0) = +5.76e-05
+   u =    3.00: g_2dfft = 5.374539e-01   g_hankel = 5.373578e-01   diff/g(0) = +5.35e-05
+   u =    5.00: g_2dfft = 2.448512e-01   g_hankel = 2.447616e-01   diff/g(0) = +4.99e-05
+   u =   10.00: g_2dfft = 5.475287e-02   g_hankel = 5.465229e-02   diff/g(0) = +5.60e-05
+   u =   20.00: g_2dfft = 8.308196e-03   g_hankel = 8.314276e-03   diff/g(0) = -3.38e-06
+   u =   50.00: g_2dfft = 5.731898e-04   g_hankel = 5.753859e-04   diff/g(0) = -1.22e-06
+   u =  100.00: g_2dfft = 7.952778e-05   g_hankel = 7.857651e-05   diff/g(0) = +5.30e-07
+   u =  200.00: g_2dfft = 1.170211e-05   g_hankel = 1.129577e-05   diff/g(0) = +2.26e-07
+   max |g_2dfft - g_hankel| / g(0) over u in [0, 200]: 7.75e-05  (at u = 2.80); over u in [0, 20]: 7.75e-05
+        0.88 real         0.77 user         0.09 sys
+           625278976  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               44767  page reclaims
+                  94  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   8  voluntary context switches
+                  31  involuntary context switches
+          9749652433  instructions retired
+          2712331765  cycles elapsed
+           602884224  peak memory footprint

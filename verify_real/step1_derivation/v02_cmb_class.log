@@ -1,0 +1,49 @@
+[A halofit lmax12000] lmax_scalars=12000 lensed up to l=12000; sigma8=0.81020 A_s=2.10649e-09; omega_cdm=0.119342 omega_b=0.022432; 9s
+[B halofit lmax15000] lmax_scalars=15000 lensed up to l=15000; sigma8=0.81020 A_s=2.10649e-09; omega_cdm=0.119342 omega_b=0.022432; 13s
+[H hmcode lmax12000] lmax_scalars=12000 lensed up to l=12000; sigma8=0.81020 A_s=2.10649e-09; omega_cdm=0.119342 omega_b=0.022432; 10s
+power-law tail fit on [11000, 14000]: slope -3.968; held-out check none (CLASS stops at 15000); B at 14500 vs fit: -2.569e-01
+first acoustic peak (B): l = 220, D_l = 5762.8 uK^2 (builder: l = 220, 5757.5 uK^2)
+sigma8 (B) = 0.81020 (builder CAMB: 0.81025)
+
+  l      D_l(B)[uK^2]  A/B-1      H/B-1      CAMB(builder)/B-1  lensed/unlensed(B)
+     100    2714.3551  +1.02e-08  +7.43e-07  -6.474e-04        1.001
+     220    5762.8148  +4.59e-07  +1.84e-06  -9.177e-04        0.998
+     500    2457.3022  +2.10e-06  +6.47e-06  -6.715e-05        0.998
+    1000    1066.1609  +7.65e-06  +6.26e-05  -8.071e-04        1.033
+    2000     232.2622  +2.15e-05  -1.02e-04  -1.271e-03        1.009
+    3000      28.3842  -3.31e-05  -2.28e-03  -4.915e-03        1.105
+    4000       3.9324  -4.00e-04  -1.29e-02  -1.122e-02        1.674
+    5000       1.0636  -2.26e-03  -3.36e-02  -3.580e-02        6.026
+    6000       0.5858  -5.64e-04  -4.02e-02  -5.086e-02        27.255
+    8000       0.3317  -4.73e-03  -4.40e-02  -9.834e-02        81.963
+   10000       0.1995  -1.85e-02  -6.07e-02  -1.452e-02        128.992
+   11000       0.1918  +3.44e-03  -3.25e-02  -1.390e-01        187.223
+   14000       0.1085  +nan  +nan  -1.985e-02        302.587
+   15000       0.0935  +nan  +nan  +2.138e-03        nan
+   18000       0.0653  +nan  +nan  +2.100e-02        nan
+   20000       0.0531  +nan  +nan  +2.684e-02        nan
+  max |CAMB_builder/CLASS_B - 1| for 2 <= l <= 3000: 4.915e-03
+  max |CAMB_builder/CLASS_B - 1| for 2 <= l <= 6000: 6.562e-02
+  max |CAMB_builder/CLASS_B - 1| for 6000 <= l <= 12000: 1.861e-01
+  max |CAMB_builder/CLASS_B - 1| for 12000 <= l <= 20000: 3.172e-01
+  CLASS convergence A (lmax 12000, kmax 30) vs B (lmax 15000, kmax 60): max |A/B-1| l<=6000 4.12e-03; l<=11000 2.45e-02
+  non-linear model: HMcode vs halofit: max |H/B-1| l<=3000 2.28e-03; l<=6000 4.46e-02; l<=11000 6.87e-02
+saved cmb_lensed_TT_class.npz
+       32.29 real       122.80 user         1.21 sys
+          2705948672  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              288686  page reclaims
+                  91  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  37  voluntary context switches
+               77996  involuntary context switches
+       1078325362849  instructions retired
+        379236738566  cycles elapsed
+          2663930176  peak memory footprint

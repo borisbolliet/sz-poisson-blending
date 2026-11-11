@@ -1,0 +1,66 @@
+=== s11 summary: 12 fresh skies (seeds [41001, 41002, 41003, 41004, 41005, 41006, 41007, 41008, 41009, 41010, 41011, 41012]) ===
+
+[white] Delta N/N [%] per z bin at q > 5  (direct: mean over skies +- std/sqrt(n))
+   z 0.01-0.1: direct -5.21 +- 0.17 | P(D) s09 -5.28 (like-for-like -5.28; pull +0.4) | per-sky std: empirical 0.60, within-sky jackknife 0.44, predicted (s09) 0.44 | s06d -4.94, V1 skies -5.29 / -4.71
+            Delta N per sky: mean -165.71, std over skies 18.94; sqrt(8 x wedge variance) 14.32 (equal if wedges are independent)
+   z 0.1-0.25: direct -3.19 +- 0.08 | P(D) s09 -3.12 (like-for-like -3.12; pull -0.9) | per-sky std: empirical 0.27, within-sky jackknife 0.20, predicted (s09) 0.19 | s06d -2.96, V1 skies -3.03 / -2.93
+            Delta N per sky: mean -418.37, std over skies 35.53; sqrt(8 x wedge variance) 26.24 (equal if wedges are independent)
+   z 0.25-0.5: direct -1.89 +- 0.07 | P(D) s09 -1.97 (like-for-like -1.97; pull +1.2) | per-sky std: empirical 0.23, within-sky jackknife 0.15, predicted (s09) 0.12 | s06d -1.85, V1 skies -1.90 / -1.94
+            Delta N per sky: mean -508.00, std over skies 61.01; sqrt(8 x wedge variance) 39.77 (equal if wedges are independent)
+   z    0.5-1: direct -0.99 +- 0.05 | P(D) s09 -1.00 (like-for-like -1.00; pull +0.3) | per-sky std: empirical 0.17, within-sky jackknife 0.11, predicted (s09) 0.11 | s06d -0.79, V1 skies -0.78 / -0.93
+            Delta N per sky: mean -322.76, std over skies 54.87; sqrt(8 x wedge variance) 34.91 (equal if wedges are independent)
+   z    1-1.5: direct +0.20 +- 0.06 | P(D) s09 +0.17 (like-for-like +0.17; pull +0.5) | per-sky std: empirical 0.20, within-sky jackknife 0.26, predicted (s09) 0.23 | s06d +0.11, V1 skies +0.41 / +0.10
+            Delta N per sky: mean 16.23, std over skies 16.80; sqrt(8 x wedge variance) 21.21 (equal if wedges are independent)
+   z    1.5-2: direct +2.02 +- 0.17 | P(D) s09 +1.64 (like-for-like +1.64; pull +2.2) | per-sky std: empirical 0.58, within-sky jackknife 0.66, predicted (s09) 0.61 | s06d +1.48, V1 skies +1.62 / +0.92
+            Delta N per sky: mean 27.44, std over skies 7.87; sqrt(8 x wedge variance) 8.96 (equal if wedges are independent)
+   z      2-3: direct +4.33 +- 0.38 | P(D) s09 +3.96 (like-for-like +3.96; pull +1.0) | per-sky std: empirical 1.32, within-sky jackknife 1.99, predicted (s09) 1.80 | s06d +4.99, V1 skies +4.39 / +4.54
+            Delta N per sky: mean 8.15, std over skies 2.32; sqrt(8 x wedge variance) 3.51 (equal if wedges are independent)
+   q>4: direct -8.07+-0.17 -5.26+-0.07 -3.73+-0.07 -2.79+-0.05 -1.86+-0.04 -0.89+-0.15 -0.13+-0.22 | P(D) -8.05 -5.20 -3.79 -2.82 -1.94 -1.05 +0.08
+   q>6: direct -3.65+-0.19 -2.10+-0.07 -0.99+-0.06 -0.22+-0.05 +0.91+-0.09 +2.78+-0.18 +5.72+-0.54 | P(D) -3.75 -2.04 -1.09 -0.22 +0.92 +2.42 +4.76
+   q>7: direct -2.70+-0.19 -1.42+-0.08 -0.49+-0.06 +0.20+-0.05 +1.28+-0.11 +2.59+-0.28 +6.43+-0.98 | P(D) -2.78 -1.38 -0.58 +0.19 +1.27 +2.70 +4.90
+   sky mean y vs the population expectation 3.5895e-7: offsets [ 0.46  1.04  0.71 -0.01  0.24  0.73 -0.24 -0.08  0.18 -0.57 -0.43 -0.18] % (std 0.50%; Poisson expectation 0.54%)
+   z 0.01-0.1: corr(Delta N/N, mean y) -0.81, slope -0.97 pp per 1%; per-sky std 0.60 -> 0.37 without the mean-y trend (predicted 0.44)
+   z 0.1-0.25: corr(Delta N/N, mean y) -0.57, slope -0.30 pp per 1%; per-sky std 0.27 -> 0.23 without the mean-y trend (predicted 0.19)
+   z 0.25-0.5: corr(Delta N/N, mean y) -0.75, slope -0.34 pp per 1%; per-sky std 0.23 -> 0.16 without the mean-y trend (predicted 0.12)
+   z    0.5-1: corr(Delta N/N, mean y) -0.66, slope -0.22 pp per 1%; per-sky std 0.17 -> 0.13 without the mean-y trend (predicted 0.11)
+   z    1-1.5: corr(Delta N/N, mean y) -0.48, slope -0.20 pp per 1%; per-sky std 0.20 -> 0.19 without the mean-y trend (predicted 0.23)
+   z    1.5-2: corr(Delta N/N, mean y) +0.05, slope +0.06 pp per 1%; per-sky std 0.58 -> 0.61 without the mean-y trend (predicted 0.61)
+   z      2-3: corr(Delta N/N, mean y) -0.40, slope -1.07 pp per 1%; per-sky std 1.32 -> 1.27 without the mean-y trend (predicted 1.80)
+
+[baseline] Delta N/N [%] per z bin at q > 5  (direct: mean over skies +- std/sqrt(n))
+   z    1.5-2: direct +3.16 +- 0.14 | P(D) s09 +3.09 (like-for-like +3.06; pull +0.7) | per-sky std: empirical 0.49, within-sky jackknife 0.39, predicted (s09) 0.37 | s06d +3.10, V1 skies +3.30 / +2.65
+            Delta N per sky: mean 68.23, std over skies 10.20; sqrt(8 x wedge variance) 8.40 (equal if wedges are independent)
+   z      2-3: direct +4.63 +- 0.24 | P(D) s09 +4.84 (like-for-like +4.76; pull -0.5) | per-sky std: empirical 0.83, within-sky jackknife 0.99, predicted (s09) 1.01 | s06d +5.46, V1 skies +5.98 / +4.99
+            Delta N per sky: mean 16.26, std over skies 2.85; sqrt(8 x wedge variance) 3.35 (equal if wedges are independent)
+   q>4: direct +3.00+-0.11 +4.16+-0.12 | P(D) +3.31 +5.20
+   q>6: direct +2.79+-0.17 +4.66+-0.35 | P(D) +2.68 +4.10
+   q>7: direct +2.35+-0.22 +4.53+-0.48 | P(D) +2.36 +3.57
+   (truncation q_A > 1 for the MMF neighbour sums; P(D) effect on Delta N/N at q>5: +0.0335% +0.0798%)
+
+[goal] Delta N/N [%] per z bin at q > 5  (direct: mean over skies +- std/sqrt(n))
+   z    1.5-2: direct +3.20 +- 0.13 | P(D) s09 +3.21 (like-for-like +3.18; pull +0.2) | per-sky std: empirical 0.45, within-sky jackknife 0.28, predicted (s09) 0.28 | s06d +3.40, V1 skies +3.14 / +3.00
+            Delta N per sky: mean 141.36, std over skies 19.68; sqrt(8 x wedge variance) 12.21 (equal if wedges are independent)
+   z      2-3: direct +4.47 +- 0.14 | P(D) s09 +5.03 (like-for-like +4.96; pull -3.5) | per-sky std: empirical 0.49, within-sky jackknife 0.70, predicted (s09) 0.72 | s06d +4.83, V1 skies +5.67 / +5.25
+            Delta N per sky: mean 37.19, std over skies 4.09; sqrt(8 x wedge variance) 5.66 (equal if wedges are independent)
+   q>4: direct +2.96+-0.09 +4.37+-0.13 | P(D) +3.34 +5.31
+   q>6: direct +2.90+-0.13 +3.95+-0.22 | P(D) +2.83 +4.33
+   q>7: direct +2.61+-0.13 +3.97+-0.31 | P(D) +2.52 +3.81
+   (truncation q_A > 1 for the MMF neighbour sums; P(D) effect on Delta N/N at q>5: +0.0317% +0.0724%)
+        0.51 real         0.43 user         0.07 sys
+           115752960  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               16899  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                  21  involuntary context switches
+          4519972751  instructions retired
+          1587749971  cycles elapsed
+            75236800  peak memory footprint

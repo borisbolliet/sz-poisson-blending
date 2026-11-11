@@ -1,0 +1,68 @@
+[goal] 48 theta_A nodes 0.1-139'; numba threads 3; neighbour points 3,939,280
+   rate node 0/48 28s
+   rate node 12/48 315s
+   rate node 24/48 601s
+   rate node 36/48 889s
+[goal] rate histograms done 1153s; max added Gaussian var 4.07e-02
+[goal] H: sum over z bins vs full range: max |sum_z H_z - H| / max H = 2.5e-14; N_single(q>5) full 128,151.8, sum of bins 128,151.8  [1155s]
+   node tables 48/192 1227s
+   node tables 96/192 1298s
+   node tables 144/192 1394s
+   node tables 192/192 1521s
+
+[goal] (check) fdom = 1 vs s06b rows (floor 1e13): max rel diff N_single/N_det_b 7.8e-15; max abs diff of all fractions 1.5e-12
+
+=== [goal] dominance rule x_B < fdom q_A: fractions on the detected sample (floor 1e13, c=1) ===
+   fdom= 1.0: q>4: N_det_b   204,828 (+1.35%); Y>10% 13.96%; Y>20% 7.99%; boosted 8.19%; lost 6.66%; Y<-10% 4.62%; mean bias +3.68%; not counted (1-P_dom) 0.29%
+   fdom= 1.0: q>5: N_det_b   129,923 (+1.38%); Y>10% 10.37%; Y>20% 5.65%; boosted 6.87%; lost 5.44%; Y<-10% 2.77%; mean bias +2.66%; not counted (1-P_dom) 0.15%
+   fdom= 1.0: q>6: N_det_b    89,935 (+1.26%); Y>10% 8.23%; Y>20% 4.36%; boosted 5.99%; lost 4.71%; Y<-10% 1.85%; mean bias +2.09%; not counted (1-P_dom) 0.09%
+   fdom= 1.0: q>7: N_det_b    65,633 (+1.15%); Y>10% 6.80%; Y>20% 3.54%; boosted 5.37%; lost 4.21%; Y<-10% 1.32%; mean bias +1.72%; not counted (1-P_dom) 0.06%
+   fdom= 0.5: q>4: N_det_b   199,410 (-1.33%); Y>10% 11.63%; Y>20% 5.50%; boosted 6.34%; lost 6.66%; Y<-10% 4.75%; mean bias +1.70%; not counted (1-P_dom) 0.93%
+   fdom= 0.5: q>5: N_det_b   127,527 (-0.49%); Y>10% 8.69%; Y>20% 3.88%; boosted 5.51%; lost 5.44%; Y<-10% 2.82%; mean bias +1.30%; not counted (1-P_dom) 0.53%
+   fdom= 0.5: q>6: N_det_b    88,664 (-0.17%); Y>10% 6.91%; Y>20% 2.99%; boosted 4.91%; lost 4.71%; Y<-10% 1.88%; mean bias +1.05%; not counted (1-P_dom) 0.36%
+   fdom= 0.5: q>7: N_det_b    64,883 (-0.00%); Y>10% 5.72%; Y>20% 2.43%; boosted 4.48%; lost 4.21%; Y<-10% 1.33%; mean bias +0.89%; not counted (1-P_dom) 0.27%
+   fdom= 2.0: q>4: N_det_b   209,940 (+3.88%); Y>10% 16.06%; Y>20% 10.23%; boosted 10.22%; lost 6.66%; Y<-10% 4.51%; mean bias +7.35%; not counted (1-P_dom) 0.08%
+   fdom= 2.0: q>5: N_det_b   132,219 (+3.17%); Y>10% 11.93%; Y>20% 7.29%; boosted 8.38%; lost 5.44%; Y<-10% 2.72%; mean bias +5.27%; not counted (1-P_dom) 0.03%
+   fdom= 2.0: q>6: N_det_b    91,146 (+2.63%); Y>10% 9.45%; Y>20% 5.63%; boosted 7.17%; lost 4.71%; Y<-10% 1.82%; mean bias +4.07%; not counted (1-P_dom) 0.02%
+   fdom= 2.0: q>7: N_det_b    66,342 (+2.25%); Y>10% 7.80%; Y>20% 4.58%; boosted 6.33%; lost 4.21%; Y<-10% 1.30%; mean bias +3.31%; not counted (1-P_dom) 0.01%
+   fdom= inf: q>4: N_det_b   225,216 (+11.44%); Y>10% 21.76%; Y>20% 16.32%; boosted 16.24%; lost 6.66%; Y<-10% 4.20%; mean bias +52.01%; not counted (1-P_dom) 0.00%
+   fdom= inf: q>5: N_det_b   142,132 (+10.91%); Y>10% 18.08%; Y>20% 13.75%; boosted 14.74%; lost 5.44%; Y<-10% 2.53%; mean bias +60.35%; not counted (1-P_dom) 0.00%
+   fdom= inf: q>6: N_det_b    97,848 (+10.17%); Y>10% 15.65%; Y>20% 12.10%; boosted 13.51%; lost 4.71%; Y<-10% 1.70%; mean bias +67.40%; not counted (1-P_dom) 0.00%
+   fdom= inf: q>7: N_det_b    71,069 (+9.53%); Y>10% 13.93%; Y>20% 10.92%; boosted 12.55%; lost 4.21%; Y<-10% 1.21%; mean bias +73.70%; not counted (1-P_dom) 0.00%
+
+=== [goal] Delta N/N = N_det,blended / N_single - 1 in z bins [0.01, 0.1, 0.25, 0.5, 1.0, 1.5, 2.0, 3.0] (P(D) expectation, fdom = 1) ===
+   q>4: +0.45%  +0.59%  +0.80%  +1.24%  +2.10%  +3.34%  +5.31%
+         expected per-sky (full-sky) std: 0.41%  0.13%  0.07%  0.05%  0.09%  0.20%  0.46%
+         N_single per bin: 1,434  15,199  50,078  90,011  34,792  8,661  1,918
+         contribution of primaries with q_A < 1 to Delta N/N: +0.0598%  +0.0661%  +0.0738%  +0.1022%  +0.1731%  +0.3038%  +0.5912%
+   q>5: +0.78%  +0.80%  +0.94%  +1.32%  +2.08%  +3.21%  +5.03%
+         expected per-sky (full-sky) std: 0.50%  0.15%  0.08%  0.07%  0.12%  0.28%  0.72%
+         N_single per bin: 937  10,360  33,851  57,592  20,145  4,435  832
+         contribution of primaries with q_A < 1 to Delta N/N: +0.0061%  +0.0056%  +0.0061%  +0.0088%  +0.0161%  +0.0317%  +0.0724%
+   q>6: +0.85%  +0.82%  +0.92%  +1.23%  +1.88%  +2.83%  +4.33%
+         expected per-sky (full-sky) std: 0.58%  0.17%  0.10%  0.08%  0.15%  0.36%  0.98%
+         N_single per bin: 659  7,551  24,540  40,037  12,980  2,609  436
+         contribution of primaries with q_A < 1 to Delta N/N: +0.0002%  +0.0002%  +0.0002%  +0.0002%  +0.0005%  +0.0010%  +0.0026%
+   q>7: +0.85%  +0.80%  +0.87%  +1.14%  +1.70%  +2.52%  +3.81%
+         expected per-sky (full-sky) std: 0.66%  0.19%  0.11%  0.09%  0.18%  0.45%  1.26%
+         N_single per bin: 485  5,735  18,574  29,269  8,907  1,661  253
+         contribution of primaries with q_A < 1 to Delta N/N: +0.0000%  +0.0000%  +0.0000%  +0.0000%  +0.0000%  +0.0000%  +0.0000%
+[goal] saved data_real/pd_tables_goal.npz; total 1521s
+     1521.16 real      4504.37 user         8.79 sys
+           508608512  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              144178  page reclaims
+                 312  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                2553  voluntary context switches
+              115762  involuntary context switches
+      35406301819279  instructions retired
+      10450710822322  cycles elapsed
+           446531840  peak memory footprint

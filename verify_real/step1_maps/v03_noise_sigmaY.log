@@ -1,0 +1,62 @@
+[v03] grid 2400^2 x 0.25' ; NSIM = 48; set-up 1s
+(M2a) N_y: build inv_Ny(l) vs 1/(a^T C_ours^-1 a) from our independently coded covariance and SED/beams
+   [baseline] max|inv_ours/inv_build - 1| = 1.83e-03 (at l=100); max|w_build^T C_ours w_build x inv_build - 1| = 1.82e-03; max|sum_i w_i a_i(ours) - 1| = 1.11e-15
+      l=   100: N_y(ours) = 3.858e-14 sr   build 3.865e-14
+      l=   300: N_y(ours) = 1.753e-15 sr   build 1.754e-15
+      l=  1000: N_y(ours) = 3.302e-17 sr   build 3.303e-17
+      l=  3000: N_y(ours) = 1.490e-18 sr   build 1.492e-18
+      l= 10000: N_y(ours) = 1.778e-17 sr   build 1.778e-17
+      l= 20000: N_y(ours) = 4.417e-15 sr   build 4.417e-15
+   [goal] max|inv_ours/inv_build - 1| = 1.83e-03 (at l=100); max|w_build^T C_ours w_build x inv_build - 1| = 1.82e-03; max|sum_i w_i a_i(ours) - 1| = 1.11e-15
+      l=   100: N_y(ours) = 3.858e-14 sr   build 3.865e-14
+      l=   300: N_y(ours) = 1.745e-15 sr   build 1.746e-15
+      l=  1000: N_y(ours) = 3.141e-17 sr   build 3.142e-17
+      l=  3000: N_y(ours) = 1.130e-18 sr   build 1.132e-18
+      l= 10000: N_y(ours) = 7.432e-18 sr   build 7.432e-18
+      l= 20000: N_y(ours) = 2.066e-15 sr   build 2.066e-15
+(M2b) predicted std of the build's filter on OUR covariance, summed over the grid modes, vs the build's sigma_Y
+   [baseline] theta500:   0.5'    1.0'    2.0'    5.0'   10.0'   20.0'
+   [baseline] sigma_Y build (Hankel)  : 4.5092e-06 6.2118e-06 1.0971e-05 3.8366e-05 1.4298e-04 6.5892e-04
+   [baseline] sigma_Y claimed (rounded): 4.5100e-06 6.2100e-06 1.0900e-05 3.8500e-05 1.4300e-04 6.5500e-04
+   [baseline] M2 grid prediction      : 4.5085e-06 6.2107e-06 1.0969e-05 3.8353e-05 1.4293e-04 6.5874e-04
+   [baseline] M2 / build - 1          : -1.47e-04 -1.86e-04 -2.46e-04 -3.34e-04 -3.38e-04 -2.71e-04
+   [baseline] grid-normalisation sigma_disc / sigma_Hankel - 1: -2.1e-09 +2.0e-08 +3.6e-08 +1.3e-07 -1.1e-06 -9.6e-06
+   [goal] theta500:   0.5'    1.0'    2.0'    5.0'   10.0'   20.0'
+   [goal] sigma_Y build (Hankel)  : 3.3558e-06 4.7247e-06 8.6096e-06 3.1739e-05 1.2377e-04 5.9772e-04
+   [goal] sigma_Y claimed (rounded): 3.3600e-06 4.7200e-06 8.5900e-06 3.1900e-05 1.2400e-04 5.9400e-04
+   [goal] M2 grid prediction      : 3.3553e-06 4.7238e-06 8.6074e-06 3.1729e-05 1.2373e-04 5.9756e-04
+   [goal] M2 / build - 1          : -1.44e-04 -1.84e-04 -2.45e-04 -3.34e-04 -3.40e-04 -2.78e-04
+   [goal] grid-normalisation sigma_disc / sigma_Hankel - 1: -1.2e-09 +2.0e-08 +3.0e-08 +9.9e-08 -8.8e-07 -7.7e-06
+   realisation 1/48 [4s]
+   realisation 9/48 [18s]
+   realisation 17/48 [33s]
+   realisation 25/48 [48s]
+   realisation 33/48 [62s]
+   realisation 41/48 [81s]
+   realisation 48/48 [97s]
+
+(M1) Monte Carlo: 48 patches of 100 deg^2; sigma_emp = sqrt(mean over patches of the pixel variance); error from the patch-to-patch scatter
+   [baseline]
+      theta500=  0.5': sigma_emp = 4.5106e-06 +- 0.03%   build sigma_Y = 4.5092e-06   emp/build - 1 = +0.0003 (+1.1 sig)   emp/claim - 1 = +0.0001   emp/M2 - 1 = +0.0005   excess kurtosis +0.001
+      theta500=  1.0': sigma_emp = 6.2134e-06 +- 0.03%   build sigma_Y = 6.2118e-06   emp/build - 1 = +0.0002 (+0.8 sig)   emp/claim - 1 = +0.0005   emp/M2 - 1 = +0.0004   excess kurtosis +0.001
+      theta500=  2.0': sigma_emp = 1.0972e-05 +- 0.03%   build sigma_Y = 1.0971e-05   emp/build - 1 = +0.0001 (+0.3 sig)   emp/claim - 1 = +0.0066   emp/M2 - 1 = +0.0003   excess kurtosis +0.001
+      theta500=  5.0': sigma_emp = 3.8356e-05 +- 0.03%   build sigma_Y = 3.8366e-05   emp/build - 1 = -0.0003 (-0.8 sig)   emp/claim - 1 = -0.0037   emp/M2 - 1 = +0.0001   excess kurtosis +0.001
+      theta500= 10.0': sigma_emp = 1.4292e-04 +- 0.04%   build sigma_Y = 1.4298e-04   emp/build - 1 = -0.0004 (-0.9 sig)   emp/claim - 1 = -0.0006   emp/M2 - 1 = -0.0001   excess kurtosis +0.002
+      theta500= 20.0': sigma_emp = 6.5866e-04 +- 0.06%   build sigma_Y = 6.5892e-04   emp/build - 1 = -0.0004 (-0.7 sig)   emp/claim - 1 = +0.0056   emp/M2 - 1 = -0.0001   excess kurtosis +0.001
+   [goal]
+      theta500=  0.5': sigma_emp = 3.3571e-06 +- 0.03%   build sigma_Y = 3.3558e-06   emp/build - 1 = +0.0004 (+1.4 sig)   emp/claim - 1 = -0.0009   emp/M2 - 1 = +0.0005   excess kurtosis +0.001
+      theta500=  1.0': sigma_emp = 4.7264e-06 +- 0.03%   build sigma_Y = 4.7247e-06   emp/build - 1 = +0.0004 (+1.3 sig)   emp/claim - 1 = +0.0014   emp/M2 - 1 = +0.0005   excess kurtosis +0.001
+      theta500=  2.0': sigma_emp = 8.6120e-06 +- 0.03%   build sigma_Y = 8.6096e-06   emp/build - 1 = +0.0003 (+0.9 sig)   emp/claim - 1 = +0.0026   emp/M2 - 1 = +0.0005   excess kurtosis +0.000
+      theta500=  5.0': sigma_emp = 3.1739e-05 +- 0.03%   build sigma_Y = 3.1739e-05   emp/build - 1 = +0.0000 (+0.0 sig)   emp/claim - 1 = -0.0050   emp/M2 - 1 = +0.0003   excess kurtosis +0.001
+      theta500= 10.0': sigma_emp = 1.2376e-04 +- 0.04%   build sigma_Y = 1.2377e-04   emp/build - 1 = -0.0001 (-0.3 sig)   emp/claim - 1 = -0.0019   emp/M2 - 1 = +0.0002   excess kurtosis +0.002
+      theta500= 20.0': sigma_emp = 5.9763e-04 +- 0.05%   build sigma_Y = 5.9772e-04   emp/build - 1 = -0.0001 (-0.3 sig)   emp/claim - 1 = +0.0061   emp/M2 - 1 = +0.0001   excess kurtosis +0.002
+   [white]
+      theta500=  0.5': sigma_emp = 5.6264e-06 +- 0.03%   build sigma_Y = 5.6306e-06   emp/build - 1 = -0.0007 (-2.5 sig)   emp/claim - 1 = -0.0006
+      theta500=  1.0': sigma_emp = 7.2211e-06 +- 0.04%   build sigma_Y = 7.2278e-06   emp/build - 1 = -0.0009 (-2.6 sig)   emp/claim - 1 = -0.0012
+      theta500=  2.0': sigma_emp = 1.0789e-05 +- 0.05%   build sigma_Y = 1.0804e-05   emp/build - 1 = -0.0014 (-2.8 sig)   emp/claim - 1 = -0.0010
+      theta500=  5.0': sigma_emp = 2.2481e-05 +- 0.09%   build sigma_Y = 2.2541e-05   emp/build - 1 = -0.0027 (-2.9 sig)   emp/claim - 1 = -0.0053
+      theta500= 10.0': sigma_emp = 4.2869e-05 +- 0.17%   build sigma_Y = 4.3083e-05   emp/build - 1 = -0.0050 (-2.9 sig)   emp/claim - 1 = -0.0053
+      theta500= 20.0': sigma_emp = 8.4104e-05 +- 0.37%   build sigma_Y = 8.4944e-05   emp/build - 1 = -0.0099 (-2.7 sig)   emp/claim - 1 = -0.0070
+
+   worst |sigma_emp / sigma_claimed - 1| over baseline+goal and theta500 = 0.5-20': 0.0066 (criterion < 0.03)
+[v03] done 97s

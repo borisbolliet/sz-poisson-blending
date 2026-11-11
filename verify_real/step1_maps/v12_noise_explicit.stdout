@@ -1,0 +1,42 @@
+[v12] 60 fresh patches from 100; theta_A = [1.0069 4.025 ]; q_A = [5.0, 6.0, 7.0]; set-up 3s
+   patch 100: 3.3s, total 6s
+   patch 110: 3.1s, total 37s
+   patch 120: 3.1s, total 68s
+   patch 130: 3.1s, total 99s
+   patch 140: 3.1s, total 130s
+   patch 150: 3.1s, total 162s
+   patch 159: 3.1s, total 190s
+
+   noise at all pixels: mean +0.00000, variance 0.99996 (expected 0, 1)
+   [baseline] theta_A=1.007' q_A=5.0: det explicit 0.4930 analytic 0.4929 (diff +0.0001+-0.0001, +2.1s; 400-patch map P(D) 0.4929); B2_10 explicit 0.1013 analytic 0.1013 (diff -0.0001+-0.0000, -1.5s; 400-patch map P(D) 0.1016); B3 explicit 0.0823 analytic 0.0823 (diff +0.0001+-0.0001, +1.0s; 400-patch map P(D) 0.0824); lost explicit 0.0953 analytic 0.0953 (diff -0.0001+-0.0001, -1.1s; 400-patch map P(D) 0.0955); mb explicit 0.0245 analytic 0.0245 (diff -0.0000+-0.0000, -1.2s; 400-patch map P(D) 0.0246)
+   [baseline] theta_A=1.007' q_A=6.0: det explicit 0.8226 analytic 0.8226 (diff -0.0000+-0.0001, -0.2s; 400-patch map P(D) 0.8225); B2_10 explicit 0.0569 analytic 0.0569 (diff -0.0000+-0.0000, -1.7s; 400-patch map P(D) 0.0570); B3 explicit 0.0231 analytic 0.0231 (diff +0.0000+-0.0000, +0.3s; 400-patch map P(D) 0.0231); lost explicit 0.0449 analytic 0.0449 (diff -0.0000+-0.0000, -0.3s; 400-patch map P(D) 0.0450); mb explicit 0.0078 analytic 0.0078 (diff -0.0000+-0.0000, -0.3s; 400-patch map P(D) 0.0078)
+   [baseline] theta_A=1.007' q_A=7.0: det explicit 0.9678 analytic 0.9678 (diff -0.0000+-0.0001, -0.2s; 400-patch map P(D) 0.9678); B2_10 explicit 0.0402 analytic 0.0402 (diff -0.0000+-0.0000, -1.0s; 400-patch map P(D) 0.0403); B3 explicit 0.0036 analytic 0.0036 (diff +0.0000+-0.0000, +1.0s; 400-patch map P(D) 0.0036); lost explicit 0.0132 analytic 0.0132 (diff +0.0000+-0.0000, +0.3s; 400-patch map P(D) 0.0133); mb explicit 0.0022 analytic 0.0022 (diff +0.0000+-0.0000, +0.1s; 400-patch map P(D) 0.0023)
+   [baseline] theta_A=4.025' q_A=5.0: det explicit 0.4902 analytic 0.4901 (diff +0.0001+-0.0001, +1.4s; 400-patch map P(D) 0.4901); B2_10 explicit 0.1152 analytic 0.1152 (diff -0.0001+-0.0001, -1.3s; 400-patch map P(D) 0.1155); B3 explicit 0.0861 analytic 0.0861 (diff -0.0000+-0.0001, -0.2s; 400-patch map P(D) 0.0862); lost explicit 0.1041 analytic 0.1041 (diff -0.0001+-0.0001, -0.6s; 400-patch map P(D) 0.1044); mb explicit 0.0280 analytic 0.0280 (diff -0.0000+-0.0000, -1.0s; 400-patch map P(D) 0.0281)
+   [baseline] theta_A=4.025' q_A=6.0: det explicit 0.8196 analytic 0.8195 (diff +0.0000+-0.0001, +0.4s; 400-patch map P(D) 0.8194); B2_10 explicit 0.0653 analytic 0.0653 (diff -0.0000+-0.0000, -2.2s; 400-patch map P(D) 0.0654); B3 explicit 0.0237 analytic 0.0236 (diff +0.0000+-0.0000, +0.7s; 400-patch map P(D) 0.0237); lost explicit 0.0489 analytic 0.0489 (diff -0.0000+-0.0000, -0.3s; 400-patch map P(D) 0.0491); mb explicit 0.0086 analytic 0.0086 (diff -0.0000+-0.0000, -0.5s; 400-patch map P(D) 0.0086)
+   [baseline] theta_A=4.025' q_A=7.0: det explicit 0.9668 analytic 0.9668 (diff +0.0000+-0.0001, +0.0s; 400-patch map P(D) 0.9668); B2_10 explicit 0.0466 analytic 0.0466 (diff -0.0000+-0.0000, -0.9s; 400-patch map P(D) 0.0467); B3 explicit 0.0036 analytic 0.0036 (diff +0.0000+-0.0000, +0.8s; 400-patch map P(D) 0.0036); lost explicit 0.0143 analytic 0.0143 (diff +0.0000+-0.0000, +0.0s; 400-patch map P(D) 0.0143); mb explicit 0.0024 analytic 0.0024 (diff +0.0000+-0.0000, +0.7s; 400-patch map P(D) 0.0024)
+   [goal] theta_A=1.007' q_A=5.0: det explicit 0.4910 analytic 0.4910 (diff +0.0001+-0.0001, +1.6s; 400-patch map P(D) 0.4909); B2_10 explicit 0.1264 analytic 0.1265 (diff -0.0001+-0.0000, -1.9s; 400-patch map P(D) 0.1269); B3 explicit 0.0944 analytic 0.0943 (diff +0.0001+-0.0001, +1.0s; 400-patch map P(D) 0.0945); lost explicit 0.1107 analytic 0.1107 (diff -0.0000+-0.0001, -0.2s; 400-patch map P(D) 0.1109); mb explicit 0.0322 analytic 0.0322 (diff -0.0000+-0.0000, -1.5s; 400-patch map P(D) 0.0323)
+   [goal] theta_A=1.007' q_A=6.0: det explicit 0.8170 analytic 0.8171 (diff -0.0000+-0.0001, -0.5s; 400-patch map P(D) 0.8170); B2_10 explicit 0.0717 analytic 0.0717 (diff -0.0000+-0.0000, -0.9s; 400-patch map P(D) 0.0719); B3 explicit 0.0260 analytic 0.0260 (diff +0.0000+-0.0000, +0.3s; 400-patch map P(D) 0.0261); lost explicit 0.0541 analytic 0.0541 (diff +0.0000+-0.0000, +0.2s; 400-patch map P(D) 0.0543); mb explicit 0.0106 analytic 0.0106 (diff -0.0000+-0.0000, -0.2s; 400-patch map P(D) 0.0107)
+   [goal] theta_A=1.007' q_A=7.0: det explicit 0.9644 analytic 0.9645 (diff -0.0000+-0.0001, -0.3s; 400-patch map P(D) 0.9644); B2_10 explicit 0.0510 analytic 0.0510 (diff -0.0000+-0.0000, -0.7s; 400-patch map P(D) 0.0511); B3 explicit 0.0040 analytic 0.0040 (diff +0.0000+-0.0000, +1.0s; 400-patch map P(D) 0.0040); lost explicit 0.0170 analytic 0.0170 (diff -0.0000+-0.0000, -0.3s; 400-patch map P(D) 0.0171); mb explicit 0.0033 analytic 0.0033 (diff -0.0000+-0.0000, -0.5s; 400-patch map P(D) 0.0033)
+   [goal] theta_A=4.025' q_A=5.0: det explicit 0.4878 analytic 0.4877 (diff +0.0001+-0.0001, +1.2s; 400-patch map P(D) 0.4876); B2_10 explicit 0.1418 analytic 0.1419 (diff -0.0001+-0.0001, -1.9s; 400-patch map P(D) 0.1422); B3 explicit 0.0988 analytic 0.0988 (diff -0.0000+-0.0001, -0.4s; 400-patch map P(D) 0.0989); lost explicit 0.1209 analytic 0.1210 (diff -0.0001+-0.0001, -0.6s; 400-patch map P(D) 0.1213); mb explicit 0.0368 analytic 0.0369 (diff -0.0000+-0.0000, -1.5s; 400-patch map P(D) 0.0370)
+   [goal] theta_A=4.025' q_A=6.0: det explicit 0.8132 analytic 0.8132 (diff +0.0000+-0.0001, +0.1s; 400-patch map P(D) 0.8130); B2_10 explicit 0.0812 analytic 0.0812 (diff -0.0000+-0.0000, -1.9s; 400-patch map P(D) 0.0814); B3 explicit 0.0267 analytic 0.0267 (diff +0.0000+-0.0000, +0.4s; 400-patch map P(D) 0.0267); lost explicit 0.0593 analytic 0.0593 (diff +0.0000+-0.0000, +0.0s; 400-patch map P(D) 0.0594); mb explicit 0.0118 analytic 0.0118 (diff -0.0000+-0.0000, -0.5s; 400-patch map P(D) 0.0119)
+   [goal] theta_A=4.025' q_A=7.0: det explicit 0.9630 analytic 0.9630 (diff -0.0000+-0.0001, -0.1s; 400-patch map P(D) 0.9629); B2_10 explicit 0.0583 analytic 0.0583 (diff -0.0000+-0.0000, -0.6s; 400-patch map P(D) 0.0584); B3 explicit 0.0040 analytic 0.0040 (diff +0.0000+-0.0000, +1.4s; 400-patch map P(D) 0.0040); lost explicit 0.0186 analytic 0.0186 (diff +0.0000+-0.0000, +0.3s; 400-patch map P(D) 0.0187); mb explicit 0.0036 analytic 0.0036 (diff +0.0000+-0.0000, +0.6s; 400-patch map P(D) 0.0036)
+[v12] done 190s
+      190.18 real       222.14 user         1.45 sys
+          2908733440  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              187959  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  40  voluntary context switches
+               22572  involuntary context switches
+       2962704208932  instructions retired
+        710378054698  cycles elapsed
+          2853247744  peak memory footprint
+EXIT 0

@@ -1,0 +1,113 @@
+[v08] regenerating 400 patch catalogues; full-sky scale 1.03132
+   patch 0 [2s]
+   patch 100 [7s]
+   patch 200 [11s]
+   patch 300 [16s]
+
+(1) single-cluster detections, full sky (realised primaries of 40,000 deg^2 scaled by 1.031; noise marginalised)
+   [white   ] q>4:   131,745 +-   360 (build 132,124.8; -1.05 sig)  q>5:    85,576 +-   258 (build  85,912.3; -1.30 sig)  q>6:    61,385 +-   178 (build  61,629.5; -1.38 sig)  q>7:    46,425 +-   135 (build  46,574.5; -1.11 sig)
+   [baseline] q>4:   132,758 +-   315 (build 133,127.1; -1.17 sig)  q>5:    81,372 +-   217 (build  81,704.5; -1.53 sig)  q>6:    55,406 +-   152 (build  55,657.0; -1.65 sig)  q>7:    39,893 +-   115 (build  40,062.8; -1.48 sig)
+   [goal    ] q>4:   203,402 +-   427 (build 203,772.7; -0.87 sig)  q>5:   127,784 +-   326 (build 128,166.7; -1.17 sig)  q>6:    88,447 +-   241 (build  88,809.8; -1.51 sig)  q>7:    64,584 +-   184 (build  64,881.7; -1.62 sig)
+
+(2) fractions with the realised primaries (jackknife over 20 blocks of 20 patches = population noise)
+   [baseline] realised primaries q_A > 0.5: 2,334,279 full-sky equivalent (build H: 2,337,064)
+      q>4: realised H x MAP P(D)      : dN +0.0959+-0.0002 B2_10 +0.1874+-0.0002 B2_20 +0.1383+-0.0002 B3 +0.1427+-0.0002 lost +0.0605+-0.0001 mb +0.4225+-0.0009
+            realised H x BUILD no dom  : dN +0.0962 B2_10 +0.1880 B2_20 +0.1387 B3 +0.1430 lost +0.0606 mb +0.4238
+            realised H x BUILD dom     : dN +0.0132 B2_10 +0.1213 B2_20 +0.0680 B3 +0.0750 lost +0.0606 mb +0.0313
+            build H    x MAP P(D)      : dN +0.0957 B2_10 +0.1871 B2_20 +0.1380 B3 +0.1425 lost +0.0604 mb +0.4210
+      q>5: realised H x MAP P(D)      : dN +0.0906+-0.0003 B2_10 +0.1528+-0.0002 B2_20 +0.1149+-0.0002 B3 +0.1281+-0.0002 lost +0.0491+-0.0001 mb +0.4891+-0.0011
+            realised H x BUILD no dom  : dN +0.0910 B2_10 +0.1533 B2_20 +0.1153 B3 +0.1285 lost +0.0492 mb +0.4907
+            realised H x BUILD dom     : dN +0.0130 B2_10 +0.0880 B2_20 +0.0471 B3 +0.0624 lost +0.0491 mb +0.0224
+            build H    x MAP P(D)      : dN +0.0903 B2_10 +0.1524 B2_20 +0.1146 B3 +0.1277 lost +0.0490 mb +0.4867
+      q>6: realised H x MAP P(D)      : dN +0.0838+-0.0002 B2_10 +0.1307+-0.0002 B2_20 +0.1001+-0.0002 B3 +0.1163+-0.0002 lost +0.0423+-0.0001 mb +0.5447+-0.0014
+            realised H x BUILD no dom  : dN +0.0842 B2_10 +0.1312 B2_20 +0.1005 B3 +0.1167 lost +0.0424 mb +0.5463
+            realised H x BUILD dom     : dN +0.0116 B2_10 +0.0688 B2_20 +0.0360 B3 +0.0540 lost +0.0424 mb +0.0174
+            build H    x MAP P(D)      : dN +0.0834 B2_10 +0.1305 B2_20 +0.0998 B3 +0.1161 lost +0.0423 mb +0.5417
+      q>7: realised H x MAP P(D)      : dN +0.0778+-0.0003 B2_10 +0.1153+-0.0003 B2_20 +0.0897+-0.0002 B3 +0.1072+-0.0003 lost +0.0378+-0.0002 mb +0.5940+-0.0016
+            realised H x BUILD no dom  : dN +0.0783 B2_10 +0.1158 B2_20 +0.0901 B3 +0.1077 lost +0.0378 mb +0.5954
+            realised H x BUILD dom     : dN +0.0104 B2_10 +0.0563 B2_20 +0.0290 B3 +0.0481 lost +0.0378 mb +0.0143
+            build H    x MAP P(D)      : dN +0.0776 B2_10 +0.1151 B2_20 +0.0895 B3 +0.1071 lost +0.0377 mb +0.5907
+      q>5 Delta N/N in z bins [np.float64(0.01), np.float64(0.1), np.float64(0.25), np.float64(0.5), np.float64(1.0), np.float64(1.5), np.float64(2.0), np.float64(3.0)] (realised primaries):
+          x MAP P(D) (no dom): +7.39+-0.27% +6.05+-0.06% +6.31+-0.04% +8.49+-0.04% +13.76+-0.11% +27.47+-0.58% +54.19+-2.02%
+          x BUILD no dom     : +7.42% +6.07% +6.34% +8.53% +13.82% +27.60% +54.47%
+          x BUILD dom        : +0.82% +0.75% +0.94% +1.30% +1.93% +3.35% +4.61%
+          N_single per z bin (q>5): 763 7,578 23,160 35,891 11,565 2,059 356
+   [goal] realised primaries q_A > 0.5: 3,277,767 full-sky equivalent (build H: 3,282,399)
+      q>4: realised H x MAP P(D)      : dN +0.1142+-0.0003 B2_10 +0.2172+-0.0003 B2_20 +0.1630+-0.0002 B3 +0.1623+-0.0003 lost +0.0667+-0.0001 mb +0.5201+-0.0010
+            realised H x BUILD no dom  : dN +0.1145 B2_10 +0.2178 B2_20 +0.1633 B3 +0.1626 lost +0.0667 mb +0.5218
+            realised H x BUILD dom     : dN +0.0136 B2_10 +0.1397 B2_20 +0.0800 B3 +0.0821 lost +0.0667 mb +0.0368
+            build H    x MAP P(D)      : dN +0.1142 B2_10 +0.2170 B2_20 +0.1628 B3 +0.1622 lost +0.0665 mb +0.5189
+      q>5: realised H x MAP P(D)      : dN +0.1090+-0.0003 B2_10 +0.1805+-0.0002 B2_20 +0.1374+-0.0002 B3 +0.1474+-0.0003 lost +0.0545+-0.0001 mb +0.6041+-0.0013
+            realised H x BUILD no dom  : dN +0.1094 B2_10 +0.1810 B2_20 +0.1378 B3 +0.1477 lost +0.0545 mb +0.6063
+            realised H x BUILD dom     : dN +0.0139 B2_10 +0.1038 B2_20 +0.0566 B3 +0.0689 lost +0.0545 mb +0.0267
+            build H    x MAP P(D)      : dN +0.1087 B2_10 +0.1802 B2_20 +0.1372 B3 +0.1471 lost +0.0543 mb +0.6019
+      q>6: realised H x MAP P(D)      : dN +0.1017+-0.0003 B2_10 +0.1564+-0.0002 B2_20 +0.1209+-0.0002 B3 +0.1351+-0.0003 lost +0.0471+-0.0001 mb +0.6753+-0.0016
+            realised H x BUILD no dom  : dN +0.1022 B2_10 +0.1569 B2_20 +0.1213 B3 +0.1355 lost +0.0472 mb +0.6779
+            realised H x BUILD dom     : dN +0.0128 B2_10 +0.0824 B2_20 +0.0437 B3 +0.0601 lost +0.0472 mb +0.0210
+            build H    x MAP P(D)      : dN +0.1013 B2_10 +0.1560 B2_20 +0.1206 B3 +0.1347 lost +0.0470 mb +0.6721
+      q>7: realised H x MAP P(D)      : dN +0.0953+-0.0003 B2_10 +0.1391+-0.0002 B2_20 +0.1091+-0.0002 B3 +0.1253+-0.0003 lost +0.0420+-0.0001 mb +0.7390+-0.0019
+            realised H x BUILD no dom  : dN +0.0958 B2_10 +0.1396 B2_20 +0.1096 B3 +0.1258 lost +0.0420 mb +0.7417
+            realised H x BUILD dom     : dN +0.0117 B2_10 +0.0680 B2_20 +0.0355 B3 +0.0537 lost +0.0420 mb +0.0173
+            build H    x MAP P(D)      : dN +0.0949 B2_10 +0.1388 B2_20 +0.1088 B3 +0.1250 lost +0.0420 mb +0.7351
+      q>5 Delta N/N in z bins [np.float64(0.01), np.float64(0.1), np.float64(0.25), np.float64(0.5), np.float64(1.0), np.float64(1.5), np.float64(2.0), np.float64(3.0)] (realised primaries):
+          x MAP P(D) (no dom): +9.11+-0.32% +7.39+-0.07% +7.51+-0.04% +9.83+-0.04% +15.58+-0.10% +29.15+-0.42% +58.52+-1.93%
+          x BUILD no dom     : +9.14% +7.42% +7.54% +9.87% +15.64% +29.27% +58.77%
+          x BUILD dom        : +0.77% +0.78% +0.95% +1.34% +2.03% +3.41% +5.09%
+          N_single per z bin (q>5): 989 10,364 33,648 57,153 20,541 4,275 813
+   [white] realised primaries q_A > 0.5: 1,950,472 full-sky equivalent (build H: 1,951,781)
+      q>4: realised H x MAP P(D)      : dN +0.1993+-0.0007 B2_10 +0.3445+-0.0004 B2_20 +0.2958+-0.0004 B3 +0.2576+-0.0005 lost +0.1097+-0.0002 mb +1.2587+-0.0026
+            realised H x BUILD no dom  : dN +0.1982 B2_10 +0.3440 B2_20 +0.2952 B3 +0.2572 lost +0.1100 mb +1.2515
+            realised H x BUILD dom     : dN -0.0351 B2_10 +0.1855 B2_20 +0.1249 B3 +0.0877 lost +0.1100 mb +0.0372
+            build H    x MAP P(D)      : dN +0.1989 B2_10 +0.3441 B2_20 +0.2953 B3 +0.2572 lost +0.1095 mb +1.2529
+      q>5: realised H x MAP P(D)      : dN +0.2196+-0.0008 B2_10 +0.3250+-0.0004 B2_20 +0.2788+-0.0004 B3 +0.2542+-0.0005 lost +0.0905+-0.0002 mb +1.5337+-0.0035
+            realised H x BUILD no dom  : dN +0.2184 B2_10 +0.3243 B2_20 +0.2781 B3 +0.2537 lost +0.0907 mb +1.5233
+            realised H x BUILD dom     : dN -0.0164 B2_10 +0.1631 B2_20 +0.1058 B3 +0.0817 lost +0.0907 mb +0.0340
+            build H    x MAP P(D)      : dN +0.2187 B2_10 +0.3245 B2_20 +0.2782 B3 +0.2536 lost +0.0904 mb +1.5254
+      q>6: realised H x MAP P(D)      : dN +0.2238+-0.0008 B2_10 +0.3076+-0.0004 B2_20 +0.2638+-0.0004 B3 +0.2472+-0.0005 lost +0.0788+-0.0003 mb +1.7787+-0.0041
+            realised H x BUILD no dom  : dN +0.2225 B2_10 +0.3068 B2_20 +0.2631 B3 +0.2466 lost +0.0790 mb +1.7645
+            realised H x BUILD dom     : dN -0.0082 B2_10 +0.1456 B2_20 +0.0917 B3 +0.0758 lost +0.0790 mb +0.0304
+            build H    x MAP P(D)      : dN +0.2228 B2_10 +0.3072 B2_20 +0.2634 B3 +0.2468 lost +0.0790 mb +1.7690
+      q>7: realised H x MAP P(D)      : dN +0.2229+-0.0007 B2_10 +0.2929+-0.0005 B2_20 +0.2515+-0.0005 B3 +0.2403+-0.0006 lost +0.0709+-0.0004 mb +2.0062+-0.0049
+            realised H x BUILD no dom  : dN +0.2213 B2_10 +0.2920 B2_20 +0.2505 B3 +0.2395 lost +0.0711 mb +1.9877
+            realised H x BUILD dom     : dN -0.0040 B2_10 +0.1318 B2_20 +0.0810 B3 +0.0709 lost +0.0711 mb +0.0274
+            build H    x MAP P(D)      : dN +0.2225 B2_10 +0.2927 B2_20 +0.2512 B3 +0.2401 lost +0.0710 mb +1.9957
+      q>5 Delta N/N in z bins [np.float64(0.01), np.float64(0.1), np.float64(0.25), np.float64(0.5), np.float64(1.0), np.float64(1.5), np.float64(2.0), np.float64(3.0)] (realised primaries):
+          x MAP P(D) (no dom): +14.67+-0.38% +14.51+-0.13% +16.14+-0.11% +22.76+-0.12% +38.90+-0.35% +83.01+-2.20% +165.81+-7.84%
+          x BUILD no dom     : +14.43% +14.37% +16.03% +22.66% +38.77% +82.79% +165.37%
+          x BUILD dom        : -5.31% -3.10% -1.96% -1.02% +0.04% +1.98% +3.28%
+          N_single per z bin (q>5): 3,344 13,101 26,819 32,272 8,552 1,288 200
+   [baseline_sub] realised primaries q_A > 0.5: 2,334,279 full-sky equivalent (build H: 2,337,064)
+      q>4: realised H x MAP P(D)      : dN +0.0519+-0.0001 B2_10 +0.1383+-0.0002 B2_20 +0.0901+-0.0001 B3 +0.0991+-0.0002 lost +0.0523+-0.0001 mb +0.1193+-0.0002
+            realised H x BUILD no dom  : dN +0.0520 B2_10 +0.1386 B2_20 +0.0903 B3 +0.0992 lost +0.0524 mb +0.1196
+            realised H x BUILD dom     : dN +0.0180 B2_10 +0.1098 B2_20 +0.0599 B3 +0.0697 lost +0.0524 mb +0.0278
+            build H    x MAP P(D)      : dN +0.0518 B2_10 +0.1381 B2_20 +0.0900 B3 +0.0989 lost +0.0522 mb +0.1190
+      q>5: realised H x MAP P(D)      : dN +0.0335+-0.0001 B2_10 +0.0930+-0.0001 B2_20 +0.0555+-0.0001 B3 +0.0730+-0.0001 lost +0.0419+-0.0001 mb +0.0700+-0.0002
+            realised H x BUILD no dom  : dN +0.0336 B2_10 +0.0931 B2_20 +0.0556 B3 +0.0731 lost +0.0419 mb +0.0702
+            realised H x BUILD dom     : dN +0.0159 B2_10 +0.0773 B2_20 +0.0392 B3 +0.0570 lost +0.0419 mb +0.0188
+            build H    x MAP P(D)      : dN +0.0333 B2_10 +0.0927 B2_20 +0.0553 B3 +0.0728 lost +0.0418 mb +0.0697
+      q>6: realised H x MAP P(D)      : dN +0.0204+-0.0001 B2_10 +0.0649+-0.0001 B2_20 +0.0345+-0.0001 B3 +0.0551+-0.0001 lost +0.0358+-0.0001 mb +0.0341+-0.0001
+            realised H x BUILD no dom  : dN +0.0204 B2_10 +0.0651 B2_20 +0.0346 B3 +0.0551 lost +0.0358 mb +0.0342
+            realised H x BUILD dom     : dN +0.0131 B2_10 +0.0582 B2_20 +0.0276 B3 +0.0483 lost +0.0358 mb +0.0135
+            build H    x MAP P(D)      : dN +0.0203 B2_10 +0.0648 B2_20 +0.0345 B3 +0.0550 lost +0.0358 mb +0.0340
+      q>7: realised H x MAP P(D)      : dN +0.0131+-0.0001 B2_10 +0.0479+-0.0001 B2_20 +0.0226+-0.0001 B3 +0.0443+-0.0002 lost +0.0318+-0.0002 mb +0.0165+-0.0000
+            realised H x BUILD no dom  : dN +0.0132 B2_10 +0.0480 B2_20 +0.0227 B3 +0.0444 lost +0.0318 mb +0.0165
+            realised H x BUILD dom     : dN +0.0106 B2_10 +0.0455 B2_20 +0.0201 B3 +0.0419 lost +0.0318 mb +0.0101
+            build H    x MAP P(D)      : dN +0.0131 B2_10 +0.0479 B2_20 +0.0226 B3 +0.0443 lost +0.0318 mb +0.0165
+   [goal_sub] realised primaries q_A > 0.5: 3,277,767 full-sky equivalent (build H: 3,282,399)
+      q>4: realised H x MAP P(D)      : dN +0.0592+-0.0002 B2_10 +0.1567+-0.0002 B2_20 +0.1036+-0.0002 B3 +0.1089+-0.0002 lost +0.0562+-0.0001 mb +0.1381+-0.0003
+            realised H x BUILD no dom  : dN +0.0592 B2_10 +0.1570 B2_20 +0.1037 B3 +0.1090 lost +0.0562 mb +0.1384
+            realised H x BUILD dom     : dN +0.0198 B2_10 +0.1243 B2_20 +0.0691 B3 +0.0753 lost +0.0562 mb +0.0319
+            build H    x MAP P(D)      : dN +0.0591 B2_10 +0.1565 B2_20 +0.1034 B3 +0.1087 lost +0.0561 mb +0.1379
+      q>5: realised H x MAP P(D)      : dN +0.0383+-0.0001 B2_10 +0.1074+-0.0001 B2_20 +0.0648+-0.0001 B3 +0.0804+-0.0001 lost +0.0452+-0.0001 mb +0.0815+-0.0002
+            realised H x BUILD no dom  : dN +0.0384 B2_10 +0.1076 B2_20 +0.0649 B3 +0.0805 lost +0.0452 mb +0.0818
+            realised H x BUILD dom     : dN +0.0179 B2_10 +0.0895 B2_20 +0.0460 B3 +0.0621 lost +0.0452 mb +0.0218
+            build H    x MAP P(D)      : dN +0.0382 B2_10 +0.1072 B2_20 +0.0646 B3 +0.0802 lost +0.0451 mb +0.0813
+      q>6: realised H x MAP P(D)      : dN +0.0234+-0.0001 B2_10 +0.0761+-0.0001 B2_20 +0.0409+-0.0001 B3 +0.0607+-0.0001 lost +0.0387+-0.0001 mb +0.0402+-0.0001
+            realised H x BUILD no dom  : dN +0.0235 B2_10 +0.0762 B2_20 +0.0410 B3 +0.0608 lost +0.0388 mb +0.0404
+            realised H x BUILD dom     : dN +0.0148 B2_10 +0.0683 B2_20 +0.0328 B3 +0.0528 lost +0.0388 mb +0.0158
+            build H    x MAP P(D)      : dN +0.0233 B2_10 +0.0759 B2_20 +0.0408 B3 +0.0605 lost +0.0387 mb +0.0401
+      q>7: realised H x MAP P(D)      : dN +0.0152+-0.0001 B2_10 +0.0566+-0.0001 B2_20 +0.0270+-0.0001 B3 +0.0487+-0.0001 lost +0.0343+-0.0001 mb +0.0197+-0.0000
+            realised H x BUILD no dom  : dN +0.0152 B2_10 +0.0567 B2_20 +0.0271 B3 +0.0488 lost +0.0343 mb +0.0197
+            realised H x BUILD dom     : dN +0.0121 B2_10 +0.0538 B2_20 +0.0241 B3 +0.0459 lost +0.0343 mb +0.0119
+            build H    x MAP P(D)      : dN +0.0151 B2_10 +0.0565 B2_20 +0.0270 B3 +0.0486 lost +0.0343 mb +0.0196
+[v08] done 20s

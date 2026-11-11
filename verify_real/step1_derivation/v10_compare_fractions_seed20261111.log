@@ -1,0 +1,67 @@
+
+=== [baseline] neighbours all: mine (mean over 1 sky) vs builder FFT P(D) ===
+  q>4: N_single 131,410 (131,571, -0.12%); N_det_b 133,271 (133,299, -0.02%); B2_10 12.22 (12.11); B2_20 6.92 (6.79); B2neg_10 3.73 (3.69); boosted 7.55 (7.48); lost 6.02 (6.04); sat 0.23 (0.22); meanbias 3.20 (3.13); net +1.42% (+1.31%)
+  q>5: N_single 81,581 (81,690, -0.13%); N_det_b 82,716 (82,741, -0.03%); B2_10 8.89 (8.79); B2_20 4.83 (4.70); B2neg_10 2.12 (2.06); boosted 6.30 (6.22); lost 4.89 (4.91); sat 0.11 (0.11); meanbias 2.30 (2.23); net +1.39% (+1.29%)
+  q>6: N_single 55,575 (55,659, -0.15%); N_det_b 56,249 (56,301, -0.09%); B2_10 6.97 (6.88); B2_20 3.71 (3.59); B2neg_10 1.38 (1.32); boosted 5.48 (5.40); lost 4.26 (4.24); sat 0.07 (0.07); meanbias 1.81 (1.74); net +1.21% (+1.15%)
+  q>7: N_single 39,968 (40,064, -0.24%); N_det_b 40,396 (40,481, -0.21%); B2_10 5.72 (5.64); B2_20 3.00 (2.90); B2neg_10 0.97 (0.91); boosted 4.91 (4.82); lost 3.85 (3.78); sat 0.04 (0.05); meanbias 1.51 (1.43); net +1.07% (+1.04%)
+  q>5 Delta N/N per z bin [0.01, 0.1, 0.25, 0.5, 1.0, 1.5, 2.0, 3.0]: mine +0.4 +1.0 +1.0 +1.4 +1.9 +3.3 +6.0   builder claim +0.6 +0.9 +1.0 +1.3 +2.0 +3.1 +5.5
+  Gaussian-equivalent (all) q>4: (N_det_b - N_gauss)/N_gauss = -7.20%
+  Gaussian-equivalent (all) q>5: (N_det_b - N_gauss)/N_gauss = -3.64%
+  Gaussian-equivalent (all) q>6: (N_det_b - N_gauss)/N_gauss = -2.12%
+  Gaussian-equivalent (all) q>7: (N_det_b - N_gauss)/N_gauss = -1.41%
+
+=== [baseline] neighbours 1e14: mine (mean over 1 sky) vs builder FFT P(D) ===
+  q>4: N_single 131,410 (131,571, -0.12%); N_det_b 131,358 (131,468, -0.08%); B2_10 4.81 (4.79); B2_20 3.45 (3.39); B2neg_10 2.38 (2.38); boosted 3.33 (3.33); lost 3.16 (3.20); sat 0.21 (0.21); meanbias 1.53 (1.49); net -0.04% (-0.08%)
+  q>5: N_single 81,581 (81,690, -0.13%); N_det_b 81,944 (81,992, -0.06%); B2_10 4.35 (4.29); B2_20 3.17 (3.08); B2neg_10 1.57 (1.53); boosted 3.13 (3.10); lost 2.59 (2.63); sat 0.11 (0.11); meanbias 1.40 (1.36); net +0.44% (+0.37%)
+  q>6: N_single 55,575 (55,659, -0.15%); N_det_b 55,921 (55,954, -0.06%); B2_10 4.03 (3.94); B2_20 2.85 (2.76); B2neg_10 1.11 (1.05); boosted 2.95 (2.88); lost 2.28 (2.29); sat 0.07 (0.07); meanbias 1.26 (1.20); net +0.62% (+0.53%)
+  q>7: N_single 39,968 (40,064, -0.24%); N_det_b 40,241 (40,298, -0.14%); B2_10 3.73 (3.63); B2_20 2.53 (2.44); B2neg_10 0.82 (0.76); boosted 2.78 (2.67); lost 2.07 (2.06); sat 0.04 (0.05); meanbias 1.13 (1.05); net +0.68% (+0.58%)
+
+=== [baseline] neighbours sub: mine (mean over 1 sky) vs builder FFT P(D) ===
+  q>4: N_single 131,410 (131,571, -0.12%); N_det_b 133,876 (133,932, -0.04%); B2_10 11.04 (10.96); B2_20 6.10 (5.98); B2neg_10 2.73 (2.73); boosted 7.03 (6.96); lost 5.22 (5.23); sat 0.06 (0.06); meanbias 2.82 (2.77); net +1.88% (+1.79%)
+  q>5: N_single 81,581 (81,690, -0.13%); N_det_b 82,941 (82,984, -0.05%); B2_10 7.75 (7.72); B2_20 4.00 (3.91); B2neg_10 1.16 (1.16); boosted 5.76 (5.69); lost 4.18 (4.19); sat 0.01 (0.01); meanbias 1.91 (1.87); net +1.67% (+1.58%)
+  q>6: N_single 55,575 (55,659, -0.15%); N_det_b 56,316 (56,381, -0.12%); B2_10 5.78 (5.82); B2_20 2.80 (2.76); B2neg_10 0.54 (0.53); boosted 4.86 (4.83); lost 3.59 (3.59); sat 0.00 (0.00); meanbias 1.37 (1.35); net +1.33% (+1.30%)
+  q>7: N_single 39,968 (40,064, -0.24%); N_det_b 40,384 (40,489, -0.26%); B2_10 4.48 (4.55); B2_20 2.02 (2.02); B2neg_10 0.25 (0.25); boosted 4.21 (4.20); lost 3.21 (3.18); sat 0.00 (0.00); meanbias 1.03 (1.01); net +1.04% (+1.06%)
+  Gaussian-equivalent (sub) q>4: (N_det_b - N_gauss)/N_gauss = -1.30%
+  Gaussian-equivalent (sub) q>5: (N_det_b - N_gauss)/N_gauss = -0.14%
+  Gaussian-equivalent (sub) q>6: (N_det_b - N_gauss)/N_gauss = +0.13%
+  Gaussian-equivalent (sub) q>7: (N_det_b - N_gauss)/N_gauss = +0.14%
+
+=== [goal] neighbours all: mine (mean over 1 sky) vs builder FFT P(D) ===
+  q>4: N_single 201,826 (202,092, -0.13%); N_det_b 204,715 (204,828, -0.06%); B2_10 14.09 (13.96); B2_20 8.10 (7.99); B2neg_10 4.62 (4.62); boosted 8.25 (8.19); lost 6.64 (6.66); sat 0.29 (0.29); meanbias 3.75 (3.68); net +1.43% (+1.35%)
+  q>5: N_single 127,932 (128,152, -0.17%); N_det_b 129,851 (129,923, -0.06%); B2_10 10.52 (10.37); B2_20 5.79 (5.65); B2neg_10 2.78 (2.77); boosted 6.95 (6.87); lost 5.41 (5.44); sat 0.15 (0.15); meanbias 2.73 (2.66); net +1.50% (+1.38%)
+  q>6: N_single 88,658 (88,813, -0.17%); N_det_b 89,881 (89,935, -0.06%); B2_10 8.35 (8.23); B2_20 4.49 (4.36); B2neg_10 1.89 (1.85); boosted 6.07 (5.99); lost 4.68 (4.71); sat 0.09 (0.09); meanbias 2.15 (2.09); net +1.38% (+1.26%)
+  q>7: N_single 64,792 (64,884, -0.14%); N_det_b 65,591 (65,633, -0.06%); B2_10 6.88 (6.80); B2_20 3.66 (3.54); B2neg_10 1.38 (1.32); boosted 5.43 (5.37); lost 4.20 (4.21); sat 0.06 (0.06); meanbias 1.78 (1.72); net +1.23% (+1.15%)
+  q>5 Delta N/N per z bin [0.01, 0.1, 0.25, 0.5, 1.0, 1.5, 2.0, 3.0]: mine +0.8 +1.0 +1.0 +1.5 +2.1 +3.1 +5.7   builder claim +0.6 +0.9 +1.0 +1.3 +2.2 +3.4 +4.8
+  Gaussian-equivalent (all) q>4: (N_det_b - N_gauss)/N_gauss = -9.89%
+  Gaussian-equivalent (all) q>5: (N_det_b - N_gauss)/N_gauss = -5.22%
+  Gaussian-equivalent (all) q>6: (N_det_b - N_gauss)/N_gauss = -3.05%
+  Gaussian-equivalent (all) q>7: (N_det_b - N_gauss)/N_gauss = -2.02%
+
+=== [goal] neighbours 1e14: mine (mean over 1 sky) vs builder FFT P(D) ===
+  q>4: N_single 201,826 (202,092, -0.13%); N_det_b 201,064 (201,290, -0.11%); B2_10 4.64 (4.62); B2_20 3.25 (3.21); B2neg_10 2.76 (2.78); boosted 3.19 (3.20); lost 3.29 (3.32); sat 0.27 (0.27); meanbias 1.46 (1.43); net -0.38% (-0.40%)
+  q>5: N_single 127,932 (128,152, -0.17%); N_det_b 128,147 (128,309, -0.13%); B2_10 4.18 (4.14); B2_20 3.10 (3.03); B2neg_10 1.94 (1.95); boosted 3.02 (3.02); lost 2.71 (2.75); sat 0.15 (0.15); meanbias 1.39 (1.36); net +0.17% (+0.12%)
+  q>6: N_single 88,658 (88,813, -0.17%); N_det_b 89,067 (89,148, -0.09%); B2_10 3.95 (3.89); B2_20 2.93 (2.84); B2neg_10 1.42 (1.41); boosted 2.90 (2.87); lost 2.36 (2.41); sat 0.09 (0.09); meanbias 1.30 (1.27); net +0.46% (+0.38%)
+  q>7: N_single 64,792 (64,884, -0.14%); N_det_b 65,173 (65,207, -0.05%); B2_10 3.73 (3.67); B2_20 2.72 (2.63); B2neg_10 1.08 (1.06); boosted 2.77 (2.72); lost 2.14 (2.17); sat 0.06 (0.06); meanbias 1.20 (1.15); net +0.59% (+0.50%)
+
+=== [goal] neighbours sub: mine (mean over 1 sky) vs builder FFT P(D) ===
+  q>4: N_single 201,826 (202,092, -0.13%); N_det_b 205,943 (206,089, -0.07%); B2_10 12.51 (12.42); B2_20 7.00 (6.90); B2neg_10 3.36 (3.37); boosted 7.57 (7.51); lost 5.62 (5.61); sat 0.07 (0.07); meanbias 3.23 (3.18); net +2.04% (+1.98%)
+  q>5: N_single 127,932 (128,152, -0.17%); N_det_b 130,323 (130,432, -0.08%); B2_10 9.03 (8.94); B2_20 4.70 (4.59); B2neg_10 1.55 (1.55); boosted 6.28 (6.19); lost 4.52 (4.51); sat 0.01 (0.01); meanbias 2.22 (2.18); net +1.87% (+1.78%)
+  q>6: N_single 88,658 (88,813, -0.17%); N_det_b 90,024 (90,119, -0.11%); B2_10 6.85 (6.82); B2_20 3.34 (3.27); B2neg_10 0.75 (0.76); boosted 5.33 (5.26); lost 3.87 (3.87); sat 0.00 (0.00); meanbias 1.59 (1.58); net +1.54% (+1.47%)
+  q>7: N_single 64,792 (64,884, -0.14%); N_det_b 65,585 (65,666, -0.12%); B2_10 5.32 (5.38); B2_20 2.41 (2.41); B2neg_10 0.37 (0.37); boosted 4.60 (4.58); lost 3.43 (3.43); sat 0.00 (0.00); meanbias 1.17 (1.18); net +1.22% (+1.21%)
+  Gaussian-equivalent (sub) q>4: (N_det_b - N_gauss)/N_gauss = -1.61%
+  Gaussian-equivalent (sub) q>5: (N_det_b - N_gauss)/N_gauss = -0.22%
+  Gaussian-equivalent (sub) q>6: (N_det_b - N_gauss)/N_gauss = +0.15%
+  Gaussian-equivalent (sub) q>7: (N_det_b - N_gauss)/N_gauss = +0.20%
+
+=== [white] neighbours all: mine (mean over 1 sky) vs builder FFT P(D) ===
+  q>4: N_single 130,739 (130,656, +0.06%); N_det_b 126,526 (126,151, +0.30%); B2_10 18.43 (18.48); B2_20 12.48 (12.43); B2neg_10 11.21 (11.47); boosted 8.73 (8.73); lost 10.76 (10.93); sat 0.90 (0.95); meanbias 3.74 (3.69); net -3.22% (-3.45%)
+  q>5: N_single 85,968 (85,898, +0.08%); N_det_b 84,697 (84,506, +0.23%); B2_10 16.21 (16.24); B2_20 10.62 (10.52); B2neg_10 5.53 (5.71); boosted 8.14 (8.12); lost 8.95 (9.02); sat 0.55 (0.59); meanbias 3.43 (3.38); net -1.48% (-1.62%)
+  q>6: N_single 61,627 (61,630, -0.01%); N_det_b 61,194 (61,126, +0.11%); B2_10 14.51 (14.51); B2_20 9.28 (9.12); B2neg_10 2.74 (2.89); boosted 7.61 (7.56); lost 7.86 (7.88); sat 0.40 (0.43); meanbias 3.11 (3.02); net -0.70% (-0.82%)
+  q>7: N_single 46,484 (46,575, -0.20%); N_det_b 46,373 (46,401, -0.06%); B2_10 13.13 (13.13); B2_20 8.25 (8.06); B2neg_10 1.44 (1.57); boosted 7.15 (7.08); lost 7.07 (7.09); sat 0.31 (0.34); meanbias 2.83 (2.73); net -0.24% (-0.37%)
+  q>5 Delta N/N per z bin [0.01, 0.1, 0.25, 0.5, 1.0, 1.5, 2.0, 3.0]: mine -5.3 -3.0 -1.9 -0.8 +0.4 +1.6 +4.4   builder claim -4.9 -3.0 -1.9 -0.8 +0.1 +1.5 +5.0
+
+=== [white] neighbours 1e14: mine (mean over 1 sky) vs builder FFT P(D) ===
+  q>4: N_single 130,739 (130,656, +0.06%); N_det_b 124,821 (124,458, +0.29%); B2_10 13.50 (13.58); B2_20 9.63 (9.61); B2neg_10 4.89 (5.21); boosted 6.00 (6.05); lost 9.38 (9.58); sat 0.88 (0.92); meanbias 1.91 (1.86); net -4.53% (-4.74%)
+  q>5: N_single 85,968 (85,898, +0.08%); N_det_b 83,917 (83,683, +0.28%); B2_10 12.74 (12.77); B2_20 8.85 (8.76); B2neg_10 1.68 (1.79); boosted 6.06 (6.07); lost 7.75 (7.90); sat 0.55 (0.59); meanbias 2.30 (2.23); net -2.39% (-2.58%)
+  q>6: N_single 61,627 (61,630, -0.01%); N_det_b 60,797 (60,686, +0.18%); B2_10 11.95 (11.91); B2_20 8.08 (7.92); B2neg_10 0.81 (0.85); boosted 5.94 (5.89); lost 6.81 (6.90); sat 0.40 (0.43); meanbias 2.32 (2.23); net -1.35% (-1.53%)
+  q>7: N_single 46,484 (46,575, -0.20%); N_det_b 46,143 (46,141, +0.00%); B2_10 11.17 (11.11); B2_20 7.38 (7.19); B2neg_10 0.48 (0.50); boosted 5.76 (5.68); lost 6.15 (6.22); sat 0.31 (0.34); meanbias 2.23 (2.14); net -0.73% (-0.93%)

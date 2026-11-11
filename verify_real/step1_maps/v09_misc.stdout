@@ -1,0 +1,31 @@
+(1) tSZ SED g(nu) = Delta T / (T_CMB y) at 27: -1.9625, 39: -1.9220, 93: -1.5718, 145: -1.0158, 225: +0.1156, 280: +1.0022; null at 217.51 GHz
+    claim: -1.963, -1.922, -1.572, -1.016, +0.116, +1.002; null 217.51 GHz
+(2) [baseline] OUR 1/N_y at l = [1, 2, 5, 10, 20, 50, 100]: [2.050e+08 2.120e+09 4.102e+10 3.034e+11 1.567e+12 8.097e+12 2.592e+13] sr^-1; log-slope l=1..5: 3.29  (-> 0 as l -> 0: no response to a uniform y)
+(2) [goal] OUR 1/N_y at l = [1, 2, 5, 10, 20, 50, 100]: [2.050e+08 2.120e+09 4.102e+10 3.034e+11 1.567e+12 8.097e+12 2.592e+13] sr^-1; log-slope l=1..5: 3.29  (-> 0 as l -> 0: no response to a uniform y)
+    old white filter, theta500 =  1.0': DC response (Y_hat per unit uniform y) =     5.87 arcmin^2 (sigma^2 RATIO / N_w:     5.87; x RATIO = response to a uniform y of the template normalisation:    10.54)
+    old white filter, theta500 =  4.0': DC response (Y_hat per unit uniform y) =    38.58 arcmin^2 (sigma^2 RATIO / N_w:    38.58; x RATIO = response to a uniform y of the template normalisation:    69.31)
+    old white filter, theta500 = 16.0': DC response (Y_hat per unit uniform y) =   521.46 arcmin^2 (sigma^2 RATIO / N_w:   521.45; x RATIO = response to a uniform y of the template normalisation:   936.76)
+    [baseline] build MMF kernel at l = 0 on the grid: inv_Ny(0) = 0.0e+00 -> DC response 0
+    [goal] build MMF kernel at l = 0 on the grid: inv_Ny(0) = 0.0e+00 -> DC response 0
+(3) tSZ power of the painted halo skies (60 patches = 6000 deg^2): 1e12 l(l+1)C_l^yy/2pi at l=3000: 1.111 +- 0.022 (claim 1.128); at l=1000: 0.765 +- 0.047
+    D_3000 at 145 GHz = 8.52 +- 0.17 uK^2 (claim 8.65); at 150 GHz = 7.50 uK^2 (claim 7.62); SPT (Reichardt+21) 3.42 +- 0.54 uK^2 at 143 GHz
+[v09] done 64s
+       64.56 real        65.27 user         0.47 sys
+           845840384  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               72357  page reclaims
+                  86  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 440  voluntary context switches
+                2075  involuntary context switches
+        720147357130  instructions retired
+        209689441410  cycles elapsed
+           789433152  peak memory footprint
+EXIT 0

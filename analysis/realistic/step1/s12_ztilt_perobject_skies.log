@@ -1,0 +1,97 @@
+## seed 41001 threads 3 18:39:46
+   [baseline] z >= 2.0, q > 0.5: 80,336 primaries, mean pairs 15,023, 27s; rss 3.06 GB
+   [goal] z >= 2.0, q > 0.5: 141,459 primaries, mean pairs 14,998, 47s; rss 3.06 GB
+[sky 41001] N = 29,306,163; saved; total 90s; peak rss 3.06 GB
+       90.22 real       234.67 user         0.83 sys
+          3056222208  maximum resident set size
+       2419115162569  instructions retired
+          3000851520  peak memory footprint
+## seed 41002 threads 3 18:41:17
+   [baseline] z >= 2.0, q > 0.5: 80,577 primaries, mean pairs 15,018, 27s; rss 3.00 GB
+   [goal] z >= 2.0, q > 0.5: 141,524 primaries, mean pairs 14,994, 46s; rss 3.00 GB
+[sky 41002] N = 29,299,159; saved; total 90s; peak rss 3.00 GB
+       90.14 real       234.23 user         0.83 sys
+          2998484992  maximum resident set size
+       2422003349007  instructions retired
+          2943081408  peak memory footprint
+## seed 41003 threads 3 18:42:47
+   [baseline] z >= 2.0, q > 0.5: 80,617 primaries, mean pairs 15,017, 26s; rss 3.00 GB
+   [goal] z >= 2.0, q > 0.5: 141,754 primaries, mean pairs 14,992, 46s; rss 3.00 GB
+[sky 41003] N = 29,294,506; saved; total 90s; peak rss 3.00 GB
+       90.21 real       234.43 user         0.81 sys
+          2995814400  maximum resident set size
+       2424722328970  instructions retired
+          2940410816  peak memory footprint
+## seed 41004 threads 3 18:44:17
+   [baseline] z >= 2.0, q > 0.5: 80,448 primaries, mean pairs 15,013, 26s; rss 3.00 GB
+   [goal] z >= 2.0, q > 0.5: 141,463 primaries, mean pairs 14,988, 46s; rss 3.00 GB
+[sky 41004] N = 29,286,918; saved; total 89s; peak rss 3.00 GB
+       90.02 real       234.12 user         0.80 sys
+          2997092352  maximum resident set size
+       2418316824869  instructions retired
+          2941688768  peak memory footprint
+## seed 41005 threads 3 18:45:47
+   [baseline] z >= 2.0, q > 0.5: 80,919 primaries, mean pairs 15,021, 27s; rss 3.00 GB
+   [goal] z >= 2.0, q > 0.5: 141,634 primaries, mean pairs 14,997, 46s; rss 3.00 GB
+[sky 41005] N = 29,303,706; saved; total 90s; peak rss 3.00 GB
+       90.12 real       234.47 user         0.82 sys
+          2996797440  maximum resident set size
+       2427097212582  instructions retired
+          2941393856  peak memory footprint
+## seed 41006 threads 3 18:47:17
+   [baseline] z >= 2.0, q > 0.5: 80,443 primaries, mean pairs 15,019, 26s; rss 3.00 GB
+   [goal] z >= 2.0, q > 0.5: 141,375 primaries, mean pairs 14,993, 46s; rss 3.00 GB
+[sky 41006] N = 29,297,706; saved; total 89s; peak rss 3.00 GB
+       89.81 real       233.54 user         0.82 sys
+          2997272576  maximum resident set size
+       2418635025193  instructions retired
+          2941868992  peak memory footprint
+## seed 41007 threads 3 18:48:47
+   [baseline] z >= 2.0, q > 0.5: 80,551 primaries, mean pairs 15,018, 26s; rss 3.00 GB
+   [goal] z >= 2.0, q > 0.5: 141,602 primaries, mean pairs 14,993, 46s; rss 3.00 GB
+[sky 41007] N = 29,297,914; saved; total 89s; peak rss 3.00 GB
+       89.93 real       233.94 user         0.81 sys
+          2997534720  maximum resident set size
+       2421065915452  instructions retired
+          2942114688  peak memory footprint
+## seed 41008 threads 3 18:50:17
+   [baseline] z >= 2.0, q > 0.5: 80,813 primaries, mean pairs 15,019, 27s; rss 3.00 GB
+   [goal] z >= 2.0, q > 0.5: 141,703 primaries, mean pairs 14,995, 46s; rss 3.00 GB
+[sky 41008] N = 29,299,862; saved; total 89s; peak rss 3.00 GB
+       90.00 real       234.25 user         0.83 sys
+          2996305920  maximum resident set size
+       2425681897955  instructions retired
+          2940902336  peak memory footprint
+## seed 41009 threads 3 18:51:47
+   [baseline] z >= 2.0, q > 0.5: 80,131 primaries, mean pairs 15,019, 26s; rss 3.00 GB
+   [goal] z >= 2.0, q > 0.5: 140,912 primaries, mean pairs 14,994, 46s; rss 3.00 GB
+[sky 41009] N = 29,298,885; saved; total 89s; peak rss 3.00 GB
+       89.63 real       233.04 user         0.80 sys
+          2997452800  maximum resident set size
+       2410833248333  instructions retired
+          2942032768  peak memory footprint
+## seed 41010 threads 3 18:53:17
+   [baseline] z >= 2.0, q > 0.5: 80,239 primaries, mean pairs 15,016, 26s; rss 3.00 GB
+   [goal] z >= 2.0, q > 0.5: 141,519 primaries, mean pairs 14,991, 46s; rss 3.00 GB
+[sky 41010] N = 29,294,719; saved; total 89s; peak rss 3.00 GB
+       89.80 real       233.57 user         0.79 sys
+          2997387264  maximum resident set size
+       2417608598592  instructions retired
+          2941983680  peak memory footprint
+## seed 41011 threads 3 18:54:46
+   [baseline] z >= 2.0, q > 0.5: 80,490 primaries, mean pairs 15,020, 26s; rss 3.00 GB
+   [goal] z >= 2.0, q > 0.5: 141,668 primaries, mean pairs 14,995, 46s; rss 3.00 GB
+[sky 41011] N = 29,300,137; saved; total 89s; peak rss 3.00 GB
+       89.88 real       233.88 user         0.81 sys
+          2997518336  maximum resident set size
+       2421837917977  instructions retired
+          2942098304  peak memory footprint
+## seed 41012 threads 3 18:56:16
+   [baseline] z >= 2.0, q > 0.5: 80,429 primaries, mean pairs 15,013, 26s; rss 3.00 GB
+   [goal] z >= 2.0, q > 0.5: 141,724 primaries, mean pairs 14,988, 46s; rss 3.00 GB
+[sky 41012] N = 29,287,210; saved; total 89s; peak rss 3.00 GB
+       89.93 real       233.87 user         0.79 sys
+          2996649984  maximum resident set size
+       2421021216098  instructions retired
+          2941246400  peak memory footprint
+## s12 loop done 18:57:46

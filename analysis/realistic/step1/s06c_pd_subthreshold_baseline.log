@@ -1,0 +1,59 @@
+[baseline] table: 96 theta nodes 0.1-150', NU=401, support margin 150.0'; 48 primary theta_A nodes; sigma_Y(table) vs model: max rel 1.4e-06
+[baseline] neighbour population filtered (_subthr): 1,630,507 of 3,939,280 points kept
+   rate node 0/48 12s
+   rate node 8/48 70s
+   rate node 16/48 129s
+   rate node 24/48 188s
+   rate node 32/48 247s
+   rate node 40/48 307s
+[baseline] rate histograms done 359s
+   floor 1e13: thA         0.466    1.007    1.864    4.025    7.451   16.090   29.786
+   mean mu (hist)        -0.0000  -0.0000  -0.0000   0.0000   0.0000   0.0002  -0.0002  [noise units]
+   mean (Campbell exact)  0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+   var (hist, incl caps)  0.1107   0.1254   0.1380   0.1420   0.1252   0.0843   0.0538
+   var (Parseval, s05)    0.1107   0.1254   0.1379   0.1419   0.1252   0.0843   0.0538
+   added Gaussian var     0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+   Lambda(x>1) per filter  0.0158   0.0178   0.0198   0.0215   0.0206   0.0153   0.0095
+   Lambda(x<-1)            0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+   Lambda(x<-60) (clipped to -60 in the FFT box): max over theta_A nodes 0.00e+00
+   floor 1e13: quantiles of delta-mu (2.3/16/50/84/97.7%) and of n+delta-mu at thA = 1, 4, 16':
+      thA=  1.01': delta [-0.578 -0.231 -0.034  0.185  0.884]  n+delta [-2.087 -1.051 -0.011  1.044  2.158] -> robust half-width (84-16)/2 = 1.048 (noise alone 1)
+      thA=  4.02': delta [-0.58  -0.248 -0.047  0.198  0.98 ]  n+delta [-2.095 -1.057 -0.014  1.049  2.183] -> robust half-width (84-16)/2 = 1.053 (noise alone 1)
+      thA= 16.09': delta [-0.333 -0.185 -0.065  0.149  0.817]  n+delta [-2.055 -1.035 -0.009  1.032  2.116] -> robust half-width (84-16)/2 = 1.034 (noise alone 1)
+[baseline] untruncated P(D) done 361s
+   single-cluster detections q>4: grid 131,570.8 vs expected_detections 133,127.1 (rel -1.17e-02)
+   single-cluster detections q>5: grid 81,690.2 vs expected_detections 81,704.5 (rel -1.75e-04)
+   single-cluster detections q>6: grid 55,658.8 vs expected_detections 55,657.0 (rel +3.20e-05)
+   single-cluster detections q>7: grid 40,064.2 vs expected_detections 40,062.8 (rel +3.47e-05)
+[baseline] primary population done 367s
+   floor 1e13 node 0/48 367s
+   floor 1e13 node 8/48 368s
+   floor 1e13 node 16/48 401s
+   floor 1e13 node 24/48 447s
+   floor 1e13 node 32/48 492s
+   floor 1e13 node 40/48 535s
+
+=== [baseline] convention c=1 (mean removed), neighbour floor M>1e13; primaries q_A>0.5; full sky ===
+  q_cut=4: N_single=131,571 N_det_b=133,932 (+0.0179); B2(eps=[np.float64(0.05), np.float64(0.1), np.float64(0.2), np.float64(0.5), np.float64(1.0)])=[0.18186 0.10963 0.05979 0.02024 0.00231]; B2neg=[1.0835e-01 2.7280e-02 2.8400e-03 8.0000e-05 0.0000e+00]; B3(boosted)=0.06957; lost/N_single=0.05225; sat/N_single=0.00062; mean (delta-mu)/q_A of detections=+0.02769
+  q_cut=5: N_single=81,690 N_det_b=82,984 (+0.0158); B2(eps=[np.float64(0.05), np.float64(0.1), np.float64(0.2), np.float64(0.5), np.float64(1.0)])=[0.13897 0.07723 0.03907 0.01197 0.00107]; B2neg=[0.07112 0.01159 0.00038 0.      0.     ]; B3(boosted)=0.05689; lost/N_single=0.04189; sat/N_single=0.00007; mean (delta-mu)/q_A of detections=+0.01872
+  q_cut=6: N_single=55,659 N_det_b=56,381 (+0.0130); B2(eps=[np.float64(0.05), np.float64(0.1), np.float64(0.2), np.float64(0.5), np.float64(1.0)])=[0.1114  0.05823 0.02757 0.00754 0.00055]; B2neg=[4.848e-02 5.320e-03 5.000e-05 0.000e+00 0.000e+00]; B3(boosted)=0.04826; lost/N_single=0.03590; sat/N_single=0.00001; mean (delta-mu)/q_A of detections=+0.01349
+  q_cut=7: N_single=40,064 N_det_b=40,489 (+0.0106); B2(eps=[np.float64(0.05), np.float64(0.1), np.float64(0.2), np.float64(0.5), np.float64(1.0)])=[0.09192 0.04555 0.02016 0.00481 0.0003 ]; B2neg=[3.373e-02 2.460e-03 1.000e-05 0.000e+00 0.000e+00]; B3(boosted)=0.04198; lost/N_single=0.03183; sat/N_single=0.00000; mean (delta-mu)/q_A of detections=+0.01008
+[baseline] total 570s
+      570.82 real      1624.26 user         3.87 sys
+           583106560  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               66111  page reclaims
+                  87  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   4  voluntary context switches
+               66767  involuntary context switches
+      17807158882174  instructions retired
+       4994620855563  cycles elapsed
+           521046336  peak memory footprint

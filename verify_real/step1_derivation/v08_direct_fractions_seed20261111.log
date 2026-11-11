@@ -1,0 +1,134 @@
+seed 20261111: N = 29,295,527; M0 = 60.0'; tiers (theta edges [ 1.5  5.  15. ]): [28279709, 991151, 23848, 819]; cells per axis [116, 78, 47, 21]; rss 2.65 GB [27s]
+[baseline] primaries q>0.5: 2,335,722; index built; mu(all) at 1/4/16': [ 3.82466665e-04  9.84533178e-06 -4.47459368e-04]; rss 2.90 GB [2s]
+[baseline] neighbour sums: 95s, mean pairs per primary 3,009; rss 3.10 GB
+
+=== [baseline] neighbours: all; seed 20261111; M0 = 60.0' ===
+  q>4: N_single 131,410  N_det_b 133,271 (+0.0142)  Y>5% 0.1973  Y>10% 0.1222  Y>20% 0.0692  Y<-10% 0.0373  boosted 0.0755  lost 0.0602  sat 0.0023  meanbias +0.0320
+        Gaussian-equivalent N_gauss 143,603: (N_det_b - N_gauss)/N_gauss = -0.0720
+  q>5: N_single 81,581  N_det_b 82,716 (+0.0139)  Y>5% 0.1534  Y>10% 0.0889  Y>20% 0.0483  Y<-10% 0.0212  boosted 0.0630  lost 0.0489  sat 0.0011  meanbias +0.0230
+        Gaussian-equivalent N_gauss 85,837: (N_det_b - N_gauss)/N_gauss = -0.0364
+  q>6: N_single 55,575  N_det_b 56,249 (+0.0121)  Y>5% 0.1254  Y>10% 0.0697  Y>20% 0.0371  Y<-10% 0.0138  boosted 0.0548  lost 0.0426  sat 0.0007  meanbias +0.0181
+        Gaussian-equivalent N_gauss 57,468: (N_det_b - N_gauss)/N_gauss = -0.0212
+  q>7: N_single 39,968  N_det_b 40,396 (+0.0107)  Y>5% 0.1062  Y>10% 0.0572  Y>20% 0.0300  Y<-10% 0.0097  boosted 0.0491  lost 0.0385  sat 0.0004  meanbias +0.0151
+        Gaussian-equivalent N_gauss 40,975: (N_det_b - N_gauss)/N_gauss = -0.0141
+  q>5 Delta N/N in z bins [0.01, 0.1, 0.25, 0.5, 1.0, 1.5, 2.0, 3.0]: +0.0039 +0.0095 +0.0100 +0.0142 +0.0193 +0.0330 +0.0598
+
+=== [baseline] neighbours: 1e14; seed 20261111; M0 = 60.0' ===
+  q>4: N_single 131,410  N_det_b 131,358 (-0.0004)  Y>5% 0.0693  Y>10% 0.0481  Y>20% 0.0345  Y<-10% 0.0238  boosted 0.0333  lost 0.0316  sat 0.0021  meanbias +0.0153
+  q>5: N_single 81,581  N_det_b 81,944 (+0.0044)  Y>5% 0.0585  Y>10% 0.0435  Y>20% 0.0317  Y<-10% 0.0157  boosted 0.0313  lost 0.0259  sat 0.0011  meanbias +0.0140
+  q>6: N_single 55,575  N_det_b 55,921 (+0.0062)  Y>5% 0.0529  Y>10% 0.0403  Y>20% 0.0285  Y<-10% 0.0111  boosted 0.0295  lost 0.0228  sat 0.0007  meanbias +0.0126
+  q>7: N_single 39,968  N_det_b 40,241 (+0.0068)  Y>5% 0.0488  Y>10% 0.0373  Y>20% 0.0253  Y<-10% 0.0082  boosted 0.0278  lost 0.0207  sat 0.0004  meanbias +0.0113
+  q>5 Delta N/N in z bins [0.01, 0.1, 0.25, 0.5, 1.0, 1.5, 2.0, 3.0]: -0.0011 +0.0029 +0.0023 +0.0047 +0.0068 +0.0138 +0.0369
+
+=== [baseline] neighbours: sub; seed 20261111; M0 = 60.0' ===
+  q>4: N_single 131,410  N_det_b 133,876 (+0.0188)  Y>5% 0.1818  Y>10% 0.1104  Y>20% 0.0610  Y<-10% 0.0273  boosted 0.0703  lost 0.0522  sat 0.0006  meanbias +0.0282
+        Gaussian-equivalent N_gauss 135,633: (N_det_b - N_gauss)/N_gauss = -0.0130
+  q>5: N_single 81,581  N_det_b 82,941 (+0.0167)  Y>5% 0.1382  Y>10% 0.0775  Y>20% 0.0400  Y<-10% 0.0116  boosted 0.0576  lost 0.0418  sat 0.0001  meanbias +0.0191
+        Gaussian-equivalent N_gauss 83,057: (N_det_b - N_gauss)/N_gauss = -0.0014
+  q>6: N_single 55,575  N_det_b 56,316 (+0.0133)  Y>5% 0.1101  Y>10% 0.0578  Y>20% 0.0280  Y<-10% 0.0054  boosted 0.0486  lost 0.0359  sat 0.0000  meanbias +0.0137
+        Gaussian-equivalent N_gauss 56,244: (N_det_b - N_gauss)/N_gauss = +0.0013
+  q>7: N_single 39,968  N_det_b 40,384 (+0.0104)  Y>5% 0.0907  Y>10% 0.0448  Y>20% 0.0202  Y<-10% 0.0025  boosted 0.0421  lost 0.0321  sat 0.0000  meanbias +0.0103
+        Gaussian-equivalent N_gauss 40,327: (N_det_b - N_gauss)/N_gauss = +0.0014
+  q>5 Delta N/N in z bins [0.01, 0.1, 0.25, 0.5, 1.0, 1.5, 2.0, 3.0]: +0.0126 +0.0133 +0.0129 +0.0169 +0.0220 +0.0329 +0.0509
+  [baseline] random points thA=1.007' (all): mean -0.0016  var 0.2644 (Campbell, v06 sky: 0.3319)  quantiles [-0.767 -0.25  -0.032  0.209  1.012]  robust half-width of n+delta 1.0659  P(d>0.5) 0.0595 P(d<-0.5) 0.0548
+  [baseline] random points thA=1.007' (sub): mean +0.0012  var 0.1210 (Campbell, v06 sky: 0.1252)  quantiles [-0.576 -0.228 -0.033  0.185  0.894]  robust half-width of n+delta 1.0471  P(d>0.5) 0.0529 P(d<-0.5) 0.0345
+  [baseline] random points thA=4.025' (all): mean -0.0039  var 0.3874 (Campbell, v06 sky: 0.4120)  quantiles [-0.817 -0.285 -0.053  0.21   1.117]  robust half-width of n+delta 1.0757  P(d>0.5) 0.0668 P(d<-0.5) 0.0612
+  [baseline] random points thA=4.025' (sub): mean -0.0049  var 0.1400 (Campbell, v06 sky: 0.1416)  quantiles [-0.574 -0.255 -0.051  0.195  0.946]  robust half-width of n+delta 1.0522  P(d>0.5) 0.0598 P(d<-0.5) 0.0360
+  [baseline] random points thA=16.090' (all): mean +0.0048  var 0.4207 (Campbell, v06 sky: 0.3027)  quantiles [-0.516 -0.229 -0.08   0.149  1.049]  robust half-width of n+delta 1.0529  P(d>0.5) 0.0575 P(d<-0.5) 0.0249
+  [baseline] random points thA=16.090' (sub): mean -0.0001  var 0.0864 (Campbell, v06 sky: 0.0842)  quantiles [-0.335 -0.187 -0.066  0.152  0.827]  robust half-width of n+delta 1.0342  P(d>0.5) 0.0499 P(d<-0.5) 0.0022
+[baseline] done 107s; peak rss 3.21 GB
+[goal] primaries q>0.5: 3,276,039; index built; mu(all) at 1/4/16': [ 2.64128195e-04  5.28583935e-05 -4.09900398e-04]; rss 3.21 GB [2s]
+[goal] neighbour sums: 128s, mean pairs per primary 2,963; rss 3.21 GB
+
+=== [goal] neighbours: all; seed 20261111; M0 = 60.0' ===
+  q>4: N_single 201,826  N_det_b 204,715 (+0.0143)  Y>5% 0.2209  Y>10% 0.1409  Y>20% 0.0810  Y<-10% 0.0462  boosted 0.0825  lost 0.0664  sat 0.0029  meanbias +0.0375
+        Gaussian-equivalent N_gauss 227,176: (N_det_b - N_gauss)/N_gauss = -0.0989
+  q>5: N_single 127,932  N_det_b 129,851 (+0.0150)  Y>5% 0.1760  Y>10% 0.1052  Y>20% 0.0579  Y<-10% 0.0278  boosted 0.0695  lost 0.0541  sat 0.0015  meanbias +0.0273
+        Gaussian-equivalent N_gauss 137,001: (N_det_b - N_gauss)/N_gauss = -0.0522
+  q>6: N_single 88,658  N_det_b 89,881 (+0.0138)  Y>5% 0.1457  Y>10% 0.0835  Y>20% 0.0449  Y<-10% 0.0189  boosted 0.0607  lost 0.0468  sat 0.0009  meanbias +0.0215
+        Gaussian-equivalent N_gauss 92,709: (N_det_b - N_gauss)/N_gauss = -0.0305
+  q>7: N_single 64,792  N_det_b 65,591 (+0.0123)  Y>5% 0.1239  Y>10% 0.0688  Y>20% 0.0366  Y<-10% 0.0138  boosted 0.0543  lost 0.0420  sat 0.0006  meanbias +0.0178
+        Gaussian-equivalent N_gauss 66,943: (N_det_b - N_gauss)/N_gauss = -0.0202
+  q>5 Delta N/N in z bins [0.01, 0.1, 0.25, 0.5, 1.0, 1.5, 2.0, 3.0]: +0.0077 +0.0101 +0.0101 +0.0149 +0.0210 +0.0314 +0.0567
+
+=== [goal] neighbours: 1e14; seed 20261111; M0 = 60.0' ===
+  q>4: N_single 201,826  N_det_b 201,064 (-0.0038)  Y>5% 0.0702  Y>10% 0.0464  Y>20% 0.0325  Y<-10% 0.0276  boosted 0.0319  lost 0.0329  sat 0.0027  meanbias +0.0146
+  q>5: N_single 127,932  N_det_b 128,147 (+0.0017)  Y>5% 0.0581  Y>10% 0.0418  Y>20% 0.0310  Y<-10% 0.0194  boosted 0.0302  lost 0.0271  sat 0.0015  meanbias +0.0139
+  q>6: N_single 88,658  N_det_b 89,067 (+0.0046)  Y>5% 0.0522  Y>10% 0.0395  Y>20% 0.0293  Y<-10% 0.0142  boosted 0.0290  lost 0.0236  sat 0.0009  meanbias +0.0130
+  q>7: N_single 64,792  N_det_b 65,173 (+0.0059)  Y>5% 0.0483  Y>10% 0.0373  Y>20% 0.0272  Y<-10% 0.0108  boosted 0.0277  lost 0.0214  sat 0.0006  meanbias +0.0120
+  q>5 Delta N/N in z bins [0.01, 0.1, 0.25, 0.5, 1.0, 1.5, 2.0, 3.0]: -0.0011 -0.0002 -0.0004 +0.0018 +0.0043 +0.0052 +0.0246
+
+=== [goal] neighbours: sub; seed 20261111; M0 = 60.0' ===
+  q>4: N_single 201,826  N_det_b 205,943 (+0.0204)  Y>5% 0.2006  Y>10% 0.1251  Y>20% 0.0700  Y<-10% 0.0336  boosted 0.0757  lost 0.0562  sat 0.0007  meanbias +0.0323
+        Gaussian-equivalent N_gauss 209,320: (N_det_b - N_gauss)/N_gauss = -0.0161
+  q>5: N_single 127,932  N_det_b 130,323 (+0.0187)  Y>5% 0.1563  Y>10% 0.0903  Y>20% 0.0470  Y<-10% 0.0155  boosted 0.0628  lost 0.0452  sat 0.0001  meanbias +0.0222
+        Gaussian-equivalent N_gauss 130,610: (N_det_b - N_gauss)/N_gauss = -0.0022
+  q>6: N_single 88,658  N_det_b 90,024 (+0.0154)  Y>5% 0.1262  Y>10% 0.0685  Y>20% 0.0334  Y<-10% 0.0075  boosted 0.0533  lost 0.0387  sat 0.0000  meanbias +0.0159
+        Gaussian-equivalent N_gauss 89,892: (N_det_b - N_gauss)/N_gauss = +0.0015
+  q>7: N_single 64,792  N_det_b 65,585 (+0.0122)  Y>5% 0.1043  Y>10% 0.0532  Y>20% 0.0241  Y<-10% 0.0037  boosted 0.0460  lost 0.0343  sat 0.0000  meanbias +0.0117
+        Gaussian-equivalent N_gauss 65,456: (N_det_b - N_gauss)/N_gauss = +0.0020
+  q>5 Delta N/N in z bins [0.01, 0.1, 0.25, 0.5, 1.0, 1.5, 2.0, 3.0]: +0.0165 +0.0145 +0.0142 +0.0184 +0.0244 +0.0345 +0.0513
+  [goal] random points thA=1.007' (all): mean -0.0053  var 0.4142 (Campbell, v06 sky: 0.4756)  quantiles [-0.952 -0.303 -0.041  0.243  1.174]  robust half-width of n+delta 1.0872  P(d>0.5) 0.0741 P(d<-0.5) 0.0766
+  [goal] random points thA=1.007' (sub): mean -0.0006  var 0.1562 (Campbell, v06 sky: 0.1568)  quantiles [-0.647 -0.266 -0.04   0.212  1.004]  robust half-width of n+delta 1.0580  P(d>0.5) 0.0640 P(d<-0.5) 0.0471
+  [goal] random points thA=4.025' (all): mean +0.0014  var 0.5360 (Campbell, v06 sky: 0.5902)  quantiles [-0.978 -0.324 -0.055  0.254  1.436]  robust half-width of n+delta 1.1005  P(d>0.5) 0.0844 P(d<-0.5) 0.0832
+  [goal] random points thA=4.025' (sub): mean +0.0043  var 0.1784 (Campbell, v06 sky: 0.1759)  quantiles [-0.636 -0.282 -0.053  0.235  1.178]  robust half-width of n+delta 1.0670  P(d>0.5) 0.0751 P(d<-0.5) 0.0498
+  [goal] random points thA=16.090' (all): mean -0.0027  var 0.3727 (Campbell, v06 sky: 0.4248)  quantiles [-0.599 -0.267 -0.091  0.171  1.216]  robust half-width of n+delta 1.0653  P(d>0.5) 0.0671 P(d<-0.5) 0.0372
+  [goal] random points thA=16.090' (sub): mean -0.0016  var 0.1023 (Campbell, v06 sky: 0.1033)  quantiles [-0.39  -0.212 -0.072  0.171  0.907]  robust half-width of n+delta 1.0408  P(d>0.5) 0.0568 P(d<-0.5) 0.0058
+[goal] done 140s; peak rss 3.21 GB
+[white] primaries q>0.5: 1,951,847; index built; mu(all) at 1/4/16': [0.51933105 1.33180193 4.89644988]; rss 3.21 GB [2s]
+[white] neighbour sums: 80s, mean pairs per primary 3,068; rss 3.21 GB
+
+=== [white] neighbours: all; seed 20261111; M0 = 60.0' ===
+  q>4: N_single 130,739  N_det_b 126,526 (-0.0322)  Y>5% 0.2412  Y>10% 0.1843  Y>20% 0.1248  Y<-10% 0.1121  boosted 0.0873  lost 0.1076  sat 0.0090  meanbias +0.0374
+        Gaussian-equivalent N_gauss 176,817: (N_det_b - N_gauss)/N_gauss = -0.2844
+  q>5: N_single 85,968  N_det_b 84,697 (-0.0148)  Y>5% 0.2200  Y>10% 0.1621  Y>20% 0.1062  Y<-10% 0.0553  boosted 0.0814  lost 0.0895  sat 0.0055  meanbias +0.0343
+        Gaussian-equivalent N_gauss 105,851: (N_det_b - N_gauss)/N_gauss = -0.1998
+  q>6: N_single 61,627  N_det_b 61,194 (-0.0070)  Y>5% 0.2029  Y>10% 0.1451  Y>20% 0.0928  Y<-10% 0.0274  boosted 0.0761  lost 0.0786  sat 0.0040  meanbias +0.0311
+        Gaussian-equivalent N_gauss 71,168: (N_det_b - N_gauss)/N_gauss = -0.1401
+  q>7: N_single 46,484  N_det_b 46,373 (-0.0024)  Y>5% 0.1882  Y>10% 0.1313  Y>20% 0.0825  Y<-10% 0.0144  boosted 0.0715  lost 0.0707  sat 0.0031  meanbias +0.0283
+        Gaussian-equivalent N_gauss 51,771: (N_det_b - N_gauss)/N_gauss = -0.1043
+  q>5 Delta N/N in z bins [0.01, 0.1, 0.25, 0.5, 1.0, 1.5, 2.0, 3.0]: -0.0529 -0.0303 -0.0190 -0.0078 +0.0041 +0.0162 +0.0439
+
+=== [white] neighbours: 1e14; seed 20261111; M0 = 60.0' ===
+  q>4: N_single 130,739  N_det_b 124,821 (-0.0453)  Y>5% 0.1697  Y>10% 0.1350  Y>20% 0.0963  Y<-10% 0.0489  boosted 0.0600  lost 0.0938  sat 0.0088  meanbias +0.0191
+  q>5: N_single 85,968  N_det_b 83,917 (-0.0239)  Y>5% 0.1640  Y>10% 0.1274  Y>20% 0.0885  Y<-10% 0.0168  boosted 0.0606  lost 0.0775  sat 0.0055  meanbias +0.0230
+  q>6: N_single 61,627  N_det_b 60,797 (-0.0135)  Y>5% 0.1572  Y>10% 0.1195  Y>20% 0.0808  Y<-10% 0.0081  boosted 0.0594  lost 0.0681  sat 0.0040  meanbias +0.0232
+  q>7: N_single 46,484  N_det_b 46,143 (-0.0073)  Y>5% 0.1500  Y>10% 0.1117  Y>20% 0.0738  Y<-10% 0.0048  boosted 0.0576  lost 0.0615  sat 0.0031  meanbias +0.0223
+  q>5 Delta N/N in z bins [0.01, 0.1, 0.25, 0.5, 1.0, 1.5, 2.0, 3.0]: -0.0572 -0.0360 -0.0263 -0.0184 -0.0103 -0.0011 +0.0256
+
+=== [white] neighbours: sub; seed 20261111; M0 = 60.0' ===
+  q>4: N_single 130,739  N_det_b 133,269 (+0.0194)  Y>5% 0.2336  Y>10% 0.1593  Y>20% 0.0939  Y<-10% 0.0293  boosted 0.0834  lost 0.0647  sat 0.0009  meanbias +0.0388
+        Gaussian-equivalent N_gauss 135,946: (N_det_b - N_gauss)/N_gauss = -0.0197
+  q>5: N_single 85,968  N_det_b 87,674 (+0.0198)  Y>5% 0.1977  Y>10% 0.1240  Y>20% 0.0664  Y<-10% 0.0078  boosted 0.0710  lost 0.0525  sat 0.0001  meanbias +0.0280
+        Gaussian-equivalent N_gauss 87,942: (N_det_b - N_gauss)/N_gauss = -0.0031
+  q>6: N_single 61,627  N_det_b 62,665 (+0.0168)  Y>5% 0.1700  Y>10% 0.0987  Y>20% 0.0485  Y<-10% 0.0023  boosted 0.0612  lost 0.0454  sat 0.0000  meanbias +0.0207
+        Gaussian-equivalent N_gauss 62,583: (N_det_b - N_gauss)/N_gauss = +0.0013
+  q>7: N_single 46,484  N_det_b 47,123 (+0.0137)  Y>5% 0.1477  Y>10% 0.0796  Y>20% 0.0359  Y<-10% 0.0008  boosted 0.0533  lost 0.0403  sat 0.0000  meanbias +0.0155
+        Gaussian-equivalent N_gauss 47,029: (N_det_b - N_gauss)/N_gauss = +0.0020
+  q>5 Delta N/N in z bins [0.01, 0.1, 0.25, 0.5, 1.0, 1.5, 2.0, 3.0]: +0.0172 +0.0160 +0.0158 +0.0213 +0.0295 +0.0414 +0.0601
+  [white] random points thA=1.007' (all): mean +0.0024  var 1.1289 (Campbell, v06 sky: 1.0259)  quantiles [-0.462 -0.386 -0.216  0.22   1.925]  robust half-width of n+delta 1.1004  P(d>0.5) 0.0973 P(d<-0.5) 0.0012
+  [white] random points thA=1.007' (sub): mean -0.0003  var 0.1527 (Campbell, v06 sky: 0.1570)  quantiles [-0.327 -0.26  -0.116  0.211  1.186]  robust half-width of n+delta 1.0564  P(d>0.5) 0.0759 P(d<-0.5) 0.0000
+  [white] random points thA=4.025' (all): mean +0.0003  var 2.9613 (Campbell, v06 sky: 3.3294)  quantiles [-0.934 -0.745 -0.389  0.45   3.621]  robust half-width of n+delta 1.2378  P(d>0.5) 0.1489 P(d<-0.5) 0.4042
+  [white] random points thA=4.025' (sub): mean -0.0015  var 0.3193 (Campbell, v06 sky: 0.3209)  quantiles [-0.597 -0.438 -0.153  0.395  1.64 ]  robust half-width of n+delta 1.1161  P(d>0.5) 0.1305 P(d<-0.5) 0.0926
+  [white] random points thA=16.090' (all): mean -0.0107  var 10.1882 (Campbell, v06 sky: 11.2032)  quantiles [-2.098 -1.555 -0.696  1.046  6.532]  robust half-width of n+delta 1.6903  P(d>0.5) 0.2190 P(d<-0.5) 0.5659
+  [white] random points thA=16.090' (sub): mean -0.0016  var 0.5314 (Campbell, v06 sky: 0.5300)  quantiles [-1.069 -0.671 -0.126  0.663  1.805]  robust half-width of n+delta 1.2156  P(d>0.5) 0.2052 P(d<-0.5) 0.2593
+[white] done 93s; peak rss 3.21 GB
+total 367s; peak rss 3.21 GB
+      367.65 real      1201.91 user         1.90 sys
+          3212460032  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              273321  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+               32689  involuntary context switches
+      13104069885916  instructions retired
+       3677574248153  cycles elapsed
+          3152551104  peak memory footprint

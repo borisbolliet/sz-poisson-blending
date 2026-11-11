@@ -1,0 +1,5 @@
+theta 0.5: baseline/white 0.801 -> equivalent white y-noise 3.20e-06 arcmin
+theta 10.0: baseline/white 3.318 -> equivalent white y-noise 1.33e-05 arcmin
+D3000 scaling 145->143 GHz: 1.049004166942445  -> mine 8.595*that = 9.016190814870315  ratio to SPT 3.42: 2.63631310376325
+builder stored white sigma_Y vs old SZModel.sigma_Y_exact over 61 theta in [0.1,100]: max |rel| = 0.00e+00 (theta<=50: 0.00e+00)
+mine (2D grid) vs SZModel: max |rel| = 3.51e-04

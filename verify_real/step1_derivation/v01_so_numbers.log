@@ -1,0 +1,95 @@
+=== (1) paper text (arXiv:1808.07445v2, pdftotext -layout), LAT columns of Table 1 and Table 2 ===
+   L380: 27                91               35              25                                        7.4               71                   52
+   L381: 39                63               21              17                                        5.1               36                   27
+   L382: 93                30              2.6              1.9                                       2.2              8.0                   5.8
+   L383: 145                17              3.3              2.1                                       1.4               10                   6.3
+   L384: 225                11              6.3              4.2                                       1.0               22                   15
+   L385: 280                 9               16              10                                        0.9               54                   37
+   L399: 27               30      15     -2.4             100
+   L400: 39               30      15     -2.4              39
+   L406: 93               50      25     -2.5             230                                                 2
+   L407: 145              50      25     -3.0            1,500
+   L408: 225              70      35     -3.0           17,000                                                1
+   L409: 280             100      40     -3.0           31,000                                                                    BICEP2/Keck @95 GHz
+   L3443: 93         7        270
+   '5-year survey with 20% of the total observing time': lines [300]
+   'discarding 15% of the maps': lines [305]
+   'we fix `knee = 1000': lines [442]
+   'αknee = −3.5': lines [445]
+   'correlation coefficient of 0.9': lines [471]
+   'mistakenly used N': lines [537]
+   'divide': lines [435, 456, 2682]
+   -> transcription used (vlib): FWHM [7.4 5.1 2.2 1.4 1.  0.9] white baseline [71. 36.  8. 10. 22. 54.] goal [52.  27.   5.8  6.3 15.  37. ] N_red [  100.    39.   230.  1500. 17000. 31000.] l_knee 1000.0 alpha -3.5 r_atm 0.9
+   builder claim == my transcription: True True True True
+
+=== (2) SO v3.0.0 code constants (grep of the downloaded source) ===
+    C_27  =    200.
+    C_39  =     77.
+    C_93  =   1800.
+    C_145 =  12000.
+    C_225 =  68000.
+    C_280 = 124000.
+    S_LA_27  = np.array([1.e9,48.,35.])
+    S_LA_39  = np.array([1.e9,24.,18.])
+    S_LA_93  = np.array([1.e9,5.4,3.9])
+    S_LA_145 = np.array([1.e9,6.7,4.2])
+    S_LA_225 = np.array([1.e9,15.,10.])
+    S_LA_280 = np.array([1.e9,36.,25.])
+    t = 1
+    t = 4.
+    t = 2.
+    t = survey_time * 365.25 * 24. * 3600.    ## convert years to seconds
+    t = t * 0.2   ## retention after observing efficiency and cuts
+    t = t * 0.85  ## a kludge for the noise non-uniformity of the map edges
+    A_SR = 4. * np.pi * f_sky  ## sky areas in steradians
+    A_SR = 4 * np.pi * f_sky  ## sky area in steradians
+    r_atm = 0.9
+    AN_T_27 = 0. #irrelevantly large noise already set above
+    AN_T_27  = C_27  * (ell/ell_pivot)**alpha_temp * A_SR / t / (2.*NTubes_LF)
+    alpha_temp = -3.5
+    ell_pivot = 1000.
+   code N_red_eff = C/(2 N_tubes) = [  100.     38.5   225.   1500.  17000.  31000. ]  paper Table 2: [  100.    39.   230.  1500. 17000. 31000.]  ratio paper/code [1.     1.013  1.0222 1.     1.     1.    ]
+   [baseline] code white [uK-arcmin] = [71.431 35.716  8.036  9.971 22.322 53.573]; paper [71. 36.  8. 10. 22. 54.]; ratio paper/code [0.994  1.008  0.9955 1.0029 0.9856 1.008 ]; max |ratio^2-1| (power) = 0.0287
+   [goal] code white [uK-arcmin] = [52.085 26.787  5.804  6.25  14.882 37.204]; paper [52.  27.   5.8  6.3 15.  37. ]; ratio paper/code [0.9984 1.008  0.9993 1.008  1.008  0.9945]; max |ratio^2-1| (power) = 0.0160
+   t_eff = 2.682396e+07 s (5 yr x 365.25 d x 0.2 x 0.85); A = 4 pi 0.4 = 5.02655 sr
+
+=== (3) noise power: paper-table route vs code route, and effective knee (red = white) ===
+   [baseline] N_ii(paper)/N_ii(code) - 1 at l=[100, 300, 1000, 2000, 3000, 5000, 8000, 20000]:
+         27 GHz: [-0.0001 -0.0031 -0.0115 -0.012  -0.012  -0.012  -0.012  -0.012 ]
+         39 GHz: [0.013  0.0135 0.0158 0.016  0.016  0.016  0.016  0.016 ]
+         93 GHz: [ 0.0222  0.0222  0.0186  0.0037 -0.0045 -0.0081 -0.0088 -0.0089]
+        145 GHz: [0.     0.     0.0002 0.0015 0.0034 0.0053 0.0058 0.0059]
+        225 GHz: [-0.     -0.     -0.0004 -0.0037 -0.011  -0.0226 -0.0272 -0.0286]
+        280 GHz: [0.     0.     0.0006 0.0051 0.0106 0.0147 0.0157 0.016 ]
+      pair 27x39: N_ij ratio paper/code = 1.0065 (all l)
+      pair 93x145: N_ij ratio paper/code = 1.0111 (all l)
+      pair 225x280: N_ij ratio paper/code = 1.0000 (all l)
+      max |paper/code - 1| over all N_ij(l) (l <= 20000) = 0.0286
+      effective knee l where red = white: [409, 461, 1809, 2721, 3469, 2466]
+   [goal] N_ii(paper)/N_ii(code) - 1 at l=[100, 300, 1000, 2000, 3000, 5000, 8000, 20000]:
+         27 GHz: [-0.     -0.0005 -0.003  -0.0033 -0.0033 -0.0033 -0.0033 -0.0033]
+         39 GHz: [0.013  0.0133 0.0157 0.016  0.016  0.016  0.016  0.016 ]
+         93 GHz: [ 0.0222  0.0222  0.0207  0.012   0.0043 -0.0001 -0.0011 -0.0013]
+        145 GHz: [0.     0.     0.0002 0.0019 0.0057 0.0123 0.0151 0.0159]
+        225 GHz: [0.     0.     0.0001 0.001  0.0034 0.0099 0.0143 0.0159]
+        280 GHz: [-0.     -0.     -0.0002 -0.002  -0.0053 -0.0093 -0.0106 -0.0109]
+      pair 27x39: N_ij ratio paper/code = 1.0065 (all l)
+      pair 93x145: N_ij ratio paper/code = 1.0111 (all l)
+      pair 225x280: N_ij ratio paper/code = 1.0000 (all l)
+      max |paper/code - 1| over all N_ij(l) (l <= 20000) = 0.0222
+      effective knee l where red = white: [489, 544, 2174, 3543, 4318, 3060]
+   builder claim knees: {'baseline': [409, 461, 1809, 2721, 3469, 2466], 'goal': [489, 544, 2174, 3543, 4318, 3060]}
+
+=== (4) tSZ SED: closed form vs occupation-number Kompaneets route (finite differences) ===
+      27 GHz: g closed = -1.96247  Kompaneets(n) = -1.96247  diff -1.8e-08;  f = -5.3487e+06 uK per y
+      39 GHz: g closed = -1.92201  Kompaneets(n) = -1.92201  diff -2.6e-08;  f = -5.2384e+06 uK per y
+      93 GHz: g closed = -1.57182  Kompaneets(n) = -1.57182  diff -2.6e-08;  f = -4.2840e+06 uK per y
+     145 GHz: g closed = -1.01577  Kompaneets(n) = -1.01577  diff -2.5e-08;  f = -2.7685e+06 uK per y
+     150 GHz: g closed = -0.95333  Kompaneets(n) = -0.95333  diff -2.2e-08;  f = -2.5983e+06 uK per y
+     217 GHz: g closed = -0.00778  Kompaneets(n) = -0.00778  diff -5.4e-09;  f = -2.1191e+04 uK per y
+     225 GHz: g closed = +0.11563  Kompaneets(n) = +0.11563  diff -2.5e-09;  f = +3.1516e+05 uK per y
+     280 GHz: g closed = +1.00217  Kompaneets(n) = +1.00217  diff +1.8e-08;  f = +2.7314e+06 uK per y
+     353 GHz: g closed = +2.24074  Kompaneets(n) = +2.24074  diff +3.1e-08;  f = +6.1071e+06 uK per y
+   null frequency = 217.507 GHz
+   builder claim: g = -1.963, -1.922, -1.572, -1.016, +0.116, +1.002 ; null 217.51 GHz
+   max |mine - claim| at band centres: 0.0005317645685321004

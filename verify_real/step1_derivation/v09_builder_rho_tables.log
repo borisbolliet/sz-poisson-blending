@@ -1,0 +1,27 @@
+[baseline] table: 96 theta 0.10-150.0', NU = 401, R_BEAM = 150.0; stored sigY vs mine: max |rel| 8.5e-04 (theta <= 50': 4.5e-04)
+   (1) node values vs my exact rho (203 pairs x 401 s): |diff| / max(1, |rho_AB(0)|): median 2.1e-04, 95% 1.7e-03, max 1.8e-03
+   (2) builder lookup vs my exact rho (300 random pairs, thetas 0.3-40', x 8 s): |diff| / max(1,|rho_AB(0)|): median 1.2e-04, 95% 1.7e-03, max 3.5e-03; / |rho_AB(0)|: median 2.6e-04, 95% 2.3e-03, max 6.5e-03
+       builder claim (s06a): 95% 5.2e-3 rho(0), max 6.4e-3 (vs their own exact rho)
+[goal] table: 96 theta 0.10-150.0', NU = 401, R_BEAM = 150.0; stored sigY vs mine: max |rel| 1.3e-03 (theta <= 50': 6.0e-04)
+   (1) node values vs my exact rho (203 pairs x 401 s): |diff| / max(1, |rho_AB(0)|): median 2.4e-04, 95% 1.6e-03, max 2.1e-03
+   (2) builder lookup vs my exact rho (300 random pairs, thetas 0.3-40', x 8 s): |diff| / max(1,|rho_AB(0)|): median 1.2e-04, 95% 1.7e-03, max 3.9e-03; / |rho_AB(0)|: median 2.7e-04, 95% 2.6e-03, max 9.0e-03
+       builder claim (s06a): 95% 5.2e-3 rho(0), max 6.4e-3 (vs their own exact rho)
+total 49s
+       49.65 real        49.44 user         0.19 sys
+           274382848  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               23356  page reclaims
+                  82  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  10  voluntary context switches
+                 804  involuntary context switches
+        934943433195  instructions retired
+        154899263219  cycles elapsed
+           251545152  peak memory footprint

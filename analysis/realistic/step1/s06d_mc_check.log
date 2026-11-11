@@ -1,0 +1,201 @@
+theta_A = [ 1.0069  4.025  16.0897]
+[sky 1] N = 29,298,030; zones built 8s; rss 3.23 GB
+   thA=1.007': done (19s; mean pairs/point 15,533)
+   thA=4.025': done (31s; mean pairs/point 18,636)
+   thA=16.090': done (51s; mean pairs/point 33,849)
+   [baseline] primaries: 2,335,387 (q>0.5), mean pairs 15,780, 633s; rss 3.31 GB
+   [goal] primaries: 3,277,777 (q>0.5), mean pairs 15,677, 879s; rss 3.31 GB
+   [white] primaries: 1,951,474 (q>0.5), mean pairs 147, 20s; rss 3.31 GB
+[sky 2] N = 29,301,145; zones built 8s; rss 4.30 GB
+   thA=1.007': done (18s; mean pairs/point 15,536)
+   thA=4.025': done (30s; mean pairs/point 18,639)
+   thA=16.090': done (51s; mean pairs/point 33,851)
+   [baseline] primaries: 2,336,224 (q>0.5), mean pairs 15,782, 633s; rss 4.34 GB
+   [goal] primaries: 3,278,863 (q>0.5), mean pairs 15,679, 880s; rss 4.34 GB
+   [white] primaries: 1,950,465 (q>0.5), mean pairs 147, 20s; rss 4.34 GB
+[sky 3] N = 29,296,033; zones built 8s; rss 4.34 GB
+   thA=1.007': done (18s; mean pairs/point 15,534)
+   thA=4.025': done (30s; mean pairs/point 18,635)
+   thA=16.090': done (51s; mean pairs/point 33,844)
+   [baseline] primaries: 2,335,335 (q>0.5), mean pairs 15,779, 633s; rss 4.34 GB
+   [goal] primaries: 3,277,121 (q>0.5), mean pairs 15,676, 880s; rss 4.34 GB
+   [white] primaries: 1,950,671 (q>0.5), mean pairs 147, 20s; rss 4.34 GB
+MC done 4752s, peak rss 4.34 GB
+
+[baseline] thA = 1.007' (60,000 random points, 60 blocks)
+   mean   : analytic -0.00000   MC +0.00228 +- 0.00254   (pull +0.90)
+   var    : analytic 0.33481   MC 0.33799 +- 0.02855   (pull +0.11; heavy-tailed)
+   q 2.27% : analytic -0.7863   MC -0.7855 +- 0.0100   (pull +0.07)
+   q15.87% : analytic -0.2554   MC -0.2513 +- 0.0021   (pull +1.94)
+   q50.00% : analytic -0.0349   MC -0.0333 +- 0.0009   (pull +1.75)
+   q84.13% : analytic +0.2051   MC +0.2065 +- 0.0024   (pull +0.61)
+   q97.72% : analytic +1.0230   MC +1.0083 +- 0.0185   (pull -0.80)
+   P(delta >  0.1) : analytic 0.25705   MC 0.25938 +- 0.00196   (pull +1.19)
+   P(delta >  0.2) : analytic 0.16209   MC 0.16302 +- 0.00153   (pull +0.60)
+   P(delta >  0.5) : analytic 0.06086   MC 0.06175 +- 0.00100   (pull +0.89)
+   P(delta >  1.0) : analytic 0.02353   MC 0.02302 +- 0.00066   (pull -0.77)
+   P(delta >  2.0) : analytic 0.00788   MC 0.00808 +- 0.00041   (pull +0.50)
+   P(delta >  5.0) : analytic 0.00141   MC 0.00157 +- 0.00016   (pull +1.02)
+   P(delta < -0.1) : analytic 0.36429   MC 0.36093 +- 0.00221   (pull -1.52)
+   P(delta < -0.2) : analytic 0.21201   MC 0.20815 +- 0.00200   (pull -1.93)
+   P(delta < -0.5) : analytic 0.05508   MC 0.05405 +- 0.00098   (pull -1.05)
+   P(delta < -1.0) : analytic 0.01359   MC 0.01363 +- 0.00049   (pull +0.09)
+
+[baseline] thA = 4.025' (60,000 random points, 60 blocks)
+   mean   : analytic +0.00003   MC +0.00625 +- 0.00342   (pull +1.82)
+   var    : analytic 0.41601   MC 0.51493 +- 0.08534   (pull +1.16; heavy-tailed)
+   q 2.27% : analytic -0.8103   MC -0.7926 +- 0.0094   (pull +1.89)
+   q15.87% : analytic -0.2794   MC -0.2787 +- 0.0022   (pull +0.32)
+   q50.00% : analytic -0.0498   MC -0.0484 +- 0.0009   (pull +1.51)
+   q84.13% : analytic +0.2125   MC +0.2159 +- 0.0028   (pull +1.20)
+   q97.72% : analytic +1.1598   MC +1.1637 +- 0.0231   (pull +0.17)
+   P(delta >  0.1) : analytic 0.25208   MC 0.25270 +- 0.00185   (pull +0.34)
+   P(delta >  0.2) : analytic 0.16628   MC 0.16838 +- 0.00168   (pull +1.25)
+   P(delta >  0.5) : analytic 0.06829   MC 0.06915 +- 0.00109   (pull +0.79)
+   P(delta >  1.0) : analytic 0.02808   MC 0.02843 +- 0.00066   (pull +0.54)
+   P(delta >  2.0) : analytic 0.00985   MC 0.01033 +- 0.00047   (pull +1.02)
+   P(delta >  5.0) : analytic 0.00187   MC 0.00188 +- 0.00020   (pull +0.07)
+   P(delta < -0.1) : analytic 0.39913   MC 0.39680 +- 0.00187   (pull -1.24)
+   P(delta < -0.2) : analytic 0.23848   MC 0.23783 +- 0.00187   (pull -0.35)
+   P(delta < -0.5) : analytic 0.06071   MC 0.05890 +- 0.00085   (pull -2.13)
+   P(delta < -1.0) : analytic 0.01424   MC 0.01338 +- 0.00047   (pull -1.82)
+
+[baseline] thA = 16.090' (60,000 random points, 60 blocks)
+   mean   : analytic +0.00029   MC +0.00322 +- 0.00264   (pull +1.11)
+   var    : analytic 0.30642   MC 0.31488 +- 0.03359   (pull +0.25; heavy-tailed)
+   q 2.27% : analytic -0.4944   MC -0.4820 +- 0.0046   (pull +2.72)
+   q15.87% : analytic -0.2245   MC -0.2245 +- 0.0011   (pull -0.01)
+   q50.00% : analytic -0.0785   MC -0.0790 +- 0.0008   (pull -0.55)
+   q84.13% : analytic +0.1481   MC +0.1518 +- 0.0025   (pull +1.45)
+   q97.72% : analytic +1.0302   MC +1.0465 +- 0.0229   (pull +0.71)
+   P(delta >  0.1) : analytic 0.19432   MC 0.19557 +- 0.00182   (pull +0.68)
+   P(delta >  0.2) : analytic 0.13035   MC 0.13177 +- 0.00144   (pull +0.98)
+   P(delta >  0.5) : analytic 0.05629   MC 0.05778 +- 0.00092   (pull +1.62)
+   P(delta >  1.0) : analytic 0.02371   MC 0.02418 +- 0.00070   (pull +0.68)
+   P(delta >  2.0) : analytic 0.00834   MC 0.00880 +- 0.00039   (pull +1.17)
+   P(delta >  5.0) : analytic 0.00156   MC 0.00148 +- 0.00016   (pull -0.50)
+   P(delta < -0.1) : analytic 0.43906   MC 0.44050 +- 0.00188   (pull +0.76)
+   P(delta < -0.2) : analytic 0.19650   MC 0.19562 +- 0.00157   (pull -0.56)
+   P(delta < -0.5) : analytic 0.02204   MC 0.02038 +- 0.00058   (pull -2.86)
+   P(delta < -1.0) : analytic 0.00265   MC 0.00235 +- 0.00022   (pull -1.36)
+
+[goal] thA = 1.007' (60,000 random points, 60 blocks)
+   mean   : analytic -0.00000   MC +0.00256 +- 0.00304   (pull +0.84)
+   var    : analytic 0.47991   MC 0.48639 +- 0.04123   (pull +0.16; heavy-tailed)
+   q 2.27% : analytic -0.9457   MC -0.9503 +- 0.0119   (pull -0.38)
+   q15.87% : analytic -0.3029   MC -0.2980 +- 0.0026   (pull +1.89)
+   q50.00% : analytic -0.0405   MC -0.0388 +- 0.0011   (pull +1.55)
+   q84.13% : analytic +0.2430   MC +0.2439 +- 0.0027   (pull +0.31)
+   q97.72% : analytic +1.2210   MC +1.2100 +- 0.0244   (pull -0.45)
+   P(delta >  0.1) : analytic 0.27769   MC 0.28012 +- 0.00181   (pull +1.34)
+   P(delta >  0.2) : analytic 0.18556   MC 0.18577 +- 0.00159   (pull +0.13)
+   P(delta >  0.5) : analytic 0.07532   MC 0.07617 +- 0.00108   (pull +0.79)
+   P(delta >  1.0) : analytic 0.03036   MC 0.03003 +- 0.00075   (pull -0.44)
+   P(delta >  2.0) : analytic 0.01060   MC 0.01045 +- 0.00047   (pull -0.32)
+   P(delta >  5.0) : analytic 0.00203   MC 0.00218 +- 0.00020   (pull +0.73)
+   P(delta < -0.1) : analytic 0.39291   MC 0.38967 +- 0.00204   (pull -1.59)
+   P(delta < -0.2) : analytic 0.24993   MC 0.24632 +- 0.00210   (pull -1.72)
+   P(delta < -0.5) : analytic 0.07529   MC 0.07358 +- 0.00104   (pull -1.64)
+   P(delta < -1.0) : analytic 0.02026   MC 0.02023 +- 0.00055   (pull -0.05)
+
+[goal] thA = 4.025' (60,000 random points, 60 blocks)
+   mean   : analytic +0.00003   MC +0.00658 +- 0.00403   (pull +1.62)
+   var    : analytic 0.59615   MC 0.73162 +- 0.11575   (pull +1.17; heavy-tailed)
+   q 2.27% : analytic -0.9846   MC -0.9676 +- 0.0118   (pull +1.45)
+   q15.87% : analytic -0.3319   MC -0.3315 +- 0.0026   (pull +0.18)
+   q50.00% : analytic -0.0566   MC -0.0555 +- 0.0011   (pull +0.91)
+   q84.13% : analytic +0.2537   MC +0.2577 +- 0.0034   (pull +1.21)
+   q97.72% : analytic +1.3821   MC +1.3880 +- 0.0273   (pull +0.22)
+   P(delta >  0.1) : analytic 0.27252   MC 0.27290 +- 0.00181   (pull +0.21)
+   P(delta >  0.2) : analytic 0.18909   MC 0.18968 +- 0.00179   (pull +0.33)
+   P(delta >  0.5) : analytic 0.08322   MC 0.08505 +- 0.00120   (pull +1.52)
+   P(delta >  1.0) : analytic 0.03568   MC 0.03607 +- 0.00072   (pull +0.54)
+   P(delta >  2.0) : analytic 0.01305   MC 0.01320 +- 0.00053   (pull +0.28)
+   P(delta >  5.0) : analytic 0.00265   MC 0.00263 +- 0.00023   (pull -0.07)
+   P(delta < -0.1) : analytic 0.42563   MC 0.42370 +- 0.00202   (pull -0.95)
+   P(delta < -0.2) : analytic 0.27890   MC 0.27810 +- 0.00201   (pull -0.40)
+   P(delta < -0.5) : analytic 0.08442   MC 0.08290 +- 0.00111   (pull -1.38)
+   P(delta < -1.0) : analytic 0.02201   MC 0.02118 +- 0.00061   (pull -1.35)
+
+[goal] thA = 16.090' (60,000 random points, 60 blocks)
+   mean   : analytic +0.00027   MC +0.00384 +- 0.00306   (pull +1.17)
+   var    : analytic 0.42977   MC 0.43188 +- 0.04291   (pull +0.05; heavy-tailed)
+   q 2.27% : analytic -0.6068   MC -0.5917 +- 0.0051   (pull +2.94)
+   q15.87% : analytic -0.2651   MC -0.2633 +- 0.0014   (pull +1.31)
+   q50.00% : analytic -0.0894   MC -0.0898 +- 0.0009   (pull -0.48)
+   q84.13% : analytic +0.1761   MC +0.1782 +- 0.0028   (pull +0.74)
+   q97.72% : analytic +1.2175   MC +1.2472 +- 0.0264   (pull +1.12)
+   P(delta >  0.1) : analytic 0.20958   MC 0.20960 +- 0.00170   (pull +0.01)
+   P(delta >  0.2) : analytic 0.14652   MC 0.14797 +- 0.00149   (pull +0.97)
+   P(delta >  0.5) : analytic 0.06740   MC 0.06858 +- 0.00097   (pull +1.22)
+   P(delta >  1.0) : analytic 0.02969   MC 0.03040 +- 0.00074   (pull +0.95)
+   P(delta >  2.0) : analytic 0.01091   MC 0.01157 +- 0.00043   (pull +1.50)
+   P(delta >  5.0) : analytic 0.00218   MC 0.00212 +- 0.00018   (pull -0.39)
+   P(delta < -0.1) : analytic 0.47454   MC 0.47520 +- 0.00226   (pull +0.29)
+   P(delta < -0.2) : analytic 0.25204   MC 0.25053 +- 0.00186   (pull -0.81)
+   P(delta < -0.5) : analytic 0.03786   MC 0.03628 +- 0.00074   (pull -2.12)
+   P(delta < -1.0) : analytic 0.00547   MC 0.00510 +- 0.00025   (pull -1.47)
+
+=== part 2: blending fractions counted directly on the 3 stored skies vs the FFT P(D) (s06b) ===
+    (MC: mean of the 3 per-sky values +- their standard error; full sky each)
+[baseline] neighbours M>1e13
+   q>4: N_single 131,392+-247 (FFT 131,571); N_det_b 133,173+-237 (FFT 133,299); B2_0.1 0.1216+-0.0006 (FFT 0.1211); B2_0.2 0.0683+-0.0003 (FFT 0.0679); B2neg_0.1 0.0371+-0.0003 (FFT 0.0369); B3 0.0752+-0.0002 (FFT 0.0748); lost 0.0604+-0.0001 (FFT 0.0604); sat 0.0023+-0.0000 (FFT 0.0022); meanbias 0.0316+-0.0002 (FFT 0.0313)
+   q>5: N_single 81,518+-216 (FFT 81,690); N_det_b 82,588+-189 (FFT 82,741); B2_0.1 0.0884+-0.0008 (FFT 0.0879); B2_0.2 0.0475+-0.0006 (FFT 0.0470); B2neg_0.1 0.0207+-0.0003 (FFT 0.0206); B3 0.0626+-0.0004 (FFT 0.0622); lost 0.0492+-0.0001 (FFT 0.0491); sat 0.0011+-0.0000 (FFT 0.0011); meanbias 0.0226+-0.0003 (FFT 0.0223)
+   q>6: N_single 55,498+-169 (FFT 55,659); N_det_b 56,137+-145 (FFT 56,301); B2_0.1 0.0694+-0.0010 (FFT 0.0688); B2_0.2 0.0365+-0.0007 (FFT 0.0359); B2neg_0.1 0.0131+-0.0002 (FFT 0.0132); B3 0.0543+-0.0005 (FFT 0.0540); lost 0.0428+-0.0001 (FFT 0.0424); sat 0.0007+-0.0000 (FFT 0.0007); meanbias 0.0177+-0.0004 (FFT 0.0174)
+   q>7: N_single 39,924+-136 (FFT 40,064); N_det_b 40,339+-128 (FFT 40,481); B2_0.1 0.0570+-0.0011 (FFT 0.0564); B2_0.2 0.0296+-0.0007 (FFT 0.0290); B2neg_0.1 0.0089+-0.0001 (FFT 0.0091); B3 0.0485+-0.0006 (FFT 0.0482); lost 0.0382+-0.0001 (FFT 0.0378); sat 0.0005+-0.0001 (FFT 0.0005); meanbias 0.0147+-0.0004 (FFT 0.0143)
+   q>5, Delta N/N in z bins [np.float64(0.01), np.float64(0.1), np.float64(0.25), np.float64(0.5), np.float64(1.0), np.float64(1.5), np.float64(2.0), np.float64(3.0)]: +0.0058+-0.0013 +0.0089+-0.0007 +0.0096+-0.0005 +0.0128+-0.0004 +0.0201+-0.0006 +0.0310+-0.0008 +0.0546+-0.0005
+        N_single per z bin (mean over skies): 724 7,538 23,378 36,143 11,193 2,186 357
+[baseline] neighbours M>1e14
+   q>4: N_single 131,392+-247 (FFT 131,571); N_det_b 131,321+-232 (FFT 131,468); B2_0.1 0.0484+-0.0002 (FFT 0.0479); B2_0.2 0.0343+-0.0002 (FFT 0.0339); B2neg_0.1 0.0237+-0.0002 (FFT 0.0238); B3 0.0335+-0.0001 (FFT 0.0333); lost 0.0319+-0.0000 (FFT 0.0320); sat 0.0021+-0.0000 (FFT 0.0021); meanbias 0.0151+-0.0001 (FFT 0.0149)
+   q>5: N_single 81,518+-216 (FFT 81,690); N_det_b 81,834+-196 (FFT 81,992); B2_0.1 0.0435+-0.0004 (FFT 0.0429); B2_0.2 0.0313+-0.0004 (FFT 0.0308); B2neg_0.1 0.0152+-0.0002 (FFT 0.0153); B3 0.0313+-0.0003 (FFT 0.0310); lost 0.0264+-0.0001 (FFT 0.0263); sat 0.0011+-0.0000 (FFT 0.0011); meanbias 0.0138+-0.0002 (FFT 0.0136)
+   q>6: N_single 55,498+-169 (FFT 55,659); N_det_b 55,796+-153 (FFT 55,954); B2_0.1 0.0402+-0.0004 (FFT 0.0394); B2_0.2 0.0282+-0.0004 (FFT 0.0276); B2neg_0.1 0.0103+-0.0002 (FFT 0.0105); B3 0.0291+-0.0004 (FFT 0.0288); lost 0.0232+-0.0000 (FFT 0.0229); sat 0.0007+-0.0000 (FFT 0.0007); meanbias 0.0124+-0.0003 (FFT 0.0120)
+   q>7: N_single 39,924+-136 (FFT 40,064); N_det_b 40,165+-132 (FFT 40,298); B2_0.1 0.0373+-0.0003 (FFT 0.0363); B2_0.2 0.0252+-0.0004 (FFT 0.0244); B2neg_0.1 0.0072+-0.0002 (FFT 0.0076); B3 0.0272+-0.0004 (FFT 0.0267); lost 0.0208+-0.0001 (FFT 0.0206); sat 0.0005+-0.0001 (FFT 0.0005); meanbias 0.0110+-0.0003 (FFT 0.0105)
+   q>5, Delta N/N in z bins [np.float64(0.01), np.float64(0.1), np.float64(0.25), np.float64(0.5), np.float64(1.0), np.float64(1.5), np.float64(2.0), np.float64(3.0)]: +0.0004+-0.0021 +0.0017+-0.0013 +0.0022+-0.0002 +0.0038+-0.0006 +0.0069+-0.0002 +0.0123+-0.0023 +0.0273+-0.0017
+        N_single per z bin (mean over skies): 724 7,538 23,378 36,143 11,193 2,186 357
+[goal] neighbours M>1e13
+   q>4: N_single 201,910+-263 (FFT 202,092); N_det_b 204,710+-266 (FFT 204,828); B2_0.1 0.1400+-0.0005 (FFT 0.1396); B2_0.2 0.0803+-0.0002 (FFT 0.0799); B2neg_0.1 0.0462+-0.0002 (FFT 0.0462); B3 0.0822+-0.0001 (FFT 0.0819); lost 0.0666+-0.0001 (FFT 0.0666); sat 0.0029+-0.0000 (FFT 0.0029); meanbias 0.0371+-0.0001 (FFT 0.0368)
+   q>5: N_single 127,962+-250 (FFT 128,152); N_det_b 129,806+-241 (FFT 129,923); B2_0.1 0.1043+-0.0007 (FFT 0.1037); B2_0.2 0.0571+-0.0003 (FFT 0.0565); B2neg_0.1 0.0276+-0.0003 (FFT 0.0277); B3 0.0692+-0.0002 (FFT 0.0687); lost 0.0543+-0.0002 (FFT 0.0544); sat 0.0015+-0.0001 (FFT 0.0015); meanbias 0.0270+-0.0002 (FFT 0.0266)
+   q>6: N_single 88,633+-234 (FFT 88,813); N_det_b 89,784+-207 (FFT 89,935); B2_0.1 0.0828+-0.0009 (FFT 0.0823); B2_0.2 0.0442+-0.0005 (FFT 0.0436); B2neg_0.1 0.0186+-0.0002 (FFT 0.0185); B3 0.0603+-0.0005 (FFT 0.0599); lost 0.0472+-0.0002 (FFT 0.0471); sat 0.0010+-0.0000 (FFT 0.0009); meanbias 0.0212+-0.0004 (FFT 0.0209)
+   q>7: N_single 64,705+-198 (FFT 64,884); N_det_b 65,446+-169 (FFT 65,633); B2_0.1 0.0684+-0.0010 (FFT 0.0680); B2_0.2 0.0360+-0.0006 (FFT 0.0354); B2neg_0.1 0.0132+-0.0002 (FFT 0.0132); B3 0.0539+-0.0006 (FFT 0.0537); lost 0.0424+-0.0001 (FFT 0.0421); sat 0.0007+-0.0000 (FFT 0.0006); meanbias 0.0175+-0.0004 (FFT 0.0172)
+   q>5, Delta N/N in z bins [np.float64(0.01), np.float64(0.1), np.float64(0.25), np.float64(0.5), np.float64(1.0), np.float64(1.5), np.float64(2.0), np.float64(3.0)]: +0.0064+-0.0003 +0.0094+-0.0009 +0.0101+-0.0002 +0.0133+-0.0003 +0.0223+-0.0002 +0.0340+-0.0007 +0.0483+-0.0031
+        N_single per z bin (mean over skies): 938 10,329 33,984 57,384 20,052 4,436 839
+[goal] neighbours M>1e14
+   q>4: N_single 201,910+-263 (FFT 202,092); N_det_b 201,150+-254 (FFT 201,290); B2_0.1 0.0467+-0.0003 (FFT 0.0462); B2_0.2 0.0324+-0.0001 (FFT 0.0321); B2neg_0.1 0.0277+-0.0003 (FFT 0.0278); B3 0.0321+-0.0000 (FFT 0.0320); lost 0.0331+-0.0000 (FFT 0.0332); sat 0.0027+-0.0000 (FFT 0.0027); meanbias 0.0145+-0.0001 (FFT 0.0143)
+   q>5: N_single 127,962+-250 (FFT 128,152); N_det_b 128,163+-233 (FFT 128,309); B2_0.1 0.0420+-0.0004 (FFT 0.0414); B2_0.2 0.0306+-0.0003 (FFT 0.0303); B2neg_0.1 0.0194+-0.0003 (FFT 0.0195); B3 0.0304+-0.0002 (FFT 0.0302); lost 0.0274+-0.0001 (FFT 0.0275); sat 0.0015+-0.0001 (FFT 0.0015); meanbias 0.0139+-0.0002 (FFT 0.0136)
+   q>6: N_single 88,633+-234 (FFT 88,813); N_det_b 88,987+-214 (FFT 89,148); B2_0.1 0.0395+-0.0005 (FFT 0.0389); B2_0.2 0.0288+-0.0004 (FFT 0.0284); B2neg_0.1 0.0140+-0.0002 (FFT 0.0141); B3 0.0290+-0.0004 (FFT 0.0287); lost 0.0241+-0.0001 (FFT 0.0241); sat 0.0010+-0.0000 (FFT 0.0009); meanbias 0.0129+-0.0003 (FFT 0.0127)
+   q>7: N_single 64,705+-198 (FFT 64,884); N_det_b 65,025+-179 (FFT 65,207); B2_0.1 0.0373+-0.0006 (FFT 0.0367); B2_0.2 0.0267+-0.0004 (FFT 0.0263); B2neg_0.1 0.0104+-0.0002 (FFT 0.0106); B3 0.0274+-0.0005 (FFT 0.0272); lost 0.0220+-0.0001 (FFT 0.0217); sat 0.0007+-0.0000 (FFT 0.0006); meanbias 0.0118+-0.0003 (FFT 0.0115)
+   q>5, Delta N/N in z bins [np.float64(0.01), np.float64(0.1), np.float64(0.25), np.float64(0.5), np.float64(1.0), np.float64(1.5), np.float64(2.0), np.float64(3.0)]: -0.0030+-0.0006 -0.0008+-0.0010 -0.0000+-0.0001 +0.0012+-0.0004 +0.0048+-0.0002 +0.0080+-0.0017 +0.0142+-0.0038
+        N_single per z bin (mean over skies): 938 10,329 33,984 57,384 20,052 4,436 839
+[white] neighbours M>1e13
+   q>4: N_single 130,484+-242 (FFT 130,656); N_det_b 126,173+-225 (FFT 126,151); B2_0.1 0.1862+-0.0005 (FFT 0.1848); B2_0.2 0.1254+-0.0003 (FFT 0.1243); B2neg_0.1 0.1132+-0.0003 (FFT 0.1147); B3 0.0880+-0.0002 (FFT 0.0873); lost 0.1087+-0.0002 (FFT 0.1093); sat 0.0095+-0.0001 (FFT 0.0095); meanbias 0.0381+-0.0004 (FFT 0.0369)
+   q>5: N_single 85,727+-213 (FFT 85,898); N_det_b 84,461+-192 (FFT 84,506); B2_0.1 0.1636+-0.0006 (FFT 0.1624); B2_0.2 0.1061+-0.0004 (FFT 0.1052); B2neg_0.1 0.0556+-0.0002 (FFT 0.0571); B3 0.0820+-0.0003 (FFT 0.0812); lost 0.0897+-0.0001 (FFT 0.0902); sat 0.0059+-0.0000 (FFT 0.0059); meanbias 0.0348+-0.0005 (FFT 0.0338)
+   q>6: N_single 61,482+-146 (FFT 61,630); N_det_b 61,079+-126 (FFT 61,126); B2_0.1 0.1461+-0.0006 (FFT 0.1451); B2_0.2 0.0921+-0.0004 (FFT 0.0912); B2neg_0.1 0.0276+-0.0002 (FFT 0.0289); B3 0.0764+-0.0003 (FFT 0.0756); lost 0.0782+-0.0002 (FFT 0.0788); sat 0.0042+-0.0000 (FFT 0.0043); meanbias 0.0313+-0.0005 (FFT 0.0302)
+   q>7: N_single 46,450+-96 (FFT 46,575); N_det_b 46,363+-92 (FFT 46,401); B2_0.1 0.1323+-0.0007 (FFT 0.1313); B2_0.2 0.0816+-0.0004 (FFT 0.0806); B2neg_0.1 0.0147+-0.0002 (FFT 0.0157); B3 0.0719+-0.0004 (FFT 0.0708); lost 0.0703+-0.0005 (FFT 0.0709); sat 0.0033+-0.0000 (FFT 0.0034); meanbias 0.0284+-0.0006 (FFT 0.0273)
+   q>5, Delta N/N in z bins [np.float64(0.01), np.float64(0.1), np.float64(0.25), np.float64(0.5), np.float64(1.0), np.float64(1.5), np.float64(2.0), np.float64(3.0)]: -0.0494+-0.0004 -0.0296+-0.0006 -0.0185+-0.0007 -0.0079+-0.0003 +0.0011+-0.0013 +0.0148+-0.0016 +0.0499+-0.0166
+        N_single per z bin (mean over skies): 3,187 13,092 27,083 32,532 8,263 1,379 190
+[white] neighbours M>1e14
+   q>4: N_single 130,484+-242 (FFT 130,656); N_det_b 124,416+-238 (FFT 124,458); B2_0.1 0.1368+-0.0003 (FFT 0.1358); B2_0.2 0.0968+-0.0001 (FFT 0.0961); B2neg_0.1 0.0508+-0.0002 (FFT 0.0521); B3 0.0607+-0.0001 (FFT 0.0605); lost 0.0952+-0.0002 (FFT 0.0958); sat 0.0092+-0.0000 (FFT 0.0092); meanbias 0.0194+-0.0001 (FFT 0.0186)
+   q>5: N_single 85,727+-213 (FFT 85,898); N_det_b 83,613+-202 (FFT 83,683); B2_0.1 0.1287+-0.0003 (FFT 0.1277); B2_0.2 0.0883+-0.0001 (FFT 0.0876); B2neg_0.1 0.0173+-0.0001 (FFT 0.0179); B3 0.0611+-0.0001 (FFT 0.0607); lost 0.0784+-0.0000 (FFT 0.0790); sat 0.0058+-0.0000 (FFT 0.0059); meanbias 0.0231+-0.0002 (FFT 0.0223)
+   q>6: N_single 61,482+-146 (FFT 61,630); N_det_b 60,627+-140 (FFT 60,686); B2_0.1 0.1201+-0.0003 (FFT 0.1191); B2_0.2 0.0801+-0.0002 (FFT 0.0792); B2neg_0.1 0.0082+-0.0001 (FFT 0.0085); B3 0.0596+-0.0001 (FFT 0.0589); lost 0.0685+-0.0002 (FFT 0.0690); sat 0.0042+-0.0000 (FFT 0.0043); meanbias 0.0232+-0.0003 (FFT 0.0223)
+   q>7: N_single 46,450+-96 (FFT 46,575); N_det_b 46,092+-106 (FFT 46,141); B2_0.1 0.1122+-0.0002 (FFT 0.1111); B2_0.2 0.0729+-0.0002 (FFT 0.0719); B2neg_0.1 0.0048+-0.0001 (FFT 0.0050); B3 0.0577+-0.0001 (FFT 0.0568); lost 0.0616+-0.0005 (FFT 0.0622); sat 0.0033+-0.0000 (FFT 0.0034); meanbias 0.0224+-0.0003 (FFT 0.0214)
+   q>5, Delta N/N in z bins [np.float64(0.01), np.float64(0.1), np.float64(0.25), np.float64(0.5), np.float64(1.0), np.float64(1.5), np.float64(2.0), np.float64(3.0)]: -0.0540+-0.0013 -0.0368+-0.0007 -0.0266+-0.0004 -0.0189+-0.0005 -0.0141+-0.0010 -0.0071+-0.0033 +0.0132+-0.0107
+        N_single per z bin (mean over skies): 3,187 13,092 27,083 32,532 8,263 1,379 190
+total 4865s, peak rss 4.34 GB
+     4865.05 real     18336.61 user        23.76 sys
+          4339400704  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              976908  page reclaims
+                  89  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 169  voluntary context switches
+              471443  involuntary context switches
+     191544986715732  instructions retired
+      56003847499188  cycles elapsed
+          5224558080  peak memory footprint

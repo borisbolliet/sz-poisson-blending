@@ -1,0 +1,41 @@
+# first build (48 theta nodes, 0.1-150'), rejected - theta interpolation error up to 3.3% of rho(0) (worst at theta ~ 100', where sigma_Y rises steeply):
+#   [baseline] table 48x48x401 built in 39s -> /Users/boris/GitHub/sz-poisson-blending/data_real/rho_mmf_baseline.npz
+#   [baseline] (1) max|rho_interp - rho_exact| / |rho(0)| over 60 x 8 random points: median 9.67e-04, 95% 2.52e-02, max 3.29e-02
+#   [baseline] (2) DC: int rho / int |rho| over 144 pairs: median 1.22e-04, max 2.23e-02 (exact 0)
+#   [baseline] (3) int rho^2 (table) / Parseval - 1 over 144 pairs: median +1.96e-08, min -3.27e-03, max +3.85e-08
+#   [baseline] done 39s
+#   [goal] table 48x48x401 built in 38s -> /Users/boris/GitHub/sz-poisson-blending/data_real/rho_mmf_goal.npz
+#   [goal] (1) max|rho_interp - rho_exact| / |rho(0)| over 60 x 8 random points: median 9.47e-04, 95% 2.60e-02, max 3.34e-02
+#   [goal] (2) DC: int rho / int |rho| over 144 pairs: median 7.15e-05, max 2.23e-02 (exact 0)
+#   [goal] (3) int rho^2 (table) / Parseval - 1 over 144 pairs: median +2.57e-08, min -3.23e-03, max +1.02e-07
+#   [goal] done 38s
+# diagnosis: t-interpolation only (on theta nodes): median 3.2e-4, max 1.1e-3; theta-interpolation (random theta, s on t nodes): median 9.0e-3, max 3.7e-2
+# ---- final build (96 theta nodes) ----
+[baseline] table 96x96x401 built in 148s -> /Users/boris/GitHub/sz-poisson-blending/data_real/rho_mmf_baseline.npz
+[baseline] (1) max|rho_interp - rho_exact| / |rho(0)| over 60 x 8 random points: median 3.75e-04, 95% 5.16e-03, max 6.18e-03
+[baseline] (2) DC: int rho / int |rho| over 144 pairs: median 3.48e-04, max 2.93e-02 (exact 0)
+[baseline] (3) int rho^2 (table) / Parseval - 1 over 144 pairs: median +1.78e-08, min -6.02e-03, max +3.99e-08
+[baseline] done 149s
+[goal] table 96x96x401 built in 149s -> /Users/boris/GitHub/sz-poisson-blending/data_real/rho_mmf_goal.npz
+[goal] (1) max|rho_interp - rho_exact| / |rho(0)| over 60 x 8 random points: median 4.07e-04, 95% 5.16e-03, max 6.37e-03
+[goal] (2) DC: int rho / int |rho| over 144 pairs: median 2.70e-04, max 2.93e-02 (exact 0)
+[goal] (3) int rho^2 (table) / Parseval - 1 over 144 pairs: median +2.55e-08, min -5.96e-03, max +1.10e-07
+[goal] done 149s
+      298.57 real      1182.66 user         2.91 sys
+           257114112  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              209299  page reclaims
+                 702  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                2314  voluntary context switches
+               18724  involuntary context switches
+         21542780066  instructions retired
+          6231163580  cycles elapsed
+           200476480  peak memory footprint

@@ -1,0 +1,7 @@
+Resolved 1 package in 216ms
+   Building classy==3.4.2.0
+      Built classy==3.4.2.0
+Prepared 1 package in 20.50s
+Installed 1 package in 1ms
+ + classy==3.4.2.0
+uv pip install --python  classy  25.51s user 3.04s system 137% cpu 20.782 total

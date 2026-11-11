@@ -1,0 +1,91 @@
+2D grids: mmf 6,285,011 modes (820,261 distinct |l|); white 6,285,173 (820,304)
+sky seed 20261111: N = 29,295,527; theta500 range 0.258-64.6'; N(theta>100') = 0, N(theta>700', clamped) = 0; [11s]
+ybar (sum Y500 / A_sky) = 3.5620e-07 (builder: 3.5895e-07); mean y incl. 5R500 = 6.399e-07
+
+=== white: var_conf / sigma_A^2 (catalogue sum) vs builder (Parseval + HMF population) [18s] ===
+   theta_A [']       0.52     0.95     1.98     4.15     7.50    15.72    32.94
+   all     mine    0.7166    0.983     1.73    3.425     5.95    11.01    17.87
+   all     bldr    0.7738    1.069    1.921    3.972    7.319    15.14    28.72   max|mine/bldr-1| (40 nodes) = 0.503
+   c0      mine  0.006332 0.007698   0.0106   0.0152  0.02025  0.02829  0.03753
+   c0      bldr  0.006339 0.007708  0.01062  0.01524  0.02033  0.02849  0.03798   max|mine/bldr-1| (40 nodes) = 0.018
+   c1      mine   0.04989  0.06329   0.0947   0.1517   0.2228   0.3507   0.5198
+   c1      bldr   0.04965  0.06293  0.09397   0.1498   0.2186   0.3408   0.5012   max|mine/bldr-1| (40 nodes) = 0.039
+   c2      mine    0.6604    0.912    1.624    3.258    5.707    10.63    17.31
+   c2      bldr    0.7178   0.9986    1.817    3.807     7.08    14.77    28.18   max|mine/bldr-1| (40 nodes) = 0.510
+   subthr  mine    0.1212   0.1525   0.2211   0.3259   0.4222   0.5273   0.5962
+   subthr  bldr    0.1211   0.1524   0.2209   0.3256   0.4217   0.5264   0.5946   max|mine/bldr-1| (40 nodes) = 0.004
+   mu/sigma mine   0.4095   0.5063   0.7715    1.375    2.353    4.811    10.01
+   mu/sigma bldr   0.4127   0.5102   0.7775    1.386    2.372     4.85    10.09
+   sigma_A mine/bldr-1 (40 nodes): max 2.1e-04
+   fraction of var from M>1e14: 0.922 0.928 0.939 0.951 0.959 0.966 0.969
+   DC response at 1/4/16': [ 10.55141774  69.51067642 938.57680191] arcmin^2
+[baseline] 1/N_y(0) = 0.0; response to a l=10 mode (per unit y amplitude) at thA = 1, 4, 16': [3.20551150e-06 6.01822972e-05 1.32536370e-02] arcmin^2 (cf. white DC 10.5-937)
+
+=== baseline: var_conf / sigma_A^2 (catalogue sum) vs builder (Parseval + HMF population) [18s] ===
+   theta_A [']       0.52     0.95     1.98     4.15     7.50    15.72    32.94
+   all     mine    0.2921   0.3278   0.3808   0.4125   0.3925    0.306   0.2019
+   all     bldr    0.2945   0.3304   0.3839   0.4161    0.396   0.3096   0.2056   max|mine/bldr-1| (40 nodes) = 0.026
+   c0      mine  0.007593 0.008187 0.008829 0.008513  0.00709 0.004448 0.002398
+   c0      bldr   0.00761 0.008206  0.00885 0.008534 0.007105 0.004463 0.002407   max|mine/bldr-1| (40 nodes) = 0.004
+   c1      mine   0.04528  0.04954  0.05484  0.05492  0.04756  0.03164  0.01793
+   c1      bldr   0.04533  0.04959   0.0549  0.05497  0.04759  0.03167  0.01794   max|mine/bldr-1| (40 nodes) = 0.002
+   c2      mine    0.2392   0.2701   0.3171   0.3491   0.3378   0.2699   0.1816
+   c2      bldr    0.2415   0.2727   0.3202   0.3525   0.3413   0.2735   0.1852   max|mine/bldr-1| (40 nodes) = 0.028
+   subthr  mine    0.1126   0.1239   0.1388   0.1414   0.1248  0.08549  0.04973
+   subthr  bldr    0.1127   0.1241    0.139   0.1416   0.1249  0.08559  0.04977   max|mine/bldr-1| (40 nodes) = 0.002
+   mu/sigma mine        0        0        0        0        0        0        0
+   mu/sigma bldr        0        0        0        0        0        0        0
+   sigma_A mine/bldr-1 (40 nodes): max 8.9e-04
+   fraction of var from M>1e14: 0.819 0.824 0.833 0.846 0.861 0.882 0.899
+[goal] 1/N_y(0) = 0.0; response to a l=10 mode (per unit y amplitude) at thA = 1, 4, 16': [1.85567340e-06 4.01303793e-05 1.06092762e-02] arcmin^2 (cf. white DC 10.5-937)
+
+=== goal: var_conf / sigma_A^2 (catalogue sum) vs builder (Parseval + HMF population) [18s] ===
+   theta_A [']       0.52     0.95     1.98     4.15     7.50    15.72    32.94
+   all     mine    0.4172   0.4694   0.5471   0.5908   0.5581   0.4297   0.2807
+   all     bldr    0.4208   0.4734   0.5518    0.596    0.563   0.4344    0.285   max|mine/bldr-1| (40 nodes) = 0.020
+   c0      mine   0.01186   0.0128   0.0138  0.01326  0.01104 0.007008 0.003876
+   c0      bldr   0.01189  0.01283  0.01383   0.0133  0.01106 0.007036 0.003893   max|mine/bldr-1| (40 nodes) = 0.004
+   c1      mine   0.06841  0.07497  0.08316  0.08309   0.0719  0.04814  0.02772
+   c1      bldr   0.06851  0.07509  0.08328  0.08322  0.07197  0.04823  0.02777   max|mine/bldr-1| (40 nodes) = 0.002
+   c2      mine     0.337   0.3816   0.4502   0.4944   0.4751   0.3745   0.2491
+   c2      bldr    0.3404   0.3855   0.4547   0.4995     0.48   0.3791   0.2534   max|mine/bldr-1| (40 nodes) = 0.023
+   subthr  mine    0.1409   0.1551   0.1735   0.1755   0.1538   0.1049  0.06131
+   subthr  bldr    0.1412   0.1554   0.1738   0.1757   0.1539    0.105   0.0614   max|mine/bldr-1| (40 nodes) = 0.002
+   mu/sigma mine        0        0        0        0        0        0        0
+   mu/sigma bldr        0        0        0        0        0        0        0
+   sigma_A mine/bldr-1 (40 nodes): max 9.5e-04
+   fraction of var from M>1e14: 0.808 0.813 0.823 0.837 0.851 0.872 0.887
+
+=== tSZ Poisson power of the sampled population (direct sum, g from 2D FFT) ===
+   l=3000: 1e12 l(l+1)C/2pi = 1.1214; D_l at 145 GHz = 8.595 uK^2
+   l=3000: 1e12 l(l+1)C/2pi = 1.1214; D_l at 150 GHz = 7.571 uK^2
+   [white] sub-threshold share of the Y^2 power at l=3000: 0.312
+   [baseline] sub-threshold share of the Y^2 power at l=3000: 0.320
+   [goal] sub-threshold share of the Y^2 power at l=3000: 0.262
+   builder: 1.128; 8.65 uK^2 (145 GHz), 7.62 (150 GHz); shares 0.310 / 0.318 / 0.260; SPT 3.42 +- 0.54 uK^2
+
+=== tSZ-aware filter: N_y -> N_y + C_l^yy (catalogue C_l, binned in ln theta) ===
+   [baseline] filter knows C^yy(subthr): sigma'/sigma at thA = 0.52 0.95 1.98 4.15 7.50: 1.053 1.058 1.065 1.067 1.059   sqrt(1+v): 1.055 1.060 1.067 1.068 1.061
+   [baseline] filter knows C^yy(all): sigma'/sigma at thA = 0.52 0.95 1.98 4.15 7.50: 1.122 1.138 1.164 1.181 1.173   sqrt(1+v): 1.137 1.152 1.175 1.188 1.180
+   [goal] filter knows C^yy(subthr): sigma'/sigma at thA = 0.52 0.95 1.98 4.15 7.50: 1.065 1.072 1.081 1.082 1.071   sqrt(1+v): 1.068 1.075 1.083 1.084 1.074
+   [goal] filter knows C^yy(all): sigma'/sigma at thA = 0.52 0.95 1.98 4.15 7.50: 1.164 1.188 1.224 1.247 1.234   sqrt(1+v): 1.190 1.212 1.244 1.261 1.248
+
+total 70s
+       70.87 real        70.03 user         0.81 sys
+          4476125184  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              347328  page reclaims
+                  82  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  37  voluntary context switches
+                1890  involuntary context switches
+       1003529090595  instructions retired
+        220004967706  cycles elapsed
+          4455278016  peak memory footprint

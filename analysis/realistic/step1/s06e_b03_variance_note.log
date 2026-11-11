@@ -1,0 +1,30 @@
+   analysis/blending/blendlib.py: modified Tue Nov 10 20:36:43 2026
+   data/blending/analytic.npz: modified Tue Nov 10 20:39:15 2026
+   analysis/blending/b03_analytic.log: modified Tue Nov 10 18:48:54 2026
+   neighbours with theta_B > 80': 0.209 per full sky (expected)
+thA=  2.30': var(x<500): current kernel 2.2124 | predicted with pre-fix kernel 2.2527 | stored analytic.npz 2.2527  (stored/predicted - 1 = -1.2e-14; stored/current - 1 = +1.8e-02)
+             rate(x>=500): current 6.844e-09 | predicted pre-fix 4.028e-08 | stored 4.028e-08
+thA=  4.82': var(x<500): current kernel 4.6139 | predicted with pre-fix kernel 4.6995 | stored analytic.npz 4.6995  (stored/predicted - 1 = -1.0e-14; stored/current - 1 = +1.9e-02)
+             rate(x>=500): current 8.342e-08 | predicted pre-fix 2.184e-07 | stored 2.184e-07
+thA= 10.09': var(x<500): current kernel 9.5975 | predicted with pre-fix kernel 9.7574 | stored analytic.npz 9.7574  (stored/predicted - 1 = -6.2e-15; stored/current - 1 = +1.7e-02)
+             rate(x>=500): current 6.575e-07 | predicted pre-fix 1.117e-06 | stored 1.117e-06
+thA= 21.13': var(x<500): current kernel 18.2472 | predicted with pre-fix kernel 18.4959 | stored analytic.npz 18.4959  (stored/predicted - 1 = -3.9e-15; stored/current - 1 = +1.4e-02)
+             rate(x>=500): current 2.977e-06 | predicted pre-fix 4.120e-06 | stored 4.120e-06
+       45.23 real       164.16 user         0.44 sys
+           475578368  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               47890  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                9829  involuntary context switches
+       1824968849895  instructions retired
+        502879255728  cycles elapsed
+           413534400  peak memory footprint
