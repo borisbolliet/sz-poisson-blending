@@ -1,0 +1,89 @@
+z05: config S0, edge buffer 0.0', 6 tiles; SZiFi /Users/boris/GitHub/szifi/szifi/__init__.py
+--- full SZiFi parameter dictionary used: S0 (after the run on baseline_real_000; cluster_finder adds a_matrix and sets cmmf_type in place)
+    a_matrix                     = [[-5348707.175668]
+ [-5238436.669914]
+ [-4284002.720275]
+ [-2768488.904179]
+ [  315162.207061]
+ [ 2731427.857946]]
+    apod_type                    = old
+    beam                         = gaussian
+    cmmf_type                    = standard_mmf
+    comp_to_calculate            = [0]
+    compute_coupling_matrix      = False
+    cosmology                    = Planck15
+    cosmology_tool               = classy_sz
+    coupling_matrix_needed       = False
+    cov_kernel_shape             = [4.0, 4.0]
+    cov_type                     = isotropic
+    decouple_type                = none
+    deproject_cib                = None
+    detection_method             = maxima_lomem
+    extraction_mode              = find
+    freqs                        = [0, 1, 2, 3, 4, 5]
+    get_lonlat                   = False
+    get_q_true                   = False
+    inpaint                      = False
+    inpaint_type                 = diffusive
+    integrate_bandpass           = False
+    interp_type                  = nearest
+    iterative                    = True
+    lrange                       = [100, 20000]
+    lsep                         = 3000
+    map_dtype                    = <class 'numpy.float32'>
+    mask_radius                  = 3.0
+    max_it                       = 1
+    max_radius_mask_arcmin       = inf
+    min_ftile                    = 0.3
+    min_radius_mask_arcmin       = 0.0
+    mmf_type                     = standard
+    n_inpaint                    = 100
+    norm_type                    = centre
+    path                         = /Users/boris/GitHub/szifi/
+    path_data                    = /Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/out/maps/
+    path_template                = None
+    powspec_bin_fac              = 4
+    powspec_lmax1d               = None
+    powspec_new_shape            = None
+    q_th                         = 4.0
+    q_th_noise                   = 4.0
+    rSZ                          = False
+    save_and_load_template       = False
+    save_coupling_matrix         = False
+    save_snr_maps                = False
+    snr_maps_name                = None
+    snr_maps_path                = None
+    snr_weighting                = False
+    snr_weigthing                = False
+    survey_file                  = /Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3_szifi_real/z_survey.py
+    theta_500_input              = None
+    theta_500_vec_arcmin         = [ 0.5       0.637498  0.812807  1.036325  1.32131   1.684664  2.147939  2.738613  3.491719  4.451926  5.676186  7.237112  9.227285 11.764747 15.      ]
+    theta_find                   = input
+    tile_type                    = healpix
+    tilemask_buffer_arcmin       = 15
+    tilemask_mode                = field
+  baseline real    0: 120.2 s, peak RSS 1.36 GB; it0 q>4/4.5/5 631/474/372; it1 q>4/4.5/5 631/474/372; sigma it1/it0 at 0.5'/4.45'/15' 1.0000/1.0000/1.0000; f [0.7466]  [1/6, elapsed 120 s]
+  baseline real   33: 131.7 s, peak RSS 1.36 GB; it0 q>4/4.5/5 551/392/295; it1 q>4/4.5/5 551/392/295; sigma it1/it0 at 0.5'/4.45'/15' 1.0000/1.0000/1.0000; f [0.6838]  [2/6, elapsed 252 s]
+  baseline real   66: 131.6 s, peak RSS 1.36 GB; it0 q>4/4.5/5 634/455/357; it1 q>4/4.5/5 634/455/357; sigma it1/it0 at 0.5'/4.45'/15' 1.0000/1.0000/1.0000; f [0.7145]  [3/6, elapsed 384 s]
+  baseline real   99: 143.6 s, peak RSS 1.36 GB; it0 q>4/4.5/5 625/503/421; it1 q>4/4.5/5 625/503/421; sigma it1/it0 at 0.5'/4.45'/15' 1.0000/1.0000/1.0000; f [0.7852]  [4/6, elapsed 527 s]
+  baseline real  132: 116.3 s, peak RSS 1.42 GB; it0 q>4/4.5/5 666/524/426; it1 q>4/4.5/5 666/524/426; sigma it1/it0 at 0.5'/4.45'/15' 1.0000/1.0000/1.0000; f [0.7545]  [5/6, elapsed 644 s]
+  baseline real  165: 119.6 s, peak RSS 1.42 GB; it0 q>4/4.5/5 613/453/358; it1 q>4/4.5/5 613/453/358; sigma it1/it0 at 0.5'/4.45'/15' 1.0000/1.0000/1.0000; f [0.6904]  [6/6, elapsed 763 s]
+z05 S0 done [763 s]; process peak RSS 1.42 GB
+      765.97 real       463.75 user       255.71 sys
+          1415970816  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            97194222  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                3046  voluntary context switches
+              632150  involuntary context switches
+       4694236561252  instructions retired
+       2125274748105  cycles elapsed
+          2116982208  peak memory footprint

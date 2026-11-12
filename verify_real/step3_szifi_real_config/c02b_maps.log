@@ -1,0 +1,27 @@
+  real  11 baseline: production finder rerun identical to the stored catalogues and sigma: True
+  real  11 goal    : production finder rerun identical to the stored catalogues and sigma: True
+  real  22 baseline: production finder rerun identical to the stored catalogues and sigma: True
+  real  22 goal    : production finder rerun identical to the stored catalogues and sigma: True
+  real  44 baseline: production finder rerun identical to the stored catalogues and sigma: True
+  real  44 goal    : production finder rerun identical to the stored catalogues and sigma: True
+  real  55 baseline: production finder rerun identical to the stored catalogues and sigma: True
+  real  55 goal    : production finder rerun identical to the stored catalogues and sigma: True
+8 of 8 identical; done [16 s]; peak RSS 0.98 GB
+       16.98 real        16.49 user         0.31 sys
+           978518016  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               67680  page reclaims
+                 726  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1039  voluntary context switches
+                 702  involuntary context switches
+        184791534776  instructions retired
+         52412482387  cycles elapsed
+           921193536  peak memory footprint

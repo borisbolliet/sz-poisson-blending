@@ -1,0 +1,16 @@
+python 3.12.9 (/Users/boris/GitHub/szifi-venv/bin/python)
+SZiFi clone HEAD: 73626fb Fri Aug 28 22:00:52 2026 +0100 Fix the line-of-sight quadrature, and stop rebuilding the coupling matrix every noise iteration
+'git status --short' output: 0 characters
+__pycache__ / .pyc inside the clone (outside .git): []
+  numpy      2.5.4
+  scipy      1.18.1
+  astropy    8.0.2
+  healpy     1.20.1
+  numba      0.68.1
+  pixell     0.32.9
+  sklearn    1.9.1
+  pymaster   3.0.1
+  orphics    0.1
+import szifi -> /Users/boris/GitHub/szifi/szifi/__init__.py
+sys.dont_write_bytecode = True; NUMBA_CACHE_DIR = /Users/boris/GitHub/sz-poisson-blending/verify_real/step3_szifi_real_config/out/numba_cache
+__pycache__ / .pyc inside the clone after the import: []

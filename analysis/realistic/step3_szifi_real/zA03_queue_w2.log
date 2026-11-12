@@ -1,0 +1,62 @@
+zA03_queue: worker w2, queue queue_A (84 jobs); SZiFi /Users/boris/GitHub/szifi/szifi/__init__.py; MallocLargeCache=0
+  S1z_baseline_real_000: 104.5 s, peak RSS 1.72 GB; it0 q>4/5 321/166; it1 q>4/5 303/164; sigma it1/it0 at 0.5'/4.45'/15' 1.0355/0.9848/0.9557; f [0.7901], edge cover 0.055, n_oob 470392, periodic calls 0/0  [13:41:24, elapsed 104 s]
+  S1z_baseline_real_011: 102.6 s, peak RSS 1.72 GB; it0 q>4/5 292/161; it1 q>4/5 299/168; sigma it1/it0 at 0.5'/4.45'/15' 1.0260/0.9634/0.9382; f [0.7674], edge cover 0.038, n_oob 470392, periodic calls 0/0  [13:43:07, elapsed 207 s]
+  S1z_baseline_real_022: 103.2 s, peak RSS 1.72 GB; it0 q>4/5 322/152; it1 q>4/5 316/157; sigma it1/it0 at 0.5'/4.45'/15' 1.0243/0.9694/0.9447; f [0.7994], edge cover 0.067, n_oob 470392, periodic calls 0/0  [13:44:50, elapsed 310 s]
+  S1z_baseline_real_033: 101.3 s, peak RSS 1.72 GB; it0 q>4/5 295/158; it1 q>4/5 283/148; sigma it1/it0 at 0.5'/4.45'/15' 1.0317/0.9745/0.9447; f [0.7708], edge cover 0.092, n_oob 470392, periodic calls 0/0  [13:46:31, elapsed 412 s]
+  S1z_baseline_real_044: 100.3 s, peak RSS 1.72 GB; it0 q>4/5 288/162; it1 q>4/5 290/153; sigma it1/it0 at 0.5'/4.45'/15' 1.0277/0.9776/0.9585; f [0.7918], edge cover 0.068, n_oob 470392, periodic calls 0/0  [13:48:11, elapsed 512 s]
+  S1z_baseline_real_055:  98.2 s, peak RSS 1.72 GB; it0 q>4/5 277/153; it1 q>4/5 280/162; sigma it1/it0 at 0.5'/4.45'/15' 1.0134/0.9598/0.9372; f [0.8054], edge cover 0.071, n_oob 470392, periodic calls 0/0  [13:49:49, elapsed 610 s]
+  S1z_baseline_real_088:  95.6 s, peak RSS 1.72 GB; it0 q>4/5 320/196; it1 q>4/5 338/204; sigma it1/it0 at 0.5'/4.45'/15' 1.0022/0.9442/0.9248; f [0.8137], edge cover 0.064, n_oob 470392, periodic calls 0/0  [13:51:25, elapsed 706 s]
+  S1z_goal_real_088: 100.8 s, peak RSS 1.72 GB; it0 q>4/5 422/251; it1 q>4/5 447/272; sigma it1/it0 at 0.5'/4.45'/15' 0.9954/0.9280/0.9099; f [0.7958], edge cover 0.075, n_oob 470392, periodic calls 0/0  [13:53:06, elapsed 806 s]
+  S1z_baseline_real_176:  96.8 s, peak RSS 1.72 GB; it0 q>4/5 320/184; it1 q>4/5 312/185; sigma it1/it0 at 0.5'/4.45'/15' 1.0245/0.9604/0.9353; f [0.7658], edge cover 0.052, n_oob 470392, periodic calls 0/0  [13:54:43, elapsed 903 s]
+  S1z_goal_real_176:  99.4 s, peak RSS 1.72 GB; it0 q>4/5 393/251; it1 q>4/5 404/253; sigma it1/it0 at 0.5'/4.45'/15' 1.0232/0.9522/0.9259; f [0.7501], edge cover 0.042, n_oob 470392, periodic calls 0/0  [13:56:22, elapsed 1003 s]
+  S1z_baseline_real_264:  97.7 s, peak RSS 1.72 GB; it0 q>4/5 310/160; it1 q>4/5 313/162; sigma it1/it0 at 0.5'/4.45'/15' 1.0248/0.9707/0.9490; f [0.7904], edge cover 0.083, n_oob 470392, periodic calls 0/0  [13:58:00, elapsed 1100 s]
+  S1z_goal_real_264:  99.9 s, peak RSS 1.72 GB; it0 q>4/5 402/232; it1 q>4/5 419/250; sigma it1/it0 at 0.5'/4.45'/15' 1.0068/0.9519/0.9383; f [0.7911], edge cover 0.064, n_oob 470392, periodic calls 0/0  [13:59:40, elapsed 1200 s]
+  S1zp_baseline_real_000: 109.5 s, peak RSS 1.72 GB; it0 q>4/5 321/166; it1 q>4/5 307/165; sigma it1/it0 at 0.5'/4.45'/15' 1.0280/0.9772/0.9520; f [0.7901], edge cover 0.055, n_oob 470392, periodic calls 1/6  [14:01:29, elapsed 1310 s]
+  S1zp_baseline_real_011: 105.0 s, peak RSS 1.72 GB; it0 q>4/5 292/161; it1 q>4/5 300/167; sigma it1/it0 at 0.5'/4.45'/15' 1.0262/0.9638/0.9387; f [0.7674], edge cover 0.038, n_oob 470392, periodic calls 1/6  [14:03:14, elapsed 1415 s]
+  S1zp_baseline_real_022: 108.1 s, peak RSS 1.72 GB; it0 q>4/5 322/152; it1 q>4/5 323/158; sigma it1/it0 at 0.5'/4.45'/15' 1.0194/0.9659/0.9449; f [0.7994], edge cover 0.067, n_oob 470392, periodic calls 1/6  [14:05:02, elapsed 1523 s]
+  S1zp_goal_real_022: 116.3 s, peak RSS 1.72 GB; it0 q>4/5 430/229; it1 q>4/5 401/217; sigma it1/it0 at 0.5'/4.45'/15' 1.0408/0.9743/0.9394; f [0.7464], edge cover 0.059, n_oob 470392, periodic calls 1/6  [14:06:59, elapsed 1639 s]
+  S1zp_baseline_real_044: 107.7 s, peak RSS 1.72 GB; it0 q>4/5 288/162; it1 q>4/5 289/153; sigma it1/it0 at 0.5'/4.45'/15' 1.0275/0.9772/0.9586; f [0.7918], edge cover 0.068, n_oob 470392, periodic calls 1/6  [14:08:46, elapsed 1747 s]
+  S1zp_baseline_real_055: 106.2 s, peak RSS 1.72 GB; it0 q>4/5 277/153; it1 q>4/5 283/163; sigma it1/it0 at 0.5'/4.45'/15' 1.0119/0.9584/0.9354; f [0.8054], edge cover 0.071, n_oob 470392, periodic calls 1/6  [14:10:33, elapsed 1853 s]
+  S1zp_goal_real_055: 113.3 s, peak RSS 1.72 GB; it0 q>4/5 383/227; it1 q>4/5 404/236; sigma it1/it0 at 0.5'/4.45'/15' 1.0001/0.9362/0.9164; f [0.7923], edge cover 0.070, n_oob 470392, periodic calls 1/6  [14:12:26, elapsed 1966 s]
+  S1zp_goal_real_088: 116.5 s, peak RSS 1.72 GB; it0 q>4/5 422/251; it1 q>4/5 448/276; sigma it1/it0 at 0.5'/4.45'/15' 0.9924/0.9254/0.9083; f [0.7958], edge cover 0.075, n_oob 470392, periodic calls 1/6  [14:14:22, elapsed 2083 s]
+  S1zp_baseline_real_176: 109.5 s, peak RSS 1.72 GB; it0 q>4/5 320/184; it1 q>4/5 311/182; sigma it1/it0 at 0.5'/4.45'/15' 1.0256/0.9652/0.9416; f [0.7658], edge cover 0.052, n_oob 470392, periodic calls 1/6  [14:16:12, elapsed 2193 s]
+  S1zp_goal_real_176: 115.2 s, peak RSS 1.72 GB; it0 q>4/5 393/251; it1 q>4/5 401/249; sigma it1/it0 at 0.5'/4.45'/15' 1.0228/0.9568/0.9328; f [0.7501], edge cover 0.042, n_oob 470392, periodic calls 1/6  [14:18:07, elapsed 2308 s]
+  S1zp_baseline_real_264: 109.8 s, peak RSS 1.72 GB; it0 q>4/5 310/160; it1 q>4/5 315/164; sigma it1/it0 at 0.5'/4.45'/15' 1.0203/0.9672/0.9473; f [0.7904], edge cover 0.083, n_oob 470392, periodic calls 1/6  [14:19:57, elapsed 2417 s]
+  S1zp_baseline_real_308: 106.2 s, peak RSS 1.72 GB; it0 q>4/5 288/155; it1 q>4/5 288/157; sigma it1/it0 at 0.5'/4.45'/15' 1.0193/0.9600/0.9367; f [0.7838], edge cover 0.081, n_oob 470392, periodic calls 1/6  [14:21:43, elapsed 2524 s]
+  S1zp_goal_real_308: 113.9 s, peak RSS 1.72 GB; it0 q>4/5 389/220; it1 q>4/5 399/239; sigma it1/it0 at 0.5'/4.45'/15' 1.0037/0.9410/0.9220; f [0.7802], edge cover 0.082, n_oob 470392, periodic calls 1/6  [14:23:37, elapsed 2638 s]
+  S1z_baseline_noise_022:  87.6 s, peak RSS 1.72 GB; it0 q>4/5 56/0; it1 q>4/5 46/0; sigma it1/it0 at 0.5'/4.45'/15' 1.0235/1.0092/0.9950; f [0.9082], edge cover 0.000, n_oob 470392, periodic calls 0/0  [14:25:05, elapsed 2725 s]
+  S1z_baseline_noise_044:  86.4 s, peak RSS 1.72 GB; it0 q>4/5 40/2; it1 q>4/5 35/1; sigma it1/it0 at 0.5'/4.45'/15' 1.0385/1.0209/0.9964; f [0.8977], edge cover 0.104, n_oob 470392, periodic calls 0/0  [14:26:31, elapsed 2812 s]
+  S1z_baseline_noise_066:  87.6 s, peak RSS 1.72 GB; it0 q>4/5 53/0; it1 q>4/5 33/0; sigma it1/it0 at 0.5'/4.45'/15' 1.0550/1.0275/0.9911; f [0.84], edge cover 0.038, n_oob 470392, periodic calls 0/0  [14:27:59, elapsed 2899 s]
+  S1z_baseline_noise_088:  86.0 s, peak RSS 1.72 GB; it0 q>4/5 36/0; it1 q>4/5 24/0; sigma it1/it0 at 0.5'/4.45'/15' 1.0279/1.0176/1.0015; f [0.9361], edge cover 0.050, n_oob 470392, periodic calls 0/0  [14:29:25, elapsed 2985 s]
+  S1p_baseline_real_000: 110.1 s, peak RSS 1.72 GB; it0 q>4/5 338/172; it1 q>4/5 321/169; sigma it1/it0 at 0.5'/4.45'/15' 1.0270/0.9766/0.9529; f [0.7919], edge cover 0.036, n_oob -1, periodic calls 1/6  [14:31:15, elapsed 3095 s]
+  S1p_baseline_real_011: 107.4 s, peak RSS 1.72 GB; it0 q>4/5 316/168; it1 q>4/5 292/158; sigma it1/it0 at 0.5'/4.45'/15' 1.0506/0.9757/0.9371; f [0.7173], edge cover 0.085, n_oob -1, periodic calls 1/6  [14:33:02, elapsed 3203 s]
+  S1p_baseline_real_022: 107.9 s, peak RSS 1.72 GB; it0 q>4/5 358/157; it1 q>4/5 306/157; sigma it1/it0 at 0.5'/4.45'/15' 1.0475/0.9802/0.9425; f [0.7417], edge cover 0.138, n_oob -1, periodic calls 1/6  [14:34:50, elapsed 3311 s]
+  S1p_baseline_real_033: 107.6 s, peak RSS 1.72 GB; it0 q>4/5 320/171; it1 q>4/5 273/141; sigma it1/it0 at 0.5'/4.45'/15' 1.0623/0.9940/0.9495; f [0.7196], edge cover 0.108, n_oob -1, periodic calls 1/6  [14:36:38, elapsed 3418 s]
+  S1p_baseline_real_044: 107.9 s, peak RSS 1.72 GB; it0 q>4/5 312/165; it1 q>4/5 282/146; sigma it1/it0 at 0.5'/4.45'/15' 1.0626/0.9987/0.9628; f [0.7328], edge cover 0.119, n_oob -1, periodic calls 1/6  [14:38:26, elapsed 3526 s]
+  S1p_baseline_real_055: 107.4 s, peak RSS 1.72 GB; it0 q>4/5 305/158; it1 q>4/5 279/156; sigma it1/it0 at 0.5'/4.45'/15' 1.0322/0.9698/0.9349; f [0.7635], edge cover 0.131, n_oob -1, periodic calls 1/6  [14:40:13, elapsed 3634 s]
+  S1p_baseline_real_088: 110.2 s, peak RSS 1.72 GB; it0 q>4/5 343/203; it1 q>4/5 333/199; sigma it1/it0 at 0.5'/4.45'/15' 1.0213/0.9535/0.9225; f [0.7699], edge cover 0.064, n_oob -1, periodic calls 1/6  [14:42:03, elapsed 3744 s]
+  S1p_goal_real_088: 117.6 s, peak RSS 1.72 GB; it0 q>4/5 440/255; it1 q>4/5 438/264; sigma it1/it0 at 0.5'/4.45'/15' 1.0130/0.9362/0.9062; f [0.7514], edge cover 0.065, n_oob -1, periodic calls 1/6  [14:44:01, elapsed 3861 s]
+  S1p_baseline_real_176: 110.7 s, peak RSS 1.72 GB; it0 q>4/5 345/193; it1 q>4/5 319/177; sigma it1/it0 at 0.5'/4.45'/15' 1.0415/0.9749/0.9432; f [0.7402], edge cover 0.045, n_oob -1, periodic calls 1/6  [14:45:52, elapsed 3972 s]
+  S1p_baseline_real_220: 107.9 s, peak RSS 1.72 GB; it0 q>4/5 298/155; it1 q>4/5 262/138; sigma it1/it0 at 0.5'/4.45'/15' 1.0719/1.0044/0.9620; f [0.7136], edge cover 0.100, n_oob -1, periodic calls 1/6  [14:47:39, elapsed 4080 s]
+  S1p_goal_real_220: 114.1 s, peak RSS 1.72 GB; it0 q>4/5 409/239; it1 q>4/5 343/197; sigma it1/it0 at 0.5'/4.45'/15' 1.0665/0.9938/0.9510; f [0.6985], edge cover 0.127, n_oob -1, periodic calls 1/6  [14:49:34, elapsed 4194 s]
+  S1p_goal_real_264: 117.0 s, peak RSS 1.72 GB; it0 q>4/5 426/242; it1 q>4/5 404/241; sigma it1/it0 at 0.5'/4.45'/15' 1.0346/0.9690/0.9381; f [0.7375], edge cover 0.070, n_oob -1, periodic calls 1/6  [14:51:31, elapsed 4311 s]
+  S1zL_baseline_real_000:  96.4 s, peak RSS 1.72 GB; it0 q>4/5 321/166; it1 q>4/5 303/164; sigma it1/it0 at 0.5'/4.45'/15' 1.0355/0.9848/0.9557; f [0.7901], edge cover 0.055, n_oob 470392, periodic calls 0/0  [14:53:07, elapsed 4408 s]
+zA03_queue w2 done: 42 runs [4408 s]; process peak RSS 1.72 GB
+     4410.03 real      3202.63 user      1189.96 sys
+          1721974784  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+           627134630  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  60  voluntary context switches
+              558995  involuntary context switches
+      36632204722326  instructions retired
+      13718191595193  cycles elapsed
+          1603391936  peak memory footprint

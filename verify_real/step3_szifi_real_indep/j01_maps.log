@@ -1,0 +1,69 @@
+j01: new tiles (pid 1-99, not multiples of 11, rng seed 20261112): [9, 34, 41, 83, 92, 97]
+     reproducibility runs of the build: [('S1', 'baseline', 'real', 11), ('S2', 'goal', 'noise', 22), ('S3it0', 'goal', 'real', 33)]
+
+(1) regenerate 27 tile maps from their seeds; production finder rerun vs stored step-3a outputs
+  real    9 baseline: production finder it0 320 det (stored 320), it1 439 (stored 439); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 1.4e-10; emulation 'szifi' = stored tiles_szifi: True (sig 0.0e+00, f 0.8177 vs 0.8177)
+  noise   9 baseline: production finder it0 48 det (stored 48), it1 52 (stored 52); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 1.3e-10
+  real    9 goal    : production finder it0 427 det (stored 427), it1 619 (stored 619); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 1.3e-10; emulation 'szifi' = stored tiles_szifi: True (sig 0.0e+00, f 0.8042 vs 0.8042)
+  noise   9 goal    : production finder it0 49 det (stored 49), it1 61 (stored 61); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 1.4e-10
+     tile 9: 33 s; peak RSS so far 1.38 GB
+  real   11 baseline: production finder it0 319 det (stored 319), it1 417 (stored 417); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 2.9e-10
+     tile 11: 5 s; peak RSS so far 1.38 GB
+  noise  22 goal    : production finder it0 58 det (stored 58), it1 61 (stored 61); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 2.3e-10
+     tile 22: 5 s; peak RSS so far 1.38 GB
+  real   33 goal    : production finder it0 412 det (stored 412), it1 571 (stored 571); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 2.1e-10
+     tile 33: 5 s; peak RSS so far 1.38 GB
+  real   34 baseline: production finder it0 274 det (stored 274), it1 416 (stored 416); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 1.4e-10; emulation 'szifi' = stored tiles_szifi: True (sig 0.0e+00, f 0.8121 vs 0.8121)
+  noise  34 baseline: production finder it0 42 det (stored 42), it1 47 (stored 47); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 1.4e-10
+  real   34 goal    : production finder it0 378 det (stored 378), it1 555 (stored 555); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 1.4e-10; emulation 'szifi' = stored tiles_szifi: True (sig 0.0e+00, f 0.7722 vs 0.7722)
+  noise  34 goal    : production finder it0 39 det (stored 39), it1 47 (stored 47); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 1.5e-10
+     tile 34: 31 s; peak RSS so far 1.38 GB
+  real   41 baseline: production finder it0 313 det (stored 313), it1 401 (stored 401); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 1.8e-10; emulation 'szifi' = stored tiles_szifi: True (sig 0.0e+00, f 0.7435 vs 0.7435)
+  noise  41 baseline: production finder it0 39 det (stored 39), it1 42 (stored 42); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 1.7e-10
+  real   41 goal    : production finder it0 431 det (stored 431), it1 595 (stored 595); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 1.7e-10; emulation 'szifi' = stored tiles_szifi: True (sig 0.0e+00, f 0.7183 vs 0.7183)
+  noise  41 goal    : production finder it0 36 det (stored 36), it1 37 (stored 37); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 1.8e-10
+     tile 41: 32 s; peak RSS so far 1.38 GB
+  real   83 baseline: production finder it0 305 det (stored 305), it1 421 (stored 421); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 1.9e-10; emulation 'szifi' = stored tiles_szifi: True (sig 0.0e+00, f 0.7968 vs 0.7968)
+  noise  83 baseline: production finder it0 55 det (stored 55), it1 58 (stored 58); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 1.8e-10
+  real   83 goal    : production finder it0 413 det (stored 413), it1 588 (stored 588); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 1.9e-10; emulation 'szifi' = stored tiles_szifi: True (sig 0.0e+00, f 0.7631 vs 0.7631)
+  noise  83 goal    : production finder it0 50 det (stored 50), it1 55 (stored 55); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 1.8e-10
+     tile 83: 32 s; peak RSS so far 1.38 GB
+  real   92 baseline: production finder it0 337 det (stored 337), it1 447 (stored 447); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 1.8e-10; emulation 'szifi' = stored tiles_szifi: True (sig 0.0e+00, f 0.7520 vs 0.7520)
+  noise  92 baseline: production finder it0 49 det (stored 49), it1 51 (stored 51); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 1.7e-10
+  real   92 goal    : production finder it0 475 det (stored 475), it1 636 (stored 636); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 1.8e-10; emulation 'szifi' = stored tiles_szifi: True (sig 0.0e+00, f 0.7142 vs 0.7142)
+  noise  92 goal    : production finder it0 56 det (stored 56), it1 63 (stored 63); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 1.8e-10
+     tile 92: 31 s; peak RSS so far 1.38 GB
+  real   97 baseline: production finder it0 327 det (stored 327), it1 418 (stored 418); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 1.9e-10; emulation 'szifi' = stored tiles_szifi: True (sig 0.0e+00, f 0.8040 vs 0.8040)
+  noise  97 baseline: production finder it0 54 det (stored 54), it1 56 (stored 56); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 1.8e-10
+  real   97 goal    : production finder it0 428 det (stored 428), it1 593 (stored 593); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 1.7e-10; emulation 'szifi' = stored tiles_szifi: True (sig 0.0e+00, f 0.7792 vs 0.7792)
+  noise  97 goal    : production finder it0 58 det (stored 58), it1 68 (stored 68); identical catalogues and sigma: True (max|sig/stored-1| 0.0e+00); map round trip 1.8e-10
+     tile 97: 29 s; peak RSS so far 1.38 GB
+  tile maps whose production-finder rerun differs from the stored outputs: 0
+
+(2) step 1's sigma_Y [arcmin^2] at the 15 scales, instrument, analytic covariance per in-band shell
+  sigma_Y baseline: 4.5092e-06 4.9271e-06 5.5187e-06 6.3533e-06 7.5411e-06 9.2677e-06 1.1839e-05 1.5754e-05 2.1870e-05 3.1676e-05 4.7789e-05 7.4851e-05 1.2114e-04 2.0154e-04 3.4293e-04
+  sigma_Y goal    : 3.3558e-06 3.6918e-06 4.1669e-06 4.8387e-06 5.8008e-06 7.2101e-06 9.3247e-06 1.2573e-05 1.7701e-05 2.6017e-05 3.9853e-05 6.3410e-05 1.0430e-04 1.7642e-04 3.0522e-04
+  freqs [GHz] [ 27.  39.  93. 145. 225. 280.] ; FWHM ['] [7.4 5.1 2.2 1.4 1.  0.9] ; tSZ SED [uK] [-5348707.2 -5238436.7 -4284002.7 -2768488.9   315162.2  2731427.9]
+  analytic covariance baseline: 70241 shells, l = 101.8 - 20000.0
+  analytic covariance goal: 70241 shells, l = 101.8 - 20000.0
+
+done [204 s]; peak RSS 1.38 GB
+      205.66 real       184.86 user         1.76 sys
+          1382760448  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              254862  page reclaims
+                 554  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1462  voluntary context switches
+               26858  involuntary context switches
+       1462985354336  instructions retired
+        549723630726  cycles elapsed
+          1379143680  peak memory footprint
+exit 0

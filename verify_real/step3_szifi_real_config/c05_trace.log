@@ -1,0 +1,110 @@
+(1) branches taken (our reading of SZiFi 73626fb), from the build's stored parameter dictionaries
+
+  S0 (S0_baseline_real_000):
+    - spectra grid: 1200x1200 (bins of 72 up to l = 21600; first bin dropped)
+    - l range [100, 20000]: maps and templates zeroed where l < 100 or l > 20000; bins above l = 20016 and grid corners up to l = 30547 hold only round-off
+    - decoupling 'none' (coupled pseudo-spectra of an all-ones mask = binned periodogram)
+    - covariance 'isotropic': each mode takes the binned spectrum of the bin with the nearest centre (nearest, extrapolated)
+    - inpainting off: the cluster mask built after iteration 0 never reaches the spectra (only inpainting and the l_sep correction read it), so iteration 1 re-estimates the iteration-0 covariance
+    - iteration: iterative True, max_it 1; masked: q > 4.0 detections of the ('field', 'field') catalogue, discs of radius max(0.0', min(inf, 3.0 theta_est))
+    - tilemask_mode 'field', tile_type 'healpix': reported catalogue ('tile', 'tile'); with the survey's identical field and tile masks (edge buffer 0.0') the masking catalogue equals the reported one
+    - template: profile 'arnaud' (z = 0.2, M500 from theta500, cosmology Planck15: shape independent of both), sampled at pixel centres around index N/2 - 1/2, beam 'gaussian' = exp(-sigma^2 l(l+1)/2) per channel FWHM, normalised to y at r = 1e-8 R500 (norm_type 'centre'), save_and_load_template False
+    - filter: mmf_type 'standard' -> cmmf_type set to 'standard_mmf'; a_matrix = experiment tsz_sed (stored: [-5348707.2, -5238436.7, -4284002.7, -2768488.9, 315162.2, 2731427.9] uK per unit y); S/N by zero-padded 'same' convolution of float32 maps (map_dtype float32); apod_type 'old' multiplies the map by mask_map (ones)
+    - detection 'maxima_lomem' with 15 > 3 scales: peaks per scale strictly above their 4 neighbours (0 outside the peak-finding mask), q_j > q_(j-1) and q_j >= q_(j+1); sigma_vec[0] never stored (stays 0)
+    - get_lonlat False, integrate_bandpass False, snr_weighting False (default dictionary spells it 'snr_weigthing': False), freqs [0, 1, 2, 3, 4, 5]
+
+  S1 (S1_baseline_real_000):
+    - spectra grid: 1200x1200 (bins of 72 up to l = 21600; first bin dropped)
+    - l range [100, 20000]: maps and templates zeroed where l < 100 or l > 20000; bins above l = 20016 and grid corners up to l = 30547 hold only round-off
+    - decoupling 'none' (coupled pseudo-spectra of an all-ones mask = binned periodogram)
+    - covariance 'isotropic': each mode takes the binned spectrum of the bin with the nearest centre (nearest, extrapolated)
+    - inpainting on: 'diffusive' (100 passes); at noise iteration 0 the masks are all ones, so the maps pass unchanged; from iteration 1 the cluster holes are inpainted, cosine-blended to the original map, l-filtered, and the spectra of bins with l > 3000 divided by the unmasked fraction
+    - iteration: iterative True, max_it 1; masked: q > 4.0 detections of the ('field', 'field') catalogue, discs of radius max(0.0', min(inf, 3.0 theta_est))
+    - tilemask_mode 'field', tile_type 'healpix': reported catalogue ('tile', 'tile'); with the survey's identical field and tile masks (edge buffer 8.0') the masking catalogue equals the reported one
+    - template: profile 'arnaud' (z = 0.2, M500 from theta500, cosmology Planck15: shape independent of both), sampled at pixel centres around index N/2 - 1/2, beam 'gaussian' = exp(-sigma^2 l(l+1)/2) per channel FWHM, normalised to y at r = 1e-8 R500 (norm_type 'centre'), save_and_load_template False
+    - filter: mmf_type 'standard' -> cmmf_type set to 'standard_mmf'; a_matrix = experiment tsz_sed (stored: [-5348707.2, -5238436.7, -4284002.7, -2768488.9, 315162.2, 2731427.9] uK per unit y); S/N by zero-padded 'same' convolution of float32 maps (map_dtype float32); apod_type 'old' multiplies the map by mask_map (ones)
+    - detection 'maxima_lomem' with 15 > 3 scales: peaks per scale strictly above their 4 neighbours (0 outside the peak-finding mask), q_j > q_(j-1) and q_j >= q_(j+1); sigma_vec[0] never stored (stays 0)
+    - get_lonlat False, integrate_bandpass False, snr_weighting False (default dictionary spells it 'snr_weigthing': False), freqs [0, 1, 2, 3, 4, 5]
+
+  S2 (S2_baseline_real_000):
+    - spectra grid: 1200x1200 (bins of 72 up to l = 21600; first bin dropped)
+    - l range [100, 20000]: maps and templates zeroed where l < 100 or l > 20000; bins above l = 20016 and grid corners up to l = 30547 hold only round-off
+    - decoupling 'none' (coupled pseudo-spectra of an all-ones mask = binned periodogram)
+    - covariance 'isotropic': each mode takes the binned spectrum of the bin with the nearest centre (nearest, extrapolated)
+    - inpainting on: 'diffusive' (100 passes); at noise iteration 0 the masks are all ones, so the maps pass unchanged; from iteration 1 the cluster holes are inpainted, cosine-blended to the original map, l-filtered, and the spectra of bins with l > 12000 divided by the unmasked fraction
+    - iteration: iterative True, max_it 1; masked: q > 4.0 detections of the ('field', 'field') catalogue, discs of radius max(0.0', min(inf, 3.0 theta_est))
+    - tilemask_mode 'field', tile_type 'healpix': reported catalogue ('tile', 'tile'); with the survey's identical field and tile masks (edge buffer 8.0') the masking catalogue equals the reported one
+    - template: profile 'arnaud' (z = 0.2, M500 from theta500, cosmology Planck15: shape independent of both), sampled at pixel centres around index N/2 - 1/2, beam 'gaussian' = exp(-sigma^2 l(l+1)/2) per channel FWHM, normalised to y at r = 1e-8 R500 (norm_type 'centre'), save_and_load_template False
+    - filter: mmf_type 'standard' -> cmmf_type set to 'standard_mmf'; a_matrix = experiment tsz_sed (stored: [-5348707.2, -5238436.7, -4284002.7, -2768488.9, 315162.2, 2731427.9] uK per unit y); S/N by zero-padded 'same' convolution of float32 maps (map_dtype float32); apod_type 'old' multiplies the map by mask_map (ones)
+    - detection 'maxima_lomem' with 15 > 3 scales: peaks per scale strictly above their 4 neighbours (0 outside the peak-finding mask), q_j > q_(j-1) and q_j >= q_(j+1); sigma_vec[0] never stored (stays 0)
+    - get_lonlat False, integrate_bandpass False, snr_weighting False (default dictionary spells it 'snr_weigthing': False), freqs [0, 1, 2, 3, 4, 5]
+
+  S3 (smokeS3_baseline_real_000):
+    - spectra grid: 556x556 (powspec_lmax1d 10000: maps degraded by Fourier cropping; bins of 72 up to l = 10008)
+    - l range [1, 300000]: maps and templates zeroed where l < 1 or l > 300000
+    - decoupling 'master': NaMaster workspace read from / written to the survey's coupling_matrix_name
+    - covariance 'mixed_gaussian': isotropic spectra x Gaussian-smoothed ([10, 10] pixels) ratio of each 2D cross-periodogram to them
+    - inpainting on: 'orphics' (orphics gapfill + white noise of the experiment's levels in the holes); at noise iteration 0 the masks are all ones, so the maps pass unchanged; from iteration 1 the cluster holes are inpainted, cosine-blended to the original map, l-filtered, and the spectra of bins with l > 12000 divided by the unmasked fraction
+    - iteration: iterative True, max_it 1; masked: q > 4.0 detections of the ('field', 'field') catalogue, discs of radius max(1.0', min(inf, 3.0 theta_est))
+    - tilemask_mode 'field', tile_type 'healpix': reported catalogue ('tile', 'tile'); with the survey's identical field and tile masks (edge buffer 10.0') the masking catalogue equals the reported one
+    - template: profile 'arnaud' (z = 0.2, M500 from theta500, cosmology Planck15: shape independent of both), sampled at pixel centres around index N/2 - 1/2, beam 'gaussian' = exp(-sigma^2 l(l+1)/2) per channel FWHM, normalised to y at r = 1e-8 R500 (norm_type 'centre'), save_and_load_template False
+    - filter: mmf_type 'standard' -> cmmf_type set to 'standard_mmf'; a_matrix = experiment tsz_sed (stored: [-5348707.2, -5238436.7, -4284002.7, -2768488.9, 315162.2, 2731427.9] uK per unit y); S/N by zero-padded 'same' convolution of float32 maps (map_dtype float32); apod_type 'old' multiplies the map by mask_map (ones)
+    - detection 'maxima_lomem' with 15 > 3 scales: peaks per scale strictly above their 4 neighbours (0 outside the peak-finding mask), q_j > q_(j-1) and q_j >= q_(j+1); sigma_vec[0] never stored (stays 0)
+    - get_lonlat False, integrate_bandpass False, snr_weighting False (default dictionary spells it 'snr_weigthing': False), freqs [0, 1, 2, 3, 4, 5]
+
+  S3i (S3i_baseline_real_000):
+    - spectra grid: 556x556 (powspec_lmax1d 10000: maps degraded by Fourier cropping; bins of 72 up to l = 10008)
+    - l range [1, 300000]: maps and templates zeroed where l < 1 or l > 300000
+    - decoupling 'master': NaMaster workspace read from / written to the survey's coupling_matrix_name
+    - covariance 'isotropic': each mode takes the binned spectrum of the bin with the nearest centre (nearest, extrapolated)
+    - inpainting on: 'orphics' (orphics gapfill + white noise of the experiment's levels in the holes); at noise iteration 0 the masks are all ones, so the maps pass unchanged; from iteration 1 the cluster holes are inpainted, cosine-blended to the original map, l-filtered, and the spectra of bins with l > 12000 divided by the unmasked fraction
+    - iteration: iterative True, max_it 1; masked: q > 4.0 detections of the ('field', 'field') catalogue, discs of radius max(1.0', min(inf, 3.0 theta_est))
+    - tilemask_mode 'field', tile_type 'healpix': reported catalogue ('tile', 'tile'); with the survey's identical field and tile masks (edge buffer 8.0') the masking catalogue equals the reported one
+    - template: profile 'arnaud' (z = 0.2, M500 from theta500, cosmology Planck15: shape independent of both), sampled at pixel centres around index N/2 - 1/2, beam 'gaussian' = exp(-sigma^2 l(l+1)/2) per channel FWHM, normalised to y at r = 1e-8 R500 (norm_type 'centre'), save_and_load_template False
+    - filter: mmf_type 'standard' -> cmmf_type set to 'standard_mmf'; a_matrix = experiment tsz_sed (stored: [-5348707.2, -5238436.7, -4284002.7, -2768488.9, 315162.2, 2731427.9] uK per unit y); S/N by zero-padded 'same' convolution of float32 maps (map_dtype float32); apod_type 'old' multiplies the map by mask_map (ones)
+    - detection 'maxima_lomem' with 15 > 3 scales: peaks per scale strictly above their 4 neighbours (0 outside the peak-finding mask), q_j > q_(j-1) and q_j >= q_(j+1); sigma_vec[0] never stored (stays 0)
+    - get_lonlat False, integrate_bandpass False, snr_weighting False (default dictionary spells it 'snr_weigthing': False), freqs [0, 1, 2, 3, 4, 5]
+
+  S3it0 (S3it0_baseline_real_033):
+    - spectra grid: 556x556 (powspec_lmax1d 10000: maps degraded by Fourier cropping; bins of 72 up to l = 10008)
+    - l range [1, 300000]: maps and templates zeroed where l < 1 or l > 300000
+    - decoupling 'master': NaMaster workspace read from / written to the survey's coupling_matrix_name
+    - covariance 'mixed_gaussian': isotropic spectra x Gaussian-smoothed ([10, 10] pixels) ratio of each 2D cross-periodogram to them
+    - inpainting on: 'orphics' (orphics gapfill + white noise of the experiment's levels in the holes); at noise iteration 0 the masks are all ones, so the maps pass unchanged; from iteration 1 the cluster holes are inpainted, cosine-blended to the original map, l-filtered, and the spectra of bins with l > 12000 divided by the unmasked fraction
+    - iteration: iterative False, max_it 1; masked: q > 4.0 detections of the ('field', 'field') catalogue, discs of radius max(1.0', min(inf, 3.0 theta_est))
+    - tilemask_mode 'field', tile_type 'healpix': reported catalogue ('tile', 'tile'); with the survey's identical field and tile masks (edge buffer 8.0') the masking catalogue equals the reported one
+    - template: profile 'arnaud' (z = 0.2, M500 from theta500, cosmology Planck15: shape independent of both), sampled at pixel centres around index N/2 - 1/2, beam 'gaussian' = exp(-sigma^2 l(l+1)/2) per channel FWHM, normalised to y at r = 1e-8 R500 (norm_type 'centre'), save_and_load_template False
+    - filter: mmf_type 'standard' -> cmmf_type set to 'standard_mmf'; a_matrix = experiment tsz_sed (stored: [-5348707.2, -5238436.7, -4284002.7, -2768488.9, 315162.2, 2731427.9] uK per unit y); S/N by zero-padded 'same' convolution of float32 maps (map_dtype float32); apod_type 'old' multiplies the map by mask_map (ones)
+    - detection 'maxima_lomem' with 15 > 3 scales: peaks per scale strictly above their 4 neighbours (0 outside the peak-finding mask), q_j > q_(j-1) and q_j >= q_(j+1); sigma_vec[0] never stored (stays 0)
+    - get_lonlat False, integrate_bandpass False, snr_weighting False (default dictionary spells it 'snr_weigthing': False), freqs [0, 1, 2, 3, 4, 5]
+
+(2) conventions, analytic covariance of the tiles (our own model), SZiFi's bins at their centres
+  baseline: theta [']                        0.500   0.637   0.813   1.036   1.321   1.685   2.148   2.739   3.492   4.452   5.676   7.237   9.227  11.765  15.000
+  baseline: (b) kappa = SZiFi y0 / true y0      1.3256  1.1998  1.1210  1.0724  1.0431  1.0258  1.0157  1.0099  1.0064  1.0043  1.0031  1.0022  1.0017  1.0013  1.0010
+  baseline: (a) kappa if sky beams were l(l+1)   1.3254  1.1996  1.1209  1.0722  1.0429  1.0257  1.0156  1.0098  1.0063  1.0042  1.0029  1.0021  1.0016  1.0012  1.0009
+  baseline: (a) beam-convention effect on y0 and q (ratio - 1): +1.3e-04 +1.3e-04 +1.3e-04 +1.3e-04 +1.3e-04 +1.3e-04 +1.3e-04 +1.2e-04 +1.2e-04 +1.2e-04 +1.2e-04 +1.2e-04 +1.2e-04 +1.3e-04 +1.3e-04
+  goal: theta [']                        0.500   0.637   0.813   1.036   1.321   1.685   2.148   2.739   3.492   4.452   5.676   7.237   9.227  11.765  15.000
+  goal: (b) kappa = SZiFi y0 / true y0      1.3351  1.2068  1.1261  1.0760  1.0456  1.0276  1.0170  1.0108  1.0071  1.0049  1.0035  1.0026  1.0020  1.0016  1.0012
+  goal: (a) kappa if sky beams were l(l+1)   1.3350  1.2067  1.1260  1.0758  1.0455  1.0275  1.0169  1.0107  1.0070  1.0047  1.0033  1.0024  1.0018  1.0014  1.0011
+  goal: (a) beam-convention effect on y0 and q (ratio - 1): +1.3e-04 +1.3e-04 +1.3e-04 +1.3e-04 +1.3e-04 +1.3e-04 +1.3e-04 +1.3e-04 +1.3e-04 +1.3e-04 +1.3e-04 +1.3e-04 +1.3e-04 +1.4e-04 +1.4e-04
+  (c) modes with l > 20000: 0.3266 of the 1200^2 grid; with l > 21600 (beyond the last bin): 0.2146; with l < 100: 1.46e-05
+
+done [28 s]
+       27.97 real        27.79 user         0.17 sys
+           676282368  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               48079  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+                  85  involuntary context switches
+        454505011803  instructions retired
+         88338330385  cycles elapsed
+           653429056  peak memory footprint

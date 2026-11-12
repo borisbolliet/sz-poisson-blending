@@ -1,0 +1,44 @@
+(A) regeneration from the seeds, checked with the production finder against the stored outputs
+  real    0 baseline: it0 343 det (stored 343) identical True, max|sig/stored-1| 0e+00; it1 436 det (stored 436) identical True, max|sig/stored-1| 0e+00
+  real    0 goal    : it0 438 det (stored 438) identical True, max|sig/stored-1| 0e+00; it1 603 det (stored 603) identical True, max|sig/stored-1| 0e+00
+  real   33 baseline: it0 305 det (stored 305) identical True, max|sig/stored-1| 0e+00; it1 388 det (stored 388) identical True, max|sig/stored-1| 0e+00
+  real   33 goal    : it0 412 det (stored 412) identical True, max|sig/stored-1| 0e+00; it1 571 det (stored 571) identical True, max|sig/stored-1| 0e+00
+  noise   0 baseline: it0 52 det (stored 52) identical True, max|sig/stored-1| 0e+00; it1 56 det (stored 56) identical True, max|sig/stored-1| 0e+00
+  noise   0 goal    : it0 63 det (stored 63) identical True, max|sig/stored-1| 0e+00; it1 66 det (stored 66) identical True, max|sig/stored-1| 0e+00
+  noise  33 baseline: it0 45 det (stored 45) identical True, max|sig/stored-1| 0e+00; it1 51 det (stored 51) identical True, max|sig/stored-1| 0e+00
+  noise  33 goal    : it0 45 det (stored 45) identical True, max|sig/stored-1| 0e+00; it1 56 det (stored 56) identical True, max|sig/stored-1| 0e+00
+  -> 8 of 8 regenerated tiles reproduce the stored production catalogues and sigma exactly
+
+(B) injections: our analytic sigma of SZiFi's own filter (bins of width 72, analytic C at the bin centres)
+  baseline sigma_pred [y0]  6.8194e-05 4.1467e-05 2.6686e-05 1.8074e-05 1.2834e-05 9.5411e-06 7.4231e-06 6.0407e-06 5.1404e-06 4.5699e-06 4.2351e-06 4.0762e-06 4.0549e-06 4.1466e-06 4.3369e-06
+  baseline / build z04 (exact per-mode analytic C, SZiFi's own code) - 1: -3.2e-04 -3.4e-04 -3.7e-04 -4.1e-04 -4.5e-04 -5.2e-04 -5.9e-04 -6.9e-04 -8.1e-04 -9.6e-04 -1.2e-03 -1.4e-03 -1.7e-03 -2.1e-03 -2.6e-03
+  baseline kappa (painted cluster / SZiFi template response)  1.3256 1.1998 1.1210 1.0724 1.0431 1.0258 1.0157 1.0099 1.0064 1.0043 1.0031 1.0022 1.0017 1.0013 1.0010
+  goal     sigma_pred [y0]  5.1126e-05 3.1258e-05 2.0243e-05 1.3812e-05 9.8966e-06 7.4357e-06 5.8540e-06 4.8255e-06 4.1633e-06 3.7554e-06 3.5332e-06 3.4544e-06 3.4923e-06 3.6309e-06 3.8610e-06
+  goal     / build z04 (exact per-mode analytic C, SZiFi's own code) - 1: -3.2e-04 -3.5e-04 -3.8e-04 -4.2e-04 -4.6e-04 -5.3e-04 -6.0e-04 -7.0e-04 -8.2e-04 -9.7e-04 -1.2e-03 -1.4e-03 -1.7e-03 -2.1e-03 -2.6e-03
+  goal     kappa (painted cluster / SZiFi template response)  1.3351 1.2068 1.1261 1.0760 1.0456 1.0276 1.0170 1.0108 1.0071 1.0049 1.0035 1.0026 1.0020 1.0016 1.0012
+  injected baseline tile   0: 49 clusters, scales used [4, 4, 4, 4, 4, 4, 3, 3, 3, 4, 4, 4, 4, 0, 0], min separation 63.6', min distance to the edges 78.8', Y500 4.07e-05..3.47e-03 arcmin^2
+  injected goal     tile   0: 49 clusters, scales used [4, 4, 4, 4, 4, 4, 3, 3, 3, 4, 4, 4, 4, 0, 0], min separation 63.6', min distance to the edges 78.2', Y500 2.68e-05..3.10e-03 arcmin^2
+  injected baseline tile  33: 49 clusters, scales used [4, 4, 4, 4, 4, 4, 3, 3, 3, 4, 4, 4, 4, 0, 0], min separation 63.0', min distance to the edges 78.8', Y500 3.53e-05..3.26e-03 arcmin^2
+  injected goal     tile  33: 49 clusters, scales used [4, 4, 4, 4, 4, 4, 3, 3, 3, 4, 4, 4, 4, 0, 0], min separation 64.5', min distance to the edges 78.2', Y500 2.44e-05..2.37e-03 arcmin^2
+
+float32 maps: max |map32 - map64| / map std = 2.7e-07
+maps written: inj_baseline_000.npy, inj_baseline_033.npy, inj_goal_000.npy, inj_goal_033.npy, real_baseline_000.npy, real_baseline_033.npy, real_goal_000.npy, real_goal_033.npy
+done [134 s]; peak RSS 1.23 GB
+      134.66 real       133.57 user         0.78 sys
+          1229979648  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              156175  page reclaims
+                 111  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 830  voluntary context switches
+                2751  involuntary context switches
+       1962666739570  instructions retired
+        410443122671  cycles elapsed
+          1299124096  peak memory footprint

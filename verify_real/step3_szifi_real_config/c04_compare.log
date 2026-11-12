@@ -1,0 +1,99 @@
+(1) parameter dictionaries: ours vs the build's (stored with its runs); paths excluded
+  S0g     vs S0_baseline_real_000      : 57 keys; differences: none
+           build a_matrix (tSZ SED it used) = [-5348707.175668, -5238436.669914, -4284002.720275, -2768488.904179, 315162.207061, 2731427.857946]
+  S1g     vs S1_baseline_real_000      : 57 keys; differences: none
+           build a_matrix (tSZ SED it used) = [-5348707.175668, -5238436.669914, -4284002.720275, -2768488.904179, 315162.207061, 2731427.857946]
+  S2g     vs S2_baseline_real_000      : 57 keys; differences: none
+           build a_matrix (tSZ SED it used) = [-5348707.175668, -5238436.669914, -4284002.720275, -2768488.904179, 315162.207061, 2731427.857946]
+  S3g     vs smokeS3_baseline_real_000 : 57 keys; differences: none
+           build a_matrix (tSZ SED it used) = [-5348707.175668, -5238436.669914, -4284002.720275, -2768488.904179, 315162.207061, 2731427.857946]
+  S3ig    vs S3i_baseline_real_000     : 57 keys; differences: none
+           build a_matrix (tSZ SED it used) = [-5348707.175668, -5238436.669914, -4284002.720275, -2768488.904179, 315162.207061, 2731427.857946]
+  S3it0g  vs S3it0_baseline_real_033   : 57 keys; differences: none
+           build a_matrix (tSZ SED it used) = [-5348707.175668, -5238436.669914, -4284002.720275, -2768488.904179, 315162.207061, 2731427.857946]
+
+(2) our runs (own loader + driver) vs the build's stored runs, bit for bit
+  S1g_real_baseline_000            vs build S1_baseline_real_000  : it0 catalogue+sigma identical (338 / 338 det); it1 catalogue+sigma identical (313 / 313 det); spec0 identical; spec1 identical; f [0.7918729166666667] / [0.7918729166666667]
+  S1g_real_baseline_033            vs build S1_baseline_real_033  : it0 catalogue+sigma identical (320 / 320 det); it1 catalogue+sigma identical (275 / 275 det); spec0 identical; spec1 identical; f [0.7196006944444444] / [0.7196006944444444]
+  S1g_real_goal_000                vs build S1_goal_real_000      : it0 catalogue+sigma identical (456 / 456 det); it1 catalogue+sigma identical (395 / 395 det); spec0 identical; spec1 identical; f [0.6922097222222222] / [0.6922097222222222]
+  S1g_real_goal_033                vs build S1_goal_real_033      : it0 catalogue+sigma identical (416 / 416 det); it1 catalogue+sigma identical (364 / 364 det); spec0 identical; spec1 identical; f [0.7114854166666666] / [0.7114854166666666]
+  S2g_real_baseline_000            vs build S2_baseline_real_000  : it0 catalogue+sigma identical (338 / 338 det); it1 catalogue+sigma identical (428 / 428 det); spec0 identical; spec1 identical; f [0.7918729166666667] / [0.7918729166666667]
+  S2g_real_baseline_033            vs build S2_baseline_real_033  : it0 catalogue+sigma identical (320 / 320 det); it1 catalogue+sigma identical (398 / 398 det); spec0 identical; spec1 identical; f [0.7196006944444444] / [0.7196006944444444]
+  S0g_real_baseline_000_b0         vs build S0_baseline_real_000  : it0 catalogue+sigma identical (631 / 631 det); it1 catalogue+sigma identical (631 / 631 det); spec0 identical; spec1 identical; f [0.7465805555555556] / [0.7465805555555556]
+  S0g_real_baseline_033_b0         vs build S0_baseline_real_033  : it0 catalogue+sigma identical (551 / 551 det); it1 catalogue+sigma identical (551 / 551 det); spec0 identical; spec1 identical; f [0.6837909722222222] / [0.6837909722222222]
+  S3it0g_real_baseline_033         vs build S3it0_baseline_real_033: it0 catalogue+sigma identical (97603 / 97603 det); spec0 identical
+  S3ig_real_baseline_000_s1000003  vs build S3i_baseline_real_000 : it0 catalogue+sigma identical (320 / 320 det); it1 catalogue+sigma identical (379 / 379 det); spec0 identical; spec1 identical; f [0.7888347222222222] / [0.7888347222222222]
+
+(3) scale grid exp(linspace) ('S1') vs geomspace ('S1g' = build); values differ by <= 5.6e-16
+  scales whose value differs in the last bit: [6, 8, 9, 11, 12, 13]
+  real_baseline_000: it0 det 343 / 338; q of common entries identical except at scales [np.int64(6), np.int64(9), np.int64(12)]: there dq sd 0.0115, max |dq| 0.0385 (47 entries); same pixel, other scale: 19 of 322; f 0.7676 / 0.7919; sigma_it1 ratio at 0.64'/4.45'/15' 1.0140/1.0097/1.0013; final q>5 167 / 164
+  real_baseline_033: it0 det 319 / 320; q of common entries identical except at scales [np.int64(6), np.int64(9), np.int64(12), np.int64(13)]: there dq sd 0.0190, max |dq| 0.0745 (43 entries); same pixel, other scale: 27 of 296; f 0.7260 / 0.7196; sigma_it1 ratio at 0.64'/4.45'/15' 0.9924/0.9913/0.9933; final q>5 144 / 141
+  real_goal_000: it0 det 457 / 456; q of common entries identical except at scales [np.int64(6), np.int64(9), np.int64(12), np.int64(13)]: there dq sd 0.0182, max |dq| 0.0973 (54 entries); same pixel, other scale: 19 of 433; f 0.6959 / 0.6922; sigma_it1 ratio at 0.64'/4.45'/15' 1.0077/1.0083/1.0080; final q>5 218 / 224
+  real_goal_033: it0 det 417 / 416; q of common entries identical except at scales [np.int64(6), np.int64(9), np.int64(12), np.int64(13)]: there dq sd 0.0161, max |dq| 0.0774 (64 entries); same pixel, other scale: 25 of 401; f 0.7186 / 0.7115; sigma_it1 ratio at 0.64'/4.45'/15' 0.9950/0.9965/0.9993; final q>5 203 / 201
+  over 4 tiles: f(S1) - f(S1g) = -0.0243 +0.0064 +0.0037 +0.0071; sigma_it1(S1)/sigma_it1(S1g) - 1 at 0.64' = +0.0140 -0.0076 +0.0077 -0.0050; at 15' = +0.0013 -0.0067 +0.0080 -0.0007; final q>5 count ratio - 1 = +0.018 +0.021 -0.027 +0.010
+  rms over tiles: |df| 0.0132; sigma_it1 at 0.64' 0.0092, 4.45' 0.0079, 15' 0.0053
+
+(4) diagnosis
+  l range [100, 30600] (no empty bins), iteration 0, tile 0 baseline: exp(linspace) vs geomspace: 322 / 322 detections, 322 common (pixel, scale); max |dq| 4.77e-07; catalogues identical: True; sigma_vec max rel diff 2.2e-16
+  spectra of that run at l = 20052 / 21564 (now in band): C_00 = 4.312e-04 / 4.282e-04 uK^2 sr
+  S1g_real_baseline_000: 22 bins above l = 20016 hold only round-off: median auto spectrum there / median at 3000-20000 = 4.4e-16 9.5e-16 1.6e-14 1.2e-14 4.8e-15 1.4e-15; iteration 0: 338 detections, median q 5.03, sigma_vec[14] 4.8640e-06
+  S1it0gf64_real_baseline_000: 22 bins above l = 20016 hold only round-off: median auto spectrum there / median at 3000-20000 = 1.2e-31 2.2e-31 3.1e-30 2.3e-30 9.1e-31 2.9e-31; iteration 0: 2134587 detections, median q 5.67e+13, sigma_vec[14] 2.9978e-06
+  modes of the 1200^2 grid with l > 20000 (outside SZiFi's l range, covariance from empty bins or the last bin by extrapolation): 0.327 of all modes
+
+(5) is SZiFi's larger iteration-1 inflation a property of the method or of the empty bins above l = 20000?
+    sigma_it1/sigma_it0 at 0.64' / 4.45' / 15', unmasked fraction f and iteration-0 detections at theta >= 7.24'
+    (q > 4, all of the tile inside the 8' buffer) for: S1g (= build), S1 (exp-linspace scales), S1wg (l range
+    [100, 30600]: no empty bins; the extra modes carry noise only and no template power at large theta), against
+    the arbiter's a01 'szifi' emulation of the same tile (stored, finder template, periodic tile) and the production
+    finder's iteration-0 catalogue (stored, periodic tile, whole tile).
+    (S1g = our run where present, else the build's stored S1 run of that tile, which our S1g reproduces bit for bit)
+  baseline tile   0: a01: 1.0143/0.9639/0.9464, f 0.7986; finder theta>=7.24': 10; S1g: 1.0320/0.9842/0.9567, f 0.7919, theta>=7.24': 18; S1: 1.0465/0.9937/0.9580, f 0.7676, theta>=7.24': 22; S1wg: 1.0330/0.9847/0.9555, f 0.7902, theta>=7.24': 14
+  baseline tile  11: a01: 1.0304/0.9641/0.9360, f 0.7511; finder theta>=7.24': 18; S1g(build): 1.0474/0.9758/0.9365, f 0.7173, theta>=7.24': 27; S1: not run; S1wg: 1.0226/0.9634/0.9381, f 0.7674, theta>=7.24': 18
+  baseline tile  22: a01: 1.0205/0.9620/0.9383, f 0.7823; finder theta>=7.24': 12; S1g(build): 1.0523/0.9856/0.9418, f 0.7417, theta>=7.24': 26; S1: not run; S1wg: 1.0215/0.9695/0.9448, f 0.7994, theta>=7.24': 12
+  baseline tile  33: a01: 1.0348/0.9764/0.9454, f 0.7613; finder theta>=7.24': 15; S1g: 1.0609/0.9956/0.9499, f 0.7196, theta>=7.24': 20; S1: 1.0529/0.9869/0.9435, f 0.7260, theta>=7.24': 19; S1wg: 1.0288/0.9745/0.9448, f 0.7707, theta>=7.24': 15
+  baseline tile  44: a01: 1.0296/0.9764/0.9542, f 0.7778; finder theta>=7.24': 16; S1g(build): 1.0614/1.0001/0.9623, f 0.7328, theta>=7.24': 29; S1: not run; S1wg: 1.0250/0.9775/0.9585, f 0.7919, theta>=7.24': 16
+  baseline tile  55: a01: 1.0041/0.9481/0.9286, f 0.8085; finder theta>=7.24': 12; S1g(build): 1.0316/0.9719/0.9371, f 0.7635, theta>=7.24': 23; S1: not run; S1wg: 1.0105/0.9599/0.9373, f 0.8054, theta>=7.24': 17
+  goal     tile   0: a01: 1.0317/0.9647/0.9363, f 0.7400; finder theta>=7.24': 17; S1g: 1.0760/1.0014/0.9465, f 0.6922, theta>=7.24': 32; S1: 1.0843/1.0097/0.9541, f 0.6959, theta>=7.24': 32; S1wg: 1.0458/0.9872/0.9512, f 0.7477, theta>=7.24': 19
+  goal     tile  11: a01: 1.0186/0.9493/0.9274, f 0.7509; finder theta>=7.24': 21; S1g(build): 1.0464/0.9710/0.9293, f 0.7072, theta>=7.24': 28; S1: not run; S1wg: 1.0195/0.9548/0.9292, f 0.7534, theta>=7.24': 18
+  goal     tile  22: a01: 1.0488/0.9738/0.9328, f 0.7185; finder theta>=7.24': 18; S1g(build): 1.0586/0.9878/0.9423, f 0.7257, theta>=7.24': 22; S1: not run; S1wg: 1.0446/0.9792/0.9398, f 0.7464, theta>=7.24': 15
+  goal     tile  33: a01: 1.0503/0.9870/0.9486, f 0.7348; finder theta>=7.24': 18; S1g: 1.0611/0.9924/0.9445, f 0.7115, theta>=7.24': 24; S1: 1.0558/0.9890/0.9438, f 0.7186, theta>=7.24': 23; S1wg: 1.0351/0.9770/0.9430, f 0.7534, theta>=7.24': 13
+  goal     tile  44: a01: 1.0386/0.9747/0.9458, f 0.7355; finder theta>=7.24': 17; S1g(build): 1.0632/0.9957/0.9524, f 0.7204, theta>=7.24': 24; S1: not run; S1wg: 1.0238/0.9707/0.9508, f 0.7720, theta>=7.24': 13
+  goal     tile  55: a01: 1.0002/0.9321/0.9114, f 0.7793; finder theta>=7.24': 16; S1g(build): 1.0165/0.9496/0.9207, f 0.7557, theta>=7.24': 18; S1: not run; S1wg: 0.9967/0.9367/0.9180, f 0.7925, theta>=7.24': 15
+  baseline means over 6 tiles: sigma_it1/sigma_it0 at 0.64': a01 1.0223 (+- 0.0047, n=6), S1g 1.0476 (+- 0.0054, n=6), S1wg 1.0236 (+- 0.0031, n=6); at 4.45': a01 0.9652 (+- 0.0043, n=6), S1g 0.9855 (+- 0.0044, n=6), S1wg 0.9716 (+- 0.0038, n=6); at 15': a01 0.9415 (+- 0.0037, n=6), S1g 0.9474 (+- 0.0044, n=6), S1wg 0.9465 (+- 0.0036, n=6)
+  baseline means: f a01 0.7799 (+- 0.0089, n=6), S1g 0.7445 (+- 0.0117, n=6), S1wg 0.7875 (+- 0.0063, n=6); iteration-0 q > 4 detections at theta >= 7.24': finder 13.8333 (+- 1.2225, n=6), S1g 23.8333 (+- 1.7401, n=6), S1wg 15.3333 (+- 0.8819, n=6)
+  baseline paired S1g - S1wg in sigma_it1/sigma_it0 at 0.64': -0.0010 +0.0247 +0.0307 +0.0321 +0.0364 +0.0211; at 4.45': -0.0004 +0.0124 +0.0161 +0.0211 +0.0225 +0.0120
+  goal means over 6 tiles: sigma_it1/sigma_it0 at 0.64': a01 1.0314 (+- 0.0079, n=6), S1g 1.0536 (+- 0.0084, n=6), S1wg 1.0276 (+- 0.0076, n=6); at 4.45': a01 0.9636 (+- 0.0081, n=6), S1g 0.9830 (+- 0.0079, n=6), S1wg 0.9676 (+- 0.0076, n=6); at 15': a01 0.9337 (+- 0.0055, n=6), S1g 0.9393 (+- 0.0048, n=6), S1wg 0.9387 (+- 0.0053, n=6)
+  goal means: f a01 0.7432 (+- 0.0084, n=6), S1g 0.7188 (+- 0.0088, n=6), S1wg 0.7609 (+- 0.0073, n=6); iteration-0 q > 4 detections at theta >= 7.24': finder 17.8333 (+- 0.7032, n=6), S1g 24.6667 (+- 1.9777, n=6), S1wg 15.5000 (+- 1.0247, n=6)
+  goal paired S1g - S1wg in sigma_it1/sigma_it0 at 0.64': +0.0302 +0.0269 +0.0140 +0.0260 +0.0393 +0.0198; at 4.45': +0.0142 +0.0162 +0.0086 +0.0154 +0.0250 +0.0129
+
+(6) where the extra large-scale detections come from, and the final counts (interior: >= 9' from the edges)
+    'stacked' = an iteration-0 detection at theta >= 7.24' with another detection of the same run within 2 pixels at a
+    smaller scale (SZiFi keeps every local maximum along the scale axis, so one object can give two entries)
+  baseline (6 tiles, sums): theta >= 7.24' detections at iteration 0: S1g 143 of which stacked 64; S1wg 92 of which stacked 14
+  baseline: q > 5 counts, iteration 0 -> 1: S1g 977 -> 903 (-0.076); S1wg 937 -> 941 (+0.004); final count / production finder's: S1g 0.752, S1wg 0.784 (production 1200)
+  goal (6 tiles, sums): theta >= 7.24' detections at iteration 0: S1g 148 of which stacked 64; S1wg 93 of which stacked 8
+  goal: q > 5 counts, iteration 0 -> 1: S1g 1390 -> 1288 (-0.073); S1wg 1359 -> 1341 (-0.013); final count / production finder's: S1g 0.706, S1wg 0.735 (production 1825)
+
+(7) SZiFi's own auto spectra after / before the iteration (mean over the six channels and the bins), same tiles
+  baseline S1g   (6 tiles): l 100-3000 0.922; l 3000-20000 1.211 (tile range 1.165-1.240)
+  baseline S1wg  (6 tiles): l 100-3000 0.936; l 3000-20000 1.163 (tile range 1.140-1.182)
+  goal     S1g   (6 tiles): l 100-3000 0.922; l 3000-20000 1.244 (tile range 1.192-1.278)
+  goal     S1wg  (6 tiles): l 100-3000 0.937; l 3000-20000 1.193 (tile range 1.151-1.224)
+        2.70 real         2.28 user         0.36 sys
+           396099584  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               63808  page reclaims
+                 227  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 178  voluntary context switches
+                 574  involuntary context switches
+         20734566338  instructions retired
+          8004270088  cycles elapsed
+           341264448  peak memory footprint

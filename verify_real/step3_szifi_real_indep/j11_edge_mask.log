@@ -1,0 +1,60 @@
+j11: SZiFi's iteration-1 cluster mask rebuilt from its iteration-0 catalogue
+  rebuilt unmasked fraction vs the one SZiFi recorded: max |diff| 1.4e-04 over 104 runs
+
+  S1 baseline: 36 tiles (build 30, verifier 6); excess r_SZiFi - r_emul at 0.5': mean +0.0339, sd 0.0156
+    correlation of the excess with df -0.68, with the edge coverage +0.52; correlation of df with the edge coverage -0.14
+    rms of the excess about a fit on df alone 0.0116; on df and the edge coverage 0.0095
+    fit excess = a + b df + c edge: a +0.0039 +- 0.0043, b -0.523 +- 0.089, c +0.161 +- 0.038; at the sample means: b <df> = +0.0161, c <edge> = +0.0138 (mean excess +0.0339)
+    largest excess: build tile 110: excess +0.0750, df -0.066, edge coverage 0.134
+    largest excess: mine  tile  41: excess +0.0655, df -0.002, edge coverage 0.200
+    largest excess: build tile 319: excess +0.0595, df -0.033, edge coverage 0.111
+    largest excess: build tile 121: excess +0.0542, df -0.060, edge coverage 0.119
+    edge coverage: mean 0.086, range 0.022-0.200
+
+  S1 goal: 36 tiles (build 30, verifier 6); excess r_SZiFi - r_emul at 0.5': mean +0.0371, sd 0.0226
+    correlation of the excess with df -0.76, with the edge coverage +0.45; correlation of df with the edge coverage -0.19
+    rms of the excess about a fit on df alone 0.0149; on df and the edge coverage 0.0133
+    fit excess = a + b df + c edge: a +0.0050 +- 0.0056, b -0.758 +- 0.110, c +0.184 +- 0.060; at the sample means: b <df> = +0.0165, c <edge> = +0.0156 (mean excess +0.0371)
+    largest excess: build tile 165: excess +0.1037, df -0.069, edge coverage 0.129
+    largest excess: build tile 110: excess +0.0889, df -0.057, edge coverage 0.132
+    largest excess: build tile  77: excess +0.0728, df -0.049, edge coverage 0.097
+    largest excess: mine  tile  41: excess +0.0679, df -0.012, edge coverage 0.162
+    edge coverage: mean 0.085, range 0.002-0.162
+
+  S2 baseline: 16 tiles (build 10, verifier 6); excess r_SZiFi - r_emul at 0.5': mean +0.0114, sd 0.0132
+    correlation of the excess with df +0.44, with the edge coverage +0.58; correlation of df with the edge coverage -0.14
+    rms of the excess about a fit on df alone 0.0123; on df and the edge coverage 0.0089
+    fit excess = a + b df + c edge: a +0.0087 +- 0.0054, b +0.382 +- 0.127, c +0.177 +- 0.047; at the sample means: b <df> = -0.0114, c <edge> = +0.0141 (mean excess +0.0114)
+    largest excess: mine  tile  41: excess +0.0576, df -0.002, edge coverage 0.200
+    largest excess: build tile   0: excess +0.0193, df -0.007, edge coverage 0.036
+    largest excess: mine  tile  97: excess +0.0157, df -0.035, edge coverage 0.033
+    largest excess: build tile  22: excess +0.0134, df -0.041, edge coverage 0.138
+    edge coverage: mean 0.080, range 0.022-0.200
+
+  S2 goal: 16 tiles (build 10, verifier 6); excess r_SZiFi - r_emul at 0.5': mean +0.0146, sd 0.0130
+    correlation of the excess with df +0.10, with the edge coverage +0.58; correlation of df with the edge coverage -0.14
+    rms of the excess about a fit on df alone 0.0134; on df and the edge coverage 0.0111
+    fit excess = a + b df + c edge: a +0.0012 +- 0.0077, b +0.149 +- 0.186, c +0.210 +- 0.078; at the sample means: b <df> = -0.0036, c <edge> = +0.0170 (mean excess +0.0146)
+    largest excess: mine  tile  41: excess +0.0514, df -0.012, edge coverage 0.162
+    largest excess: build tile  77: excess +0.0304, df -0.049, edge coverage 0.097
+    largest excess: build tile  22: excess +0.0232, df +0.007, edge coverage 0.076
+    largest excess: build tile  44: excess +0.0228, df -0.015, edge coverage 0.108
+    edge coverage: mean 0.081, range 0.002-0.162
+        1.00 real         0.91 user         0.09 sys
+           119635968  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               14231  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+                  28  involuntary context switches
+         10771305071  instructions retired
+          3061916662  cycles elapsed
+           101975232  peak memory footprint

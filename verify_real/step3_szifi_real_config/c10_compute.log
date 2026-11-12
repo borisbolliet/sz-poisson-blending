@@ -1,0 +1,19 @@
+c03_run_a.log: process maximum RSS 1.71 GB, peak footprint 1.58 GB
+c03_run_b.log: process maximum RSS 1.53 GB, peak footprint 1.59 GB
+c03_run_c.log: process maximum RSS 2.19 GB, peak footprint 2.54 GB
+c03_run_d.log: process maximum RSS 1.70 GB, peak footprint 1.59 GB
+c03_run_e.log: process maximum RSS 1.94 GB, peak footprint 1.80 GB
+c03_run_f.log: process maximum RSS 1.70 GB, peak footprint 1.58 GB
+
+43 SZiFi runs, 1.16 h of SZiFi wall time in all
+  S1g_      :  8 runs, mean  107.3 s, max  146.2 s
+  S1_       :  4 runs, mean  118.6 s, max  137.2 s
+  S1wg_     : 12 runs, mean   98.0 s, max  107.4 s
+  S2g_      :  2 runs, mean  106.6 s, max  106.7 s
+  S0g_      :  2 runs, mean  100.5 s, max  100.5 s
+  S3ig_     :  5 runs, mean  106.9 s, max  115.7 s
+  S3it0g_   :  7 runs, mean   78.0 s, max  284.4 s
+  S1wit0    :  2 runs, mean   46.5 s, max   47.4 s
+  S1it0gf64 :  1 runs, mean   69.2 s, max   69.2 s
+
+memory samples (5 s): 875, from 11:30:29 to 12:43:59; maximum summed RSS 1.933 GB at 11:30:49; samples above 2.0 GB: 0; above 1.9 GB: 1

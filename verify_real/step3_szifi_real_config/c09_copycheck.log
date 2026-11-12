@@ -1,0 +1,30 @@
+(1) clone HEAD 73626fb; 'git status --short' printed 0 characters
+    'git status --short --ignored' printed 0 characters
+    __pycache__ / .pyc in the clone: []
+
+SZiFi source: 31 .py files, 2655 candidate lines (>= 30 non-blank characters)
+  48986 distinct 15-token shingles
+
+(2) build: 59 text files; SZiFi lines found verbatim: 4
+    longest common run of SZiFi tokens:  17 tokens  in z_survey.py
+    longest common run of SZiFi tokens:  16 tokens  in z_szlib.py; line hits: [('szifi/params.py', '"detection_method": "maxima_lomem",'), ('test_files/run_szifi_so_car.py', '"coupling_matrix_needed": True,'), ('test_files/run_szifi_so_car.py', '"detection_method": "maxima_lomem",')]
+    longest common run of SZiFi tokens:  16 tokens  in z12_compute.py
+    longest common run of SZiFi tokens:  16 tokens  in z05_memwatch.py
+    longest common run of SZiFi tokens:  16 tokens  in z00_prep.py
+    longest common run of SZiFi tokens:  15 tokens  in z09_merge_szifi.py
+
+(2) verifier: 35 text files; SZiFi lines found verbatim: 2
+    longest common run of SZiFi tokens:  16 tokens  in vc_szifi.py; line hits: [('test_files/run_szifi_so_car.py', '"coupling_matrix_needed": True,'), ('test_files/run_szifi_so_car.py', '"save_and_load_template": False,')]
+    longest common run of SZiFi tokens:  16 tokens  in c09_copycheck.py
+    longest common run of SZiFi tokens:  16 tokens  in c08_iter.py
+    longest common run of SZiFi tokens:  16 tokens  in c07_inject.py
+    longest common run of SZiFi tokens:  16 tokens  in c06_sigma.py
+    longest common run of SZiFi tokens:  16 tokens  in c05b_defaults.py
+
+(2) verifier out/ (SZiFi stdout captures etc.): 43 text files; SZiFi lines found verbatim: 0
+    longest common run of SZiFi tokens:   0 tokens  in stdout/S3it0g_real_baseline_033.txt
+    longest common run of SZiFi tokens:   0 tokens  in stdout/S3it0g_inj_goal_033.txt
+    longest common run of SZiFi tokens:   0 tokens  in stdout/S3it0g_inj_goal_000_ch2345.txt
+    longest common run of SZiFi tokens:   0 tokens  in stdout/S3it0g_inj_goal_000.txt
+    longest common run of SZiFi tokens:   0 tokens  in stdout/S3it0g_inj_baseline_033.txt
+    longest common run of SZiFi tokens:   0 tokens  in stdout/S3it0g_inj_baseline_000_ch2345.txt

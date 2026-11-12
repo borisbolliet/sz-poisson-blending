@@ -1,0 +1,25 @@
+zA03_queue: worker cw1, queue queue_C (10 jobs); SZiFi /Users/boris/GitHub/szifi/szifi/__init__.py; MallocLargeCache=0
+  S1zp_baseline_noise_000:  93.8 s, peak RSS 1.71 GB; it0 q>4/5 44/1; it1 q>4/5 42/0; sigma it1/it0 at 0.5'/4.45'/15' 1.0288/1.0122/0.9948; f [0.8915], edge cover 0.060, n_oob 470392, periodic calls 1/6  [15:20:05, elapsed 94 s]
+  S1zp_baseline_noise_022:  90.7 s, peak RSS 1.71 GB; it0 q>4/5 56/0; it1 q>4/5 46/0; sigma it1/it0 at 0.5'/4.45'/15' 1.0235/1.0092/0.9950; f [0.9082], edge cover 0.000, n_oob 470392, periodic calls 1/6  [15:21:36, elapsed 185 s]
+  S1zp_baseline_noise_044:  89.7 s, peak RSS 1.71 GB; it0 q>4/5 40/2; it1 q>4/5 37/1; sigma it1/it0 at 0.5'/4.45'/15' 1.0301/1.0129/0.9948; f [0.8977], edge cover 0.104, n_oob 470392, periodic calls 1/6  [15:23:06, elapsed 274 s]
+  S1zp_baseline_noise_066:  91.4 s, peak RSS 1.71 GB; it0 q>4/5 53/0; it1 q>4/5 33/0; sigma it1/it0 at 0.5'/4.45'/15' 1.0469/1.0194/0.9869; f [0.84], edge cover 0.038, n_oob 470392, periodic calls 1/6  [15:24:37, elapsed 366 s]
+  S1zp_baseline_noise_088:  88.6 s, peak RSS 1.71 GB; it0 q>4/5 36/0; it1 q>4/5 30/0; sigma it1/it0 at 0.5'/4.45'/15' 1.0167/1.0069/0.9955; f [0.9361], edge cover 0.050, n_oob 470392, periodic calls 1/6  [15:26:05, elapsed 454 s]
+zA03_queue cw1 done: 5 runs [454 s]; process peak RSS 1.71 GB
+      456.73 real       323.36 user       131.17 sys
+          1714618368  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            68444006  page reclaims
+                 148  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1452  voluntary context switches
+               63243  involuntary context switches
+       3841723603963  instructions retired
+       1421261796699  cycles elapsed
+          1594528256  peak memory footprint

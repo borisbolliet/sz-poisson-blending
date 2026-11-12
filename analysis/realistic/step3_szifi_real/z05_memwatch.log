@@ -1,0 +1,15 @@
+z05_memwatch: summed RSS of this build's processes (GB); system free and compressor memory (GB)
+  08:35:22 n=2 sum RSS 1.75 GB; free 0.35, compressor 3.39; z05_queue.py sz-poisson-blending 1.05; z04_analytic.py 0.69
+  08:36:22 n=2 sum RSS 1.62 GB; free 0.26, compressor 4.41; z05_queue.py sz-poisson-blending 0.59; z04_analytic.py 1.03
+  08:37:23 n=2 sum RSS 1.69 GB; free 0.14, compressor 3.32; z05_queue.py sz-poisson-blending 1.06; z04_analytic.py 0.63
+  08:38:23 n=2 sum RSS 1.56 GB; free 1.19, compressor 1.47; z05_queue.py sz-poisson-blending 0.67; z04_analytic.py 0.88
+  08:39:23 n=3 sum RSS 2.16 GB; free 0.44, compressor 2.32; z05_queue.py sz-poisson-blending 0.82; z05_queue.py sz-poisson-blending 0.74; z05_queue.py sz-poisson-blending 0.60
+  08:40:24 n=5 sum RSS 2.16 GB; free 0.21, compressor 4.03; z05_queue.py sz-poisson-blending 0.83; z05_queue.py sz-poisson-blending 0.80; z05_queue.py sz-poisson-blending 0.40; z00b_env.py > 0.00; z00b_env.py 0.14
+  08:41:24 n=3 sum RSS 2.06 GB; free 0.31, compressor 5.79; z05_queue.py sz-poisson-blending 0.80; z05_queue.py sz-poisson-blending 0.85; z05_queue.py sz-poisson-blending 0.41
+  08:42:25 n=3 sum RSS 1.89 GB; free 0.67, compressor 6.01; z05_queue.py sz-poisson-blending 0.78; z05_queue.py sz-poisson-blending 0.54; z05_queue.py sz-poisson-blending 0.57
+  08:43:25 n=2 sum RSS 1.15 GB; free 1.12, compressor 1.64; z05_queue.py sz-poisson-blending 0.58; z05_queue.py sz-poisson-blending 0.57
+  08:44:26 n=2 sum RSS 1.68 GB; free 1.04, compressor 1.39; z05_queue.py sz-poisson-blending 0.97; z05_queue.py sz-poisson-blending 0.71
+  08:45:26 n=3 sum RSS 2.38 GB; free 1.09, compressor 1.28; z05_queue.py sz-poisson-blending 0.74; z05_queue.py sz-poisson-blending 1.12; z05_queue.py sz-poisson-blending 0.52
+  08:46:26 n=3 sum RSS 3.59 GB; free 0.32, compressor 1.43; z05_queue.py sz-poisson-blending 1.31; z05_queue.py sz-poisson-blending 1.07; z05_queue.py sz-poisson-blending 1.22
+maximum summed RSS 3.59 GB at 08:46:26 z05_queue.py /Users/boris/GitHub/sz-poisson-blending 1.31; z05_queue.py /Users/boris/GitHub/sz-poisson-blending 1.07; z05_queue.py /Users/boris/GitHub/sz-poisson-blending 1.22
+done [0.19 h]

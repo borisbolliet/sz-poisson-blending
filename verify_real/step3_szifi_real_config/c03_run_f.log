@@ -1,0 +1,91 @@
+c03: 8 jobs; SZiFi /Users/boris/GitHub/szifi/szifi/__init__.py; MallocLargeCache=0
+--- full parameter dictionary of S1wg_real_baseline_011 (after the run; SZiFi adds a_matrix and cmmf_type in place)
+    a_matrix                   = [[-5348707.175668]
+ [-5238436.669914]
+ [-4284002.720275]
+ [-2768488.904179]
+ [  315162.207061]
+ [ 2731427.857946]]
+    apod_type                  = old
+    beam                       = gaussian
+    cmmf_type                  = standard_mmf
+    comp_to_calculate          = [0]
+    compute_coupling_matrix    = False
+    cosmology                  = Planck15
+    cosmology_tool             = classy_sz
+    coupling_matrix_needed     = False
+    cov_kernel_shape           = [4.0, 4.0]
+    cov_type                   = isotropic
+    decouple_type              = none
+    deproject_cib              = None
+    detection_method           = maxima_lomem
+    extraction_mode            = find
+    freqs                      = [0, 1, 2, 3, 4, 5]
+    get_lonlat                 = False
+    get_q_true                 = False
+    inpaint                    = True
+    inpaint_type               = diffusive
+    integrate_bandpass         = False
+    interp_type                = nearest
+    iterative                  = True
+    lrange                     = [100, 30600]
+    lsep                       = 3000
+    map_dtype                  = <class 'numpy.float32'>
+    mask_radius                = 3.0
+    max_it                     = 1
+    max_radius_mask_arcmin     = inf
+    min_ftile                  = 0.3
+    min_radius_mask_arcmin     = 0.0
+    mmf_type                   = standard
+    n_inpaint                  = 100
+    norm_type                  = centre
+    path                       = /Users/boris/GitHub/szifi/
+    path_data                  = /Users/boris/GitHub/sz-poisson-blending/verify_real/step3_szifi_real_config/out/maps/
+    path_template              = None
+    powspec_bin_fac            = 4
+    powspec_lmax1d             = None
+    powspec_new_shape          = None
+    q_th                       = 4.0
+    q_th_noise                 = 4.0
+    rSZ                        = False
+    save_and_load_template     = False
+    save_coupling_matrix       = False
+    save_snr_maps              = False
+    snr_maps_name              = None
+    snr_maps_path              = None
+    snr_weighting              = False
+    snr_weigthing              = False
+    survey_file                = /Users/boris/GitHub/sz-poisson-blending/verify_real/step3_szifi_real_config/vc_survey.py
+    theta_500_input            = None
+    theta_500_vec_arcmin       = [ 0.5       0.637498  0.812807  1.036325  1.32131   1.684664  2.147939  2.738613  3.491719  4.451926  5.676186  7.237112  9.227285 11.764747 15.      ]
+    theta_find                 = input
+    tile_type                  = healpix
+    tilemask_buffer_arcmin     = 15
+    tilemask_mode              = field
+  S1wg_real_baseline_011 (buffer 8.0'): 94.3 s, peak RSS 1.70 GB, old inverse covariance released 1x, f [0.76738]; it0: q>4/4.5/5 292/211/161, median q 5.25, sigma_vec[1,9,14] 4.7145e-05/5.4176e-06/4.9365e-06; it1: q>4/4.5/5 298/211/167, median q 5.31, sigma_vec[1,9,14] 4.8212e-05/5.2194e-06/4.6309e-06  [12:28:31]
+  S1wg_real_goal_011 (buffer 8.0'): 96.0 s, peak RSS 1.70 GB, old inverse covariance released 1x, f [0.75338]; it0: q>4/4.5/5 393/299/233, median q 5.40, sigma_vec[1,9,14] 3.7035e-05/4.7075e-06/4.5711e-06; it1: q>4/4.5/5 392/305/233, median q 5.41, sigma_vec[1,9,14] 3.7758e-05/4.4945e-06/4.2473e-06  [12:30:07]
+  S1wg_real_baseline_022 (buffer 8.0'): 93.1 s, peak RSS 1.70 GB, old inverse covariance released 1x, f [0.79939]; it0: q>4/4.5/5 320/215/150, median q 4.89, sigma_vec[1,9,14] 4.6521e-05/5.3210e-06/4.8951e-06; it1: q>4/4.5/5 315/219/156, median q 4.96, sigma_vec[1,9,14] 4.7523e-05/5.1586e-06/4.6251e-06  [12:31:40]
+  S1wg_real_goal_022 (buffer 8.0'): 97.4 s, peak RSS 1.70 GB, old inverse covariance released 1x, f [0.74638]; it0: q>4/4.5/5 431/328/229, median q 5.11, sigma_vec[1,9,14] 3.6467e-05/4.6037e-06/4.5180e-06; it1: q>4/4.5/5 395/310/210, median q 5.17, sigma_vec[1,9,14] 3.8094e-05/4.5080e-06/4.2459e-06  [12:33:17]
+  S1wg_real_baseline_044 (buffer 8.0'): 90.7 s, peak RSS 1.70 GB, old inverse covariance released 1x, f [0.79189]; it0: q>4/4.5/5 287/210/162, median q 5.28, sigma_vec[1,9,14] 4.6090e-05/5.2429e-06/4.7861e-06; it1: q>4/4.5/5 291/202/154, median q 5.16, sigma_vec[1,9,14] 4.7243e-05/5.1251e-06/4.5875e-06  [12:34:48]
+  S1wg_real_goal_044 (buffer 8.0'): 94.5 s, peak RSS 1.70 GB, old inverse covariance released 1x, f [0.77203]; it0: q>4/4.5/5 407/301/229, median q 5.32, sigma_vec[1,9,14] 3.6133e-05/4.5314e-06/4.4119e-06; it1: q>4/4.5/5 409/299/229, median q 5.25, sigma_vec[1,9,14] 3.6994e-05/4.3988e-06/4.1947e-06  [12:36:22]
+  S1wg_real_baseline_055 (buffer 8.0'): 93.1 s, peak RSS 1.70 GB, old inverse covariance released 1x, f [0.80544]; it0: q>4/4.5/5 277/211/153, median q 5.18, sigma_vec[1,9,14] 4.6452e-05/5.3221e-06/4.8805e-06; it1: q>4/4.5/5 282/213/162, median q 5.20, sigma_vec[1,9,14] 4.6941e-05/5.1085e-06/4.5745e-06  [12:37:55]
+  S1wg_real_goal_055 (buffer 8.0'): 95.7 s, peak RSS 1.70 GB, old inverse covariance released 1x, f [0.79246]; it0: q>4/4.5/5 383/279/227, median q 5.43, sigma_vec[1,9,14] 3.6448e-05/4.6124e-06/4.5122e-06; it1: q>4/4.5/5 403/300/235, median q 5.34, sigma_vec[1,9,14] 3.6328e-05/4.3205e-06/4.1423e-06  [12:39:31]
+c03 done [755 s]
+      757.00 real       548.37 user       206.68 sys
+          1703018496  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+           118172076  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   7  voluntary context switches
+               82182  involuntary context switches
+       6450585053771  instructions retired
+       2359491947899  cycles elapsed
+          1580454272  peak memory footprint

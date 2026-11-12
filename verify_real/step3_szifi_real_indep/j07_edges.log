@@ -1,0 +1,73 @@
+j07: SZiFi S0 (no edge buffer), iteration 0, vs the production finder's iteration 0
+
+  ---- baseline, build S0 runs, tiles [0, 33, 66, 99, 132, 165]
+    claim 2: iteration 1 identical to iteration 0 (q, pixels, theta, y0, sigma_vec, spectra): 6 of 6 tiles
+    edge distance  0.0- 2.5': SZiFi q > 4.5 peaks per 100 deg^2 of the band   11277; without a finder detection within 1': 1104 (98%); highest q among them 24.3
+    edge distance  2.5- 5.0': SZiFi q > 4.5 peaks per 100 deg^2 of the band    3281; without a finder detection within 1': 303 (94%); highest q among them 7.8
+    edge distance  5.0- 8.0': SZiFi q > 4.5 peaks per 100 deg^2 of the band     230; without a finder detection within 1': 1 (4%); highest q among them 4.5
+    edge distance  8.0-60.0': SZiFi q > 4.5 peaks per 100 deg^2 of the band     242; without a finder detection within 1': 1 (0%); highest q among them 4.6
+    mean dq = q_SZiFi - q_finder by edge distance: 5-6' +0.05 (11); 6-7.5' +0.39 (10); 7.5-10' +0.01 (11); 10-12.5' +0.07 (18); 12.5-15' -0.00 (18); 15-20' -0.00 (51); 20-30' -0.02 (88); 30-60' +0.03 (250); 60-301' +0.02 (861)
+    buffer  5.0': bins from the buffer to 60' vs >= 60' (all       ): chi^2   9.0 for 6 bins, p = 0.17
+    buffer  5.0': bins from the buffer to 60' vs >= 60' (theta > 2'): chi^2   4.9 for 6 bins, p = 0.56
+    buffer  6.0': bins from the buffer to 60' vs >= 60' (all       ): chi^2  10.4 for 6 bins, p = 0.11
+    buffer  6.0': bins from the buffer to 60' vs >= 60' (theta > 2'): chi^2   6.1 for 6 bins, p = 0.42
+    buffer  7.5': bins from the buffer to 60' vs >= 60' (all       ): chi^2   5.1 for 6 bins, p = 0.53
+    buffer  7.5': bins from the buffer to 60' vs >= 60' (theta > 2'): chi^2   3.9 for 6 bins, p = 0.69
+    buffer  8.0': bins from the buffer to 60' vs >= 60' (all       ): chi^2   5.1 for 6 bins, p = 0.53
+    buffer  8.0': bins from the buffer to 60' vs >= 60' (theta > 2'): chi^2   3.9 for 6 bins, p = 0.69
+    buffer 10.0': bins from the buffer to 60' vs >= 60' (all       ): chi^2   5.1 for 5 bins, p = 0.41
+    buffer 10.0': bins from the buffer to 60' vs >= 60' (theta > 2'): chi^2   3.8 for 5 bins, p = 0.58
+
+  ---- goal, build S0 runs, tiles [0, 33, 66, 99, 132, 165]
+    claim 2: iteration 1 identical to iteration 0 (q, pixels, theta, y0, sigma_vec, spectra): 6 of 6 tiles
+    edge distance  0.0- 2.5': SZiFi q > 4.5 peaks per 100 deg^2 of the band   12030; without a finder detection within 1': 1169 (98%); highest q among them 30.1
+    edge distance  2.5- 5.0': SZiFi q > 4.5 peaks per 100 deg^2 of the band    5600; without a finder detection within 1': 521 (94%); highest q among them 9.3
+    edge distance  5.0- 8.0': SZiFi q > 4.5 peaks per 100 deg^2 of the band     375; without a finder detection within 1': 0 (0%); highest q among them nan
+    edge distance  8.0-60.0': SZiFi q > 4.5 peaks per 100 deg^2 of the band     318; without a finder detection within 1': 0 (0%); highest q among them nan
+    mean dq = q_SZiFi - q_finder by edge distance: 5-6' +0.19 (17); 6-7.5' +0.28 (15); 7.5-10' +0.07 (22); 10-12.5' +0.07 (19); 12.5-15' -0.05 (28); 15-20' -0.02 (60); 20-30' -0.02 (125); 30-60' +0.03 (338); 60-301' +0.02 (1192)
+    buffer  5.0': bins from the buffer to 60' vs >= 60' (all       ): chi^2  16.4 for 6 bins, p = 0.01
+    buffer  5.0': bins from the buffer to 60' vs >= 60' (theta > 2'): chi^2   8.9 for 6 bins, p = 0.18
+    buffer  6.0': bins from the buffer to 60' vs >= 60' (all       ): chi^2  14.4 for 6 bins, p = 0.03
+    buffer  6.0': bins from the buffer to 60' vs >= 60' (theta > 2'): chi^2  10.9 for 6 bins, p = 0.09
+    buffer  7.5': bins from the buffer to 60' vs >= 60' (all       ): chi^2   9.7 for 6 bins, p = 0.14
+    buffer  7.5': bins from the buffer to 60' vs >= 60' (theta > 2'): chi^2  12.2 for 6 bins, p = 0.06
+    buffer  8.0': bins from the buffer to 60' vs >= 60' (all       ): chi^2   8.5 for 6 bins, p = 0.21
+    buffer  8.0': bins from the buffer to 60' vs >= 60' (theta > 2'): chi^2  11.4 for 6 bins, p = 0.08
+    buffer 10.0': bins from the buffer to 60' vs >= 60' (all       ): chi^2   8.4 for 5 bins, p = 0.13
+    buffer 10.0': bins from the buffer to 60' vs >= 60' (theta > 2'): chi^2   8.4 for 5 bins, p = 0.14
+
+  ---- goal, mine S0 runs, tiles [34]
+    claim 2: iteration 1 identical to iteration 0 (q, pixels, theta, y0, sigma_vec, spectra): 1 of 1 tiles
+    edge distance  0.0- 2.5': SZiFi q > 4.5 peaks per 100 deg^2 of the band   13918; without a finder detection within 1': 224 (97%); highest q among them 18.3
+    edge distance  2.5- 5.0': SZiFi q > 4.5 peaks per 100 deg^2 of the band    2916; without a finder detection within 1': 42 (88%); highest q among them 7.0
+    edge distance  5.0- 8.0': SZiFi q > 4.5 peaks per 100 deg^2 of the band     409; without a finder detection within 1': 0 (0%); highest q among them nan
+    edge distance  8.0-60.0': SZiFi q > 4.5 peaks per 100 deg^2 of the band     234; without a finder detection within 1': 0 (0%); highest q among them nan
+    mean dq = q_SZiFi - q_finder by edge distance: 5-6' -0.36 (3); 6-7.5' -0.01 (5); 7.5-10' -0.07 (5); 10-12.5' +0.01 (4); 12.5-15' -0.23 (2); 15-20' +0.06 (7); 20-30' +0.02 (11); 30-60' +0.04 (47); 60-301' -0.02 (183)
+    buffer  5.0': bins from the buffer to 60' vs >= 60' (all       ): chi^2   8.2 for 6 bins, p = 0.22
+    buffer  5.0': bins from the buffer to 60' vs >= 60' (theta > 2'): chi^2  24.8 for 6 bins, p = 0.00
+    buffer  6.0': bins from the buffer to 60' vs >= 60' (all       ): chi^2   5.9 for 6 bins, p = 0.43
+    buffer  6.0': bins from the buffer to 60' vs >= 60' (theta > 2'): chi^2  24.1 for 6 bins, p = 0.00
+    buffer  7.5': bins from the buffer to 60' vs >= 60' (all       ): chi^2   6.0 for 6 bins, p = 0.42
+    buffer  7.5': bins from the buffer to 60' vs >= 60' (theta > 2'): chi^2  24.0 for 6 bins, p = 0.00
+    buffer  8.0': bins from the buffer to 60' vs >= 60' (all       ): chi^2   6.0 for 6 bins, p = 0.42
+    buffer  8.0': bins from the buffer to 60' vs >= 60' (theta > 2'): chi^2  24.0 for 6 bins, p = 0.00
+    buffer 10.0': bins from the buffer to 60' vs >= 60' (all       ): chi^2   5.8 for 5 bins, p = 0.33
+    buffer 10.0': bins from the buffer to 60' vs >= 60' (theta > 2'): chi^2  23.9 for 5 bins, p = 0.00
+        0.74 real         0.65 user         0.08 sys
+            96845824  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               15232  page reclaims
+                  84  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  38  voluntary context switches
+                  62  involuntary context switches
+          6878703323  instructions retired
+          2274290190  cycles elapsed
+            71632128  peak memory footprint

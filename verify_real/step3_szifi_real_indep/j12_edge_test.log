@@ -1,0 +1,46 @@
+j12: SZiFi's iteration-1 noise maps on the bare tile (A) and on the periodically extended tile (B), same mask
+
+  tile 41 baseline: unmasked fraction 0.7411 (SZiFi recorded 0.7411); boundary pixels covered by the mask 0.200
+    auto spectra / unmasked, l ranges ((100, 1000), (1000, 3000), (3000, 6000), (6000, 12000), (12000, 20000)):
+      A (bare tile, as SZiFi):  0.8995 0.9313 0.9160 0.8999 0.8941
+      B (periodic extension):   0.9175 0.9268 0.8908 0.9038 0.9036
+      A - B:                    -0.0181 +0.0045 +0.0253 -0.0039 -0.0094
+      A - B at l 6000-12000 per channel (27 ... 280 GHz): -0.0108 -0.0098 +0.0113 +0.0035 -0.0072 -0.0105
+    mean squared jump across the periodic boundary / unmasked map's: A 3.84, B 1.00  [22 s]
+
+  tile 83 baseline: unmasked fraction 0.7883 (SZiFi recorded 0.7883); boundary pixels covered by the mask 0.031
+    auto spectra / unmasked, l ranges ((100, 1000), (1000, 3000), (3000, 6000), (6000, 12000), (12000, 20000)):
+      A (bare tile, as SZiFi):  0.9377 0.9506 0.8950 0.9205 0.9199
+      B (periodic extension):   0.9381 0.9508 0.8952 0.9210 0.9205
+      A - B:                    -0.0004 -0.0002 -0.0002 -0.0005 -0.0006
+      A - B at l 6000-12000 per channel (27 ... 280 GHz): -0.0005 -0.0006 -0.0005 -0.0004 -0.0005 -0.0006
+    mean squared jump across the periodic boundary / unmasked map's: A 1.01, B 1.00  [20 s]
+
+  tile 9 baseline: unmasked fraction 0.7794 (SZiFi recorded 0.7794); boundary pixels covered by the mask 0.092
+    auto spectra / unmasked, l ranges ((100, 1000), (1000, 3000), (3000, 6000), (6000, 12000), (12000, 20000)):
+      A (bare tile, as SZiFi):  0.9403 0.9388 0.8845 0.9131 0.9136
+      B (periodic extension):   0.9415 0.9394 0.8850 0.9152 0.9159
+      A - B:                    -0.0012 -0.0006 -0.0004 -0.0021 -0.0023
+      A - B at l 6000-12000 per channel (27 ... 280 GHz): -0.0024 -0.0023 -0.0017 -0.0020 -0.0016 -0.0025
+    mean squared jump across the periodic boundary / unmasked map's: A 1.11, B 1.00  [20 s]
+
+done [62 s]; peak RSS 1.12 GB
+       64.42 real        63.70 user         0.65 sys
+          1116979200  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              134282  page reclaims
+                  80  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  16  voluntary context switches
+                1437  involuntary context switches
+        541337261375  instructions retired
+        201911436399  cycles elapsed
+          1039764864  peak memory footprint
+exit 0

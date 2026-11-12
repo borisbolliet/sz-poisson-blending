@@ -1,0 +1,59 @@
+z10: SZiFi's merge_detections vs szsim.finder on the same inputs (interior >= 9.0' from the edges, q >= 5)
+
+(1) kept entries, SZiFi's merge_detections vs szsim.finder, same input
+  input  level    rule       tiles identical entries in kept SZiFi kept szsim differing  in the tiles that differ: pairs within 0.4% of R (exactly R); tiles with such a pair; differing entries that are themselves in such a pair
+  prod   baseline closest1      30        30       6087       5757       5757         0     0 (0); 0 of 0; 0 of 0
+  prod   baseline closest10     30        25       6087       5353       5359         6     7 (5); 5 of 5; 4 of 6
+  prod   baseline fof1          30        30       6087       5756       5756         0     0 (0); 0 of 0; 0 of 0
+  prod   baseline fof10         30        25       6087       5332       5337         5     7 (5); 5 of 5; 4 of 5
+  prod   goal     closest1      30        29       9050       8550       8551         1     1 (1); 1 of 1; 1 of 1
+  prod   goal     closest10     30        21       9050       7656       7665        13    16 (11); 9 of 9; 9 of 13
+  prod   goal     fof1          30        30       9050       8544       8544         0     0 (0); 0 of 0; 0 of 0
+  prod   goal     fof10         30        20       9050       7575       7587        12    18 (12); 10 of 10; 9 of 12
+  szifi  baseline closest1      30        30       4700       4434       4434         0     0 (0); 0 of 0; 0 of 0
+  szifi  baseline closest10     30        29       4700       4205       4206         1     2 (1); 1 of 1; 1 of 1
+  szifi  baseline fof1          30        30       4700       4433       4433         0     0 (0); 0 of 0; 0 of 0
+  szifi  baseline fof10         30        29       4700       4197       4198         1     2 (1); 1 of 1; 1 of 1
+  szifi  goal     closest1      30        30       6621       6310       6310         0     0 (0); 0 of 0; 0 of 0
+  szifi  goal     closest10     30        25       6621       5814       5819         5     6 (4); 5 of 5; 5 of 5
+  szifi  goal     fof1          30        30       6621       6308       6308         0     0 (0); 0 of 0; 0 of 0
+  szifi  goal     fof10         30        25       6621       5793       5798         5     7 (4); 5 of 5; 5 of 5
+  all: identical in 438 of 480 tile runs; the 42 that differ all contain a pair within 0.4% of R: True (42 of 42); differing entries 49, of which 39 are themselves in such a pair (the others follow from it through the merge order)
+
+(2) production finder: real clusters removed by the merge (interior, q > 5), SZiFi's merge vs szsim's
+  baseline closest1   szifi : credited halos 5665, after merging 5659: removed 0.11%
+  baseline closest1   szsim : credited halos 5665, after merging 5659: removed 0.11%
+  baseline closest10  szifi : credited halos 5665, after merging 5275: removed 6.88%
+  baseline closest10  szsim : credited halos 5665, after merging 5280: removed 6.80%
+  baseline fof1       szifi : credited halos 5665, after merging 5659: removed 0.11%
+  baseline fof1       szsim : credited halos 5665, after merging 5659: removed 0.11%
+  baseline fof10      szifi : credited halos 5665, after merging 5256: removed 7.22%
+  baseline fof10      szsim : credited halos 5665, after merging 5260: removed 7.15%
+  goal     closest1   szifi : credited halos 8416, after merging 8405: removed 0.13%
+  goal     closest1   szsim : credited halos 8416, after merging 8405: removed 0.13%
+  goal     closest10  szifi : credited halos 8416, after merging 7537: removed 10.44%
+  goal     closest10  szsim : credited halos 8416, after merging 7545: removed 10.35%
+  goal     fof1       szifi : credited halos 8416, after merging 8404: removed 0.14%
+  goal     fof1       szsim : credited halos 8416, after merging 8404: removed 0.14%
+  goal     fof10      szifi : credited halos 8416, after merging 7457: removed 11.39%
+  goal     fof10      szsim : credited halos 8416, after merging 7468: removed 11.26%
+
+done [2 s]
+        2.72 real         2.43 user         0.17 sys
+           122028032  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               15684  page reclaims
+                  86  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1008  voluntary context switches
+                 110  involuntary context switches
+         27976090124  instructions retired
+          7904365235  cycles elapsed
+            81282496  peak memory footprint

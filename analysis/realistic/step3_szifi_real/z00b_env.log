@@ -1,0 +1,136 @@
+python 3.12.9 (/Users/boris/GitHub/szifi-venv/bin/python)
+  numpy          2.5.4
+  scipy          1.18.1
+  astropy        8.0.2
+  healpy         1.20.1
+  numba          0.68.1
+  llvmlite       0.50.0
+  matplotlib     3.11.2
+  pixell         0.32.9
+  pymaster       3.0.1
+  scikit-learn   1.9.1
+  setuptools     80.10.2
+  orphics        0.1
+  six            1.17.0
+  h5py           3.16.0
+  PyYAML         6.0.3
+  ducc0          0.42.0
+SZiFi clone /Users/boris/GitHub/szifi: HEAD 73626fb (Fri Aug 28 22:00:52 2026 +0100 Fix the line-of-sight quadrature, and stop rebuilding the coupling matrix every noise iteration); 'git status --short' prints 0 characters; imported from /Users/boris/GitHub/szifi/szifi/__init__.py
+environment of this process: NUMBA_CACHE_DIR=/Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/out/numba_cache_szifi, OMP/OPENBLAS/VECLIB/NUMBA threads 1/1/1/1, sys.dont_write_bytecode=True
+
+SZiFi's 'SOgoal_simple' experiment as shipped vs the values our survey file puts in its place:
+  nu_eff       SZiFi [2.70e+10 3.90e+10 9.30e+10 1.45e+11 2.25e+11 2.78e+11]
+               ours  [2.70e+10 3.90e+10 9.30e+10 1.45e+11 2.25e+11 2.80e+11]   max |ours/SZiFi - 1| = 7.19e-03
+  FWHM         SZiFi [7.4 5.1 2.2 1.4 1.  0.9]
+               ours  [7.4 5.1 2.2 1.4 1.  0.9]   max |ours/SZiFi - 1| = 0.00e+00
+  noise_levels SZiFi [52.  27.   5.8  6.3 15.  37. ]
+               ours  [52.  27.   5.8  6.3 15.  37. ]   max |ours/SZiFi - 1| = 0.00e+00
+  tsz_sed      SZiFi [-5348700. -5238400. -4284000. -2768500.   315170.  2731400.]
+               ours  [-5348707.175668 -5238436.669914 -4284002.720275 -2768488.904179   315162.207061  2731427.857946]   max |ours/SZiFi - 1| = 2.47e-05
+  noise_levels for 'baseline': [71.0, 36.0, 8.0, 10.0, 22.0, 54.0]; n_freqs 6 (recomputed: 6)
+
+parameters that differ from SZiFi's defaults, per configuration (before the run):
+  S0:
+    beam                     = gaussian                                 (default real)
+    coupling_matrix_needed   = False                                    (default True)
+    decouple_type            = none                                     (default master)
+    get_lonlat               = False                                    (default True)
+    inpaint                  = False                                    (default True)
+    integrate_bandpass       = False                                    (default True)
+    lrange                   = [100, 20000]                             (default [100, 2500])
+    path                     = /Users/boris/GitHub/szifi/               (default /Users/inigozubeldia/Desktop/szifi/)
+    path_data                = /Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/out/maps/ (default /Users/inigozubeldia/Desktop/szifi/data/)
+    path_template            = None                                     (default /Users/inigozubeldia/Desktop/szifi/data/templates/)
+    save_and_load_template   = False                                    (default True)
+    snr_weighting            = False                                    (default (not in the defaults))
+    survey_file              = /Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3_szifi_real/z_survey.py (default /Users/inigozubeldia/Desktop/szifi/surveys/data_planck.py)
+    theta_500_vec_arcmin     = [ 0.5     0.6375  0.8128  1.0363  1.3213  1.6847  2.1479  2.7386  3.4917  4.4519  5.6762  7.2371  9.2273 11.7647 15.    ] (default [ 0.5 15. ])
+  S1:
+    beam                     = gaussian                                 (default real)
+    coupling_matrix_needed   = False                                    (default True)
+    decouple_type            = none                                     (default master)
+    get_lonlat               = False                                    (default True)
+    integrate_bandpass       = False                                    (default True)
+    lrange                   = [100, 20000]                             (default [100, 2500])
+    path                     = /Users/boris/GitHub/szifi/               (default /Users/inigozubeldia/Desktop/szifi/)
+    path_data                = /Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/out/maps/ (default /Users/inigozubeldia/Desktop/szifi/data/)
+    path_template            = None                                     (default /Users/inigozubeldia/Desktop/szifi/data/templates/)
+    save_and_load_template   = False                                    (default True)
+    snr_weighting            = False                                    (default (not in the defaults))
+    survey_file              = /Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3_szifi_real/z_survey.py (default /Users/inigozubeldia/Desktop/szifi/surveys/data_planck.py)
+    theta_500_vec_arcmin     = [ 0.5     0.6375  0.8128  1.0363  1.3213  1.6847  2.1479  2.7386  3.4917  4.4519  5.6762  7.2371  9.2273 11.7647 15.    ] (default [ 0.5 15. ])
+  S2:
+    beam                     = gaussian                                 (default real)
+    coupling_matrix_needed   = False                                    (default True)
+    decouple_type            = none                                     (default master)
+    get_lonlat               = False                                    (default True)
+    integrate_bandpass       = False                                    (default True)
+    lrange                   = [100, 20000]                             (default [100, 2500])
+    lsep                     = 12000                                    (default 3000)
+    path                     = /Users/boris/GitHub/szifi/               (default /Users/inigozubeldia/Desktop/szifi/)
+    path_data                = /Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/out/maps/ (default /Users/inigozubeldia/Desktop/szifi/data/)
+    path_template            = None                                     (default /Users/inigozubeldia/Desktop/szifi/data/templates/)
+    save_and_load_template   = False                                    (default True)
+    snr_weighting            = False                                    (default (not in the defaults))
+    survey_file              = /Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3_szifi_real/z_survey.py (default /Users/inigozubeldia/Desktop/szifi/surveys/data_planck.py)
+    theta_500_vec_arcmin     = [ 0.5     0.6375  0.8128  1.0363  1.3213  1.6847  2.1479  2.7386  3.4917  4.4519  5.6762  7.2371  9.2273 11.7647 15.    ] (default [ 0.5 15. ])
+  S3:
+    beam                     = gaussian                                 (default real)
+    cov_kernel_shape         = [10, 10]                                 (default [4.0, 4.0])
+    cov_type                 = mixed_gaussian                           (default isotropic)
+    get_lonlat               = False                                    (default True)
+    inpaint_type             = orphics                                  (default diffusive)
+    integrate_bandpass       = False                                    (default True)
+    lrange                   = [1, 300000]                              (default [100, 2500])
+    lsep                     = 12000                                    (default 3000)
+    min_radius_mask_arcmin   = 1.0                                      (default 0.0)
+    n_inpaint                = -1                                       (default 100)
+    path                     = /Users/boris/GitHub/szifi/               (default /Users/inigozubeldia/Desktop/szifi/)
+    path_data                = /Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/out/maps/ (default /Users/inigozubeldia/Desktop/szifi/data/)
+    path_template            = None                                     (default /Users/inigozubeldia/Desktop/szifi/data/templates/)
+    powspec_lmax1d           = 10000                                    (default None)
+    save_and_load_template   = False                                    (default True)
+    save_coupling_matrix     = True                                     (default False)
+    snr_weighting            = False                                    (default (not in the defaults))
+    survey_file              = /Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3_szifi_real/z_survey.py (default /Users/inigozubeldia/Desktop/szifi/surveys/data_planck.py)
+    theta_500_vec_arcmin     = [ 0.5     0.6375  0.8128  1.0363  1.3213  1.6847  2.1479  2.7386  3.4917  4.4519  5.6762  7.2371  9.2273 11.7647 15.    ] (default [ 0.5 15. ])
+  S3i:
+    beam                     = gaussian                                 (default real)
+    cov_kernel_shape         = [10, 10]                                 (default [4.0, 4.0])
+    get_lonlat               = False                                    (default True)
+    inpaint_type             = orphics                                  (default diffusive)
+    integrate_bandpass       = False                                    (default True)
+    lrange                   = [1, 300000]                              (default [100, 2500])
+    lsep                     = 12000                                    (default 3000)
+    min_radius_mask_arcmin   = 1.0                                      (default 0.0)
+    n_inpaint                = -1                                       (default 100)
+    path                     = /Users/boris/GitHub/szifi/               (default /Users/inigozubeldia/Desktop/szifi/)
+    path_data                = /Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/out/maps/ (default /Users/inigozubeldia/Desktop/szifi/data/)
+    path_template            = None                                     (default /Users/inigozubeldia/Desktop/szifi/data/templates/)
+    powspec_lmax1d           = 10000                                    (default None)
+    save_and_load_template   = False                                    (default True)
+    save_coupling_matrix     = True                                     (default False)
+    snr_weighting            = False                                    (default (not in the defaults))
+    survey_file              = /Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3_szifi_real/z_survey.py (default /Users/inigozubeldia/Desktop/szifi/surveys/data_planck.py)
+    theta_500_vec_arcmin     = [ 0.5     0.6375  0.8128  1.0363  1.3213  1.6847  2.1479  2.7386  3.4917  4.4519  5.6762  7.2371  9.2273 11.7647 15.    ] (default [ 0.5 15. ])
+  S3it0:
+    beam                     = gaussian                                 (default real)
+    cov_kernel_shape         = [10, 10]                                 (default [4.0, 4.0])
+    cov_type                 = mixed_gaussian                           (default isotropic)
+    get_lonlat               = False                                    (default True)
+    inpaint_type             = orphics                                  (default diffusive)
+    integrate_bandpass       = False                                    (default True)
+    iterative                = False                                    (default True)
+    lrange                   = [1, 300000]                              (default [100, 2500])
+    lsep                     = 12000                                    (default 3000)
+    min_radius_mask_arcmin   = 1.0                                      (default 0.0)
+    n_inpaint                = -1                                       (default 100)
+    path                     = /Users/boris/GitHub/szifi/               (default /Users/inigozubeldia/Desktop/szifi/)
+    path_data                = /Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/out/maps/ (default /Users/inigozubeldia/Desktop/szifi/data/)
+    path_template            = None                                     (default /Users/inigozubeldia/Desktop/szifi/data/templates/)
+    powspec_lmax1d           = 10000                                    (default None)
+    save_and_load_template   = False                                    (default True)
+    save_coupling_matrix     = True                                     (default False)
+    snr_weighting            = False                                    (default (not in the defaults))
+    survey_file              = /Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3_szifi_real/z_survey.py (default /Users/inigozubeldia/Desktop/szifi/surveys/data_planck.py)
+    theta_500_vec_arcmin     = [ 0.5     0.6375  0.8128  1.0363  1.3213  1.6847  2.1479  2.7386  3.4917  4.4519  5.6762  7.2371  9.2273 11.7647 15.    ] (default [ 0.5 15. ])

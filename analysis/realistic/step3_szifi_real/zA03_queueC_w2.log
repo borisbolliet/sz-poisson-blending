@@ -1,0 +1,25 @@
+zA03_queue: worker cw2, queue queue_C (10 jobs); SZiFi /Users/boris/GitHub/szifi/szifi/__init__.py; MallocLargeCache=0
+  S1zp_goal_noise_000:  94.7 s, peak RSS 1.71 GB; it0 q>4/5 57/1; it1 q>4/5 43/1; sigma it1/it0 at 0.5'/4.45'/15' 1.0313/1.0151/0.9951; f [0.8857], edge cover 0.077, n_oob 470392, periodic calls 1/6  [15:20:06, elapsed 95 s]
+  S1zp_goal_noise_022:  91.5 s, peak RSS 1.71 GB; it0 q>4/5 59/1; it1 q>4/5 48/0; sigma it1/it0 at 0.5'/4.45'/15' 1.0307/1.0145/0.9961; f [0.8904], edge cover 0.057, n_oob 470392, periodic calls 1/6  [15:21:37, elapsed 186 s]
+  S1zp_goal_noise_044:  91.8 s, peak RSS 1.72 GB; it0 q>4/5 46/2; it1 q>4/5 35/1; sigma it1/it0 at 0.5'/4.45'/15' 1.0500/1.0253/0.9954; f [0.8481], edge cover 0.132, n_oob 470392, periodic calls 1/6  [15:23:09, elapsed 278 s]
+  S1zp_goal_noise_066:  90.3 s, peak RSS 1.72 GB; it0 q>4/5 54/0; it1 q>4/5 31/0; sigma it1/it0 at 0.5'/4.45'/15' 1.0463/1.0262/0.9980; f [0.865], edge cover 0.004, n_oob 470392, periodic calls 1/6  [15:24:40, elapsed 368 s]
+  S1zp_goal_noise_088:  88.7 s, peak RSS 1.72 GB; it0 q>4/5 36/1; it1 q>4/5 33/1; sigma it1/it0 at 0.5'/4.45'/15' 1.0279/1.0146/0.9961; f [0.905], edge cover 0.056, n_oob 470392, periodic calls 1/6  [15:26:08, elapsed 457 s]
+zA03_queue cw2 done: 5 runs [457 s]; process peak RSS 1.72 GB
+      459.50 real       325.96 user       131.34 sys
+          1717075968  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            68565078  page reclaims
+                 148  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1566  voluntary context switches
+               62490  involuntary context switches
+       3865809762365  instructions retired
+       1430227887925  cycles elapsed
+          1594380800  peak memory footprint

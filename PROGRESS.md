@@ -2,12 +2,13 @@
 
 This page summarises what has been done so far, what we found and what comes next.
 - **Idealised telescope (Q1–Q3):** details in [`REPORT.md`](REPORT.md).
-- **Realistic Simons Observatory setup:** details in [`analysis/realistic/step1/RESULTS.md`](analysis/realistic/step1/RESULTS.md), [`analysis/realistic/step2/RESULTS.md`](analysis/realistic/step2/RESULTS.md), [`analysis/realistic/step3/RESULTS.md`](analysis/realistic/step3/RESULTS.md) (step 3a) and [`analysis/realistic/step3b/RESULTS.md`](analysis/realistic/step3b/RESULTS.md).
+- **Realistic Simons Observatory setup:** details in [`analysis/realistic/step1/RESULTS.md`](analysis/realistic/step1/RESULTS.md), [`analysis/realistic/step2/RESULTS.md`](analysis/realistic/step2/RESULTS.md), [`analysis/realistic/step3/RESULTS.md`](analysis/realistic/step3/RESULTS.md) (step 3a), [`analysis/realistic/step3b/RESULTS.md`](analysis/realistic/step3b/RESULTS.md) and [`analysis/realistic/step3_szifi_real/RESULTS.md`](analysis/realistic/step3_szifi_real/RESULTS.md) (SZiFi itself).
 
-Every number below comes from a script in this repository. Logs are committed for the realistic setup, the patch pictures and the finder timing test; the Q1–Q3 logs are kept locally. Every Q1–Q3 and step-1 result was checked independently before being reported. So was every step-2, step-3a and step-3b result, except a few that only one reviewer computed or checked:
+Every number below comes from a script in this repository. Logs are committed for the realistic setup, the patch pictures and the finder timing test; the Q1–Q3 logs are kept locally. Every Q1–Q3 and step-1 result was checked independently before being reported. So was every step-2, step-3a, step-3b and SZiFi result, except a few that only one reviewer computed or checked:
 - step 2: the arbiter's extra analyst setups, and the map check's Poisson realisations;
 - step 3a: the count-change preview with its selection calibration, and the class fractions and count change with SZiFi's default settings (the arbiter);
-- step 3b: the final headline on all tiles and the arbiter's targeted tests (the arbiter; for this report, its q > 5 biases in configs a, d and e were refitted with the fits check's code on the arbiter's data), and the fits with our re-implementation of SZiFi's SO-script setting (the builder only).
+- step 3b: the final headline on all tiles and the arbiter's targeted tests (the arbiter; for this report, its q > 5 biases in configs a, d and e were refitted with the fits check's code on the arbiter's data), and the fits with our re-implementation of SZiFi's SO-script setting (the builder only);
+- SZiFi itself: the runs with the masked discs at the tile edges filled periodically, and those with ℓ_sep = 12000 and the round-off problem removed (only the arbiter ran these; for this report their numbers were recomputed from its stored runs with our own code); the re-implementation's q > 5 counts on the same tiles (computed only for this report); and the run with SZiFi's own four SO channels (the config check).
 
 Each RESULTS.md says, claim by claim, which check confirmed it. The patch pictures and the timing test carry only their own internal checks.
 
@@ -22,7 +23,7 @@ Each RESULTS.md says, claim by claim, which check confirmed it. The patch pictur
 | Realistic step 2 | Does the cosmology bias survive with the SO filter? | done, verified: **with the default analysis choices, Q3's S8 bias disappears when the Y–M relation is fitted (at most +0.6σ, SO-like, over all choices tried); with the relation fixed, +1.33σ to +1.85σ (SO-like), the opposite sign to Q3** |
 | Realistic step 3a | What does a real cluster finder do with blended peaks? | done, verified: **it credits each peak to its brighter cluster (like f_dom ≈ 0.7) and adds some blending by searching over position and size. It matches the step-2 cases whose S8 bias is +0.1σ to +0.4σ with the Y–M relation fitted and −0.6σ to −3.7σ with it fixed (SO-like; a preview read off step 2's table, for our finder's way of estimating the noise after masking)** |
 | Realistic step 3b | Cosmology fits with the finder's own catalogue | done, verified: **the catalogue holds 1.5% (baseline) and 2.1% (goal) fewer clusters at q > 5 than a no-blending analysis expects. S8 is biased by +0.32σ / +0.68σ with the Y–M relation fitted and −2.3σ / −4.2σ with it fixed (SO-like), and a goodness-of-fit test would rarely notice** |
-| SZiFi itself | Does SZiFi's own code confirm step 3a's re-implementation? | running (see the last section) |
+| SZiFi itself | Does SZiFi's own code confirm step 3a's re-implementation? | done, verified: **yes. Before masking it finds the same objects as our finder. Its default masking ends within 0.01 of step 3a's re-implementation in r, once a round-off problem in SZiFi is avoided. Its SO example's covariance breaks down on our test tiles** |
 
 ---
 
@@ -244,10 +245,11 @@ S8 bias, SO-like survey, q > 5, default attribution rule (f_dom = 1), S/N divide
 *Unless marked "of all", fractions are of the real detections that are not fragments.*
 
 **What step 3a shows:**
-- **Up to the masking step, the finder matches SZiFi.** Given the same noise model, its noise level equals step 1's filter to 4×10⁻⁶. An emulation of SZiFi's own noise estimate, templates and peak rules, written from its source code, gives the same catalogue before the masking step: 100% of q > 5 detections matched. SZiFi itself was not run.
+- **Up to the masking step, the finder matches SZiFi.** Given the same noise model, its noise level equals step 1's filter to 4×10⁻⁶. An emulation of SZiFi's own noise estimate, templates and peak rules, written from its source code, gives the same catalogue before the masking step: 100% of q > 5 detections matched. SZiFi itself, run later on 30 of these tiles per noise level, matches 99.97–99.99% ([below](#szifi-itself-on-step-3as-tiles)).
 - **Which noise level?** Before masking, the noise level holds the SZ of all halos, detected clusters included: the CMB, the noise and the tile's own SZ power predict it to 0.2–0.7%. That is close to step 2's noise estimate (iii), the plain standard deviation of the filtered map: r − 1 is 84–92% of (iii)'s excess. Masking the detections removes most of it. Our finder ends at r = 1.02–1.07, about 0.7 of the way from the noise-only value to step 2's noise estimate (i), which adds to the noise-only σ the scatter from halos below the detection threshold. How the masked noise is estimated matters:
   - Our re-implementation of SZiFi's masking step with the setting of its SO example script (dividing by the unmasked fraction only above ℓ = 12000) lands within 0.02 of our finder in r, but its noise level is about 2.5% low on maps without halos.
   - With SZiFi's default settings (dividing above ℓ = 3000; set for Planck), our re-implementation overestimates the noise at SO resolution. It blends the masked discs back towards the original map but still divides the small-scale power by the unmasked fraction. At small sizes r ends at 1.14 (baseline) and 1.18 (goal), close to (iii), and the noise level is 2.6% and 3.4% too high even on maps without halos.
+  - SZiFi itself confirms both ([below](#szifi-itself-on-step-3as-tiles)): the SO-script setting as configured, and the default settings once a round-off problem in SZiFi is avoided and the masked discs at our test tiles' edges are filled periodically.
 - **Which attribution?** The finder credits a blended peak to the brighter cluster (97–98% of the time when the second one contributes less than half as much) and never counts a peak twice. Step 2's default rule (f_dom = 1) credits both clusters in 25–69% of the peaks where a second cluster adds at least 10% of the signal. The finder behaves like the rule with f_dom ≈ 0.7: a peak is credited to a cluster only if no single neighbour adds more than 0.7 of that cluster's own S/N (independent check: 0.71 ± 0.05 and 0.70 ± 0.03).
 - **The search adds blending.** At the true positions, the finder's own filter reproduces step 1's numbers to within about 1 percentage point. Searching over position and size pulls peaks towards bright neighbours and grows the size to include them: compared with the same filter at the true positions (Y boosted for 8.3% / 9.3%, lost 4.8% / 5.1%), 2.3 / 2.6 points more Y boosts and 1.4 / 1.5 points more losses (baseline / goal).
 - **Do not merge at 10′.** SZiFi's Planck scripts merge detections within 10′. At SO depth that throws away 7% (baseline) and 10–11% (goal) of real clusters, because real clusters often sit that close. Merging within 1–2′ removes the fragments and only 0.1–0.2% of real clusters.
@@ -262,7 +264,7 @@ S8 bias, SO-like survey, q > 5, default attribution rule (f_dom = 1), S/N divide
   - With SZiFi's default masking, the nearest step-2 case (f_dom 0.5, noise estimate (iii)) gave config d +0.35σ / +0.61σ and config a −4.21σ / −6.23σ.
 
 **Verification:**
-- **SZiFi check:** reproduced SZiFi's conventions from its source code and applied them to the same tiles. SZiFi itself was not run: three packages it imports (NaMaster, pixell, scikit-learn) are not installed in our environment, and our sandbox did not allow running its code.
+- **SZiFi check:** reproduced SZiFi's conventions from its source code and applied them to the same tiles. SZiFi itself could not be run at the time. It has since been run in a separate environment ([below](#szifi-itself-on-step-3as-tiles)). Before the masking step it matches the check's emulation (σ to 3.4×10⁻⁴, catalogues 100% matched). After it, it matches the arbiter's re-implementation once a round-off problem in SZiFi is avoided.
 - **Independent check:** its own code for every step (painting, CMB and noise, noise estimate, filter, peaks, masking, merging, bookkeeping). It ran on the build's tiles and on 100 new skies, 200 noise-only tiles and two sets of 270 injection tiles per noise level. On the same tiles it matches the finder to machine precision. On new skies it reproduces the blending fractions, attribution and noise levels within about 2σ.
 - **Arbitration:**
   - The build's first count change, −3.4% / −4.0% with a steep drop at z = 2–3, is withdrawn. The independent check found that the selection model let undetectable faint halos count (0.7–0.9 points of it); the arbiter's 4× larger injection set removed most of the rest. The redshift trend was not real.
@@ -270,7 +272,7 @@ S8 bias, SO-like survey, q > 5, default attribution rule (f_dom = 1), S/N divide
 - **Open:**
   - which masked-noise estimate an SO pipeline will use: it moves the count change from −0.8% to −4.7% (baseline);
   - the selection calibration: calibrating on injection tiles or on noise-only tiles differs by about 1 point (settled in step 3b, below), and injection sets of the same size scatter more than expected;
-  - SZiFi itself not yet run;
+  - the count change with SZiFi itself. SZiFi now matches the catalogue before masking and, once its round-off problem is avoided, the masked noise level ([below](#szifi-itself-on-step-3as-tiles));
   - no foregrounds, halo clustering or masks; the halo population's SZ power is 2.65× SPT's.
 
 ### Realistic SO telescope, step 3b: cosmology fits with the finder's own catalogue
@@ -327,7 +329,7 @@ S8 bias, SO-like survey, q > 5, default attribution rule (f_dom = 1), S/N divide
   - Weighted with the check's model counts, the count change is unchanged.
 - **Open:**
   - The builder's tiles and the tiles made with the sims check's generators differ at baseline by 2.6σ (−1.36% against −1.64%), for an unknown reason. If the difference is real, the baseline biases carry about ±0.05σ (config d) and ±0.25σ (config a) more.
-  - Which masked-noise estimate an SO pipeline will use. Step 3b uses step 3a's re-implementation of SZiFi's masking; SZiFi itself is being run now.
+  - Which masked-noise estimate an SO pipeline will use. Once a round-off problem in SZiFi is avoided, SZiFi itself supports step 3a's re-implementation of its masking ([below](#szifi-itself-on-step-3as-tiles)). But SZiFi's settings for SO are not settled: its SO example's covariance breaks down on our test tiles.
   - Config e at goal is at the 0.1σ precision target.
   - The pooled estimator over-smooths for the SZiFi variants. It also assumes unclustered halos; with clustered halos (Websky) the per-bin estimator and many more tiles will be needed.
   - At goal the per-bin and pooled estimators differ bin by bin more than expected (χ² 150 for 106 bins), although their config-d biases agree within 0.03σ.
@@ -335,12 +337,79 @@ S8 bias, SO-like survey, q > 5, default attribution rule (f_dom = 1), S/N divide
   - Not traced: why injection tiles lose clusters near q = 4, and the extra loss at z < 0.1 (−2.5% against about −1.5% elsewhere at baseline).
   - No foregrounds, halo clustering or masks; the halo population's SZ power is 2.65× SPT's.
 
+### SZiFi itself on step 3a's tiles
+
+**Setup:**
+- **SZiFi itself.** SZiFi's own code (github.com/inigozubeldia/szifi, commit 73626fb), unchanged, runs in a separate Python environment with the packages it needs (NaMaster, pixell, scikit-learn, orphics). Steps 3a and 3b could only re-implement it. None of its code is copied into this repository.
+- **Tiles.** Step 3a's simulated tiles, regenerated bit for bit from their seeds. 30 tiles per noise level with SZiFi's default masking settings, 1–10 with the other settings, plus noise-only versions.
+- **Settings.**
+  - SZiFi without inpainting.
+  - Its default masking settings.
+  - The same with the SO example script's ℓ_sep = 12000.
+  - The SO example script's settings where they apply to our flat tiles (with our six channels, 15 filter sizes and q > 4, and no apodised mask): with its own covariance and with an isotropic one.
+  - All but the SO example's settings filter in step 3a's ℓ range, 100–20000. The SO example's settings cover every Fourier mode.
+- **Edges.** SZiFi treats our periodic tiles as ordinary flat tiles, so it finds spurious peaks within a few arcminutes of their edges. Peaks within 8′ of the edges are left out, and all comparisons use objects at least 9′ from them.
+
+<p align="center"><img src="figures/realistic/step3_szifi_real_arbiter.png" width="900"></p>
+
+*SZiFi's noise level after its default masking step, relative to its value for the true CMB and noise (r = σ/σ_analytic), against filter size (left: baseline; right: goal; 12 tiles per noise level). Orange: SZiFi in step 3a's ℓ range. Blue dashed: the same with the round-off problem removed. Green dash-dot: also with the masked discs at the tile edges filled periodically. Dark grey dashed: step 3a's re-implementation on the same tiles. Grey dotted: SZiFi before the masking step. Bottom: mean of SZiFi minus the re-implementation, paired tile by tile (bands: error of the mean); grey dotted: the same before the masking step, which is SZiFi's template alone.*
+
+**What it shows:**
+- **Before masking, SZiFi finds the same objects as our finder.** 99.97–99.99% of objects at q > 4.5 and q > 5 are matched within 1′ both ways, and their S/N differ by +0.01 ± 0.20–0.25.
+  - SZiFi samples its cluster template on the pixels. This raises its r by +0.007 (baseline) and +0.010 (goal) at 0.5′, and by at most 0.14% above 2′, as step 3a's emulation predicted.
+  - Without inpainting, SZiFi's second pass repeats the first exactly.
+- **A round-off problem in SZiFi.** In step 3a's ℓ range, a third of the Fourier modes of our 0.5′ grid lie above ℓ = 20000.
+  - SZiFi sets these modes to zero in the maps but still estimates their covariance, which then holds only round-off (10⁻¹⁶–10⁻¹⁴ of the in-band level).
+  - Its inverse covariance is therefore about 10¹⁴ times too large there, and round-off leaks into the filters. This makes extra detections at large filter sizes: 23–24 per tile at 7′ and above, instead of 15.
+  - Masking them leaves less of the tile unmasked (74% instead of 78% at baseline), and SZiFi's default settings divide the small-scale power by that fraction. The final noise level at 0.5′ rises by 2.1% (baseline) and 2.6% (goal).
+  - An ℓ range that covers every mode, as in SZiFi's SO example script, avoids the problem. So does setting the inverse covariance to zero outside the range: the two fixes agree to 3×10⁻⁴ in r.
+- **Without it, SZiFi's default masking matches our re-implementation.** This is on 12 tiles per noise level, with the round-off removed and the masked discs at the tile edges filled periodically:
+  - SZiFi's r after masking is 1.145 / 1.126 / 1.056 at 0.5′ / 4.45′ / 15′ (baseline) and 1.185 / 1.175 / 1.085 (goal). Step 3a's re-implementation gives 1.139 / 1.120 / 1.051 and 1.187 / 1.175 / 1.080 on the same tiles, so the two agree within 0.006. With the round-off removed but the edges left as they are, SZiFi ends +0.010 (baseline) and +0.004 (goal) above the re-implementation at 0.5′.
+  - On maps without halos (5 tiles per noise level), SZiFi's noise level ends 2.5% (baseline) and 3.4% (goal) too high at 0.5′. The re-implementation gives 2.9% / 4.0% on the same tiles, and step 3a found 2.6% / 3.4% on 30.
+  - SZiFi finds 22% (baseline) and 24% (goal) fewer q > 5 clusters than our finder. On the same tiles, counted over the whole tiles, the re-implementation finds 20% / 24% fewer.
+  - Filling the edges periodically is needed here because our test tiles are periodic squares with no sky around them. SZiFi fills a masked disc that touches a tile's edge from one side only, while its power spectra treat the tile as periodic, so the map jumps across the boundary. Without the periodic filling, r at 0.5′ rises by +0.004 (baseline) and +0.006 (goal) on average, and by up to +0.017 on one of the 12 tiles. Whether SZiFi's own setup, with apodised tiles cut from a larger map, avoids this was not tested.
+- **With the SO example script's ℓ_sep = 12000, SZiFi lands close to our finder**, as step 3a's re-implementation did:
+  - Its r after masking is 1.026 / 1.051 / 1.030 (baseline) and 1.050 / 1.083 / 1.049 (goal), within 0.02 of our finder's on the same 10 tiles (1.039 / 1.050 / 1.027 and 1.053 / 1.067 / 1.036).
+  - It counts the same q > 5 clusters within 2% (ratios 1.021 / 0.988).
+  - Its noise level on maps without halos is 2–2.5% low.
+  - Removing the round-off problem raises r by only 0.002 at 0.5′ and by 0.004 (baseline) and 0.005 (goal) at 15′ (7 tiles).
+- **SZiFi's SO example settings break down on our test tiles.** Its 'mixed_gaussian' covariance smooths the 2D power of each pair of channels separately.
+  - On our tiles the result is not a valid covariance: it has a non-positive eigenvalue in 25–48% of the Fourier modes.
+  - SZiFi then finds anything from no detection (σ = NaN) to 133,000 peaks per tile. This also happens with SZiFi's own four SO channels.
+  - With an isotropic covariance the rest of the SO example works. r after masking is 1.04–1.07 (baseline) and 1.07–1.10 (goal) on 7 tiles, the noise level on maps without halos is unbiased (3 tiles), and SZiFi finds 3.5% / 7.7% fewer q > 5 clusters than our finder.
+  - SZiFi's SO example runs on apodised tiles cut from a larger map. Whether that avoids the breakdown was not tested.
+- **SZiFi's own merging confirms step 3a.** Merging within 10′ removes 6.9% (baseline) and 10.4% (goal) of real clusters with SZiFi's 'closest' rule, and 7.2% / 11.4% with 'fof'. SZiFi's merging ('closest' and 'fof', within 1′ and 10′) keeps the same detections as our code in 438 of 480 tile runs. The others differ only for pairs within 0.4% of the merging radius.
+- **Other problems in SZiFi.** The noise level at the smallest filter size is reported as 0. A misspelled key in its default parameters stops a run. Its merging fails with current numpy and scikit-learn. Our drivers work around these three without changing SZiFi's files. None of these problems, nor the round-off problem or the 'mixed_gaussian' breakdown, has been reported to SZiFi's authors yet.
+- **For step 3b.** Step 3b's SZiFi variants used step 3a's re-implementation of SZiFi's masking. SZiFi itself supports it, on the same tiles, once the round-off problem is avoided and the edges are filled periodically:
+  - with the default settings (12 tiles), the noise level agrees within 0.006 in r and the q > 5 count within 2 points;
+  - with ℓ_sep = 12000 (7 tiles), within 0.012 in r (0.014 as configured) and within 1.5 (baseline) and 3.4 (goal) points in the count, SZiFi counting fewer.
+  - The count change, the blending classes and the S8 fits were not recomputed with SZiFi itself.
+
+**Verification:**
+- **Config check:** wrote its own survey file and driver for SZiFi, and reproduced 10 of the build's runs bit for bit. It injected 196 clusters of known Y into noise-only tiles; SZiFi's S/N for them is off by −0.05 ± 0.08 on average. It also found the round-off problem.
+- **Independent check:** wrote its own survey file, driver and analysis. It reproduced the build's numbers, ran 6 new tiles per noise level, redid the merging with its own calls to SZiFi, and found the edge effect.
+- **Arbitration:**
+  - The arbiter reran SZiFi with the round-off removed and with periodic edge filling, one at a time and together, on 12 tiles per noise level.
+  - At 0.5′ the round-off makes 70% (baseline) and 88% (goal) of the build's excess over the re-implementation, and the edges 13% / 17%. The independent check's estimate of 40–45% for the edges came from a fit over tiles.
+  - The arbiter also fixed a one-pixel error in the build's comparison window; the count ratios changed by 0.1–0.2 points.
+- **For this report** ([`verify_real/step3_szifi_real_report/`](verify_real/step3_szifi_real_report/)):
+  - Every number above from the arbiter's runs was recomputed from its stored runs with our own code, and all agree to the quoted precision.
+  - As the arbiter found, the two fixes for the round-off problem give the same results: the config check's runs with every mode in band, and the arbiter's runs with the inverse covariance set to zero. Tile by tile they agree to 3×10⁻⁴ in r, and their q > 5 counts on 6 tiles per noise level are 939 against 941 (baseline) and 1,340 against 1,340 (goal).
+
+**Open:**
+- At goal, with both problems removed, SZiFi's masking raises the noise level slightly less than the re-implementation (−0.012 ± 0.003 in r at 0.5′, after its template's offset is taken out). At 15′, SZiFi ends 0.003–0.004 higher than its template's offset (+0.0015) explains, at both noise levels. Neither difference was traced. Two of the candidate causes come from the test setup: SZiFi never masks clusters in its 8′ edge buffer, and its masked discs do not wrap around the periodic tile.
+- The edge effect has a tail. On the arbiter's 12 tiles it reaches +0.017 in r (+0.024 with the round-off problem present). On one of the independent check's tiles, with the round-off present, it reaches +5.1% in σ, about +0.06 in r. A real run embeds each tile in a larger field with apodised masks; that setup was not tested.
+- The arbiter's variants rest on small samples: 12 realistic tiles per noise level (7 with ℓ_sep = 12000) and 5 noise-only tiles.
+- SZiFi's 'mixed_gaussian' covariance on its own apodised SO tiles was not tested.
+- With the SO example's settings and an isotropic covariance, the change in q > 5 detections through the masking step differs between the build's 7 tiles (+25%) and the independent check's 2 new tiles (+34% / +40%). Its inpainting at the tile edges was not tested.
+- The count change and the blending classes with SZiFi itself were not computed. They need a selection calibrated with SZiFi, at about 100 s per tile run.
+
 ---
 
 ## What we have done
 
 ### External codes used
-Only general scientific and cosmology libraries; everything SZ-specific is our own code.
+Only general scientific and cosmology libraries; everything SZ-specific is our own code, except SZiFi itself, which is run only to test our finder against it.
 
 | code | used for |
 |---|---|
@@ -352,6 +421,7 @@ Only general scientific and cosmology libraries; everything SZ-specific is our o
 | CLASS (classy 3.4.2) | independent check of the CMB spectrum |
 | emcee 3.1 | MCMC cross-check of the cosmology fits |
 | matplotlib, astropy | figures; small use in two checks |
+| SZiFi (commit 73626fb), with NaMaster 3.0.1, pixell 0.32.9, scikit-learn 1.9.1, orphics | run unchanged in a separate environment, to test our finder against it; none of its code is copied |
 
 ### What we implemented
 
@@ -388,6 +458,10 @@ Only general scientific and cosmology libraries; everything SZ-specific is our o
   - the analyst's selection from virtual isolated clusters, and its check with clusters painted into maps;
   - three estimators of the finder's count change, two of them paired between each halo and its isolated copy (one per bin, one pooled over redshift);
   - 1,224 more tiles, the cosmology fits (configs a–e) and an analyst with an analytic selection function.
+- **SZiFi itself** ([`analysis/realistic/step3_szifi_real/`](analysis/realistic/step3_szifi_real/)):
+  - a survey file and driver that hand our tiles to SZiFi's unchanged code;
+  - the comparison with our finder and with step 3a's re-implementation;
+  - two diagnostic switches: the inverse covariance set to zero outside the ℓ range, and periodic filling at the tile edges.
 - **Pictures of patches** ([`analysis/visual/`](analysis/visual/)): the two figures at the top of this page.
 
 ### How every result is checked
@@ -403,22 +477,8 @@ Only general scientific and cosmology libraries; everything SZ-specific is our o
 
 ---
 
-## Next: SZiFi itself on our tiles
+## Next
 
-Steps 3a and 3b used our own finder and our re-implementation of SZiFi's masking. SZiFi's own code now runs in a separate environment. It is being run on up to 30 of step 3a's tiles per noise level and on noise-only tiles, with four settings:
-- no inpainting;
-- its defaults (30 tiles);
-- its defaults with the SO example script's ℓ_sep = 12000;
-- the SO example script's full settings, as is and with an isotropic covariance.
-
-The settings other than the defaults use 2–10 tiles. The run checks:
-- whether SZiFi gives the same catalogue as our emulation before the masking step;
-- whether our re-implementation of its masking reproduces its noise level, its false detections and its number of q > 5 detections;
-- what SZiFi's SO example settings give.
-
-It has two independent checks and an arbitration, as before. Its answer bears on step 3b's open question: which masked-noise estimate an SO pipeline will use.
-
-**After that:**
 - foregrounds (CIB, radio, kSZ);
 - clustered halos from the Websky simulation;
 - the P(D) inside a full cluster-count likelihood code;

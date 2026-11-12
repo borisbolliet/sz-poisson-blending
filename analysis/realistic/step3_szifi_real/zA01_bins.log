@@ -1,0 +1,31 @@
+(a) SZiFi's bins: 300, width 72.000000; fundamental 2 pi / (N dx) = 36.0000000000
+    NaMaster auto spectra of the regenerated map == the build's stored S0 run (bins 1-299): True
+(b),(d) in-band bins (lower edge 72 ... 19944): 277; modes exactly on a bin edge: 3174 (0.22% of the grid)
+    vs exact, edge modes in the bin above (l0 <= l < lf): 44 in-band bins differ by > 1e-6 (72-1000: 2 bins, max 0.0482; 1000-3000: 2 bins, max 0.0156; 3000-20000: 40 bins, max 0.0040); other bins agree to 9.8e-15
+    vs exact, edge modes in the bin below: 267 in-band bins differ by > 1e-6 (72-1000: 13 bins, max 0.2891; 1000-3000: 28 bins, max 0.0396; 3000-20000: 226 bins, max 0.0167); other bins agree to 9.1e-15
+    vs build's z03 reference: floor(l / bin width), floating-point l: 126 in-band bins differ by > 1e-6 (72-1000: 6 bins, max 0.0810; 1000-3000: 3 bins, max 0.0144; 3000-20000: 117 bins, max 0.0109); other bins agree to 9.8e-15
+    bins differing from the exact rule, lower edges 72-3000: [864, 936, 1800, 1872]
+(c) edge-mode groups (same |kx|, |ky|) on the lower edges of bins 1-299: 506; NaMaster puts 45 of them in the bin below
+    with that assignment, NaMaster's spectra equal the periodogram in every in-band bin to 1.0e-14 (all bins 1-299: 9.7e-10); bins not explained to 1e-12: 22
+    groups placed below an edge between two in-band bins (edges l = 144 ... 19944): 45; at the band edges or outside the band: 0; unexplained bins: [72, 20088, 20160, 20232, 20304, 20376, 20448, 20520, 20592, 20664, 20736, 20808, 20880, 20952, 21024, 21096, 21168, 21240, 21312, 21384, 21456, 21528]
+    in-band edges with a group below: l = [936, 936, 1872, 1872, 3384, 3744, 3744, 3960, 3960, 5976, 6408, 6408, 6768, 7128, 7488, 7488, 7560, 7560, 7920, 7920, 11952, 12024, 12744, 12816, 12816, 13464, 13464, 13536, 13608, 14256, 14328, 14976, 14976, 15048, 15120, 15120, 15768, 15768, 15840, 15840, 15912, 15912, 15912, 15912, 15912]
+    axis groups (0, 2k): 299, of which below: 27; off-axis groups: 207, of which below: 18
+done [75 s]; peak RSS 0.61 GB
+       75.41 real        62.53 user        12.87 sys
+           608256000  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            10902969  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                 683  involuntary context switches
+        433742286724  instructions retired
+        242811698864  cycles elapsed
+           541640960  peak memory footprint

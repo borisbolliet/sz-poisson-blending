@@ -1,0 +1,94 @@
+z02 smoke test: SZiFi /Users/boris/GitHub/szifi/szifi/__init__.py (clone at commit 73626fb), config S0, tile baseline real 0, edge buffer 0.0' in the peak-finding and selection masks
+parameters that differ from SZiFi's defaults: ['beam', 'coupling_matrix_needed', 'decouple_type', 'get_lonlat', 'inpaint', 'integrate_bandpass', 'lrange', 'path', 'path_data', 'path_template', 'save_and_load_template', 'snr_weighting', 'survey_file', 'theta_500_vec_arcmin']
+--- full SZiFi parameter dictionary used: smokeS0 (after the run on baseline_real_000; cluster_finder adds a_matrix and sets cmmf_type in place)
+    a_matrix                     = [[-5348707.175668]
+ [-5238436.669914]
+ [-4284002.720275]
+ [-2768488.904179]
+ [  315162.207061]
+ [ 2731427.857946]]
+    apod_type                    = old
+    beam                         = gaussian
+    cmmf_type                    = standard_mmf
+    comp_to_calculate            = [0]
+    compute_coupling_matrix      = False
+    cosmology                    = Planck15
+    cosmology_tool               = classy_sz
+    coupling_matrix_needed       = False
+    cov_kernel_shape             = [4.0, 4.0]
+    cov_type                     = isotropic
+    decouple_type                = none
+    deproject_cib                = None
+    detection_method             = maxima_lomem
+    extraction_mode              = find
+    freqs                        = [0, 1, 2, 3, 4, 5]
+    get_lonlat                   = False
+    get_q_true                   = False
+    inpaint                      = False
+    inpaint_type                 = diffusive
+    integrate_bandpass           = False
+    interp_type                  = nearest
+    iterative                    = True
+    lrange                       = [100, 20000]
+    lsep                         = 3000
+    map_dtype                    = <class 'numpy.float32'>
+    mask_radius                  = 3.0
+    max_it                       = 1
+    max_radius_mask_arcmin       = inf
+    min_ftile                    = 0.3
+    min_radius_mask_arcmin       = 0.0
+    mmf_type                     = standard
+    n_inpaint                    = 100
+    norm_type                    = centre
+    path                         = /Users/boris/GitHub/szifi/
+    path_data                    = /Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/out/maps/
+    path_template                = None
+    powspec_bin_fac              = 4
+    powspec_lmax1d               = None
+    powspec_new_shape            = None
+    q_th                         = 4.0
+    q_th_noise                   = 4.0
+    rSZ                          = False
+    save_and_load_template       = False
+    save_coupling_matrix         = False
+    save_snr_maps                = False
+    snr_maps_name                = None
+    snr_maps_path                = None
+    snr_weighting                = False
+    snr_weigthing                = False
+    survey_file                  = /Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3_szifi_real/z_survey.py
+    theta_500_input              = None
+    theta_500_vec_arcmin         = [ 0.5       0.637498  0.812807  1.036325  1.32131   1.684664  2.147939  2.738613  3.491719  4.451926  5.676186  7.237112  9.227285 11.764747 15.      ]
+    theta_find                   = input
+    tile_type                    = healpix
+    tilemask_buffer_arcmin       = 15
+    tilemask_mode                = field
+
+wall time 74.8 s (loading 0.0 s); peak RSS 1.65 GB
+  SZiFi steps [s]: cross spectra [1.6, 1.6], inverse covariance [2.3, 2.5], filtering + peaks [29.8, 28.9], inpainting [], blend [], cluster mask [6.8]
+  noise iterations run: 2; cluster mask: unmasked fraction [0.7465805555555556], masked detections [631.0]
+  iteration 0: sigma [y0] at 0.5'/4.45'/15' = 0.0000e+00 / 5.2909e-06 / 4.8641e-06; detections q > 4 / 4.5 / 5: 631 / 474 / 372
+  iteration 1: sigma [y0] at 0.5'/4.45'/15' = 0.0000e+00 / 5.2909e-06 / 4.8641e-06; detections q > 4 / 4.5 / 5: 631 / 474 / 372
+  sigma it1 / it0: nan 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+  auto spectra it1 / it0, l 100-3000: 1.0000
+  auto spectra it1 / it0, l 3000-20000: 1.0000
+  spectra recorded: 2 calls, 299 bins, l_eff 108.0 .. 21564.0
+done [75 s]
+       78.25 real        70.72 user         4.47 sys
+          1734180864  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              822625  page reclaims
+                3624  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                2923  voluntary context switches
+               40461  involuntary context switches
+        671826013899  instructions retired
+        222896523989  cycles elapsed
+          2764315648  peak memory footprint

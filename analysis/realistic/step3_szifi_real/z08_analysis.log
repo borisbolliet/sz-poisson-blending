@@ -1,0 +1,272 @@
+z08: SZiFi itself vs step 3a.  Edge buffer b = 8.0', analysis interior >= 9.0' from the edges (94.09 deg^2 per tile); SZiFi positions shifted by -0.5 pixel (z07)
+runs available (tiles per noise level, baseline / goal):
+  S0     real  6 /  6, noise-only  0 /  0
+  S1     real 30 / 30, noise-only 10 / 10
+  S2     real 10 / 10, noise-only  7 /  6
+  S3i    real  7 /  7, noise-only  3 /  3
+  S3it0  real  2 /  2, noise-only  2 /  2
+  S3     real  0 /  0, noise-only  0 /  0
+
+==============================================================================================================
+(a) ITERATION 0: SZiFi itself vs the production finder (stored) and the step-3a emulation
+
+  baseline: 30 realistic tiles (S1's iteration 0 = S0's to 2e-8, z02)
+    theta [']                                      0.50    0.64    0.81    1.04    1.32    1.68    2.15    2.74    3.49    4.45    5.68    7.24    9.23   11.76   15.00
+    r SZiFi it0 (own template, own analytic)    1.1214  1.1260  1.1311  1.1370  1.1439  1.1514  1.1586  1.1648  1.1691  1.1706  1.1685  1.1625  1.1528  1.1400  1.1251
+       tile sd                                   0.0128  0.0135  0.0143  0.0152  0.0164  0.0178  0.0194  0.0210  0.0227  0.0243  0.0257  0.0266  0.0271  0.0269  0.0260
+    r finder it0 (stored sigma / sigma_Y)        1.1145  1.1205  1.1269  1.1339  1.1417  1.1498  1.1574  1.1639  1.1684  1.1699  1.1678  1.1618  1.1519  1.1388  1.1236
+    r_SZiFi - r_finder, mean                    +0.0068 +0.0055 +0.0042 +0.0031 +0.0022 +0.0016 +0.0012 +0.0009 +0.0007 +0.0006 +0.0006 +0.0007 +0.0009 +0.0011 +0.0015
+       tile sd                                   0.0009  0.0008  0.0006  0.0004  0.0003  0.0002  0.0002  0.0001  0.0001  0.0001  0.0001  0.0001  0.0001  0.0001  0.0002
+    (r_SZiFi / r_finder - 1), mean              +0.0061 +0.0049 +0.0037 +0.0027 +0.0019 +0.0014 +0.0010 +0.0008 +0.0006 +0.0006 +0.0006 +0.0006 +0.0008 +0.0010 +0.0014
+    sigma_SZiFi / sigma_finder [y0 per arcmin^2 of Y500]: mean   15.22    8.46    4.86    2.85    1.71    1.03    0.63    0.38    0.24    0.14    0.09    0.05    0.03    0.02    0.01
+       relative tile sd                          0.0007  0.0006  0.0005  0.0004  0.0003  0.0002  0.0001  0.0001  0.0001  0.0001  0.0001  0.0001  0.0001  0.0001  0.0001
+    q > 4.5, 1', any scale (step 3a): finder it0 -> SZiFi it0 : N  6342, matched  99.98%; dq +0.012 +- 0.197; same scale  49.3%
+    q > 4.5, 1', any scale (step 3a): SZiFi it0 -> finder it0 : N  6747, matched  99.99%; dq +0.002 +- 0.194; same scale  48.3%
+    q > 4.5, 1' and one scale step: finder it0 -> SZiFi it0   : N  6342, matched  87.81%; dq +0.004 +- 0.194; same scale  58.1%
+    q > 4.5, 1' and one scale step: SZiFi it0 -> finder it0   : N  6747, matched  84.76%; dq -0.001 +- 0.193; same scale  57.5%
+    q > 4.5: matched SZiFi position (corrected by -1/2 pixel) minus finder position: mean (-0.007, +0.002) pixels
+    q > 5.0, 1', any scale (step 3a): finder it0 -> SZiFi it0 : N  4856, matched  99.98%; dq +0.014 +- 0.209; same scale  50.7%
+    q > 5.0, 1', any scale (step 3a): SZiFi it0 -> finder it0 : N  5000, matched  99.98%; dq -0.001 +- 0.207; same scale  50.1%
+    q > 5.0, 1' and one scale step: finder it0 -> SZiFi it0   : N  4856, matched  89.23%; dq +0.006 +- 0.206; same scale  58.3%
+    q > 5.0, 1' and one scale step: SZiFi it0 -> finder it0   : N  5000, matched  87.34%; dq -0.002 +- 0.206; same scale  57.6%
+    q > 5.0: matched SZiFi position (corrected by -1/2 pixel) minus finder position: mean (-0.007, +0.001) pixels
+    vs the SZiFi check's emulation (v04_lin, 10 tiles): sigma_SZiFi / sigma_emul - 1, max |.| over tiles and scales 3.4e-04; analytic sigma (own templates) / emulation's - 1: -3.7e-06 -3.7e-06 -3.7e-06 -3.7e-06 -3.7e-06 -3.7e-06 at 0.50 1.04 2.15 4.45 9.23 15.00'
+    q > 4.5, 1' any scale: emulation it0 -> SZiFi it0         : N  2089, matched 100.00%; dq +0.003 +- 0.016; same scale  75.3%
+    q > 4.5, 1' any scale: SZiFi it0 -> emulation it0         : N  2244, matched 100.00%; dq +0.000 +- 0.028; same scale  71.8%
+    q > 5.0, 1' any scale: emulation it0 -> SZiFi it0         : N  1587, matched 100.00%; dq +0.002 +- 0.015; same scale  76.7%
+    q > 5.0, 1' any scale: SZiFi it0 -> emulation it0         : N  1675, matched 100.00%; dq -0.000 +- 0.023; same scale  73.6%
+    interior catalogues SZiFi it0 vs emulation it0 (q > 4): 2184 of 3938 (pixel, scale) entries in both; max |dq| over the common entries 1.3e-01
+
+  goal: 30 realistic tiles (S1's iteration 0 = S0's to 2e-8, z02)
+    theta [']                                      0.50    0.64    0.81    1.04    1.32    1.68    2.15    2.74    3.49    4.45    5.68    7.24    9.23   11.76   15.00
+    r SZiFi it0 (own template, own analytic)    1.1661  1.1725  1.1796  1.1880  1.1981  1.2088  1.2189  1.2276  1.2334  1.2350  1.2315  1.2224  1.2081  1.1897  1.1687
+       tile sd                                   0.0150  0.0159  0.0169  0.0181  0.0197  0.0215  0.0235  0.0257  0.0279  0.0299  0.0315  0.0326  0.0329  0.0324  0.0309
+    r finder it0 (stored sigma / sigma_Y)        1.1557  1.1641  1.1732  1.1833  1.1947  1.2064  1.2172  1.2263  1.2324  1.2342  1.2308  1.2217  1.2073  1.1886  1.1672
+    r_SZiFi - r_finder, mean                    +0.0104 +0.0084 +0.0064 +0.0047 +0.0034 +0.0024 +0.0017 +0.0013 +0.0010 +0.0008 +0.0007 +0.0008 +0.0009 +0.0011 +0.0015
+       tile sd                                   0.0012  0.0010  0.0008  0.0006  0.0005  0.0004  0.0003  0.0002  0.0002  0.0001  0.0001  0.0001  0.0001  0.0001  0.0002
+    (r_SZiFi / r_finder - 1), mean              +0.0090 +0.0072 +0.0055 +0.0040 +0.0028 +0.0020 +0.0014 +0.0010 +0.0008 +0.0006 +0.0006 +0.0006 +0.0007 +0.0009 +0.0013
+    sigma_SZiFi / sigma_finder [y0 per arcmin^2 of Y500]: mean   15.38    8.53    4.89    2.87    1.71    1.03    0.63    0.38    0.24    0.14    0.09    0.05    0.03    0.02    0.01
+       relative tile sd                          0.0009  0.0008  0.0006  0.0005  0.0003  0.0003  0.0002  0.0001  0.0001  0.0001  0.0001  0.0001  0.0001  0.0001  0.0001
+    q > 4.5, 1', any scale (step 3a): finder it0 -> SZiFi it0 : N  8768, matched  99.97%; dq +0.011 +- 0.234; same scale  49.0%
+    q > 4.5, 1', any scale (step 3a): SZiFi it0 -> finder it0 : N  9047, matched  99.98%; dq +0.002 +- 0.233; same scale  48.6%
+    q > 4.5, 1' and one scale step: finder it0 -> SZiFi it0   : N  8768, matched  86.93%; dq +0.003 +- 0.233; same scale  57.7%
+    q > 4.5, 1' and one scale step: SZiFi it0 -> finder it0   : N  9047, matched  85.44%; dq +0.000 +- 0.232; same scale  57.2%
+    q > 4.5: matched SZiFi position (corrected by -1/2 pixel) minus finder position: mean (-0.012, -0.002) pixels
+    q > 5.0, 1', any scale (step 3a): finder it0 -> SZiFi it0 : N  6822, matched  99.99%; dq +0.012 +- 0.249; same scale  50.5%
+    q > 5.0, 1', any scale (step 3a): SZiFi it0 -> finder it0 : N  6992, matched  99.97%; dq -0.001 +- 0.247; same scale  50.1%
+    q > 5.0, 1' and one scale step: finder it0 -> SZiFi it0   : N  6822, matched  88.21%; dq +0.003 +- 0.249; same scale  58.3%
+    q > 5.0, 1' and one scale step: SZiFi it0 -> finder it0   : N  6992, matched  87.14%; dq +0.000 +- 0.248; same scale  57.7%
+    q > 5.0: matched SZiFi position (corrected by -1/2 pixel) minus finder position: mean (-0.015, +0.001) pixels
+    vs the SZiFi check's emulation (v04_lin, 10 tiles): sigma_SZiFi / sigma_emul - 1, max |.| over tiles and scales 3.0e-04; analytic sigma (own templates) / emulation's - 1: -3.7e-06 -3.7e-06 -3.7e-06 -3.7e-06 -3.7e-06 -3.7e-06 at 0.50 1.04 2.15 4.45 9.23 15.00'
+    q > 4.5, 1' any scale: emulation it0 -> SZiFi it0         : N  2882, matched 100.00%; dq +0.002 +- 0.011; same scale  79.6%
+    q > 4.5, 1' any scale: SZiFi it0 -> emulation it0         : N  2977, matched 100.00%; dq +0.000 +- 0.031; same scale  77.9%
+    q > 5.0, 1' any scale: emulation it0 -> SZiFi it0         : N  2232, matched 100.00%; dq +0.002 +- 0.012; same scale  81.5%
+    q > 5.0, 1' any scale: SZiFi it0 -> emulation it0         : N  2286, matched 100.00%; dq -0.000 +- 0.020; same scale  80.1%
+    interior catalogues SZiFi it0 vs emulation it0 (q > 4): 3088 of 4925 (pixel, scale) entries in both; max |dq| over the common entries 1.1e-01/Users/boris/GitHub/szifi-venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:3862: RuntimeWarning: Mean of empty slice
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/Users/boris/GitHub/szifi-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+
+
+  S0 (no edge buffer): iteration 1 against iteration 0, and the whole tile against the emulation
+    baseline: iteration 1 identical to iteration 0 (spectra, sigma, catalogue, bit for bit) in 6 of 6 tiles
+    baseline: whole tile (edges included), SZiFi it0 3720 detections vs emulation 3452: 2718 (pixel, scale) entries in both, 1736 in only one
+    goal: iteration 1 identical to iteration 0 (spectra, sigma, catalogue, bit for bit) in 6 of 6 tiles
+    goal: whole tile (edges included), SZiFi it0 4600 detections vs emulation 4441: 3686 (pixel, scale) entries in both, 1669 in only one
+
+==============================================================================================================
+(b) ITERATION 1 (final catalogue), per configuration
+
+  ---- baseline
+    theta [']                                      0.50    0.64    0.81    1.04    1.32    1.68    2.15    2.74    3.49    4.45    5.68    7.24    9.23   11.76   15.00
+    step 2 r_i                                  1.0545  1.0566  1.0588  1.0611  1.0635  1.0659  1.0678  1.0689  1.0691  1.0679  1.0654  1.0613  1.0560  1.0498  1.0432
+    step 2 r_ii                                 1.0616  1.0638  1.0660  1.0683  1.0707  1.0732  1.0751  1.0763  1.0766  1.0755  1.0732  1.0695  1.0646  1.0590  1.0531
+    step 2 r_iii                                 1.1367  1.1427  1.1492  1.1561  1.1636  1.1715  1.1786  1.1845  1.1886  1.1899  1.1880  1.1826  1.1735  1.1615  1.1472
+    production finder it1 (stored, 30 tiles)     1.0390  1.0407  1.0426  1.0445  1.0465  1.0485  1.0500  1.0509  1.0509  1.0497  1.0471  1.0430  1.0377  1.0315  1.0248
+    S1 it0 (30 tiles)                        1.1214  1.1260  1.1311  1.1370  1.1439  1.1514  1.1586  1.1648  1.1691  1.1706  1.1685  1.1625  1.1528  1.1400  1.1251
+    S1 it1                                    1.1684  1.1696  1.1705  1.1712  1.1716  1.1710  1.1683  1.1629  1.1545  1.1425  1.1273  1.1097  1.0912  1.0734  1.0574
+       tile sd                                   0.0258  0.0257  0.0255  0.0253  0.0250  0.0244  0.0235  0.0223  0.0208  0.0189  0.0169  0.0150  0.0134  0.0123  0.0118
+       claim (step 3a) at 0.5' / 4.45' / 15': (1.135, 1.119, 1.05); SZiFi: 1.168 / 1.142 / 1.057 (+- 0.005 / 0.003 / 0.002)
+    a01 emulation 'szifi' it1, same tiles       1.1354  1.1371  1.1385  1.1396  1.1404  1.1404  1.1386  1.1347  1.1282  1.1189  1.1068  1.0927  1.0777  1.0630  1.0495
+    SZiFi it1 - a01 it1 (paired)                +0.0330 +0.0325 +0.0320 +0.0316 +0.0312 +0.0307 +0.0297 +0.0283 +0.0262 +0.0236 +0.0204 +0.0170 +0.0136 +0.0105 +0.0079
+       tile sd of the difference                 0.0149  0.0149  0.0149  0.0149  0.0148  0.0147  0.0143  0.0138  0.0130  0.0120  0.0109  0.0097  0.0086  0.0076  0.0067
+    SZiFi (it1/it0) / a01 (it1/it0) - 1         +0.0227 +0.0235 +0.0243 +0.0249 +0.0253 +0.0254 +0.0250 +0.0241 +0.0226 +0.0205 +0.0179 +0.0149 +0.0118 +0.0088 +0.0061
+    SZiFi check emulation v04_per (10 tiles) it1  1.1416  1.1429  1.1438  1.1446  1.1452  1.1450  1.1431  1.1389  1.1321  1.1222  1.1095  1.0947  1.0789  1.0634  1.0493
+       SZiFi it1 - emulation it1 (paired)       +0.0192 +0.0191 +0.0189 +0.0186 +0.0182 +0.0176 +0.0167 +0.0155 +0.0139 +0.0119 +0.0096 +0.0072 +0.0047 +0.0025 +0.0006
+    SZiFi check emulation v04_lin (10 tiles) it1  1.1796  1.1809  1.1818  1.1824  1.1827  1.1818  1.1785  1.1722  1.1624  1.1486  1.1315  1.1119  1.0915  1.0720  1.0545
+       SZiFi it1 - emulation it1 (paired)       -0.0188 -0.0190 -0.0191 -0.0193 -0.0193 -0.0192 -0.0187 -0.0178 -0.0164 -0.0145 -0.0124 -0.0101 -0.0079 -0.0061 -0.0047
+    auto spectra it1/it0 (mean of 6 channels and the bins), l 100-3000 / 3000-20000: 0.9284 / 1.1993 (tile range 0.907-0.951 / 1.114-1.314)
+       in a01's five ranges ((100, 1000), (1000, 3000), (3000, 6000), (6000, 12000), (12000, 20000)):  0.9382  0.9238  1.1843  1.2031  1.2020
+       a01 'szifi', same tiles:             0.9517  0.9335  1.1423  1.1690  1.1694
+    cluster mask: unmasked fraction 0.757 (range 0.674-0.836), masked detections per tile 322.3
+       q > 4 detections with theta >= 7.2' per tile (they mask discs of radius >= 21.7'): SZiFi it0 22.1, production finder it0 14.0
+       a01 'szifi' unmasked fraction, same tiles: 0.788; paired SZiFi - a01: -0.031 +- 0.018; correlation of (r1 - a1) at 0.5' with (f - f_a01): -0.85
+    q > 5 detections per tile in the interior, it0 -> it1: 166.7 -> 157.0 (-5.8 +- 1.0%); per 100 deg^2 177.1 -> 166.8
+       a01 'szifi' (whole periodic tile, 100 deg^2): 171.6 -> 176.1 (+2.6 +- 1.0%)
+    q > 4.5, 1' any scale: tiles_szifi it1 -> S1 it1 (10 tiles): N  2233, matched  99.96%; dq -0.137 +- 0.205; same scale  51.2%
+    q > 4.5, 1' any scale: S1 it1 -> tiles_szifi it1          : N  2137, matched 100.00%; dq +0.149 +- 0.207; same scale  52.1%
+    q > 5.0, 1' any scale: tiles_szifi it1 -> S1 it1 (10 tiles): N  1721, matched  99.94%; dq -0.148 +- 0.219; same scale  52.3%
+    q > 5.0, 1' any scale: S1 it1 -> tiles_szifi it1          : N  1634, matched 100.00%; dq +0.161 +- 0.221; same scale  53.6%
+    S2 it0 (10 tiles)                        1.1217  1.1264  1.1316  1.1375  1.1446  1.1523  1.1598  1.1662  1.1709  1.1728  1.1713  1.1659  1.1568  1.1446  1.1302
+    S2 it1                                    1.0259  1.0284  1.0311  1.0341  1.0377  1.0416  1.0452  1.0482  1.0501  1.0505  1.0491  1.0460  1.0414  1.0359  1.0301
+       tile sd                                   0.0046  0.0047  0.0048  0.0049  0.0050  0.0052  0.0055  0.0058  0.0061  0.0065  0.0069  0.0073  0.0075  0.0077  0.0077
+       claim (step 3a) at 0.5' / 4.45' / 15': (1.019, 1.044, 1.026); SZiFi: 1.026 / 1.051 / 1.030 (+- 0.001 / 0.002 / 0.002)
+    a01 emulation 'szifi_l12000' it1, same tiles       1.0177  1.0203  1.0232  1.0264  1.0299  1.0336  1.0371  1.0400  1.0419  1.0426  1.0418  1.0395  1.0360  1.0316  1.0268
+    SZiFi it1 - a01 it1 (paired)                +0.0083 +0.0081 +0.0079 +0.0078 +0.0078 +0.0080 +0.0082 +0.0083 +0.0082 +0.0079 +0.0073 +0.0065 +0.0054 +0.0043 +0.0034
+       tile sd of the difference                 0.0046  0.0047  0.0049  0.0050  0.0051  0.0053  0.0054  0.0055  0.0055  0.0054  0.0053  0.0050  0.0047  0.0043  0.0039
+    SZiFi (it1/it0) / a01 (it1/it0) - 1         +0.0019 +0.0029 +0.0039 +0.0048 +0.0056 +0.0063 +0.0069 +0.0072 +0.0073 +0.0070 +0.0065 +0.0056 +0.0045 +0.0032 +0.0019
+    SZiFi check emulation v04_per (4 tiles) it1  1.0306  1.0329  1.0354  1.0382  1.0416  1.0451  1.0483  1.0509  1.0524  1.0524  1.0507  1.0474  1.0427  1.0371  1.0311
+       SZiFi it1 - emulation it1 (paired)       -0.0047 -0.0047 -0.0046 -0.0046 -0.0044 -0.0043 -0.0040 -0.0037 -0.0034 -0.0030 -0.0027 -0.0025 -0.0023 -0.0023 -0.0025
+    auto spectra it1/it0 (mean of 6 channels and the bins), l 100-3000 / 3000-20000: 0.9249 / 1.0426 (tile range 0.909-0.946 / 1.018-1.060)
+       in a01's five ranges ((100, 1000), (1000, 3000), (3000, 6000), (6000, 12000), (12000, 20000)):  0.9355  0.9200  0.8927  0.9088  1.1992
+       a01 'szifi_l12000', same tiles:             0.9477  0.9310  0.8978  0.9191  1.1680
+    cluster mask: unmasked fraction 0.759 (range 0.717-0.813), masked detections per tile 326.5
+       q > 4 detections with theta >= 7.2' per tile (they mask discs of radius >= 21.7'): SZiFi it0 21.6, production finder it0 13.2
+       a01 'szifi_l12000' unmasked fraction, same tiles: 0.788; paired SZiFi - a01: -0.029 +- 0.017; correlation of (r1 - a1) at 0.5' with (f - f_a01): +0.31
+    q > 5 detections per tile in the interior, it0 -> it1: 172.4 -> 213.3 (+23.7 +- 1.9%); per 100 deg^2 183.2 -> 226.7
+       a01 'szifi_l12000' (whole periodic tile, 100 deg^2): 177.2 -> 228.3 (+28.8 +- 1.3%)
+    S3i it0 (7 tiles)                        1.1153  1.1194  1.1239  1.1291  1.1352  1.1419  1.1482  1.1535  1.1571  1.1580  1.1556  1.1496  1.1404  1.1284  1.1147
+    S3i it1                                    1.0426  1.0449  1.0473  1.0501  1.0534  1.0570  1.0603  1.0632  1.0652  1.0660  1.0656  1.0641  1.0620  1.0599  1.0583
+       tile sd                                   0.0091  0.0094  0.0098  0.0103  0.0108  0.0114  0.0121  0.0126  0.0132  0.0135  0.0139  0.0143  0.0152  0.0168  0.0194
+    auto spectra it1/it0 (mean of 6 channels and the bins), l 100-3000 / 3000-20000: 0.9524 / 0.9408 (tile range 0.938-0.966 / 0.928-0.948)
+       in a01's five ranges ((100, 1000), (1000, 3000), (3000, 6000), (6000, 12000), (12000, 20000)):  0.9691  0.9446  0.9312  0.9478     nan
+    cluster mask: unmasked fraction 0.787 (range 0.739-0.820), masked detections per tile 298.9
+       q > 4 detections with theta >= 7.2' per tile (they mask discs of radius >= 21.7'): SZiFi it0 16.4, production finder it0 14.1
+    q > 5 detections per tile in the interior, it0 -> it1: 155.6 -> 194.4 (+25.0 +- 2.4%); per 100 deg^2 165.3 -> 206.6
+    S3 as configured (mixed_gaussian), iteration 0, 2 tiles: q > 4 / 5 detections per tile in the interior 66164 / 66094; median q of the detections 873.5
+
+  ---- goal
+    theta [']                                      0.50    0.64    0.81    1.04    1.32    1.68    2.15    2.74    3.49    4.45    5.68    7.24    9.23   11.76   15.00
+    step 2 r_i                                  1.0678  1.0704  1.0731  1.0760  1.0790  1.0818  1.0840  1.0852  1.0853  1.0836  1.0802  1.0751  1.0684  1.0608  1.0528
+    step 2 r_ii                                 1.0799  1.0828  1.0857  1.0887  1.0921  1.0953  1.0978  1.0993  1.0996  1.0982  1.0951  1.0902  1.0839  1.0766  1.0687
+    step 2 r_iii                                 1.1904  1.1989  1.2079  1.2176  1.2283  1.2390  1.2487  1.2566  1.2619  1.2631  1.2599  1.2517  1.2386  1.2217  1.2017
+    production finder it1 (stored, 30 tiles)     1.0525  1.0549  1.0574  1.0600  1.0629  1.0655  1.0676  1.0688  1.0687  1.0671  1.0636  1.0584  1.0515  1.0436  1.0352
+    S1 it0 (30 tiles)                        1.1661  1.1725  1.1796  1.1880  1.1981  1.2088  1.2189  1.2276  1.2334  1.2350  1.2315  1.2224  1.2081  1.1897  1.1687
+    S1 it1                                    1.2188  1.2213  1.2235  1.2257  1.2279  1.2288  1.2271  1.2220  1.2126  1.1983  1.1793  1.1570  1.1331  1.1095  1.0879
+       tile sd                                   0.0319  0.0319  0.0319  0.0317  0.0315  0.0310  0.0301  0.0287  0.0268  0.0244  0.0218  0.0191  0.0166  0.0147  0.0133
+       claim (step 3a) at 0.5' / 4.45' / 15': (1.181, 1.172, 1.078); SZiFi: 1.219 / 1.198 / 1.088 (+- 0.006 / 0.004 / 0.002)
+    a01 emulation 'szifi' it1, same tiles       1.1813  1.1845  1.1875  1.1904  1.1930  1.1946  1.1939  1.1903  1.1831  1.1717  1.1562  1.1375  1.1172  1.0970  1.0782
+    SZiFi it1 - a01 it1 (paired)                +0.0375 +0.0368 +0.0360 +0.0354 +0.0349 +0.0342 +0.0332 +0.0316 +0.0294 +0.0266 +0.0232 +0.0195 +0.0158 +0.0125 +0.0098
+       tile sd of the difference                 0.0232  0.0233  0.0233  0.0233  0.0232  0.0230  0.0224  0.0214  0.0201  0.0183  0.0162  0.0140  0.0118  0.0099  0.0084
+    SZiFi (it1/it0) / a01 (it1/it0) - 1         +0.0225 +0.0236 +0.0247 +0.0256 +0.0263 +0.0266 +0.0263 +0.0255 +0.0241 +0.0220 +0.0194 +0.0165 +0.0134 +0.0105 +0.0078
+    SZiFi check emulation v04_per (10 tiles) it1  1.1882  1.1905  1.1927  1.1949  1.1971  1.1983  1.1973  1.1933  1.1856  1.1736  1.1575  1.1382  1.1173  1.0964  1.0771
+       SZiFi it1 - emulation it1 (paired)       +0.0285 +0.0284 +0.0282 +0.0279 +0.0275 +0.0268 +0.0256 +0.0239 +0.0217 +0.0188 +0.0155 +0.0120 +0.0086 +0.0055 +0.0029
+    SZiFi check emulation v04_lin (10 tiles) it1  1.2414  1.2440  1.2463  1.2486  1.2506  1.2510  1.2482  1.2414  1.2297  1.2124  1.1902  1.1645  1.1374  1.1111  1.0873
+       SZiFi it1 - emulation it1 (paired)       -0.0248 -0.0251 -0.0254 -0.0257 -0.0260 -0.0259 -0.0253 -0.0242 -0.0224 -0.0200 -0.0172 -0.0143 -0.0115 -0.0092 -0.0073
+    auto spectra it1/it0 (mean of 6 channels and the bins), l 100-3000 / 3000-20000: 0.9282 / 1.2246 (tile range 0.911-0.956 / 1.136-1.356)
+       in a01's five ranges ((100, 1000), (1000, 3000), (3000, 6000), (6000, 12000), (12000, 20000)):  0.9360  0.9246  1.2011  1.2301  1.2291
+       a01 'szifi', same tiles:             0.9460  0.9320  1.1626  1.2018  1.2037
+    cluster mask: unmasked fraction 0.736 (range 0.659-0.799), masked detections per tile 417.3
+       q > 4 detections with theta >= 7.2' per tile (they mask discs of radius >= 21.7'): SZiFi it0 21.3, production finder it0 15.4
+       a01 'szifi' unmasked fraction, same tiles: 0.757; paired SZiFi - a01: -0.022 +- 0.022; correlation of (r1 - a1) at 0.5' with (f - f_a01): -0.81
+    q > 5 detections per tile in the interior, it0 -> it1: 233.1 -> 221.1 (-5.1 +- 1.3%); per 100 deg^2 247.7 -> 235.0
+       a01 'szifi' (whole periodic tile, 100 deg^2): 242.2 -> 249.0 (+2.8 +- 1.2%)
+    q > 4.5, 1' any scale: tiles_szifi it1 -> S1 it1 (10 tiles): N  3085, matched  99.94%; dq -0.153 +- 0.263; same scale  50.9%
+    q > 4.5, 1' any scale: S1 it1 -> tiles_szifi it1          : N  2945, matched  99.97%; dq +0.167 +- 0.269; same scale  52.2%
+    q > 5.0, 1' any scale: tiles_szifi it1 -> S1 it1 (10 tiles): N  2387, matched 100.00%; dq -0.169 +- 0.284; same scale  52.8%
+    q > 5.0, 1' any scale: S1 it1 -> tiles_szifi it1          : N  2267, matched 100.00%; dq +0.182 +- 0.290; same scale  53.9%
+    S2 it0 (10 tiles)                        1.1663  1.1728  1.1800  1.1886  1.1988  1.2098  1.2202  1.2292  1.2354  1.2375  1.2346  1.2261  1.2125  1.1946  1.1741
+    S2 it1                                    1.0502  1.0536  1.0573  1.0616  1.0667  1.0720  1.0769  1.0807  1.0829  1.0828  1.0801  1.0747  1.0672  1.0584  1.0491
+       tile sd                                   0.0099  0.0102  0.0105  0.0109  0.0113  0.0118  0.0122  0.0125  0.0127  0.0126  0.0123  0.0118  0.0112  0.0105  0.0099
+       claim (step 3a) at 0.5' / 4.45' / 15': (1.038, 1.075, 1.046); SZiFi: 1.050 / 1.083 / 1.049 (+- 0.003 / 0.004 / 0.003)
+    a01 emulation 'szifi_l12000' it1, same tiles       1.0372  1.0410  1.0453  1.0499  1.0552  1.0607  1.0656  1.0697  1.0723  1.0729  1.0712  1.0671  1.0611  1.0538  1.0458
+    SZiFi it1 - a01 it1 (paired)                +0.0130 +0.0125 +0.0120 +0.0116 +0.0115 +0.0114 +0.0113 +0.0111 +0.0106 +0.0099 +0.0089 +0.0076 +0.0061 +0.0046 +0.0032
+       tile sd of the difference                 0.0100  0.0102  0.0104  0.0107  0.0109  0.0112  0.0113  0.0113  0.0111  0.0108  0.0102  0.0094  0.0085  0.0075  0.0066
+    SZiFi (it1/it0) / a01 (it1/it0) - 1         +0.0035 +0.0047 +0.0059 +0.0070 +0.0080 +0.0087 +0.0091 +0.0093 +0.0091 +0.0086 +0.0077 +0.0065 +0.0050 +0.0034 +0.0018
+    SZiFi check emulation v04_per (4 tiles) it1  1.0543  1.0575  1.0609  1.0650  1.0697  1.0747  1.0790  1.0824  1.0841  1.0835  1.0805  1.0750  1.0675  1.0587  1.0495
+       SZiFi it1 - emulation it1 (paired)       -0.0103 -0.0102 -0.0101 -0.0100 -0.0098 -0.0096 -0.0092 -0.0088 -0.0084 -0.0079 -0.0074 -0.0071 -0.0069 -0.0068 -0.0067
+    auto spectra it1/it0 (mean of 6 channels and the bins), l 100-3000 / 3000-20000: 0.9224 / 1.0540 (tile range 0.911-0.940 / 1.016-1.084)
+       in a01's five ranges ((100, 1000), (1000, 3000), (3000, 6000), (6000, 12000), (12000, 20000)):  0.9293  0.9191  0.8758  0.8994  1.2369
+       a01 'szifi_l12000', same tiles:             0.9410  0.9301  0.8784  0.9085  1.2088
+    cluster mask: unmasked fraction 0.728 (range 0.684-0.799), masked detections per tile 427.2
+       q > 4 detections with theta >= 7.2' per tile (they mask discs of radius >= 21.7'): SZiFi it0 22.4, production finder it0 15.9
+       a01 'szifi_l12000' unmasked fraction, same tiles: 0.753; paired SZiFi - a01: -0.025 +- 0.018; correlation of (r1 - a1) at 0.5' with (f - f_a01): -0.06
+    q > 5 detections per tile in the interior, it0 -> it1: 236.9 -> 306.4 (+29.3 +- 2.4%); per 100 deg^2 251.8 -> 325.6
+       a01 'szifi_l12000' (whole periodic tile, 100 deg^2): 245.7 -> 334.7 (+36.2 +- 1.9%)
+    S3i it0 (7 tiles)                        1.1599  1.1656  1.1718  1.1792  1.1881  1.1976  1.2064  1.2139  1.2186  1.2193  1.2153  1.2062  1.1924  1.1749  1.1554
+    S3i it1                                    1.0710  1.0742  1.0778  1.0820  1.0870  1.0923  1.0972  1.1013  1.1039  1.1046  1.1032  1.0998  1.0950  1.0896  1.0845
+       tile sd                                   0.0110  0.0114  0.0120  0.0126  0.0134  0.0143  0.0151  0.0160  0.0167  0.0172  0.0175  0.0177  0.0180  0.0186  0.0198
+    auto spectra it1/it0 (mean of 6 channels and the bins), l 100-3000 / 3000-20000: 0.9525 / 0.9304 (tile range 0.946-0.964 / 0.925-0.934)
+       in a01's five ranges ((100, 1000), (1000, 3000), (3000, 6000), (6000, 12000), (12000, 20000)):  0.9672  0.9456  0.9161  0.9408     nan
+    cluster mask: unmasked fraction 0.757 (range 0.730-0.788), masked detections per tile 407.3
+       q > 4 detections with theta >= 7.2' per tile (they mask discs of radius >= 21.7'): SZiFi it0 17.1, production finder it0 17.3
+    q > 5 detections per tile in the interior, it0 -> it1: 225.9 -> 280.7 (+24.3 +- 2.7%); per 100 deg^2 240.0 -> 298.3
+    S3 as configured (mixed_gaussian), iteration 0, 2 tiles: q > 4 / 5 detections per tile in the interior 33657 / 33602; median q of the detections 115.9
+
+==============================================================================================================
+(c) NOISE-ONLY TILES: sigma / analytic, and false detections per 100 deg^2 of interior
+
+  ---- baseline; scales 0.50 1.04 2.15 4.45 9.23 15.00'
+    S1   (10 tiles) sigma/analytic it0:  0.9971  0.9970  0.9969  0.9968  0.9969  0.9969;  it1:  1.0395  1.0394  1.0333  1.0199  1.0010  0.9909  (tile sd it1  0.0097  0.0109  0.0094  0.0064  0.0051  0.0072; sigma(0.5') from the catalogue in 9 tiles)
+         false detections per 100 deg^2 q > 4 / 4.5 / 5: it1 34.5 / 4.04 / 0.64 [325, 38, 6]; it0 52.7 / 6.16 / 0.74; interior 941 deg^2
+         unmasked fraction 0.872
+    S2   (7 tiles) sigma/analytic it0:  0.9968  0.9967  0.9965  0.9964  0.9967  0.9967;  it1:  0.9746  0.9747  0.9748  0.9746  0.9743  0.9747  (tile sd it1  0.0083  0.0085  0.0088  0.0090  0.0096  0.0106; sigma(0.5') from the catalogue in 7 tiles)
+         false detections per 100 deg^2 q > 4 / 4.5 / 5: it1 67.6 / 10.02 / 1.21 [445, 66, 8]; it0 53.9 / 6.23 / 0.76; interior 659 deg^2
+         unmasked fraction 0.864
+    S3i  (3 tiles) sigma/analytic it0:  0.9970  0.9970  0.9970  0.9977  0.9998  1.0013;  it1:  0.9930  0.9933  0.9938  0.9945  0.9966  0.9995  (tile sd it1  0.0085  0.0099  0.0121  0.0142  0.0146  0.0142; sigma(0.5') from the catalogue in 3 tiles)
+         false detections per 100 deg^2 q > 4 / 4.5 / 5: it1 50.7 / 7.79 / 0.00 [143, 22, 0]; it0 48.2 / 6.38 / 0.00; interior 282 deg^2
+         unmasked fraction 0.906
+    S3 as configured (mixed_gaussian), iteration 0, 2 noise-only tiles: q > 4 / 5 detections per tile in the interior 47758 / 47748; median q 679.4
+    production finder, same 10 tiles and interior: sigma/analytic it1  0.9941  0.9936  0.9929  0.9922  0.9917  0.9909; false q > 4 / 4.5 / 5: 49.7 / 7.33 / 0.96 [468, 69, 9]
+    a01 'szifi' on the same tiles (whole tile): sigma/analytic it1  1.0261  1.0234  1.0181  1.0082  0.9950  0.9879; false 35.7 / 4.90 / 0.40
+    a01 'szifi_l12000' on the same tiles (whole tile): sigma/analytic it1  0.9761  0.9756  0.9753  0.9753  0.9758  0.9765; false 62.9 / 10.00 / 1.20
+
+  ---- goal; scales 0.50 1.04 2.15 4.45 9.23 15.00'
+    S1   (10 tiles) sigma/analytic it0:  0.9972  0.9971  0.9969  0.9968  0.9966  0.9965;  it1:  1.0589  1.0570  1.0511  1.0357  1.0120  0.9984  (tile sd it1  0.0188  0.0184  0.0169  0.0129  0.0068  0.0054; sigma(0.5') from the catalogue in 10 tiles)
+         false detections per 100 deg^2 q > 4 / 4.5 / 5: it1 32.5 / 5.21 / 0.43 [306, 49, 4]; it0 56.0 / 8.61 / 1.06; interior 941 deg^2
+         unmasked fraction 0.859
+    S2   (6 tiles) sigma/analytic it0:  0.9971  0.9970  0.9967  0.9965  0.9967  0.9968;  it1:  0.9808  0.9813  0.9817  0.9808  0.9789  0.9784  (tile sd it1  0.0106  0.0109  0.0113  0.0107  0.0097  0.0100; sigma(0.5') from the catalogue in 6 tiles)
+         false detections per 100 deg^2 q > 4 / 4.5 / 5: it1 71.6 / 11.34 / 1.06 [404, 64, 6]; it0 58.1 / 8.86 / 1.06; interior 565 deg^2
+         unmasked fraction 0.860
+    S3i  (3 tiles) sigma/analytic it0:  0.9973  0.9972  0.9971  0.9974  0.9988  1.0002;  it1:  1.0004  1.0010  1.0015  1.0011  1.0008  1.0027  (tile sd it1  0.0148  0.0163  0.0186  0.0202  0.0192  0.0174; sigma(0.5') from the catalogue in 3 tiles)
+         false detections per 100 deg^2 q > 4 / 4.5 / 5: it1 52.1 / 12.40 / 0.35 [147, 35, 1]; it0 52.8 / 10.63 / 0.35; interior 282 deg^2
+         unmasked fraction 0.896
+    S3 as configured (mixed_gaussian), iteration 0, 2 noise-only tiles: q > 4 / 5 detections per tile in the interior 28358 / 28326; median q 179.4
+    production finder, same 10 tiles and interior: sigma/analytic it1  0.9942  0.9936  0.9927  0.9918  0.9910  0.9902; false q > 4 / 4.5 / 5: 54.9 / 8.82 / 0.85 [517, 83, 8]
+    a01 'szifi' on the same tiles (whole tile): sigma/analytic it1  1.0345  1.0319  1.0264  1.0151  0.9990  0.9898; false 39.1 / 5.50 / 0.50
+    a01 'szifi_l12000' on the same tiles (whole tile): sigma/analytic it1  0.9736  0.9731  0.9727  0.9726  0.9729  0.9735; false 71.3 / 11.30 / 2.10
+
+==============================================================================================================
+(d) PAIRED COUNTS: N(q > 5, final catalogue, interior) of each configuration / the production finder's
+  baseline S1   / production (30 tiles): 0.7736 +- 0.0090  (4709 / 6087)
+  baseline S2   / production (10 tiles): 1.0211 +- 0.0107  (2133 / 2089)
+  baseline S3i  / production (7 tiles): 0.9652 +- 0.0142  (1361 / 1410)
+  baseline S3i / S2 (7 tiles): 0.9465 +- 0.0059
+  baseline S2 / S1 (10 tiles): 1.3054 +- 0.0267
+  goal     S1   / production (30 tiles): 0.7328 +- 0.0103  (6632 / 9050)
+  goal     S2   / production (10 tiles): 0.9884 +- 0.0094  (3064 / 3100)
+  goal     S3i  / production (7 tiles): 0.9230 +- 0.0162  (1965 / 2129)
+  goal     S3i / S2 (7 tiles): 0.9313 +- 0.0106
+  goal     S2 / S1 (10 tiles): 1.3516 +- 0.0296
+
+==============================================================================================================
+(g) COMPUTE per tile run (SZiFi itself, two noise iterations unless stated)
+  S0    real :  12 runs; wall per run  128.1 s (min 116, max 144); of which filtering + peak finding 102.8 s; process peak RSS up to 1.42 GB
+  S1    real :  60 runs; wall per run  111.3 s (min 94, max 148); of which filtering + peak finding 84.7 s; process peak RSS up to 1.72 GB
+  S1    noise:  20 runs; wall per run  116.2 s (min 92, max 131); of which filtering + peak finding 100.2 s; process peak RSS up to 1.72 GB
+  S2    real :  20 runs; wall per run  129.2 s (min 118, max 148); of which filtering + peak finding 99.9 s; process peak RSS up to 1.72 GB
+  S2    noise:  13 runs; wall per run  117.3 s (min 107, max 135); of which filtering + peak finding 101.4 s; process peak RSS up to 1.72 GB
+  S3i   real :  14 runs; wall per run  126.5 s (min 95, max 142); of which filtering + peak finding 97.0 s; process peak RSS up to 1.72 GB
+  S3i   noise:   6 runs; wall per run  101.7 s (min 91, max 111); of which filtering + peak finding 85.9 s; process peak RSS up to 1.72 GB
+  S3it0 real :   4 runs; wall per run   58.8 s (min 59, max 59); of which filtering + peak finding 46.9 s; process peak RSS up to 1.72 GB
+  S3it0 noise:   4 runs; wall per run   47.6 s (min 43, max 56); of which filtering + peak finding 37.1 s; process peak RSS up to 1.72 GB
+
+done [3 s]
+        3.55 real         3.10 user         0.28 sys
+           136724480  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               13001  page reclaims
+                 190  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 919  voluntary context switches
+                 868  involuntary context switches
+         37806078642  instructions retired
+         10307761446  cycles elapsed
+           119145728  peak memory footprint

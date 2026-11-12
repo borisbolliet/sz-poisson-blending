@@ -1,0 +1,37 @@
+z06: S3 diagnosis on baseline real 0, iteration 0 only, edge buffer 10.0'
+  note: S3_full and S3_lr_iso_full use decouple 'none' (a full-resolution coupling matrix is not computed here)
+  S0it0          :  33.1 s, peak RSS 2.13 GB; q > 4 / 5:    327 /    167; median q of the detections 5.1; q > 4 by scale 67 22 13 23 34 35 35 28 27 16 13 7 4 2 1
+  S3             :  31.8 s, peak RSS 2.13 GB; q > 4 / 5:  32331 /  32294; median q of the detections 83.6; q > 4 by scale 27272 593 533 719 247 929 489 528 433 302 154 61 30 10 31
+  S3_lr          :  32.0 s, peak RSS 2.13 GB; q > 4 / 5:  38794 /  38737; median q of the detections 84.7; q > 4 by scale 31952 174 310 751 107 402 108 325 403 476 1109 1493 948 198 38
+  S3_iso         :  28.5 s, peak RSS 2.13 GB; q > 4 / 5:    320 /    165; median q of the detections 5.1; q > 4 by scale 57 10 21 25 34 37 42 21 29 15 14 8 3 2 2
+  S3_full        :  38.9 s, peak RSS 2.13 GB; q > 4 / 5:  52640 /  52303; median q of the detections 81.4; q > 4 by scale 31801 57 709 292 26 3 19 134 33 818 3740 12949 2052 5 2
+  S3_none        :  30.5 s, peak RSS 2.13 GB; q > 4 / 5:  32332 /  32297; median q of the detections 83.6; q > 4 by scale 27286 592 537 711 249 932 487 522 434 297 156 59 29 10 31
+  S3_lr_iso_full :  34.6 s, peak RSS 2.33 GB; q > 4 / 5:    339 /    172; median q of the detections 5.0; q > 4 by scale 68 24 17 21 33 36 37 27 29 17 12 10 5 2 1
+
+  sigma(theta) / S0's sigma, scales 0.5' ... 15':
+  S0it0            1.000  1.000  1.000  1.000  1.000  1.000  1.000  1.000  1.000  1.000  1.000  1.000  1.000  1.000  1.000
+  S3               0.991  0.984  0.976  0.968  0.959  0.951  0.944  0.940  0.940  0.943  0.951  0.962  0.975  0.990  1.004
+  S3_lr            1.069  1.068  1.067  1.067  1.068  1.070  1.074  1.080  1.089  1.099  1.109  1.117  1.119  1.113  1.100
+  S3_iso           1.005  1.004  1.003  1.003  1.002  1.001  1.001  1.000  1.000  1.000  1.000  1.000  1.000  1.000  1.000
+  S3_full          0.993  0.992  0.991  0.989  0.989  0.990  0.992  0.997  1.004  1.012  1.021  1.028  1.034  1.038  1.041
+  S3_none          0.991  0.984  0.976  0.968  0.959  0.951  0.944  0.940  0.940  0.943  0.951  0.962  0.975  0.990  1.004
+  S3_lr_iso_full   1.000  1.000  1.000  1.000  1.000  1.000  1.000  1.000  1.000  1.000  1.000  1.000  1.000  1.000  1.000
+done [229 s]
+      232.75 real       220.51 user         7.91 sys
+          2328346624  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1387037  page reclaims
+                4132  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                2979  voluntary context switches
+               65746  involuntary context switches
+       2160500053388  instructions retired
+        681122323063  cycles elapsed
+          3321716800  peak memory footprint

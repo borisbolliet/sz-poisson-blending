@@ -1,0 +1,350 @@
+z05_queue: worker h6, queue queue_heavy3 (178 jobs); SZiFi /Users/boris/GitHub/szifi/szifi/__init__.py; MallocLargeCache=0
+  S1_baseline_real_000: exists, skipped
+  S1_goal_real_000: exists, skipped
+  S1_baseline_real_011: exists, skipped
+  S1_goal_real_011: exists, skipped
+  S1_baseline_real_022: exists, skipped
+  S1_goal_real_022: exists, skipped
+  S1_baseline_real_033: exists, skipped
+  S1_goal_real_033: exists, skipped
+  S1_baseline_real_044: exists, skipped
+  S1_goal_real_044: exists, skipped
+  S1_baseline_real_055: exists, skipped
+  S1_goal_real_055: exists, skipped
+  S1_baseline_real_066: exists, skipped
+  S1_goal_real_066: exists, skipped
+  S1_baseline_real_077: exists, skipped
+  S1_goal_real_077: exists, skipped
+  S1_baseline_real_088: exists, skipped
+  S1_goal_real_088: exists, skipped
+  S1_baseline_real_099: exists, skipped
+  S1_goal_real_099: exists, skipped
+  S1_baseline_noise_000: exists, skipped
+  S1_goal_noise_000: exists, skipped
+  S1_baseline_noise_011: exists, skipped
+  S1_goal_noise_011: exists, skipped
+--- full SZiFi parameter dictionary used: S1 (after the run on baseline_noise_022; cluster_finder adds a_matrix and sets cmmf_type in place)
+    a_matrix                     = [[-5348707.175668]
+ [-5238436.669914]
+ [-4284002.720275]
+ [-2768488.904179]
+ [  315162.207061]
+ [ 2731427.857946]]
+    apod_type                    = old
+    beam                         = gaussian
+    cmmf_type                    = standard_mmf
+    comp_to_calculate            = [0]
+    compute_coupling_matrix      = False
+    cosmology                    = Planck15
+    cosmology_tool               = classy_sz
+    coupling_matrix_needed       = False
+    cov_kernel_shape             = [4.0, 4.0]
+    cov_type                     = isotropic
+    decouple_type                = none
+    deproject_cib                = None
+    detection_method             = maxima_lomem
+    extraction_mode              = find
+    freqs                        = [0, 1, 2, 3, 4, 5]
+    get_lonlat                   = False
+    get_q_true                   = False
+    inpaint                      = True
+    inpaint_type                 = diffusive
+    integrate_bandpass           = False
+    interp_type                  = nearest
+    iterative                    = True
+    lrange                       = [100, 20000]
+    lsep                         = 3000
+    map_dtype                    = <class 'numpy.float32'>
+    mask_radius                  = 3.0
+    max_it                       = 1
+    max_radius_mask_arcmin       = inf
+    min_ftile                    = 0.3
+    min_radius_mask_arcmin       = 0.0
+    mmf_type                     = standard
+    n_inpaint                    = 100
+    norm_type                    = centre
+    path                         = /Users/boris/GitHub/szifi/
+    path_data                    = /Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/out/maps/
+    path_template                = None
+    powspec_bin_fac              = 4
+    powspec_lmax1d               = None
+    powspec_new_shape            = None
+    q_th                         = 4.0
+    q_th_noise                   = 4.0
+    rSZ                          = False
+    save_and_load_template       = False
+    save_coupling_matrix         = False
+    save_snr_maps                = False
+    snr_maps_name                = None
+    snr_maps_path                = None
+    snr_weighting                = False
+    snr_weigthing                = False
+    survey_file                  = /Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3_szifi_real/z_survey.py
+    theta_500_input              = None
+    theta_500_vec_arcmin         = [ 0.5       0.637498  0.812807  1.036325  1.32131   1.684664  2.147939  2.738613  3.491719  4.451926  5.676186  7.237112  9.227285 11.764747 15.      ]
+    theta_find                   = input
+    tile_type                    = healpix
+    tilemask_buffer_arcmin       = 15
+    tilemask_mode                = field
+  S1_baseline_noise_022 (buffer 8.0'): 121.0 s, peak RSS 1.69 GB; it0 q>4/4.5/5 64/8/0; it1 q>4/4.5/5 44/4/0; sigma it1/it0 at 0.5'/4.45'/15' 1.0359/1.0157/0.9930; f [0.8793]  [09:07:48, elapsed 121 s]
+  S1_baseline_noise_033 (buffer 8.0'):  91.8 s, peak RSS 1.71 GB; it0 q>4/4.5/5 49/7/2; it1 q>4/4.5/5 33/7/2; sigma it1/it0 at 0.5'/4.45'/15' 1.0350/1.0164/0.9917; f [0.8835]  [09:09:20, elapsed 213 s]
+  S1_baseline_noise_044 (buffer 8.0'): 117.9 s, peak RSS 1.71 GB; it0 q>4/4.5/5 47/5/2; it1 q>4/4.5/5 30/3/1; sigma it1/it0 at 0.5'/4.45'/15' 1.0469/1.0251/0.9949; f [0.8757]  [09:11:18, elapsed 331 s]
+  S1_baseline_noise_055 (buffer 8.0'): 116.3 s, peak RSS 1.71 GB; it0 q>4/4.5/5 48/5/0; it1 q>4/4.5/5 23/2/1; sigma it1/it0 at 0.5'/4.45'/15' nan/1.0310/0.9839; f [0.7863]  [09:13:14, elapsed 447 s]
+  S1_baseline_noise_066 (buffer 8.0'): 115.9 s, peak RSS 1.71 GB; it0 q>4/4.5/5 51/6/0; it1 q>4/4.5/5 33/4/0; sigma it1/it0 at 0.5'/4.45'/15' 1.0610/1.0322/0.9937; f [0.8338]  [09:15:10, elapsed 563 s]
+  S1_baseline_noise_077 (buffer 8.0'): 116.2 s, peak RSS 1.71 GB; it0 q>4/4.5/5 63/9/2; it1 q>4/4.5/5 38/7/2; sigma it1/it0 at 0.5'/4.45'/15' 1.0510/1.0259/0.9924; f [0.8548]  [09:17:07, elapsed 679 s]
+  S1_baseline_noise_088 (buffer 8.0'): 110.6 s, peak RSS 1.71 GB; it0 q>4/4.5/5 42/4/0; it1 q>4/4.5/5 23/2/0; sigma it1/it0 at 0.5'/4.45'/15' 1.0461/1.0288/1.0004; f [0.902]  [09:18:57, elapsed 790 s]
+  S1_baseline_noise_099 (buffer 8.0'): 114.8 s, peak RSS 1.71 GB; it0 q>4/4.5/5 41/4/0; it1 q>4/4.5/5 25/2/0; sigma it1/it0 at 0.5'/4.45'/15' 1.0403/1.0244/0.9976; f [0.9182]  [09:20:52, elapsed 905 s]
+--- full SZiFi parameter dictionary used: S2 (after the run on baseline_real_000; cluster_finder adds a_matrix and sets cmmf_type in place)
+    a_matrix                     = [[-5348707.175668]
+ [-5238436.669914]
+ [-4284002.720275]
+ [-2768488.904179]
+ [  315162.207061]
+ [ 2731427.857946]]
+    apod_type                    = old
+    beam                         = gaussian
+    cmmf_type                    = standard_mmf
+    comp_to_calculate            = [0]
+    compute_coupling_matrix      = False
+    cosmology                    = Planck15
+    cosmology_tool               = classy_sz
+    coupling_matrix_needed       = False
+    cov_kernel_shape             = [4.0, 4.0]
+    cov_type                     = isotropic
+    decouple_type                = none
+    deproject_cib                = None
+    detection_method             = maxima_lomem
+    extraction_mode              = find
+    freqs                        = [0, 1, 2, 3, 4, 5]
+    get_lonlat                   = False
+    get_q_true                   = False
+    inpaint                      = True
+    inpaint_type                 = diffusive
+    integrate_bandpass           = False
+    interp_type                  = nearest
+    iterative                    = True
+    lrange                       = [100, 20000]
+    lsep                         = 12000
+    map_dtype                    = <class 'numpy.float32'>
+    mask_radius                  = 3.0
+    max_it                       = 1
+    max_radius_mask_arcmin       = inf
+    min_ftile                    = 0.3
+    min_radius_mask_arcmin       = 0.0
+    mmf_type                     = standard
+    n_inpaint                    = 100
+    norm_type                    = centre
+    path                         = /Users/boris/GitHub/szifi/
+    path_data                    = /Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/out/maps/
+    path_template                = None
+    powspec_bin_fac              = 4
+    powspec_lmax1d               = None
+    powspec_new_shape            = None
+    q_th                         = 4.0
+    q_th_noise                   = 4.0
+    rSZ                          = False
+    save_and_load_template       = False
+    save_coupling_matrix         = False
+    save_snr_maps                = False
+    snr_maps_name                = None
+    snr_maps_path                = None
+    snr_weighting                = False
+    snr_weigthing                = False
+    survey_file                  = /Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3_szifi_real/z_survey.py
+    theta_500_input              = None
+    theta_500_vec_arcmin         = [ 0.5       0.637498  0.812807  1.036325  1.32131   1.684664  2.147939  2.738613  3.491719  4.451926  5.676186  7.237112  9.227285 11.764747 15.      ]
+    theta_find                   = input
+    tile_type                    = healpix
+    tilemask_buffer_arcmin       = 15
+    tilemask_mode                = field
+  S2_baseline_real_000 (buffer 8.0'): 128.5 s, peak RSS 1.71 GB; it0 q>4/4.5/5 338/228/172; it1 q>4/4.5/5 428/275/207; sigma it1/it0 at 0.5'/4.45'/15' 0.9311/0.9197/0.9361; f [0.7919]  [09:23:01, elapsed 1033 s]
+  S2_baseline_real_011 (buffer 8.0'): 127.8 s, peak RSS 1.71 GB; it0 q>4/4.5/5 316/224/168; it1 q>4/4.5/5 428/286/212; sigma it1/it0 at 0.5'/4.45'/15' 0.9058/0.8889/0.9094; f [0.7173]  [09:25:08, elapsed 1161 s]
+  S2_baseline_real_022 (buffer 8.0'): 119.0 s, peak RSS 1.71 GB; it0 q>4/4.5/5 358/236/157; it1 q>4/4.5/5 442/293/213; sigma it1/it0 at 0.5'/4.45'/15' 0.9234/0.9063/0.9172; f [0.7417]  [09:27:07, elapsed 1280 s]
+  S2_baseline_real_033 (buffer 8.0'): 125.6 s, peak RSS 1.71 GB; it0 q>4/4.5/5 320/228/171; it1 q>4/4.5/5 398/271/199; sigma it1/it0 at 0.5'/4.45'/15' 0.9185/0.9081/0.9227; f [0.7196]  [09:29:13, elapsed 1406 s]
+  S2_baseline_real_044 (buffer 8.0'): 127.2 s, peak RSS 1.71 GB; it0 q>4/4.5/5 312/221/165; it1 q>4/4.5/5 402/265/190; sigma it1/it0 at 0.5'/4.45'/15' 0.9259/0.9159/0.9359; f [0.7328]  [09:31:20, elapsed 1533 s]
+  S2_baseline_real_055 (buffer 8.0'): 125.6 s, peak RSS 1.71 GB; it0 q>4/4.5/5 305/231/158; it1 q>4/4.5/5 395/274/211; sigma it1/it0 at 0.5'/4.45'/15' 0.9166/0.8999/0.9144; f [0.7635]  [09:33:26, elapsed 1659 s]
+  S2_baseline_noise_000 (buffer 8.0'): 114.9 s, peak RSS 1.71 GB; it0 q>4/4.5/5 53/8/1; it1 q>4/4.5/5 62/8/1; sigma it1/it0 at 0.5'/4.45'/15' 0.9836/0.9852/0.9859; f [0.8812]  [09:35:21, elapsed 1773 s]
+  S2_baseline_noise_011 (buffer 8.0'): 115.5 s, peak RSS 1.71 GB; it0 q>4/4.5/5 46/3/0; it1 q>4/4.5/5 56/7/0; sigma it1/it0 at 0.5'/4.45'/15' 0.9787/0.9793/0.9830; f [0.9083]  [09:37:16, elapsed 1889 s]
+  S2_baseline_noise_022 (buffer 8.0'): 117.2 s, peak RSS 1.71 GB; it0 q>4/4.5/5 64/8/0; it1 q>4/4.5/5 73/16/0; sigma it1/it0 at 0.5'/4.45'/15' 0.9777/0.9774/0.9797; f [0.8793]  [09:39:13, elapsed 2006 s]
+  S2_baseline_noise_033 (buffer 8.0'): 116.0 s, peak RSS 1.71 GB; it0 q>4/4.5/5 49/7/2; it1 q>4/4.5/5 61/10/2; sigma it1/it0 at 0.5'/4.45'/15' 0.9789/0.9794/0.9790; f [0.8835]  [09:41:09, elapsed 2122 s]
+  S2_baseline_noise_044 (buffer 8.0'): 116.3 s, peak RSS 1.71 GB; it0 q>4/4.5/5 47/5/2; it1 q>4/4.5/5 47/6/3; sigma it1/it0 at 0.5'/4.45'/15' 0.9863/0.9858/0.9818; f [0.8757]  [09:43:06, elapsed 2239 s]
+  S2_baseline_noise_055 (buffer 8.0'): 118.1 s, peak RSS 1.71 GB; it0 q>4/4.5/5 48/5/0; it1 q>4/4.5/5 83/10/1; sigma it1/it0 at 0.5'/4.45'/15' 0.9607/0.9608/0.9605; f [0.7863]  [09:45:04, elapsed 2357 s]
+--- full SZiFi parameter dictionary used: S3i (after the run on baseline_noise_000; cluster_finder adds a_matrix and sets cmmf_type in place)
+    a_matrix                     = [[-5348707.175668]
+ [-5238436.669914]
+ [-4284002.720275]
+ [-2768488.904179]
+ [  315162.207061]
+ [ 2731427.857946]]
+    apod_type                    = old
+    beam                         = gaussian
+    cmmf_type                    = standard_mmf
+    comp_to_calculate            = [0]
+    compute_coupling_matrix      = False
+    cosmology                    = Planck15
+    cosmology_tool               = classy_sz
+    coupling_matrix_needed       = True
+    cov_kernel_shape             = [10, 10]
+    cov_type                     = isotropic
+    decouple_type                = master
+    deproject_cib                = None
+    detection_method             = maxima_lomem
+    extraction_mode              = find
+    freqs                        = [0, 1, 2, 3, 4, 5]
+    get_lonlat                   = False
+    get_q_true                   = False
+    inpaint                      = True
+    inpaint_type                 = orphics
+    integrate_bandpass           = False
+    interp_type                  = nearest
+    iterative                    = True
+    lrange                       = [1, 300000]
+    lsep                         = 12000
+    map_dtype                    = <class 'numpy.float32'>
+    mask_radius                  = 3.0
+    max_it                       = 1
+    max_radius_mask_arcmin       = inf
+    min_ftile                    = 0.3
+    min_radius_mask_arcmin       = 1.0
+    mmf_type                     = standard
+    n_inpaint                    = -1
+    norm_type                    = centre
+    path                         = /Users/boris/GitHub/szifi/
+    path_data                    = /Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/out/maps/
+    path_template                = None
+    powspec_bin_fac              = 4
+    powspec_lmax1d               = 10000
+    powspec_new_shape            = None
+    q_th                         = 4.0
+    q_th_noise                   = 4.0
+    rSZ                          = False
+    save_and_load_template       = False
+    save_coupling_matrix         = True
+    save_snr_maps                = False
+    snr_maps_name                = None
+    snr_maps_path                = None
+    snr_weighting                = False
+    snr_weigthing                = False
+    survey_file                  = /Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3_szifi_real/z_survey.py
+    theta_500_input              = None
+    theta_500_vec_arcmin         = [ 0.5       0.637498  0.812807  1.036325  1.32131   1.684664  2.147939  2.738613  3.491719  4.451926  5.676186  7.237112  9.227285 11.764747 15.      ]
+    theta_find                   = input
+    tile_type                    = healpix
+    tilemask_buffer_arcmin       = 15
+    tilemask_mode                = field
+  S3i_baseline_noise_000 (buffer 8.0'):  93.5 s, peak RSS 1.71 GB; it0 q>4/4.5/5 42/7/0; it1 q>4/4.5/5 38/5/0; sigma it1/it0 at 0.5'/4.45'/15' 1.0110/1.0155/1.0154; f [0.8855]  [09:46:37, elapsed 2450 s]
+  S3i_baseline_noise_011 (buffer 8.0'):  94.3 s, peak RSS 1.71 GB; it0 q>4/4.5/5 44/4/0; it1 q>4/4.5/5 49/6/0; sigma it1/it0 at 0.5'/4.45'/15' 0.9882/0.9875/0.9880; f [0.9303]  [09:48:12, elapsed 2544 s]
+  S3i_baseline_noise_022 (buffer 8.0'): 110.9 s, peak RSS 1.71 GB; it0 q>4/4.5/5 53/7/0; it1 q>4/4.5/5 59/11/0; sigma it1/it0 at 0.5'/4.45'/15' 0.9886/0.9870/0.9910; f [0.9021]  [09:50:03, elapsed 2655 s]
+--- full SZiFi parameter dictionary used: S3it0 (after the run on baseline_real_033; cluster_finder adds a_matrix and sets cmmf_type in place)
+    a_matrix                     = [[-5348707.175668]
+ [-5238436.669914]
+ [-4284002.720275]
+ [-2768488.904179]
+ [  315162.207061]
+ [ 2731427.857946]]
+    apod_type                    = old
+    beam                         = gaussian
+    cmmf_type                    = standard_mmf
+    comp_to_calculate            = [0]
+    compute_coupling_matrix      = False
+    cosmology                    = Planck15
+    cosmology_tool               = classy_sz
+    coupling_matrix_needed       = True
+    cov_kernel_shape             = [10, 10]
+    cov_type                     = mixed_gaussian
+    decouple_type                = master
+    deproject_cib                = None
+    detection_method             = maxima_lomem
+    extraction_mode              = find
+    freqs                        = [0, 1, 2, 3, 4, 5]
+    get_lonlat                   = False
+    get_q_true                   = False
+    inpaint                      = True
+    inpaint_type                 = orphics
+    integrate_bandpass           = False
+    interp_type                  = nearest
+    iterative                    = False
+    lrange                       = [1, 300000]
+    lsep                         = 12000
+    map_dtype                    = <class 'numpy.float32'>
+    mask_radius                  = 3.0
+    max_it                       = 1
+    max_radius_mask_arcmin       = inf
+    min_ftile                    = 0.3
+    min_radius_mask_arcmin       = 1.0
+    mmf_type                     = standard
+    n_inpaint                    = -1
+    norm_type                    = centre
+    path                         = /Users/boris/GitHub/szifi/
+    path_data                    = /Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/out/maps/
+    path_template                = None
+    powspec_bin_fac              = 4
+    powspec_lmax1d               = 10000
+    powspec_new_shape            = None
+    q_th                         = 4.0
+    q_th_noise                   = 4.0
+    rSZ                          = False
+    save_and_load_template       = False
+    save_coupling_matrix         = True
+    save_snr_maps                = False
+    snr_maps_name                = None
+    snr_maps_path                = None
+    snr_weighting                = False
+    snr_weigthing                = False
+    survey_file                  = /Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3_szifi_real/z_survey.py
+    theta_500_input              = None
+    theta_500_vec_arcmin         = [ 0.5       0.637498  0.812807  1.036325  1.32131   1.684664  2.147939  2.738613  3.491719  4.451926  5.676186  7.237112  9.227285 11.764747 15.      ]
+    theta_find                   = input
+    tile_type                    = healpix
+    tilemask_buffer_arcmin       = 15
+    tilemask_mode                = field
+  S3it0_baseline_real_033 (buffer 8.0'):  58.7 s, peak RSS 1.71 GB; it0 q>4/4.5/5 97603/97603/97603; f []  [09:51:01, elapsed 2714 s]
+  S3it0_goal_real_033 (buffer 8.0'):  58.8 s, peak RSS 1.71 GB; it0 q>4/4.5/5 35710/35687/35662; f []  [09:52:00, elapsed 2773 s]
+  S3it0_goal_real_066 (buffer 8.0'):  58.7 s, peak RSS 1.71 GB; it0 q>4/4.5/5 32590/32555/32523; f []  [09:52:59, elapsed 2832 s]
+  S3it0_goal_noise_000 (buffer 8.0'):  48.7 s, peak RSS 1.71 GB; it0 q>4/4.5/5 24701/24700/24700; f []  [09:53:48, elapsed 2880 s]
+  S3it0_goal_noise_033 (buffer 8.0'):  43.0 s, peak RSS 1.71 GB; it0 q>4/4.5/5 32761/32726/32696; f []  [09:54:31, elapsed 2923 s]
+  S1_goal_real_110 (buffer 8.0'):  99.1 s, peak RSS 1.71 GB; it0 q>4/4.5/5 431/324/251; it1 q>4/4.5/5 377/292/231; sigma it1/it0 at 0.5'/4.45'/15' 1.0815/0.9838/0.9207; f [0.686]  [09:56:10, elapsed 3022 s]
+  S1_goal_real_121 (buffer 8.0'):  99.0 s, peak RSS 1.71 GB; it0 q>4/4.5/5 393/288/228; it1 q>4/4.5/5 369/271/216; sigma it1/it0 at 0.5'/4.45'/15' 1.0407/0.9763/0.9462; f [0.7467]  [09:57:49, elapsed 3121 s]
+  S1_goal_real_132 (buffer 8.0'): 100.2 s, peak RSS 1.71 GB; it0 q>4/4.5/5 428/315/249; it1 q>4/4.5/5 375/279/219; sigma it1/it0 at 0.5'/4.45'/15' 1.0756/1.0017/0.9486; f [0.7159]  [09:59:29, elapsed 3222 s]
+  S1_goal_real_143 (buffer 8.0'):  99.7 s, peak RSS 1.71 GB; it0 q>4/4.5/5 420/308/243; it1 q>4/4.5/5 427/319/246; sigma it1/it0 at 0.5'/4.45'/15' 1.0055/0.9483/0.9360; f [0.7926]  [10:01:08, elapsed 3321 s]
+  S1_goal_real_154 (buffer 8.0'): 100.2 s, peak RSS 1.71 GB; it0 q>4/4.5/5 446/335/270; it1 q>4/4.5/5 414/305/254; sigma it1/it0 at 0.5'/4.45'/15' 1.0348/0.9791/0.9542; f [0.7805]  [10:02:49, elapsed 3421 s]
+  S1_goal_real_165 (buffer 8.0'):  99.5 s, peak RSS 1.71 GB; it0 q>4/4.5/5 407/286/220; it1 q>4/4.5/5 330/239/177; sigma it1/it0 at 0.5'/4.45'/15' 1.1181/1.0213/0.9535; f [0.6595]  [10:04:28, elapsed 3521 s]
+  S1_goal_real_176 (buffer 8.0'):  99.4 s, peak RSS 1.71 GB; it0 q>4/4.5/5 409/305/253; it1 q>4/4.5/5 409/314/251; sigma it1/it0 at 0.5'/4.45'/15' 1.0337/0.9548/0.9213; f [0.7222]  [10:06:08, elapsed 3620 s]
+  S1_goal_real_187 (buffer 8.0'):  98.9 s, peak RSS 1.71 GB; it0 q>4/4.5/5 422/308/250; it1 q>4/4.5/5 412/307/248; sigma it1/it0 at 0.5'/4.45'/15' 1.0183/0.9568/0.9251; f [0.7867]  [10:07:47, elapsed 3719 s]
+  S1_goal_real_198 (buffer 8.0'):  99.6 s, peak RSS 1.71 GB; it0 q>4/4.5/5 428/314/228; it1 q>4/4.5/5 370/271/211; sigma it1/it0 at 0.5'/4.45'/15' 1.0673/0.9908/0.9419; f [0.7024]  [10:09:26, elapsed 3819 s]
+  S1_goal_real_209 (buffer 8.0'):  99.6 s, peak RSS 1.71 GB; it0 q>4/4.5/5 408/326/243; it1 q>4/4.5/5 370/288/224; sigma it1/it0 at 0.5'/4.45'/15' 1.0449/0.9638/0.9223; f [0.7286]  [10:11:06, elapsed 3919 s]
+  S1_goal_real_220 (buffer 8.0'):  99.5 s, peak RSS 1.71 GB; it0 q>4/4.5/5 409/300/239; it1 q>4/4.5/5 329/251/184; sigma it1/it0 at 0.5'/4.45'/15' 1.0858/1.0090/0.9580; f [0.6985]  [10:12:45, elapsed 4018 s]
+  S1_goal_real_231 (buffer 8.0'):  99.3 s, peak RSS 1.71 GB; it0 q>4/4.5/5 406/296/229; it1 q>4/4.5/5 385/282/222; sigma it1/it0 at 0.5'/4.45'/15' 1.0266/0.9658/0.9421; f [0.7894]  [10:14:25, elapsed 4117 s]
+  S1_goal_real_242 (buffer 8.0'):  99.5 s, peak RSS 1.71 GB; it0 q>4/4.5/5 385/278/208; it1 q>4/4.5/5 377/277/214; sigma it1/it0 at 0.5'/4.45'/15' 1.0217/0.9571/0.9329; f [0.7634]  [10:16:04, elapsed 4217 s]
+  S1_goal_real_253 (buffer 8.0'):  97.7 s, peak RSS 1.71 GB; it0 q>4/4.5/5 395/270/204; it1 q>4/4.5/5 394/292/219; sigma it1/it0 at 0.5'/4.45'/15' 0.9987/0.9208/0.8941; f [0.7777]  [10:17:42, elapsed 4315 s]
+  S1_goal_real_264 (buffer 8.0'):  99.1 s, peak RSS 1.71 GB; it0 q>4/4.5/5 426/316/242; it1 q>4/4.5/5 403/302/242; sigma it1/it0 at 0.5'/4.45'/15' 1.0372/0.9703/0.9389; f [0.7375]  [10:19:21, elapsed 4414 s]
+  S1_goal_real_275 (buffer 8.0'): 101.8 s, peak RSS 1.71 GB; it0 q>4/4.5/5 406/285/220; it1 q>4/4.5/5 342/250/209; sigma it1/it0 at 0.5'/4.45'/15' 1.0776/0.9947/0.9409; f [0.6811]  [10:21:03, elapsed 4515 s]
+  S1_goal_real_286 (buffer 8.0'): 105.3 s, peak RSS 1.71 GB; it0 q>4/4.5/5 409/305/232; it1 q>4/4.5/5 382/276/216; sigma it1/it0 at 0.5'/4.45'/15' 1.0545/0.9808/0.9312; f [0.7581]  [10:22:48, elapsed 4621 s]
+  S1_goal_real_297 (buffer 8.0'):  96.2 s, peak RSS 1.71 GB; it0 q>4/4.5/5 371/266/203; it1 q>4/4.5/5 364/267/199; sigma it1/it0 at 0.5'/4.45'/15' 1.0109/0.9498/0.9259; f [0.7963]  [10:24:24, elapsed 4717 s]
+  S1_goal_real_308 (buffer 8.0'): 105.5 s, peak RSS 1.71 GB; it0 q>4/4.5/5 413/301/231; it1 q>4/4.5/5 360/267/218; sigma it1/it0 at 0.5'/4.45'/15' 1.0504/0.9747/0.9335; f [0.7287]  [10:26:10, elapsed 4823 s]
+  S1_goal_real_319 (buffer 8.0'): 106.3 s, peak RSS 1.71 GB; it0 q>4/4.5/5 436/307/235; it1 q>4/4.5/5 413/290/215; sigma it1/it0 at 0.5'/4.45'/15' 1.0480/0.9710/0.9290; f [0.7352]  [10:27:56, elapsed 4929 s]
+  S3i_goal_real_066 (buffer 8.0'): 113.1 s, peak RSS 1.71 GB; it0 q>4/4.5/5 423/306/239; it1 q>4/4.5/5 536/387/296; sigma it1/it0 at 0.5'/4.45'/15' 0.9158/0.8982/0.9304; f [0.7839]  [10:29:49, elapsed 5042 s]
+  S2_goal_real_066 (buffer 8.0'): 124.6 s, peak RSS 1.71 GB; it0 q>4/4.5/5 447/320/246; it1 q>4/4.5/5 598/423/322; sigma it1/it0 at 0.5'/4.45'/15' 0.8960/0.8793/0.9056; f [0.7333]  [10:31:54, elapsed 5167 s]
+  S2_goal_real_077 (buffer 8.0'): 129.6 s, peak RSS 1.71 GB; it0 q>4/4.5/5 451/320/263; it1 q>4/4.5/5 590/405/303; sigma it1/it0 at 0.5'/4.45'/15' 0.9113/0.8838/0.9004; f [0.6839]  [10:34:03, elapsed 5296 s]
+  S2_goal_real_088 (buffer 8.0'): 146.5 s, peak RSS 1.71 GB; it0 q>4/4.5/5 440/330/255; it1 q>4/4.5/5 598/429/345; sigma it1/it0 at 0.5'/4.45'/15' 0.8900/0.8592/0.8805; f [0.7514]  [10:36:30, elapsed 5443 s]
+  S2_goal_real_099 (buffer 8.0'): 147.9 s, peak RSS 1.71 GB; it0 q>4/4.5/5 360/279/219; it1 q>4/4.5/5 570/400/312; sigma it1/it0 at 0.5'/4.45'/15' 0.8621/0.8022/0.8124; f [0.7995]  [10:38:58, elapsed 5591 s]
+  STOP file found: /Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/out/STOP_queue_heavy3
+z05_queue h6 done: 53 runs [5591 s]; process peak RSS 1.71 GB
+     5594.18 real      3810.04 user      1698.68 sys
+          1706360832  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+           741445498  page reclaims
+                 775  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                3462  voluntary context switches
+             1617755  involuntary context switches
+      39663972428644  instructions retired
+      16765742703897  cycles elapsed
+          1616335488  peak memory footprint

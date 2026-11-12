@@ -1,0 +1,19 @@
+figures written: ['step3_szifi_real_edges.png', 'step3_szifi_real_r_theta.png', 'step3_szifi_real_spectra.png']
+        1.87 real         1.64 user         0.15 sys
+           116621312  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                9378  page reclaims
+                 327  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 270  voluntary context switches
+                 406  involuntary context switches
+         14557258710  instructions retired
+          5212826151  cycles elapsed
+           100091072  peak memory footprint

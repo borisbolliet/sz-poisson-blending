@@ -1,0 +1,90 @@
+===== baseline: my sigma_Y vs reference.npz: max rel diff 1.55e-06
+  S1    r after at 0.5'/4.45'/15': 1.173 / 1.144 / 1.058   (my sigma(0.5') vs stored it1_sig[0]: max rel diff 0.0e+00)
+  S1p   r after at 0.5'/4.45'/15': 1.167 / 1.140 / 1.057   (my sigma(0.5') vs stored it1_sig[0]: max rel diff 0.0e+00)
+  S1z   r after at 0.5'/4.45'/15': 1.149 / 1.130 / 1.057   (my sigma(0.5') vs stored it1_sig[0]: max rel diff 0.0e+00)
+  S1zp  r after at 0.5'/4.45'/15': 1.145 / 1.126 / 1.056   (my sigma(0.5') vs stored it1_sig[0]: max rel diff 0.0e+00)
+  a01   r after at 0.5'/4.45'/15': 1.139 / 1.120 / 1.051
+  total S1-a01               at 0.5': +0.0339 +- 0.0016   share of total 100.0%
+  artifact S1-S1z            at 0.5': +0.0237 +- 0.0034   share of total  69.9%
+  edges S1z-S1zp             at 0.5': +0.0044 +- 0.0015   share of total  13.0%
+  rest S1zp-a01              at 0.5': +0.0058 +- 0.0017   share of total  17.1%
+  edges w/ artifact S1-S1p   at 0.5': +0.0056 +- 0.0015   share of total  16.5%
+  S1    final q>5 / production (12 tiles): 0.756 +- 0.009   q>5 through the iteration: -8.1 +- 1.5%
+  S1z   final q>5 / production (12 tiles): 0.782 +- 0.012   q>5 through the iteration: -0.9 +- 1.6%
+  S1zp  final q>5 / production (12 tiles): 0.784 +- 0.009   q>5 through the iteration: -0.6 +- 1.4%
+  S1 as configured, 30 tiles: final q>5 / production 0.774 +- 0.009  (4709 / 6087)
+  S1 as configured, 30 tiles: r after 1.168 / 1.142 / 1.057
+  noise-only S1    sigma/analytic after 0.5'/4.45'/15': 1.042 / 1.021 / 0.993
+  noise-only S1z   sigma/analytic after 0.5'/4.45'/15': 1.034 / 1.017 / 0.994
+  noise-only S1zp  sigma/analytic after 0.5'/4.45'/15': 1.025 / 1.008 / 0.990
+  noise-only a01   sigma/analytic after 0.5'/4.45'/15': 1.029 / 1.010 / 0.988
+===== goal: my sigma_Y vs reference.npz: max rel diff 1.39e-06
+  S1    r after at 0.5'/4.45'/15': 1.222 / 1.199 / 1.087   (my sigma(0.5') vs stored it1_sig[0]: max rel diff 0.0e+00)
+  S1p   r after at 0.5'/4.45'/15': 1.213 / 1.192 / 1.086   (my sigma(0.5') vs stored it1_sig[0]: max rel diff 0.0e+00)
+  S1z   r after at 0.5'/4.45'/15': 1.191 / 1.179 / 1.086   (my sigma(0.5') vs stored it1_sig[0]: max rel diff 0.0e+00)
+  S1zp  r after at 0.5'/4.45'/15': 1.185 / 1.175 / 1.085   (my sigma(0.5') vs stored it1_sig[0]: max rel diff 0.0e+00)
+  a01   r after at 0.5'/4.45'/15': 1.187 / 1.175 / 1.080
+  total S1-a01               at 0.5': +0.0352 +- 0.0046   share of total 100.0%
+  artifact S1-S1z            at 0.5': +0.0311 +- 0.0032   share of total  88.3%
+  edges S1z-S1zp             at 0.5': +0.0059 +- 0.0018   share of total  16.7%
+  rest S1zp-a01              at 0.5': -0.0018 +- 0.0029   share of total  -5.0%
+  edges w/ artifact S1-S1p   at 0.5': +0.0092 +- 0.0024   share of total  26.2%
+  S1    final q>5 / production (12 tiles): 0.723 +- 0.015   q>5 through the iteration: -6.9 +- 2.0%
+  S1z   final q>5 / production (12 tiles): 0.755 +- 0.015   q>5 through the iteration: +0.1 +- 1.9%
+  S1zp  final q>5 / production (12 tiles): 0.763 +- 0.015   q>5 through the iteration: +1.1 +- 1.8%
+  S1 as configured, 30 tiles: final q>5 / production 0.733 +- 0.010  (6632 / 9050)
+  S1 as configured, 30 tiles: r after 1.219 / 1.198 / 1.088
+  noise-only S1    sigma/analytic after 0.5'/4.45'/15': 1.062 / 1.039 / 1.001
+  noise-only S1z   sigma/analytic after 0.5'/4.45'/15': 1.053 / 1.033 / 1.000
+  noise-only S1zp  sigma/analytic after 0.5'/4.45'/15': 1.034 / 1.015 / 0.992
+  noise-only a01   sigma/analytic after 0.5'/4.45'/15': 1.040 / 1.018 / 0.990
+E4 channel 2: out-of-band bins 21, |spec| out/in-band median ratio 1.6e-14 (max 1.7e-14); highest bin l = 21564
+E4 channel 3: out-of-band bins 21, |spec| out/in-band median ratio 1.2e-14 (max 1.2e-14); highest bin l = 21564
+
+(6) second way of removing the artifact: config check S1wg vs arbiter S1z
+baseline: r after 0.5'/4.45'/15'  S1wg [1.1439 1.1265 1.0576]  S1z [1.1439 1.1265 1.0576]  S1 [1.1709 1.1426 1.0586]
+   max |S1wg - S1z| per tile at the three scales: [0.0001 0.0002 0.0003]; f: S1wg 0.7875 S1z 0.7875
+   q>5 interior, it1, summed over 6 tiles: S1wg 939  S1z 941  S1 902
+goal: r after 0.5'/4.45'/15'  S1wg [1.1934 1.1812 1.0871]  S1z [1.1933 1.1812 1.0871]  S1 [1.2238 1.2    1.0879]
+   max |S1wg - S1z| per tile at the three scales: [0.0003 0.0003 0.0001]; f: S1wg 0.7609 S1z 0.7609
+   q>5 interior, it1, summed over 6 tiles: S1wg 1340  S1z 1340  S1 1287
+
+(7) step 3a emulation / production, q > 5, whole periodic tile
+baseline 12 arbiter tiles: emulation/production q>5 (whole tile) 0.804;  production rerun == stored catalogue count: True
+baseline 30 build tiles: emulation/production q>5 (whole tile) 0.817;  production rerun == stored catalogue count: True
+goal     12 arbiter tiles: emulation/production q>5 (whole tile) 0.763;  production rerun == stored catalogue count: True
+goal     30 build tiles: emulation/production q>5 (whole tile) 0.775;  production rerun == stored catalogue count: True
+
+(8) per-tile edge term at 0.5' (r without periodic filling minus r with it), 12 tiles
+  baseline without the artifact (S1z - S1zp): mean +0.0044, largest +0.0148 (tile 132);  with it (S1 - S1p): mean +0.0056, largest +0.0147 (tile 220)
+  goal     without the artifact (S1z - S1zp): mean +0.0059, largest +0.0170 (tile 132);  with it (S1 - S1p): mean +0.0092, largest +0.0238 (tile 132)
+
+(9) unmasked fraction f and iteration-0 entries at theta >= 7.24' (q > 4), 12 tiles; interior / whole tile
+  baseline S1  : f 0.744; entries at >= 7.24' per tile 22.9 (interior) / 23.6 (whole)
+  baseline S1z : f 0.782; entries at >= 7.24' per tile 14.9 (interior) / 15.4 (whole)
+  baseline a01 f 0.778; production finder entries at >= 7.24' per tile 13.4 (interior) / 14.2 (whole)
+  goal     S1  : f 0.722; entries at >= 7.24' per tile 22.5 (interior) / 23.1 (whole)
+  goal     S1z : f 0.765; entries at >= 7.24' per tile 14.5 (interior) / 15.0 (whole)
+  goal     a01 f 0.747; production finder entries at >= 7.24' per tile 16.0 (interior) / 16.5 (whole)
+
+(10) SZiFi's template offset before the iteration, and S1zp - a01 after it with that offset removed (12 tiles)
+  baseline offset r0(SZiFi) - r0(a01) at 0.5'/4.45'/15': +0.0065 / +0.0006 / +0.0015;  (S1zp - a01) - offset: -0.0007 +- 0.0017 / +0.0054 +- 0.0018 / +0.0041 +- 0.0014
+  goal     offset r0(SZiFi) - r0(a01) at 0.5'/4.45'/15': +0.0100 / +0.0008 / +0.0015;  (S1zp - a01) - offset: -0.0117 +- 0.0027 / -0.0009 +- 0.0025 / +0.0034 +- 0.0016
+
+(11) l_sep = 12000: S2 (build), S2z, S2zp against a01 'szifi_l12000', and q > 5 counts against production
+  baseline a01   r after 1.017 / 1.042 / 1.027
+  baseline S2    r after 1.026 / 1.051 / 1.031; paired - a01 +0.0090 / +0.0091 / +0.0037; final q>5 / production 1.023 +- 0.015
+  baseline S2z   r after 1.028 / 1.052 / 1.035; paired - a01 +0.0112 / +0.0102 / +0.0075; final q>5 / production 1.009 +- 0.013
+  baseline S2zp  r after 1.026 / 1.050 / 1.034; paired - a01 +0.0090 / +0.0079 / +0.0065; final q>5 / production 1.015 +- 0.012
+  baseline a01 l12000 / production q>5 (whole tile), 7 S2zp tiles: 1.030
+  baseline a01 l12000 / production q>5 (whole tile), 10 S2 tiles: 1.029
+  baseline S2 / production q>5 (interior), 10 S2 tiles: 1.021
+  baseline 10 S2 tiles: S2 r after 1.026 / 1.051 / 1.030; production finder r after 1.039 / 1.050 / 1.027; max |S2 - production| of the means 0.013
+  goal     a01   r after 1.036 / 1.072 / 1.046
+  goal     S2    r after 1.050 / 1.084 / 1.051; paired - a01 +0.0140 / +0.0115 / +0.0044; final q>5 / production 0.982 +- 0.008
+  goal     S2z   r after 1.052 / 1.085 / 1.056; paired - a01 +0.0157 / +0.0127 / +0.0094; final q>5 / production 0.969 +- 0.009
+  goal     S2zp  r after 1.048 / 1.081 / 1.054; paired - a01 +0.0119 / +0.0090 / +0.0078; final q>5 / production 0.982 +- 0.010
+  goal     a01 l12000 / production q>5 (whole tile), 7 S2zp tiles: 1.016
+  goal     a01 l12000 / production q>5 (whole tile), 10 S2 tiles: 1.019
+  goal     S2 / production q>5 (interior), 10 S2 tiles: 0.988
+  goal     10 S2 tiles: S2 r after 1.050 / 1.083 / 1.049; production finder r after 1.053 / 1.067 / 1.036; max |S2 - production| of the means 0.016

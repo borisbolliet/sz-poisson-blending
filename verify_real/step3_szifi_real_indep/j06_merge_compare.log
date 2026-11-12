@@ -1,0 +1,112 @@
+j06 (1): szsim.finder's merge vs the build's stored SZiFi merge results, same inputs (the build's interior, q >= 5)
+  input  level    rule        tiles  identical  kept (build's SZiFi)  kept (szsim)  differing entries
+  prod   baseline closest1      30         30                  5757          5757                  0
+  prod   baseline closest10     30         25                  5353          5359                  6
+  prod   baseline fof1          30         30                  5756          5756                  0
+  prod   baseline fof10         30         25                  5332          5337                  5
+  prod   goal     closest1      30         29                  8550          8551                  1
+  prod   goal     closest10     30         21                  7656          7665                 13
+  prod   goal     fof1          30         30                  8544          8544                  0
+  prod   goal     fof10         30         20                  7575          7587                 12
+  szifi  baseline closest1      30         30                  4434          4434                  0
+  szifi  baseline closest10     30         29                  4205          4206                  1
+  szifi  baseline fof1          30         30                  4433          4433                  0
+  szifi  baseline fof10         30         29                  4197          4198                  1
+  szifi  goal     closest1      30         30                  6310          6310                  0
+  szifi  goal     closest10     30         25                  5814          5819                  5
+  szifi  goal     fof1          30         30                  6308          6308                  0
+  szifi  goal     fof10         30         25                  5793          5798                  5
+  all: identical in 438 of 480 tile runs; of the 42 that differ, 42 contain a pair within 0.4% of R; differing entries 49, of which 39 are in such a pair
+  differing runs (input, level, tile, rule, entries, pairs within 0.4% of R, pairs exactly at R):
+    ('prod', 'baseline', 66, 'closest10', 1, 1, 1)
+    ('prod', 'baseline', 66, 'fof10', 1, 1, 1)
+    ('prod', 'baseline', 88, 'closest10', 1, 1, 1)
+    ('prod', 'baseline', 88, 'fof10', 1, 1, 1)
+    ('prod', 'baseline', 154, 'closest10', 1, 1, 1)
+    ('prod', 'baseline', 154, 'fof10', 1, 1, 1)
+    ('prod', 'baseline', 198, 'closest10', 2, 2, 1)
+    ('prod', 'baseline', 198, 'fof10', 1, 2, 1)
+    ('prod', 'baseline', 253, 'closest10', 1, 2, 1)
+    ('prod', 'baseline', 253, 'fof10', 1, 2, 1)
+    ('prod', 'goal', 0, 'closest1', 1, 1, 1)
+    ('prod', 'goal', 0, 'closest10', 1, 2, 2)
+    ('prod', 'goal', 0, 'fof10', 1, 2, 2)
+    ('prod', 'goal', 33, 'closest10', 1, 2, 1)
+    ('prod', 'goal', 33, 'fof10', 1, 2, 1)
+    ('prod', 'goal', 55, 'closest10', 2, 1, 1)
+    ('prod', 'goal', 55, 'fof10', 1, 1, 1)
+    ('prod', 'goal', 66, 'closest10', 1, 1, 1)
+    ('prod', 'goal', 66, 'fof10', 1, 1, 1)
+    ('prod', 'goal', 88, 'closest10', 4, 3, 3)
+    ('prod', 'goal', 88, 'fof10', 3, 3, 3)
+    ('prod', 'goal', 110, 'closest10', 1, 1, 1)
+    ('prod', 'goal', 110, 'fof10', 1, 1, 1)
+    ('prod', 'goal', 154, 'closest10', 1, 2, 1)
+    ('prod', 'goal', 154, 'fof10', 1, 2, 1)
+    ('prod', 'goal', 187, 'fof10', 1, 2, 1)
+    ('prod', 'goal', 198, 'closest10', 1, 1, 0)
+    ('prod', 'goal', 198, 'fof10', 1, 1, 0)
+    ('prod', 'goal', 253, 'closest10', 1, 3, 1)
+    ('prod', 'goal', 253, 'fof10', 1, 3, 1)
+    ('szifi', 'baseline', 88, 'closest10', 1, 2, 1)
+    ('szifi', 'baseline', 88, 'fof10', 1, 2, 1)
+    ('szifi', 'goal', 0, 'closest10', 1, 1, 1)
+    ('szifi', 'goal', 44, 'closest10', 1, 1, 1)
+    ('szifi', 'goal', 44, 'fof10', 1, 1, 1)
+    ('szifi', 'goal', 88, 'closest10', 1, 2, 1)
+    ('szifi', 'goal', 88, 'fof10', 1, 2, 1)
+    ('szifi', 'goal', 99, 'closest10', 1, 1, 1)
+    ('szifi', 'goal', 99, 'fof10', 1, 1, 1)
+    ('szifi', 'goal', 187, 'fof10', 1, 2, 1)
+    ('szifi', 'goal', 198, 'closest10', 1, 1, 0)
+    ('szifi', 'goal', 198, 'fof10', 1, 1, 0)
+
+j06 (2): SZiFi's merge_detections called by the verifier (j05) vs the build's result and szsim, same input
+  prod_goal_088: 348 interior entries with q >= 5 (input identical to the build's: True)
+    closest1  HEALPix lon180lat0: verifier's SZiFi call keeps 319; = build's SZiFi result: True; = szsim: True
+    closest1  HEALPix lon45lat60: verifier's SZiFi call keeps 319; = build's SZiFi result: True; = szsim: True
+    closest10 HEALPix lon180lat0: verifier's SZiFi call keeps 272; = build's SZiFi result: True; = szsim: False (differs in 4 entries, 3 of them in a pair within 0.4% of R; pairs within 0.4% of R: 3, exactly at R: 3)
+    closest10 HEALPix lon45lat60: verifier's SZiFi call keeps 272; = build's SZiFi result: True; = szsim: False (differs in 4 entries, 3 of them in a pair within 0.4% of R; pairs within 0.4% of R: 3, exactly at R: 3)
+    fof1      HEALPix lon180lat0: verifier's SZiFi call keeps 319; = build's SZiFi result: True; = szsim: True
+    fof1      HEALPix lon45lat60: verifier's SZiFi call keeps 319; = build's SZiFi result: True; = szsim: True
+    fof10     HEALPix lon180lat0: verifier's SZiFi call keeps 267; = build's SZiFi result: True; = szsim: False (differs in 3 entries, 3 of them in a pair within 0.4% of R; pairs within 0.4% of R: 3, exactly at R: 3)
+    fof10     HEALPix lon45lat60: verifier's SZiFi call keeps 267; = build's SZiFi result: True; = szsim: False (differs in 3 entries, 3 of them in a pair within 0.4% of R; pairs within 0.4% of R: 3, exactly at R: 3)
+  szifi_goal_198: 211 interior entries with q >= 5 (input identical to the build's: True)
+    closest1  HEALPix lon180lat0: verifier's SZiFi call keeps 202; = build's SZiFi result: True; = szsim: True
+    closest1  HEALPix lon45lat60: verifier's SZiFi call keeps 202; = build's SZiFi result: True; = szsim: True
+    closest10 HEALPix lon180lat0: verifier's SZiFi call keeps 186; = build's SZiFi result: True; = szsim: False (differs in 1 entries, 1 of them in a pair within 0.4% of R; pairs within 0.4% of R: 1, exactly at R: 0)
+    closest10 HEALPix lon45lat60: verifier's SZiFi call keeps 186; = build's SZiFi result: True; = szsim: False (differs in 1 entries, 1 of them in a pair within 0.4% of R; pairs within 0.4% of R: 1, exactly at R: 0)
+    fof1      HEALPix lon180lat0: verifier's SZiFi call keeps 202; = build's SZiFi result: True; = szsim: True
+    fof1      HEALPix lon45lat60: verifier's SZiFi call keeps 202; = build's SZiFi result: True; = szsim: True
+    fof10     HEALPix lon180lat0: verifier's SZiFi call keeps 186; = build's SZiFi result: True; = szsim: False (differs in 1 entries, 1 of them in a pair within 0.4% of R; pairs within 0.4% of R: 1, exactly at R: 0)
+    fof10     HEALPix lon45lat60: verifier's SZiFi call keeps 186; = build's SZiFi result: True; = szsim: False (differs in 1 entries, 1 of them in a pair within 0.4% of R; pairs within 0.4% of R: 1, exactly at R: 0)
+
+j06 (3): real clusters removed by merging, production finder's final catalogue, interior, q >= 5
+  baseline closest1 : credited halos 5665; after SZiFi's merge 5659 (removed 0.11%); after szsim's merge 5659 (removed 0.11%)
+  baseline closest10: credited halos 5665; after SZiFi's merge 5275 (removed 6.88%); after szsim's merge 5280 (removed 6.80%)
+  baseline fof1     : credited halos 5665; after SZiFi's merge 5659 (removed 0.11%); after szsim's merge 5659 (removed 0.11%)
+  baseline fof10    : credited halos 5665; after SZiFi's merge 5256 (removed 7.22%); after szsim's merge 5260 (removed 7.15%)
+  goal     closest1 : credited halos 8416; after SZiFi's merge 8405 (removed 0.13%); after szsim's merge 8405 (removed 0.13%)
+  goal     closest10: credited halos 8416; after SZiFi's merge 7537 (removed 10.44%); after szsim's merge 7545 (removed 10.35%)
+  goal     fof1     : credited halos 8416; after SZiFi's merge 8404 (removed 0.14%); after szsim's merge 8404 (removed 0.14%)
+  goal     fof10    : credited halos 8416; after SZiFi's merge 7457 (removed 11.39%); after szsim's merge 7468 (removed 11.26%)
+
+done [4 s]
+        5.13 real         3.98 user         0.24 sys
+           128827392  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               16181  page reclaims
+                 120  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1486  voluntary context switches
+                 695  involuntary context switches
+         43014290743  instructions retired
+         12350017796  cycles elapsed
+            87623104  peak memory footprint

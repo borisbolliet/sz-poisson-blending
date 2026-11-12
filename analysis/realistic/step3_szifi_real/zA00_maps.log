@@ -1,0 +1,56 @@
+  real    0 baseline: production finder rerun identical to the stored outputs: True
+  real    0 goal    : production finder rerun identical to the stored outputs: True
+  real   11 baseline: production finder rerun identical to the stored outputs: True
+  real   11 goal    : production finder rerun identical to the stored outputs: True
+  real   22 baseline: production finder rerun identical to the stored outputs: True
+  real   22 goal    : production finder rerun identical to the stored outputs: True
+  real   33 baseline: production finder rerun identical to the stored outputs: True
+  real   33 goal    : production finder rerun identical to the stored outputs: True
+  real   44 baseline: production finder rerun identical to the stored outputs: True
+  real   44 goal    : production finder rerun identical to the stored outputs: True
+  real   55 baseline: production finder rerun identical to the stored outputs: True
+  real   55 goal    : production finder rerun identical to the stored outputs: True
+  real   88 baseline: production finder rerun identical to the stored outputs: True
+  real   88 goal    : production finder rerun identical to the stored outputs: True
+  real  132 baseline: production finder rerun identical to the stored outputs: True
+  real  132 goal    : production finder rerun identical to the stored outputs: True
+  real  176 baseline: production finder rerun identical to the stored outputs: True
+  real  176 goal    : production finder rerun identical to the stored outputs: True
+  real  220 baseline: production finder rerun identical to the stored outputs: True
+  real  220 goal    : production finder rerun identical to the stored outputs: True
+  real  264 baseline: production finder rerun identical to the stored outputs: True
+  real  264 goal    : production finder rerun identical to the stored outputs: True
+  real  308 baseline: production finder rerun identical to the stored outputs: True
+  real  308 goal    : production finder rerun identical to the stored outputs: True
+  noise   0 baseline: production finder rerun identical to the stored outputs: True
+  noise   0 goal    : production finder rerun identical to the stored outputs: True
+  noise  22 baseline: production finder rerun identical to the stored outputs: True
+  noise  22 goal    : production finder rerun identical to the stored outputs: True
+  noise  44 baseline: production finder rerun identical to the stored outputs: True
+  noise  44 goal    : production finder rerun identical to the stored outputs: True
+  noise  66 baseline: production finder rerun identical to the stored outputs: True
+  noise  66 goal    : production finder rerun identical to the stored outputs: True
+  noise  88 baseline: production finder rerun identical to the stored outputs: True
+  noise  88 goal    : production finder rerun identical to the stored outputs: True
+
+34 of 34 regenerated tiles reproduce the stored production-finder catalogues and sigma bit for bit
+maps written: 34 files, 1.18 GB
+done [53 s]; peak RSS 0.91 GB
+       54.01 real        53.26 user         0.59 sys
+           913424384  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               67901  page reclaims
+                 448  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 314  voluntary context switches
+                 911  involuntary context switches
+        664860446953  instructions retired
+        173419577519  cycles elapsed
+           850889792  peak memory footprint

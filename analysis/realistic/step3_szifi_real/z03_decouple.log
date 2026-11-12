@@ -1,0 +1,40 @@
+z03: tile 0 baseline, l-filtered maps (1200, 1200, 6) float32
+  decouple 'none': 299 bins (first bin dropped), 1.7 s
+  decouple 'fsky': 299 bins (first bin dropped), 1.8 s
+  decouple 'none' on the (np.int64(556), np.int64(556)) grid: 138 bins, 2.6 s
+Coupling matrix found
+  decouple 'master' on the (np.int64(556), np.int64(556)) grid: 138 bins, 2.7 s
+  NaMaster effective l vs bin centres (l0 + lf)/2: max |diff| = 0.00e+00; bin width 72.0000
+comparisons, all bins up to l = 20016 that hold in-band modes (bins 72-144 ... 19944-20016):
+  'fsky' vs 'none'                                              : auto max |ratio - 1| = 0.00e+00 (median 0.0e+00); cross max |diff|/sqrt(C_ii C_jj) = 0.00e+00
+  'master' vs 'none' (556^2 grid, bins 72-9972)                 : auto max |ratio - 1| = 1.50e-07 (median 1.5e-07); cross max |diff|/sqrt(C_ii C_jj) = 1.50e-07
+  'master' vs 'none': largest auto deviation in the bin 6696-6768
+  'master' vs 'none' by l range: 144-1000: 1.5e-07, 1000-3000: 1.5e-07, 3000-10000: 1.5e-07
+  (a) SZiFi 'custom' path vs NaMaster 'none'                    : auto max |ratio - 1| = 7.49e-02 (median 3.8e-09); cross max |diff|/sqrt(C_ii C_jj) = 6.54e-02
+  (b) own binned periodogram vs NaMaster 'none'                 : auto max |ratio - 1| = 7.49e-02 (median 5.0e-15); cross max |diff|/sqrt(C_ii C_jj) = 6.54e-02
+  (d) S0 smoke run's recorded iteration-0 spectra vs 'none'     : auto max |ratio - 1| = 0.00e+00 (median 0.0e+00); cross max |diff|/sqrt(C_ii C_jj) = 0.00e+00
+  'none' vs (c) the finder, bins fully inside 100-20000         : auto max |ratio - 1| = 4.82e-02 (median 5.0e-09); cross max |diff|/sqrt(C_ii C_jj) = 4.76e-02
+  'none' / finder in the lowest band-edge bin (72-144): auto ratios [0.6667, 0.6667, 0.6667, 0.6667, 0.6667, 0.6667] (SZiFi averages over all modes of the bin, the finder over its in-band modes)
+  'none' / finder in the highest band-edge bin (19944-20016): auto ratios [0.7832, 0.7832, 0.7832, 0.7832, 0.7832, 0.7832] (SZiFi averages over all modes of the bin, the finder over its in-band modes)
+  bins where NaMaster's 'none' differs from the periodogram by > 1e-6: 126 of 277; their lower edges l0 = [144, 216, 360, 432, 792, 864, 1656, 1728, 1800, 3168, 3240, 3312] ...; largest |ratio - 1| per bin [0.0124, 0.081, 0.0132, 0.0103, 0.0044, 0.0086, 0.0034, 0.0073, 0.0144, 0.0031, 0.0031, 0.0024]
+  modes exactly on the lower edge of those bins: [4, 4, 12, 4, 4, 4, 4, 4, 20, 4, 12, 4]; bins with modes on their lower edge and no deviation: 151 (NaMaster assigns some edge modes to the bin below)
+  bins entirely above l = 20000 (22): 'none' auto spectra / their value at l = 3000: max 4.8e-15 (float32 rounding of the l-filtered maps)
+done [60 s]
+       62.90 real        33.40 user        28.56 sys
+           625704960  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            14877599  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  10  voluntary context switches
+                5448  involuntary context switches
+        353266284386  instructions retired
+        186731655739  cycles elapsed
+           556910976  peak memory footprint

@@ -1,0 +1,51 @@
+(1) git -C /Users/boris/GitHub/szifi status --short: exit 0, output ''
+    __pycache__ folders in the clone: 0 []
+(2) SZiFi: 30 Python files, 2567 distinct lines of >= 30 characters and >= 3 words
+    repository text files read: 1773; lines equal to a SZiFi source line: 28
+      analysis/realistic/step3/t03_injections.py:18: from multiprocessing import Pool
+      analysis/realistic/step3/a03_selection_check.py:24: from multiprocessing import Pool
+      analysis/realistic/step3/a05_virtual.py:17: from multiprocessing import Pool
+      analysis/realistic/step3/t02_noise_only.py:19: from multiprocessing import Pool
+      analysis/realistic/step3/a01_szifi_iteration.py:22: from multiprocessing import Pool
+      analysis/realistic/step3/a04_checks.py:23: from multiprocessing import Pool
+      analysis/realistic/step3/a02_injections_hi.py:21: from multiprocessing import Pool
+      analysis/realistic/step3/t04_tiles.py:21: from multiprocessing import Pool
+      analysis/q2_maps/decompose.py:13: from multiprocessing import Pool
+      analysis/q2_maps/run_patches.py:4: from multiprocessing import Pool
+      analysis/cosmo/blend_dependence/c02_grid.py:12: from multiprocessing import Pool
+      analysis/cosmo/blend_repair/r02_fits.py:23: from multiprocessing import Pool
+      analysis/cosmo/bias/c17_figures_v2.py:74: from scipy.ndimage import gaussian_filter
+      analysis/cosmo/bias/c04_map_truth.py:19: from multiprocessing import Pool
+      analysis/cosmo/bias/c08_figures.py:101: from scipy.ndimage import gaussian_filter
+      analysis/cosmo/bias/c03_catalogue_truth.py:18: from multiprocessing import Pool
+      analysis/cosmo/bias/c01_hmf_grid.py:13: from multiprocessing import Pool
+      analysis/blending/b01_rho_table.py:22: from multiprocessing import Pool
+      verify_real/step3_szifi/v04_e2e.py:17: from multiprocessing import Pool
+      verify_real/step3b_sims/y02_tiles.py:22: from multiprocessing import Pool
+      verify_real/step3b_sims/y03_inject.py:23: from multiprocessing import Pool
+      verify_real/step3_indep/x03b_inj2.py:23: from multiprocessing import Pool
+      verify_real/step3_indep/x04_fresh.py:23: from multiprocessing import Pool
+      verify_real/step3_indep/x04c_buildtiles.py:28: from multiprocessing import Pool
+      verify_real/step3_indep/x04b_scales.py:27: from multiprocessing import Pool
+      verify_real/step3_indep/x10_virtual_selection.py:18: from multiprocessing import Pool
+      verify_real/step3_indep/x03_noise_inj.py:20: from multiprocessing import Pool
+      szsim/finder.py:279: from multiprocessing import Pool
+done [1 s]
+        0.55 real         0.15 user         0.09 sys
+            17973248  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                3300  page reclaims
+                  53  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                3033  voluntary context switches
+                 142  involuntary context switches
+          2630947061  instructions retired
+           692551814  cycles elapsed
+             9995200  peak memory footprint

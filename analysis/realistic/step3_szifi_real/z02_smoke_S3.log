@@ -1,0 +1,98 @@
+z02 smoke test: SZiFi /Users/boris/GitHub/szifi/szifi/__init__.py (clone at commit 73626fb), config S3, tile baseline real 0, edge buffer 10.0' in the peak-finding and selection masks
+parameters that differ from SZiFi's defaults: ['beam', 'cov_kernel_shape', 'cov_type', 'get_lonlat', 'inpaint_type', 'integrate_bandpass', 'lrange', 'lsep', 'min_radius_mask_arcmin', 'n_inpaint', 'path', 'path_data', 'path_template', 'powspec_lmax1d', 'save_and_load_template', 'save_coupling_matrix', 'snr_weighting', 'survey_file', 'theta_500_vec_arcmin']
+coupling matrix file /Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/coupling_ones_bin04_lmax10000.fits: exists before the run: False
+--- full SZiFi parameter dictionary used: smokeS3 (after the run on baseline_real_000; cluster_finder adds a_matrix and sets cmmf_type in place)
+    a_matrix                     = [[-5348707.175668]
+ [-5238436.669914]
+ [-4284002.720275]
+ [-2768488.904179]
+ [  315162.207061]
+ [ 2731427.857946]]
+    apod_type                    = old
+    beam                         = gaussian
+    cmmf_type                    = standard_mmf
+    comp_to_calculate            = [0]
+    compute_coupling_matrix      = False
+    cosmology                    = Planck15
+    cosmology_tool               = classy_sz
+    coupling_matrix_needed       = True
+    cov_kernel_shape             = [10, 10]
+    cov_type                     = mixed_gaussian
+    decouple_type                = master
+    deproject_cib                = None
+    detection_method             = maxima_lomem
+    extraction_mode              = find
+    freqs                        = [0, 1, 2, 3, 4, 5]
+    get_lonlat                   = False
+    get_q_true                   = False
+    inpaint                      = True
+    inpaint_type                 = orphics
+    integrate_bandpass           = False
+    interp_type                  = nearest
+    iterative                    = True
+    lrange                       = [1, 300000]
+    lsep                         = 12000
+    map_dtype                    = <class 'numpy.float32'>
+    mask_radius                  = 3.0
+    max_it                       = 1
+    max_radius_mask_arcmin       = inf
+    min_ftile                    = 0.3
+    min_radius_mask_arcmin       = 1.0
+    mmf_type                     = standard
+    n_inpaint                    = -1
+    norm_type                    = centre
+    path                         = /Users/boris/GitHub/szifi/
+    path_data                    = /Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/out/maps/
+    path_template                = None
+    powspec_bin_fac              = 4
+    powspec_lmax1d               = 10000
+    powspec_new_shape            = None
+    q_th                         = 4.0
+    q_th_noise                   = 4.0
+    rSZ                          = False
+    save_and_load_template       = False
+    save_coupling_matrix         = True
+    save_snr_maps                = False
+    snr_maps_name                = None
+    snr_maps_path                = None
+    snr_weighting                = False
+    snr_weigthing                = False
+    survey_file                  = /Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3_szifi_real/z_survey.py
+    theta_500_input              = None
+    theta_500_vec_arcmin         = [ 0.5       0.637498  0.812807  1.036325  1.32131   1.684664  2.147939  2.738613  3.491719  4.451926  5.676186  7.237112  9.227285 11.764747 15.      ]
+    theta_find                   = input
+    tile_type                    = healpix
+    tilemask_buffer_arcmin       = 15
+    tilemask_mode                = field
+
+wall time 685.0 s (loading 0.0 s); peak RSS 1.56 GB
+  SZiFi steps [s]: cross spectra [1.6, 1.4], inverse covariance [1.9, 1.7], filtering + peaks [23.7, 23.9], inpainting [2.3, 1.1, 1.7], blend [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 5.0, 4.9, 4.9, 4.9, 5.0], cluster mask [342.0]
+  noise iterations run: 2; cluster mask: unmasked fraction [0.11162638888888889], masked detections [32331.0]
+  iteration 0: SZiFi's sigma_vec[0] = 0.000e+00 (maxima_lomem skips it); sigma from its catalogue (median y0/q per scale) vs sigma_vec at scales 1-14: max |ratio - 1| = 3.4e-09; sigma(0.5') from the catalogue = 7.4982e-05 (27272 detections)
+  iteration 0: sigma [y0] at 0.5'/4.45'/15' = 7.4982e-05 / 4.9894e-06 / 4.8841e-06; detections q > 4 / 4.5 / 5: 32331 / 32315 / 32294
+  iteration 1: SZiFi's sigma_vec[0] = 0.000e+00 (maxima_lomem skips it); sigma from its catalogue (median y0/q per scale) vs sigma_vec at scales 1-14: max |ratio - 1| = 8.8e-09; sigma(0.5') from the catalogue = 5.1416e-05 (38498 detections)
+  iteration 1: sigma [y0] at 0.5'/4.45'/15' = 5.1416e-05 / 3.5917e-06 / 4.4130e-06; detections q > 4 / 4.5 / 5: 47672 / 47651 / 47634
+  sigma it1 / it0: 0.6857 0.6830 0.6813 0.6802 0.6783 0.6774 0.6814 0.6873 0.7001 0.7199 0.7470 0.7821 0.8233 0.8655 0.9035
+  auto spectra it1 / it0, l 100-3000: 0.9512
+  auto spectra it1 / it0, l 3000-20000: 0.9518
+  spectra recorded: 2 calls, 138 bins, l_eff 108.0 .. 9972.0
+coupling matrix file exists after the run: True
+done [685 s]
+      688.01 real       680.09 user         3.63 sys
+          1606139904  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              349821  page reclaims
+                 636  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1324  voluntary context switches
+               75458  involuntary context switches
+       5282813536092  instructions retired
+       2036628972688  cycles elapsed
+          1789252608  peak memory footprint

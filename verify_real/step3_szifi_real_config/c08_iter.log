@@ -1,0 +1,33 @@
+(1) claim 2: S0 (no inpainting), iteration 1 vs iteration 0
+  tile   0 baseline: noise iterations run 2; cluster mask built (f = [0.7465805555555556], [364924] pixels masked); spectra it1 == it0: True; sigma_vec identical: True; catalogue identical: True (631 / 631 detections)
+  tile  33 baseline: noise iterations run 2; cluster mask built (f = [0.6837909722222222], [455341] pixels masked); spectra it1 == it0: True; sigma_vec identical: True; catalogue identical: True (551 / 551 detections)
+
+(2)-(4) l_sep: S1g (3000) vs S2g (12000)
+  tile   0: iteration 0 identical in S1 and S2: True; f recorded S1 0.791873, S2 0.791873
+    spec1(S1)/spec1(S2) x f - 1 for 3000 < l <= 12000 (125 bins): max |.| 2.2e-16; spec1(S1)/spec1(S2) - 1 elsewhere below 20016 (152 bins): max |.| 0.0e+00
+    (3) our disc mask from SZiFi's 338 iteration-0 detections: f = 0.791915, 299643 pixels masked; SZiFi's mask: f = 0.791873, 299703 pixels masked
+    (4) S1 (l_sep 3000) : auto spectra it1/it0 (mean over channels and bins) 100-3000: 0.946; 3000-6000: 1.152; 6000-12000: 1.168; 12000-20000: 1.168
+    (4) S2 (l_sep 12000): auto spectra it1/it0 (mean over channels and bins) 100-3000: 0.946; 3000-6000: 0.912; 6000-12000: 0.925; 12000-20000: 1.168
+  tile  33: iteration 0 identical in S1 and S2: True; f recorded S1 0.719601, S2 0.719601
+    spec1(S1)/spec1(S2) x f - 1 for 3000 < l <= 12000 (125 bins): max |.| 1.1e-16; spec1(S1)/spec1(S2) - 1 elsewhere below 20016 (152 bins): max |.| 0.0e+00
+    (3) our disc mask from SZiFi's 320 iteration-0 detections: f = 0.719619, 403748 pixels masked; SZiFi's mask: f = 0.719601, 403775 pixels masked
+    (4) S1 (l_sep 3000) : auto spectra it1/it0 (mean over channels and bins) 100-3000: 0.911; 3000-6000: 1.221; 6000-12000: 1.235; 12000-20000: 1.235
+    (4) S2 (l_sep 12000): auto spectra it1/it0 (mean over channels and bins) 100-3000: 0.911; 3000-6000: 0.879; 6000-12000: 0.889; 12000-20000: 1.235
+        1.82 real         1.72 user         0.08 sys
+           105431040  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               13388  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  21  voluntary context switches
+                 114  involuntary context switches
+         18661646619  instructions retired
+          5528590643  cycles elapsed
+            83035392  peak memory footprint

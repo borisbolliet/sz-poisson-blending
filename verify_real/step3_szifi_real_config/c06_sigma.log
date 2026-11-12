@@ -1,0 +1,135 @@
+c06: 8 runs
+  bin 72-144: 36 modes, 24 inside l 100-20000: SZiFi's bin average of a band-limited map is diluted by 0.6667 relative to an in-band-only average (exact mode count)
+  bin 19944-20016: 6992 modes, 5476 inside l 100-20000: SZiFi's bin average of a band-limited map is diluted by 0.7832 relative to an in-band-only average (exact mode count)
+
+S1g_real_baseline_000  [0 s]
+  (A) it0: ours from SZiFi's recorded spectra / SZiFi's sigma - 1, scales 0..14:
+      +1.2e-08 +2.8e-09 -2.0e-09 -2.8e-09 +1.9e-09 -5.2e-09 -2.1e-09 +3.9e-09 -2.0e-09 +4.5e-09 -4.4e-10 -3.7e-09 -1.5e-09 -2.8e-09 +3.3e-09   [scale 0 from y0/q of 68 detections, spread of y0/q 1.1e-07]
+      max |.| over scales 1-14: 5.2e-09; at scale 0: 1.2e-08
+  (B) own binned periodogram vs SZiFi's iteration-0 spectra: 299 bins; auto spectra agree to 1e-6 in 233 bins; 44 in-band bins (144 < l < 19980) differ, max |ratio - 1| 5.1e-02 (median 1.8e-03); agreeing in-band bins: max |ratio - 1| 2.5e-07
+      in-band bins differing by > 1%: l = [900, 972, 1908] (modes per bin [320, 340, 656]); differing bins by range: <1000 2, 1000-3000 2, >=3000 40
+      differing in-band bins below l = 1000: [900, 972] with ratios [0.9944, 1.0331] (modes per bin: [320, 340])
+      band-edge bins: l = 108 ratio 1.0000; l = 19980 ratio 1.0000; l = 20052 (empty, round-off): SZiFi C_00 1.86e-19, ours 6.04e-18
+  (B) it0: ours from our own spectra / SZiFi's sigma - 1, scales 0..14:
+      +1.3e-05 +1.4e-05 +1.5e-05 +1.7e-05 +1.9e-05 +2.2e-05 +2.6e-05 +3.1e-05 +3.8e-05 +4.8e-05 +6.3e-05 +8.3e-05 +1.1e-04 +1.4e-04 +1.7e-04   max |.| (1-14) 1.7e-04
+  (A) it1: ours from SZiFi's recorded spectra / SZiFi's sigma - 1, scales 0..14:
+      +4.7e-09 -3.6e-09 +1.1e-09 -3.3e-09 -1.7e-09 -1.5e-09 +2.4e-09 -2.8e-09 -8.4e-09 +2.3e-10 -5.4e-09 -6.4e-10 +6.0e-09 +2.1e-09 -6.9e-09   [scale 0 from y0/q of 51 detections, spread of y0/q 9.5e-08]
+      max |.| over scales 1-14: 8.4e-09; at scale 0: 4.7e-09
+
+S1g_real_baseline_033  [2 s]
+  (A) it0: ours from SZiFi's recorded spectra / SZiFi's sigma - 1, scales 0..14:
+      -2.4e-09 +2.0e-09 -3.9e-09 -1.7e-09 -4.4e-10 -7.2e-10 -2.1e-09 -2.5e-09 +1.1e-09 -2.5e-09 -3.6e-10 -3.8e-10 -3.6e-09 +1.3e-10 -1.6e-09   [scale 0 from y0/q of 54 detections, spread of y0/q 1.1e-07]
+      max |.| over scales 1-14: 3.9e-09; at scale 0: 2.4e-09
+  (B) own binned periodogram vs SZiFi's iteration-0 spectra: 299 bins; auto spectra agree to 1e-6 in 233 bins; 44 in-band bins (144 < l < 19980) differ, max |ratio - 1| 2.6e-02 (median 2.7e-03); agreeing in-band bins: max |ratio - 1| 2.6e-07
+      in-band bins differing by > 1%: l = [900, 972, 1836, 1908] (modes per bin [320, 340, 660, 656]); differing bins by range: <1000 2, 1000-3000 2, >=3000 40
+      differing in-band bins below l = 1000: [900, 972] with ratios [1.0244, 0.9886] (modes per bin: [320, 340])
+      band-edge bins: l = 108 ratio 1.0000; l = 19980 ratio 1.0000; l = 20052 (empty, round-off): SZiFi C_00 1.83e-19, ours 6.34e-18
+  (B) it0: ours from our own spectra / SZiFi's sigma - 1, scales 0..14:
+      +7.5e-06 +8.2e-06 +8.9e-06 +9.7e-06 +1.1e-05 +1.2e-05 +1.3e-05 +1.4e-05 +1.6e-05 +1.7e-05 +1.9e-05 +2.4e-05 +3.2e-05 +4.5e-05 +6.4e-05   max |.| (1-14) 6.4e-05
+  (A) it1: ours from SZiFi's recorded spectra / SZiFi's sigma - 1, scales 0..14:
+      +8.2e-09 -2.7e-09 -3.7e-09 -2.5e-09 -1.8e-09 -1.2e-09 -3.7e-10 +2.0e-09 +2.2e-10 -2.0e-09 +6.6e-10 -2.1e-09 +2.3e-09 -4.8e-11 +8.6e-09   [scale 0 from y0/q of 39 detections, spread of y0/q 1.1e-07]
+      max |.| over scales 1-14: 8.6e-09; at scale 0: 8.2e-09
+
+S1g_real_goal_000  [4 s]
+  (A) it0: ours from SZiFi's recorded spectra / SZiFi's sigma - 1, scales 0..14:
+      +2.1e-09 -3.0e-09 +3.5e-09 -3.5e-09 +2.2e-09 +4.2e-09 +8.1e-09 +9.8e-10 -4.8e-10 -1.1e-10 -3.1e-09 -3.6e-09 -5.0e-09 -3.3e-09 -3.9e-09   [scale 0 from y0/q of 77 detections, spread of y0/q 1.0e-07]
+      max |.| over scales 1-14: 8.1e-09; at scale 0: 2.1e-09
+  (B) own binned periodogram vs SZiFi's iteration-0 spectra: 299 bins; auto spectra agree to 1e-6 in 233 bins; 44 in-band bins (144 < l < 19980) differ, max |ratio - 1| 5.2e-02 (median 1.8e-03); agreeing in-band bins: max |ratio - 1| 3.0e-07
+      in-band bins differing by > 1%: l = [900, 972, 1836, 1908] (modes per bin [320, 340, 660, 656]); differing bins by range: <1000 2, 1000-3000 2, >=3000 40
+      differing in-band bins below l = 1000: [900, 972] with ratios [0.9943, 1.0335] (modes per bin: [320, 340])
+      band-edge bins: l = 108 ratio 1.0000; l = 19980 ratio 1.0000; l = 20052 (empty, round-off): SZiFi C_00 1.33e-19, ours 3.94e-18
+  (B) it0: ours from our own spectra / SZiFi's sigma - 1, scales 0..14:
+      +1.2e-05 +1.3e-05 +1.4e-05 +1.6e-05 +1.8e-05 +2.1e-05 +2.4e-05 +2.9e-05 +3.6e-05 +4.6e-05 +6.0e-05 +8.0e-05 +1.1e-04 +1.4e-04 +1.8e-04   max |.| (1-14) 1.8e-04
+  (A) it1: ours from SZiFi's recorded spectra / SZiFi's sigma - 1, scales 0..14:
+      +4.4e-09 -7.3e-10 -4.5e-09 -8.8e-10 +1.1e-09 -3.5e-09 -1.6e-09 -2.7e-09 -1.7e-09 +3.6e-10 +2.4e-09 +2.2e-09 -4.6e-10 +4.5e-09 +7.3e-09   [scale 0 from y0/q of 43 detections, spread of y0/q 1.0e-07]
+      max |.| over scales 1-14: 7.3e-09; at scale 0: 4.4e-09
+
+S1g_real_goal_033  [6 s]
+  (A) it0: ours from SZiFi's recorded spectra / SZiFi's sigma - 1, scales 0..14:
+      +4.0e-09 +4.5e-09 +2.1e-09 -6.4e-09 +4.4e-10 +3.5e-09 +1.1e-09 -3.5e-09 +4.9e-09 +2.9e-09 -1.1e-09 +3.9e-09 -6.2e-09 -3.9e-09 -4.0e-09   [scale 0 from y0/q of 67 detections, spread of y0/q 1.0e-07]
+      max |.| over scales 1-14: 6.4e-09; at scale 0: 4.0e-09
+  (B) own binned periodogram vs SZiFi's iteration-0 spectra: 299 bins; auto spectra agree to 1e-6 in 233 bins; 44 in-band bins (144 < l < 19980) differ, max |ratio - 1| 2.7e-02 (median 2.5e-03); agreeing in-band bins: max |ratio - 1| 2.5e-07
+      in-band bins differing by > 1%: l = [900, 972, 1908] (modes per bin [320, 340, 656]); differing bins by range: <1000 2, 1000-3000 2, >=3000 40
+      differing in-band bins below l = 1000: [900, 972] with ratios [1.0245, 0.9885] (modes per bin: [320, 340])
+      band-edge bins: l = 108 ratio 1.0000; l = 19980 ratio 1.0000; l = 20052 (empty, round-off): SZiFi C_00 1.30e-19, ours 3.90e-18
+  (B) it0: ours from our own spectra / SZiFi's sigma - 1, scales 0..14:
+      +1.1e-05 +1.2e-05 +1.3e-05 +1.4e-05 +1.6e-05 +1.9e-05 +2.1e-05 +2.4e-05 +2.7e-05 +3.0e-05 +3.4e-05 +3.9e-05 +4.7e-05 +5.9e-05 +7.6e-05   max |.| (1-14) 7.6e-05
+  (A) it1: ours from SZiFi's recorded spectra / SZiFi's sigma - 1, scales 0..14:
+      +6.9e-09 +3.0e-09 +3.7e-09 -6.1e-10 -1.9e-09 -6.5e-10 +5.8e-09 -2.0e-09 +5.2e-09 +4.4e-09 +1.9e-09 +1.9e-09 +3.5e-09 +3.7e-09 -3.7e-09   [scale 0 from y0/q of 47 detections, spread of y0/q 1.0e-07]
+      max |.| over scales 1-14: 5.8e-09; at scale 0: 6.9e-09
+
+S1g_inj_baseline_000  [8 s]
+  (A) it0: ours from SZiFi's recorded spectra / SZiFi's sigma - 1, scales 0..14:
+      -6.3e-09 +3.8e-09 +6.0e-09 -3.0e-09 +2.5e-09 -1.4e-09 +5.5e-10 +4.5e-10 +4.4e-09 +2.0e-09 +5.6e-09 +2.9e-09 -3.6e-10 -9.8e-09 +4.2e-09   [scale 0 from y0/q of 21 detections, spread of y0/q 1.0e-07]
+      max |.| over scales 1-14: 9.8e-09; at scale 0: 6.3e-09
+  (B) own binned periodogram vs SZiFi's iteration-0 spectra: 299 bins; auto spectra agree to 1e-6 in 233 bins; 44 in-band bins (144 < l < 19980) differ, max |ratio - 1| 4.7e-02 (median 1.6e-03); agreeing in-band bins: max |ratio - 1| 2.6e-07
+      in-band bins differing by > 1%: l = [900, 972, 1836, 1908] (modes per bin [320, 340, 660, 656]); differing bins by range: <1000 2, 1000-3000 2, >=3000 40
+      differing in-band bins below l = 1000: [900, 972] with ratios [0.9946, 1.031] (modes per bin: [320, 340])
+      band-edge bins: l = 108 ratio 1.0000; l = 19980 ratio 1.0000; l = 20052 (empty, round-off): SZiFi C_00 1.90e-19, ours 6.08e-18
+  (B) it0: ours from our own spectra / SZiFi's sigma - 1, scales 0..14:
+      +1.5e-05 +1.7e-05 +1.8e-05 +2.1e-05 +2.4e-05 +2.8e-05 +3.3e-05 +4.0e-05 +5.0e-05 +6.2e-05 +7.7e-05 +9.4e-05 +1.1e-04 +1.3e-04 +1.4e-04   max |.| (1-14) 1.4e-04
+  (A) it1: ours from SZiFi's recorded spectra / SZiFi's sigma - 1, scales 0..14:
+      +1.7e-08 +7.8e-10 +2.4e-09 -3.2e-09 -2.9e-10 +1.7e-11 +1.8e-09 +4.1e-09 +1.1e-09 -1.4e-09 -6.2e-10 -1.3e-09 +1.8e-09 -5.5e-09 -8.6e-10   [scale 0 from y0/q of 23 detections, spread of y0/q 8.3e-08]
+      max |.| over scales 1-14: 5.5e-09; at scale 0: 1.7e-08
+
+S1g_inj_baseline_033  [9 s]
+  (A) it0: ours from SZiFi's recorded spectra / SZiFi's sigma - 1, scales 0..14:
+      +1.4e-08 +1.7e-09 -4.9e-10 -3.5e-09 -5.2e-09 -5.0e-10 -1.8e-09 -1.4e-09 +7.9e-09 -2.7e-09 +2.6e-09 -3.1e-09 +2.2e-09 -3.9e-09 -4.8e-10   [scale 0 from y0/q of 13 detections, spread of y0/q 8.1e-08]
+      max |.| over scales 1-14: 7.9e-09; at scale 0: 1.4e-08
+  (B) own binned periodogram vs SZiFi's iteration-0 spectra: 299 bins; auto spectra agree to 1e-6 in 233 bins; 44 in-band bins (144 < l < 19980) differ, max |ratio - 1| 2.6e-02 (median 2.8e-03); agreeing in-band bins: max |ratio - 1| 2.3e-07
+      in-band bins differing by > 1%: l = [900, 972, 1836, 1908] (modes per bin [320, 340, 660, 656]); differing bins by range: <1000 2, 1000-3000 2, >=3000 40
+      differing in-band bins below l = 1000: [900, 972] with ratios [1.0241, 0.9891] (modes per bin: [320, 340])
+      band-edge bins: l = 108 ratio 1.0000; l = 19980 ratio 1.0000; l = 20052 (empty, round-off): SZiFi C_00 1.90e-19, ours 6.17e-18
+  (B) it0: ours from our own spectra / SZiFi's sigma - 1, scales 0..14:
+      -4.6e-07 +7.0e-08 +7.1e-07 +1.5e-06 +2.5e-06 +4.0e-06 +5.6e-06 +7.7e-06 +1.0e-05 +1.4e-05 +1.8e-05 +2.5e-05 +3.6e-05 +5.2e-05 +7.4e-05   max |.| (1-14) 7.4e-05
+  (A) it1: ours from SZiFi's recorded spectra / SZiFi's sigma - 1, scales 0..14:
+      -1.8e-08 -3.0e-09 +3.0e-09 +1.5e-09 +1.9e-09 +3.6e-09 +9.1e-10 +4.4e-10 -1.0e-09 +2.3e-10 +4.8e-09 +5.2e-10 +5.6e-11 -5.8e-09 -6.0e-09   [scale 0 from y0/q of 11 detections, spread of y0/q 8.4e-08]
+      max |.| over scales 1-14: 6.0e-09; at scale 0: 1.8e-08
+
+S1g_inj_goal_000  [11 s]
+  (A) it0: ours from SZiFi's recorded spectra / SZiFi's sigma - 1, scales 0..14:
+      -6.1e-09 +4.8e-09 +1.2e-09 +4.6e-10 +1.5e-09 -2.0e-09 +2.8e-09 -3.7e-09 -4.8e-09 -3.8e-09 -9.9e-10 -1.5e-09 -5.2e-09 -9.9e-09 -6.0e-09   [scale 0 from y0/q of 17 detections, spread of y0/q 7.8e-08]
+      max |.| over scales 1-14: 9.9e-09; at scale 0: 6.1e-09
+  (B) own binned periodogram vs SZiFi's iteration-0 spectra: 299 bins; auto spectra agree to 1e-6 in 233 bins; 44 in-band bins (144 < l < 19980) differ, max |ratio - 1| 4.5e-02 (median 1.7e-03); agreeing in-band bins: max |ratio - 1| 3.8e-07
+      in-band bins differing by > 1%: l = [972, 1836, 1908] (modes per bin [340, 660, 656]); differing bins by range: <1000 2, 1000-3000 2, >=3000 40
+      differing in-band bins below l = 1000: [900, 972] with ratios [0.9959, 1.03] (modes per bin: [320, 340])
+      band-edge bins: l = 108 ratio 1.0000; l = 19980 ratio 1.0000; l = 20052 (empty, round-off): SZiFi C_00 1.35e-19, ours 4.01e-18
+  (B) it0: ours from our own spectra / SZiFi's sigma - 1, scales 0..14:
+      +1.5e-05 +1.6e-05 +1.7e-05 +1.9e-05 +2.1e-05 +2.4e-05 +2.7e-05 +3.1e-05 +3.6e-05 +4.3e-05 +5.3e-05 +6.5e-05 +7.9e-05 +9.7e-05 +1.1e-04   max |.| (1-14) 1.1e-04
+  (A) it1: ours from SZiFi's recorded spectra / SZiFi's sigma - 1, scales 0..14:
+      -6.7e-09 -2.0e-10 -3.6e-09 -1.9e-09 -3.2e-09 +3.8e-09 +1.5e-09 +6.3e-10 +1.6e-09 -3.8e-09 +4.5e-09 -3.0e-09 -2.0e-09 +3.2e-09 +8.1e-10   [scale 0 from y0/q of 17 detections, spread of y0/q 9.9e-08]
+      max |.| over scales 1-14: 4.5e-09; at scale 0: 6.7e-09
+
+S1g_inj_goal_033  [13 s]
+  (A) it0: ours from SZiFi's recorded spectra / SZiFi's sigma - 1, scales 0..14:
+      -1.2e-08 +4.6e-09 -2.8e-09 -1.7e-10 +1.7e-11 -5.9e-09 -2.0e-09 -6.3e-09 +2.9e-09 -1.2e-09 -5.4e-09 +8.4e-10 -3.4e-09 +9.5e-09 +2.3e-09   [scale 0 from y0/q of 16 detections, spread of y0/q 1.1e-07]
+      max |.| over scales 1-14: 9.5e-09; at scale 0: 1.2e-08
+  (B) own binned periodogram vs SZiFi's iteration-0 spectra: 299 bins; auto spectra agree to 1e-6 in 233 bins; 44 in-band bins (144 < l < 19980) differ, max |ratio - 1| 2.7e-02 (median 3.0e-03); agreeing in-band bins: max |ratio - 1| 2.4e-07
+      in-band bins differing by > 1%: l = [900, 972, 1908] (modes per bin [320, 340, 656]); differing bins by range: <1000 2, 1000-3000 2, >=3000 40
+      differing in-band bins below l = 1000: [900, 972] with ratios [1.0249, 0.9876] (modes per bin: [320, 340])
+      band-edge bins: l = 108 ratio 1.0000; l = 19980 ratio 1.0000; l = 20052 (empty, round-off): SZiFi C_00 1.35e-19, ours 4.14e-18
+  (B) it0: ours from our own spectra / SZiFi's sigma - 1, scales 0..14:
+      +8.7e-06 +9.8e-06 +1.1e-05 +1.2e-05 +1.4e-05 +1.6e-05 +1.8e-05 +2.1e-05 +2.3e-05 +2.5e-05 +2.7e-05 +2.9e-05 +3.3e-05 +3.9e-05 +5.0e-05   max |.| (1-14) 5.0e-05
+  (A) it1: ours from SZiFi's recorded spectra / SZiFi's sigma - 1, scales 0..14:
+      -3.2e-08 +4.3e-10 -2.2e-09 -1.5e-09 +7.8e-10 -1.6e-09 +6.4e-09 +8.2e-10 -3.3e-09 -4.1e-09 -1.7e-10 -1.0e-08 -4.9e-09 -1.8e-09 -3.1e-09   [scale 0 from y0/q of 13 detections, spread of y0/q 8.8e-08]
+      max |.| over scales 1-14: 1.0e-08; at scale 0: 3.2e-08
+
+done [15 s]; peak RSS 0.45 GB
+       15.34 real        14.97 user         0.30 sys
+           453279744  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               34760  page reclaims
+                 100  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 412  voluntary context switches
+                 269  involuntary context switches
+        174055926742  instructions retired
+         47849212688  cycles elapsed
+           430147456  peak memory footprint

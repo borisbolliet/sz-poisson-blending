@@ -1,0 +1,20 @@
+z02b: S1 on tile 0 baseline with the release on: old inverse covariance released 1 time(s); 81.6 s, peak RSS 2.30 GB (smoke run without it: 2.21 GB)
+compared 36 arrays (catalogues, sigma, spectra, unmasked fraction, parameters): 0 differ
+       84.83 real        80.31 user         3.18 sys
+          2295496704  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              588759  page reclaims
+                 118  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                2354  voluntary context switches
+               20852  involuntary context switches
+        734436655690  instructions retired
+        248027939732  cycles elapsed
+          2662177280  peak memory footprint

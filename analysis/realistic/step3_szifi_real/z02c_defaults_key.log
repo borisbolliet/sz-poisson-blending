@@ -1,0 +1,2 @@
+'snr_weigthing' in SZiFi's defaults: True; 'snr_weighting' in SZiFi's defaults: False
+cluster_finder.find_clusters fails without 'snr_weighting': KeyError: 'snr_weighting' (raised in mmf.py, line 95, function find_clusters)

@@ -1,0 +1,47 @@
+j05: SZiFi's merge_detections, called by the verifier (numpy 2.5.4, healpy 1.20.1, scikit-learn 1.9.1)
+  'closest' as shipped: fails: ValueError: setting an array element with a sequence. [last SZiFi frame ['sphere.py:94 (get_angdist)']]
+  'fof' as shipped: fails: TypeError: AgglomerativeClustering.__init__() got an unexpected keyword argument 'affinity' [last SZiFi frame ['cat.py:176 (merge_detections)']]
+  'closest' with the scikit-learn adapter only: fails: ValueError: setting an array element with a sequence.
+  'fof' with the scikit-learn adapter only: fails: ValueError: setting an array element with a sequence.
+  'closest' with both adapters: runs
+  'fof' with both adapters: runs
+
+  prod_goal_088: 348 interior entries with q >= 5
+    HEALPix pixel 384 (lon180lat0): closest    1': keeps 319; identical to the build's SZiFi result: True
+    HEALPix pixel 384 (lon180lat0): closest   10': keeps 272; identical to the build's SZiFi result: True
+    HEALPix pixel 384 (lon180lat0): fof        1': keeps 319; identical to the build's SZiFi result: True
+    HEALPix pixel 384 (lon180lat0): fof       10': keeps 267; identical to the build's SZiFi result: True
+    HEALPix pixel  42 (lon45lat60): closest    1': keeps 319; identical to the build's SZiFi result: True
+    HEALPix pixel  42 (lon45lat60): closest   10': keeps 272; identical to the build's SZiFi result: True
+    HEALPix pixel  42 (lon45lat60): fof        1': keeps 319; identical to the build's SZiFi result: True
+    HEALPix pixel  42 (lon45lat60): fof       10': keeps 267; identical to the build's SZiFi result: True
+
+  szifi_goal_198: 211 interior entries with q >= 5
+    HEALPix pixel 384 (lon180lat0): closest    1': keeps 202; identical to the build's SZiFi result: True
+    HEALPix pixel 384 (lon180lat0): closest   10': keeps 186; identical to the build's SZiFi result: True
+    HEALPix pixel 384 (lon180lat0): fof        1': keeps 202; identical to the build's SZiFi result: True
+    HEALPix pixel 384 (lon180lat0): fof       10': keeps 186; identical to the build's SZiFi result: True
+    HEALPix pixel  42 (lon45lat60): closest    1': keeps 202; identical to the build's SZiFi result: True
+    HEALPix pixel  42 (lon45lat60): closest   10': keeps 186; identical to the build's SZiFi result: True
+    HEALPix pixel  42 (lon45lat60): fof        1': keeps 202; identical to the build's SZiFi result: True
+    HEALPix pixel  42 (lon45lat60): fof       10': keeps 186; identical to the build's SZiFi result: True
+done [22 s]
+       26.53 real        22.15 user         0.77 sys
+           259440640  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               44863  page reclaims
+                3582  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                2937  voluntary context switches
+                7052  involuntary context switches
+        253715508732  instructions retired
+         66538159846  cycles elapsed
+           205997888  peak memory footprint
+exit 0

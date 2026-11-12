@@ -1,0 +1,22 @@
+j09: compute of the verifier's processes
+  SZiFi jobs (one process each, one at a time): configuration, runs, mean / max wall [s], mean CPU [s], max RSS [GB]
+    S0         1 runs: wall  106.1 /  106.1; CPU  105.6; max RSS 1.58
+    S1        25 runs: wall  107.4 /  153.6; CPU  105.8; max RSS 1.72
+    S2        25 runs: wall  106.9 /  156.6; CPU  104.6; max RSS 1.72
+    S3i        4 runs: wall   96.1 /   99.9; CPU   95.9; max RSS 1.42
+    S3it0     13 runs: wall   72.2 /  325.5; CPU   71.1; max RSS 1.37
+  SZiFi jobs: 68 runs, wall 1.89 h, CPU 1.85 h, largest max RSS 1.72 GB
+    j00_env.log              wall    22.1 s, CPU    19.4 s, max RSS 0.47 GB
+    j01_maps.log             wall   205.7 s, CPU   186.6 s, max RSS 1.38 GB
+    j02_repro.log            wall     0.3 s, CPU     0.2 s, max RSS 0.04 GB
+    j03_analytic.log         wall   130.8 s, CPU   111.8 s, max RSS 1.30 GB
+    j04_analysis.log         wall    30.0 s, CPU     2.4 s, max RSS 0.13 GB
+    j05_merge_szifi.log      wall    26.5 s, CPU    22.9 s, max RSS 0.26 GB
+    j06_merge_compare.log    wall     5.1 s, CPU     4.2 s, max RSS 0.13 GB
+    j07_edges.log            wall     0.7 s, CPU     0.7 s, max RSS 0.10 GB
+    j08_emul.log             wall     0.7 s, CPU     0.6 s, max RSS 0.06 GB
+    j10_mixed.log            wall    15.3 s, CPU    14.8 s, max RSS 1.16 GB
+    j11_edge_mask.log        wall     1.0 s, CPU     1.0 s, max RSS 0.12 GB
+    j12_edge_test.log        wall    64.4 s, CPU    64.4 s, max RSS 1.12 GB
+    j13_edge_sigma.log       wall   145.4 s, CPU   145.3 s, max RSS 1.72 GB
+  all processes: wall 2.07 h (summed), CPU 2.01 h; largest concurrent memory bound 1.72 + 0.13 = 1.86 GB (one SZiFi job + one light script)

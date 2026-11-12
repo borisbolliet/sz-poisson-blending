@@ -1,0 +1,29 @@
+Coupling matrix found
+z06b: tile 0 baseline, S3 settings, noise iteration 0; covariance grid (556, 556, 6, 6) [7 s]
+  isotropic      : modes with a non-positive eigenvalue   0.00%; smallest eigenvalue / largest, median 1.3e-02; MMF weight a^T C^-1 a < 0 in 0.00% of the modes
+  mixed_gaussian : modes with a non-positive eigenvalue  45.49%; smallest eigenvalue / largest, median 4.4e-03; MMF weight a^T C^-1 a < 0 in 6.13% of the modes
+  l     1- 1000: weight mixed / isotropic: median +0.871, 1-99% [+6.17e-01, +1.19e+00], |ratio| > 10 in 0.00%
+  l  1000- 3000: weight mixed / isotropic: median +1.003, 1-99% [+1.38e-02, +1.92e+00], |ratio| > 10 in 0.21%
+  l  3000- 6000: weight mixed / isotropic: median +1.035, 1-99% [-6.37e+00, +8.20e+00], |ratio| > 10 in 1.45%
+  l  6000-10500: weight mixed / isotropic: median +0.761, 1-99% [-4.07e+00, +5.34e+00], |ratio| > 10 in 0.96%
+  isotropic      : correlation coefficients C_ij / sqrt(C_ii C_jj) outside [-1, 1] in 0.00% of the (mode, pair) entries; diagonal mixed / isotropic median 0.997
+  mixed_gaussian : correlation coefficients C_ij / sqrt(C_ii C_jj) outside [-1, 1] in 4.14% of the (mode, pair) entries; diagonal mixed / isotropic median 0.997
+done [10 s]
+       12.68 real         8.86 user         3.48 sys
+           854163456  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1140011  page reclaims
+                  80  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+                5355  involuntary context switches
+         78306894441  instructions retired
+         35938024120  cycles elapsed
+           784550784  peak memory footprint

@@ -1,0 +1,30 @@
+z09: SZiFi's merge_detections on interior catalogues (>= 9.0' from the edges); sky map via SZiFi's get_lonlat, HEALPix nside 8 pixel 384
+  'closest' as SZiFi calls it: fails (numpy 2.5.4, healpy 1.20.1, scikit-learn 1.9.1): ValueError: setting an array element with a sequence.
+  'fof' as SZiFi calls it: fails (numpy 2.5.4, healpy 1.20.1, scikit-learn 1.9.1): TypeError: AgglomerativeClustering.__init__() got an unexpected keyword argument 'affinity'
+  'fof' with the scikit-learn adapter only: fails (numpy 2.5.4, healpy 1.20.1, scikit-learn 1.9.1): ValueError: setting an array element with a sequence.
+  'closest' with the healpy adapter: runs
+  'fof' with both adapters: runs
+  -> all merges below use both adapters (z_szlib.sklearn_affinity_adapter, healpy_angdist_adapter)
+  prod  baseline: 30 tiles merged
+  prod  goal    : 30 tiles merged
+  szifi baseline: 30 tiles merged
+  szifi goal    : 30 tiles merged
+done [273 s]
+      276.34 real       274.35 user         1.14 sys
+           260849664  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               71626  page reclaims
+                2182  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                2609  voluntary context switches
+               26952  involuntary context switches
+       3814650574910  instructions retired
+        832312266129  cycles elapsed
+           206423808  peak memory footprint

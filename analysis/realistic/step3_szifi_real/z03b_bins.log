@@ -1,0 +1,5 @@
+in-band bins (lower edge 72 ... 19944): 277; bins where NaMaster's 'none' differs from the periodogram by > 1e-6: 126
+  lower edge 72-1000: 6 differing bins, largest |none/periodogram - 1| = 0.0810, median 0.0114
+  lower edge 1000-3000: 3 differing bins, largest |none/periodogram - 1| = 0.0144, median 0.0073
+  lower edge 3000-20000: 117 differing bins, largest |none/periodogram - 1| = 0.0109, median 0.0014
+  the other 151 in-band bins: largest |none/periodogram - 1| = 9.7e-15

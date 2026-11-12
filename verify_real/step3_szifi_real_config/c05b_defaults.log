@@ -1,0 +1,21 @@
+default dictionary has 'snr_weigthing': True; 'snr_weighting': False
+(a) defaults as shipped: KeyError 'snr_weighting' at szifi/mmf.py:95
+(b) defaults + snr_weighting False: LinAlgError Singular matrix at ../szifi-venv/lib/python3.12/site-packages/numpy/linalg/_linalg.py:144
+        3.49 real         3.21 user         0.26 sys
+           337838080  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               62799  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   4  voluntary context switches
+                 182  involuntary context switches
+         30341476561  instructions retired
+         10915386916  cycles elapsed
+           259803008  peak memory footprint

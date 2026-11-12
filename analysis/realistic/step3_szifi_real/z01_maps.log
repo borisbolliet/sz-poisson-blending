@@ -1,0 +1,106 @@
+z01: 30 realistic tiles and 10 noise-only tiles per noise level -> /Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/out/maps
+  round trip rfft2(map) vs X (float32 maps), tile 0 baseline: max |diff| / max |X| = 4.2e-10
+  real    0 baseline: it0: 343 det (stored 343), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 436 det (stored 436), identical catalogue True, max|sigma/stored-1| 0.0e+00  [5 s]
+  round trip rfft2(map) vs X (float32 maps), tile 0 goal: max |diff| / max |X| = 3.7e-10
+  real    0 goal    : it0: 438 det (stored 438), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 603 det (stored 603), identical catalogue True, max|sigma/stored-1| 0.0e+00  [6 s]
+  real   11 baseline: it0: 319 det (stored 319), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 417 det (stored 417), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real   11 goal    : it0: 423 det (stored 423), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 591 det (stored 591), identical catalogue True, max|sigma/stored-1| 0.0e+00  [4 s]
+  real   22 baseline: it0: 354 det (stored 354), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 439 det (stored 439), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real   22 goal    : it0: 451 det (stored 451), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 611 det (stored 611), identical catalogue True, max|sigma/stored-1| 0.0e+00  [4 s]
+  real   33 baseline: it0: 305 det (stored 305), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 388 det (stored 388), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real   33 goal    : it0: 412 det (stored 412), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 571 det (stored 571), identical catalogue True, max|sigma/stored-1| 0.0e+00  [5 s]
+  real   44 baseline: it0: 329 det (stored 329), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 418 det (stored 418), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real   44 goal    : it0: 434 det (stored 434), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 571 det (stored 571), identical catalogue True, max|sigma/stored-1| 0.0e+00  [5 s]
+  real   55 baseline: it0: 301 det (stored 301), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 398 det (stored 398), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real   55 goal    : it0: 410 det (stored 410), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 569 det (stored 569), identical catalogue True, max|sigma/stored-1| 0.0e+00  [5 s]
+  real   66 baseline: it0: 337 det (stored 337), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 424 det (stored 424), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real   66 goal    : it0: 441 det (stored 441), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 595 det (stored 595), identical catalogue True, max|sigma/stored-1| 0.0e+00  [4 s]
+  real   77 baseline: it0: 342 det (stored 342), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 464 det (stored 464), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real   77 goal    : it0: 449 det (stored 449), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 644 det (stored 644), identical catalogue True, max|sigma/stored-1| 0.0e+00  [5 s]
+  real   88 baseline: it0: 339 det (stored 339), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 454 det (stored 454), identical catalogue True, max|sigma/stored-1| 0.0e+00  [4 s]
+  real   88 goal    : it0: 472 det (stored 472), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 631 det (stored 631), identical catalogue True, max|sigma/stored-1| 0.0e+00  [5 s]
+  real   99 baseline: it0: 293 det (stored 293), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 425 det (stored 425), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real   99 goal    : it0: 380 det (stored 380), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 571 det (stored 571), identical catalogue True, max|sigma/stored-1| 0.0e+00  [4 s]
+  real  110 baseline: it0: 330 det (stored 330), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 427 det (stored 427), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real  110 goal    : it0: 413 det (stored 413), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 589 det (stored 589), identical catalogue True, max|sigma/stored-1| 0.0e+00  [4 s]
+  real  121 baseline: it0: 304 det (stored 304), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 393 det (stored 393), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real  121 goal    : it0: 401 det (stored 401), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 561 det (stored 561), identical catalogue True, max|sigma/stored-1| 0.0e+00  [5 s]
+  real  132 baseline: it0: 315 det (stored 315), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 415 det (stored 415), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real  132 goal    : it0: 440 det (stored 440), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 602 det (stored 602), identical catalogue True, max|sigma/stored-1| 0.0e+00  [5 s]
+  real  143 baseline: it0: 317 det (stored 317), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 436 det (stored 436), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real  143 goal    : it0: 429 det (stored 429), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 608 det (stored 608), identical catalogue True, max|sigma/stored-1| 0.0e+00  [4 s]
+  real  154 baseline: it0: 359 det (stored 359), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 434 det (stored 434), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real  154 goal    : it0: 455 det (stored 455), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 618 det (stored 618), identical catalogue True, max|sigma/stored-1| 0.0e+00  [4 s]
+  real  165 baseline: it0: 320 det (stored 320), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 415 det (stored 415), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real  165 goal    : it0: 423 det (stored 423), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 609 det (stored 609), identical catalogue True, max|sigma/stored-1| 0.0e+00  [4 s]
+  real  176 baseline: it0: 340 det (stored 340), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 428 det (stored 428), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real  176 goal    : it0: 429 det (stored 429), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 597 det (stored 597), identical catalogue True, max|sigma/stored-1| 0.0e+00  [4 s]
+  real  187 baseline: it0: 307 det (stored 307), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 414 det (stored 414), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real  187 goal    : it0: 418 det (stored 418), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 577 det (stored 577), identical catalogue True, max|sigma/stored-1| 0.0e+00  [4 s]
+  real  198 baseline: it0: 320 det (stored 320), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 412 det (stored 412), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real  198 goal    : it0: 433 det (stored 433), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 591 det (stored 591), identical catalogue True, max|sigma/stored-1| 0.0e+00  [4 s]
+  real  209 baseline: it0: 320 det (stored 320), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 441 det (stored 441), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real  209 goal    : it0: 403 det (stored 403), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 598 det (stored 598), identical catalogue True, max|sigma/stored-1| 0.0e+00  [4 s]
+  real  220 baseline: it0: 310 det (stored 310), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 399 det (stored 399), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real  220 goal    : it0: 406 det (stored 406), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 554 det (stored 554), identical catalogue True, max|sigma/stored-1| 0.0e+00  [4 s]
+  real  231 baseline: it0: 303 det (stored 303), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 382 det (stored 382), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real  231 goal    : it0: 422 det (stored 422), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 562 det (stored 562), identical catalogue True, max|sigma/stored-1| 0.0e+00  [4 s]
+  real  242 baseline: it0: 282 det (stored 282), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 379 det (stored 379), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real  242 goal    : it0: 405 det (stored 405), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 545 det (stored 545), identical catalogue True, max|sigma/stored-1| 0.0e+00  [4 s]
+  real  253 baseline: it0: 286 det (stored 286), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 409 det (stored 409), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real  253 goal    : it0: 394 det (stored 394), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 573 det (stored 573), identical catalogue True, max|sigma/stored-1| 0.0e+00  [5 s]
+  real  264 baseline: it0: 329 det (stored 329), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 396 det (stored 396), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real  264 goal    : it0: 420 det (stored 420), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 571 det (stored 571), identical catalogue True, max|sigma/stored-1| 0.0e+00  [5 s]
+  real  275 baseline: it0: 309 det (stored 309), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 406 det (stored 406), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real  275 goal    : it0: 418 det (stored 418), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 542 det (stored 542), identical catalogue True, max|sigma/stored-1| 0.0e+00  [5 s]
+  real  286 baseline: it0: 313 det (stored 313), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 396 det (stored 396), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real  286 goal    : it0: 434 det (stored 434), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 566 det (stored 566), identical catalogue True, max|sigma/stored-1| 0.0e+00  [4 s]
+  real  297 baseline: it0: 265 det (stored 265), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 402 det (stored 402), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real  297 goal    : it0: 382 det (stored 382), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 586 det (stored 586), identical catalogue True, max|sigma/stored-1| 0.0e+00  [4 s]
+  real  308 baseline: it0: 317 det (stored 317), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 405 det (stored 405), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real  308 goal    : it0: 402 det (stored 402), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 590 det (stored 590), identical catalogue True, max|sigma/stored-1| 0.0e+00  [4 s]
+  real  319 baseline: it0: 330 det (stored 330), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 451 det (stored 451), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  real  319 goal    : it0: 444 det (stored 444), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 624 det (stored 624), identical catalogue True, max|sigma/stored-1| 0.0e+00  [4 s]
+  noise   0 baseline: it0: 52 det (stored 52), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 56 det (stored 56), identical catalogue True, max|sigma/stored-1| 0.0e+00  [1 s]
+  noise   0 goal    : it0: 63 det (stored 63), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 66 det (stored 66), identical catalogue True, max|sigma/stored-1| 0.0e+00  [2 s]
+  noise  11 baseline: it0: 40 det (stored 40), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 43 det (stored 43), identical catalogue True, max|sigma/stored-1| 0.0e+00  [1 s]
+  noise  11 goal    : it0: 50 det (stored 50), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 53 det (stored 53), identical catalogue True, max|sigma/stored-1| 0.0e+00  [2 s]
+  noise  22 baseline: it0: 53 det (stored 53), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 57 det (stored 57), identical catalogue True, max|sigma/stored-1| 0.0e+00  [1 s]
+  noise  22 goal    : it0: 58 det (stored 58), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 61 det (stored 61), identical catalogue True, max|sigma/stored-1| 0.0e+00  [2 s]
+  noise  33 baseline: it0: 45 det (stored 45), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 51 det (stored 51), identical catalogue True, max|sigma/stored-1| 0.0e+00  [1 s]
+  noise  33 goal    : it0: 45 det (stored 45), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 56 det (stored 56), identical catalogue True, max|sigma/stored-1| 0.0e+00  [2 s]
+  noise  44 baseline: it0: 40 det (stored 40), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 43 det (stored 43), identical catalogue True, max|sigma/stored-1| 0.0e+00  [1 s]
+  noise  44 goal    : it0: 49 det (stored 49), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 51 det (stored 51), identical catalogue True, max|sigma/stored-1| 0.0e+00  [2 s]
+  noise  55 baseline: it0: 44 det (stored 44), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 48 det (stored 48), identical catalogue True, max|sigma/stored-1| 0.0e+00  [1 s]
+  noise  55 goal    : it0: 47 det (stored 47), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 51 det (stored 51), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  noise  66 baseline: it0: 52 det (stored 52), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 55 det (stored 55), identical catalogue True, max|sigma/stored-1| 0.0e+00  [1 s]
+  noise  66 goal    : it0: 50 det (stored 50), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 53 det (stored 53), identical catalogue True, max|sigma/stored-1| 0.0e+00  [2 s]
+  noise  77 baseline: it0: 57 det (stored 57), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 60 det (stored 60), identical catalogue True, max|sigma/stored-1| 0.0e+00  [1 s]
+  noise  77 goal    : it0: 52 det (stored 52), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 61 det (stored 61), identical catalogue True, max|sigma/stored-1| 0.0e+00  [3 s]
+  noise  88 baseline: it0: 39 det (stored 39), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 43 det (stored 43), identical catalogue True, max|sigma/stored-1| 0.0e+00  [1 s]
+  noise  88 goal    : it0: 44 det (stored 44), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 42 det (stored 42), identical catalogue True, max|sigma/stored-1| 0.0e+00  [2 s]
+  noise  99 baseline: it0: 36 det (stored 36), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 42 det (stored 42), identical catalogue True, max|sigma/stored-1| 0.0e+00  [1 s]
+  noise  99 goal    : it0: 50 det (stored 50), identical catalogue True, max|sigma/stored-1| 0.0e+00; it1: 52 det (stored 52), identical catalogue True, max|sigma/stored-1| 0.0e+00  [2 s]
+
+regeneration: 80 of 80 tile runs identical to the stored production outputs (catalogues and sigma)
+float32 maps: max |map32 - map64| / map std = 2.9e-07
+maps written: 80 files, 2.76 GB
+done [160 s]; peak RSS 0.86 GB
+      161.28 real       156.45 user         2.68 sys
+           862011392  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              278404  page reclaims
+                 228  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                2163  voluntary context switches
+               25937  involuntary context switches
+       1599034606262  instructions retired
+        475201601518  cycles elapsed
+           893258880  peak memory footprint

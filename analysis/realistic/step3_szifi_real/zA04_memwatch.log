@@ -1,0 +1,114 @@
+zA04_memwatch started 13:39:16
+13:39:16: 0 processes, sum RSS 0.00 GB 
+13:40:18: 2 processes, sum RSS 2.35 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.03; zA03_queue.py /Users/boris/GitHub/sz-poi 1.32
+13:41:19: 2 processes, sum RSS 2.58 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.36; zA03_queue.py /Users/boris/GitHub/sz-poi 1.23
+13:42:20: 2 processes, sum RSS 2.40 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.36; zA03_queue.py /Users/boris/GitHub/sz-poi 1.04
+13:43:22: 2 processes, sum RSS 2.75 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.41; zA03_queue.py /Users/boris/GitHub/sz-poi 1.34
+13:44:23: 2 processes, sum RSS 2.90 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.24; zA03_queue.py /Users/boris/GitHub/sz-poi 1.66
+13:45:24: 2 processes, sum RSS 2.41 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.05; zA03_queue.py /Users/boris/GitHub/sz-poi 1.36
+13:46:25: 2 processes, sum RSS 2.33 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.02; zA03_queue.py /Users/boris/GitHub/sz-poi 1.31
+13:47:27: 2 processes, sum RSS 2.47 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.42; zA03_queue.py /Users/boris/GitHub/sz-poi 1.04
+13:48:28: 2 processes, sum RSS 2.58 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.29; zA03_queue.py /Users/boris/GitHub/sz-poi 1.29
+13:49:29: 2 processes, sum RSS 2.76 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.35; zA03_queue.py /Users/boris/GitHub/sz-poi 1.41
+13:50:30: 2 processes, sum RSS 2.97 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.54; zA03_queue.py /Users/boris/GitHub/sz-poi 1.43
+13:51:32: 2 processes, sum RSS 2.49 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.22; zA03_queue.py /Users/boris/GitHub/sz-poi 1.27
+13:52:33: 2 processes, sum RSS 2.97 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.30; zA03_queue.py /Users/boris/GitHub/sz-poi 1.67
+13:53:34: 2 processes, sum RSS 2.64 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.35; zA03_queue.py /Users/boris/GitHub/sz-poi 1.29
+13:54:36: 2 processes, sum RSS 2.76 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.39; zA03_queue.py /Users/boris/GitHub/sz-poi 1.37
+13:55:37: 2 processes, sum RSS 2.08 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.04; zA03_queue.py /Users/boris/GitHub/sz-poi 1.04
+13:56:38: 2 processes, sum RSS 2.67 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.35; zA03_queue.py /Users/boris/GitHub/sz-poi 1.32
+13:57:39: 2 processes, sum RSS 2.86 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.29; zA03_queue.py /Users/boris/GitHub/sz-poi 1.57
+13:58:41: 2 processes, sum RSS 2.69 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.43; zA03_queue.py /Users/boris/GitHub/sz-poi 1.26
+13:59:42: 2 processes, sum RSS 2.10 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.30; zA03_queue.py /Users/boris/GitHub/sz-poi 0.80
+14:00:43: 2 processes, sum RSS 2.77 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.67; zA03_queue.py /Users/boris/GitHub/sz-poi 1.10
+14:01:44: 2 processes, sum RSS 2.94 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.40; zA03_queue.py /Users/boris/GitHub/sz-poi 1.54
+14:02:46: 2 processes, sum RSS 2.54 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.28; zA03_queue.py /Users/boris/GitHub/sz-poi 1.26
+14:03:47: 2 processes, sum RSS 2.73 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.36; zA03_queue.py /Users/boris/GitHub/sz-poi 1.36
+14:04:48: 2 processes, sum RSS 2.53 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.16; zA03_queue.py /Users/boris/GitHub/sz-poi 1.37
+14:05:49: 2 processes, sum RSS 2.11 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.05; zA03_queue.py /Users/boris/GitHub/sz-poi 1.06
+14:06:51: 2 processes, sum RSS 3.32 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.66; zA03_queue.py /Users/boris/GitHub/sz-poi 1.66
+14:07:52: 2 processes, sum RSS 2.20 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.10; zA03_queue.py /Users/boris/GitHub/sz-poi 1.10
+14:08:53: 2 processes, sum RSS 2.61 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.38; zA03_queue.py /Users/boris/GitHub/sz-poi 1.23
+14:09:54: 2 processes, sum RSS 2.17 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.10; zA03_queue.py /Users/boris/GitHub/sz-poi 1.07
+14:10:56: 2 processes, sum RSS 2.51 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.22; zA03_queue.py /Users/boris/GitHub/sz-poi 1.29
+14:11:57: 2 processes, sum RSS 2.65 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.36; zA03_queue.py /Users/boris/GitHub/sz-poi 1.30
+14:12:58: 2 processes, sum RSS 2.95 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.54; zA03_queue.py /Users/boris/GitHub/sz-poi 1.41
+14:13:59: 2 processes, sum RSS 3.21 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.55; zA03_queue.py /Users/boris/GitHub/sz-poi 1.66
+14:15:01: 2 processes, sum RSS 2.43 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.04; zA03_queue.py /Users/boris/GitHub/sz-poi 1.39
+14:16:02: 2 processes, sum RSS 2.63 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.40; zA03_queue.py /Users/boris/GitHub/sz-poi 1.22
+14:17:03: 2 processes, sum RSS 2.38 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.19; zA03_queue.py /Users/boris/GitHub/sz-poi 1.19
+14:18:04: 2 processes, sum RSS 2.12 GB zA03_queue.py /Users/boris/GitHub/sz-poi 0.80; zA03_queue.py /Users/boris/GitHub/sz-poi 1.32
+14:19:06: 2 processes, sum RSS 2.20 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.10; zA03_queue.py /Users/boris/GitHub/sz-poi 1.10
+14:20:07: 2 processes, sum RSS 3.09 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.58; zA03_queue.py /Users/boris/GitHub/sz-poi 1.52
+14:21:08: 2 processes, sum RSS 2.73 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.10; zA03_queue.py /Users/boris/GitHub/sz-poi 1.63
+14:22:10: 2 processes, sum RSS 2.71 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.31; zA03_queue.py /Users/boris/GitHub/sz-poi 1.40
+14:23:11: 3 processes, sum RSS 2.63 GB zA05_analysis.py 2>&1 | grep -v "Runtime 0.00; zA03_queue.py /Users/boris/GitHub/sz-poi 1.44; zA03_queue.py /Users/boris/GitHub/sz-poi 1.19
+14:24:12: 4 processes, sum RSS 2.65 GB zA06_figure.py > zA06_figure.log 2>&1; c 0.00; zA06_figure.py 0.05; zA03_queue.py /Users/boris/GitHub/sz-poi 1.38; zA03_queue.py /Users/boris/GitHub/sz-poi 1.22
+14:25:13: 2 processes, sum RSS 2.64 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.26; zA03_queue.py /Users/boris/GitHub/sz-poi 1.37
+14:26:15: 2 processes, sum RSS 1.80 GB zA03_queue.py /Users/boris/GitHub/sz-poi 0.50; zA03_queue.py /Users/boris/GitHub/sz-poi 1.30
+14:27:16: 2 processes, sum RSS 2.35 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.28; zA03_queue.py /Users/boris/GitHub/sz-poi 1.07
+14:28:17: 2 processes, sum RSS 2.60 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.28; zA03_queue.py /Users/boris/GitHub/sz-poi 1.32
+14:29:19: 2 processes, sum RSS 2.97 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.31; zA03_queue.py /Users/boris/GitHub/sz-poi 1.66
+14:30:20: 2 processes, sum RSS 2.32 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.27; zA03_queue.py /Users/boris/GitHub/sz-poi 1.05
+14:31:21: 2 processes, sum RSS 2.26 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.04; zA03_queue.py /Users/boris/GitHub/sz-poi 1.22
+14:32:22: 2 processes, sum RSS 2.39 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.19; zA03_queue.py /Users/boris/GitHub/sz-poi 1.20
+14:33:24: 2 processes, sum RSS 2.41 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.10; zA03_queue.py /Users/boris/GitHub/sz-poi 1.31
+14:34:25: 2 processes, sum RSS 2.03 GB zA03_queue.py /Users/boris/GitHub/sz-poi 0.70; zA03_queue.py /Users/boris/GitHub/sz-poi 1.33
+14:35:26: 2 processes, sum RSS 2.35 GB zA03_queue.py /Users/boris/GitHub/sz-poi 0.92; zA03_queue.py /Users/boris/GitHub/sz-poi 1.43
+14:36:28: 2 processes, sum RSS 2.24 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.15; zA03_queue.py /Users/boris/GitHub/sz-poi 1.10
+14:37:29: 2 processes, sum RSS 2.02 GB zA03_queue.py /Users/boris/GitHub/sz-poi 0.92; zA03_queue.py /Users/boris/GitHub/sz-poi 1.10
+14:38:30: 2 processes, sum RSS 2.03 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.08; zA03_queue.py /Users/boris/GitHub/sz-poi 0.95
+14:39:31: 2 processes, sum RSS 2.12 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.02; zA03_queue.py /Users/boris/GitHub/sz-poi 1.10
+14:40:33: 2 processes, sum RSS 2.46 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.12; zA03_queue.py /Users/boris/GitHub/sz-poi 1.33
+14:41:34: 2 processes, sum RSS 2.26 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.08; zA03_queue.py /Users/boris/GitHub/sz-poi 1.18
+14:42:35: 2 processes, sum RSS 2.61 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.22; zA03_queue.py /Users/boris/GitHub/sz-poi 1.39
+14:43:36: 2 processes, sum RSS 2.16 GB zA03_queue.py /Users/boris/GitHub/sz-poi 0.97; zA03_queue.py /Users/boris/GitHub/sz-poi 1.19
+14:44:38: 2 processes, sum RSS 2.18 GB zA03_queue.py /Users/boris/GitHub/sz-poi 0.86; zA03_queue.py /Users/boris/GitHub/sz-poi 1.32
+14:45:39: 2 processes, sum RSS 2.55 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.38; zA03_queue.py /Users/boris/GitHub/sz-poi 1.17
+14:46:40: 2 processes, sum RSS 2.00 GB zA03_queue.py /Users/boris/GitHub/sz-poi 0.96; zA03_queue.py /Users/boris/GitHub/sz-poi 1.04
+14:47:41: 2 processes, sum RSS 1.95 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.24; zA03_queue.py /Users/boris/GitHub/sz-poi 0.71
+14:48:43: 2 processes, sum RSS 1.93 GB zA03_queue.py /Users/boris/GitHub/sz-poi 0.93; zA03_queue.py /Users/boris/GitHub/sz-poi 1.00
+14:49:44: 2 processes, sum RSS 2.30 GB zA03_queue.py /Users/boris/GitHub/sz-poi 0.99; zA03_queue.py /Users/boris/GitHub/sz-poi 1.31
+14:50:45: 3 processes, sum RSS 2.00 GB zA05_analysis.py 2>&1 | grep -v "Runtime 0.00; zA03_queue.py /Users/boris/GitHub/sz-poi 1.00; zA03_queue.py /Users/boris/GitHub/sz-poi 1.00
+14:51:47: 3 processes, sum RSS 2.37 GB zA05_analysis.py 2>&1 | grep -v "Runtime 0.00; zA03_queue.py /Users/boris/GitHub/sz-poi 1.17; zA03_queue.py /Users/boris/GitHub/sz-poi 1.20
+14:52:48: 3 processes, sum RSS 2.39 GB zA05_analysis.py 2>&1 | grep -v "Runtime 0.00; zA03_queue.py /Users/boris/GitHub/sz-poi 1.19; zA03_queue.py /Users/boris/GitHub/sz-poi 1.20
+14:53:49: 2 processes, sum RSS 2.54 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.27; zA03_queue.py /Users/boris/GitHub/sz-poi 1.27
+14:54:50: 2 processes, sum RSS 2.88 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.22; zA03_queue.py /Users/boris/GitHub/sz-poi 1.66
+14:55:52: 2 processes, sum RSS 2.55 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.42; zA03_queue.py /Users/boris/GitHub/sz-poi 1.14
+14:56:53: 2 processes, sum RSS 2.08 GB zA03_queue.py /Users/boris/GitHub/sz-poi 0.70; zA03_queue.py /Users/boris/GitHub/sz-poi 1.38
+14:57:54: 2 processes, sum RSS 2.33 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.05; zA03_queue.py /Users/boris/GitHub/sz-poi 1.28
+14:58:55: 2 processes, sum RSS 2.83 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.43; zA03_queue.py /Users/boris/GitHub/sz-poi 1.41
+14:59:57: 2 processes, sum RSS 2.44 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.30; zA03_queue.py /Users/boris/GitHub/sz-poi 1.15
+15:00:58: 2 processes, sum RSS 2.31 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.05; zA03_queue.py /Users/boris/GitHub/sz-poi 1.26
+15:01:59: 2 processes, sum RSS 2.40 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.12; zA03_queue.py /Users/boris/GitHub/sz-poi 1.28
+15:03:01: 2 processes, sum RSS 2.68 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.27; zA03_queue.py /Users/boris/GitHub/sz-poi 1.41
+15:04:02: 2 processes, sum RSS 2.73 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.65; zA03_queue.py /Users/boris/GitHub/sz-poi 1.07
+15:05:03: 2 processes, sum RSS 2.59 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.16; zA03_queue.py /Users/boris/GitHub/sz-poi 1.43
+15:06:04: 2 processes, sum RSS 2.61 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.19; zA03_queue.py /Users/boris/GitHub/sz-poi 1.42
+15:07:06: 2 processes, sum RSS 2.93 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.37; zA03_queue.py /Users/boris/GitHub/sz-poi 1.56
+15:08:07: 3 processes, sum RSS 2.40 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.10; zA03_queue.py /Users/boris/GitHub/sz-poi 1.30; zA05_analysis.py 2>&1 | sed -n '"'"'/(4b 0.00
+15:09:08: 3 processes, sum RSS 2.30 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.24; zA03_queue.py /Users/boris/GitHub/sz-poi 1.06; zA05_analysis.py 2>&1 | sed -n '"'"'/(4b 0.00
+15:10:09: 3 processes, sum RSS 2.50 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.10; zA03_queue.py /Users/boris/GitHub/sz-poi 1.40; zA05_analysis.py 2>&1 | sed -n '"'"'/(4b 0.00
+15:11:11: 3 processes, sum RSS 2.51 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.41; zA03_queue.py /Users/boris/GitHub/sz-poi 1.10; zA05_analysis.py 2>&1 | sed -n '"'"'/(4b 0.00
+15:12:12: 3 processes, sum RSS 2.48 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.18; zA03_queue.py /Users/boris/GitHub/sz-poi 1.29; zA05_analysis.py 2>&1 | sed -n '"'"'/(4b 0.00
+15:13:13: 3 processes, sum RSS 2.62 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.33; zA03_queue.py /Users/boris/GitHub/sz-poi 1.29; zA05_analysis.py 2>&1 | sed -n '"'"'/(4b 0.00
+15:14:14: 3 processes, sum RSS 2.61 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.35; zA03_queue.py /Users/boris/GitHub/sz-poi 1.25; zA05_analysis.py 2>&1 | sed -n '"'"'/(4b 0.00
+15:15:16: 3 processes, sum RSS 2.99 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.42; zA03_queue.py /Users/boris/GitHub/sz-poi 1.57; zA05_analysis.py 2>&1 | sed -n '"'"'/(4b 0.00
+15:16:17: 3 processes, sum RSS 2.50 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.44; zA03_queue.py /Users/boris/GitHub/sz-poi 1.06; zA05_analysis.py 2>&1 | sed -n '"'"'/(4b 0.00
+15:17:18: 3 processes, sum RSS 2.69 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.43; zA03_queue.py /Users/boris/GitHub/sz-poi 1.26; zA05_analysis.py 2>&1 | sed -n '"'"'/(4b 0.00
+15:18:19: 2 processes, sum RSS 1.23 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.23; zA05_analysis.py 2>&1 | sed -n '"'"'/(4b 0.00
+15:19:21: 2 processes, sum RSS 2.26 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.09; zA03_queue.py /Users/boris/GitHub/sz-poi 1.18
+15:20:22: 2 processes, sum RSS 2.37 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.24; zA03_queue.py /Users/boris/GitHub/sz-poi 1.13
+15:21:23: 2 processes, sum RSS 2.65 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.34; zA03_queue.py /Users/boris/GitHub/sz-poi 1.31
+15:22:24: 2 processes, sum RSS 2.52 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.34; zA03_queue.py /Users/boris/GitHub/sz-poi 1.18
+15:23:26: 2 processes, sum RSS 2.60 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.33; zA03_queue.py /Users/boris/GitHub/sz-poi 1.27
+15:24:27: 2 processes, sum RSS 2.53 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.26; zA03_queue.py /Users/boris/GitHub/sz-poi 1.27
+15:25:28: 2 processes, sum RSS 2.67 GB zA03_queue.py /Users/boris/GitHub/sz-poi 1.43; zA03_queue.py /Users/boris/GitHub/sz-poi 1.24
+15:26:30: 1 processes, sum RSS 0.45 GB zA01_bins.py 0.45
+15:27:31: 1 processes, sum RSS 0.47 GB zA01_bins.py 0.47
+15:28:32: 1 processes, sum RSS 0.47 GB zA01_bins.py 0.47
+15:29:34: 0 processes, sum RSS 0.00 GB 
+15:30:35: 1 processes, sum RSS 0.47 GB zA01_bins.py 0.47
+STOP file found
+maximum summed RSS 3.33 GB at 14:02:41: [(97415, 1.66, 'zA03_queue.py /Users/boris/GitHub/sz-poisson-blending/data_r'), (97438, 1.67, 'zA03_queue.py /Users/boris/GitHub/sz-poisson-blending/data_r')]
+zA04_memwatch stopped 15:31:31 after 6734 s

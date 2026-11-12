@@ -1,0 +1,34 @@
+j13: SZiFi's iteration-1 sigma from the bare tile (A, as SZiFi) and from the periodically extended tile (B)
+
+  tile 41 baseline: unmasked fraction 0.7411
+    S1 (l_sep 3000): sigma_A / SZiFi's own iteration-1 sigma - 1 at 0.5, 4.45, 15': +0.0e+00 +0.0e+00 +0.0e+00
+    S1 (l_sep 3000): sigma_A / sigma_B at 0.5, 4.45, 15': 1.0514 1.0467 1.0185  [50 s]
+    S2 (l_sep 12000): sigma_A / SZiFi's own iteration-1 sigma - 1 at 0.5, 4.45, 15': +0.0e+00 +0.0e+00 +0.0e+00
+    S2 (l_sep 12000): sigma_A / sigma_B at 0.5, 4.45, 15': 1.0522 1.0502 1.0211  [73 s]
+
+  tile 83 baseline: unmasked fraction 0.7883
+    S1 (l_sep 3000): sigma_A / SZiFi's own iteration-1 sigma - 1 at 0.5, 4.45, 15': +0.0e+00 +0.0e+00 +0.0e+00
+    S1 (l_sep 3000): sigma_A / sigma_B at 0.5, 4.45, 15': 0.9999 1.0001 1.0010  [47 s]
+    S2 (l_sep 12000): sigma_A / SZiFi's own iteration-1 sigma - 1 at 0.5, 4.45, 15': +0.0e+00 +0.0e+00 +0.0e+00
+    S2 (l_sep 12000): sigma_A / sigma_B at 0.5, 4.45, 15': 0.9999 1.0001 1.0010  [70 s]
+
+done [143 s]; peak RSS 1.72 GB
+      145.44 real       113.97 user        31.35 sys
+          1717665792  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            15861472  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  92  voluntary context switches
+                2851  involuntary context switches
+       1236723621957  instructions retired
+        449242916590  cycles elapsed
+          1590678080  peak memory footprint
+exit 0

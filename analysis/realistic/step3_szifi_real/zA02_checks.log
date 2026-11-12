@@ -1,0 +1,48 @@
+(1) PERIODIC WRAPPERS: SZiFi's iteration-1 mask rebuilt from the build's S1 iteration-0 catalogue
+  baseline: boundary pixels inside the mask, per tile: 0: 0.036, 11: 0.085, 22: 0.138, 33: 0.108, 44: 0.119, 55: 0.131, 88: 0.064, 132: 0.129, 176: 0.045, 220: 0.100, 264: 0.090, 308: 0.125
+     unmasked fraction rebuilt vs recorded by SZiFi: max |diff| 0.0e+00
+  goal: boundary pixels inside the mask, per tile: 0: 0.080, 11: 0.094, 22: 0.077, 33: 0.127, 44: 0.108, 55: 0.088, 88: 0.065, 132: 0.146, 176: 0.042, 220: 0.127, 264: 0.070, 308: 0.100
+     unmasked fraction rebuilt vs recorded by SZiFi: max |diff| 0.0e+00
+  largest coverage: goal tile 132 (0.146)
+  noise-map step: bare 10.5 s, periodic pad 200 23.9 s, pad 300 36.3 s
+  pad 200 vs pad 300: max |diff| / map std = 0.0e+00 (after the final l filter), 0.0e+00 (before)
+  holes: 240, of which 10 touch the tile edge (84308 pixels; other holes 324740 pixels)
+  bare vs periodic, after inpainting and blend (before SZiFi's final l filter), max |diff| / map std: holes away from the edge 0.0e+00; unmasked pixels 0.0e+00; holes at the edge: max 2.59, rms 0.289
+  same after the final l filter (a global operation, so edge-hole changes spread): holes away from the edge max 3.1e-02, unmasked pixels max 3.4e-01, rms over the tile 6.9e-02
+  mean squared jump across the periodic boundary / inside, per channel: unmasked map       1.01 1.01 0.90 0.96 1.04 0.94
+  mean squared jump across the periodic boundary / inside, per channel: A, bare (SZiFi)    1.10 1.26 5.48 5.74 1.71 1.15
+  mean squared jump across the periodic boundary / inside, per channel: B, periodic pad    1.12 1.12 1.00 1.07 1.15 1.04
+  auto power / unmasked, mean of 6 channels, l ((100, 1000), (1000, 3000), (3000, 6000), (6000, 12000), (12000, 20000)): A, bare (SZiFi)    0.9094 0.9316 0.8849 0.8941 0.8914
+  auto power / unmasked, mean of 6 channels, l ((100, 1000), (1000, 3000), (3000, 6000), (6000, 12000), (12000, 20000)): B, periodic pad    0.9149 0.9293 0.8754 0.8950 0.8954
+
+(2) ZERO_OOB: SZiFi's iteration 0 on realistic tile 0, baseline, as configured and with zero_oob
+  S1 as configured: 44 s; median |C^-1_(145 GHz)| at l > 20000 / at l 15000-20000 = 8.1e+13
+     template energy outside / inside lrange, per scale: 2e-32 3e-32 2e-32 2e-32 3e-32 3e-32 3e-32 2e-32 2e-32 2e-32 2e-32 3e-32 3e-32 2e-32 3e-32
+     filter energy outside / inside lrange, per scale:   7e-04 8e-04 8e-04 9e-04 1e-03 1e-03 2e-03 3e-03 4e-03 7e-03 1e-02 2e-02 4e-02 9e-02 2e-01
+  S1 + zero_oob: 44 s; median |C^-1_(145 GHz)| at l > 20000 / at l 15000-20000 = 0.0e+00
+     template energy outside / inside lrange, per scale: 2e-32 3e-32 2e-32 2e-32 3e-32 3e-32 3e-32 2e-32 2e-32 2e-32 2e-32 3e-32 3e-32 2e-32 3e-32
+     filter energy outside / inside lrange, per scale:   0e+00 0e+00 0e+00 0e+00 0e+00 0e+00 0e+00 0e+00 0e+00 0e+00 0e+00 0e+00 0e+00 0e+00 0e+00
+  'as configured' iteration 0 identical to the build's stored S1 run (q, positions, scales, sigma): True
+  detections q > 4: as configured 338, zero_oob 321; same (pixel, scale) 246; on those |dq| max 0.063, sd 0.0120
+  as configured : q > 4 detections at theta >= 7.24': 18, of which 8 sit within 2 pixels of a smaller-scale detection of the same run
+  zero_oob      : q > 4 detections at theta >= 7.24': 14, of which 4 sit within 2 pixels of a smaller-scale detection of the same run
+  sigma(zero_oob) / sigma(as configured) - 1 at the 15 scales: +7.8e-09 +4.7e-09 +5.6e-10 +3.4e-09 +7.9e-09 -7.1e-09 -1.5e-08 +2.3e-09 -1.2e-08 +8.7e-09 -1.2e-08 -1.7e-08 -2.6e-08 +3.4e-10 +4.7e-09
+done [297 s]; peak RSS 2.02 GB
+      299.13 real       222.33 user        76.76 sys
+          2023374848  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            55876004  page reclaims
+                 147  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+                1034  involuntary context switches
+       2319876409635  instructions retired
+        947822692559  cycles elapsed
+          1897780288  peak memory footprint

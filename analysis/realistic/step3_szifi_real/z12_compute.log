@@ -1,0 +1,50 @@
+log                                 wall [s]   CPU [s] max RSS [GB] footprint [GB]  finished
+z00_prep.log                               3         2         0.80           0.85  07:46
+z01_maps.log                             161       159         0.86           0.89  07:50
+z02_smoke_S0.log                          78        75         1.73           2.76  07:51
+z02_smoke_S1.log                          85        83         2.21           3.11  07:54
+z02_smoke_S3.log                         688       684         1.61           1.79  08:04
+z02_smoke_S3i.log                        143       126         0.94           1.29  08:28
+z02b_memcheck_S1.log                      85        83         2.30           2.66  08:03
+z03_decouple.log                          63        62         0.63           0.56  10:48
+z03a_map0.log                              4         4         0.80           0.74  10:46
+z04_analytic.log                         207       186         1.90           2.11  08:38
+z05_queue_h1.log                        1094      1036         1.50           1.60  08:53
+z05_queue_h2.log                         923       883         1.50           1.60  08:53
+z05_queue_h3.log                         816       787         1.72           1.60  09:06
+z05_queue_h4.log                         702       676         1.72           1.60  09:05
+z05_queue_h5.log                        5521      5438         1.72           1.61  10:38
+z05_queue_h6.log                        5594      5509         1.71           1.62  10:38
+z05_queue_l1.log                         273       249         1.18           1.56  08:43
+z05_queue_l1b.log                        350       340         1.53           1.56  08:50
+z05_queue_l1c.log                        950       914         1.69           1.56  09:06
+z05_run_S0_baseline.log                  766       719         1.42           2.12  08:32
+z05_run_S0_goal.log                      777       731         1.42           2.12  08:32
+z06_s3diag.log                           233       228         2.33           3.32  08:11
+z06b_mixed.log                            13        12         0.85           0.78  08:50
+z07_edges.log                              1         1         0.10           0.07  08:50
+z08_analysis.log                           4         4         0.15           0.13  10:39
+z09_merge_szifi.log                      276       275         0.26           0.21  10:43
+z10_merge_compare.log                      3         3         0.12           0.08  10:43
+z11_figures.log                            2         2         0.12           0.10  10:39
+sum over these logs: wall 5.50 h (processes partly ran in parallel), CPU 5.35 h
+  of which SZiFi processes: wall 5.44 h, CPU 5.29 h, largest max RSS 2.33 GB, largest peak footprint 3.32 GB
+
+SZiFi runs stored in runs/ (one tile each): configuration, number, mean and max wall time per run
+  S0                 12 runs, mean  128.1 s, max  143.6 s
+  S1                 80 runs, mean  112.6 s, max  147.5 s
+  S2                 33 runs, mean  124.6 s, max  147.9 s
+  S3i                20 runs, mean  119.0 s, max  141.8 s
+  S3it0               8 runs, mean   53.2 s, max   58.9 s
+  memcheckS1          1 runs, mean   81.6 s, max   81.6 s
+  smokeS0             1 runs, mean   74.8 s, max   74.8 s
+  smokeS1             1 runs, mean   82.3 s, max   82.3 s
+  smokeS3             1 runs, mean  685.0 s, max  685.0 s
+  smokeS3i            1 runs, mean  139.5 s, max  139.5 s
+  z06                 7 runs, mean   32.8 s, max   38.9 s
+first run started 07:50, last finished 10:38 (2.81 h)
+
+data_real/step3_szifi_real/: 143 MB in all; runs/ 73 MB; analytic_shells.npz 66 MB; out/ 1.9 MB
+z05_memwatch.log: maximum summed RSS 3.59 GB at 08:46:26 z05_queue.py /Users/boris/GitHub/sz-poisson-blending 1.31; z05_queue.py /Users/bo
+z05_memwatch_b.log: maximum summed RSS 4.34 GB at 08:55:37 z05_queue.py /Users/boris/GitHub/sz-poisson-blending 1.54; z05_queue.py /Users/bo
+z05_memwatch_c.log: maximum summed RSS 3.26 GB at 09:08:21 z05_queue.py /Users/boris/GitHub/sz-poisson-blending 1.64; z05_queue.py /Users/bo
