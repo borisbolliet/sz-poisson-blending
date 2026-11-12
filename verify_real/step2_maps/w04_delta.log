@@ -1,0 +1,513 @@
+[w04] 500 patches = 50,000 deg^2 (full sky x 1.2120); 35,504,553 halos painted, 1 with theta500 > 60' not painted; primaries q_A >= 0.5: baseline 2,832,638, goal 3,974,925, white 2,365,030; 21 variants; [68s]
+
+=== (A) Delta_map = N_blended - N_single (full sky, primaries q_A >= 0.5), q_cut 5, vs the build (same primaries) ===
+    Delta/N in %: total | z 0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3 | q 5-7.3, 7.3-10.6, 10.6-15.4, >47; (bootstrap 1 sigma)
+  [baseline_f0.5  ] map  : N_single    81,672  Delta     -226 = -0.277 +- 0.047% | -0.55(0.33) -0.54(0.07) -0.17(0.06) -0.08(0.12) +0.36(0.30) +1.88(0.83) | -0.64(0.08) +0.08(0.12) +0.14(0.17) -0.34(0.38)
+  [baseline_f0.5  ] build: N_single    81,692  Delta     -212 = -0.260%  (all primaries -0.272%) | -0.77 -0.48 -0.24 +0.10 +0.57 +1.31       | -0.58 +0.04 +0.23 +0.14
+                    map - build: total pull -0.38 sigma; N_single map/build - 1 = -0.0002 (bootstrap 0.0028); per-bin chi2 (diagonal bootstrap var) = 1294084383574708502047327479376484472144857966551738788085643530262684340629283152847455454177828495822367500755776330565680218999893955369778238217743853076575910292322879673433442773642519246710092432589154064260914376319474866657114504464840540152441864192.0 for 132 bins
+  [baseline_f1    ] map  : N_single    81,672  Delta   +1,115 = +1.365 +- 0.054% | +1.25(0.44) +0.94(0.08) +1.37(0.07) +1.89(0.13) +3.76(0.34) +5.91(1.05) | +1.54(0.09) +1.37(0.14) +0.91(0.18) -0.34(0.38)
+  [baseline_f1    ] build: N_single    81,692  Delta   +1,052 = +1.288%  (all primaries +1.280%) | +0.74 +0.88 +1.28 +2.01 +3.10 +4.85       | +1.51 +1.20 +0.90 +0.19
+                    map - build: total pull +1.43 sigma; N_single map/build - 1 = -0.0002 (bootstrap 0.0028); per-bin chi2 (diagonal bootstrap var) = 2423575518778963027671199956264055098455241470114595416081911992534528838728891749504105055511020138595993903144239233094090005968134369809296650526238729966379338165942701834979106952001510273371291976969442692797300434527382770455314986781582705594178994176.0 for 132 bins
+  [baseline_f2    ] map  : N_single    81,672  Delta   +2,307 = +2.824 +- 0.064% | +2.58(0.55) +2.15(0.09) +2.76(0.09) +3.88(0.16) +6.65(0.43) +11.19(1.35) | +3.52(0.10) +2.40(0.15) +1.60(0.21) -0.34(0.38)
+  [baseline_f2    ] build: N_single    81,692  Delta   +2,256 = +2.762%  (all primaries +2.764%) | +2.14 +2.08 +2.70 +4.02 +6.10 +9.75       | +3.51 +2.30 +1.52 +0.22
+                    map - build: total pull +0.97 sigma; N_single map/build - 1 = -0.0002 (bootstrap 0.0028); per-bin chi2 (diagonal bootstrap var) = 5270214915693941601356756100964619506555302238637929136652382621221632143663018440437382870780115650452608452973857085792217669544673043113170486662918932682708458535744911045493165452649298287974196376042195512331736416551958045492285681267879548416061079552.0 for 132 bins
+  [goal_f0.5      ] map  : N_single   127,948  Delta     -648 = -0.507 +- 0.042% | -0.99(0.37) -0.77(0.06) -0.49(0.05) -0.22(0.10) +0.07(0.22) +2.49(0.60) | -0.97(0.07) -0.21(0.11) +0.35(0.15) +0.73(0.45)
+  [goal_f0.5      ] build: N_single   128,154  Delta     -623 = -0.486%  (all primaries -0.495%) | -1.09 -0.74 -0.48 -0.16 +0.31 +1.06       | -0.94 -0.12 +0.18 +0.16
+                    map - build: total pull -0.48 sigma; N_single map/build - 1 = -0.0016 (bootstrap 0.0022); per-bin chi2 (diagonal bootstrap var) = inf for 135 bins
+  [goal_f1        ] map  : N_single   127,948  Delta   +1,856 = +1.450 +- 0.048% | +1.38(0.47) +0.98(0.07) +1.35(0.06) +2.08(0.11) +3.70(0.27) +6.53(0.74) | +1.68(0.08) +1.34(0.12) +1.22(0.16) +0.73(0.45)
+  [goal_f1        ] build: N_single   128,154  Delta   +1,773 = +1.384%  (all primaries +1.379%) | +0.79 +0.91 +1.32 +2.08 +3.21 +5.04       | +1.61 +1.33 +1.03 +0.23
+                    map - build: total pull +1.40 sigma; N_single map/build - 1 = -0.0016 (bootstrap 0.0022); per-bin chi2 (diagonal bootstrap var) = inf for 135 bins
+  [goal_f2        ] map  : N_single   127,948  Delta   +4,136 = +3.232 +- 0.057% | +2.85(0.57) +2.44(0.08) +3.03(0.07) +4.41(0.14) +6.90(0.33) +11.30(0.90) | +4.16(0.10) +2.64(0.13) +2.01(0.18) +0.73(0.45)
+  [goal_f2        ] build: N_single   128,154  Delta   +4,069 = +3.175%  (all primaries +3.179%) | +2.54 +2.37 +3.01 +4.40 +6.59 +10.40       | +4.06 +2.71 +1.82 +0.28
+                    map - build: total pull +1.00 sigma; N_single map/build - 1 = -0.0016 (bootstrap 0.0022); per-bin chi2 (diagonal bootstrap var) = inf for 135 bins
+  [white_f0.5     ] map  : N_single    85,903  Delta   -4,953 = -5.766 +- 0.065% | -10.20(0.38) -6.34(0.09) -5.01(0.09) -4.51(0.18) -4.23(0.43) -4.62(1.15) | -8.50(0.12) -4.62(0.18) -2.14(0.25) -0.02(0.38)
+  [white_f1       ] map  : N_single    85,903  Delta   -1,311 = -1.526 +- 0.082% | -4.58(0.43) -2.34(0.11) -0.79(0.11) -0.05(0.20) +2.24(0.58) +3.11(1.52) | -2.96(0.14) -0.75(0.20) +0.51(0.29) +0.15(0.40)
+  [white_f1       ] build: N_single    85,895  Delta   -1,389 = -1.618%  (all primaries -1.632%) | -5.27 -2.34 -1.00 +0.17 +1.65 +3.97       | -2.98 -0.83 +0.07 +0.40
+                    map - build: total pull +1.11 sigma; N_single map/build - 1 = +0.0001 (bootstrap 0.0028); per-bin chi2 (diagonal bootstrap var) = 91118668054088207441438335587297225382354600384561474907236430891444245841451005896945984204146103672185155090036312010411510866971994338975633889696501583632143261614620657860291633698271918484093084999263276749830488064.0 for 132 bins
+  [white_f2       ] map  : N_single    85,903  Delta   +2,318 = +2.699 +- 0.113% | +0.14(0.49) +1.47(0.14) +3.39(0.15) +5.36(0.27) +10.11(0.80) +15.82(2.52) | +2.64(0.18) +2.98(0.23) +3.19(0.33) +0.38(0.42)
+  [baseline_effi  ] map  : N_single    72,710  Delta     -165 = -0.227 +- 0.056% | -0.03(0.43) -0.34(0.08) -0.18(0.08) -0.32(0.14) +0.83(0.36) +1.13(1.06) | -0.72(0.10) +0.36(0.14) +0.43(0.19) +0.06(0.46)
+  [baseline_effi  ] build: N_single    72,675  Delta     -228 = -0.313%  (all primaries -0.332%) | -0.46 -0.40 -0.30 -0.17 +0.04 +0.39       | -0.74 +0.14 +0.34 +0.12
+                    map - build: total pull +1.53 sigma; N_single map/build - 1 = +0.0005 (bootstrap 0.0030); per-bin chi2 (diagonal bootstrap var) = 4215960325992285678723207638443236067790527886741041879037139657857312579181436895882982208831329800148119291790583240181501904118463114749062496441280300242183399990742033416829341794506296103922431039298415614557962385051647574164853432735323243614450288044035606302757926930755395824950173298065408.0 for 132 bins
+  [baseline_effii ] map  : N_single    71,788  Delta     -281 = -0.392 +- 0.056% | -0.21(0.43) -0.47(0.08) -0.34(0.08) -0.56(0.14) +0.50(0.36) +0.58(1.06) | -0.95(0.10) +0.25(0.14) +0.38(0.20) -0.01(0.40)
+  [baseline_effii ] build: N_single    71,748  Delta     -344 = -0.479%  (all primaries -0.499%) | -0.62 -0.53 -0.47 -0.41 -0.31 -0.12       | -0.97 +0.03 +0.28 +0.12
+                    map - build: total pull +1.55 sigma; N_single map/build - 1 = +0.0006 (bootstrap 0.0030); per-bin chi2 (diagonal bootstrap var) = inf for 132 bins
+  [goal_effi      ] map  : N_single   111,571  Delta     -373 = -0.334 +- 0.049% | -0.12(0.46) -0.44(0.07) -0.36(0.06) -0.28(0.12) +0.48(0.28) +1.76(0.80) | -0.90(0.09) +0.18(0.13) +0.45(0.17) -0.19(0.48)
+  [goal_effi      ] build: N_single   111,722  Delta     -448 = -0.401%  (all primaries -0.415%) | -0.60 -0.51 -0.40 -0.26 -0.04 +0.34       | -0.95 +0.13 +0.39 +0.15
+                    map - build: total pull +1.36 sigma; N_single map/build - 1 = -0.0014 (bootstrap 0.0024); per-bin chi2 (diagonal bootstrap var) = 1553034585757182279241705358706500824257072866746338870366680378646767185116966783480834002940423888439259911019634305546501971309142474581756634235995017977700503090283726666773560594301679314589727389322521836943495200144856227121493603385211559738970922591985431572888608468810675004667826835015335936.0 for 134 bins
+  [goal_effii     ] map  : N_single   109,129  Delta     -654 = -0.599 +- 0.049% | -0.41(0.46) -0.65(0.07) -0.61(0.06) -0.65(0.12) -0.01(0.28) +1.00(0.81) | -1.27(0.09) +0.01(0.13) +0.33(0.17) -0.41(0.45)
+  [goal_effii     ] build: N_single   109,271  Delta     -728 = -0.666%  (all primaries -0.681%) | -0.86 -0.72 -0.65 -0.61 -0.54 -0.39       | -1.32 -0.05 +0.29 +0.14
+                    map - build: total pull +1.35 sigma; N_single map/build - 1 = -0.0013 (bootstrap 0.0024); per-bin chi2 (diagonal bootstrap var) = inf for 134 bins
+  [lowP_f1        ] map  : N_single    29,931  Delta     +331 = +1.105 +- 0.067% | +0.68(0.40) +0.88(0.10) +1.07(0.09) +1.70(0.19) +3.19(0.52) +4.63(1.68) | +1.27(0.10) +1.05(0.16) +0.50(0.21) +0.36(1.12)
+  [lowP_f1        ] build: N_single    29,832  Delta     +290 = +0.972%  (all primaries +0.955%) | +0.71 +0.74 +1.00 +1.50 +2.26 +3.48       | +1.15 +0.83 +0.58 +0.10
+                    map - build: total pull +2.00 sigma; N_single map/build - 1 = +0.0033 (bootstrap 0.0045); per-bin chi2 (diagonal bootstrap var) = 1597050345722049018986075614364295669858998810787200331360111935302868522101410030027216028784331264271484988273755382109202883102467268874725675255042334238399822530143297745559471720655733944438413754582726034967847004180451887589287717513021529716130125700568980898429483552723594385068916736.0 for 122 bins
+  [lowP_effi      ] map  : N_single    27,923  Delta       +7 = +0.025 +- 0.068% | -0.07(0.40) -0.02(0.10) -0.03(0.10) +0.21(0.20) +0.93(0.51) +1.96(1.72) | -0.17(0.10) +0.38(0.17) +0.09(0.22) -0.48(0.77)
+  [lowP_effi      ] build: N_single    27,834  Delta      -32 = -0.114%  (all primaries -0.148%) | -0.14 -0.16 -0.10 -0.02 +0.12 +0.35       | -0.30 +0.15 +0.22 +0.06
+                    map - build: total pull +2.06 sigma; N_single map/build - 1 = +0.0032 (bootstrap 0.0046); per-bin chi2 (diagonal bootstrap var) = inf for 122 bins
+  [baseline_std   ] map  : N_single    60,577  Delta   -1,412 = -2.331 +- 0.061% | -2.13(0.45) -2.11(0.09) -2.22(0.09) -3.18(0.16) -2.88(0.40) -4.68(1.13) | -3.55(0.11) -1.14(0.15) -0.20(0.21) -1.33(0.51)
+  [baseline_clip  ] map  : N_single    74,045  Delta       +8 = +0.011 +- 0.056% | +0.18(0.43) -0.16(0.08) +0.05(0.08) +0.02(0.14) +1.30(0.36) +1.90(1.06) | -0.39(0.10) +0.51(0.14) +0.50(0.19) +0.19(0.51)
+  [baseline_rob   ] map  : N_single    71,814  Delta     -279 = -0.389 +- 0.056% | -0.20(0.43) -0.46(0.08) -0.34(0.08) -0.56(0.14) +0.50(0.36) +0.58(1.06) | -0.95(0.10) +0.25(0.14) +0.38(0.20) -0.01(0.41)
+  [goal_std       ] map  : N_single    86,924  Delta   -2,598 = -2.989 +- 0.055% | -2.75(0.48) -2.62(0.08) -2.89(0.07) -3.83(0.13) -4.07(0.33) -5.22(0.95) | -4.59(0.10) -1.51(0.14) -0.64(0.20) -0.46(0.46)
+  [goal_clip      ] map  : N_single   112,598  Delta     -247 = -0.219 +- 0.049% | -0.04(0.46) -0.36(0.07) -0.25(0.06) -0.12(0.11) +0.71(0.28) +2.12(0.79) | -0.73(0.09) +0.25(0.13) +0.50(0.17) -0.11(0.48)
+  [goal_rob       ] map  : N_single   109,178  Delta     -649 = -0.595 +- 0.049% | -0.41(0.46) -0.64(0.07) -0.61(0.06) -0.64(0.12) -0.01(0.28) +1.00(0.81) | -1.27(0.09) +0.01(0.13) +0.34(0.17) -0.41(0.45)
+   [68s]
+
+=== (B) white filter (old idealised setup): map Delta -1,311 +- 70 vs Q3 (c11, all primaries) -1,412.6 and the build (q_A >= 0.5) -1,389.5 (full sky, q > 5)
+
+=== (C) linearised bias F^-1 J^T (Delta/N0) in Fisher sigma (S8 | Om | s8): map (bootstrap 1 sigma) vs the build's Delta for the same primaries (D05) and the build's published ML (all primaries) ===
+  q5 SO40 a [baseline_f0.5  ] S8 -0.77 +- 0.08 (build D05 lin -0.74, all-primaries lin -0.74, ML -0.75; pull -0.3) | Om -0.76 +- 0.08 (build -0.74) | s8 +0.67 +- 0.08 (build +0.65)
+  q5 SO40 b [baseline_f0.5  ] S8 -0.38 +- 0.07 (build D05 lin -0.32, all-primaries lin -0.34, ML -0.34; pull -0.9) | Om -0.56 +- 0.07 (build -0.49) | s8 -0.03 +- 0.07 (build +0.02)
+  q5 SO40 c [baseline_f0.5  ] S8 -0.20 +- 0.09 (build D05 lin -0.19, all-primaries lin -0.22, ML -0.22; pull -0.0) | Om -0.23 +- 0.09 (build -0.24) | s8 -0.01 +- 0.08 (build +0.03)
+  q5 SO40 d [baseline_f0.5  ] S8 +0.14 +- 0.04 (build D05 lin +0.11, all-primaries lin +0.11, ML +0.11; pull +0.8) | Om +0.01 +- 0.04 (build -0.03) | s8 +0.31 +- 0.06 (build +0.29)
+  q5 SO40 e [baseline_f0.5  ] S8 +0.20 +- 0.07 (build D05 lin +0.14, all-primaries lin +0.13, ML +0.14; pull +0.8) | Om +0.13 +- 0.07 (build +0.07) | s8 +0.32 +- 0.07 (build +0.27)
+  q5 full a [baseline_f0.5  ] S8 -1.21 +- 0.13 (build D05 lin -1.17, all-primaries lin -1.18, ML -1.18; pull -0.3) | Om -1.21 +- 0.13 (build -1.17) | s8 +1.05 +- 0.12 (build +1.03)
+  q5 full b [baseline_f0.5  ] S8 -0.61 +- 0.11 (build D05 lin -0.50, all-primaries lin -0.54, ML -0.54; pull -0.9) | Om -0.88 +- 0.11 (build -0.78) | s8 -0.04 +- 0.11 (build +0.04)
+  q5 full c [baseline_f0.5  ] S8 -0.31 +- 0.14 (build D05 lin -0.31, all-primaries lin -0.35, ML -0.34; pull -0.0) | Om -0.37 +- 0.14 (build -0.38) | s8 -0.02 +- 0.12 (build +0.04)
+  q5 full d [baseline_f0.5  ] S8 +0.24 +- 0.07 (build D05 lin +0.18, all-primaries lin +0.18, ML +0.18; pull +0.9) | Om +0.09 +- 0.07 (build +0.02) | s8 +0.49 +- 0.09 (build +0.45)
+  q5 full e [baseline_f0.5  ] S8 +0.32 +- 0.11 (build D05 lin +0.22, all-primaries lin +0.21, ML +0.22; pull +0.8) | Om +0.21 +- 0.12 (build +0.12) | s8 +0.51 +- 0.11 (build +0.43)
+  q5 SO40 a [baseline_f1    ] S8 +1.39 +- 0.10 (build D05 lin +1.34, all-primaries lin +1.34, ML +1.33; pull +0.6) | Om +0.05 +- 0.09 (build +0.09) | s8 +0.70 +- 0.09 (build +0.61)
+  q5 SO40 b [baseline_f1    ] S8 +0.94 +- 0.08 (build D05 lin +0.93, all-primaries lin +0.92, ML +0.91; pull +0.1) | Om +0.79 +- 0.08 (build +0.80) | s8 +1.03 +- 0.08 (build +0.99)
+  q5 SO40 c [baseline_f1    ] S8 +0.71 +- 0.10 (build D05 lin +0.59, all-primaries lin +0.57, ML +0.57; pull +1.3) | Om +0.53 +- 0.10 (build +0.40) | s8 +1.04 +- 0.09 (build +0.97)
+  q5 SO40 d [baseline_f1    ] S8 +0.01 +- 0.05 (build D05 lin -0.01, all-primaries lin -0.01, ML -0.01; pull +0.4) | Om -0.06 +- 0.04 (build -0.10) | s8 +0.12 +- 0.07 (build +0.13)
+  q5 SO40 e [baseline_f1    ] S8 +0.19 +- 0.09 (build D05 lin +0.08, all-primaries lin +0.08, ML +0.07; pull +1.3) | Om +0.16 +- 0.09 (build +0.04) | s8 +0.24 +- 0.08 (build +0.16)
+  q5 full a [baseline_f1    ] S8 +2.20 +- 0.15 (build D05 lin +2.12, all-primaries lin +2.11, ML +2.11; pull +0.6) | Om +0.08 +- 0.14 (build +0.15) | s8 +1.11 +- 0.14 (build +0.96)
+  q5 full b [baseline_f1    ] S8 +1.48 +- 0.13 (build D05 lin +1.47, all-primaries lin +1.45, ML +1.44; pull +0.1) | Om +1.25 +- 0.13 (build +1.26) | s8 +1.63 +- 0.13 (build +1.56)
+  q5 full c [baseline_f1    ] S8 +1.13 +- 0.16 (build D05 lin +0.93, all-primaries lin +0.91, ML +0.90; pull +1.3) | Om +0.84 +- 0.16 (build +0.63) | s8 +1.64 +- 0.14 (build +1.53)
+  q5 full d [baseline_f1    ] S8 +0.12 +- 0.09 (build D05 lin +0.04, all-primaries lin +0.04, ML +0.04; pull +1.0) | Om +0.05 +- 0.09 (build -0.06) | s8 +0.25 +- 0.11 (build +0.22)
+  q5 full e [baseline_f1    ] S8 +0.30 +- 0.14 (build D05 lin +0.13, all-primaries lin +0.12, ML +0.12; pull +1.3) | Om +0.26 +- 0.14 (build +0.06) | s8 +0.38 +- 0.13 (build +0.26)
+  q6 SO40 a [baseline_f1    ] S8 +1.04 +- 0.10 (build D05 lin +0.98, all-primaries lin +0.98, ML +0.98; pull +0.7) | Om +0.10 +- 0.09 (build +0.13) | s8 +0.44 +- 0.09 (build +0.37)
+  q6 SO40 b [baseline_f1    ] S8 +0.71 +- 0.08 (build D05 lin +0.67, all-primaries lin +0.67, ML +0.67; pull +0.5) | Om +0.61 +- 0.08 (build +0.59) | s8 +0.74 +- 0.08 (build +0.68)
+  q6 SO40 c [baseline_f1    ] S8 +0.48 +- 0.09 (build D05 lin +0.40, all-primaries lin +0.40, ML +0.40; pull +0.8) | Om +0.35 +- 0.09 (build +0.28) | s8 +0.73 +- 0.09 (build +0.66)
+  q6 SO40 d [baseline_f1    ] S8 +0.01 +- 0.05 (build D05 lin -0.02, all-primaries lin -0.02, ML -0.02; pull +0.6) | Om -0.05 +- 0.04 (build -0.08) | s8 +0.10 +- 0.07 (build +0.07)
+  q6 SO40 e [baseline_f1    ] S8 +0.12 +- 0.08 (build D05 lin +0.04, all-primaries lin +0.04, ML +0.04; pull +1.0) | Om +0.10 +- 0.08 (build +0.02) | s8 +0.16 +- 0.08 (build +0.08)
+  q6 full a [baseline_f1    ] S8 +1.65 +- 0.15 (build D05 lin +1.55, all-primaries lin +1.55, ML +1.55; pull +0.7) | Om +0.16 +- 0.14 (build +0.20) | s8 +0.70 +- 0.14 (build +0.59)
+  q6 full b [baseline_f1    ] S8 +1.12 +- 0.12 (build D05 lin +1.06, all-primaries lin +1.06, ML +1.05; pull +0.5) | Om +0.97 +- 0.12 (build +0.93) | s8 +1.17 +- 0.13 (build +1.08)
+  q6 full c [baseline_f1    ] S8 +0.75 +- 0.14 (build D05 lin +0.64, all-primaries lin +0.64, ML +0.64; pull +0.8) | Om +0.55 +- 0.14 (build +0.45) | s8 +1.16 +- 0.14 (build +1.04)
+  q6 full d [baseline_f1    ] S8 +0.07 +- 0.08 (build D05 lin +0.00, all-primaries lin +0.00, ML +0.00; pull +0.9) | Om +0.00 +- 0.08 (build -0.06) | s8 +0.18 +- 0.10 (build +0.11)
+  q6 full e [baseline_f1    ] S8 +0.19 +- 0.13 (build D05 lin +0.06, all-primaries lin +0.06, ML +0.06; pull +1.0) | Om +0.16 +- 0.13 (build +0.03) | s8 +0.26 +- 0.13 (build +0.13)
+  q5 SO40 a [baseline_f2    ] S8 +3.19 +- 0.11 (build D05 lin +3.16, all-primaries lin +3.17, ML +3.15; pull +0.3) | Om +0.59 +- 0.10 (build +0.66) | s8 +0.92 +- 0.10 (build +0.81)
+  q5 SO40 b [baseline_f2    ] S8 +2.18 +- 0.10 (build D05 lin +2.22, all-primaries lin +2.22, ML +2.20; pull -0.4) | Om +1.99 +- 0.10 (build +2.05) | s8 +2.11 +- 0.10 (build +2.11)
+  q5 SO40 c [baseline_f2    ] S8 +1.56 +- 0.12 (build D05 lin +1.46, all-primaries lin +1.47, ML +1.44; pull +0.8) | Om +1.21 +- 0.12 (build +1.11) | s8 +2.12 +- 0.11 (build +2.08)
+  q5 SO40 d [baseline_f2    ] S8 -0.11 +- 0.06 (build D05 lin -0.14, all-primaries lin -0.14, ML -0.13; pull +0.6) | Om -0.16 +- 0.05 (build -0.21) | s8 -0.00 +- 0.08 (build -0.00)
+  q5 SO40 e [baseline_f2    ] S8 +0.19 +- 0.10 (build D05 lin +0.07, all-primaries lin +0.07, ML +0.06; pull +1.2) | Om +0.17 +- 0.10 (build +0.04) | s8 +0.21 +- 0.10 (build +0.12)
+  q5 full a [baseline_f2    ] S8 +5.05 +- 0.17 (build D05 lin +5.00, all-primaries lin +5.01, ML +4.98; pull +0.3) | Om +0.94 +- 0.17 (build +1.04) | s8 +1.45 +- 0.16 (build +1.28)
+  q5 full b [baseline_f2    ] S8 +3.45 +- 0.15 (build D05 lin +3.50, all-primaries lin +3.51, ML +3.48; pull -0.4) | Om +3.15 +- 0.15 (build +3.25) | s8 +3.34 +- 0.16 (build +3.33)
+  q5 full c [baseline_f2    ] S8 +2.47 +- 0.19 (build D05 lin +2.31, all-primaries lin +2.32, ML +2.28; pull +0.8) | Om +1.92 +- 0.18 (build +1.75) | s8 +3.35 +- 0.17 (build +3.28)
+  q5 full d [baseline_f2    ] S8 +0.01 +- 0.10 (build D05 lin -0.09, all-primaries lin -0.09, ML -0.08; pull +0.9) | Om -0.05 +- 0.10 (build -0.16) | s8 +0.10 +- 0.12 (build +0.06)
+  q5 full e [baseline_f2    ] S8 +0.30 +- 0.16 (build D05 lin +0.11, all-primaries lin +0.11, ML +0.09; pull +1.2) | Om +0.27 +- 0.16 (build +0.06) | s8 +0.33 +- 0.15 (build +0.19)
+  q5 SO40 a [goal_f0.5      ] S8 -1.45 +- 0.09 (build D05 lin -1.40, all-primaries lin -1.40, ML -1.41; pull -0.6) | Om -1.29 +- 0.08 (build -1.23) | s8 +1.03 +- 0.08 (build +0.99)
+  q5 SO40 b [goal_f0.5      ] S8 -0.61 +- 0.08 (build D05 lin -0.63, all-primaries lin -0.65, ML -0.65; pull +0.3) | Om -0.89 +- 0.08 (build -0.90) | s8 -0.00 +- 0.08 (build -0.05)
+  q5 SO40 c [goal_f0.5      ] S8 -0.24 +- 0.10 (build D05 lin -0.38, all-primaries lin -0.40, ML -0.40; pull +1.5) | Om -0.29 +- 0.10 (build -0.44) | s8 +0.02 +- 0.08 (build -0.04)
+  q5 SO40 d [goal_f0.5      ] S8 +0.26 +- 0.05 (build D05 lin +0.22, all-primaries lin +0.22, ML +0.23; pull +0.8) | Om +0.09 +- 0.05 (build +0.04) | s8 +0.48 +- 0.06 (build +0.49)
+  q5 SO40 e [goal_f0.5      ] S8 +0.40 +- 0.08 (build D05 lin +0.27, all-primaries lin +0.27, ML +0.29; pull +1.5) | Om +0.30 +- 0.08 (build +0.16) | s8 +0.56 +- 0.08 (build +0.48)
+  q5 full a [goal_f0.5      ] S8 -2.29 +- 0.15 (build D05 lin -2.21, all-primaries lin -2.22, ML -2.23; pull -0.6) | Om -2.03 +- 0.13 (build -1.95) | s8 +1.63 +- 0.13 (build +1.56)
+  q5 full b [goal_f0.5      ] S8 -0.96 +- 0.12 (build D05 lin -1.00, all-primaries lin -1.03, ML -1.03; pull +0.3) | Om -1.40 +- 0.12 (build -1.42) | s8 -0.00 +- 0.12 (build -0.08)
+  q5 full c [goal_f0.5      ] S8 -0.38 +- 0.15 (build D05 lin -0.61, all-primaries lin -0.64, ML -0.63; pull +1.5) | Om -0.45 +- 0.15 (build -0.69) | s8 +0.04 +- 0.13 (build -0.07)
+  q5 full d [goal_f0.5      ] S8 +0.49 +- 0.09 (build D05 lin +0.37, all-primaries lin +0.37, ML +0.39; pull +1.2) | Om +0.28 +- 0.09 (build +0.14) | s8 +0.80 +- 0.10 (build +0.76)
+  q5 full e [goal_f0.5      ] S8 +0.62 +- 0.13 (build D05 lin +0.43, all-primaries lin +0.42, ML +0.46; pull +1.5) | Om +0.48 +- 0.13 (build +0.26) | s8 +0.89 +- 0.12 (build +0.76)
+  q5 SO40 a [goal_f1        ] S8 +1.90 +- 0.10 (build D05 lin +1.85, all-primaries lin +1.85, ML +1.85; pull +0.4) | Om +0.02 +- 0.10 (build +0.09) | s8 +0.99 +- 0.09 (build +0.86)
+  q5 SO40 b [goal_f1        ] S8 +1.34 +- 0.09 (build D05 lin +1.25, all-primaries lin +1.24, ML +1.23; pull +1.0) | Om +1.11 +- 0.09 (build +1.06) | s8 +1.48 +- 0.09 (build +1.35)
+  q5 SO40 c [goal_f1        ] S8 +1.08 +- 0.11 (build D05 lin +0.81, all-primaries lin +0.80, ML +0.80; pull +2.5) | Om +0.82 +- 0.11 (build +0.55) | s8 +1.51 +- 0.10 (build +1.34)
+  q5 SO40 d [goal_f1        ] S8 +0.02 +- 0.06 (build D05 lin +0.01, all-primaries lin +0.01, ML +0.01; pull +0.3) | Om -0.04 +- 0.05 (build -0.09) | s8 +0.13 +- 0.08 (build +0.19)
+  q5 SO40 e [goal_f1        ] S8 +0.26 +- 0.09 (build D05 lin +0.12, all-primaries lin +0.12, ML +0.11; pull +1.6) | Om +0.23 +- 0.09 (build +0.06) | s8 +0.30 +- 0.09 (build +0.23)
+  q5 full a [goal_f1        ] S8 +3.00 +- 0.16 (build D05 lin +2.93, all-primaries lin +2.93, ML +2.92; pull +0.4) | Om +0.02 +- 0.15 (build +0.15) | s8 +1.57 +- 0.15 (build +1.36)
+  q5 full b [goal_f1        ] S8 +2.11 +- 0.14 (build D05 lin +1.98, all-primaries lin +1.96, ML +1.95; pull +1.0) | Om +1.76 +- 0.14 (build +1.68) | s8 +2.35 +- 0.14 (build +2.14)
+  q5 full c [goal_f1        ] S8 +1.71 +- 0.18 (build D05 lin +1.28, all-primaries lin +1.27, ML +1.26; pull +2.5) | Om +1.29 +- 0.17 (build +0.86) | s8 +2.38 +- 0.15 (build +2.12)
+  q5 full d [goal_f1        ] S8 +0.20 +- 0.11 (build D05 lin +0.09, all-primaries lin +0.09, ML +0.08; pull +1.0) | Om +0.13 +- 0.11 (build -0.04) | s8 +0.31 +- 0.12 (build +0.32)
+  q5 full e [goal_f1        ] S8 +0.42 +- 0.15 (build D05 lin +0.19, all-primaries lin +0.18, ML +0.17; pull +1.6) | Om +0.37 +- 0.15 (build +0.09) | s8 +0.48 +- 0.14 (build +0.37)
+  q6 SO40 a [goal_f1        ] S8 +1.46 +- 0.10 (build D05 lin +1.40, all-primaries lin +1.40, ML +1.40; pull +0.6) | Om +0.12 +- 0.10 (build +0.17) | s8 +0.63 +- 0.09 (build +0.54)
+  q6 SO40 b [goal_f1        ] S8 +0.97 +- 0.09 (build D05 lin +0.93, all-primaries lin +0.93, ML +0.92; pull +0.5) | Om +0.83 +- 0.09 (build +0.81) | s8 +1.03 +- 0.09 (build +0.95)
+  q6 SO40 c [goal_f1        ] S8 +0.81 +- 0.11 (build D05 lin +0.58, all-primaries lin +0.58, ML +0.57; pull +2.1) | Om +0.64 +- 0.11 (build +0.40) | s8 +1.06 +- 0.10 (build +0.94)
+  q6 SO40 d [goal_f1        ] S8 -0.02 +- 0.05 (build D05 lin -0.02, all-primaries lin -0.02, ML -0.02; pull -0.1) | Om -0.04 +- 0.05 (build -0.09) | s8 +0.01 +- 0.08 (build +0.09)
+  q6 SO40 e [goal_f1        ] S8 +0.18 +- 0.09 (build D05 lin +0.05, all-primaries lin +0.05, ML +0.05; pull +1.4) | Om +0.18 +- 0.09 (build +0.02) | s8 +0.17 +- 0.09 (build +0.11)
+  q6 full a [goal_f1        ] S8 +2.31 +- 0.16 (build D05 lin +2.22, all-primaries lin +2.22, ML +2.21; pull +0.6) | Om +0.19 +- 0.15 (build +0.26) | s8 +1.00 +- 0.15 (build +0.85)
+  q6 full b [goal_f1        ] S8 +1.53 +- 0.14 (build D05 lin +1.46, all-primaries lin +1.46, ML +1.46; pull +0.5) | Om +1.32 +- 0.14 (build +1.28) | s8 +1.63 +- 0.14 (build +1.51)
+  q6 full c [goal_f1        ] S8 +1.27 +- 0.17 (build D05 lin +0.91, all-primaries lin +0.91, ML +0.91; pull +2.1) | Om +1.01 +- 0.17 (build +0.64) | s8 +1.67 +- 0.15 (build +1.48)
+  q6 full d [goal_f1        ] S8 +0.09 +- 0.10 (build D05 lin +0.01, all-primaries lin +0.01, ML +0.01; pull +0.8) | Om +0.07 +- 0.09 (build -0.06) | s8 +0.10 +- 0.12 (build +0.15)
+  q6 full e [goal_f1        ] S8 +0.29 +- 0.14 (build D05 lin +0.08, all-primaries lin +0.08, ML +0.08; pull +1.4) | Om +0.28 +- 0.15 (build +0.03) | s8 +0.28 +- 0.14 (build +0.18)
+  q5 SO40 a [goal_f2        ] S8 +4.79 +- 0.12 (build D05 lin +4.75, all-primaries lin +4.76, ML +4.72; pull +0.4) | Om +0.97 +- 0.11 (build +1.02) | s8 +1.20 +- 0.11 (build +1.10)
+  q5 SO40 b [goal_f2        ] S8 +3.25 +- 0.11 (build D05 lin +3.20, all-primaries lin +3.21, ML +3.17; pull +0.5) | Om +3.00 +- 0.10 (build +2.98) | s8 +3.08 +- 0.11 (build +3.00)
+  q5 SO40 c [goal_f2        ] S8 +2.32 +- 0.13 (build D05 lin +2.15, all-primaries lin +2.16, ML +2.11; pull +1.4) | Om +1.80 +- 0.13 (build +1.62) | s8 +3.09 +- 0.12 (build +2.99)
+  q5 SO40 d [goal_f2        ] S8 -0.18 +- 0.07 (build D05 lin -0.20, all-primaries lin -0.20, ML -0.19; pull +0.4) | Om -0.21 +- 0.06 (build -0.26) | s8 -0.08 +- 0.09 (build -0.06)
+  q5 SO40 e [goal_f2        ] S8 +0.16 +- 0.11 (build D05 lin +0.04, all-primaries lin +0.05, ML +0.03; pull +1.1) | Om +0.15 +- 0.11 (build +0.02) | s8 +0.17 +- 0.10 (build +0.10)
+  q5 full a [goal_f2        ] S8 +7.58 +- 0.19 (build D05 lin +7.51, all-primaries lin +7.52, ML +7.47; pull +0.4) | Om +1.53 +- 0.18 (build +1.61) | s8 +1.90 +- 0.18 (build +1.75)
+  q5 full b [goal_f2        ] S8 +5.14 +- 0.17 (build D05 lin +5.06, all-primaries lin +5.08, ML +5.01; pull +0.5) | Om +4.75 +- 0.17 (build +4.71) | s8 +4.88 +- 0.18 (build +4.75)
+  q5 full c [goal_f2        ] S8 +3.68 +- 0.21 (build D05 lin +3.40, all-primaries lin +3.41, ML +3.34; pull +1.4) | Om +2.84 +- 0.20 (build +2.57) | s8 +4.89 +- 0.18 (build +4.72)
+  q5 full d [goal_f2        ] S8 -0.04 +- 0.12 (build D05 lin -0.14, all-primaries lin -0.14, ML -0.14; pull +0.8) | Om -0.07 +- 0.12 (build -0.21) | s8 +0.03 +- 0.14 (build +0.00)
+  q5 full e [goal_f2        ] S8 +0.25 +- 0.17 (build D05 lin +0.07, all-primaries lin +0.07, ML +0.05; pull +1.1) | Om +0.24 +- 0.17 (build +0.03) | s8 +0.26 +- 0.17 (build +0.15)
+  q5 SO40 a [white_f0.5     ] S8 -10.69 +- 0.12 | Om -7.06 +- 0.12 | s8 +3.89 +- 0.11
+  q5 SO40 b [white_f0.5     ] S8 -2.63 +- 0.09 | Om -3.66 +- 0.09 | s8 -1.41 +- 0.10
+  q5 SO40 c [white_f0.5     ] S8 -2.13 +- 0.10 | Om -2.41 +- 0.10 | s8 -1.40 +- 0.10
+  q5 SO40 d [white_f0.5     ] S8 +1.59 +- 0.07 | Om +0.44 +- 0.05 | s8 +2.41 +- 0.10
+  q5 SO40 e [white_f0.5     ] S8 +2.45 +- 0.11 | Om +1.91 +- 0.11 | s8 +2.96 +- 0.12
+  q5 full a [white_f0.5     ] S8 -16.90 +- 0.19 | Om -11.16 +- 0.19 | s8 +6.16 +- 0.18
+  q5 full b [white_f0.5     ] S8 -4.15 +- 0.15 | Om -5.78 +- 0.15 | s8 -2.24 +- 0.15
+  q5 full c [white_f0.5     ] S8 -3.36 +- 0.16 | Om -3.81 +- 0.16 | s8 -2.21 +- 0.15
+  q5 full d [white_f0.5     ] S8 +2.82 +- 0.12 | Om +1.46 +- 0.10 | s8 +3.95 +- 0.15
+  q5 full e [white_f0.5     ] S8 +3.87 +- 0.18 | Om +3.02 +- 0.17 | s8 +4.67 +- 0.19
+  q5 SO40 a [white_f1       ] S8 -3.75 +- 0.15 (build D05 lin -3.89, all-primaries lin -3.90, ML -3.95; pull +0.9) | Om -3.66 +- 0.13 (build -3.70) | s8 +2.99 +- 0.12 (build +2.97)
+  q5 SO40 b [white_f1       ] S8 -0.53 +- 0.12 (build D05 lin -0.52, all-primaries lin -0.57, ML -0.53; pull -0.1) | Om -1.17 +- 0.11 (build -1.16) | s8 +0.17 +- 0.12 (build +0.19)
+  q5 SO40 c [white_f1       ] S8 -0.43 +- 0.13 (build D05 lin -0.46, all-primaries lin -0.50, ML -0.47; pull +0.2) | Om -0.82 +- 0.13 (build -0.87) | s8 +0.17 +- 0.12 (build +0.19)
+  q5 SO40 d [white_f1       ] S8 +1.09 +- 0.08 (build D05 lin +1.07, all-primaries lin +1.07, ML +1.11; pull +0.2) | Om +0.20 +- 0.06 (build +0.15) | s8 +1.75 +- 0.11 (build +1.77)
+  q5 SO40 e [white_f1       ] S8 +1.71 +- 0.14 (build D05 lin +1.67, all-primaries lin +1.64, ML +1.73; pull +0.3) | Om +1.30 +- 0.13 (build +1.24) | s8 +2.12 +- 0.14 (build +2.09)
+  q5 full a [white_f1       ] S8 -5.92 +- 0.23 (build D05 lin -6.14, all-primaries lin -6.16, ML -6.24; pull +0.9) | Om -5.78 +- 0.21 (build -5.85) | s8 +4.72 +- 0.20 (build +4.69)
+  q5 full b [white_f1       ] S8 -0.84 +- 0.18 (build D05 lin -0.82, all-primaries lin -0.89, ML -0.84; pull -0.1) | Om -1.85 +- 0.18 (build -1.84) | s8 +0.27 +- 0.19 (build +0.29)
+  q5 full c [white_f1       ] S8 -0.69 +- 0.20 (build D05 lin -0.72, all-primaries lin -0.79, ML -0.74; pull +0.2) | Om -1.30 +- 0.21 (build -1.38) | s8 +0.28 +- 0.19 (build +0.29)
+  q5 full d [white_f1       ] S8 +1.95 +- 0.14 (build D05 lin +1.91, all-primaries lin +1.90, ML +2.07; pull +0.3) | Om +0.90 +- 0.12 (build +0.83) | s8 +2.86 +- 0.18 (build +2.87)
+  q5 full e [white_f1       ] S8 +2.71 +- 0.21 (build D05 lin +2.64, all-primaries lin +2.60, ML +2.74; pull +0.3) | Om +2.05 +- 0.20 (build +1.96) | s8 +3.35 +- 0.23 (build +3.31)
+  q6 SO40 a [white_f1       ] S8 -1.96 +- 0.15 (build D05 lin -2.05, all-primaries lin -2.05, ML -2.07; pull +0.6) | Om -2.33 +- 0.14 (build -2.28) | s8 +2.15 +- 0.13 (build +2.02)
+  q6 SO40 b [white_f1       ] S8 -0.02 +- 0.12 (build D05 lin -0.11, all-primaries lin -0.11, ML -0.10; pull +0.8) | Om -0.45 +- 0.12 (build -0.52) | s8 +0.42 +- 0.13 (build +0.31)
+  q6 SO40 c [white_f1       ] S8 -0.04 +- 0.13 (build D05 lin -0.13, all-primaries lin -0.13, ML -0.12; pull +0.7) | Om -0.38 +- 0.13 (build -0.45) | s8 +0.41 +- 0.13 (build +0.30)
+  q6 SO40 d [white_f1       ] S8 +0.72 +- 0.08 (build D05 lin +0.63, all-primaries lin +0.63, ML +0.65; pull +1.2) | Om -0.04 +- 0.06 (build -0.09) | s8 +1.26 +- 0.12 (build +1.15)
+  q6 SO40 e [white_f1       ] S8 +1.25 +- 0.14 (build D05 lin +1.07, all-primaries lin +1.07, ML +1.11; pull +1.3) | Om +0.94 +- 0.13 (build +0.78) | s8 +1.54 +- 0.15 (build +1.35)
+  q6 full a [white_f1       ] S8 -3.10 +- 0.23 (build D05 lin -3.24, all-primaries lin -3.24, ML -3.27; pull +0.6) | Om -3.69 +- 0.21 (build -3.60) | s8 +3.40 +- 0.20 (build +3.20)
+  q6 full b [white_f1       ] S8 -0.03 +- 0.19 (build D05 lin -0.17, all-primaries lin -0.17, ML -0.16; pull +0.8) | Om -0.71 +- 0.19 (build -0.82) | s8 +0.66 +- 0.20 (build +0.49)
+  q6 full c [white_f1       ] S8 -0.06 +- 0.21 (build D05 lin -0.21, all-primaries lin -0.21, ML -0.20; pull +0.7) | Om -0.60 +- 0.21 (build -0.71) | s8 +0.65 +- 0.21 (build +0.48)
+  q6 full d [white_f1       ] S8 +1.30 +- 0.13 (build D05 lin +1.12, all-primaries lin +1.12, ML +1.18; pull +1.3) | Om +0.41 +- 0.11 (build +0.29) | s8 +2.03 +- 0.18 (build +1.83)
+  q6 full e [white_f1       ] S8 +1.98 +- 0.22 (build D05 lin +1.69, all-primaries lin +1.69, ML +1.75; pull +1.3) | Om +1.49 +- 0.21 (build +1.23) | s8 +2.44 +- 0.24 (build +2.14)
+  q5 SO40 a [white_f2       ] S8 +2.80 +- 0.20 | Om -0.96 +- 0.16 | s8 +2.83 +- 0.15
+  q5 SO40 b [white_f2       ] S8 +1.97 +- 0.15 | Om +1.58 +- 0.15 | s8 +2.31 +- 0.16
+  q5 SO40 c [white_f2       ] S8 +1.67 +- 0.17 | Om +1.02 +- 0.17 | s8 +2.30 +- 0.16
+  q5 SO40 d [white_f2       ] S8 +0.62 +- 0.09 | Om -0.18 +- 0.08 | s8 +1.31 +- 0.13
+  q5 SO40 e [white_f2       ] S8 +1.26 +- 0.17 | Om +0.88 +- 0.17 | s8 +1.64 +- 0.18
+  q5 full a [white_f2       ] S8 +4.43 +- 0.31 | Om -1.51 +- 0.25 | s8 +4.47 +- 0.24
+  q5 full b [white_f2       ] S8 +3.12 +- 0.24 | Om +2.51 +- 0.23 | s8 +3.66 +- 0.25
+  q5 full c [white_f2       ] S8 +2.64 +- 0.26 | Om +1.61 +- 0.27 | s8 +3.64 +- 0.25
+  q5 full d [white_f2       ] S8 +1.27 +- 0.17 | Om +0.32 +- 0.16 | s8 +2.17 +- 0.21
+  q5 full e [white_f2       ] S8 +1.99 +- 0.27 | Om +1.39 +- 0.27 | s8 +2.60 +- 0.28
+  q5 SO40 a [baseline_effi  ] S8 -0.56 +- 0.09 (build D05 lin -0.63, all-primaries lin -0.64, ML -0.64; pull +0.7) | Om -0.56 +- 0.09 (build -0.54) | s8 +0.49 +- 0.09 (build +0.42)
+  q5 SO40 b [baseline_effi  ] S8 -0.46 +- 0.08 (build D05 lin -0.49, all-primaries lin -0.53, ML -0.53; pull +0.4) | Om -0.57 +- 0.08 (build -0.59) | s8 -0.18 +- 0.08 (build -0.24)
+  q5 SO40 c [baseline_effi  ] S8 -0.19 +- 0.10 (build D05 lin -0.30, all-primaries lin -0.34, ML -0.33; pull +1.1) | Om -0.18 +- 0.10 (build -0.29) | s8 -0.15 +- 0.09 (build -0.23)
+  q5 SO40 d [baseline_effi  ] S8 +0.14 +- 0.05 (build D05 lin +0.11, all-primaries lin +0.12, ML +0.12; pull +0.6) | Om +0.06 +- 0.04 (build +0.02) | s8 +0.23 +- 0.07 (build +0.22)
+  q5 SO40 e [baseline_effi  ] S8 +0.22 +- 0.08 (build D05 lin +0.11, all-primaries lin +0.10, ML +0.11; pull +1.3) | Om +0.18 +- 0.09 (build +0.07) | s8 +0.28 +- 0.08 (build +0.19)
+  q5 full a [baseline_effi  ] S8 -0.89 +- 0.15 (build D05 lin -1.00, all-primaries lin -1.02, ML -1.02; pull +0.7) | Om -0.88 +- 0.14 (build -0.85) | s8 +0.77 +- 0.14 (build +0.66)
+  q5 full b [baseline_effi  ] S8 -0.72 +- 0.13 (build D05 lin -0.78, all-primaries lin -0.83, ML -0.83; pull +0.4) | Om -0.91 +- 0.13 (build -0.94) | s8 -0.29 +- 0.13 (build -0.38)
+  q5 full c [baseline_effi  ] S8 -0.30 +- 0.15 (build D05 lin -0.48, all-primaries lin -0.53, ML -0.53; pull +1.1) | Om -0.29 +- 0.15 (build -0.46) | s8 -0.24 +- 0.14 (build -0.36)
+  q5 full d [baseline_effi  ] S8 +0.26 +- 0.09 (build D05 lin +0.17, all-primaries lin +0.16, ML +0.17; pull +1.0) | Om +0.16 +- 0.08 (build +0.06) | s8 +0.38 +- 0.10 (build +0.33)
+  q5 full e [baseline_effi  ] S8 +0.35 +- 0.13 (build D05 lin +0.18, all-primaries lin +0.16, ML +0.17; pull +1.3) | Om +0.29 +- 0.14 (build +0.11) | s8 +0.44 +- 0.13 (build +0.31)
+  q6 SO40 a [baseline_effi  ] S8 -0.06 +- 0.09 (build D05 lin -0.13, all-primaries lin -0.13, ML -0.13; pull +0.8) | Om -0.27 +- 0.09 (build -0.24) | s8 +0.36 +- 0.09 (build +0.27)
+  q6 SO40 b [baseline_effi  ] S8 -0.09 +- 0.08 (build D05 lin -0.12, all-primaries lin -0.12, ML -0.12; pull +0.4) | Om -0.17 +- 0.08 (build -0.18) | s8 +0.06 +- 0.08 (build +0.01)
+  q6 SO40 c [baseline_effi  ] S8 +0.01 +- 0.09 (build D05 lin -0.07, all-primaries lin -0.07, ML -0.07; pull +0.8) | Om -0.02 +- 0.09 (build -0.08) | s8 +0.08 +- 0.08 (build +0.01)
+  q6 SO40 d [baseline_effi  ] S8 +0.05 +- 0.05 (build D05 lin +0.04, all-primaries lin +0.04, ML +0.04; pull +0.2) | Om -0.01 +- 0.04 (build -0.02) | s8 +0.11 +- 0.07 (build +0.11)
+  q6 SO40 e [baseline_effi  ] S8 +0.11 +- 0.08 (build D05 lin +0.04, all-primaries lin +0.04, ML +0.05; pull +0.8) | Om +0.08 +- 0.08 (build +0.02) | s8 +0.14 +- 0.08 (build +0.09)
+  q6 full a [baseline_effi  ] S8 -0.09 +- 0.15 (build D05 lin -0.21, all-primaries lin -0.21, ML -0.21; pull +0.8) | Om -0.42 +- 0.14 (build -0.37) | s8 +0.57 +- 0.13 (build +0.43)
+  q6 full b [baseline_effi  ] S8 -0.14 +- 0.12 (build D05 lin -0.19, all-primaries lin -0.19, ML -0.19; pull +0.4) | Om -0.27 +- 0.12 (build -0.29) | s8 +0.10 +- 0.13 (build +0.01)
+  q6 full c [baseline_effi  ] S8 +0.01 +- 0.14 (build D05 lin -0.11, all-primaries lin -0.11, ML -0.11; pull +0.8) | Om -0.03 +- 0.14 (build -0.13) | s8 +0.13 +- 0.13 (build +0.01)
+  q6 full d [baseline_effi  ] S8 +0.10 +- 0.08 (build D05 lin +0.06, all-primaries lin +0.06, ML +0.06; pull +0.5) | Om +0.03 +- 0.07 (build -0.01) | s8 +0.19 +- 0.10 (build +0.16)
+  q6 full e [baseline_effi  ] S8 +0.17 +- 0.13 (build D05 lin +0.07, all-primaries lin +0.07, ML +0.07; pull +0.8) | Om +0.13 +- 0.13 (build +0.03) | s8 +0.23 +- 0.12 (build +0.14)
+  q5 SO40 a [baseline_effii ] S8 -0.74 +- 0.09 (build D05 lin -0.82, all-primaries lin -0.82, ML -0.83; pull +0.8) | Om -0.61 +- 0.09 (build -0.59) | s8 +0.46 +- 0.09 (build +0.39)
+  q5 SO40 b [baseline_effii ] S8 -0.59 +- 0.08 (build D05 lin -0.63, all-primaries lin -0.67, ML -0.67; pull +0.5) | Om -0.71 +- 0.08 (build -0.73) | s8 -0.31 +- 0.08 (build -0.36)
+  q5 SO40 c [baseline_effii ] S8 -0.28 +- 0.10 (build D05 lin -0.39, all-primaries lin -0.43, ML -0.42; pull +1.1) | Om -0.25 +- 0.09 (build -0.36) | s8 -0.27 +- 0.09 (build -0.35)
+  q5 SO40 d [baseline_effii ] S8 +0.16 +- 0.05 (build D05 lin +0.13, all-primaries lin +0.13, ML +0.13; pull +0.6) | Om +0.08 +- 0.04 (build +0.04) | s8 +0.24 +- 0.07 (build +0.23)
+  q5 SO40 e [baseline_effii ] S8 +0.22 +- 0.08 (build D05 lin +0.11, all-primaries lin +0.10, ML +0.11; pull +1.3) | Om +0.18 +- 0.09 (build +0.07) | s8 +0.28 +- 0.08 (build +0.20)
+  q5 full a [baseline_effii ] S8 -1.18 +- 0.15 (build D05 lin -1.29, all-primaries lin -1.30, ML -1.31; pull +0.8) | Om -0.96 +- 0.14 (build -0.93) | s8 +0.72 +- 0.14 (build +0.61)
+  q5 full b [baseline_effii ] S8 -0.94 +- 0.13 (build D05 lin -1.00, all-primaries lin -1.06, ML -1.05; pull +0.5) | Om -1.12 +- 0.13 (build -1.15) | s8 -0.49 +- 0.13 (build -0.57)
+  q5 full c [baseline_effii ] S8 -0.45 +- 0.15 (build D05 lin -0.61, all-primaries lin -0.67, ML -0.66; pull +1.1) | Om -0.40 +- 0.15 (build -0.56) | s8 -0.43 +- 0.14 (build -0.56)
+  q5 full d [baseline_effii ] S8 +0.27 +- 0.08 (build D05 lin +0.18, all-primaries lin +0.18, ML +0.19; pull +1.0) | Om +0.17 +- 0.08 (build +0.08) | s8 +0.39 +- 0.10 (build +0.34)
+  q5 full e [baseline_effii ] S8 +0.35 +- 0.13 (build D05 lin +0.18, all-primaries lin +0.16, ML +0.18; pull +1.3) | Om +0.29 +- 0.13 (build +0.11) | s8 +0.45 +- 0.13 (build +0.31)
+  q6 SO40 a [baseline_effii ] S8 -0.16 +- 0.09 (build D05 lin -0.23, all-primaries lin -0.23, ML -0.23; pull +0.8) | Om -0.30 +- 0.09 (build -0.27) | s8 +0.34 +- 0.08 (build +0.25)
+  q6 SO40 b [baseline_effii ] S8 -0.16 +- 0.08 (build D05 lin -0.20, all-primaries lin -0.20, ML -0.20; pull +0.4) | Om -0.24 +- 0.08 (build -0.26) | s8 -0.00 +- 0.08 (build -0.06)
+  q6 SO40 c [baseline_effii ] S8 -0.04 +- 0.09 (build D05 lin -0.11, all-primaries lin -0.11, ML -0.11; pull +0.8) | Om -0.05 +- 0.09 (build -0.12) | s8 +0.02 +- 0.08 (build -0.06)
+  q6 SO40 d [baseline_effii ] S8 +0.05 +- 0.05 (build D05 lin +0.05, all-primaries lin +0.05, ML +0.05; pull +0.2) | Om -0.00 +- 0.04 (build -0.01) | s8 +0.12 +- 0.07 (build +0.11)
+  q6 SO40 e [baseline_effii ] S8 +0.11 +- 0.08 (build D05 lin +0.05, all-primaries lin +0.05, ML +0.05; pull +0.8) | Om +0.08 +- 0.08 (build +0.02) | s8 +0.15 +- 0.08 (build +0.09)
+  q6 full a [baseline_effii ] S8 -0.25 +- 0.15 (build D05 lin -0.37, all-primaries lin -0.37, ML -0.37; pull +0.8) | Om -0.47 +- 0.14 (build -0.42) | s8 +0.54 +- 0.13 (build +0.40)
+  q6 full b [baseline_effii ] S8 -0.26 +- 0.12 (build D05 lin -0.31, all-primaries lin -0.31, ML -0.31; pull +0.4) | Om -0.38 +- 0.12 (build -0.41) | s8 -0.00 +- 0.12 (build -0.10)
+  q6 full c [baseline_effii ] S8 -0.06 +- 0.14 (build D05 lin -0.18, all-primaries lin -0.18, ML -0.18; pull +0.8) | Om -0.09 +- 0.14 (build -0.19) | s8 +0.03 +- 0.13 (build -0.09)
+  q6 full d [baseline_effii ] S8 +0.10 +- 0.08 (build D05 lin +0.07, all-primaries lin +0.07, ML +0.07; pull +0.5) | Om +0.04 +- 0.07 (build +0.00) | s8 +0.19 +- 0.10 (build +0.16)
+  q6 full e [baseline_effii ] S8 +0.17 +- 0.13 (build D05 lin +0.07, all-primaries lin +0.07, ML +0.08; pull +0.8) | Om +0.13 +- 0.13 (build +0.04) | s8 +0.23 +- 0.12 (build +0.14)
+  q5 SO40 a [goal_effi      ] S8 -0.94 +- 0.10 (build D05 lin -0.98, all-primaries lin -1.00, ML -1.00; pull +0.4) | Om -0.89 +- 0.10 (build -0.82) | s8 +0.75 +- 0.09 (build +0.63)
+  q5 SO40 b [goal_effi      ] S8 -0.67 +- 0.09 (build D05 lin -0.74, all-primaries lin -0.77, ML -0.77; pull +0.8) | Om -0.86 +- 0.09 (build -0.90) | s8 -0.22 +- 0.09 (build -0.33)
+  q5 SO40 c [goal_effi      ] S8 -0.21 +- 0.11 (build D05 lin -0.46, all-primaries lin -0.49, ML -0.48; pull +2.3) | Om -0.19 +- 0.11 (build -0.44) | s8 -0.18 +- 0.10 (build -0.33)
+  q5 SO40 d [goal_effi      ] S8 +0.23 +- 0.05 (build D05 lin +0.21, all-primaries lin +0.21, ML +0.22; pull +0.3) | Om +0.14 +- 0.05 (build +0.09) | s8 +0.32 +- 0.08 (build +0.37)
+  q5 SO40 e [goal_effi      ] S8 +0.38 +- 0.09 (build D05 lin +0.23, all-primaries lin +0.22, ML +0.24; pull +1.6) | Om +0.33 +- 0.09 (build +0.15) | s8 +0.44 +- 0.09 (build +0.36)
+  q5 full a [goal_effi      ] S8 -1.49 +- 0.16 (build D05 lin -1.56, all-primaries lin -1.57, ML -1.58; pull +0.4) | Om -1.41 +- 0.15 (build -1.30) | s8 +1.19 +- 0.15 (build +0.99)
+  q5 full b [goal_effi      ] S8 -1.06 +- 0.14 (build D05 lin -1.17, all-primaries lin -1.22, ML -1.22; pull +0.8) | Om -1.36 +- 0.14 (build -1.42) | s8 -0.35 +- 0.14 (build -0.53)
+  q5 full c [goal_effi      ] S8 -0.33 +- 0.17 (build D05 lin -0.73, all-primaries lin -0.77, ML -0.76; pull +2.3) | Om -0.30 +- 0.17 (build -0.70) | s8 -0.28 +- 0.15 (build -0.52)
+  q5 full d [goal_effi      ] S8 +0.44 +- 0.10 (build D05 lin +0.33, all-primaries lin +0.33, ML +0.34; pull +1.1) | Om +0.34 +- 0.10 (build +0.17) | s8 +0.57 +- 0.12 (build +0.57)
+  q5 full e [goal_effi      ] S8 +0.59 +- 0.14 (build D05 lin +0.36, all-primaries lin +0.34, ML +0.38; pull +1.6) | Om +0.52 +- 0.15 (build +0.24) | s8 +0.69 +- 0.14 (build +0.56)
+  q6 SO40 a [goal_effi      ] S8 -0.15 +- 0.10 (build D05 lin -0.22, all-primaries lin -0.22, ML -0.22; pull +0.7) | Om -0.39 +- 0.09 (build -0.37) | s8 +0.48 +- 0.09 (build +0.41)
+  q6 SO40 b [goal_effi      ] S8 -0.21 +- 0.09 (build D05 lin -0.20, all-primaries lin -0.20, ML -0.20; pull -0.1) | Om -0.32 +- 0.09 (build -0.29) | s8 +0.02 +- 0.09 (build +0.01)
+  q6 SO40 c [goal_effi      ] S8 +0.04 +- 0.11 (build D05 lin -0.11, all-primaries lin -0.11, ML -0.11; pull +1.4) | Om +0.02 +- 0.10 (build -0.14) | s8 +0.06 +- 0.10 (build +0.01)
+  q6 SO40 d [goal_effi      ] S8 +0.10 +- 0.05 (build D05 lin +0.08, all-primaries lin +0.08, ML +0.08; pull +0.4) | Om +0.05 +- 0.04 (build +0.00) | s8 +0.14 +- 0.07 (build +0.18)
+  q6 SO40 e [goal_effi      ] S8 +0.23 +- 0.09 (build D05 lin +0.10, all-primaries lin +0.10, ML +0.10; pull +1.5) | Om +0.21 +- 0.09 (build +0.06) | s8 +0.25 +- 0.09 (build +0.17)
+  q6 full a [goal_effi      ] S8 -0.24 +- 0.16 (build D05 lin -0.35, all-primaries lin -0.35, ML -0.35; pull +0.7) | Om -0.62 +- 0.15 (build -0.58) | s8 +0.75 +- 0.14 (build +0.64)
+  q6 full b [goal_effi      ] S8 -0.33 +- 0.14 (build D05 lin -0.31, all-primaries lin -0.31, ML -0.31; pull -0.1) | Om -0.50 +- 0.14 (build -0.47) | s8 +0.03 +- 0.14 (build +0.01)
+  q6 full c [goal_effi      ] S8 +0.06 +- 0.17 (build D05 lin -0.18, all-primaries lin -0.18, ML -0.18; pull +1.4) | Om +0.04 +- 0.16 (build -0.21) | s8 +0.10 +- 0.15 (build +0.02)
+  q6 full d [goal_effi      ] S8 +0.22 +- 0.09 (build D05 lin +0.13, all-primaries lin +0.13, ML +0.13; pull +1.0) | Om +0.17 +- 0.09 (build +0.04) | s8 +0.27 +- 0.11 (build +0.27)
+  q6 full e [goal_effi      ] S8 +0.36 +- 0.14 (build D05 lin +0.15, all-primaries lin +0.15, ML +0.16; pull +1.5) | Om +0.33 +- 0.14 (build +0.09) | s8 +0.39 +- 0.14 (build +0.27)
+  q5 SO40 a [goal_effii     ] S8 -1.32 +- 0.10 (build D05 lin -1.36, all-primaries lin -1.37, ML -1.38; pull +0.4) | Om -1.00 +- 0.10 (build -0.93) | s8 +0.71 +- 0.09 (build +0.59)
+  q5 SO40 b [goal_effii     ] S8 -0.95 +- 0.09 (build D05 lin -1.01, all-primaries lin -1.04, ML -1.04; pull +0.7) | Om -1.13 +- 0.09 (build -1.16) | s8 -0.46 +- 0.09 (build -0.57)
+  q5 SO40 c [goal_effii     ] S8 -0.39 +- 0.11 (build D05 lin -0.63, all-primaries lin -0.66, ML -0.65; pull +2.2) | Om -0.33 +- 0.11 (build -0.57) | s8 -0.42 +- 0.10 (build -0.56)
+  q5 SO40 d [goal_effii     ] S8 +0.26 +- 0.05 (build D05 lin +0.24, all-primaries lin +0.24, ML +0.25; pull +0.3) | Om +0.17 +- 0.05 (build +0.11) | s8 +0.35 +- 0.08 (build +0.40)
+  q5 SO40 e [goal_effii     ] S8 +0.39 +- 0.09 (build D05 lin +0.24, all-primaries lin +0.23, ML +0.26; pull +1.6) | Om +0.34 +- 0.09 (build +0.17) | s8 +0.46 +- 0.09 (build +0.37)
+  q5 full a [goal_effii     ] S8 -2.08 +- 0.16 (build D05 lin -2.15, all-primaries lin -2.17, ML -2.17; pull +0.4) | Om -1.59 +- 0.15 (build -1.48) | s8 +1.12 +- 0.15 (build +0.93)
+  q5 full b [goal_effii     ] S8 -1.50 +- 0.14 (build D05 lin -1.60, all-primaries lin -1.65, ML -1.65; pull +0.7) | Om -1.78 +- 0.14 (build -1.83) | s8 -0.73 +- 0.14 (build -0.90)
+  q5 full c [goal_effii     ] S8 -0.61 +- 0.17 (build D05 lin -1.00, all-primaries lin -1.04, ML -1.03; pull +2.2) | Om -0.52 +- 0.17 (build -0.91) | s8 -0.66 +- 0.15 (build -0.88)
+  q5 full d [goal_effii     ] S8 +0.48 +- 0.10 (build D05 lin +0.37, all-primaries lin +0.36, ML +0.38; pull +1.1) | Om +0.37 +- 0.10 (build +0.21) | s8 +0.61 +- 0.12 (build +0.61)
+  q5 full e [goal_effii     ] S8 +0.62 +- 0.14 (build D05 lin +0.38, all-primaries lin +0.37, ML +0.41; pull +1.6) | Om +0.54 +- 0.15 (build +0.27) | s8 +0.72 +- 0.14 (build +0.59)
+  q6 SO40 a [goal_effii     ] S8 -0.37 +- 0.10 (build D05 lin -0.44, all-primaries lin -0.44, ML -0.44; pull +0.7) | Om -0.45 +- 0.09 (build -0.44) | s8 +0.45 +- 0.09 (build +0.38)
+  q6 SO40 b [goal_effii     ] S8 -0.37 +- 0.09 (build D05 lin -0.35, all-primaries lin -0.35, ML -0.35; pull -0.2) | Om -0.47 +- 0.09 (build -0.44) | s8 -0.12 +- 0.09 (build -0.12)
+  q6 SO40 c [goal_effii     ] S8 -0.07 +- 0.10 (build D05 lin -0.21, all-primaries lin -0.21, ML -0.20; pull +1.3) | Om -0.06 +- 0.10 (build -0.21) | s8 -0.08 +- 0.10 (build -0.12)
+  q6 SO40 d [goal_effii     ] S8 +0.11 +- 0.05 (build D05 lin +0.09, all-primaries lin +0.09, ML +0.10; pull +0.4) | Om +0.07 +- 0.04 (build +0.01) | s8 +0.16 +- 0.07 (build +0.19)
+  q6 SO40 e [goal_effii     ] S8 +0.23 +- 0.09 (build D05 lin +0.10, all-primaries lin +0.10, ML +0.11; pull +1.4) | Om +0.21 +- 0.09 (build +0.07) | s8 +0.26 +- 0.09 (build +0.18)
+  q6 full a [goal_effii     ] S8 -0.58 +- 0.16 (build D05 lin -0.70, all-primaries lin -0.70, ML -0.70; pull +0.7) | Om -0.72 +- 0.15 (build -0.69) | s8 +0.71 +- 0.14 (build +0.61)
+  q6 full b [goal_effii     ] S8 -0.58 +- 0.14 (build D05 lin -0.55, all-primaries lin -0.55, ML -0.55; pull -0.2) | Om -0.74 +- 0.14 (build -0.70) | s8 -0.18 +- 0.14 (build -0.20)
+  q6 full c [goal_effii     ] S8 -0.11 +- 0.16 (build D05 lin -0.33, all-primaries lin -0.33, ML -0.32; pull +1.3) | Om -0.09 +- 0.16 (build -0.33) | s8 -0.12 +- 0.15 (build -0.19)
+  q6 full d [goal_effii     ] S8 +0.24 +- 0.09 (build D05 lin +0.15, all-primaries lin +0.15, ML +0.15; pull +1.0) | Om +0.18 +- 0.09 (build +0.05) | s8 +0.29 +- 0.11 (build +0.29)
+  q6 full e [goal_effii     ] S8 +0.37 +- 0.14 (build D05 lin +0.17, all-primaries lin +0.17, ML +0.17; pull +1.4) | Om +0.33 +- 0.14 (build +0.10) | s8 +0.40 +- 0.14 (build +0.28)
+  q5 SO40 a [lowP_f1        ] S8 +0.63 +- 0.07 (build D05 lin +0.57, all-primaries lin +0.57, ML +0.57; pull +0.9) | Om +0.08 +- 0.07 (build +0.10) | s8 +0.26 +- 0.07 (build +0.20)
+  q5 SO40 b [lowP_f1        ] S8 +0.46 +- 0.06 (build D05 lin +0.41, all-primaries lin +0.39, ML +0.39; pull +0.9) | Om +0.40 +- 0.06 (build +0.37) | s8 +0.47 +- 0.06 (build +0.40)
+  q5 SO40 c [lowP_f1        ] S8 +0.34 +- 0.07 (build D05 lin +0.24, all-primaries lin +0.21, ML +0.21; pull +1.4) | Om +0.27 +- 0.07 (build +0.17) | s8 +0.48 +- 0.07 (build +0.38)
+  q5 SO40 d [lowP_f1        ] S8 -0.04 +- 0.04 (build D05 lin -0.03, all-primaries lin -0.02, ML -0.02; pull -0.4) | Om -0.07 +- 0.03 (build -0.06) | s8 -0.00 +- 0.06 (build +0.02)
+  q5 SO40 e [lowP_f1        ] S8 +0.08 +- 0.06 (build D05 lin +0.02, all-primaries lin +0.01, ML +0.01; pull +1.0) | Om +0.08 +- 0.06 (build +0.01) | s8 +0.08 +- 0.06 (build +0.04)
+  q5 full a [lowP_f1        ] S8 +1.00 +- 0.11 (build D05 lin +0.91, all-primaries lin +0.91, ML +0.91; pull +0.9) | Om +0.13 +- 0.11 (build +0.16) | s8 +0.41 +- 0.11 (build +0.31)
+  q5 full b [lowP_f1        ] S8 +0.73 +- 0.09 (build D05 lin +0.65, all-primaries lin +0.62, ML +0.62; pull +0.9) | Om +0.63 +- 0.10 (build +0.58) | s8 +0.74 +- 0.10 (build +0.64)
+  q5 full c [lowP_f1        ] S8 +0.53 +- 0.11 (build D05 lin +0.37, all-primaries lin +0.33, ML +0.33; pull +1.4) | Om +0.42 +- 0.11 (build +0.27) | s8 +0.75 +- 0.11 (build +0.60)
+  q5 full d [lowP_f1        ] S8 -0.01 +- 0.06 (build D05 lin -0.02, all-primaries lin -0.02, ML -0.02; pull +0.2) | Om -0.03 +- 0.05 (build -0.06) | s8 +0.02 +- 0.08 (build +0.03)
+  q5 full e [lowP_f1        ] S8 +0.13 +- 0.10 (build D05 lin +0.03, all-primaries lin +0.02, ML +0.02; pull +1.0) | Om +0.12 +- 0.10 (build +0.02) | s8 +0.13 +- 0.09 (build +0.06)
+  q6 SO40 a [lowP_f1        ] S8 +0.46 +- 0.07 (build D05 lin +0.39, all-primaries lin +0.39, ML +0.38; pull +1.2) | Om +0.11 +- 0.07 (build +0.08) | s8 +0.12 +- 0.06 (build +0.11)
+  q6 SO40 b [lowP_f1        ] S8 +0.29 +- 0.06 (build D05 lin +0.27, all-primaries lin +0.27, ML +0.27; pull +0.3) | Om +0.27 +- 0.06 (build +0.25) | s8 +0.27 +- 0.06 (build +0.26)
+  q6 SO40 c [lowP_f1        ] S8 +0.21 +- 0.07 (build D05 lin +0.15, all-primaries lin +0.15, ML +0.15; pull +0.9) | Om +0.18 +- 0.07 (build +0.11) | s8 +0.28 +- 0.07 (build +0.24)
+  q6 SO40 d [lowP_f1        ] S8 -0.04 +- 0.04 (build D05 lin -0.02, all-primaries lin -0.02, ML -0.02; pull -0.5) | Om -0.03 +- 0.03 (build -0.04) | s8 -0.04 +- 0.06 (build +0.01)
+  q6 SO40 e [lowP_f1        ] S8 +0.04 +- 0.06 (build D05 lin +0.01, all-primaries lin +0.01, ML +0.01; pull +0.5) | Om +0.05 +- 0.06 (build +0.01) | s8 +0.03 +- 0.06 (build +0.02)
+  q6 full a [lowP_f1        ] S8 +0.73 +- 0.11 (build D05 lin +0.61, all-primaries lin +0.61, ML +0.61; pull +1.2) | Om +0.18 +- 0.10 (build +0.13) | s8 +0.18 +- 0.10 (build +0.18)
+  q6 full b [lowP_f1        ] S8 +0.46 +- 0.10 (build D05 lin +0.43, all-primaries lin +0.43, ML +0.43; pull +0.3) | Om +0.43 +- 0.10 (build +0.39) | s8 +0.43 +- 0.10 (build +0.41)
+  q6 full c [lowP_f1        ] S8 +0.34 +- 0.12 (build D05 lin +0.24, all-primaries lin +0.24, ML +0.24; pull +0.9) | Om +0.28 +- 0.11 (build +0.18) | s8 +0.44 +- 0.11 (build +0.38)
+  q6 full d [lowP_f1        ] S8 -0.03 +- 0.05 (build D05 lin -0.02, all-primaries lin -0.02, ML -0.02; pull -0.2) | Om -0.02 +- 0.05 (build -0.04) | s8 -0.04 +- 0.08 (build +0.01)
+  q6 full e [lowP_f1        ] S8 +0.06 +- 0.09 (build D05 lin +0.01, all-primaries lin +0.01, ML +0.01; pull +0.5) | Om +0.07 +- 0.10 (build +0.01) | s8 +0.04 +- 0.09 (build +0.03)
+  q5 SO40 a [lowP_effi      ] S8 -0.10 +- 0.07 (build D05 lin -0.17, all-primaries lin -0.17, ML -0.17; pull +1.0) | Om -0.16 +- 0.07 (build -0.15) | s8 +0.18 +- 0.07 (build +0.13)
+  q5 SO40 b [lowP_effi      ] S8 -0.10 +- 0.06 (build D05 lin -0.15, all-primaries lin -0.19, ML -0.19; pull +0.9) | Om -0.14 +- 0.06 (build -0.18) | s8 -0.01 +- 0.06 (build -0.07)
+  q5 SO40 c [lowP_effi      ] S8 +0.01 +- 0.07 (build D05 lin -0.09, all-primaries lin -0.14, ML -0.14; pull +1.3) | Om +0.00 +- 0.07 (build -0.09) | s8 +0.01 +- 0.07 (build -0.07)
+  q5 SO40 d [lowP_effi      ] S8 +0.02 +- 0.04 (build D05 lin +0.03, all-primaries lin +0.04, ML +0.04; pull -0.3) | Om -0.01 +- 0.03 (build -0.00) | s8 +0.04 +- 0.06 (build +0.06)
+  q5 SO40 e [lowP_effi      ] S8 +0.07 +- 0.06 (build D05 lin +0.01, all-primaries lin -0.01, ML -0.01; pull +0.9) | Om +0.06 +- 0.06 (build -0.00) | s8 +0.08 +- 0.06 (build +0.04)
+  q5 full a [lowP_effi      ] S8 -0.15 +- 0.11 (build D05 lin -0.26, all-primaries lin -0.26, ML -0.26; pull +1.0) | Om -0.25 +- 0.11 (build -0.24) | s8 +0.28 +- 0.10 (build +0.20)
+  q5 full b [lowP_effi      ] S8 -0.16 +- 0.09 (build D05 lin -0.24, all-primaries lin -0.31, ML -0.31; pull +0.9) | Om -0.23 +- 0.10 (build -0.29) | s8 -0.02 +- 0.10 (build -0.12)
+  q5 full c [lowP_effi      ] S8 +0.01 +- 0.11 (build D05 lin -0.14, all-primaries lin -0.22, ML -0.22; pull +1.3) | Om +0.01 +- 0.11 (build -0.14) | s8 +0.02 +- 0.11 (build -0.11)
+  q5 full d [lowP_effi      ] S8 +0.04 +- 0.06 (build D05 lin +0.04, all-primaries lin +0.04, ML +0.04; pull +0.1) | Om +0.02 +- 0.05 (build -0.00) | s8 +0.07 +- 0.08 (build +0.09)
+  q5 full e [lowP_effi      ] S8 +0.11 +- 0.10 (build D05 lin +0.02, all-primaries lin -0.01, ML -0.01; pull +0.9) | Om +0.10 +- 0.10 (build -0.00) | s8 +0.12 +- 0.09 (build +0.06)
+  q6 SO40 a [lowP_effi      ] S8 +0.07 +- 0.07 (build D05 lin -0.01, all-primaries lin -0.01, ML -0.01; pull +1.3) | Om -0.01 +- 0.06 (build -0.06) | s8 +0.06 +- 0.06 (build +0.08)
+  q6 SO40 b [lowP_effi      ] S8 -0.02 +- 0.06 (build D05 lin -0.02, all-primaries lin -0.02, ML -0.02; pull +0.1) | Om -0.03 +- 0.06 (build -0.04) | s8 -0.00 +- 0.06 (build +0.01)
+  q6 SO40 c [lowP_effi      ] S8 +0.05 +- 0.07 (build D05 lin -0.01, all-primaries lin -0.01, ML -0.01; pull +0.8) | Om +0.05 +- 0.07 (build -0.02) | s8 +0.03 +- 0.07 (build +0.01)
+  q6 SO40 d [lowP_effi      ] S8 -0.01 +- 0.04 (build D05 lin +0.00, all-primaries lin +0.00, ML +0.00; pull -0.5) | Om +0.00 +- 0.03 (build -0.01) | s8 -0.03 +- 0.06 (build +0.02)
+  q6 SO40 e [lowP_effi      ] S8 +0.03 +- 0.06 (build D05 lin +0.00, all-primaries lin +0.00, ML +0.00; pull +0.5) | Om +0.04 +- 0.06 (build -0.00) | s8 +0.02 +- 0.06 (build +0.01)
+  q6 full a [lowP_effi      ] S8 +0.12 +- 0.11 (build D05 lin -0.02, all-primaries lin -0.02, ML -0.02; pull +1.3) | Om -0.01 +- 0.10 (build -0.09) | s8 +0.09 +- 0.10 (build +0.13)
+  q6 full b [lowP_effi      ] S8 -0.03 +- 0.10 (build D05 lin -0.04, all-primaries lin -0.04, ML -0.04; pull +0.1) | Om -0.04 +- 0.10 (build -0.07) | s8 -0.00 +- 0.10 (build +0.02)
+  q6 full c [lowP_effi      ] S8 +0.07 +- 0.11 (build D05 lin -0.02, all-primaries lin -0.02, ML -0.02; pull +0.8) | Om +0.08 +- 0.11 (build -0.03) | s8 +0.04 +- 0.11 (build +0.02)
+  q6 full d [lowP_effi      ] S8 -0.01 +- 0.05 (build D05 lin +0.01, all-primaries lin +0.01, ML +0.01; pull -0.3) | Om +0.01 +- 0.05 (build -0.02) | s8 -0.03 +- 0.08 (build +0.04)
+  q6 full e [lowP_effi      ] S8 +0.05 +- 0.09 (build D05 lin +0.00, all-primaries lin +0.00, ML +0.00; pull +0.5) | Om +0.06 +- 0.10 (build -0.01) | s8 +0.02 +- 0.09 (build +0.02)
+  q5 SO40 a [baseline_std   ] S8 -2.76 +- 0.09 | Om -1.30 +- 0.09 | s8 +0.32 +- 0.09
+  q5 SO40 b [baseline_std   ] S8 -2.00 +- 0.08 | Om -2.10 +- 0.08 | s8 -1.48 +- 0.08
+  q5 SO40 c [baseline_std   ] S8 -1.13 +- 0.09 | Om -0.92 +- 0.09 | s8 -1.41 +- 0.08
+  q5 SO40 d [baseline_std   ] S8 +0.27 +- 0.05 | Om +0.16 +- 0.04 | s8 +0.35 +- 0.07
+  q5 SO40 e [baseline_std   ] S8 +0.26 +- 0.08 | Om +0.21 +- 0.08 | s8 +0.34 +- 0.08
+  q5 full a [baseline_std   ] S8 -4.37 +- 0.15 | Om -2.06 +- 0.14 | s8 +0.51 +- 0.14
+  q5 full b [baseline_std   ] S8 -3.16 +- 0.13 | Om -3.31 +- 0.13 | s8 -2.34 +- 0.13
+  q5 full c [baseline_std   ] S8 -1.79 +- 0.14 | Om -1.46 +- 0.14 | s8 -2.23 +- 0.13
+  q5 full d [baseline_std   ] S8 +0.39 +- 0.08 | Om +0.26 +- 0.08 | s8 +0.54 +- 0.10
+  q5 full e [baseline_std   ] S8 +0.41 +- 0.13 | Om +0.33 +- 0.13 | s8 +0.54 +- 0.13
+  q5 SO40 a [baseline_clip  ] S8 -0.30 +- 0.09 | Om -0.49 +- 0.09 | s8 +0.53 +- 0.09
+  q5 SO40 b [baseline_clip  ] S8 -0.25 +- 0.08 | Om -0.38 +- 0.08 | s8 -0.00 +- 0.08
+  q5 SO40 c [baseline_clip  ] S8 -0.06 +- 0.10 | Om -0.08 +- 0.10 | s8 +0.03 +- 0.09
+  q5 SO40 d [baseline_clip  ] S8 +0.12 +- 0.05 | Om +0.04 +- 0.04 | s8 +0.22 +- 0.07
+  q5 SO40 e [baseline_clip  ] S8 +0.22 +- 0.09 | Om +0.18 +- 0.09 | s8 +0.28 +- 0.08
+  q5 full a [baseline_clip  ] S8 -0.47 +- 0.15 | Om -0.77 +- 0.14 | s8 +0.84 +- 0.14
+  q5 full b [baseline_clip  ] S8 -0.40 +- 0.13 | Om -0.60 +- 0.13 | s8 -0.00 +- 0.13
+  q5 full c [baseline_clip  ] S8 -0.10 +- 0.15 | Om -0.13 +- 0.15 | s8 +0.04 +- 0.14
+  q5 full d [baseline_clip  ] S8 +0.24 +- 0.09 | Om +0.14 +- 0.08 | s8 +0.37 +- 0.11
+  q5 full e [baseline_clip  ] S8 +0.35 +- 0.13 | Om +0.29 +- 0.14 | s8 +0.44 +- 0.13
+  q5 SO40 a [baseline_rob   ] S8 -0.74 +- 0.09 | Om -0.60 +- 0.09 | s8 +0.45 +- 0.09
+  q5 SO40 b [baseline_rob   ] S8 -0.59 +- 0.08 | Om -0.70 +- 0.08 | s8 -0.31 +- 0.08
+  q5 SO40 c [baseline_rob   ] S8 -0.28 +- 0.10 | Om -0.25 +- 0.09 | s8 -0.27 +- 0.09
+  q5 SO40 d [baseline_rob   ] S8 +0.16 +- 0.05 | Om +0.08 +- 0.04 | s8 +0.24 +- 0.07
+  q5 SO40 e [baseline_rob   ] S8 +0.22 +- 0.08 | Om +0.19 +- 0.09 | s8 +0.28 +- 0.08
+  q5 full a [baseline_rob   ] S8 -1.17 +- 0.15 | Om -0.95 +- 0.14 | s8 +0.71 +- 0.14
+  q5 full b [baseline_rob   ] S8 -0.94 +- 0.13 | Om -1.11 +- 0.13 | s8 -0.49 +- 0.13
+  q5 full c [baseline_rob   ] S8 -0.44 +- 0.15 | Om -0.40 +- 0.15 | s8 -0.43 +- 0.14
+  q5 full d [baseline_rob   ] S8 +0.27 +- 0.08 | Om +0.18 +- 0.08 | s8 +0.39 +- 0.10
+  q5 full e [baseline_rob   ] S8 +0.35 +- 0.13 | Om +0.29 +- 0.13 | s8 +0.45 +- 0.13
+  q5 SO40 a [goal_std       ] S8 -4.26 +- 0.10 | Om -1.97 +- 0.10 | s8 +0.47 +- 0.09
+  q5 SO40 b [goal_std       ] S8 -3.00 +- 0.09 | Om -3.14 +- 0.09 | s8 -2.18 +- 0.09
+  q5 SO40 c [goal_std       ] S8 -1.70 +- 0.11 | Om -1.37 +- 0.10 | s8 -2.11 +- 0.10
+  q5 SO40 d [goal_std       ] S8 +0.48 +- 0.05 | Om +0.32 +- 0.05 | s8 +0.62 +- 0.07
+  q5 SO40 e [goal_std       ] S8 +0.52 +- 0.09 | Om +0.43 +- 0.09 | s8 +0.65 +- 0.09
+  q5 full a [goal_std       ] S8 -6.74 +- 0.16 | Om -3.11 +- 0.15 | s8 +0.74 +- 0.14
+  q5 full b [goal_std       ] S8 -4.74 +- 0.14 | Om -4.96 +- 0.14 | s8 -3.44 +- 0.15
+  q5 full c [goal_std       ] S8 -2.69 +- 0.17 | Om -2.17 +- 0.16 | s8 -3.33 +- 0.15
+  q5 full d [goal_std       ] S8 +0.74 +- 0.10 | Om +0.54 +- 0.09 | s8 +0.98 +- 0.12
+  q5 full e [goal_std       ] S8 +0.82 +- 0.14 | Om +0.68 +- 0.15 | s8 +1.03 +- 0.14
+  q5 SO40 a [goal_clip      ] S8 -0.78 +- 0.10 | Om -0.86 +- 0.10 | s8 +0.79 +- 0.09
+  q5 SO40 b [goal_clip      ] S8 -0.54 +- 0.09 | Om -0.74 +- 0.09 | s8 -0.10 +- 0.09
+  q5 SO40 c [goal_clip      ] S8 -0.12 +- 0.11 | Om -0.13 +- 0.11 | s8 -0.06 +- 0.10
+  q5 SO40 d [goal_clip      ] S8 +0.22 +- 0.05 | Om +0.13 +- 0.05 | s8 +0.32 +- 0.08
+  q5 SO40 e [goal_clip      ] S8 +0.37 +- 0.09 | Om +0.33 +- 0.09 | s8 +0.44 +- 0.09
+  q5 full a [goal_clip      ] S8 -1.24 +- 0.16 | Om -1.35 +- 0.15 | s8 +1.24 +- 0.15
+  q5 full b [goal_clip      ] S8 -0.86 +- 0.14 | Om -1.17 +- 0.14 | s8 -0.16 +- 0.14
+  q5 full c [goal_clip      ] S8 -0.20 +- 0.17 | Om -0.20 +- 0.17 | s8 -0.10 +- 0.15
+  q5 full d [goal_clip      ] S8 +0.43 +- 0.10 | Om +0.32 +- 0.10 | s8 +0.57 +- 0.12
+  q5 full e [goal_clip      ] S8 +0.59 +- 0.14 | Om +0.52 +- 0.15 | s8 +0.70 +- 0.14
+  q5 SO40 a [goal_rob       ] S8 -1.31 +- 0.10 | Om -1.00 +- 0.10 | s8 +0.71 +- 0.09
+  q5 SO40 b [goal_rob       ] S8 -0.94 +- 0.09 | Om -1.12 +- 0.09 | s8 -0.46 +- 0.09
+  q5 SO40 c [goal_rob       ] S8 -0.38 +- 0.11 | Om -0.33 +- 0.11 | s8 -0.41 +- 0.10
+  q5 SO40 d [goal_rob       ] S8 +0.26 +- 0.05 | Om +0.17 +- 0.05 | s8 +0.35 +- 0.08
+  q5 SO40 e [goal_rob       ] S8 +0.39 +- 0.09 | Om +0.34 +- 0.09 | s8 +0.46 +- 0.09
+  q5 full a [goal_rob       ] S8 -2.07 +- 0.16 | Om -1.58 +- 0.15 | s8 +1.11 +- 0.15
+  q5 full b [goal_rob       ] S8 -1.49 +- 0.14 | Om -1.77 +- 0.14 | s8 -0.73 +- 0.14
+  q5 full c [goal_rob       ] S8 -0.61 +- 0.17 | Om -0.52 +- 0.17 | s8 -0.65 +- 0.15
+  q5 full d [goal_rob       ] S8 +0.48 +- 0.10 | Om +0.37 +- 0.10 | s8 +0.61 +- 0.12
+  q5 full e [goal_rob       ] S8 +0.62 +- 0.14 | Om +0.54 +- 0.15 | s8 +0.73 +- 0.14
+   [134s]
+
+=== (D) linear decomposition of the map Delta (amplitude / z tilt / q shape), S8 bias, SO40, q_cut 5 (bootstrap 1 sigma) ===
+  [white_f1     ] a: amplitude -2.45 (0.13) + z tilt -1.05 (0.06) + q shape -0.24 (0.02) = -3.75
+  [white_f1     ] b: amplitude -0.14 (0.01) + z tilt +0.62 (0.09) + q shape -1.01 (0.08) = -0.53
+  [white_f1     ] d: amplitude -0.08 (0.00) + z tilt +0.21 (0.04) + q shape +0.95 (0.06) = +1.09
+  [baseline_f1  ] a: amplitude +1.91 (0.08) + z tilt -0.59 (0.05) + q shape +0.08 (0.01) = +1.39
+  [baseline_f1  ] b: amplitude +0.26 (0.01) + z tilt +0.39 (0.04) + q shape +0.29 (0.06) = +0.94
+  [baseline_f1  ] d: amplitude +0.10 (0.00) + z tilt -0.10 (0.05) + q shape +0.01 (0.02) = +0.01
+  [goal_f1      ] a: amplitude +2.61 (0.08) + z tilt -0.81 (0.05) + q shape +0.10 (0.02) = +1.90
+  [goal_f1      ] b: amplitude +0.35 (0.01) + z tilt +0.59 (0.05) + q shape +0.40 (0.07) = +1.34
+  [goal_f1      ] d: amplitude +0.10 (0.00) + z tilt -0.08 (0.05) + q shape +0.00 (0.03) = +0.02
+  [baseline_effi] a: amplitude -0.30 (0.07) + z tilt -0.14 (0.06) + q shape -0.12 (0.02) = -0.56
+  [baseline_effi] b: amplitude -0.04 (0.01) + z tilt +0.12 (0.04) + q shape -0.54 (0.06) = -0.46
+  [baseline_effi] d: amplitude -0.02 (0.00) + z tilt -0.01 (0.04) + q shape +0.17 (0.02) = +0.14
+
+=== (E) ML fits of the naive model to N0 + Delta_map (central vector), the build's fitter (s2lib.run_fit) ===
+  q5 SO40 a [baseline_f0.5  ] ML S8 -0.77 Om -0.76 s8 +0.67 |  | chi2min 1.44 power 0.060 | map lin S8 -0.77 +- 0.08 || build ML S8 -0.75 Om -0.73 s8 +0.63  chi2min 0.40 power 0.053
+  q5 SO40 d [baseline_f0.5  ] ML S8 +0.14 Om +0.01 s8 +0.32 | omb:-0.08 alpha:+0.34 slnY:-0.08 | chi2min 1.22 power 0.059 | map lin S8 +0.14 +- 0.04 || build ML S8 +0.11 Om -0.03 s8 +0.30 omb:-0.05 alpha:+0.31 slnY:-0.11 chi2min 0.25 power 0.052
+  q5 full a [baseline_f0.5  ] ML S8 -1.22 Om -1.21 s8 +1.05 |  | chi2min 3.60 power 0.078 | map lin S8 -1.21 +- 0.13 || build ML S8 -1.18 Om -1.16 s8 +1.00  chi2min 1.01 power 0.057
+  q5 full d [baseline_f0.5  ] ML S8 +0.25 Om +0.09 s8 +0.50 | omb:-0.18 alpha:+0.55 slnY:-0.10 | chi2min 3.04 power 0.073 | map lin S8 +0.24 +- 0.07 || build ML S8 +0.18 Om +0.02 s8 +0.45 omb:-0.11 alpha:+0.48 slnY:-0.15 chi2min 0.61 power 0.054
+  q5 SO40 a [baseline_f1    ] ML S8 +1.39 Om +0.05 s8 +0.69 |  | chi2min 1.96 power 0.064 | map lin S8 +1.39 +- 0.10 || build ML S8 +1.33 Om +0.10 s8 +0.59  chi2min 0.82 power 0.056
+  q5 SO40 b [baseline_f1    ] ML S8 +0.93 Om +0.79 s8 +1.01 | omb:-0.80 | chi2min 1.30 power 0.059 | map lin S8 +0.94 +- 0.08 || build ML S8 +0.91 Om +0.79 s8 +0.96 omb:-0.78 chi2min 0.19 power 0.051
+  q5 SO40 c [baseline_f1    ] ML S8 +0.70 Om +0.52 s8 +1.01 | omb:-0.54 slnY:+0.14 | chi2min 1.28 power 0.059 | map lin S8 +0.71 +- 0.10 || build ML S8 +0.57 Om +0.39 s8 +0.94 omb:-0.41 slnY:-0.01 chi2min 0.19 power 0.051
+  q5 SO40 d [baseline_f1    ] ML S8 +0.01 Om -0.05 s8 +0.12 | omb:-0.11 alpha:-0.45 slnY:+0.10 | chi2min 1.27 power 0.059 | map lin S8 +0.01 +- 0.05 || build ML S8 -0.01 Om -0.09 s8 +0.13 omb:-0.05 alpha:-0.41 slnY:-0.00 chi2min 0.12 power 0.051
+  q5 SO40 e [baseline_f1    ] ML S8 +0.18 Om +0.15 s8 +0.23 | omb:-0.23 alpha:-0.22 slnY:+0.17 | chi2min 1.23 power 0.059 | map lin S8 +0.19 +- 0.09 || build ML S8 +0.07 Om +0.03 s8 +0.15 omb:-0.10 alpha:-0.27 slnY:+0.03 chi2min 0.12 power 0.051
+  q5 full a [baseline_f1    ] ML S8 +2.20 Om +0.09 s8 +1.09 |  | chi2min 4.91 power 0.090 | map lin S8 +2.20 +- 0.15 || build ML S8 +2.11 Om +0.16 s8 +0.93  chi2min 2.06 power 0.065
+  q5 full b [baseline_f1    ] ML S8 +1.48 Om +1.25 s8 +1.60 | omb:-1.26 | chi2min 3.25 power 0.075 | map lin S8 +1.48 +- 0.13 || build ML S8 +1.44 Om +1.25 s8 +1.51 omb:-1.24 chi2min 0.47 power 0.053
+  q5 full c [baseline_f1    ] ML S8 +1.11 Om +0.83 s8 +1.60 | omb:-0.85 slnY:+0.22 | chi2min 3.20 power 0.074 | map lin S8 +1.13 +- 0.16 || build ML S8 +0.90 Om +0.62 s8 +1.48 omb:-0.64 slnY:-0.02 chi2min 0.47 power 0.053
+  q5 full d [baseline_f1    ] ML S8 +0.12 Om +0.05 s8 +0.24 | omb:-0.24 alpha:-0.60 slnY:+0.19 | chi2min 3.13 power 0.074 | map lin S8 +0.12 +- 0.09 || build ML S8 +0.04 Om -0.06 s8 +0.22 omb:-0.10 alpha:-0.58 slnY:+0.01 chi2min 0.30 power 0.052
+  q5 full e [baseline_f1    ] ML S8 +0.29 Om +0.24 s8 +0.37 | omb:-0.37 alpha:-0.35 slnY:+0.27 | chi2min 3.08 power 0.073 | map lin S8 +0.30 +- 0.14 || build ML S8 +0.12 Om +0.05 s8 +0.24 omb:-0.16 alpha:-0.42 slnY:+0.05 chi2min 0.29 power 0.052
+  q6 SO40 a [baseline_f1    ] ML S8 +1.04 Om +0.11 s8 +0.44 |  | chi2min 1.46 power 0.060 | map lin S8 +1.04 +- 0.10 || build ML S8 +0.98 Om +0.13 s8 +0.37  chi2min 0.44 power 0.053
+  q6 SO40 b [baseline_f1    ] ML S8 +0.70 Om +0.61 s8 +0.73 | omb:-0.60 | chi2min 1.09 power 0.057 | map lin S8 +0.71 +- 0.08 || build ML S8 +0.67 Om +0.59 s8 +0.67 omb:-0.57 chi2min 0.10 power 0.051
+  q6 SO40 c [baseline_f1    ] ML S8 +0.47 Om +0.34 s8 +0.72 | omb:-0.35 slnY:+0.05 | chi2min 1.08 power 0.057 | map lin S8 +0.48 +- 0.09 || build ML S8 +0.40 Om +0.29 s8 +0.65 omb:-0.29 slnY:+0.00 chi2min 0.10 power 0.051
+  q6 SO40 d [baseline_f1    ] ML S8 +0.01 Om -0.05 s8 +0.10 | omb:-0.06 alpha:-0.32 slnY:+0.02 | chi2min 1.07 power 0.057 | map lin S8 +0.01 +- 0.05 || build ML S8 -0.02 Om -0.07 s8 +0.07 omb:-0.02 alpha:-0.32 slnY:+0.01 chi2min 0.06 power 0.050
+  q6 SO40 e [baseline_f1    ] ML S8 +0.12 Om +0.09 s8 +0.16 | omb:-0.14 alpha:-0.16 slnY:+0.08 | chi2min 1.06 power 0.057 | map lin S8 +0.12 +- 0.08 || build ML S8 +0.04 Om +0.01 s8 +0.08 omb:-0.05 alpha:-0.21 slnY:+0.03 chi2min 0.06 power 0.050
+  q6 full a [baseline_f1    ] ML S8 +1.64 Om +0.17 s8 +0.69 |  | chi2min 3.65 power 0.078 | map lin S8 +1.65 +- 0.15 || build ML S8 +1.55 Om +0.21 s8 +0.58  chi2min 1.10 power 0.058
+  q6 full b [baseline_f1    ] ML S8 +1.11 Om +0.97 s8 +1.15 | omb:-0.95 | chi2min 2.71 power 0.070 | map lin S8 +1.12 +- 0.12 || build ML S8 +1.05 Om +0.94 s8 +1.06 omb:-0.90 chi2min 0.26 power 0.052
+  q6 full c [baseline_f1    ] ML S8 +0.74 Om +0.54 s8 +1.13 | omb:-0.55 slnY:+0.08 | chi2min 2.71 power 0.070 | map lin S8 +0.75 +- 0.14 || build ML S8 +0.64 Om +0.45 s8 +1.03 omb:-0.46 slnY:+0.00 chi2min 0.26 power 0.052
+  q6 full d [baseline_f1    ] ML S8 +0.07 Om +0.00 s8 +0.18 | omb:-0.13 alpha:-0.44 slnY:+0.06 | chi2min 2.66 power 0.070 | map lin S8 +0.07 +- 0.08 || build ML S8 +0.00 Om -0.06 s8 +0.11 omb:-0.05 alpha:-0.46 slnY:+0.02 chi2min 0.15 power 0.051
+  q6 full e [baseline_f1    ] ML S8 +0.18 Om +0.15 s8 +0.25 | omb:-0.21 alpha:-0.26 slnY:+0.12 | chi2min 2.64 power 0.070 | map lin S8 +0.19 +- 0.13 || build ML S8 +0.06 Om +0.02 s8 +0.13 omb:-0.09 alpha:-0.34 slnY:+0.05 chi2min 0.15 power 0.051
+  q5 SO40 a [baseline_f2    ] ML S8 +3.17 Om +0.61 s8 +0.89 |  | chi2min 6.00 power 0.101 | map lin S8 +3.19 +- 0.11 || build ML S8 +3.15 Om +0.67 s8 +0.78  chi2min 5.17 power 0.092
+  q5 SO40 d [baseline_f2    ] ML S8 -0.10 Om -0.15 s8 +0.01 | omb:-0.15 alpha:-1.15 slnY:+0.24 | chi2min 1.92 power 0.064 | map lin S8 -0.11 +- 0.06 || build ML S8 -0.13 Om -0.20 s8 +0.01 omb:-0.09 alpha:-1.16 slnY:+0.15 chi2min 0.79 power 0.055
+  q5 full a [baseline_f2    ] ML S8 +5.02 Om +0.96 s8 +1.40 |  | chi2min 15.00 power 0.223 | map lin S8 +5.05 +- 0.17 || build ML S8 +4.98 Om +1.06 s8 +1.24  chi2min 12.91 power 0.190
+  q5 full d [baseline_f2    ] ML S8 +0.01 Om -0.04 s8 +0.11 | omb:-0.31 alpha:-1.62 slnY:+0.41 | chi2min 4.73 power 0.088 | map lin S8 +0.01 +- 0.10 || build ML S8 -0.08 Om -0.16 s8 +0.06 omb:-0.18 alpha:-1.67 slnY:+0.26 chi2min 1.95 power 0.064
+  q5 SO40 a [goal_f0.5      ] ML S8 -1.46 Om -1.29 s8 +1.03 |  | chi2min 2.57 power 0.069 | map lin S8 -1.45 +- 0.09 || build ML S8 -1.41 Om -1.22 s8 +0.97  chi2min 1.25 power 0.059
+  q5 SO40 d [goal_f0.5      ] ML S8 +0.26 Om +0.10 s8 +0.49 | omb:-0.21 alpha:+0.54 slnY:-0.04 | chi2min 1.99 power 0.064 | map lin S8 +0.26 +- 0.05 || build ML S8 +0.23 Om +0.04 s8 +0.50 omb:-0.12 alpha:+0.57 slnY:-0.17 chi2min 0.67 power 0.055
+  q5 full a [goal_f0.5      ] ML S8 -2.30 Om -2.03 s8 +1.64 |  | chi2min 6.43 power 0.105 | map lin S8 -2.29 +- 0.15 || build ML S8 -2.23 Om -1.94 s8 +1.54  chi2min 3.12 power 0.073
+  q5 full d [goal_f0.5      ] ML S8 +0.51 Om +0.30 s8 +0.83 | omb:-0.44 alpha:+0.90 slnY:-0.01 | chi2min 4.87 power 0.090 | map lin S8 +0.49 +- 0.09 || build ML S8 +0.39 Om +0.15 s8 +0.78 omb:-0.25 alpha:+0.90 slnY:-0.23 chi2min 1.65 power 0.062
+  q5 SO40 a [goal_f1        ] ML S8 +1.90 Om +0.02 s8 +0.98 |  | chi2min 3.13 power 0.074 | map lin S8 +1.90 +- 0.10 || build ML S8 +1.85 Om +0.10 s8 +0.84  chi2min 1.51 power 0.061
+  q5 SO40 b [goal_f1        ] ML S8 +1.33 Om +1.11 s8 +1.45 | omb:-1.14 | chi2min 1.78 power 0.063 | map lin S8 +1.34 +- 0.09 || build ML S8 +1.23 Om +1.06 s8 +1.32 omb:-1.05 chi2min 0.35 power 0.052
+  q5 SO40 c [goal_f1        ] ML S8 +1.07 Om +0.81 s8 +1.46 | omb:-0.83 slnY:+0.24 | chi2min 1.71 power 0.062 | map lin S8 +1.08 +- 0.11 || build ML S8 +0.80 Om +0.54 s8 +1.31 omb:-0.56 slnY:-0.02 chi2min 0.35 power 0.052
+  q5 SO40 d [goal_f1        ] ML S8 +0.03 Om -0.04 s8 +0.13 | omb:-0.21 alpha:-0.63 slnY:+0.23 | chi2min 1.66 power 0.062 | map lin S8 +0.02 +- 0.06 || build ML S8 +0.01 Om -0.09 s8 +0.19 omb:-0.09 alpha:-0.51 slnY:+0.01 chi2min 0.25 power 0.052
+  q5 SO40 e [goal_f1        ] ML S8 +0.25 Om +0.22 s8 +0.29 | omb:-0.35 alpha:-0.34 slnY:+0.30 | chi2min 1.60 power 0.061 | map lin S8 +0.26 +- 0.09 || build ML S8 +0.11 Om +0.05 s8 +0.22 omb:-0.16 alpha:-0.34 slnY:+0.05 chi2min 0.24 power 0.052
+  q5 full a [goal_f1        ] ML S8 +3.00 Om +0.04 s8 +1.55 |  | chi2min 7.83 power 0.121 | map lin S8 +3.00 +- 0.16 || build ML S8 +2.92 Om +0.16 s8 +1.33  chi2min 3.77 power 0.079
+  q5 full b [goal_f1        ] ML S8 +2.10 Om +1.76 s8 +2.30 | omb:-1.80 | chi2min 4.44 power 0.085 | map lin S8 +2.11 +- 0.14 || build ML S8 +1.95 Om +1.67 s8 +2.08 omb:-1.66 chi2min 0.87 power 0.056
+  q5 full c [goal_f1        ] ML S8 +1.68 Om +1.28 s8 +2.31 | omb:-1.31 slnY:+0.38 | chi2min 4.27 power 0.084 | map lin S8 +1.71 +- 0.18 || build ML S8 +1.26 Om +0.85 s8 +2.07 omb:-0.89 slnY:-0.04 chi2min 0.87 power 0.056
+  q5 full d [goal_f1        ] ML S8 +0.19 Om +0.12 s8 +0.30 | omb:-0.42 alpha:-0.83 slnY:+0.41 | chi2min 4.07 power 0.082 | map lin S8 +0.20 +- 0.11 || build ML S8 +0.08 Om -0.04 s8 +0.32 omb:-0.18 alpha:-0.71 slnY:+0.04 chi2min 0.60 power 0.054
+  q5 full e [goal_f1        ] ML S8 +0.40 Om +0.35 s8 +0.46 | omb:-0.56 alpha:-0.54 slnY:+0.48 | chi2min 4.00 power 0.082 | map lin S8 +0.42 +- 0.15 || build ML S8 +0.17 Om +0.08 s8 +0.36 omb:-0.25 alpha:-0.54 slnY:+0.08 chi2min 0.59 power 0.054
+  q6 SO40 a [goal_f1        ] ML S8 +1.46 Om +0.13 s8 +0.62 |  | chi2min 2.43 power 0.068 | map lin S8 +1.46 +- 0.10 || build ML S8 +1.40 Om +0.17 s8 +0.53  chi2min 0.84 power 0.056
+  q6 SO40 b [goal_f1        ] ML S8 +0.97 Om +0.83 s8 +1.01 | omb:-0.82 | chi2min 1.73 power 0.062 | map lin S8 +0.97 +- 0.09 || build ML S8 +0.92 Om +0.81 s8 +0.94 omb:-0.78 chi2min 0.20 power 0.051
+  q6 SO40 c [goal_f1        ] ML S8 +0.79 Om +0.63 s8 +1.03 | omb:-0.63 slnY:+0.22 | chi2min 1.67 power 0.062 | map lin S8 +0.81 +- 0.11 || build ML S8 +0.57 Om +0.40 s8 +0.92 omb:-0.41 slnY:-0.01 chi2min 0.20 power 0.051
+  q6 SO40 d [goal_f1        ] ML S8 -0.02 Om -0.04 s8 +0.01 | omb:-0.13 alpha:-0.53 slnY:+0.21 | chi2min 1.64 power 0.062 | map lin S8 -0.02 +- 0.05 || build ML S8 -0.02 Om -0.08 s8 +0.09 omb:-0.04 alpha:-0.42 slnY:+0.02 chi2min 0.12 power 0.051
+  q6 SO40 e [goal_f1        ] ML S8 +0.17 Om +0.17 s8 +0.17 | omb:-0.25 alpha:-0.28 slnY:+0.27 | chi2min 1.60 power 0.061 | map lin S8 +0.18 +- 0.09 || build ML S8 +0.05 Om +0.02 s8 +0.11 omb:-0.08 alpha:-0.29 slnY:+0.04 chi2min 0.12 power 0.051
+  q6 full a [goal_f1        ] ML S8 +2.31 Om +0.20 s8 +0.98 |  | chi2min 6.08 power 0.102 | map lin S8 +2.31 +- 0.16 || build ML S8 +2.21 Om +0.27 s8 +0.83  chi2min 2.10 power 0.065
+  q6 full b [goal_f1        ] ML S8 +1.53 Om +1.32 s8 +1.60 | omb:-1.29 | chi2min 4.33 power 0.084 | map lin S8 +1.53 +- 0.14 || build ML S8 +1.46 Om +1.29 s8 +1.48 omb:-1.24 chi2min 0.50 power 0.053
+  q6 full c [goal_f1        ] ML S8 +1.25 Om +1.00 s8 +1.62 | omb:-0.99 slnY:+0.35 | chi2min 4.18 power 0.083 | map lin S8 +1.27 +- 0.17 || build ML S8 +0.91 Om +0.64 s8 +1.46 omb:-0.64 slnY:-0.02 chi2min 0.50 power 0.053
+  q6 full d [goal_f1        ] ML S8 +0.09 Om +0.07 s8 +0.10 | omb:-0.27 alpha:-0.70 slnY:+0.36 | chi2min 4.05 power 0.082 | map lin S8 +0.09 +- 0.10 || build ML S8 +0.01 Om -0.06 s8 +0.15 omb:-0.09 alpha:-0.60 slnY:+0.04 chi2min 0.30 power 0.052
+  q6 full e [goal_f1        ] ML S8 +0.28 Om +0.27 s8 +0.26 | omb:-0.40 alpha:-0.44 slnY:+0.43 | chi2min 4.00 power 0.082 | map lin S8 +0.29 +- 0.14 || build ML S8 +0.08 Om +0.03 s8 +0.18 omb:-0.13 alpha:-0.46 slnY:+0.07 chi2min 0.30 power 0.052
+  q5 SO40 a [goal_f2        ] ML S8 +4.76 Om +0.99 s8 +1.15 |  | chi2min 12.54 power 0.184 | map lin S8 +4.79 +- 0.12 || build ML S8 +4.72 Om +1.04 s8 +1.06  chi2min 10.77 power 0.159
+  q5 SO40 d [goal_f2        ] ML S8 -0.16 Om -0.20 s8 -0.07 | omb:-0.22 alpha:-1.65 slnY:+0.36 | chi2min 3.31 power 0.075 | map lin S8 -0.18 +- 0.07 || build ML S8 -0.19 Om -0.25 s8 -0.05 omb:-0.14 alpha:-1.61 slnY:+0.25 chi2min 1.65 power 0.062
+  q5 full a [goal_f2        ] ML S8 +7.53 Om +1.56 s8 +1.82 |  | chi2min 31.34 power 0.535 | map lin S8 +7.58 +- 0.19 || build ML S8 +7.47 Om +1.64 s8 +1.68  chi2min 26.93 power 0.447
+  q5 full d [goal_f2        ] ML S8 -0.04 Om -0.07 s8 +0.03 | omb:-0.43 alpha:-2.32 slnY:+0.61 | chi2min 8.19 power 0.126 | map lin S8 -0.04 +- 0.12 || build ML S8 -0.14 Om -0.20 s8 +0.01 omb:-0.27 alpha:-2.30 slnY:+0.42 chi2min 4.09 power 0.082
+  q5 SO40 a [white_f0.5     ] ML S8 -11.02 Om -7.11 s8 +3.97 |  | chi2min 42.25 power 0.729 | map lin S8 -10.69 +- 0.12
+  q5 SO40 d [white_f0.5     ] ML S8 +1.68 Om +0.48 s8 +2.52 | omb:-1.02 alpha:+4.95 slnY:-1.90 | chi2min 17.78 power 0.274 | map lin S8 +1.59 +- 0.07
+  q5 full a [white_f0.5     ] ML S8 -17.42 Om -11.24 s8 +6.27 |  | chi2min 105.61 power 0.999 | map lin S8 -16.90 +- 0.19
+  q5 full d [white_f0.5     ] ML S8 +3.00 Om +1.55 s8 +4.16 | omb:-2.12 alpha:+7.76 slnY:-2.99 | chi2min 37.66 power 0.660 | map lin S8 +2.82 +- 0.12
+  q5 SO40 a [white_f1       ] ML S8 -3.79 Om -3.64 s8 +2.99 |  | chi2min 12.62 power 0.185 | map lin S8 -3.75 +- 0.15 || build ML S8 -3.95 Om -3.67 s8 +2.95  chi2min 9.86 power 0.146
+  q5 SO40 b [white_f1       ] ML S8 -0.49 Om -1.11 s8 +0.21 | omb:+0.32 | chi2min 12.51 power 0.184 | map lin S8 -0.53 +- 0.12 || build ML S8 -0.53 Om -1.15 s8 +0.17 omb:+0.35 chi2min 9.74 power 0.145
+  q5 SO40 c [white_f1       ] ML S8 -0.40 Om -0.78 s8 +0.21 | omb:+0.20 slnY:+0.14 | chi2min 12.49 power 0.185 | map lin S8 -0.43 +- 0.13 || build ML S8 -0.47 Om -0.86 s8 +0.17 omb:+0.27 slnY:+0.05 chi2min 9.73 power 0.146
+  q5 SO40 d [white_f1       ] ML S8 +1.14 Om +0.21 s8 +1.82 | omb:-0.69 alpha:+2.25 slnY:-1.84 | chi2min 7.11 power 0.114 | map lin S8 +1.09 +- 0.08 || build ML S8 +1.11 Om +0.16 s8 +1.83 omb:-0.65 alpha:+2.26 slnY:-1.90 chi2min 4.65 power 0.088
+  q5 SO40 e [white_f1       ] ML S8 +1.78 Om +1.31 s8 +2.21 | omb:-1.39 alpha:+2.68 slnY:-1.20 | chi2min 5.58 power 0.097 | map lin S8 +1.71 +- 0.14 || build ML S8 +1.73 Om +1.25 s8 +2.18 omb:-1.35 alpha:+2.66 slnY:-1.41 chi2min 2.96 power 0.072
+  q5 full a [white_f1       ] ML S8 -6.00 Om -5.75 s8 +4.73 |  | chi2min 31.54 power 0.539 | map lin S8 -5.92 +- 0.23 || build ML S8 -6.24 Om -5.80 s8 +4.67  chi2min 24.65 power 0.402
+  q5 full b [white_f1       ] ML S8 -0.78 Om -1.76 s8 +0.33 | omb:+0.51 | chi2min 31.28 power 0.536 | map lin S8 -0.84 +- 0.18 || build ML S8 -0.84 Om -1.82 s8 +0.27 omb:+0.56 chi2min 24.34 power 0.397
+  q5 full c [white_f1       ] ML S8 -0.63 Om -1.23 s8 +0.33 | omb:+0.31 slnY:+0.23 | chi2min 31.23 power 0.537 | map lin S8 -0.69 +- 0.20 || build ML S8 -0.74 Om -1.36 s8 +0.27 omb:+0.43 slnY:+0.08 chi2min 24.34 power 0.399
+  q5 full d [white_f1       ] ML S8 +2.13 Om +1.01 s8 +3.07 | omb:-1.53 alpha:+3.78 slnY:-2.53 | chi2min 16.12 power 0.244 | map lin S8 +1.95 +- 0.14 || build ML S8 +2.07 Om +0.92 s8 +3.05 omb:-1.46 alpha:+3.77 slnY:-2.99 chi2min 9.70 power 0.146
+  q5 full e [white_f1       ] ML S8 +2.81 Om +2.07 s8 +3.49 | omb:-2.19 alpha:+4.24 slnY:-1.90 | chi2min 13.94 power 0.208 | map lin S8 +2.71 +- 0.21 || build ML S8 +2.74 Om +1.98 s8 +3.45 omb:-2.13 alpha:+4.21 slnY:-2.22 chi2min 7.39 power 0.117
+  q6 SO40 a [white_f1       ] ML S8 -1.97 Om -2.31 s8 +2.15 |  | chi2min 5.88 power 0.099 | map lin S8 -1.96 +- 0.15 || build ML S8 -2.07 Om -2.26 s8 +2.02  chi2min 3.35 power 0.075
+  q6 SO40 b [white_f1       ] ML S8 -0.00 Om -0.43 s8 +0.43 | omb:-0.08 | chi2min 5.87 power 0.100 | map lin S8 -0.02 +- 0.12 || build ML S8 -0.10 Om -0.51 s8 +0.32 omb:+0.01 chi2min 3.35 power 0.076
+  q6 SO40 c [white_f1       ] ML S8 -0.03 Om -0.37 s8 +0.43 | omb:-0.04 slnY:-0.06 | chi2min 5.87 power 0.100 | map lin S8 -0.04 +- 0.13 || build ML S8 -0.12 Om -0.44 s8 +0.31 omb:+0.05 slnY:-0.09 chi2min 3.35 power 0.076
+  q6 SO40 d [white_f1       ] ML S8 +0.74 Om -0.04 s8 +1.30 | omb:-0.42 alpha:+1.31 slnY:-1.11 | chi2min 4.02 power 0.082 | map lin S8 +0.72 +- 0.08 || build ML S8 +0.65 Om -0.09 s8 +1.18 omb:-0.35 alpha:+1.23 slnY:-0.97 chi2min 1.74 power 0.062
+  q6 SO40 e [white_f1       ] ML S8 +1.27 Om +0.93 s8 +1.58 | omb:-1.02 alpha:+1.70 slnY:-0.76 | chi2min 3.06 power 0.073 | map lin S8 +1.25 +- 0.14 || build ML S8 +1.11 Om +0.79 s8 +1.40 omb:-0.90 alpha:+1.55 slnY:-0.69 chi2min 1.03 power 0.057
+  q6 full a [white_f1       ] ML S8 -3.12 Om -3.66 s8 +3.40 |  | chi2min 14.70 power 0.218 | map lin S8 -3.10 +- 0.23 || build ML S8 -3.27 Om -3.58 s8 +3.20  chi2min 8.39 power 0.128
+  q6 full b [white_f1       ] ML S8 -0.01 Om -0.68 s8 +0.68 | omb:-0.13 | chi2min 14.68 power 0.218 | map lin S8 -0.03 +- 0.19 || build ML S8 -0.16 Om -0.80 s8 +0.50 omb:+0.01 chi2min 8.39 power 0.128
+  q6 full c [white_f1       ] ML S8 -0.04 Om -0.58 s8 +0.68 | omb:-0.06 slnY:-0.10 | chi2min 14.67 power 0.219 | map lin S8 -0.06 +- 0.21 || build ML S8 -0.20 Om -0.69 s8 +0.50 omb:+0.08 slnY:-0.14 chi2min 8.37 power 0.128
+  q6 full d [white_f1       ] ML S8 +1.37 Om +0.45 s8 +2.12 | omb:-0.97 alpha:+2.20 slnY:-1.61 | chi2min 9.25 power 0.140 | map lin S8 +1.30 +- 0.13 || build ML S8 +1.18 Om +0.32 s8 +1.90 omb:-0.82 alpha:+2.04 slnY:-1.43 chi2min 3.79 power 0.080
+  q6 full e [white_f1       ] ML S8 +2.01 Om +1.47 s8 +2.49 | omb:-1.62 alpha:+2.68 slnY:-1.20 | chi2min 7.66 power 0.120 | map lin S8 +1.98 +- 0.22 || build ML S8 +1.75 Om +1.26 s8 +2.22 omb:-1.42 alpha:+2.45 slnY:-1.08 chi2min 2.57 power 0.069
+  q5 SO40 a [white_f2       ] ML S8 +2.80 Om -0.89 s8 +2.75 |  | chi2min 7.02 power 0.112 | map lin S8 +2.80 +- 0.20
+  q5 SO40 d [white_f2       ] ML S8 +0.64 Om -0.15 s8 +1.31 | omb:-0.52 alpha:-0.45 slnY:-0.71 | chi2min 4.48 power 0.086 | map lin S8 +0.62 +- 0.09
+  q5 full a [white_f2       ] ML S8 +4.42 Om -1.41 s8 +4.34 |  | chi2min 17.55 power 0.266 | map lin S8 +4.43 +- 0.31
+  q5 full d [white_f2       ] ML S8 +1.31 Om +0.36 s8 +2.18 | omb:-1.13 alpha:-0.41 slnY:-1.04 | chi2min 10.30 power 0.154 | map lin S8 +1.27 +- 0.17
+  q5 SO40 a [baseline_effi  ] ML S8 -0.57 Om -0.56 s8 +0.49 |  | chi2min 1.90 power 0.063 | map lin S8 -0.56 +- 0.09 || build ML S8 -0.64 Om -0.52 s8 +0.39  chi2min 0.69 power 0.055
+  q5 SO40 d [baseline_effi  ] ML S8 +0.15 Om +0.06 s8 +0.23 | omb:-0.09 alpha:+0.35 slnY:-0.02 | chi2min 1.60 power 0.061 | map lin S8 +0.14 +- 0.05 || build ML S8 +0.12 Om +0.03 s8 +0.22 omb:-0.03 alpha:+0.39 slnY:-0.10 chi2min 0.36 power 0.052
+  q5 full a [baseline_effi  ] ML S8 -0.89 Om -0.88 s8 +0.77 |  | chi2min 4.74 power 0.088 | map lin S8 -0.89 +- 0.15 || build ML S8 -1.02 Om -0.82 s8 +0.62  chi2min 1.73 power 0.062
+  q5 full d [baseline_effi  ] ML S8 +0.26 Om +0.17 s8 +0.39 | omb:-0.19 alpha:+0.57 slnY:-0.01 | chi2min 3.97 power 0.081 | map lin S8 +0.26 +- 0.09 || build ML S8 +0.17 Om +0.06 s8 +0.33 omb:-0.06 alpha:+0.58 slnY:-0.14 chi2min 0.91 power 0.056
+  q5 SO40 a [baseline_effii ] ML S8 -0.75 Om -0.61 s8 +0.46 |  | chi2min 2.17 power 0.066 | map lin S8 -0.74 +- 0.09 || build ML S8 -0.83 Om -0.57 s8 +0.36  chi2min 0.95 power 0.056
+  q5 SO40 d [baseline_effii ] ML S8 +0.16 Om +0.08 s8 +0.24 | omb:-0.08 alpha:+0.43 slnY:-0.04 | chi2min 1.71 power 0.062 | map lin S8 +0.16 +- 0.05 || build ML S8 +0.13 Om +0.04 s8 +0.23 omb:-0.02 alpha:+0.47 slnY:-0.11 chi2min 0.45 power 0.053
+  q5 full a [baseline_effii ] ML S8 -1.18 Om -0.96 s8 +0.72 |  | chi2min 5.43 power 0.095 | map lin S8 -1.18 +- 0.15 || build ML S8 -1.31 Om -0.90 s8 +0.57  chi2min 2.38 power 0.067
+  q5 full d [baseline_effii ] ML S8 +0.28 Om +0.18 s8 +0.40 | omb:-0.19 alpha:+0.69 slnY:-0.03 | chi2min 4.25 power 0.084 | map lin S8 +0.27 +- 0.08 || build ML S8 +0.19 Om +0.08 s8 +0.34 omb:-0.05 alpha:+0.70 slnY:-0.16 chi2min 1.12 power 0.058
+  q5 SO40 a [goal_effi      ] ML S8 -0.94 Om -0.89 s8 +0.75 |  | chi2min 2.97 power 0.072 | map lin S8 -0.94 +- 0.10 || build ML S8 -1.00 Om -0.81 s8 +0.61  chi2min 1.59 power 0.061
+  q5 SO40 d [goal_effi      ] ML S8 +0.23 Om +0.14 s8 +0.33 | omb:-0.19 alpha:+0.48 slnY:+0.07 | chi2min 2.27 power 0.067 | map lin S8 +0.23 +- 0.05 || build ML S8 +0.22 Om +0.09 s8 +0.38 omb:-0.08 alpha:+0.60 slnY:-0.16 chi2min 0.83 power 0.056
+  q5 full a [goal_effi      ] ML S8 -1.49 Om -1.41 s8 +1.19 |  | chi2min 7.41 power 0.116 | map lin S8 -1.49 +- 0.16 || build ML S8 -1.58 Om -1.28 s8 +0.96  chi2min 3.97 power 0.081
+  q5 full d [goal_effi      ] ML S8 +0.46 Om +0.35 s8 +0.59 | omb:-0.40 alpha:+0.80 slnY:+0.15 | chi2min 5.59 power 0.097 | map lin S8 +0.44 +- 0.10 || build ML S8 +0.34 Om +0.18 s8 +0.59 omb:-0.17 alpha:+0.91 slnY:-0.23 chi2min 2.06 power 0.065
+  q5 SO40 a [goal_effii     ] ML S8 -1.32 Om -1.00 s8 +0.71 |  | chi2min 3.76 power 0.079 | map lin S8 -1.32 +- 0.10 || build ML S8 -1.38 Om -0.92 s8 +0.57  chi2min 2.37 power 0.067
+  q5 SO40 d [goal_effii     ] ML S8 +0.27 Om +0.17 s8 +0.36 | omb:-0.19 alpha:+0.64 slnY:+0.03 | chi2min 2.56 power 0.069 | map lin S8 +0.26 +- 0.05 || build ML S8 +0.25 Om +0.12 s8 +0.41 omb:-0.08 alpha:+0.75 slnY:-0.19 chi2min 1.09 power 0.058
+  q5 full a [goal_effii     ] ML S8 -2.09 Om -1.58 s8 +1.12 |  | chi2min 9.39 power 0.140 | map lin S8 -2.08 +- 0.16 || build ML S8 -2.17 Om -1.46 s8 +0.90  chi2min 5.93 power 0.100
+  q5 full d [goal_effii     ] ML S8 +0.50 Om +0.39 s8 +0.63 | omb:-0.40 alpha:+1.04 slnY:+0.10 | chi2min 6.31 power 0.105 | map lin S8 +0.48 +- 0.10 || build ML S8 +0.38 Om +0.22 s8 +0.63 omb:-0.17 alpha:+1.14 slnY:-0.28 chi2min 2.70 power 0.070
+  q5 SO40 a [lowP_f1        ] ML S8 +0.63 Om +0.08 s8 +0.26 |  | chi2min 0.78 power 0.055 | map lin S8 +0.63 +- 0.07 || build ML S8 +0.57 Om +0.11 s8 +0.18  chi2min 0.14 power 0.051
+  q5 SO40 b [lowP_f1        ] ML S8 +0.46 Om +0.40 s8 +0.46 | omb:-0.39 | chi2min 0.62 power 0.054 | map lin S8 +0.46 +- 0.06 || build ML S8 +0.39 Om +0.35 s8 +0.37 omb:-0.33 chi2min 0.03 power 0.050
+  q5 SO40 c [lowP_f1        ] ML S8 +0.33 Om +0.26 s8 +0.47 | omb:-0.26 slnY:+0.09 | chi2min 0.61 power 0.054 | map lin S8 +0.34 +- 0.07 || build ML S8 +0.21 Om +0.15 s8 +0.35 omb:-0.15 slnY:-0.00 chi2min 0.03 power 0.050
+  q5 SO40 d [lowP_f1        ] ML S8 -0.04 Om -0.06 s8 -0.00 | omb:-0.03 alpha:-0.25 slnY:+0.06 | chi2min 0.61 power 0.054 | map lin S8 -0.04 +- 0.04 || build ML S8 -0.02 Om -0.05 s8 +0.02 omb:-0.01 alpha:-0.18 slnY:-0.00 chi2min 0.02 power 0.050
+  q5 SO40 e [lowP_f1        ] ML S8 +0.08 Om +0.07 s8 +0.08 | omb:-0.11 alpha:-0.13 slnY:+0.10 | chi2min 0.60 power 0.054 | map lin S8 +0.08 +- 0.06 || build ML S8 +0.01 Om +0.00 s8 +0.03 omb:-0.02 alpha:-0.13 slnY:+0.01 chi2min 0.02 power 0.050
+  q5 full a [lowP_f1        ] ML S8 +1.00 Om +0.13 s8 +0.41 |  | chi2min 1.95 power 0.064 | map lin S8 +1.00 +- 0.11 || build ML S8 +0.91 Om +0.18 s8 +0.28  chi2min 0.36 power 0.052
+  q5 full b [lowP_f1        ] ML S8 +0.73 Om +0.64 s8 +0.73 | omb:-0.62 | chi2min 1.55 power 0.061 | map lin S8 +0.73 +- 0.09 || build ML S8 +0.62 Om +0.56 s8 +0.59 omb:-0.52 chi2min 0.08 power 0.051
+  q5 full c [lowP_f1        ] ML S8 +0.52 Om +0.42 s8 +0.74 | omb:-0.41 slnY:+0.14 | chi2min 1.53 power 0.061 | map lin S8 +0.53 +- 0.11 || build ML S8 +0.33 Om +0.24 s8 +0.55 omb:-0.23 slnY:-0.01 chi2min 0.08 power 0.051
+  q5 full d [lowP_f1        ] ML S8 -0.01 Om -0.03 s8 +0.02 | omb:-0.08 alpha:-0.37 slnY:+0.11 | chi2min 1.51 power 0.061 | map lin S8 -0.01 +- 0.06 || build ML S8 -0.02 Om -0.05 s8 +0.04 omb:-0.02 alpha:-0.28 slnY:+0.00 chi2min 0.04 power 0.050
+  q5 full e [lowP_f1        ] ML S8 +0.12 Om +0.12 s8 +0.13 | omb:-0.17 alpha:-0.20 slnY:+0.16 | chi2min 1.49 power 0.061 | map lin S8 +0.13 +- 0.10 || build ML S8 +0.02 Om +0.00 s8 +0.05 omb:-0.03 alpha:-0.20 slnY:+0.02 chi2min 0.04 power 0.050
+  q5 SO40 a [lowP_effi      ] ML S8 -0.10 Om -0.16 s8 +0.18 |  | chi2min 0.58 power 0.054 | map lin S8 -0.10 +- 0.07 || build ML S8 -0.17 Om -0.13 s8 +0.09  chi2min 0.08 power 0.050
+  q5 SO40 d [lowP_effi      ] ML S8 +0.02 Om -0.01 s8 +0.04 | omb:-0.02 alpha:+0.04 slnY:+0.03 | chi2min 0.56 power 0.054 | map lin S8 +0.02 +- 0.04 || build ML S8 +0.04 Om +0.01 s8 +0.07 omb:+0.01 alpha:+0.13 slnY:-0.04 chi2min 0.04 power 0.050
+  q5 full a [lowP_effi      ] ML S8 -0.15 Om -0.25 s8 +0.28 |  | chi2min 1.44 power 0.060 | map lin S8 -0.15 +- 0.11 || build ML S8 -0.26 Om -0.21 s8 +0.15  chi2min 0.19 power 0.051
+  q5 full d [lowP_effi      ] ML S8 +0.04 Om +0.02 s8 +0.07 | omb:-0.05 alpha:+0.08 slnY:+0.06 | chi2min 1.40 power 0.060 | map lin S8 +0.04 +- 0.06 || build ML S8 +0.04 Om +0.00 s8 +0.10 omb:+0.02 alpha:+0.20 slnY:-0.07 chi2min 0.09 power 0.051
+  q5 SO40 a [baseline_std   ] ML S8 -2.79 Om -1.31 s8 +0.32 |  | chi2min 7.17 power 0.113 | map lin S8 -2.76 +- 0.09
+  q5 SO40 d [baseline_std   ] ML S8 +0.28 Om +0.17 s8 +0.37 | omb:-0.08 alpha:+1.22 slnY:-0.15 | chi2min 3.07 power 0.073 | map lin S8 +0.27 +- 0.05
+  q5 full a [baseline_std   ] ML S8 -4.40 Om -2.06 s8 +0.51 |  | chi2min 17.92 power 0.273 | map lin S8 -4.37 +- 0.15
+  q5 full d [baseline_std   ] ML S8 +0.42 Om +0.28 s8 +0.58 | omb:-0.17 alpha:+1.83 slnY:-0.21 | chi2min 7.65 power 0.120 | map lin S8 +0.39 +- 0.08
+  q5 SO40 a [baseline_clip  ] ML S8 -0.30 Om -0.48 s8 +0.53 |  | chi2min 1.60 power 0.061 | map lin S8 -0.30 +- 0.09
+  q5 SO40 d [baseline_clip  ] ML S8 +0.13 Om +0.04 s8 +0.22 | omb:-0.09 alpha:+0.23 slnY:-0.00 | chi2min 1.47 power 0.060 | map lin S8 +0.12 +- 0.05
+  q5 full a [baseline_clip  ] ML S8 -0.47 Om -0.76 s8 +0.84 |  | chi2min 4.01 power 0.081 | map lin S8 -0.47 +- 0.15
+  q5 full d [baseline_clip  ] ML S8 +0.24 Om +0.15 s8 +0.37 | omb:-0.20 alpha:+0.40 slnY:+0.02 | chi2min 3.66 power 0.078 | map lin S8 +0.24 +- 0.09
+  q5 SO40 a [baseline_rob   ] ML S8 -0.74 Om -0.60 s8 +0.45 |  | chi2min 2.17 power 0.066 | map lin S8 -0.74 +- 0.09
+  q5 SO40 d [baseline_rob   ] ML S8 +0.16 Om +0.08 s8 +0.24 | omb:-0.08 alpha:+0.43 slnY:-0.04 | chi2min 1.71 power 0.062 | map lin S8 +0.16 +- 0.05
+  q5 full a [baseline_rob   ] ML S8 -1.17 Om -0.95 s8 +0.71 |  | chi2min 5.43 power 0.095 | map lin S8 -1.17 +- 0.15
+  q5 full d [baseline_rob   ] ML S8 +0.28 Om +0.18 s8 +0.40 | omb:-0.19 alpha:+0.68 slnY:-0.03 | chi2min 4.25 power 0.084 | map lin S8 +0.27 +- 0.08
+  q5 SO40 a [goal_std       ] ML S8 -4.31 Om -1.97 s8 +0.46 |  | chi2min 15.38 power 0.229 | map lin S8 -4.26 +- 0.10
+  q5 SO40 d [goal_std       ] ML S8 +0.51 Om +0.34 s8 +0.66 | omb:-0.19 alpha:+1.85 slnY:-0.28 | chi2min 5.89 power 0.100 | map lin S8 +0.48 +- 0.05
+  q5 full a [goal_std       ] ML S8 -6.81 Om -3.12 s8 +0.73 |  | chi2min 38.45 power 0.667 | map lin S8 -6.74 +- 0.16
+  q5 full d [goal_std       ] ML S8 +0.83 Om +0.61 s8 +1.08 | omb:-0.43 alpha:+2.82 slnY:-0.39 | chi2min 14.61 power 0.219 | map lin S8 +0.74 +- 0.10
+  q5 SO40 a [goal_clip      ] ML S8 -0.79 Om -0.85 s8 +0.79 |  | chi2min 2.66 power 0.070 | map lin S8 -0.78 +- 0.10
+  q5 SO40 d [goal_clip      ] ML S8 +0.22 Om +0.13 s8 +0.32 | omb:-0.19 alpha:+0.41 slnY:+0.08 | chi2min 2.14 power 0.066 | map lin S8 +0.22 +- 0.05
+  q5 full a [goal_clip      ] ML S8 -1.24 Om -1.35 s8 +1.24 |  | chi2min 6.64 power 0.108 | map lin S8 -1.24 +- 0.16
+  q5 full d [goal_clip      ] ML S8 +0.45 Om +0.34 s8 +0.58 | omb:-0.41 alpha:+0.71 slnY:+0.16 | chi2min 5.27 power 0.094 | map lin S8 +0.43 +- 0.10
+  q5 SO40 a [goal_rob       ] ML S8 -1.31 Om -1.00 s8 +0.71 |  | chi2min 3.74 power 0.079 | map lin S8 -1.31 +- 0.10
+  q5 SO40 d [goal_rob       ] ML S8 +0.27 Om +0.17 s8 +0.36 | omb:-0.19 alpha:+0.64 slnY:+0.03 | chi2min 2.55 power 0.069 | map lin S8 +0.26 +- 0.05
+  q5 full a [goal_rob       ] ML S8 -2.08 Om -1.58 s8 +1.12 |  | chi2min 9.36 power 0.140 | map lin S8 -2.07 +- 0.16
+  q5 full d [goal_rob       ] ML S8 +0.50 Om +0.39 s8 +0.64 | omb:-0.41 alpha:+1.04 slnY:+0.10 | chi2min 6.29 power 0.105 | map lin S8 +0.48 +- 0.10
+
+[w04] done 1104s

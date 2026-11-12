@@ -1,0 +1,78 @@
+[w08] 500 patches (50,000 deg^2); build kernels evaluated on the map's own primaries (q_A >= 0.5)
+    per variant, q_obs > 5 (full sky): N_single | N_b map | N_b build(kernel) | (map - build)/N_single with bootstrap 1 sigma; Delta/N map and build(kernel) on these primaries
+  [baseline_f1    ] N_s    81,672  N_b map    82,787  build    82,732  (map-build)/N_s = +0.067 +- 0.054% (+1.2 sigma) | Delta/N map +1.365%, build kernel +1.298%
+      map - build counts (full sky) by q_A class: q_A 0.5-2:    +1.9 +-   2.9; q_A 2-3.5:   +26.7 +-  21.0; q_A 3.5-5:    +8.6 +-  28.6; q_A 5-7:   +17.4 +-  19.5; q_A 7-12:    +1.1 +-   5.5; q_A 12-1e+09:    -1.2 +-   1.4
+      by theta500: theta 0-0.5':    +0.2 +-   0.3; theta 0.5-1':   +24.1 +-  11.6; theta 1-2':   +14.1 +-  30.6; theta 2-4':    +9.3 +-  21.2; theta 4-1e+09':    +6.9 +-   8.9
+      (map - build)/N_s by z: z 0.01-0.1: +0.39+-0.43%; z 0.1-0.5: +0.05+-0.08%; z 0.5-1.0: +0.09+-0.07%; z 1.0-1.5: -0.14+-0.13%; z 1.5-2.0: +0.73+-0.35%; z 2.0-3.0: +0.88+-0.97%
+  [baseline_f0.5  ] N_s    81,672  N_b map    81,446  build    81,470  (map-build)/N_s = -0.030 +- 0.046% (-0.6 sigma) | Delta/N map -0.277%, build kernel -0.248%
+      map - build counts (full sky) by q_A class: q_A 0.5-2:    -0.6 +-   0.7; q_A 2-3.5:    +3.5 +-  11.2; q_A 3.5-5:   -14.2 +-  24.2; q_A 5-7:    -2.7 +-  21.3; q_A 7-12:    -8.3 +-   9.5; q_A 12-1e+09:    -2.1 +-   3.4
+      by theta500: theta 0-0.5':    -0.0 +-   0.1; theta 0.5-1':    +0.4 +-   9.5; theta 1-2':    -5.1 +-  24.6; theta 2-4':   -19.3 +-  20.1; theta 4-1e+09':    -0.3 +-   7.6
+      (map - build)/N_s by z: z 0.01-0.1: +0.13+-0.33%; z 0.1-0.5: -0.07+-0.07%; z 0.5-1.0: +0.05+-0.06%; z 1.0-1.5: -0.19+-0.12%; z 1.5-2.0: -0.18+-0.30%; z 2.0-3.0: +0.43+-0.84%
+  [baseline_f2    ] N_s    81,672  N_b map    83,979  build    83,936  (map-build)/N_s = +0.052 +- 0.065% (+0.8 sigma) | Delta/N map +2.824%, build kernel +2.772%
+      map - build counts (full sky) by q_A class: q_A 0.5-2:   +11.1 +-  10.2; q_A 2-3.5:    -1.1 +-  28.2; q_A 3.5-5:    +6.3 +-  29.9; q_A 5-7:   +22.8 +-  19.7; q_A 7-12:    +3.4 +-   4.2; q_A 12-1e+09:    +0.2 +-   0.1
+      by theta500: theta 0-0.5':    +0.3 +-   0.6; theta 0.5-1':   +21.7 +-  14.9; theta 1-2':    -1.8 +-  36.8; theta 2-4':   +14.5 +-  23.2; theta 4-1e+09':    +7.8 +-   9.7
+      (map - build)/N_s by z: z 0.01-0.1: +0.30+-0.52%; z 0.1-0.5: +0.05+-0.09%; z 0.5-1.0: +0.07+-0.09%; z 1.0-1.5: -0.16+-0.16%; z 1.5-2.0: +0.65+-0.42%; z 2.0-3.0: +1.24+-1.24%
+  [goal_f1        ] N_s   127,948  N_b map   129,804  build   129,739  (map-build)/N_s = +0.051 +- 0.047% (+1.1 sigma) | Delta/N map +1.450%, build kernel +1.400%
+      map - build counts (full sky) by q_A class: q_A 0.5-2:    -3.6 +-   3.9; q_A 2-3.5:   +45.6 +-  27.9; q_A 3.5-5:   +12.0 +-  39.1; q_A 5-7:    +4.3 +-  27.7; q_A 7-12:    +7.9 +-   7.6; q_A 12-1e+09:    -1.7 +-   2.0
+      by theta500: theta 0-0.5':    +0.5 +-   0.9; theta 0.5-1':   +55.0 +-  20.9; theta 1-2':   -13.2 +-  42.1; theta 2-4':   +19.0 +-  26.5; theta 4-1e+09':    +3.3 +-  10.3
+      (map - build)/N_s by z: z 0.01-0.1: +0.43+-0.45%; z 0.1-0.5: +0.05+-0.07%; z 0.5-1.0: +0.02+-0.06%; z 1.0-1.5: -0.01+-0.10%; z 1.5-2.0: +0.48+-0.27%; z 2.0-3.0: +1.39+-0.70%
+  [goal_f0.5      ] N_s   127,948  N_b map   127,300  build   127,344  (map-build)/N_s = -0.034 +- 0.042% (-0.8 sigma) | Delta/N map -0.507%, build kernel -0.473%
+      map - build counts (full sky) by q_A class: q_A 0.5-2:    -1.6 +-   1.0; q_A 2-3.5:    +0.9 +-  14.7; q_A 3.5-5:    -9.4 +-  33.5; q_A 5-7:   -21.0 +-  29.5; q_A 7-12:    -8.5 +-  13.3; q_A 12-1e+09:    -4.0 +-   4.9
+      by theta500: theta 0-0.5':    +0.5 +-   0.6; theta 0.5-1':   +12.3 +-  16.6; theta 1-2':   -34.2 +-  37.3; theta 2-4':   -14.6 +-  25.1; theta 4-1e+09':    -7.5 +-   8.9
+      (map - build)/N_s by z: z 0.01-0.1: -0.01+-0.36%; z 0.1-0.5: -0.04+-0.06%; z 0.5-1.0: -0.02+-0.06%; z 1.0-1.5: -0.07+-0.10%; z 1.5-2.0: -0.26+-0.23%; z 2.0-3.0: +1.35+-0.59%
+  [goal_f2        ] N_s   127,948  N_b map   132,084  build   132,035  (map-build)/N_s = +0.038 +- 0.057% (+0.7 sigma) | Delta/N map +3.232%, build kernel +3.194%
+      map - build counts (full sky) by q_A class: q_A 0.5-2:    +4.1 +-  14.7; q_A 2-3.5:   +29.8 +-  38.3; q_A 3.5-5:    +0.5 +-  40.7; q_A 5-7:    +7.2 +-  27.5; q_A 7-12:    +7.2 +-   6.3; q_A 12-1e+09:    -0.4 +-   0.9
+      by theta500: theta 0-0.5':    -0.1 +-   1.8; theta 0.5-1':   +49.2 +-  26.7; theta 1-2':   -21.6 +-  50.4; theta 2-4':   +17.2 +-  28.2; theta 4-1e+09':    +3.6 +-  11.1
+      (map - build)/N_s by z: z 0.01-0.1: +0.11+-0.54%; z 0.1-0.5: +0.05+-0.08%; z 0.5-1.0: +0.01+-0.07%; z 1.0-1.5: -0.00+-0.13%; z 1.5-2.0: +0.33+-0.32%; z 2.0-3.0: +0.79+-0.83%
+  [white_f1       ] N_s    85,903  N_b map    84,592  build    84,535  (map-build)/N_s = +0.066 +- 0.082% (+0.8 sigma) | Delta/N map -1.526%, build kernel -1.593%
+      map - build counts (full sky) by q_A class: q_A 0.5-2:    +3.4 +-   5.1; q_A 2-3.5:   -21.4 +-  31.3; q_A 3.5-5:   +48.4 +-  43.9; q_A 5-7:   +37.0 +-  24.8; q_A 7-12:   -12.6 +-  10.6; q_A 12-1e+09:    +2.2 +-   4.3
+      by theta500: theta 0-0.5':    +0.2 +-   0.1; theta 0.5-1':    +3.9 +-  12.5; theta 1-2':   +39.0 +-  41.8; theta 2-4':    +6.0 +-  34.7; theta 4-1e+09':    +7.8 +-  20.8
+      (map - build)/N_s by z: z 0.01-0.1: +0.63+-0.40%; z 0.1-0.5: -0.03+-0.10%; z 0.5-1.0: +0.19+-0.11%; z 1.0-1.5: -0.25+-0.20%; z 1.5-2.0: +0.68+-0.58%; z 2.0-3.0: -0.83+-1.48%
+  [baseline_effi  ] N_s    72,710  N_b map    72,544  build    72,489  (map-build)/N_s = +0.076 +- 0.056% (+1.3 sigma) | Delta/N map -0.227%, build kernel -0.303%
+      map - build counts (full sky) by q_A class: q_A 0.5-2:    +1.3 +-   1.8; q_A 2-3.5:   +21.1 +-  16.2; q_A 3.5-5:    +9.1 +-  25.9; q_A 5-7:   +22.8 +-  21.2; q_A 7-12:    +2.1 +-   6.3; q_A 12-1e+09:    -1.3 +-   1.4
+      by theta500: theta 0-0.5':    +0.1 +-   0.2; theta 0.5-1':   +19.2 +-  10.2; theta 1-2':   +19.5 +-  28.5; theta 2-4':    +9.4 +-  20.2; theta 4-1e+09':    +7.0 +-   8.5
+      (map - build)/N_s by z: z 0.01-0.1: +0.36+-0.43%; z 0.1-0.5: +0.05+-0.08%; z 0.5-1.0: +0.12+-0.08%; z 1.0-1.5: -0.16+-0.14%; z 1.5-2.0: +0.80+-0.37%; z 2.0-3.0: +0.65+-1.02%
+  [baseline_effii ] N_s    71,788  N_b map    71,507  build    71,452  (map-build)/N_s = +0.077 +- 0.057% (+1.4 sigma) | Delta/N map -0.392%, build kernel -0.469%
+      map - build counts (full sky) by q_A class: q_A 0.5-2:    +1.3 +-   1.7; q_A 2-3.5:   +20.5 +-  15.7; q_A 3.5-5:    +9.1 +-  25.6; q_A 5-7:   +23.4 +-  21.4; q_A 7-12:    +2.3 +-   6.4; q_A 12-1e+09:    -1.3 +-   1.4
+      by theta500: theta 0-0.5':    +0.1 +-   0.2; theta 0.5-1':   +18.6 +-  10.1; theta 1-2':   +20.2 +-  28.3; theta 2-4':    +9.5 +-  20.1; theta 4-1e+09':    +7.0 +-   8.5
+      (map - build)/N_s by z: z 0.01-0.1: +0.35+-0.43%; z 0.1-0.5: +0.05+-0.08%; z 0.5-1.0: +0.12+-0.08%; z 1.0-1.5: -0.16+-0.14%; z 1.5-2.0: +0.81+-0.37%; z 2.0-3.0: +0.62+-1.03%
+  [goal_effi      ] N_s   111,571  N_b map   111,198  build   111,133  (map-build)/N_s = +0.058 +- 0.050% (+1.2 sigma) | Delta/N map -0.334%, build kernel -0.392%
+      map - build counts (full sky) by q_A class: q_A 0.5-2:    -1.9 +-   2.1; q_A 2-3.5:   +33.1 +-  20.6; q_A 3.5-5:   +11.7 +-  34.6; q_A 5-7:   +14.7 +-  30.4; q_A 7-12:    +8.8 +-   8.9; q_A 12-1e+09:    -1.9 +-   2.1
+      by theta500: theta 0-0.5':    +0.5 +-   0.7; theta 0.5-1':   +46.9 +-  18.0; theta 1-2':    -3.9 +-  38.1; theta 2-4':   +15.1 +-  25.3; theta 4-1e+09':    +6.0 +-   9.9
+      (map - build)/N_s by z: z 0.01-0.1: +0.41+-0.46%; z 0.1-0.5: +0.06+-0.08%; z 0.5-1.0: +0.03+-0.06%; z 1.0-1.5: -0.03+-0.11%; z 1.5-2.0: +0.51+-0.29%; z 2.0-3.0: +1.40+-0.77%
+  [goal_effii     ] N_s   109,129  N_b map   108,475  build   108,411  (map-build)/N_s = +0.059 +- 0.050% (+1.2 sigma) | Delta/N map -0.599%, build kernel -0.658%
+      map - build counts (full sky) by q_A class: q_A 0.5-2:    -1.7 +-   1.8; q_A 2-3.5:   +31.0 +-  19.5; q_A 3.5-5:   +11.7 +-  33.7; q_A 5-7:   +16.3 +-  30.7; q_A 7-12:    +8.9 +-   9.2; q_A 12-1e+09:    -2.0 +-   2.1
+      by theta500: theta 0-0.5':    +0.5 +-   0.6; theta 0.5-1':   +45.1 +-  17.6; theta 1-2':    -2.2 +-  37.5; theta 2-4':   +14.5 +-  25.0; theta 4-1e+09':    +6.3 +-   9.8
+      (map - build)/N_s by z: z 0.01-0.1: +0.41+-0.46%; z 0.1-0.5: +0.06+-0.08%; z 0.5-1.0: +0.03+-0.06%; z 1.0-1.5: -0.03+-0.11%; z 1.5-2.0: +0.51+-0.29%; z 2.0-3.0: +1.39+-0.78%
+  [lowP_f1        ] N_s    29,931  N_b map    30,262  build    30,220  (map-build)/N_s = +0.138 +- 0.069% (+2.0 sigma) | Delta/N map +1.105%, build kernel +0.966%
+      map - build counts (full sky) by q_A class: q_A 0.5-2:    +1.5 +-   1.2; q_A 2-3.5:    +6.1 +-   9.2; q_A 3.5-5:   +38.2 +-  14.4; q_A 5-7:    -2.1 +-   7.5; q_A 7-12:    -2.4 +-   2.0; q_A 12-1e+09:    +0.1 +-   0.0
+      by theta500: theta 0-0.5':    +0.0 +-   0.0; theta 0.5-1':    +6.8 +-   3.4; theta 1-2':   +16.1 +-  13.4; theta 2-4':   +17.8 +-  11.9; theta 4-1e+09':    +0.8 +-   5.0
+      (map - build)/N_s by z: z 0.01-0.1: +0.02+-0.40%; z 0.1-0.5: +0.13+-0.10%; z 0.5-1.0: +0.09+-0.09%; z 1.0-1.5: +0.19+-0.19%; z 1.5-2.0: +0.94+-0.50%; z 2.0-3.0: +1.34+-1.60%
+
+=== implied bias of (map - build kernel) on the same primaries, linearised, S8 / Om / s8 in Fisher sigma (bootstrap) ===
+  [baseline_f1    ] SO40: config a: +0.040 +- 0.096; config d: +0.035 +- 0.050
+  [baseline_f1    ] full: config a: +0.063 +- 0.152; config d: +0.104 +- 0.090
+  [baseline_f0.5  ] SO40: config a: -0.049 +- 0.082; config d: +0.043 +- 0.040
+  [baseline_f0.5  ] full: config a: -0.077 +- 0.130; config d: +0.081 +- 0.073
+  [baseline_f2    ] SO40: config a: +0.014 +- 0.109; config d: +0.046 +- 0.056
+  [baseline_f2    ] full: config a: +0.022 +- 0.173; config d: +0.117 +- 0.104
+  [goal_f1        ] SO40: config a: +0.018 +- 0.104; config d: +0.031 +- 0.057
+  [goal_f1        ] full: config a: +0.028 +- 0.164; config d: +0.134 +- 0.106
+  [goal_f0.5      ] SO40: config a: -0.087 +- 0.090; config d: +0.051 +- 0.046
+  [goal_f0.5      ] full: config a: -0.137 +- 0.143; config d: +0.136 +- 0.088
+  [goal_f2        ] SO40: config a: +0.013 +- 0.119; config d: +0.046 +- 0.065
+  [goal_f2        ] full: config a: +0.021 +- 0.188; config d: +0.128 +- 0.123
+  [white_f1       ] SO40: config a: +0.088 +- 0.150; config d: +0.025 +- 0.076
+  [white_f1       ] full: config a: +0.139 +- 0.236; config d: +0.056 +- 0.137
+  [baseline_effi  ] SO40: config a: +0.054 +- 0.096; config d: +0.038 +- 0.048
+  [baseline_effi  ] full: config a: +0.086 +- 0.151; config d: +0.100 +- 0.085
+  [baseline_effii ] SO40: config a: +0.056 +- 0.096; config d: +0.038 +- 0.048
+  [baseline_effii ] full: config a: +0.088 +- 0.151; config d: +0.099 +- 0.084
+  [goal_effi      ] SO40: config a: +0.024 +- 0.103; config d: +0.022 +- 0.055
+  [goal_effi      ] full: config a: +0.038 +- 0.162; config d: +0.121 +- 0.103
+  [goal_effii     ] SO40: config a: +0.026 +- 0.103; config d: +0.022 +- 0.055
+  [goal_effii     ] full: config a: +0.040 +- 0.162; config d: +0.120 +- 0.102
+  [lowP_f1        ] SO40: config a: +0.066 +- 0.073; config d: -0.013 +- 0.041
+  [lowP_f1        ] full: config a: +0.105 +- 0.116; config d: +0.009 +- 0.058
+
+[w08] done 61s

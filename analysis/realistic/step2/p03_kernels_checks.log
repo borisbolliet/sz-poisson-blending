@@ -1,0 +1,31 @@
+=== (1) kernel_node at s09's q nodes, q_cut = 4-7, vs s09 T{fdom}_det (same rates and s09's stored extra) ===
+   [baseline] fdom=1.0: nodes [0.25, 1.17, 5.48, 25.54]': max |K - T_det| = 1.8e-08 (max relative, where T_det > 1e-3: 7.6e-07)  [6s]
+   [baseline] fdom=0.5: nodes [0.25, 1.17, 5.48, 25.54]': max |K - T_det| = 1.8e-08 (max relative, where T_det > 1e-3: 7.9e-07)  [11s]
+   [baseline] fdom=2.0: nodes [0.25, 1.17, 5.48, 25.54]': max |K - T_det| = 1.8e-08 (max relative, where T_det > 1e-3: 6.7e-07)  [18s]
+   [goal] fdom=1.0: nodes [1.17, 10.14]': max |K - T_det| = 1.8e-08 (max relative, where T_det > 1e-3: 7.1e-07)  [22s]
+   [white] fdom=1.0: nodes [0.52, 4.82, 44.27]': max |K - T_det| = 5.9e-09 (max relative, where T_det > 1e-3: 2.1e-07)  [27s]
+=== (2) white_prefix vs c03's kernel_catalogue.npz (c03: N = 2^16, dd = 0.01, x_small = 0.02, no 2dd smoothing) ===
+   max |K - K_c03| = 5.1e-05 (at node (np.int64(39), np.int64(322), np.int64(7))); rms 4.6e-06; P_dom max |diff| 0.0e+00
+   edge 5.000: max |dK| 5.1e-05; max |dK| for q_A in 3-8: 4.3e-05
+   edge 6.000: max |dK| 5.1e-05; max |dK| for q_A in 3-8: 3.2e-05
+   edge 10.574: max |dK| 5.1e-05; max |dK| for q_A in 3-8: 1.7e-05
+   fixed-kernel (s09) vs pre-fix rates, same code: max |dK| = 9.0e-04; at theta_A = 4, 16, 40, 80' (q_A = 3-8, e = 5): 2.1e-04, 5.2e-04, 7.7e-04, 9.0e-04
+checks 27s
+       27.95 real        27.60 user         0.33 sys
+           282263552  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               30639  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   9  voluntary context switches
+                 207  involuntary context switches
+        394434342698  instructions retired
+         89553192762  cycles elapsed
+           238225280  peak memory footprint

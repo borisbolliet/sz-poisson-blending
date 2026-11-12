@@ -1,0 +1,33 @@
+(1) map-sigma ratio r_i = sqrt(1 + var_subthr) (Campbell, my population integral, derivation's int rho^2)
+  [baseline] build r_i range 1.0094-1.0691 (48 nodes 0.1-139'); mine at the 38 nodes in 0.25-80': 1.0134-1.0690; mine/build - 1: max |.| 9.5e-05; var_sub mine/build - 1 at 0.5, 1, 4, 16': -0.001 -0.001 -0.002 -0.002
+  [goal    ] build r_i range 1.0123-1.0855 (48 nodes 0.1-139'); mine at the 38 nodes in 0.25-80': 1.0170-1.0853; mine/build - 1: max |.| 1.9e-04; var_sub mine/build - 1 at 0.5, 1, 4, 16': -0.002 -0.002 -0.002 -0.003
+             goal max r_i: build 1.0855, mine (0.25-80') 1.0853
+  [lowP    ] build r_i range 1.0052-1.0355 (48 nodes 0.1-139'); mine at the 38 nodes in 0.25-80': 1.0075-1.0355; mine/build - 1: max |.| 5.1e-05; var_sub mine/build - 1 at 0.5, 1, 4, 16': -0.001 -0.001 -0.001 -0.002
+  [baseline] derivation's catalogue sub-threshold variance (one sky, v06): r_i / build - 1 max |.| 9.8e-05
+
+(2) all-halo confusion variance / sigma_Y^2 at theta_A = 1.0069' (baseline), S8 = 0.75 / 0.825 / 0.87 at Om = 0.3111 [build: 0.147 / 0.334 / 0.522]
+  S8 = 0.7500 (sigma8 = 0.7365): var / sigma_Y^2 = 0.1470
+  S8 = 0.8249 (sigma8 = 0.8101): var / sigma_Y^2 = 0.3342
+  S8 = 0.8700 (sigma8 = 0.8543): var / sigma_Y^2 = 0.5217
+
+(3) Poisson tSZ power at l = 3000, 143 GHz, from one fresh sky (seed 4242) [build: 9.07 fiducial, 3.24 low pressure]
+  sky with 29,295,891 halos: 1e12 l(l+1)C_l/2pi = 1.1283; D_3000(143 GHz) = 9.07 uK^2 (fiducial), 3.24 uK^2 (Y x 0.59753) = 0.95 x SPT 3.42; build HMF values 9.07 / 3.24
+total 11s
+       11.70 real        11.45 user         0.23 sys
+          1028194304  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               70654  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   6  voluntary context switches
+                 231  involuntary context switches
+        126346735945  instructions retired
+         35713027340  cycles elapsed
+           987057472  peak memory footprint

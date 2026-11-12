@@ -1,0 +1,143 @@
+[w07] map route vs the build's claims (C ids of the build's claim list)
+
+--- C1 / C2: config d, q > 5, S8 bias, SO40 and full sky, baseline / goal (fdom 1)
+   baseline_f1     d SO40 q5 S8 : map lin +0.01 +- 0.05, map ML +0.01 | build: ML -0.01, lin(all) -0.01, lin(q_A>=0.5) -0.01 | pull +0.4
+   baseline_f1     d full q5 S8 : map lin +0.12 +- 0.09, map ML +0.12 | build: ML +0.04, lin(all) +0.04, lin(q_A>=0.5) +0.04 | pull +1.0
+   goal_f1         d SO40 q5 S8 : map lin +0.02 +- 0.06, map ML +0.03 | build: ML +0.01, lin(all) +0.01, lin(q_A>=0.5) +0.01 | pull +0.3
+   goal_f1         d full q5 S8 : map lin +0.20 +- 0.11, map ML +0.19 | build: ML +0.08, lin(all) +0.09, lin(q_A>=0.5) +0.09 | pull +1.0
+
+--- C3: old white filter (Q3 setup) through the map route, config d S8 (build +1.11 / +2.07; Q3 +1.11 / +2.08) and config a (build -3.95 / -6.24)
+   white_f1        d SO40 q5 S8 : map lin +1.09 +- 0.08, map ML +1.14 | build: ML +1.11, lin(all) +1.07, lin(q_A>=0.5) +1.07 | pull +0.2
+   white_f1        a SO40 q5 S8 : map lin -3.75 +- 0.15, map ML -3.79 | build: ML -3.95, lin(all) -3.90, lin(q_A>=0.5) -3.89 | pull +0.9
+   white_f1        d full q5 S8 : map lin +1.95 +- 0.14, map ML +2.13 | build: ML +2.07, lin(all) +1.90, lin(q_A>=0.5) +1.91 | pull +0.3
+   white_f1        a full q5 S8 : map lin -5.92 +- 0.23, map ML -6.00 | build: ML -6.24, lin(all) -6.16, lin(q_A>=0.5) -6.14 | pull +0.9
+
+--- C4: config a S8, baseline / goal, SO40 / full (build +1.33 / +1.85; +2.11 / +2.92)
+   baseline_f1     a SO40 q5 S8 : map lin +1.39 +- 0.10, map ML +1.39 | build: ML +1.33, lin(all) +1.34, lin(q_A>=0.5) +1.34 | pull +0.6
+   baseline_f1     a full q5 S8 : map lin +2.20 +- 0.15, map ML +2.20 | build: ML +2.11, lin(all) +2.11, lin(q_A>=0.5) +2.12 | pull +0.6
+   goal_f1         a SO40 q5 S8 : map lin +1.90 +- 0.10, map ML +1.90 | build: ML +1.85, lin(all) +1.85, lin(q_A>=0.5) +1.85 | pull +0.4
+   goal_f1         a full q5 S8 : map lin +3.00 +- 0.16, map ML +3.00 | build: ML +2.92, lin(all) +2.93, lin(q_A>=0.5) +2.93 | pull +0.4
+
+--- C5: configs b, c S8, SO40 (build: baseline b +0.91, c +0.57; goal b +1.23, c +0.80)
+   baseline_f1     b SO40 q5 S8 : map lin +0.94 +- 0.08, map ML +0.93 | build: ML +0.91, lin(all) +0.92, lin(q_A>=0.5) +0.93 | pull +0.1
+   baseline_f1     c SO40 q5 S8 : map lin +0.71 +- 0.10, map ML +0.70 | build: ML +0.57, lin(all) +0.57, lin(q_A>=0.5) +0.59 | pull +1.3
+   goal_f1         b SO40 q5 S8 : map lin +1.34 +- 0.09, map ML +1.33 | build: ML +1.23, lin(all) +1.24, lin(q_A>=0.5) +1.25 | pull +1.0
+   goal_f1         c SO40 q5 S8 : map lin +1.08 +- 0.11, map ML +1.07 | build: ML +0.80, lin(all) +0.80, lin(q_A>=0.5) +0.81 | pull +2.5
+
+--- C6 / C7: attribution rule fdom 0.5 / 1 / 2: S8 bias configs a, d, e
+   baseline a SO40: map lin -0.77+-0.08 / +1.39+-0.10 / +3.19+-0.11 | build ML -0.75 / +1.33 / +3.15 | build lin(q_A>=0.5) -0.74 / +1.34 / +3.16
+   baseline d SO40: map lin +0.14+-0.04 / +0.01+-0.05 / -0.11+-0.06 | build ML +0.11 / -0.01 / -0.13 | build lin(q_A>=0.5) +0.11 / -0.01 / -0.14
+   baseline e SO40: map lin +0.20+-0.07 / +0.19+-0.09 / +0.19+-0.10 | build ML +0.14 / +0.07 / +0.06 | build lin(q_A>=0.5) +0.14 / +0.08 / +0.07
+   baseline a full: map lin -1.21+-0.13 / +2.20+-0.15 / +5.05+-0.17 | build ML -1.18 / +2.11 / +4.98 | build lin(q_A>=0.5) -1.17 / +2.12 / +5.00
+   baseline d full: map lin +0.24+-0.07 / +0.12+-0.09 / +0.01+-0.10 | build ML +0.18 / +0.04 / -0.08 | build lin(q_A>=0.5) +0.18 / +0.04 / -0.09
+   baseline e full: map lin +0.32+-0.11 / +0.30+-0.14 / +0.30+-0.16 | build ML +0.22 / +0.12 / +0.09 | build lin(q_A>=0.5) +0.22 / +0.13 / +0.11
+   goal     a SO40: map lin -1.45+-0.09 / +1.90+-0.10 / +4.79+-0.12 | build ML -1.41 / +1.85 / +4.72 | build lin(q_A>=0.5) -1.40 / +1.85 / +4.75
+   goal     d SO40: map lin +0.26+-0.05 / +0.02+-0.06 / -0.18+-0.07 | build ML +0.23 / +0.01 / -0.19 | build lin(q_A>=0.5) +0.22 / +0.01 / -0.20
+   goal     e SO40: map lin +0.40+-0.08 / +0.26+-0.09 / +0.16+-0.11 | build ML +0.29 / +0.11 / +0.03 | build lin(q_A>=0.5) +0.27 / +0.12 / +0.04
+   goal     a full: map lin -2.29+-0.15 / +3.00+-0.16 / +7.58+-0.19 | build ML -2.23 / +2.92 / +7.47 | build lin(q_A>=0.5) -2.21 / +2.93 / +7.51
+   goal     d full: map lin +0.49+-0.09 / +0.20+-0.11 / -0.04+-0.12 | build ML +0.39 / +0.08 / -0.14 | build lin(q_A>=0.5) +0.37 / +0.09 / -0.14
+   goal     e full: map lin +0.62+-0.13 / +0.42+-0.15 / +0.25+-0.17 | build ML +0.46 / +0.17 / +0.05 | build lin(q_A>=0.5) +0.43 / +0.19 / +0.07
+
+--- C8 / C9: blended - naive counts at q > 5 (full sky), Delta/N; z tilt; q shape
+   baseline_f1    : total map +1.365 +- 0.054% vs build +1.288% (pull +1.4) | z<0.1 +1.25+-0.44 (build +0.74) -> z 2-3 +5.91+-1.02 (build +4.85) | q 5-7.3 +1.54+-0.09 (build +1.51), q>47 -0.34+-0.38 (build +0.19)
+   goal_f1        : total map +1.450 +- 0.047% vs build +1.384% (pull +1.4) | z<0.1 +1.38+-0.47 (build +0.79) -> z 2-3 +6.53+-0.72 (build +5.04) | q 5-7.3 +1.68+-0.08 (build +1.61), q>47 +0.73+-0.44 (build +0.23)
+   baseline_f0.5  : total map -0.277 +- 0.047% vs build -0.260% (pull -0.4) | z<0.1 -0.55+-0.34 (build -0.77) -> z 2-3 +1.88+-0.82 (build +1.31) | q 5-7.3 -0.64+-0.08 (build -0.58), q>47 -0.34+-0.38 (build +0.14)
+   baseline_f2    : total map +2.824 +- 0.064% vs build +2.762% (pull +1.0) | z<0.1 +2.58+-0.53 (build +2.14) -> z 2-3 +11.19+-1.26 (build +9.75) | q 5-7.3 +3.52+-0.10 (build +3.51), q>47 -0.34+-0.38 (build +0.22)
+   goal_f0.5      : total map -0.507 +- 0.042% vs build -0.486% (pull -0.5) | z<0.1 -0.99+-0.38 (build -1.09) -> z 2-3 +2.49+-0.59 (build +1.06) | q 5-7.3 -0.97+-0.07 (build -0.94), q>47 +0.73+-0.44 (build +0.16)
+   goal_f2        : total map +3.232 +- 0.057% vs build +3.175% (pull +1.0) | z<0.1 +2.85+-0.56 (build +2.54) -> z 2-3 +11.30+-0.84 (build +10.40) | q 5-7.3 +4.16+-0.09 (build +4.06), q>47 +0.73+-0.44 (build +0.28)
+   white_f1       : total map -1.526 +- 0.082% vs build -1.618% (pull +1.1) | z<0.1 -4.58+-0.43 (build -5.27) -> z 2-3 +3.11+-1.48 (build +3.97) | q 5-7.3 -2.96+-0.14 (build -2.98), q>47 +0.15+-0.40 (build +0.40)
+   baseline_effi  : total map -0.227 +- 0.056% vs build -0.313% (pull +1.5) | z<0.1 -0.03+-0.43 (build -0.46) -> z 2-3 +1.13+-1.06 (build +0.39) | q 5-7.3 -0.72+-0.10 (build -0.74), q>47 +0.06+-0.45 (build +0.12)
+   baseline_effii : total map -0.392 +- 0.056% vs build -0.479% (pull +1.6) | z<0.1 -0.21+-0.43 (build -0.62) -> z 2-3 +0.58+-1.06 (build -0.12) | q 5-7.3 -0.95+-0.10 (build -0.97), q>47 -0.01+-0.40 (build +0.12)
+   goal_effi      : total map -0.334 +- 0.049% vs build -0.401% (pull +1.4) | z<0.1 -0.12+-0.46 (build -0.60) -> z 2-3 +1.76+-0.79 (build +0.34) | q 5-7.3 -0.90+-0.09 (build -0.95), q>47 -0.19+-0.48 (build +0.15)
+   goal_effii     : total map -0.599 +- 0.049% vs build -0.666% (pull +1.3) | z<0.1 -0.41+-0.46 (build -0.86) -> z 2-3 +1.00+-0.81 (build -0.39) | q 5-7.3 -1.27+-0.09 (build -1.32), q>47 -0.41+-0.45 (build +0.14)
+   lowP_f1        : total map +1.105 +- 0.066% vs build +0.972% (pull +2.0) | z<0.1 +0.68+-0.39 (build +0.71) -> z 2-3 +4.63+-1.62 (build +3.48) | q 5-7.3 +1.27+-0.10 (build +1.15), q>47 +0.36+-1.06 (build +0.10)
+   lowP_effi      : total map +0.025 +- 0.068% vs build -0.114% (pull +2.1) | z<0.1 -0.07+-0.40 (build -0.14) -> z 2-3 +1.96+-1.70 (build +0.35) | q 5-7.3 -0.17+-0.10 (build -0.30), q>47 -0.48+-0.75 (build +0.06)
+
+--- C10: map-sigma variants (build r_i, r_ii): config a S8 SO40 (build -0.64, -0.83 baseline; -1.00, -1.38 goal); configs d, e SO40 / full
+   baseline_effi   a SO40 q5 S8 : map lin -0.56 +- 0.09, map ML -0.57 | build: ML -0.64, lin(all) -0.64, lin(q_A>=0.5) -0.63 | pull +0.7
+   baseline_effi   d SO40 q5 S8 : map lin +0.14 +- 0.05, map ML +0.15 | build: ML +0.12, lin(all) +0.12, lin(q_A>=0.5) +0.11 | pull +0.6
+   baseline_effi   e SO40 q5 S8 : map lin +0.22 +- 0.08, map ML   -   | build: ML +0.11, lin(all) +0.10, lin(q_A>=0.5) +0.11 | pull +1.3
+   baseline_effi   d full q5 S8 : map lin +0.26 +- 0.09, map ML +0.26 | build: ML +0.17, lin(all) +0.16, lin(q_A>=0.5) +0.17 | pull +1.0
+   baseline_effi   e full q5 S8 : map lin +0.35 +- 0.13, map ML   -   | build: ML +0.17, lin(all) +0.16, lin(q_A>=0.5) +0.18 | pull +1.3
+   baseline_effii  a SO40 q5 S8 : map lin -0.74 +- 0.09, map ML -0.75 | build: ML -0.83, lin(all) -0.82, lin(q_A>=0.5) -0.82 | pull +0.8
+   baseline_effii  d SO40 q5 S8 : map lin +0.16 +- 0.05, map ML +0.16 | build: ML +0.13, lin(all) +0.13, lin(q_A>=0.5) +0.13 | pull +0.6
+   baseline_effii  e SO40 q5 S8 : map lin +0.22 +- 0.08, map ML   -   | build: ML +0.11, lin(all) +0.10, lin(q_A>=0.5) +0.11 | pull +1.3
+   baseline_effii  d full q5 S8 : map lin +0.27 +- 0.08, map ML +0.28 | build: ML +0.19, lin(all) +0.18, lin(q_A>=0.5) +0.18 | pull +1.0
+   baseline_effii  e full q5 S8 : map lin +0.35 +- 0.13, map ML   -   | build: ML +0.18, lin(all) +0.16, lin(q_A>=0.5) +0.18 | pull +1.3
+   goal_effi       a SO40 q5 S8 : map lin -0.94 +- 0.10, map ML -0.94 | build: ML -1.00, lin(all) -1.00, lin(q_A>=0.5) -0.98 | pull +0.4
+   goal_effi       d SO40 q5 S8 : map lin +0.23 +- 0.05, map ML +0.23 | build: ML +0.22, lin(all) +0.21, lin(q_A>=0.5) +0.21 | pull +0.3
+   goal_effi       e SO40 q5 S8 : map lin +0.38 +- 0.09, map ML   -   | build: ML +0.24, lin(all) +0.22, lin(q_A>=0.5) +0.23 | pull +1.6
+   goal_effi       d full q5 S8 : map lin +0.44 +- 0.10, map ML +0.46 | build: ML +0.34, lin(all) +0.33, lin(q_A>=0.5) +0.33 | pull +1.1
+   goal_effi       e full q5 S8 : map lin +0.59 +- 0.14, map ML   -   | build: ML +0.38, lin(all) +0.34, lin(q_A>=0.5) +0.36 | pull +1.6
+   goal_effii      a SO40 q5 S8 : map lin -1.32 +- 0.10, map ML -1.32 | build: ML -1.38, lin(all) -1.37, lin(q_A>=0.5) -1.36 | pull +0.4
+   goal_effii      d SO40 q5 S8 : map lin +0.26 +- 0.05, map ML +0.27 | build: ML +0.25, lin(all) +0.24, lin(q_A>=0.5) +0.24 | pull +0.3
+   goal_effii      e SO40 q5 S8 : map lin +0.39 +- 0.09, map ML   -   | build: ML +0.26, lin(all) +0.23, lin(q_A>=0.5) +0.24 | pull +1.6
+   goal_effii      d full q5 S8 : map lin +0.48 +- 0.10, map ML +0.50 | build: ML +0.38, lin(all) +0.36, lin(q_A>=0.5) +0.37 | pull +1.1
+   goal_effii      e full q5 S8 : map lin +0.62 +- 0.14, map ML   -   | build: ML +0.41, lin(all) +0.37, lin(q_A>=0.5) +0.38 | pull +1.6
+   [analyst variant, r measured on the simulated maps (w03)] baseline_clip   a SO40 q5 S8 : map lin -0.30 +- 0.09, map ML -0.30 | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] baseline_clip   d SO40 q5 S8 : map lin +0.12 +- 0.05, map ML +0.13 | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] baseline_clip   d full q5 S8 : map lin +0.24 +- 0.09, map ML +0.24 | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] baseline_clip   e SO40 q5 S8 : map lin +0.22 +- 0.09, map ML   -   | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] baseline_clip   e full q5 S8 : map lin +0.35 +- 0.13, map ML   -   | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] baseline_clip: Delta/N +0.011 +- 0.056%
+   [analyst variant, r measured on the simulated maps (w03)] baseline_rob    a SO40 q5 S8 : map lin -0.74 +- 0.09, map ML -0.74 | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] baseline_rob    d SO40 q5 S8 : map lin +0.16 +- 0.05, map ML +0.16 | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] baseline_rob    d full q5 S8 : map lin +0.27 +- 0.08, map ML +0.28 | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] baseline_rob    e SO40 q5 S8 : map lin +0.22 +- 0.08, map ML   -   | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] baseline_rob    e full q5 S8 : map lin +0.35 +- 0.13, map ML   -   | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] baseline_rob: Delta/N -0.389 +- 0.056%
+   [analyst variant, r measured on the simulated maps (w03)] baseline_std    a SO40 q5 S8 : map lin -2.76 +- 0.09, map ML -2.79 | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] baseline_std    d SO40 q5 S8 : map lin +0.27 +- 0.05, map ML +0.28 | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] baseline_std    d full q5 S8 : map lin +0.39 +- 0.08, map ML +0.42 | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] baseline_std    e SO40 q5 S8 : map lin +0.26 +- 0.08, map ML   -   | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] baseline_std    e full q5 S8 : map lin +0.41 +- 0.13, map ML   -   | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] baseline_std: Delta/N -2.331 +- 0.061%
+   [analyst variant, r measured on the simulated maps (w03)] goal_clip       a SO40 q5 S8 : map lin -0.78 +- 0.10, map ML -0.79 | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] goal_clip       d SO40 q5 S8 : map lin +0.22 +- 0.05, map ML +0.22 | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] goal_clip       d full q5 S8 : map lin +0.43 +- 0.10, map ML +0.45 | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] goal_clip       e SO40 q5 S8 : map lin +0.37 +- 0.09, map ML   -   | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] goal_clip       e full q5 S8 : map lin +0.59 +- 0.14, map ML   -   | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] goal_clip: Delta/N -0.219 +- 0.049%
+   [analyst variant, r measured on the simulated maps (w03)] goal_rob        a SO40 q5 S8 : map lin -1.31 +- 0.10, map ML -1.31 | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] goal_rob        d SO40 q5 S8 : map lin +0.26 +- 0.05, map ML +0.27 | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] goal_rob        d full q5 S8 : map lin +0.48 +- 0.10, map ML +0.50 | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] goal_rob        e SO40 q5 S8 : map lin +0.39 +- 0.09, map ML   -   | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] goal_rob        e full q5 S8 : map lin +0.62 +- 0.14, map ML   -   | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] goal_rob: Delta/N -0.595 +- 0.049%
+   [analyst variant, r measured on the simulated maps (w03)] goal_std        a SO40 q5 S8 : map lin -4.26 +- 0.10, map ML -4.31 | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] goal_std        d SO40 q5 S8 : map lin +0.48 +- 0.05, map ML +0.51 | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] goal_std        d full q5 S8 : map lin +0.74 +- 0.10, map ML +0.83 | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] goal_std        e SO40 q5 S8 : map lin +0.52 +- 0.09, map ML   -   | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] goal_std        e full q5 S8 : map lin +0.82 +- 0.14, map ML   -   | build: ML   -  , lin(all) None, lin(q_A>=0.5) None | pull +nan
+   [analyst variant] goal_std: Delta/N -2.989 +- 0.054%
+
+--- C13 / C14: config d nuisance shifts and goodness of fit (map ML on the central vector)
+   baseline_f1  SO40: map ML Om -0.05 s8 +0.12 (1-b) -0.11 alpha -0.45 slnY +0.10 chi2min 1.27 power 0.059 at bound [] | build Om -0.09 s8 +0.13 (1-b) -0.05 alpha -0.41 slnY -0.00 chi2min 0.12 power 0.051 at bound []
+   baseline_f1  full: map ML Om +0.05 s8 +0.24 (1-b) -0.24 alpha -0.60 slnY +0.19 chi2min 3.13 power 0.074 at bound [] | build Om -0.06 s8 +0.22 (1-b) -0.10 alpha -0.58 slnY +0.01 chi2min 0.30 power 0.052 at bound []
+   goal_f1      SO40: map ML Om -0.04 s8 +0.13 (1-b) -0.21 alpha -0.63 slnY +0.23 chi2min 1.66 power 0.062 at bound [] | build Om -0.09 s8 +0.19 (1-b) -0.09 alpha -0.51 slnY +0.01 chi2min 0.25 power 0.052 at bound []
+   goal_f1      full: map ML Om +0.12 s8 +0.30 (1-b) -0.42 alpha -0.83 slnY +0.41 chi2min 4.07 power 0.082 at bound [] | build Om -0.04 s8 +0.32 (1-b) -0.18 alpha -0.71 slnY +0.04 chi2min 0.60 power 0.054 at bound []
+   white_f1     SO40: map ML Om +0.21 s8 +1.82 (1-b) -0.69 alpha +2.25 slnY -1.84 chi2min 7.11 power 0.114 at bound [] | build Om +0.16 s8 +1.83 (1-b) -0.65 alpha +2.26 slnY -1.90 chi2min 4.65 power 0.088 at bound ['slnY']
+   white_f1     full: map ML Om +1.01 s8 +3.07 (1-b) -1.53 alpha +3.78 slnY -2.53 chi2min 16.12 power 0.244 at bound [] | build Om +0.92 s8 +3.05 (1-b) -1.46 alpha +3.77 slnY -2.99 chi2min 9.70 power 0.146 at bound ['slnY']
+   max goodness-of-fit power over the map MMF fits (fdom 0.5-2, map-sigma; q 5): SO40 a: 0.229, SO40 b-e: 0.100, full a: 0.667, full b-e: 0.219
+
+--- C15: q_cut 6, config a, SO40 (build +0.98 / +1.40; old filter -2.09)
+   baseline_f1 : q5 lin +1.39 +- 0.10 -> q6 lin +1.04 +- 0.10 (ML +1.04; build lin(q_A>=0.5) +0.98); change -25%
+   goal_f1     : q5 lin +1.90 +- 0.10 -> q6 lin +1.46 +- 0.10 (ML +1.46; build lin(q_A>=0.5) +1.40); change -23%
+   white_f1    : q5 lin -3.75 +- 0.15 -> q6 lin -1.96 +- 0.15 (ML -1.97; build lin(q_A>=0.5) -2.05); change -48%
+
+--- C19: low-pressure population: Delta/N (above), config a SO40 / full (build +0.57 / +0.91), configs d-e
+   lowP_f1         a SO40 q5 S8 : map lin +0.63 +- 0.07, map ML +0.63 | build: ML +0.57, lin(all) +0.57, lin(q_A>=0.5) +0.57 | pull +0.9
+   lowP_f1         d SO40 q5 S8 : map lin -0.04 +- 0.04, map ML -0.04 | build: ML -0.02, lin(all) -0.02, lin(q_A>=0.5) -0.03 | pull -0.4
+   lowP_f1         e SO40 q5 S8 : map lin +0.08 +- 0.06, map ML +0.08 | build: ML +0.01, lin(all) +0.01, lin(q_A>=0.5) +0.02 | pull +1.0
+   lowP_f1         a full q5 S8 : map lin +1.00 +- 0.11, map ML +1.00 | build: ML +0.91, lin(all) +0.91, lin(q_A>=0.5) +0.91 | pull +0.9
+   lowP_f1         d full q5 S8 : map lin -0.01 +- 0.06, map ML -0.01 | build: ML -0.02, lin(all) -0.02, lin(q_A>=0.5) -0.02 | pull +0.2
+   lowP_f1         e full q5 S8 : map lin +0.13 +- 0.10, map ML +0.12 | build: ML +0.02, lin(all) +0.02, lin(q_A>=0.5) +0.03 | pull +1.0
+   low-pressure N_single (q_A >= 0.5, full sky, map) 29,931 vs build Nn05 29,832
+
+--- C20 / C22: white Delta total and naive totals (full sky, q > 5)
+   white_f1    : map N_single 85,903 vs build Nn05 85,895 (+0.0001); map Delta -1,311 +- 70 vs build D05 -1,389.5 (all primaries -1,402.1)
+   baseline_f1 : map N_single 81,672 vs build Nn05 81,692 (-0.0002); map Delta +1,115 +- 44 vs build D05 +1,052.0 (all primaries +1,046.3)
+   goal_f1     : map N_single 127,948 vs build Nn05 128,154 (-0.0016); map Delta +1,856 +- 61 vs build D05 +1,773.3 (all primaries +1,767.8)
+   Q3 (c11) white Delta -1,412.6
+
+[w07] done

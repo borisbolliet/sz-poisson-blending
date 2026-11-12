@@ -1,0 +1,31 @@
+log                           wall [s]  cpu user [s]  max RSS [GB]  peak footprint [GB]
+a01_maps_excess_diag              12.5          12.7          0.94                 0.90
+a02_map_kernel_sim_000           480.9        1333.2          1.86                 1.80
+a02_map_kernel_sim_030           479.4        1336.3          1.86                 1.81
+a02b_map_kernel_compare          102.7         102.1          1.07                 1.02
+a02c_map_kernel_lowP              44.4          43.6          1.06                 1.01
+a03_fisher_rounding                9.2           9.4          0.91                 0.87
+a04_mapsigma_plainstd            304.0        1769.5          0.98                 0.94
+a04b_mapsigma_fdom              1200.9        7096.7          1.18                 1.14
+a05_quick_checks                   6.4           6.5          1.14                 1.10
+a06_final_tables                   0.1           0.0          0.02                 0.01
+total: wall 2161 s = 36.0 min (the two a02 simulation runs ran at the same time; summed 2640 s); cpu (user) 11710 s = 3.25 h
+max RSS is that of the main process; for pools (a04, a04b) the workers were sampled with ps during the runs (section 13).
+        0.03 real         0.02 user         0.00 sys
+            14139392  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                1503  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                  17  involuntary context switches
+           337346600  instructions retired
+            92888323  cycles elapsed
+             7111616  peak memory footprint

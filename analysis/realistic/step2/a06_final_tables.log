@@ -1,0 +1,77 @@
+## (1) Headline: S8 bias in Fisher sigma, q_cut 5, fdom 1, SNR normalised by sigma_Y (SO40 | full sky)
+
+| setup | a | b | c | d | e |
+|---|---|---|---|---|---|
+| Q3 data vector (c11), Q3 code | -3.97 \| -6.27 | -0.53 \| -0.84 | -0.47 \| -0.74 | +1.11 \| +2.08 | +1.74 \| +2.74 |
+| old white filter (step-2 kernel) | -3.95 \| -6.24 | -0.53 \| -0.84 | -0.47 \| -0.74 | +1.11 \| +2.07 | +1.73 \| +2.74 |
+| SO baseline MMF | +1.33 \| +2.11 | +0.91 \| +1.44 | +0.57 \| +0.90 | -0.01 \| +0.04 | +0.07 \| +0.12 |
+| SO goal MMF | +1.85 \| +2.92 | +1.23 \| +1.95 | +0.80 \| +1.26 | +0.01 \| +0.08 | +0.11 \| +0.17 |
+| low pressure (1-b)=0.6, baseline | +0.57 \| +0.91 | +0.39 \| +0.62 | +0.21 \| +0.33 | -0.02 \| -0.02 | +0.01 \| +0.02 |
+
+## (2) What the analyst does: S8 bias of configs a / d / e, q_cut 5 (SO40 | full sky)
+
+| instrument | attribution rule | SNR normalised by | a | d | e |
+|---|---|---|---|---|---|
+| SO baseline | fdom 0.5 | sigma_Y (no confusion) | -0.75 \| -1.18 | +0.11 \| +0.18 | +0.14 \| +0.22 |
+| SO baseline | fdom 0.5 | map sigma (i): sigma_Y (+) sub-threshold confusion | -2.39 \| -3.79 | +0.22 \| +0.30 | +0.18 \| +0.28 |
+| SO baseline | fdom 0.5 | map sigma (iii): plain std | -4.21 \| -6.65 | +0.35 \| +0.46 | +0.26 \| +0.41 |
+| SO baseline | fdom 1 | sigma_Y (no confusion) | +1.33 \| +2.11 | -0.01 \| +0.04 | +0.07 \| +0.12 |
+| SO baseline | fdom 1 | map sigma (i): sigma_Y (+) sub-threshold confusion | -0.64 \| -1.02 | +0.12 \| +0.17 | +0.11 \| +0.17 |
+| SO baseline | fdom 1 | map sigma (ii): robust width | -0.83 \| -1.31 | +0.13 \| +0.19 | +0.11 \| +0.18 |
+| SO baseline | fdom 1 | map sigma (iii): plain std | -2.86 \| -4.52 | +0.27 \| +0.36 | +0.20 \| +0.31 |
+| SO baseline | fdom 2 | sigma_Y (no confusion) | +3.15 \| +4.98 | -0.13 \| -0.08 | +0.06 \| +0.09 |
+| SO baseline | fdom 2 | map sigma (i): sigma_Y (+) sub-threshold confusion | +0.88 \| +1.39 | +0.01 \| +0.06 | +0.09 \| +0.14 |
+| SO baseline | fdom 2 | map sigma (iii): plain std | -1.69 \| -2.67 | +0.18 \| +0.26 | +0.18 \| +0.29 |
+| SO goal | fdom 0.5 | sigma_Y (no confusion) | -1.41 \| -2.23 | +0.23 \| +0.39 | +0.29 \| +0.46 |
+| SO goal | fdom 0.5 | map sigma (i): sigma_Y (+) sub-threshold confusion | -3.66 \| -5.79 | +0.40 \| +0.61 | +0.41 \| +0.65 |
+| SO goal | fdom 0.5 | map sigma (iii): plain std | -6.23 \| -9.86 | +0.61 \| +0.89 | +0.60 \| +0.96 |
+| SO goal | fdom 1 | sigma_Y (no confusion) | +1.85 \| +2.92 | +0.01 \| +0.08 | +0.11 \| +0.17 |
+| SO goal | fdom 1 | map sigma (i): sigma_Y (+) sub-threshold confusion | -1.00 \| -1.58 | +0.22 \| +0.34 | +0.24 \| +0.38 |
+| SO goal | fdom 1 | map sigma (ii): robust width | -1.38 \| -2.17 | +0.25 \| +0.38 | +0.26 \| +0.41 |
+| SO goal | fdom 1 | map sigma (iii): plain std | -4.36 \| -6.89 | +0.48 \| +0.69 | +0.46 \| +0.73 |
+| SO goal | fdom 2 | sigma_Y (no confusion) | +4.72 \| +7.47 | -0.19 \| -0.14 | +0.03 \| +0.05 |
+| SO goal | fdom 2 | map sigma (i): sigma_Y (+) sub-threshold confusion | +1.35 \| +2.13 | +0.04 \| +0.14 | +0.16 \| +0.25 |
+| SO goal | fdom 2 | map sigma (iii): plain std | -2.71 \| -4.29 | +0.34 \| +0.54 | +0.40 \| +0.63 |
+
+## (3) Envelope over every MMF analyst choice computed (fdom 0.5-2 x normalisation), q_cut 5 and 6
+   config a SO40 q>5: S8 bias -6.23 (goal_f0.5_effiii) to +4.72 (goal_f2) over 20 setups; max goodness-of-fit power 0.376
+   config a SO40 q>6: S8 bias -3.34 (goal_f0.5_effiii) to +3.15 (goal_f2) over 20 setups; max goodness-of-fit power 0.105
+   config a full q>5: S8 bias -9.86 (goal_f0.5_effiii) to +7.47 (goal_f2) over 20 setups; max goodness-of-fit power 0.909
+   config a full q>6: S8 bias -5.28 (goal_f0.5_effiii) to +4.98 (goal_f2) over 20 setups; max goodness-of-fit power 0.240
+   config b SO40 q>5: S8 bias -4.17 (goal_f0.5_effiii) to +3.17 (goal_f2) over 20 setups; max goodness-of-fit power 0.153
+   config b SO40 q>6: S8 bias -2.22 (goal_f0.5_effiii) to +2.12 (goal_f2) over 20 setups; max goodness-of-fit power 0.070
+   config b full q>5: S8 bias -6.59 (goal_f0.5_effiii) to +5.01 (goal_f2) over 20 setups; max goodness-of-fit power 0.427
+   config b full q>6: S8 bias -3.50 (goal_f0.5_effiii) to +3.36 (goal_f2) over 20 setups; max goodness-of-fit power 0.111
+   config c SO40 q>5: S8 bias -2.49 (goal_f0.5_effiii) to +2.11 (goal_f2) over 20 setups; max goodness-of-fit power 0.153
+   config c SO40 q>6: S8 bias -1.28 (goal_f0.5_effiii) to +1.38 (goal_f2) over 20 setups; max goodness-of-fit power 0.070
+   config c full q>5: S8 bias -3.94 (goal_f0.5_effiii) to +3.34 (goal_f2) over 20 setups; max goodness-of-fit power 0.426
+   config c full q>6: S8 bias -2.02 (goal_f0.5_effiii) to +2.18 (goal_f2) over 20 setups; max goodness-of-fit power 0.111
+   config d SO40 q>5: S8 bias -0.19 (goal_f2) to +0.61 (goal_f0.5_effiii) over 20 setups; max goodness-of-fit power 0.104
+   config d SO40 q>6: S8 bias -0.15 (goal_f2) to +0.27 (goal_f0.5_effiii) over 20 setups; max goodness-of-fit power 0.062
+   config d full q>5: S8 bias -0.14 (goal_f2) to +0.89 (goal_f0.5_effiii) over 20 setups; max goodness-of-fit power 0.234
+   config d full q>6: S8 bias -0.12 (goal_f2) to +0.39 (goal_f0.5_effiii) over 20 setups; max goodness-of-fit power 0.084
+   config e SO40 q>5: S8 bias +0.03 (goal_f2) to +0.60 (goal_f0.5_effiii) over 20 setups; max goodness-of-fit power 0.103
+   config e SO40 q>6: S8 bias +0.01 (goal_f2) to +0.27 (goal_f0.5_effiii) over 20 setups; max goodness-of-fit power 0.062
+   config e full q>5: S8 bias +0.05 (goal_f2) to +0.96 (goal_f0.5_effiii) over 20 setups; max goodness-of-fit power 0.233
+   config e full q>6: S8 bias +0.02 (goal_f2) to +0.42 (goal_f0.5_effiii) over 20 setups; max goodness-of-fit power 0.084
+   configs d, d3, d5, e (q>5): largest |S8 bias| 0.96; fits with a parameter at a bound: 0 of 160
+
+[a06] done
+        0.05 real         0.03 user         0.01 sys
+            18710528  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                1793  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   3  voluntary context switches
+                  20  involuntary context switches
+           357722196  instructions retired
+           112018290  cycles elapsed
+            11617152  peak memory footprint

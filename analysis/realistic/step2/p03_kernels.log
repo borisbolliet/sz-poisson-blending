@@ -1,0 +1,70 @@
+[white] old white filter, s09 rates (fixed rho_at), fdom 1; 40 theta nodes 0.25-80'; 1065 q nodes; r range 1.0000-1.0000; max |mu| 24.5; max extra 0.00e+00
+[white_prefix] old white filter, b03 rates of data/blending/analytic.npz (pre-fix rho_at, as c03), fdom 1; 40 theta nodes 0.25-80'; 1065 q nodes; r range 1.0000-1.0000; max |mu| 24.5; max extra 0.00e+00
+[baseline_f1] SO baseline MMF, s09 rates, fdom 1.0; 48 theta nodes 0.1-139'; 1065 q nodes; r range 1.0000-1.0000; max |mu| 0.00435; max extra 0.00e+00
+[baseline_f0.5] SO baseline MMF, s09 rates, fdom 0.5; 48 theta nodes 0.1-139'; 1065 q nodes; r range 1.0000-1.0000; max |mu| 0.00435; max extra 0.00e+00
+[baseline_f2] SO baseline MMF, s09 rates, fdom 2.0; 48 theta nodes 0.1-139'; 1065 q nodes; r range 1.0000-1.0000; max |mu| 0.00435; max extra 0.00e+00
+[goal_f1] SO goal MMF, s09 rates, fdom 1.0; 48 theta nodes 0.1-139'; 1065 q nodes; r range 1.0000-1.0000; max |mu| 0.00421; max extra 0.00e+00
+[goal_f0.5] SO goal MMF, s09 rates, fdom 0.5; 48 theta nodes 0.1-139'; 1065 q nodes; r range 1.0000-1.0000; max |mu| 0.00421; max extra 0.00e+00
+[goal_f2] SO goal MMF, s09 rates, fdom 2.0; 48 theta nodes 0.1-139'; 1065 q nodes; r range 1.0000-1.0000; max |mu| 0.00421; max extra 0.00e+00
+[baseline_effi] SO baseline MMF, s09 rates, map-sigma (i), fdom 1; 48 theta nodes 0.1-139'; 1065 q nodes; r range 1.0094-1.0691; max |mu| 0.00435; max extra 0.00e+00
+[baseline_effii] SO baseline MMF, s09 rates, map-sigma (ii), fdom 1; 48 theta nodes 0.1-139'; 1065 q nodes; r range 1.0180-1.0766; max |mu| 0.00435; max extra 0.00e+00
+[goal_effi] SO goal MMF, s09 rates, map-sigma (i), fdom 1; 48 theta nodes 0.1-139'; 1065 q nodes; r range 1.0123-1.0855; max |mu| 0.00421; max extra 0.00e+00
+[goal_effii] SO goal MMF, s09 rates, map-sigma (ii), fdom 1; 48 theta nodes 0.1-139'; 1065 q nodes; r range 1.0234-1.0997; max |mu| 0.00421; max extra 0.00e+00
+[lowP_f1] SO baseline MMF, low-pressure population (1-b) = 0.6 (rates x c = 0.59753), fdom 1; 48 theta nodes 0.1-139'; 1065 q nodes; r range 1.0000-1.0000; max |mu| 0.0026; max extra 0.00e+00
+[lowP_effi] SO baseline MMF, low-pressure population (1-b) = 0.6 (rates x c = 0.59753), map-sigma (i); 48 theta nodes 0.1-139'; 1065 q nodes; r range 1.0052-1.0355; max |mu| 0.0026; max extra 0.00e+00
+[S8_0.75_f1] SO baseline MMF, neighbours at S8 = 0.75 (sigma8 = 0.73650), fdom 1; 48 theta nodes 0.1-139'; 1065 q nodes; r range 1.0000-1.0000; max |mu| 0.00266; max extra 0.00e+00
+[S8_0.87_f1] SO baseline MMF, neighbours at S8 = 0.87 (sigma8 = 0.85434), fdom 1; 48 theta nodes 0.1-139'; 1065 q nodes; r range 1.0000-1.0000; max |mu| 0.00565; max extra 0.00e+00
+[baseline_f1_fineQA] SO baseline MMF, s09 rates, fdom 1.0, q_A grid 2x finer; 48 theta nodes 0.1-139'; 2130 q nodes; r range 1.0000-1.0000; max |mu| 0.00435; max extra 0.00e+00
+   48/800 node jobs done  [138s wall, 788s cpu]
+   96/800 node jobs done  [269s wall, 1572s cpu]
+   144/800 node jobs done  [499s wall, 2948s cpu]
+   192/800 node jobs done  [612s wall, 3633s cpu]
+   240/800 node jobs done  [728s wall, 4316s cpu]
+   288/800 node jobs done  [843s wall, 5000s cpu]
+   336/800 node jobs done  [959s wall, 5688s cpu]
+   384/800 node jobs done  [1073s wall, 6380s cpu]
+   432/800 node jobs done  [1187s wall, 7070s cpu]
+   480/800 node jobs done  [1303s wall, 7767s cpu]
+   528/800 node jobs done  [1419s wall, 8458s cpu]
+   576/800 node jobs done  [1533s wall, 9145s cpu]
+   624/800 node jobs done  [1649s wall, 9833s cpu]
+   672/800 node jobs done  [1763s wall, 10519s cpu]
+   720/800 node jobs done  [1870s wall, 11163s cpu]
+   768/800 node jobs done  [1965s wall, 11731s cpu]
+   800/800 node jobs done  [2028s wall, 12108s cpu]
+[white] saved kernel_white.npz; min dK/dq_A -2.2e-13, max dK/de +0.0e+00; at q' = 5: P_dom = 0.99486, 0.98579, 0.96444; K(e=5) = 0.4623, 0.4100, 0.3329 at theta_A = 0.95', 4.15', 15.72'
+[white_prefix] saved kernel_white_prefix.npz; min dK/dq_A -1.8e-13, max dK/de +0.0e+00; at q' = 5: P_dom = 0.99485, 0.98577, 0.96442; K(e=5) = 0.4622, 0.4098, 0.3324 at theta_A = 0.95', 4.15', 15.72'
+[baseline_f1] saved kernel_baseline_f1.npz; min dK/dq_A -5.7e-14, max dK/de +0.0e+00; at q' = 5: P_dom = 0.99862, 0.99816, 0.99845; K(e=5) = 0.4915, 0.4882, 0.4874 at theta_A = 1.01', 4.02', 16.09'
+[baseline_f0.5] saved kernel_baseline_f0.5.npz; min dK/dq_A -5.9e-14, max dK/de +0.0e+00; at q' = 5: P_dom = 0.99479, 0.99337, 0.99433; K(e=5) = 0.4876, 0.4834, 0.4833 at theta_A = 1.01', 4.02', 16.09'
+[baseline_f2] saved kernel_baseline_f2.npz; min dK/dq_A -5.7e-14, max dK/de +0.0e+00; at q' = 5: P_dom = 0.99972, 0.99960, 0.99967; K(e=5) = 0.4926, 0.4896, 0.4886 at theta_A = 1.01', 4.02', 16.09'
+[goal_f1] saved kernel_goal_f1.npz; min dK/dq_A -1.4e-13, max dK/de +0.0e+00; at q' = 5: P_dom = 0.99800, 0.99740, 0.99784; K(e=5) = 0.4889, 0.4850, 0.4836 at theta_A = 1.01', 4.02', 16.09'
+[goal_f0.5] saved kernel_goal_f0.5.npz; min dK/dq_A -1.3e-13, max dK/de +0.0e+00; at q' = 5: P_dom = 0.99290, 0.99109, 0.99247; K(e=5) = 0.4838, 0.4787, 0.4783 at theta_A = 1.01', 4.02', 16.09'
+[goal_f2] saved kernel_goal_f2.npz; min dK/dq_A -1.4e-13, max dK/de +0.0e+00; at q' = 5: P_dom = 0.99956, 0.99940, 0.99951; K(e=5) = 0.4905, 0.4870, 0.4853 at theta_A = 1.01', 4.02', 16.09'
+[baseline_effi] saved kernel_baseline_effi.npz; min dK/dq_A -5.7e-14, max dK/de +0.0e+00; at q' = 5: P_dom = 0.99877, 0.99839, 0.99857; K(e=5) = 0.4916, 0.4884, 0.4875 at theta_A = 1.01', 4.02', 16.09'
+[baseline_effii] saved kernel_baseline_effii.npz; min dK/dq_A -5.7e-14, max dK/de +0.0e+00; at q' = 5: P_dom = 0.99880, 0.99842, 0.99859; K(e=5) = 0.4916, 0.4885, 0.4875 at theta_A = 1.01', 4.02', 16.09'
+[goal_effi] saved kernel_goal_effi.npz; min dK/dq_A -1.4e-13, max dK/de +0.0e+00; at q' = 5: P_dom = 0.99829, 0.99779, 0.99803; K(e=5) = 0.4892, 0.4854, 0.4838 at theta_A = 1.01', 4.02', 16.09'
+[goal_effii] saved kernel_goal_effii.npz; min dK/dq_A -1.4e-13, max dK/de +0.0e+00; at q' = 5: P_dom = 0.99832, 0.99784, 0.99810; K(e=5) = 0.4892, 0.4854, 0.4839 at theta_A = 1.01', 4.02', 16.09'
+[lowP_f1] saved kernel_lowP_f1.npz; min dK/dq_A -2.8e-14, max dK/de +0.0e+00; at q' = 5: P_dom = 0.99956, 0.99939, 0.99949; K(e=5) = 0.4964, 0.4949, 0.4949 at theta_A = 1.01', 4.02', 16.09'
+[lowP_effi] saved kernel_lowP_effi.npz; min dK/dq_A -2.8e-14, max dK/de +0.0e+00; at q' = 5: P_dom = 0.99959, 0.99944, 0.99952; K(e=5) = 0.4964, 0.4950, 0.4949 at theta_A = 1.01', 4.02', 16.09'
+[S8_0.75_f1] saved kernel_S8_0.75_f1.npz; min dK/dq_A -4.9e-14, max dK/de +0.0e+00; at q' = 5: P_dom = 0.99944, 0.99924, 0.99937; K(e=5) = 0.4957, 0.4940, 0.4940 at theta_A = 1.01', 4.02', 16.09'
+[S8_0.87_f1] saved kernel_S8_0.87_f1.npz; min dK/dq_A -1.1e-13, max dK/de +0.0e+00; at q' = 5: P_dom = 0.99781, 0.99713, 0.99755; K(e=5) = 0.4879, 0.4834, 0.4816 at theta_A = 1.01', 4.02', 16.09'
+[baseline_f1_fineQA] saved kernel_baseline_f1_fineQA.npz; min dK/dq_A -5.7e-14, max dK/de +0.0e+00; at q' = 5: P_dom = 0.99862, 0.99816, 0.99845; K(e=5) = 0.4915, 0.4882, 0.4874 at theta_A = 1.01', 4.02', 16.09'
+done 800 node jobs in 2029s wall (12108s cpu)
+     2030.49 real     12047.72 user        56.43 sys
+          5141577728  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1583709  page reclaims
+                 599  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               23849  voluntary context switches
+              283389  involuntary context switches
+         36338842182  instructions retired
+         19958891566  cycles elapsed
+         12556568832  peak memory footprint

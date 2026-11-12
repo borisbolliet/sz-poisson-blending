@@ -1,0 +1,20 @@
+/Users/boris/GitHub/sz-poisson-blending/verify_real/step2_maps/w04_delta.py:188: RuntimeWarning: overflow encountered in divide
+  chi2d = float(np.sum(dd[ok] ** 2 / var[ok]))
+     1104.79 real      1097.06 user         5.79 sys
+          1192919040  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              118201  page reclaims
+                  79  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                6550  voluntary context switches
+               13259  involuntary context switches
+      12084822864783  instructions retired
+       3400544116406  cycles elapsed
+          1149767552  peak memory footprint

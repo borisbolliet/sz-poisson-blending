@@ -1,0 +1,84 @@
+=== [white] q_cut 5: Delta total -1.63%; z tilt r_z - eps from z<0.1 to z 2.5-3: -3.64% ... +6.99% ===
+  SO40 a: S8 bias (lin) = amplitude -2.62 + z tilt -1.05 + q shape -0.23 = -3.90 sigma (ML -3.95); Om: -1.15 -1.92 -0.61 = -3.68 (ML -3.67); s8: +0.16 +2.06 +0.72 = +2.94 (ML +2.95)
+  SO40 b: S8 bias (lin) = amplitude -0.15 + z tilt +0.54 + q shape -0.96 = -0.57 sigma (ML -0.53); Om: -0.28 +0.15 -1.07 = -1.20 (ML -1.15); s8: +0.01 +0.95 -0.81 = +0.14 (ML +0.17)
+  SO40 c: S8 bias (lin) = amplitude -0.09 + z tilt +0.27 + q shape -0.68 = -0.50 sigma (ML -0.47); Om: -0.15 -0.24 -0.52 = -0.91 (ML -0.86); s8: +0.01 +0.93 -0.80 = +0.14 (ML +0.17)
+  SO40 d: S8 bias (lin) = amplitude -0.09 + z tilt +0.20 + q shape +0.95 = +1.07 sigma (ML +1.11); Om: -0.21 -0.54 +0.90 = +0.15 (ML +0.16); s8: +0.05 +0.92 +0.79 = +1.76 (ML +1.83)
+  SO40 e: S8 bias (lin) = amplitude +0.06 + z tilt +0.31 + q shape +1.26 = +1.64 sigma (ML +1.73); Om: +0.01 -0.03 +1.24 = +1.22 (ML +1.25); s8: +0.13 +0.73 +1.21 = +2.07 (ML +2.18)
+  full a: S8 bias (lin) = amplitude -4.14 + z tilt -1.65 + q shape -0.36 = -6.16 sigma (ML -6.24); Om: -1.82 -3.03 -0.97 = -5.82 (ML -5.80); s8: +0.25 +3.26 +1.13 = +4.65 (ML +4.67)
+  full b: S8 bias (lin) = amplitude -0.23 + z tilt +0.86 + q shape -1.52 = -0.89 sigma (ML -0.84); Om: -0.44 +0.23 -1.69 = -1.90 (ML -1.82); s8: +0.01 +1.49 -1.28 = +0.22 (ML +0.27)
+  full c: S8 bias (lin) = amplitude -0.14 + z tilt +0.43 + q shape -1.08 = -0.79 sigma (ML -0.74); Om: -0.24 -0.37 -0.82 = -1.44 (ML -1.36); s8: +0.01 +1.47 -1.26 = +0.22 (ML +0.27)
+  full d: S8 bias (lin) = amplitude -0.05 + z tilt +0.36 + q shape +1.58 = +1.90 sigma (ML +2.07); Om: -0.19 -0.52 +1.52 = +0.82 (ML +0.92); s8: +0.12 +1.31 +1.42 = +2.85 (ML +3.05)
+  full e: S8 bias (lin) = amplitude +0.10 + z tilt +0.50 + q shape +2.00 = +2.60 sigma (ML +2.74); Om: +0.01 -0.05 +1.96 = +1.92 (ML +1.98); s8: +0.20 +1.15 +1.91 = +3.27 (ML +3.45)
+=== [baseline_f1] q_cut 5: Delta total +1.28%; z tilt r_z - eps from z<0.1 to z 2.5-3: -0.54% ... +5.17% ===
+  SO40 a: S8 bias (lin) = amplitude +1.79 + z tilt -0.55 + q shape +0.09 = +1.34 sigma (ML +1.33); Om: +0.77 -0.82 +0.15 = +0.10 (ML +0.10); s8: -0.10 +0.86 -0.17 = +0.60 (ML +0.59)
+  SO40 b: S8 bias (lin) = amplitude +0.25 + z tilt +0.31 + q shape +0.36 = +0.92 sigma (ML +0.91); Om: +0.34 +0.06 +0.38 = +0.79 (ML +0.79); s8: +0.04 +0.67 +0.26 = +0.97 (ML +0.96)
+  SO40 c: S8 bias (lin) = amplitude +0.09 + z tilt +0.33 + q shape +0.15 = +0.57 sigma (ML +0.57); Om: +0.10 +0.18 +0.11 = +0.39 (ML +0.39); s8: +0.02 +0.70 +0.23 = +0.95 (ML +0.94)
+  SO40 d: S8 bias (lin) = amplitude +0.09 + z tilt -0.09 + q shape -0.02 = -0.01 sigma (ML -0.01); Om: +0.14 -0.21 -0.03 = -0.10 (ML -0.09); s8: +0.00 +0.12 +0.00 = +0.13 (ML +0.13)
+  SO40 e: S8 bias (lin) = amplitude +0.01 + z tilt +0.07 + q shape -0.01 = +0.08 sigma (ML +0.07); Om: +0.03 +0.02 -0.01 = +0.03 (ML +0.03); s8: -0.03 +0.18 +0.00 = +0.16 (ML +0.15)
+  full a: S8 bias (lin) = amplitude +2.83 + z tilt -0.87 + q shape +0.14 = +2.11 sigma (ML +2.11); Om: +1.21 -1.29 +0.24 = +0.16 (ML +0.16); s8: -0.16 +1.37 -0.26 = +0.94 (ML +0.93)
+  full b: S8 bias (lin) = amplitude +0.39 + z tilt +0.49 + q shape +0.57 = +1.45 sigma (ML +1.44); Om: +0.54 +0.10 +0.61 = +1.25 (ML +1.25); s8: +0.06 +1.07 +0.41 = +1.54 (ML +1.51)
+  full c: S8 bias (lin) = amplitude +0.14 + z tilt +0.52 + q shape +0.24 = +0.91 sigma (ML +0.90); Om: +0.16 +0.29 +0.18 = +0.62 (ML +0.62); s8: +0.03 +1.10 +0.37 = +1.50 (ML +1.48)
+  full d: S8 bias (lin) = amplitude +0.09 + z tilt -0.04 + q shape -0.02 = +0.04 sigma (ML +0.04); Om: +0.14 -0.18 -0.03 = -0.06 (ML -0.06); s8: -0.01 +0.22 +0.01 = +0.22 (ML +0.22)
+  full e: S8 bias (lin) = amplitude +0.02 + z tilt +0.11 + q shape -0.01 = +0.12 sigma (ML +0.12); Om: +0.05 +0.03 -0.02 = +0.06 (ML +0.05); s8: -0.05 +0.29 +0.01 = +0.25 (ML +0.24)
+=== [goal_f1] q_cut 5: Delta total +1.38%; z tilt r_z - eps from z<0.1 to z 2.5-3: -0.59% ... +5.45% ===
+  SO40 a: S8 bias (lin) = amplitude +2.49 + z tilt -0.75 + q shape +0.11 = +1.85 sigma (ML +1.85); Om: +1.06 -1.16 +0.19 = +0.10 (ML +0.10); s8: -0.17 +1.23 -0.21 = +0.85 (ML +0.84)
+  SO40 b: S8 bias (lin) = amplitude +0.33 + z tilt +0.46 + q shape +0.45 = +1.24 sigma (ML +1.23); Om: +0.46 +0.11 +0.48 = +1.05 (ML +1.06); s8: +0.03 +1.00 +0.31 = +1.34 (ML +1.32)
+  SO40 c: S8 bias (lin) = amplitude +0.12 + z tilt +0.50 + q shape +0.18 = +0.80 sigma (ML +0.80); Om: +0.14 +0.28 +0.13 = +0.54 (ML +0.54); s8: +0.02 +1.02 +0.29 = +1.33 (ML +1.31)
+  SO40 d: S8 bias (lin) = amplitude +0.10 + z tilt -0.08 + q shape -0.01 = +0.01 sigma (ML +0.01); Om: +0.15 -0.21 -0.03 = -0.09 (ML -0.09); s8: -0.01 +0.18 +0.01 = +0.19 (ML +0.19)
+  SO40 e: S8 bias (lin) = amplitude +0.01 + z tilt +0.12 + q shape -0.01 = +0.12 sigma (ML +0.11); Om: +0.03 +0.04 -0.01 = +0.06 (ML +0.05); s8: -0.05 +0.27 +0.01 = +0.23 (ML +0.22)
+  full a: S8 bias (lin) = amplitude +3.93 + z tilt -1.18 + q shape +0.17 = +2.93 sigma (ML +2.92); Om: +1.68 -1.84 +0.30 = +0.15 (ML +0.16); s8: -0.26 +1.95 -0.33 = +1.35 (ML +1.33)
+  full b: S8 bias (lin) = amplitude +0.52 + z tilt +0.73 + q shape +0.71 = +1.96 sigma (ML +1.95); Om: +0.73 +0.18 +0.76 = +1.66 (ML +1.67); s8: +0.05 +1.58 +0.49 = +2.12 (ML +2.08)
+  full c: S8 bias (lin) = amplitude +0.19 + z tilt +0.79 + q shape +0.29 = +1.27 sigma (ML +1.26); Om: +0.21 +0.44 +0.20 = +0.85 (ML +0.85); s8: +0.03 +1.62 +0.46 = +2.10 (ML +2.07)
+  full d: S8 bias (lin) = amplitude +0.09 + z tilt +0.01 + q shape -0.01 = +0.09 sigma (ML +0.08); Om: +0.15 -0.15 -0.03 = -0.04 (ML -0.04); s8: -0.04 +0.34 +0.02 = +0.32 (ML +0.32)
+  full e: S8 bias (lin) = amplitude +0.01 + z tilt +0.18 + q shape -0.01 = +0.18 sigma (ML +0.17); Om: +0.05 +0.06 -0.02 = +0.09 (ML +0.08); s8: -0.08 +0.43 +0.02 = +0.37 (ML +0.36)
+=== [baseline_effi] q_cut 5: Delta total -0.33%; z tilt r_z - eps from z<0.1 to z 2.5-3: -0.13% ... +0.36% ===
+  SO40 a: S8 bias (lin) = amplitude -0.43 + z tilt -0.09 + q shape -0.12 = -0.64 sigma (ML -0.64); Om: -0.19 -0.13 -0.21 = -0.52 (ML -0.52); s8: +0.02 +0.14 +0.23 = +0.39 (ML +0.39)
+  SO40 b: S8 bias (lin) = amplitude -0.06 + z tilt +0.05 + q shape -0.51 = -0.53 sigma (ML -0.53); Om: -0.08 +0.01 -0.54 = -0.62 (ML -0.62); s8: -0.01 +0.10 -0.37 = -0.28 (ML -0.28)
+  SO40 c: S8 bias (lin) = amplitude -0.02 + z tilt +0.03 + q shape -0.34 = -0.34 sigma (ML -0.33); Om: -0.02 +0.00 -0.30 = -0.32 (ML -0.31); s8: -0.01 +0.10 -0.37 = -0.27 (ML -0.28)
+  SO40 d: S8 bias (lin) = amplitude -0.02 + z tilt -0.00 + q shape +0.14 = +0.12 sigma (ML +0.12); Om: -0.04 -0.03 +0.09 = +0.03 (ML +0.03); s8: -0.00 +0.04 +0.18 = +0.22 (ML +0.22)
+  SO40 e: S8 bias (lin) = amplitude -0.00 + z tilt +0.01 + q shape +0.09 = +0.10 sigma (ML +0.11); Om: -0.01 +0.00 +0.06 = +0.06 (ML +0.06); s8: +0.01 +0.04 +0.13 = +0.18 (ML +0.19)
+  full a: S8 bias (lin) = amplitude -0.69 + z tilt -0.14 + q shape -0.19 = -1.02 sigma (ML -1.02); Om: -0.29 -0.21 -0.33 = -0.82 (ML -0.82); s8: +0.04 +0.22 +0.36 = +0.62 (ML +0.62)
+  full b: S8 bias (lin) = amplitude -0.09 + z tilt +0.07 + q shape -0.81 = -0.83 sigma (ML -0.83); Om: -0.13 +0.01 -0.86 = -0.98 (ML -0.97); s8: -0.02 +0.16 -0.59 = -0.44 (ML -0.45)
+  full c: S8 bias (lin) = amplitude -0.03 + z tilt +0.05 + q shape -0.54 = -0.53 sigma (ML -0.53); Om: -0.04 +0.01 -0.47 = -0.50 (ML -0.49); s8: -0.01 +0.16 -0.58 = -0.43 (ML -0.44)
+  full d: S8 bias (lin) = amplitude -0.02 + z tilt +0.01 + q shape +0.18 = +0.16 sigma (ML +0.17); Om: -0.04 -0.03 +0.12 = +0.06 (ML +0.06); s8: +0.00 +0.06 +0.26 = +0.33 (ML +0.33)
+  full e: S8 bias (lin) = amplitude -0.00 + z tilt +0.02 + q shape +0.14 = +0.16 sigma (ML +0.17); Om: -0.01 +0.00 +0.10 = +0.09 (ML +0.10); s8: +0.01 +0.06 +0.21 = +0.29 (ML +0.30)
+=== [baseline_effii] q_cut 5: Delta total -0.50%; z tilt r_z - eps from z<0.1 to z 2.5-3: -0.13% ... -0.21% ===
+  SO40 a: S8 bias (lin) = amplitude -0.65 + z tilt -0.04 + q shape -0.14 = -0.82 sigma (ML -0.83); Om: -0.28 -0.06 -0.24 = -0.57 (ML -0.57); s8: +0.04 +0.06 +0.27 = +0.36 (ML +0.36)
+  SO40 b: S8 bias (lin) = amplitude -0.09 + z tilt +0.02 + q shape -0.60 = -0.67 sigma (ML -0.67); Om: -0.12 +0.00 -0.63 = -0.76 (ML -0.75); s8: -0.02 +0.04 -0.43 = -0.41 (ML -0.41)
+  SO40 c: S8 bias (lin) = amplitude -0.03 + z tilt -0.00 + q shape -0.39 = -0.43 sigma (ML -0.42); Om: -0.04 -0.02 -0.34 = -0.39 (ML -0.38); s8: -0.01 +0.04 -0.43 = -0.40 (ML -0.40)
+  SO40 d: S8 bias (lin) = amplitude -0.04 + z tilt +0.01 + q shape +0.16 = +0.13 sigma (ML +0.13); Om: -0.05 -0.01 +0.10 = +0.04 (ML +0.04); s8: -0.00 +0.04 +0.20 = +0.23 (ML +0.23)
+  SO40 e: S8 bias (lin) = amplitude -0.00 + z tilt +0.01 + q shape +0.10 = +0.10 sigma (ML +0.11); Om: -0.01 +0.00 +0.07 = +0.06 (ML +0.07); s8: +0.01 +0.03 +0.15 = +0.18 (ML +0.19)
+  full a: S8 bias (lin) = amplitude -1.02 + z tilt -0.06 + q shape -0.22 = -1.30 sigma (ML -1.31); Om: -0.44 -0.09 -0.38 = -0.90 (ML -0.90); s8: +0.06 +0.09 +0.42 = +0.57 (ML +0.57)
+  full b: S8 bias (lin) = amplitude -0.14 + z tilt +0.03 + q shape -0.94 = -1.06 sigma (ML -1.05); Om: -0.20 +0.00 -1.00 = -1.20 (ML -1.18); s8: -0.02 +0.07 -0.68 = -0.64 (ML -0.65)
+  full c: S8 bias (lin) = amplitude -0.05 + z tilt -0.01 + q shape -0.62 = -0.67 sigma (ML -0.66); Om: -0.06 -0.02 -0.53 = -0.61 (ML -0.60); s8: -0.01 +0.06 -0.67 = -0.63 (ML -0.64)
+  full d: S8 bias (lin) = amplitude -0.04 + z tilt +0.02 + q shape +0.20 = +0.18 sigma (ML +0.19); Om: -0.05 -0.01 +0.13 = +0.07 (ML +0.08); s8: +0.00 +0.05 +0.28 = +0.34 (ML +0.34)
+  full e: S8 bias (lin) = amplitude -0.01 + z tilt +0.02 + q shape +0.15 = +0.16 sigma (ML +0.18); Om: -0.02 +0.00 +0.11 = +0.09 (ML +0.11); s8: +0.02 +0.05 +0.23 = +0.29 (ML +0.31)
+=== [lowP_f1] q_cut 5: Delta total +0.96%; z tilt r_z - eps from z<0.1 to z 2.5-3: -0.24% ... +2.45% ===
+  SO40 a: S8 bias (lin) = amplitude +0.73 + z tilt -0.21 + q shape +0.05 = +0.57 sigma (ML +0.57); Om: +0.31 -0.28 +0.07 = +0.11 (ML +0.11); s8: -0.03 +0.29 -0.08 = +0.18 (ML +0.18)
+  SO40 b: S8 bias (lin) = amplitude +0.12 + z tilt +0.09 + q shape +0.18 = +0.39 sigma (ML +0.39); Om: +0.16 +0.00 +0.19 = +0.35 (ML +0.35); s8: +0.03 +0.22 +0.13 = +0.38 (ML +0.37)
+  SO40 c: S8 bias (lin) = amplitude +0.04 + z tilt +0.09 + q shape +0.08 = +0.21 sigma (ML +0.21); Om: +0.04 +0.05 +0.06 = +0.15 (ML +0.15); s8: +0.02 +0.22 +0.12 = +0.35 (ML +0.35)
+  SO40 d: S8 bias (lin) = amplitude +0.06 + z tilt -0.06 + q shape -0.02 = -0.02 sigma (ML -0.02); Om: +0.09 -0.12 -0.02 = -0.05 (ML -0.05); s8: +0.01 +0.03 -0.01 = +0.02 (ML +0.02)
+  SO40 e: S8 bias (lin) = amplitude +0.01 + z tilt +0.00 + q shape -0.00 = +0.01 sigma (ML +0.01); Om: +0.02 -0.01 -0.00 = +0.00 (ML +0.00); s8: -0.00 +0.04 -0.00 = +0.03 (ML +0.03)
+  full a: S8 bias (lin) = amplitude +1.16 + z tilt -0.33 + q shape +0.08 = +0.91 sigma (ML +0.91); Om: +0.49 -0.44 +0.12 = +0.17 (ML +0.18); s8: -0.05 +0.46 -0.13 = +0.28 (ML +0.28)
+  full b: S8 bias (lin) = amplitude +0.18 + z tilt +0.14 + q shape +0.29 = +0.62 sigma (ML +0.62); Om: +0.25 +0.00 +0.31 = +0.56 (ML +0.56); s8: +0.05 +0.34 +0.21 = +0.60 (ML +0.59)
+  full c: S8 bias (lin) = amplitude +0.06 + z tilt +0.15 + q shape +0.13 = +0.33 sigma (ML +0.33); Om: +0.06 +0.07 +0.10 = +0.24 (ML +0.24); s8: +0.02 +0.35 +0.18 = +0.56 (ML +0.55)
+  full d: S8 bias (lin) = amplitude +0.07 + z tilt -0.07 + q shape -0.02 = -0.02 sigma (ML -0.02); Om: +0.09 -0.13 -0.02 = -0.05 (ML -0.05); s8: +0.01 +0.04 -0.02 = +0.04 (ML +0.04)
+  full e: S8 bias (lin) = amplitude +0.02 + z tilt +0.00 + q shape -0.00 = +0.02 sigma (ML +0.02); Om: +0.03 -0.02 -0.00 = +0.00 (ML +0.00); s8: -0.01 +0.06 -0.01 = +0.05 (ML +0.05)
+       11.36 real        11.60 user         0.24 sys
+           894500864  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               69173  page reclaims
+                 116  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   3  voluntary context switches
+                 718  involuntary context switches
+        153607477063  instructions retired
+         37199961326  cycles elapsed
+           850234304  peak memory footprint

@@ -1,0 +1,108 @@
+sky seed 5555: 29,293,748 halos; sub-threshold fraction baseline 0.9975, goal 0.9961 [19s]
+
+[baseline] theta_A   r_ii mine (+- err)   build   | r_i mine (+- err)  build  | var_all / sigma^2 mine  build (Parseval)
+     0.5'   1.0616 +- 0.0006   1.0616   | 1.0549 +- 0.0009  1.0545 | 0.266  0.292   [23s]
+     1.0'   1.0684 +- 0.0007   1.0680   | 1.0620 +- 0.0009  1.0608 | 0.332  0.334   [25s]
+     2.0'   1.0746 +- 0.0006   1.0746   | 1.0664 +- 0.0009  1.0673 | 0.356  0.384   [28s]
+     4.0'   1.0770 +- 0.0006   1.0762   | 1.0697 +- 0.0010  1.0686 | 0.462  0.416   [31s]
+     8.0'   1.0675 +- 0.0006   1.0676   | 1.0594 +- 0.0008  1.0592 | 0.388  0.390   [37s]
+    16.0'   1.0522 +- 0.0006   1.0515   | 1.0414 +- 0.0009  1.0414 | 0.318  0.307   [48s]
+    32.0'   1.0360 +- 0.0007   1.0364   | 1.0255 +- 0.0005  1.0252 | 0.277  0.209   [79s]
+
+[goal] theta_A   r_ii mine (+- err)   build   | r_i mine (+- err)  build  | var_all / sigma^2 mine  build (Parseval)
+     0.5'   1.0804 +- 0.0010   1.0799   | 1.0687 +- 0.0010  1.0678 | 0.449  0.417   [80s]
+     1.0'   1.0885 +- 0.0009   1.0883   | 1.0753 +- 0.0007  1.0756 | 0.487  0.479   [82s]
+     2.0'   1.0971 +- 0.0007   1.0971   | 1.0829 +- 0.0009  1.0834 | 0.541  0.553   [85s]
+     4.0'   1.0980 +- 0.0007   1.0991   | 1.0847 +- 0.0008  1.0846 | 0.571  0.596   [88s]
+     8.0'   1.0872 +- 0.0008   1.0878   | 1.0716 +- 0.0008  1.0724 | 0.599  0.555   [94s]
+    16.0'   1.0656 +- 0.0006   1.0665   | 1.0504 +- 0.0006  1.0506 | 0.452  0.431   [105s]
+    32.0'   1.0452 +- 0.0004   1.0462   | 1.0300 +- 0.0004  1.0310 | 0.314  0.291   [136s]
+
+(2) the build's blended kernel K(theta_A, q_A; e) = P(dominant and q_A + n + delta - mu > e) at single theta_A nodes vs my random-point sums (same quantity: mean over points of 1(xmax < fdom q_A) Phi(q_A + delta - mu - e))
+  theta_A = 0.2938' (build node 7), 1,000,000 random points  [153s]
+    [baseline_f1] max |pull| over q_A in {1..20}, 19 edges: -2.09 at q_A = 4.50, e = 8.53 (mine 0.00093 +- 0.00001, build 0.00096)
+       q_A = 3.00: P_dom mine 0.99700 build 0.99694; K(e=5) mine 0.02996 +- 0.00005 build 0.02999; K(e=6) mine 0.00347 +- 0.00002 build 0.00349; naive Phi(q - 5) 0.02275
+       q_A = 4.00: P_dom mine 0.99830 build 0.99825; K(e=5) mine 0.16780 +- 0.00009 build 0.16780; K(e=6) mine 0.03114 +- 0.00006 build 0.03117; naive Phi(q - 5) 0.15866
+       q_A = 5.00: P_dom mine 0.99892 build 0.99891; K(e=5) mine 0.49292 +- 0.00013 build 0.49289; K(e=6) mine 0.16842 +- 0.00010 build 0.16846; naive Phi(q - 5) 0.50000
+    [baseline_f0.5] max |pull| over q_A in {1..20}, 19 edges: -1.89 at q_A = 10.00, e = 15.38 (mine 0.00018 +- 0.00000, build 0.00019)
+       q_A = 3.00: P_dom mine 0.98985 build 0.98978; K(e=5) mine 0.02639 +- 0.00003 build 0.02639; K(e=6) mine 0.00212 +- 0.00001 build 0.00213; naive Phi(q - 5) 0.02275
+       q_A = 4.00: P_dom mine 0.99378 build 0.99364; K(e=5) mine 0.16362 +- 0.00008 build 0.16354; K(e=6) mine 0.02790 +- 0.00003 build 0.02788; naive Phi(q - 5) 0.15866
+       q_A = 5.00: P_dom mine 0.99583 build 0.99574; K(e=5) mine 0.48984 +- 0.00012 build 0.48973; K(e=6) mine 0.16541 +- 0.00008 build 0.16537; naive Phi(q - 5) 0.50000
+    [baseline_f2] max |pull| over q_A in {1..20}, 19 edges: -1.74 at q_A = 5.00, e = 8.53 (mine 0.00301 +- 0.00003, build 0.00307)
+       q_A = 3.00: P_dom mine 0.99928 build 0.99927; K(e=5) mine 0.03210 +- 0.00006 build 0.03218; K(e=6) mine 0.00522 +- 0.00004 build 0.00529; naive Phi(q - 5) 0.02275
+       q_A = 4.00: P_dom mine 0.99965 build 0.99963; K(e=5) mine 0.16914 +- 0.00011 build 0.16919; K(e=6) mine 0.03247 +- 0.00007 build 0.03255; naive Phi(q - 5) 0.15866
+       q_A = 5.00: P_dom mine 0.99979 build 0.99979; K(e=5) mine 0.49379 +- 0.00013 build 0.49377; K(e=6) mine 0.16929 +- 0.00011 build 0.16934; naive Phi(q - 5) 0.50000
+    [goal_f1] max |pull| over q_A in {1..20}, 19 edges: -1.69 at q_A = 8.00, e = 12.12 (mine 0.00230 +- 0.00003, build 0.00235)
+       q_A = 3.00: P_dom mine 0.99586 build 0.99576; K(e=5) mine 0.03181 +- 0.00005 build 0.03181; K(e=6) mine 0.00411 +- 0.00003 build 0.00410; naive Phi(q - 5) 0.02275
+       q_A = 4.00: P_dom mine 0.99758 build 0.99751; K(e=5) mine 0.16988 +- 0.00012 build 0.16990; K(e=6) mine 0.03335 +- 0.00007 build 0.03337; naive Phi(q - 5) 0.15866
+       q_A = 5.00: P_dom mine 0.99844 build 0.99842; K(e=5) mine 0.49068 +- 0.00014 build 0.49070; K(e=6) mine 0.17073 +- 0.00010 build 0.17080; naive Phi(q - 5) 0.50000
+  theta_A = 0.3427' (build node 8), 1,000,000 random points  [185s]
+    [baseline_f1] max |pull| over q_A in {1..20}, 19 edges: +1.51 at q_A = 5.00, e = 10.57 (mine 0.00015 +- 0.00001, build 0.00015)
+       q_A = 3.00: P_dom mine 0.99694 build 0.99688; K(e=5) mine 0.03010 +- 0.00006 build 0.03010; K(e=6) mine 0.00352 +- 0.00002 build 0.00353; naive Phi(q - 5) 0.02275
+       q_A = 4.00: P_dom mine 0.99825 build 0.99821; K(e=5) mine 0.16793 +- 0.00011 build 0.16794; K(e=6) mine 0.03128 +- 0.00006 build 0.03130; naive Phi(q - 5) 0.15866
+       q_A = 5.00: P_dom mine 0.99891 build 0.99889; K(e=5) mine 0.49280 +- 0.00012 build 0.49278; K(e=6) mine 0.16859 +- 0.00011 build 0.16861; naive Phi(q - 5) 0.50000
+    [baseline_f0.5] max |pull| over q_A in {1..20}, 19 edges: -1.40 at q_A = 1.00, e = 4.00 (mine 0.00137 +- 0.00000, build 0.00137)
+       q_A = 3.00: P_dom mine 0.98972 build 0.98961; K(e=5) mine 0.02646 +- 0.00003 build 0.02645; K(e=6) mine 0.00214 +- 0.00001 build 0.00214; naive Phi(q - 5) 0.02275
+       q_A = 4.00: P_dom mine 0.99359 build 0.99353; K(e=5) mine 0.16364 +- 0.00008 build 0.16361; K(e=6) mine 0.02795 +- 0.00004 build 0.02796; naive Phi(q - 5) 0.15866
+       q_A = 5.00: P_dom mine 0.99569 build 0.99566; K(e=5) mine 0.48960 +- 0.00011 build 0.48957; K(e=6) mine 0.16546 +- 0.00009 build 0.16547; naive Phi(q - 5) 0.50000
+    [baseline_f2] max |pull| over q_A in {1..20}, 19 edges: +1.76 at q_A = 4.50, e = 12.12 (mine 0.00020 +- 0.00001, build 0.00018)
+       q_A = 3.00: P_dom mine 0.99927 build 0.99925; K(e=5) mine 0.03229 +- 0.00007 build 0.03233; K(e=6) mine 0.00533 +- 0.00004 build 0.00535; naive Phi(q - 5) 0.02275
+       q_A = 4.00: P_dom mine 0.99962 build 0.99962; K(e=5) mine 0.16930 +- 0.00011 build 0.16935; K(e=6) mine 0.03264 +- 0.00007 build 0.03270; naive Phi(q - 5) 0.15866
+       q_A = 5.00: P_dom mine 0.99979 build 0.99978; K(e=5) mine 0.49368 +- 0.00012 build 0.49368; K(e=6) mine 0.16947 +- 0.00011 build 0.16951; naive Phi(q - 5) 0.50000
+    [goal_f1] max |pull| over q_A in {1..20}, 19 edges: +1.78 at q_A = 6.00, e = 12.12 (mine 0.00023 +- 0.00001, build 0.00022)
+       q_A = 3.00: P_dom mine 0.99575 build 0.99568; K(e=5) mine 0.03194 +- 0.00007 build 0.03195; K(e=6) mine 0.00414 +- 0.00003 build 0.00415; naive Phi(q - 5) 0.02275
+       q_A = 4.00: P_dom mine 0.99752 build 0.99746; K(e=5) mine 0.17009 +- 0.00013 build 0.17008; K(e=6) mine 0.03353 +- 0.00008 build 0.03355; naive Phi(q - 5) 0.15866
+       q_A = 5.00: P_dom mine 0.99839 build 0.99838; K(e=5) mine 0.49058 +- 0.00014 build 0.49056; K(e=6) mine 0.17096 +- 0.00013 build 0.17100; naive Phi(q - 5) 0.50000
+  theta_A = 1.0069' (build node 15), 200,000 random points  [205s]
+    [baseline_f1] max |pull| over q_A in {1..20}, 19 edges: -1.85 at q_A = 4.50, e = 8.53 (mine 0.00110 +- 0.00003, build 0.00116)
+       q_A = 3.00: P_dom mine 0.99639 build 0.99623; K(e=5) mine 0.03110 +- 0.00010 build 0.03114; K(e=6) mine 0.00385 +- 0.00004 build 0.00388; naive Phi(q - 5) 0.02275
+       q_A = 4.00: P_dom mine 0.99791 build 0.99780; K(e=5) mine 0.16911 +- 0.00020 build 0.16910; K(e=6) mine 0.03247 +- 0.00010 build 0.03256; naive Phi(q - 5) 0.15866
+       q_A = 5.00: P_dom mine 0.99869 build 0.99862; K(e=5) mine 0.49170 +- 0.00027 build 0.49145; K(e=6) mine 0.16989 +- 0.00021 build 0.16991; naive Phi(q - 5) 0.50000
+    [baseline_f0.5] max |pull| over q_A in {1..20}, 19 edges: +2.09 at q_A = 5.00, e = 4.00 (mine 0.81768 +- 0.00022, build 0.81723)
+       q_A = 3.00: P_dom mine 0.98812 build 0.98775; K(e=5) mine 0.02697 +- 0.00007 build 0.02689; K(e=6) mine 0.00227 +- 0.00001 build 0.00225; naive Phi(q - 5) 0.02275
+       q_A = 4.00: P_dom mine 0.99254 build 0.99229; K(e=5) mine 0.16416 +- 0.00016 build 0.16402; K(e=6) mine 0.02865 +- 0.00007 build 0.02863; naive Phi(q - 5) 0.15866
+       q_A = 5.00: P_dom mine 0.99497 build 0.99479; K(e=5) mine 0.48800 +- 0.00025 build 0.48764; K(e=6) mine 0.16627 +- 0.00019 build 0.16619; naive Phi(q - 5) 0.50000
+    [baseline_f2] max |pull| over q_A in {1..20}, 19 edges: -1.62 at q_A = 4.50, e = 12.12 (mine 0.00020 +- 0.00002, build 0.00023)
+       q_A = 3.00: P_dom mine 0.99914 build 0.99906; K(e=5) mine 0.03369 +- 0.00013 build 0.03380; K(e=6) mine 0.00598 +- 0.00010 build 0.00606; naive Phi(q - 5) 0.02275
+       q_A = 4.00: P_dom mine 0.99957 build 0.99952; K(e=5) mine 0.17077 +- 0.00020 build 0.17081; K(e=6) mine 0.03411 +- 0.00013 build 0.03426; naive Phi(q - 5) 0.15866
+       q_A = 5.00: P_dom mine 0.99974 build 0.99972; K(e=5) mine 0.49275 +- 0.00025 build 0.49255; K(e=6) mine 0.17094 +- 0.00021 build 0.17101; naive Phi(q - 5) 0.50000
+    [goal_f1] max |pull| over q_A in {1..20}, 19 edges: +2.46 at q_A = 10.00, e = 8.53 (mine 0.90886 +- 0.00013, build 0.90853)
+       q_A = 3.00: P_dom mine 0.99501 build 0.99479; K(e=5) mine 0.03321 +- 0.00011 build 0.03325; K(e=6) mine 0.00458 +- 0.00005 build 0.00460; naive Phi(q - 5) 0.02275
+       q_A = 4.00: P_dom mine 0.99706 build 0.99690; K(e=5) mine 0.17154 +- 0.00023 build 0.17153; K(e=6) mine 0.03506 +- 0.00013 build 0.03513; naive Phi(q - 5) 0.15866
+       q_A = 5.00: P_dom mine 0.99807 build 0.99800; K(e=5) mine 0.48912 +- 0.00026 build 0.48890; K(e=6) mine 0.17255 +- 0.00020 build 0.17263; naive Phi(q - 5) 0.50000
+  theta_A = 4.0250' (build node 24), 200,000 random points  [215s]
+    [baseline_f1] max |pull| over q_A in {1..20}, 19 edges: +1.76 at q_A = 15.00, e = 24.49 (mine 0.00041 +- 0.00004, build 0.00034)
+       q_A = 3.00: P_dom mine 0.99513 build 0.99515; K(e=5) mine 0.03218 +- 0.00012 build 0.03202; K(e=6) mine 0.00437 +- 0.00005 build 0.00430; naive Phi(q - 5) 0.02275
+       q_A = 4.00: P_dom mine 0.99708 build 0.99713; K(e=5) mine 0.16931 +- 0.00027 build 0.16901; K(e=6) mine 0.03394 +- 0.00015 build 0.03379; naive Phi(q - 5) 0.15866
+       q_A = 5.00: P_dom mine 0.99821 build 0.99816; K(e=5) mine 0.48863 +- 0.00032 build 0.48821; K(e=6) mine 0.17043 +- 0.00029 build 0.17004; naive Phi(q - 5) 0.50000
+    [baseline_f0.5] max |pull| over q_A in {1..20}, 19 edges: +1.47 at q_A = 2.00, e = 4.00 (mine 0.02425 +- 0.00005, build 0.02417)
+       q_A = 3.00: P_dom mine 0.98467 build 0.98480; K(e=5) mine 0.02690 +- 0.00008 build 0.02685; K(e=6) mine 0.00232 +- 0.00002 build 0.00232; naive Phi(q - 5) 0.02275
+       q_A = 4.00: P_dom mine 0.99013 build 0.99030; K(e=5) mine 0.16289 +- 0.00023 build 0.16273; K(e=6) mine 0.02897 +- 0.00009 build 0.02895; naive Phi(q - 5) 0.15866
+       q_A = 5.00: P_dom mine 0.99316 build 0.99337; K(e=5) mine 0.48359 +- 0.00031 build 0.48343; K(e=6) mine 0.16552 +- 0.00026 build 0.16539; naive Phi(q - 5) 0.50000
+    [baseline_f2] max |pull| over q_A in {1..20}, 19 edges: +1.62 at q_A = 8.00, e = 17.23 (mine 0.00046 +- 0.00004, build 0.00039)
+       q_A = 3.00: P_dom mine 0.99872 build 0.99873; K(e=5) mine 0.03556 +- 0.00018 build 0.03538; K(e=6) mine 0.00713 +- 0.00010 build 0.00706; naive Phi(q - 5) 0.02275
+       q_A = 4.00: P_dom mine 0.99928 build 0.99933; K(e=5) mine 0.17150 +- 0.00031 build 0.17122; K(e=6) mine 0.03612 +- 0.00018 build 0.03598; naive Phi(q - 5) 0.15866
+       q_A = 5.00: P_dom mine 0.99957 build 0.99960; K(e=5) mine 0.48999 +- 0.00035 build 0.48965; K(e=6) mine 0.17179 +- 0.00031 build 0.17149; naive Phi(q - 5) 0.50000
+    [goal_f1] max |pull| over q_A in {1..20}, 19 edges: +2.38 at q_A = 20.00, e = 34.82 (mine 0.00020 +- 0.00003, build 0.00013)
+       q_A = 3.00: P_dom mine 0.99321 build 0.99341; K(e=5) mine 0.03436 +- 0.00016 build 0.03426; K(e=6) mine 0.00514 +- 0.00007 build 0.00511; naive Phi(q - 5) 0.02275
+       q_A = 4.00: P_dom mine 0.99599 build 0.99601; K(e=5) mine 0.17180 +- 0.00030 build 0.17142; K(e=6) mine 0.03683 +- 0.00017 build 0.03658; naive Phi(q - 5) 0.15866
+       q_A = 5.00: P_dom mine 0.99738 build 0.99740; K(e=5) mine 0.48538 +- 0.00034 build 0.48498; K(e=6) mine 0.17318 +- 0.00030 build 0.17280; naive Phi(q - 5) 0.50000
+total 218s; peak rss 2.78 GB
+      218.54 real       531.60 user         1.67 sys
+          2783969280  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              254789  page reclaims
+                 167  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  98  voluntary context switches
+                6167  involuntary context switches
+       4559075557205  instructions retired
+       1630412715891  cycles elapsed
+          2722781632  peak memory footprint

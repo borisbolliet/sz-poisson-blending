@@ -1,0 +1,13 @@
+population (sampler's table): N = 29,295,487 halos, total Y = 5.330880e+01 arcmin^2, Ybar = 3.589560e-07 per arcmin^2
+  theta_A =   0.5': mu exact 0.40766 | mine (rho table, truncated) 0.40765 (-1.89e-05) | build (s09) 0.40863 (+2.38e-03)
+  theta_A =   1.0': mu exact 0.52330 | mine (rho table, truncated) 0.52340 (+1.87e-04) | build (s09) 0.52465 (+2.56e-03)
+  theta_A =   2.0': mu exact 0.78223 | mine (rho table, truncated) 0.78250 (+3.46e-04) | build (s09) 0.78314 (+1.16e-03)
+  theta_A =   4.0': mu exact 1.34213 | mine (rho table, truncated) 1.34192 (-1.55e-04) | build (s09) 1.34499 (+2.13e-03)
+  theta_A =   8.0': mu exact 2.51960 | mine (rho table, truncated) 2.52078 (+4.70e-04) | build (s09) 2.52634 (+2.68e-03)
+  theta_A =  16.0': mu exact 4.93407 | mine (rho table, truncated) 4.93579 (+3.50e-04) | build (s09) 4.93947 (+1.09e-03)
+  theta_A =  32.0': mu exact 9.80869 | mine (rho table, truncated) 9.80642 (-2.31e-04) | build (s09) 9.82372 (+1.53e-03)
+  derivation white rho table, theta_A node 0.445': int rho d^2s / exact - 1 over theta_B nodes: min -2.24e-03 max -2.05e-03; table sigma / SZModel sigma - 1 = -6.47e-05
+  derivation white rho table, theta_A node 0.988': int rho d^2s / exact - 1 over theta_B nodes: min -2.20e-03 max -2.05e-03; table sigma / SZModel sigma - 1 = -8.76e-05
+  derivation white rho table, theta_A node 2.197': int rho d^2s / exact - 1 over theta_B nodes: min -2.14e-03 max -2.05e-03; table sigma / SZModel sigma - 1 = -1.20e-04
+  derivation white rho table, theta_A node 4.884': int rho d^2s / exact - 1 over theta_B nodes: min -2.09e-03 max -2.05e-03; table sigma / SZModel sigma - 1 = -1.67e-04
+  derivation white rho table, theta_A node 10.858': int rho d^2s / exact - 1 over theta_B nodes: min -2.09e-03 max -2.06e-03; table sigma / SZModel sigma - 1 = -2.02e-04

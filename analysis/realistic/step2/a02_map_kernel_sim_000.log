@@ -1,0 +1,50 @@
+[a02] patches 0..29; 40000 random points per patch; nodes 7..25 (0.294-4.69'); modes ('baseline', 'goal'); X0 = 0.5; threads 3; set-up 4s; rss 1.62 GB
+   patch 0: 70,769 halos; goal node 1.007': mean delta -0.0037, var 0.4019, P(x_max >= 0.5) 0.0755; bright 253,523; nufft 1.3s dom 13.6s total 16.1s [20s]; peak rss 1.78 GB
+   patch 1: 70,727 halos; goal node 1.007': mean delta -0.0017, var 0.4348, P(x_max >= 0.5) 0.0745; bright 242,988; nufft 1.3s dom 13.0s total 15.3s [36s]; peak rss 1.81 GB
+   patch 2: 70,921 halos; goal node 1.007': mean delta +0.0033, var 0.4989, P(x_max >= 0.5) 0.0773; bright 250,313; nufft 1.6s dom 13.4s total 16.1s [52s]; peak rss 1.86 GB
+   patch 3: 70,910 halos; goal node 1.007': mean delta -0.0063, var 0.5032, P(x_max >= 0.5) 0.0743; bright 249,541; nufft 1.5s dom 13.4s total 16.0s [68s]; peak rss 1.86 GB
+   patch 4: 71,376 halos; goal node 1.007': mean delta -0.0042, var 0.4513, P(x_max >= 0.5) 0.0743; bright 248,840; nufft 1.6s dom 13.3s total 16.0s [84s]; peak rss 1.86 GB
+   patch 5: 70,980 halos; goal node 1.007': mean delta +0.0036, var 0.5262, P(x_max >= 0.5) 0.0741; bright 248,203; nufft 1.6s dom 13.4s total 16.0s [100s]; peak rss 1.86 GB
+   patch 6: 71,201 halos; goal node 1.007': mean delta +0.0021, var 0.5816, P(x_max >= 0.5) 0.0781; bright 252,624; nufft 1.6s dom 13.7s total 16.3s [116s]; peak rss 1.86 GB
+   patch 7: 70,661 halos; goal node 1.007': mean delta +0.0011, var 0.4604, P(x_max >= 0.5) 0.0774; bright 252,342; nufft 1.5s dom 13.5s total 16.1s [132s]; peak rss 1.86 GB
+   patch 8: 71,115 halos; goal node 1.007': mean delta -0.0014, var 0.5393, P(x_max >= 0.5) 0.0776; bright 249,311; nufft 1.6s dom 13.4s total 16.1s [148s]; peak rss 1.86 GB
+   patch 9: 70,880 halos; goal node 1.007': mean delta -0.0034, var 0.4153, P(x_max >= 0.5) 0.0721; bright 246,719; nufft 1.5s dom 13.1s total 15.7s [164s]; peak rss 1.86 GB
+   patch 10: 71,056 halos; goal node 1.007': mean delta -0.0025, var 0.4691, P(x_max >= 0.5) 0.0723; bright 249,276; nufft 1.5s dom 13.2s total 15.8s [179s]; peak rss 1.86 GB
+   patch 11: 71,277 halos; goal node 1.007': mean delta -0.0012, var 0.5062, P(x_max >= 0.5) 0.0780; bright 252,070; nufft 1.5s dom 13.6s total 16.2s [196s]; peak rss 1.86 GB
+   patch 12: 71,562 halos; goal node 1.007': mean delta -0.0066, var 0.4100, P(x_max >= 0.5) 0.0760; bright 254,049; nufft 1.3s dom 13.7s total 16.0s [212s]; peak rss 1.86 GB
+   patch 13: 70,837 halos; goal node 1.007': mean delta -0.0003, var 0.4355, P(x_max >= 0.5) 0.0757; bright 246,976; nufft 1.3s dom 13.4s total 15.7s [227s]; peak rss 1.86 GB
+   patch 14: 71,026 halos; goal node 1.007': mean delta +0.0005, var 0.4558, P(x_max >= 0.5) 0.0770; bright 250,652; nufft 1.3s dom 13.6s total 15.9s [243s]; peak rss 1.86 GB
+   patch 15: 71,262 halos; goal node 1.007': mean delta -0.0036, var 0.4134, P(x_max >= 0.5) 0.0765; bright 254,765; nufft 1.3s dom 13.7s total 16.1s [259s]; peak rss 1.86 GB
+   patch 16: 70,677 halos; goal node 1.007': mean delta +0.0030, var 0.4898, P(x_max >= 0.5) 0.0737; bright 248,957; nufft 1.3s dom 13.2s total 15.5s [275s]; peak rss 1.86 GB
+   patch 17: 71,458 halos; goal node 1.007': mean delta +0.0004, var 0.3859, P(x_max >= 0.5) 0.0725; bright 247,586; nufft 1.3s dom 13.2s total 15.6s [291s]; peak rss 1.86 GB
+   patch 18: 71,405 halos; goal node 1.007': mean delta +0.0070, var 0.6654, P(x_max >= 0.5) 0.0740; bright 252,328; nufft 1.3s dom 13.5s total 15.9s [306s]; peak rss 1.86 GB
+   patch 19: 70,492 halos; goal node 1.007': mean delta -0.0022, var 0.4144, P(x_max >= 0.5) 0.0733; bright 248,431; nufft 1.3s dom 13.3s total 15.6s [322s]; peak rss 1.86 GB
+   patch 20: 70,428 halos; goal node 1.007': mean delta -0.0001, var 0.3579, P(x_max >= 0.5) 0.0725; bright 245,068; nufft 1.3s dom 13.3s total 15.6s [338s]; peak rss 1.86 GB
+   patch 21: 71,318 halos; goal node 1.007': mean delta +0.0028, var 0.4690, P(x_max >= 0.5) 0.0794; bright 251,793; nufft 1.3s dom 13.5s total 15.9s [354s]; peak rss 1.86 GB
+   patch 22: 71,183 halos; goal node 1.007': mean delta -0.0005, var 0.4217, P(x_max >= 0.5) 0.0746; bright 251,240; nufft 1.3s dom 13.6s total 15.9s [369s]; peak rss 1.86 GB
+   patch 23: 71,246 halos; goal node 1.007': mean delta -0.0050, var 0.4773, P(x_max >= 0.5) 0.0732; bright 251,600; nufft 1.3s dom 13.6s total 15.9s [385s]; peak rss 1.86 GB
+   patch 24: 70,986 halos; goal node 1.007': mean delta +0.0013, var 0.4307, P(x_max >= 0.5) 0.0732; bright 250,179; nufft 1.3s dom 13.5s total 15.8s [401s]; peak rss 1.86 GB
+   patch 25: 70,875 halos; goal node 1.007': mean delta -0.0001, var 0.5358, P(x_max >= 0.5) 0.0766; bright 254,383; nufft 1.3s dom 13.7s total 16.1s [417s]; peak rss 1.86 GB
+   patch 26: 71,368 halos; goal node 1.007': mean delta -0.0034, var 0.4130, P(x_max >= 0.5) 0.0731; bright 252,469; nufft 1.3s dom 13.5s total 15.8s [433s]; peak rss 1.86 GB
+   patch 27: 71,009 halos; goal node 1.007': mean delta +0.0002, var 0.5156, P(x_max >= 0.5) 0.0746; bright 253,720; nufft 1.3s dom 13.7s total 16.0s [449s]; peak rss 1.86 GB
+   patch 28: 70,723 halos; goal node 1.007': mean delta -0.0019, var 0.5204, P(x_max >= 0.5) 0.0745; bright 247,845; nufft 1.3s dom 13.3s total 15.7s [465s]; peak rss 1.86 GB
+   patch 29: 70,887 halos; goal node 1.007': mean delta -0.0022, var 0.3978, P(x_max >= 0.5) 0.0713; bright 246,392; nufft 1.3s dom 13.2s total 15.5s [480s]; peak rss 1.86 GB
+[a02] done 480s
+      480.88 real      1333.17 user         2.16 sys
+          1860550656  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              128087  page reclaims
+                  83  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  67  voluntary context switches
+               61722  involuntary context switches
+       8949899177076  instructions retired
+       4090919157261  cycles elapsed
+          1803244864  peak memory footprint

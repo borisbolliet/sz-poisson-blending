@@ -1,0 +1,587 @@
+Direct-route Delta from 11 full skies.  Bias = (fit - truth) / Fisher sigma at the truth.
+
+=== (A) ML biases (S8 / Om / s8, in sigma): build | my fitter + my model on the BUILD's Delta | on MY Delta (+- MC) ===
+q5 SO40 a baseline_effi : build  -0.64 /  -0.52 /  +0.39 | on build's  -0.64 /  -0.52 /  +0.39 (max diff 0.002) | on mine  -0.67 +- 0.03 /  -0.55 +- 0.03 /  +0.42 +- 0.03 | S8 mine - build -0.03 (-1.0 MC sigma)
+q5 full a baseline_effi : build  -1.02 /  -0.82 /  +0.62 | on build's  -1.02 /  -0.82 /  +0.61 (max diff 0.004) | on mine  -1.06 +- 0.04 /  -0.87 +- 0.04 /  +0.67 +- 0.04 | S8 mine - build -0.04 (-1.0 MC sigma)
+q5 SO40 d baseline_effi : build  +0.12 /  +0.03 /  +0.22 | on build's  +0.12 /  +0.04 /  +0.23 (max diff 0.006) | on mine  +0.11 +- 0.01 /  +0.01 +- 0.01 /  +0.23 +- 0.02 | S8 mine - build -0.01 (-0.5 MC sigma) | nuisance build omb -0.03, alpha +0.39, slnY -0.10; on build's omb -0.03, alpha +0.39, slnY -0.10; on mine omb -0.02, alpha +0.38, slnY -0.11
+q5 full d baseline_effi : build  +0.17 /  +0.06 /  +0.33 | on build's  +0.18 /  +0.07 /  +0.34 (max diff 0.012) | on mine  +0.15 +- 0.03 /  +0.03 +- 0.02 /  +0.34 +- 0.03 | S8 mine - build -0.02 (-0.6 MC sigma) | nuisance build omb -0.06, alpha +0.58, slnY -0.14; on build's omb -0.07, alpha +0.59, slnY -0.14; on mine omb -0.04, alpha +0.57, slnY -0.17
+q5 SO40 a baseline_effii: build  -0.83 /  -0.57 /  +0.36 | on build's  -0.83 /  -0.57 /  +0.36 (max diff 0.003) | on mine  -0.85 +- 0.03 /  -0.60 +- 0.03 /  +0.39 +- 0.03 | S8 mine - build -0.03 (-1.0 MC sigma)
+q5 full a baseline_effii: build  -1.31 /  -0.90 /  +0.57 | on build's  -1.31 /  -0.90 /  +0.57 (max diff 0.005) | on mine  -1.35 +- 0.04 /  -0.95 +- 0.04 /  +0.62 +- 0.04 | S8 mine - build -0.04 (-1.0 MC sigma)
+q5 SO40 a baseline_f0.5 : build  -0.75 /  -0.73 /  +0.63 | on build's  -0.75 /  -0.73 /  +0.63 (max diff 0.001) | on mine  -0.76 +- 0.02 /  -0.75 +- 0.02 /  +0.65 +- 0.02 | S8 mine - build -0.01 (-0.4 MC sigma)
+q5 full a baseline_f0.5 : build  -1.18 /  -1.16 /  +1.00 | on build's  -1.18 /  -1.16 /  +1.00 (max diff 0.002) | on mine  -1.20 +- 0.04 /  -1.19 +- 0.04 /  +1.03 +- 0.04 | S8 mine - build -0.02 (-0.4 MC sigma)
+q5 SO40 d baseline_f0.5 : build  +0.11 /  -0.03 /  +0.30 | on build's  +0.12 /  -0.02 /  +0.30 (max diff 0.009) | on mine  +0.11 +- 0.01 /  -0.04 +- 0.01 /  +0.30 +- 0.02 | S8 mine - build -0.00 (-0.4 MC sigma) | nuisance build omb -0.05, alpha +0.31, slnY -0.11; on build's omb -0.06, alpha +0.31, slnY -0.10; on mine omb -0.04, alpha +0.30, slnY -0.12
+q5 full d baseline_f0.5 : build  +0.18 /  +0.02 /  +0.45 | on build's  +0.20 /  +0.03 /  +0.46 (max diff 0.019) | on mine  +0.17 +- 0.02 /  -0.01 +- 0.02 /  +0.45 +- 0.03 | S8 mine - build -0.01 (-0.6 MC sigma) | nuisance build omb -0.11, alpha +0.48, slnY -0.15; on build's omb -0.12, alpha +0.49, slnY -0.15; on mine omb -0.09, alpha +0.47, slnY -0.18
+q5 SO40 a baseline_f1   : build  +1.33 /  +0.10 /  +0.59 | on build's  +1.33 /  +0.10 /  +0.60 (max diff 0.010) | on mine  +1.31 +- 0.03 /  +0.07 +- 0.03 /  +0.63 +- 0.03 | S8 mine - build -0.02 (-0.8 MC sigma)
+q5 full a baseline_f1   : build  +2.11 /  +0.16 /  +0.93 | on build's  +2.10 /  +0.16 /  +0.94 (max diff 0.015) | on mine  +2.07 +- 0.04 /  +0.11 +- 0.04 /  +1.00 +- 0.04 | S8 mine - build -0.03 (-0.8 MC sigma)
+q5 SO40 b baseline_f1   : build  +0.91 /  +0.79 /  +0.96 | on build's  +0.92 /  +0.80 /  +0.97 (max diff 0.009) | on mine  +0.94 +- 0.02 /  +0.81 +- 0.02 /  +0.99 +- 0.02 | S8 mine - build +0.03 (+1.2 MC sigma)
+q5 full b baseline_f1   : build  +1.44 /  +1.25 /  +1.51 | on build's  +1.46 /  +1.27 /  +1.53 (max diff 0.015) | on mine  +1.48 +- 0.03 /  +1.28 +- 0.03 /  +1.57 +- 0.04 | S8 mine - build +0.04 (+1.2 MC sigma)
+q5 SO40 c baseline_f1   : build  +0.57 /  +0.39 /  +0.94 | on build's  +0.60 /  +0.41 /  +0.94 (max diff 0.026) | on mine  +0.58 +- 0.03 /  +0.39 +- 0.03 /  +0.97 +- 0.02 | S8 mine - build +0.01 (+0.5 MC sigma)
+q5 full c baseline_f1   : build  +0.90 /  +0.62 /  +1.48 | on build's  +0.94 /  +0.65 /  +1.49 (max diff 0.041) | on mine  +0.92 +- 0.04 /  +0.62 +- 0.04 /  +1.53 +- 0.04 | S8 mine - build +0.02 (+0.5 MC sigma)
+q5 SO40 d baseline_f1   : build  -0.01 /  -0.09 /  +0.13 | on build's  -0.00 /  -0.09 /  +0.13 (max diff 0.006) | on mine  -0.02 +- 0.01 /  -0.12 +- 0.01 /  +0.14 +- 0.02 | S8 mine - build -0.01 (-0.6 MC sigma) | nuisance build omb -0.05, alpha -0.41, slnY -0.00; on build's omb -0.06, alpha -0.41, slnY +0.00; on mine omb -0.04, alpha -0.42, slnY -0.02
+q5 full d baseline_f1   : build  +0.04 /  -0.06 /  +0.22 | on build's  +0.05 /  -0.06 /  +0.22 (max diff 0.010) | on mine  +0.02 +- 0.03 /  -0.10 +- 0.03 /  +0.22 +- 0.03 | S8 mine - build -0.02 (-0.8 MC sigma) | nuisance build omb -0.10, alpha -0.58, slnY +0.01; on build's omb -0.12, alpha -0.58, slnY +0.02; on mine omb -0.08, alpha -0.60, slnY -0.01
+q5 SO40 e baseline_f1   : build  +0.07 /  +0.03 /  +0.15 | on build's  +0.08 /  +0.03 /  +0.16 (max diff 0.005) | on mine  +0.05 +- 0.02 /  +0.00 +- 0.02 /  +0.15 +- 0.02 | S8 mine - build -0.02 (-0.9 MC sigma)
+q5 full e baseline_f1   : build  +0.12 /  +0.05 /  +0.24 | on build's  +0.12 /  +0.05 /  +0.25 (max diff 0.009) | on mine  +0.08 +- 0.04 /  +0.00 +- 0.04 /  +0.23 +- 0.04 | S8 mine - build -0.03 (-0.9 MC sigma)
+q5 SO40 a baseline_f2   : build  +3.15 /  +0.67 /  +0.78 | on build's  +3.14 /  +0.66 /  +0.81 (max diff 0.024) | on mine  +3.12 +- 0.03 /  +0.64 +- 0.03 /  +0.83 +- 0.03 | S8 mine - build -0.03 (-0.9 MC sigma)
+q5 full a baseline_f2   : build  +4.98 /  +1.06 /  +1.24 | on build's  +4.97 /  +1.05 /  +1.27 (max diff 0.038) | on mine  +4.94 +- 0.05 /  +1.01 +- 0.05 /  +1.31 +- 0.05 | S8 mine - build -0.04 (-0.9 MC sigma)
+q5 SO40 d baseline_f2   : build  -0.13 /  -0.20 /  +0.01 | on build's  -0.13 /  -0.20 /  +0.01 (max diff 0.006) | on mine  -0.15 +- 0.02 /  -0.22 +- 0.02 /  -0.01 +- 0.02 | S8 mine - build -0.02 (-1.1 MC sigma) | nuisance build omb -0.09, alpha -1.16, slnY +0.15; on build's omb -0.10, alpha -1.16, slnY +0.16; on mine omb -0.08, alpha -1.20, slnY +0.17
+q5 full d baseline_f2   : build  -0.08 /  -0.16 /  +0.06 | on build's  -0.07 /  -0.15 /  +0.07 (max diff 0.011) | on mine  -0.11 +- 0.03 /  -0.19 +- 0.03 /  +0.04 +- 0.04 | S8 mine - build -0.03 (-0.9 MC sigma) | nuisance build omb -0.18, alpha -1.67, slnY +0.26; on build's omb -0.20, alpha -1.67, slnY +0.27; on mine omb -0.18, alpha -1.73, slnY +0.28
+q5 SO40 a goal_effi     : build  -1.00 /  -0.81 /  +0.61 | on build's  -1.00 /  -0.81 /  +0.61 (max diff 0.002) | on mine  -1.01 +- 0.03 /  -0.84 +- 0.03 /  +0.64 +- 0.03 | S8 mine - build -0.01 (-0.4 MC sigma)
+q5 full a goal_effi     : build  -1.58 /  -1.28 /  +0.96 | on build's  -1.58 /  -1.28 /  +0.96 (max diff 0.004) | on mine  -1.59 +- 0.05 /  -1.32 +- 0.04 /  +1.01 +- 0.04 | S8 mine - build -0.02 (-0.4 MC sigma)
+q5 SO40 a goal_effii    : build  -1.38 /  -0.92 /  +0.57 | on build's  -1.38 /  -0.92 /  +0.56 (max diff 0.003) | on mine  -1.39 +- 0.03 /  -0.95 +- 0.03 /  +0.60 +- 0.03 | S8 mine - build -0.01 (-0.5 MC sigma)
+q5 full a goal_effii    : build  -2.17 /  -1.46 /  +0.90 | on build's  -2.18 /  -1.46 /  +0.89 (max diff 0.004) | on mine  -2.20 +- 0.04 /  -1.51 +- 0.04 /  +0.95 +- 0.04 | S8 mine - build -0.02 (-0.5 MC sigma)
+q5 SO40 a goal_f0.5     : build  -1.41 /  -1.22 /  +0.97 | on build's  -1.41 /  -1.23 /  +0.97 (max diff 0.002) | on mine  -1.40 +- 0.03 /  -1.24 +- 0.02 /  +0.99 +- 0.02 | S8 mine - build +0.01 (+0.3 MC sigma)
+q5 full a goal_f0.5     : build  -2.23 /  -1.94 /  +1.54 | on build's  -2.23 /  -1.94 /  +1.54 (max diff 0.004) | on mine  -2.21 +- 0.04 /  -1.96 +- 0.04 /  +1.57 +- 0.04 | S8 mine - build +0.01 (+0.3 MC sigma)
+q5 SO40 d goal_f0.5     : build  +0.23 /  +0.04 /  +0.50 | on build's  +0.25 /  +0.06 /  +0.51 (max diff 0.020) | on mine  +0.23 +- 0.02 /  +0.03 +- 0.01 /  +0.52 +- 0.02 | S8 mine - build +0.00 (+0.2 MC sigma) | nuisance build omb -0.12, alpha +0.57, slnY -0.17; on build's omb -0.14, alpha +0.58, slnY -0.17; on mine omb -0.11, alpha +0.57, slnY -0.21
+q5 full d goal_f0.5     : build  +0.39 /  +0.15 /  +0.78 | on build's  +0.42 /  +0.18 /  +0.81 (max diff 0.037) | on mine  +0.38 +- 0.03 /  +0.13 +- 0.03 /  +0.80 +- 0.03 | S8 mine - build -0.01 (-0.2 MC sigma) | nuisance build omb -0.25, alpha +0.90, slnY -0.23; on build's omb -0.28, alpha +0.93, slnY -0.24; on mine omb -0.23, alpha +0.90, slnY -0.30
+q5 SO40 a goal_f1       : build  +1.85 /  +0.10 /  +0.84 | on build's  +1.84 /  +0.10 /  +0.85 (max diff 0.011) | on mine  +1.84 +- 0.03 /  +0.08 +- 0.03 /  +0.87 +- 0.03 | S8 mine - build -0.01 (-0.2 MC sigma)
+q5 full a goal_f1       : build  +2.92 /  +0.16 /  +1.33 | on build's  +2.91 /  +0.16 /  +1.35 (max diff 0.017) | on mine  +2.91 +- 0.05 /  +0.13 +- 0.04 /  +1.38 +- 0.04 | S8 mine - build -0.01 (-0.2 MC sigma)
+q5 SO40 b goal_f1       : build  +1.23 /  +1.06 /  +1.32 | on build's  +1.25 /  +1.07 /  +1.33 (max diff 0.014) | on mine  +1.27 +- 0.02 /  +1.09 +- 0.03 /  +1.36 +- 0.03 | S8 mine - build +0.03 (+1.4 MC sigma)
+q5 full b goal_f1       : build  +1.95 /  +1.67 /  +2.08 | on build's  +1.97 /  +1.69 /  +2.10 (max diff 0.022) | on mine  +2.01 +- 0.04 /  +1.72 +- 0.04 /  +2.14 +- 0.04 | S8 mine - build +0.06 (+1.4 MC sigma)
+q5 SO40 c goal_f1       : build  +0.80 /  +0.54 /  +1.31 | on build's  +0.83 /  +0.57 /  +1.32 (max diff 0.039) | on mine  +0.83 +- 0.03 /  +0.56 +- 0.03 /  +1.34 +- 0.03 | S8 mine - build +0.03 (+1.1 MC sigma)
+q5 full c goal_f1       : build  +1.26 /  +0.85 /  +2.07 | on build's  +1.32 /  +0.90 /  +2.08 (max diff 0.062) | on mine  +1.31 +- 0.05 /  +0.88 +- 0.05 /  +2.12 +- 0.04 | S8 mine - build +0.05 (+1.1 MC sigma)
+q5 SO40 d goal_f1       : build  +0.01 /  -0.09 /  +0.19 | on build's  +0.02 /  -0.08 /  +0.19 (max diff 0.011) | on mine  +0.00 +- 0.02 /  -0.11 +- 0.02 /  +0.19 +- 0.02 | S8 mine - build -0.01 (-0.5 MC sigma) | nuisance build omb -0.09, alpha -0.51, slnY +0.01; on build's omb -0.10, alpha -0.51, slnY +0.01; on mine omb -0.08, alpha -0.53, slnY -0.00
+q5 full d goal_f1       : build  +0.08 /  -0.04 /  +0.32 | on build's  +0.10 /  -0.02 /  +0.33 (max diff 0.019) | on mine  +0.07 +- 0.03 /  -0.07 +- 0.03 /  +0.31 +- 0.04 | S8 mine - build -0.02 (-0.6 MC sigma) | nuisance build omb -0.18, alpha -0.71, slnY +0.04; on build's omb -0.21, alpha -0.70, slnY +0.04; on mine omb -0.17, alpha -0.74, slnY +0.02
+q5 SO40 e goal_f1       : build  +0.11 /  +0.05 /  +0.22 | on build's  +0.12 /  +0.06 /  +0.23 (max diff 0.010) | on mine  +0.09 +- 0.03 /  +0.03 +- 0.03 /  +0.22 +- 0.03 | S8 mine - build -0.02 (-0.7 MC sigma)
+q5 full e goal_f1       : build  +0.17 /  +0.08 /  +0.36 | on build's  +0.19 /  +0.09 /  +0.37 (max diff 0.016) | on mine  +0.15 +- 0.04 /  +0.04 +- 0.04 /  +0.35 +- 0.04 | S8 mine - build -0.03 (-0.7 MC sigma)
+q5 SO40 a goal_f2       : build  +4.72 /  +1.04 /  +1.06 | on build's  +4.71 /  +1.03 /  +1.09 (max diff 0.032) | on mine  +4.71 +- 0.04 /  +1.02 +- 0.03 /  +1.10 +- 0.03 | S8 mine - build -0.01 (-0.3 MC sigma)
+q5 full a goal_f2       : build  +7.47 /  +1.64 /  +1.68 | on build's  +7.44 /  +1.62 /  +1.73 (max diff 0.050) | on mine  +7.45 +- 0.06 /  +1.62 +- 0.05 /  +1.74 +- 0.05 | S8 mine - build -0.02 (-0.3 MC sigma)
+q5 SO40 d goal_f2       : build  -0.19 /  -0.25 /  -0.05 | on build's  -0.18 /  -0.24 /  -0.05 (max diff 0.007) | on mine  -0.21 +- 0.02 /  -0.27 +- 0.02 /  -0.08 +- 0.03 | S8 mine - build -0.02 (-1.1 MC sigma) | nuisance build omb -0.14, alpha -1.61, slnY +0.25; on build's omb -0.15, alpha -1.61, slnY +0.26; on mine omb -0.14, alpha -1.66, slnY +0.28
+q5 full d goal_f2       : build  -0.14 /  -0.20 /  +0.01 | on build's  -0.12 /  -0.19 /  +0.02 (max diff 0.013) | on mine  -0.17 +- 0.04 /  -0.23 +- 0.04 /  -0.03 +- 0.04 | S8 mine - build -0.04 (-0.9 MC sigma) | nuisance build omb -0.27, alpha -2.30, slnY +0.42; on build's omb -0.31, alpha -2.31, slnY +0.43; on mine omb -0.28, alpha -2.39, slnY +0.46
+q5 SO40 a lowP_effi     : build  -0.17 /  -0.13 /  +0.09 | on build's  -0.17 /  -0.13 /  +0.09 (max diff 0.001) | on mine  -0.17 +- 0.02 /  -0.12 +- 0.02 /  +0.08 +- 0.02 | S8 mine - build -0.00 (-0.1 MC sigma)
+q5 full a lowP_effi     : build  -0.26 /  -0.21 /  +0.15 | on build's  -0.26 /  -0.20 /  +0.15 (max diff 0.002) | on mine  -0.27 +- 0.03 /  -0.19 +- 0.03 /  +0.13 +- 0.03 | S8 mine - build -0.00 (-0.1 MC sigma)
+q5 SO40 a lowP_f1       : build  +0.57 /  +0.11 /  +0.18 | on build's  +0.57 /  +0.11 /  +0.18 (max diff 0.006) | on mine  +0.57 +- 0.02 /  +0.11 +- 0.02 /  +0.17 +- 0.02 | S8 mine - build -0.01 (-0.3 MC sigma)
+q5 full a lowP_f1       : build  +0.91 /  +0.18 /  +0.28 | on build's  +0.91 /  +0.17 /  +0.29 (max diff 0.009) | on mine  +0.90 +- 0.03 /  +0.18 +- 0.03 /  +0.27 +- 0.03 | S8 mine - build -0.01 (-0.3 MC sigma)
+q5 SO40 d lowP_f1       : build  -0.02 /  -0.05 /  +0.02 | on build's  -0.02 /  -0.05 /  +0.02 (max diff 0.001) | on mine  -0.02 +- 0.01 /  -0.05 +- 0.01 /  +0.02 +- 0.02 | S8 mine - build +0.00 (+0.2 MC sigma) | nuisance build omb -0.01, alpha -0.18, slnY -0.00; on build's omb -0.01, alpha -0.19, slnY -0.00; on mine omb -0.01, alpha -0.18, slnY +0.00
+q5 full d lowP_f1       : build  -0.02 /  -0.05 /  +0.04 | on build's  -0.02 /  -0.05 /  +0.04 (max diff 0.001) | on mine  -0.01 +- 0.02 /  -0.04 +- 0.02 /  +0.03 +- 0.02 | S8 mine - build +0.00 (+0.2 MC sigma) | nuisance build omb -0.02, alpha -0.28, slnY +0.00; on build's omb -0.02, alpha -0.28, slnY +0.00; on mine omb -0.02, alpha -0.27, slnY +0.00
+q5 SO40 a white         : build  -3.95 /  -3.67 /  +2.95 | on build's  -3.97 /  -3.70 /  +2.98 (max diff 0.032) | on mine  -3.99 +- 0.04 /  -3.73 +- 0.04 /  +3.00 +- 0.03 | S8 mine - build -0.05 (-1.2 MC sigma)
+q5 full a white         : build  -6.24 /  -5.80 /  +4.67 | on build's  -6.27 /  -5.85 /  +4.71 (max diff 0.051) | on mine  -6.32 +- 0.07 /  -5.89 +- 0.06 /  +4.74 +- 0.05 | S8 mine - build -0.08 (-1.2 MC sigma)
+q5 SO40 d white         : build  +1.11 /  +0.16 /  +1.83 | on build's  +1.11 /  +0.18 /  +1.79 (max diff 0.039) | on mine  +1.11 +- 0.02 /  +0.17 +- 0.02 /  +1.80 +- 0.03 | S8 mine - build -0.00 (-0.0 MC sigma) | nuisance build omb -0.65, alpha +2.26, slnY -1.90; on build's omb -0.67, alpha +2.25, slnY -1.85; on mine omb -0.68, alpha +2.23, slnY -1.82
+q5 full d white         : build  +2.07 /  +0.92 /  +3.05 | on build's  +2.08 /  +0.94 /  +3.02 (max diff 0.034) | on mine  +2.09 +- 0.04 /  +0.93 +- 0.04 /  +3.04 +- 0.05 | S8 mine - build +0.01 (+0.3 MC sigma) | nuisance build omb -1.46, alpha +3.77, slnY -2.99; on build's omb -1.49, alpha +3.77, slnY -2.83; on mine omb -1.50, alpha +3.74, slnY -2.80
+q6 SO40 a baseline_effi : build  -0.13 /  -0.24 /  +0.27 | on build's  -0.13 /  -0.23 /  +0.27 (max diff 0.001) | on mine  -0.15 +- 0.02 /  -0.25 +- 0.02 /  +0.28 +- 0.02 | S8 mine - build -0.02 (-0.8 MC sigma)
+q6 full a baseline_effi : build  -0.21 /  -0.37 /  +0.43 | on build's  -0.20 /  -0.37 /  +0.43 (max diff 0.002) | on mine  -0.24 +- 0.04 /  -0.39 +- 0.04 /  +0.44 +- 0.04 | S8 mine - build -0.03 (-0.8 MC sigma)
+q6 SO40 a baseline_f1   : build  +0.98 /  +0.13 /  +0.37 | on build's  +0.98 /  +0.13 /  +0.38 (max diff 0.008) | on mine  +0.95 +- 0.02 /  +0.11 +- 0.02 /  +0.39 +- 0.02 | S8 mine - build -0.02 (-1.0 MC sigma)
+q6 full a baseline_f1   : build  +1.55 /  +0.21 /  +0.58 | on build's  +1.54 /  +0.20 /  +0.59 (max diff 0.013) | on mine  +1.51 +- 0.04 /  +0.17 +- 0.04 /  +0.62 +- 0.04 | S8 mine - build -0.04 (-1.0 MC sigma)
+q6 SO40 a goal_f1       : build  +1.40 /  +0.17 /  +0.53 | on build's  +1.40 /  +0.17 /  +0.54 (max diff 0.010) | on mine  +1.38 +- 0.03 /  +0.14 +- 0.03 /  +0.57 +- 0.03 | S8 mine - build -0.02 (-0.8 MC sigma)
+q6 full a goal_f1       : build  +2.21 /  +0.27 /  +0.83 | on build's  +2.21 /  +0.27 /  +0.85 (max diff 0.015) | on mine  +2.18 +- 0.04 /  +0.22 +- 0.04 /  +0.90 +- 0.04 | S8 mine - build -0.03 (-0.8 MC sigma)
+q6 SO40 d goal_f1       : build  -0.02 /  -0.08 /  +0.09 | on build's  -0.02 /  -0.08 /  +0.09 (max diff 0.005) | on mine  -0.03 +- 0.02 /  -0.10 +- 0.01 /  +0.09 +- 0.02 | S8 mine - build -0.01 (-0.8 MC sigma) | nuisance build omb -0.04, alpha -0.42, slnY +0.02; on build's omb -0.05, alpha -0.42, slnY +0.02; on mine omb -0.03, alpha -0.44, slnY +0.01
+q6 full d goal_f1       : build  +0.01 /  -0.06 /  +0.15 | on build's  +0.02 /  -0.05 /  +0.15 (max diff 0.009) | on mine  -0.01 +- 0.03 /  -0.10 +- 0.03 /  +0.14 +- 0.03 | S8 mine - build -0.03 (-0.9 MC sigma) | nuisance build omb -0.09, alpha -0.60, slnY +0.04; on build's omb -0.10, alpha -0.60, slnY +0.05; on mine omb -0.07, alpha -0.63, slnY +0.03
+q6 SO40 a lowP_f1       : build  +0.38 /  +0.08 /  +0.11 | on build's  +0.38 /  +0.08 /  +0.12 (max diff 0.004) | on mine  +0.39 +- 0.02 /  +0.09 +- 0.02 /  +0.10 +- 0.02 | S8 mine - build +0.00 (+0.2 MC sigma)
+q6 full a lowP_f1       : build  +0.61 /  +0.13 /  +0.18 | on build's  +0.61 /  +0.13 /  +0.19 (max diff 0.006) | on mine  +0.61 +- 0.03 /  +0.15 +- 0.03 /  +0.16 +- 0.03 | S8 mine - build +0.01 (+0.2 MC sigma)
+q6 SO40 a white         : build  -2.07 /  -2.26 /  +2.02 | on build's  -2.08 /  -2.28 /  +2.04 (max diff 0.018) | on mine  -2.12 +- 0.04 /  -2.30 +- 0.04 /  +2.05 +- 0.03 | S8 mine - build -0.05 (-1.1 MC sigma)
+q6 full a white         : build  -3.27 /  -3.58 /  +3.20 | on build's  -3.29 /  -3.61 /  +3.22 (max diff 0.028) | on mine  -3.34 +- 0.07 /  -3.64 +- 0.06 /  +3.24 +- 0.05 | S8 mine - build -0.07 (-1.1 MC sigma)
+max |my fitter/model on the build's Delta - build| over these fits (S8, Om, s8): 0.062 sigma
+largest |S8 (my Delta) - S8 (build)| in units of the MC error: q5 full b goal_f1: +0.06 (1.4); q5 SO40 b goal_f1: +0.03 (1.4); q5 full b baseline_f1: +0.04 (1.2); q5 SO40 b baseline_f1: +0.03 (1.2); q5 full a white: -0.08 (1.2)
+
+=== (B) Linearised S8 bias, all setups / configs: build lin | mine (my J, F) on build's Delta | on my Delta +- MC ===
+  [baseline_effi q5]
+     SO40 a: build lin  -0.64 (ML  -0.64) | mine on build's  -0.64 | on mine  -0.67 +- 0.03 | (mine - build)/MC  -0.9 | sigma(S8) build 0.0011 mine 0.0011 (-0.0%) | power build 0.055, mine(lin) on build's 0.055, on mine 0.055
+     SO40 b: build lin  -0.53 (ML  -0.53) | mine on build's  -0.52 | on mine  -0.51 +- 0.02 | (mine - build)/MC  +0.5 | sigma(S8) build 0.0125 mine 0.0125 (+0.1%) | power build 0.053, mine(lin) on build's 0.053, on mine 0.053
+     SO40 c: build lin  -0.34 (ML  -0.33) | mine on build's  -0.32 | on mine  -0.34 +- 0.03 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0199 mine 0.0192 (-3.5%) | power build 0.053, mine(lin) on build's 0.053, on mine 0.053
+     SO40 d: build lin  +0.12 (ML  +0.12) | mine on build's  +0.12 | on mine  +0.11 +- 0.01 | (mine - build)/MC  -0.6 | sigma(S8) build 0.0185 mine 0.0183 (-0.8%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.053
+     SO40 e: build lin  +0.10 (ML  +0.11) | mine on build's  +0.11 | on mine  +0.08 +- 0.02 | (mine - build)/MC  -1.1 | sigma(S8) build 0.0379 mine 0.0354 (-6.5%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.053
+     full a: build lin  -1.02 (ML  -1.02) | mine on build's  -1.01 | on mine  -1.05 +- 0.04 | (mine - build)/MC  -0.9 | sigma(S8) build 0.0007 mine 0.0007 (-0.0%) | power build 0.062, mine(lin) on build's 0.062, on mine 0.062
+     full b: build lin  -0.83 (ML  -0.83) | mine on build's  -0.82 | on mine  -0.81 +- 0.03 | (mine - build)/MC  +0.5 | sigma(S8) build 0.0079 mine 0.0079 (+0.1%) | power build 0.058, mine(lin) on build's 0.058, on mine 0.058
+     full c: build lin  -0.53 (ML  -0.53) | mine on build's  -0.51 | on mine  -0.54 +- 0.04 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0126 mine 0.0121 (-3.5%) | power build 0.058, mine(lin) on build's 0.058, on mine 0.058
+     full d: build lin  +0.16 (ML  +0.17) | mine on build's  +0.18 | on mine  +0.15 +- 0.03 | (mine - build)/MC  -0.8 | sigma(S8) build 0.0153 mine 0.0150 (-2.2%) | power build 0.056, mine(lin) on build's 0.056, on mine 0.057
+     full e: build lin  +0.16 (ML  +0.17) | mine on build's  +0.17 | on mine  +0.13 +- 0.04 | (mine - build)/MC  -1.1 | sigma(S8) build 0.0240 mine 0.0224 (-6.5%) | power build 0.056, mine(lin) on build's 0.056, on mine 0.057
+  [baseline_effii q5]
+     SO40 a: build lin  -0.82 (ML  -0.83) | mine on build's  -0.82 | on mine  -0.85 +- 0.03 | (mine - build)/MC  -0.8 | sigma(S8) build 0.0011 mine 0.0011 (-0.0%) | power build 0.056, mine(lin) on build's 0.056, on mine 0.056
+     SO40 b: build lin  -0.67 (ML  -0.67) | mine on build's  -0.66 | on mine  -0.65 +- 0.02 | (mine - build)/MC  +0.5 | sigma(S8) build 0.0126 mine 0.0126 (+0.1%) | power build 0.054, mine(lin) on build's 0.054, on mine 0.054
+     SO40 c: build lin  -0.43 (ML  -0.42) | mine on build's  -0.41 | on mine  -0.43 +- 0.03 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0200 mine 0.0193 (-3.5%) | power build 0.054, mine(lin) on build's 0.054, on mine 0.054
+     SO40 d: build lin  +0.13 (ML  +0.13) | mine on build's  +0.14 | on mine  +0.12 +- 0.01 | (mine - build)/MC  -0.7 | sigma(S8) build 0.0185 mine 0.0183 (-0.8%) | power build 0.053, mine(lin) on build's 0.053, on mine 0.053
+     SO40 e: build lin  +0.10 (ML  +0.11) | mine on build's  +0.11 | on mine  +0.08 +- 0.02 | (mine - build)/MC  -1.1 | sigma(S8) build 0.0381 mine 0.0356 (-6.5%) | power build 0.053, mine(lin) on build's 0.053, on mine 0.053
+     full a: build lin  -1.30 (ML  -1.31) | mine on build's  -1.30 | on mine  -1.34 +- 0.04 | (mine - build)/MC  -0.8 | sigma(S8) build 0.0007 mine 0.0007 (-0.0%) | power build 0.067, mine(lin) on build's 0.067, on mine 0.067
+     full b: build lin  -1.06 (ML  -1.05) | mine on build's  -1.04 | on mine  -1.03 +- 0.03 | (mine - build)/MC  +0.5 | sigma(S8) build 0.0079 mine 0.0080 (+0.1%) | power build 0.060, mine(lin) on build's 0.061, on mine 0.061
+     full c: build lin  -0.67 (ML  -0.66) | mine on build's  -0.65 | on mine  -0.68 +- 0.04 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0126 mine 0.0122 (-3.5%) | power build 0.061, mine(lin) on build's 0.061, on mine 0.061
+     full d: build lin  +0.18 (ML  +0.19) | mine on build's  +0.19 | on mine  +0.16 +- 0.03 | (mine - build)/MC  -0.9 | sigma(S8) build 0.0154 mine 0.0150 (-2.2%) | power build 0.058, mine(lin) on build's 0.058, on mine 0.058
+     full e: build lin  +0.16 (ML  +0.18) | mine on build's  +0.18 | on mine  +0.13 +- 0.04 | (mine - build)/MC  -1.1 | sigma(S8) build 0.0241 mine 0.0225 (-6.5%) | power build 0.058, mine(lin) on build's 0.058, on mine 0.058
+  [baseline_f0.5 q5]
+     SO40 a: build lin  -0.74 (ML  -0.75) | mine on build's  -0.74 | on mine  -0.75 +- 0.02 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0010 mine 0.0010 (+0.0%) | power build 0.053, mine(lin) on build's 0.053, on mine 0.053
+     SO40 b: build lin  -0.34 (ML  -0.34) | mine on build's  -0.34 | on mine  -0.33 +- 0.02 | (mine - build)/MC  +0.8 | sigma(S8) build 0.0118 mine 0.0118 (+0.1%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.052
+     SO40 c: build lin  -0.22 (ML  -0.22) | mine on build's  -0.20 | on mine  -0.22 +- 0.02 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0187 mine 0.0180 (-3.5%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.052
+     SO40 d: build lin  +0.11 (ML  +0.11) | mine on build's  +0.12 | on mine  +0.10 +- 0.01 | (mine - build)/MC  -0.5 | sigma(S8) build 0.0179 mine 0.0178 (-1.0%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.052
+     SO40 e: build lin  +0.13 (ML  +0.14) | mine on build's  +0.15 | on mine  +0.11 +- 0.02 | (mine - build)/MC  -1.3 | sigma(S8) build 0.0350 mine 0.0328 (-6.4%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.052
+     full a: build lin  -1.18 (ML  -1.18) | mine on build's  -1.17 | on mine  -1.19 +- 0.04 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0007 mine 0.0007 (+0.0%) | power build 0.057, mine(lin) on build's 0.057, on mine 0.057
+     full b: build lin  -0.54 (ML  -0.54) | mine on build's  -0.53 | on mine  -0.52 +- 0.03 | (mine - build)/MC  +0.8 | sigma(S8) build 0.0075 mine 0.0075 (+0.1%) | power build 0.056, mine(lin) on build's 0.056, on mine 0.056
+     full c: build lin  -0.35 (ML  -0.34) | mine on build's  -0.32 | on mine  -0.35 +- 0.03 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0118 mine 0.0114 (-3.5%) | power build 0.056, mine(lin) on build's 0.056, on mine 0.056
+     full d: build lin  +0.18 (ML  +0.18) | mine on build's  +0.20 | on mine  +0.16 +- 0.02 | (mine - build)/MC  -0.8 | sigma(S8) build 0.0148 mine 0.0144 (-2.4%) | power build 0.054, mine(lin) on build's 0.054, on mine 0.054
+     full e: build lin  +0.21 (ML  +0.22) | mine on build's  +0.23 | on mine  +0.18 +- 0.03 | (mine - build)/MC  -1.3 | sigma(S8) build 0.0222 mine 0.0208 (-6.4%) | power build 0.054, mine(lin) on build's 0.054, on mine 0.054
+  [baseline_f1 q5]
+     SO40 a: build lin  +1.34 (ML  +1.33) | mine on build's  +1.33 | on mine  +1.31 +- 0.03 | (mine - build)/MC  -0.7 | sigma(S8) build 0.0010 mine 0.0010 (+0.0%) | power build 0.056, mine(lin) on build's 0.056, on mine 0.057
+     SO40 b: build lin  +0.92 (ML  +0.91) | mine on build's  +0.91 | on mine  +0.93 +- 0.02 | (mine - build)/MC  +0.6 | sigma(S8) build 0.0118 mine 0.0118 (+0.1%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.052
+     SO40 c: build lin  +0.57 (ML  +0.57) | mine on build's  +0.57 | on mine  +0.56 +- 0.03 | (mine - build)/MC  -0.5 | sigma(S8) build 0.0187 mine 0.0180 (-3.5%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.052
+     SO40 d: build lin  -0.01 (ML  -0.01) | mine on build's  -0.00 | on mine  -0.02 +- 0.01 | (mine - build)/MC  -0.6 | sigma(S8) build 0.0179 mine 0.0178 (-1.0%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     SO40 e: build lin  +0.08 (ML  +0.07) | mine on build's  +0.08 | on mine  +0.05 +- 0.02 | (mine - build)/MC  -0.8 | sigma(S8) build 0.0350 mine 0.0328 (-6.4%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     full a: build lin  +2.11 (ML  +2.11) | mine on build's  +2.11 | on mine  +2.08 +- 0.04 | (mine - build)/MC  -0.7 | sigma(S8) build 0.0007 mine 0.0007 (+0.0%) | power build 0.065, mine(lin) on build's 0.065, on mine 0.067
+     full b: build lin  +1.45 (ML  +1.44) | mine on build's  +1.44 | on mine  +1.46 +- 0.03 | (mine - build)/MC  +0.6 | sigma(S8) build 0.0075 mine 0.0075 (+0.1%) | power build 0.053, mine(lin) on build's 0.053, on mine 0.055
+     full c: build lin  +0.91 (ML  +0.90) | mine on build's  +0.91 | on mine  +0.88 +- 0.04 | (mine - build)/MC  -0.5 | sigma(S8) build 0.0118 mine 0.0114 (-3.5%) | power build 0.053, mine(lin) on build's 0.053, on mine 0.055
+     full d: build lin  +0.04 (ML  +0.04) | mine on build's  +0.05 | on mine  +0.02 +- 0.03 | (mine - build)/MC  -0.7 | sigma(S8) build 0.0148 mine 0.0144 (-2.4%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.053
+     full e: build lin  +0.12 (ML  +0.12) | mine on build's  +0.13 | on mine  +0.08 +- 0.04 | (mine - build)/MC  -0.8 | sigma(S8) build 0.0222 mine 0.0208 (-6.4%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.053
+  [baseline_f2 q5]
+     SO40 a: build lin  +3.17 (ML  +3.15) | mine on build's  +3.16 | on mine  +3.14 +- 0.03 | (mine - build)/MC  -0.2 | sigma(S8) build 0.0010 mine 0.0010 (+0.0%) | power build 0.092, mine(lin) on build's 0.094, on mine 0.097
+     SO40 b: build lin  +2.22 (ML  +2.20) | mine on build's  +2.21 | on mine  +2.23 +- 0.03 | (mine - build)/MC  +1.0 | sigma(S8) build 0.0118 mine 0.0118 (+0.1%) | power build 0.060, mine(lin) on build's 0.061, on mine 0.063
+     SO40 c: build lin  +1.47 (ML  +1.44) | mine on build's  +1.46 | on mine  +1.47 +- 0.03 | (mine - build)/MC  +0.7 | sigma(S8) build 0.0187 mine 0.0180 (-3.5%) | power build 0.060, mine(lin) on build's 0.061, on mine 0.063
+     SO40 d: build lin  -0.14 (ML  -0.13) | mine on build's  -0.14 | on mine  -0.16 +- 0.02 | (mine - build)/MC  -1.6 | sigma(S8) build 0.0179 mine 0.0178 (-1.0%) | power build 0.055, mine(lin) on build's 0.056, on mine 0.057
+     SO40 e: build lin  +0.07 (ML  +0.06) | mine on build's  +0.07 | on mine  +0.04 +- 0.03 | (mine - build)/MC  -0.5 | sigma(S8) build 0.0350 mine 0.0328 (-6.4%) | power build 0.055, mine(lin) on build's 0.056, on mine 0.057
+     full a: build lin  +5.01 (ML  +4.98) | mine on build's  +5.00 | on mine  +4.97 +- 0.05 | (mine - build)/MC  -0.2 | sigma(S8) build 0.0007 mine 0.0007 (+0.0%) | power build 0.190, mine(lin) on build's 0.196, on mine 0.207
+     full b: build lin  +3.51 (ML  +3.48) | mine on build's  +3.50 | on mine  +3.52 +- 0.04 | (mine - build)/MC  +1.0 | sigma(S8) build 0.0075 mine 0.0075 (+0.1%) | power build 0.077, mine(lin) on build's 0.081, on mine 0.085
+     full c: build lin  +2.32 (ML  +2.28) | mine on build's  +2.30 | on mine  +2.32 +- 0.05 | (mine - build)/MC  +0.7 | sigma(S8) build 0.0118 mine 0.0114 (-3.5%) | power build 0.077, mine(lin) on build's 0.081, on mine 0.086
+     full d: build lin  -0.09 (ML  -0.08) | mine on build's  -0.08 | on mine  -0.12 +- 0.03 | (mine - build)/MC  -1.1 | sigma(S8) build 0.0148 mine 0.0144 (-2.4%) | power build 0.064, mine(lin) on build's 0.065, on mine 0.068
+     full e: build lin  +0.11 (ML  +0.09) | mine on build's  +0.12 | on mine  +0.07 +- 0.05 | (mine - build)/MC  -0.5 | sigma(S8) build 0.0222 mine 0.0208 (-6.4%) | power build 0.064, mine(lin) on build's 0.065, on mine 0.067
+  [goal_effi q5]
+     SO40 a: build lin  -1.00 (ML  -1.00) | mine on build's  -0.99 | on mine  -1.00 +- 0.03 | (mine - build)/MC  -0.1 | sigma(S8) build 0.0009 mine 0.0009 (+0.1%) | power build 0.061, mine(lin) on build's 0.061, on mine 0.061
+     SO40 b: build lin  -0.77 (ML  -0.77) | mine on build's  -0.76 | on mine  -0.74 +- 0.02 | (mine - build)/MC  +1.2 | sigma(S8) build 0.0101 mine 0.0101 (-0.1%) | power build 0.058, mine(lin) on build's 0.058, on mine 0.058
+     SO40 c: build lin  -0.49 (ML  -0.48) | mine on build's  -0.47 | on mine  -0.48 +- 0.03 | (mine - build)/MC  +0.1 | sigma(S8) build 0.0155 mine 0.0149 (-3.9%) | power build 0.058, mine(lin) on build's 0.058, on mine 0.058
+     SO40 d: build lin  +0.21 (ML  +0.22) | mine on build's  +0.23 | on mine  +0.21 +- 0.02 | (mine - build)/MC  -0.7 | sigma(S8) build 0.0175 mine 0.0172 (-1.2%) | power build 0.056, mine(lin) on build's 0.056, on mine 0.056
+     SO40 e: build lin  +0.22 (ML  +0.24) | mine on build's  +0.24 | on mine  +0.20 +- 0.03 | (mine - build)/MC  -1.3 | sigma(S8) build 0.0307 mine 0.0287 (-6.5%) | power build 0.056, mine(lin) on build's 0.056, on mine 0.056
+     full a: build lin  -1.57 (ML  -1.58) | mine on build's  -1.57 | on mine  -1.58 +- 0.05 | (mine - build)/MC  -0.1 | sigma(S8) build 0.0006 mine 0.0006 (+0.1%) | power build 0.081, mine(lin) on build's 0.081, on mine 0.079
+     full b: build lin  -1.22 (ML  -1.22) | mine on build's  -1.20 | on mine  -1.17 +- 0.04 | (mine - build)/MC  +1.2 | sigma(S8) build 0.0064 mine 0.0064 (-0.1%) | power build 0.071, mine(lin) on build's 0.071, on mine 0.070
+     full c: build lin  -0.77 (ML  -0.76) | mine on build's  -0.74 | on mine  -0.76 +- 0.04 | (mine - build)/MC  +0.1 | sigma(S8) build 0.0098 mine 0.0094 (-3.9%) | power build 0.071, mine(lin) on build's 0.071, on mine 0.070
+     full d: build lin  +0.33 (ML  +0.34) | mine on build's  +0.35 | on mine  +0.31 +- 0.03 | (mine - build)/MC  -0.9 | sigma(S8) build 0.0140 mine 0.0136 (-2.9%) | power build 0.065, mine(lin) on build's 0.065, on mine 0.065
+     full e: build lin  +0.34 (ML  +0.38) | mine on build's  +0.37 | on mine  +0.32 +- 0.04 | (mine - build)/MC  -1.3 | sigma(S8) build 0.0194 mine 0.0181 (-6.5%) | power build 0.065, mine(lin) on build's 0.065, on mine 0.065
+  [goal_effii q5]
+     SO40 a: build lin  -1.37 (ML  -1.38) | mine on build's  -1.37 | on mine  -1.38 +- 0.03 | (mine - build)/MC  -0.1 | sigma(S8) build 0.0009 mine 0.0009 (+0.1%) | power build 0.067, mine(lin) on build's 0.067, on mine 0.066
+     SO40 b: build lin  -1.04 (ML  -1.04) | mine on build's  -1.03 | on mine  -1.01 +- 0.02 | (mine - build)/MC  +1.2 | sigma(S8) build 0.0102 mine 0.0102 (-0.1%) | power build 0.061, mine(lin) on build's 0.061, on mine 0.060
+     SO40 c: build lin  -0.66 (ML  -0.65) | mine on build's  -0.64 | on mine  -0.65 +- 0.03 | (mine - build)/MC  +0.1 | sigma(S8) build 0.0157 mine 0.0150 (-3.9%) | power build 0.061, mine(lin) on build's 0.061, on mine 0.060
+     SO40 d: build lin  +0.24 (ML  +0.25) | mine on build's  +0.26 | on mine  +0.24 +- 0.02 | (mine - build)/MC  -0.8 | sigma(S8) build 0.0175 mine 0.0173 (-1.2%) | power build 0.058, mine(lin) on build's 0.057, on mine 0.057
+     SO40 e: build lin  +0.23 (ML  +0.26) | mine on build's  +0.25 | on mine  +0.22 +- 0.03 | (mine - build)/MC  -1.5 | sigma(S8) build 0.0310 mine 0.0290 (-6.5%) | power build 0.057, mine(lin) on build's 0.057, on mine 0.057
+     full a: build lin  -2.17 (ML  -2.17) | mine on build's  -2.16 | on mine  -2.18 +- 0.04 | (mine - build)/MC  -0.1 | sigma(S8) build 0.0006 mine 0.0006 (+0.1%) | power build 0.100, mine(lin) on build's 0.100, on mine 0.098
+     full b: build lin  -1.65 (ML  -1.65) | mine on build's  -1.63 | on mine  -1.60 +- 0.04 | (mine - build)/MC  +1.2 | sigma(S8) build 0.0065 mine 0.0065 (-0.1%) | power build 0.079, mine(lin) on build's 0.080, on mine 0.079
+     full c: build lin  -1.04 (ML  -1.03) | mine on build's  -1.01 | on mine  -1.03 +- 0.04 | (mine - build)/MC  +0.1 | sigma(S8) build 0.0099 mine 0.0095 (-3.9%) | power build 0.079, mine(lin) on build's 0.080, on mine 0.079
+     full d: build lin  +0.36 (ML  +0.38) | mine on build's  +0.39 | on mine  +0.35 +- 0.03 | (mine - build)/MC  -1.0 | sigma(S8) build 0.0141 mine 0.0137 (-2.8%) | power build 0.070, mine(lin) on build's 0.070, on mine 0.070
+     full e: build lin  +0.37 (ML  +0.41) | mine on build's  +0.40 | on mine  +0.35 +- 0.04 | (mine - build)/MC  -1.5 | sigma(S8) build 0.0196 mine 0.0183 (-6.5%) | power build 0.070, mine(lin) on build's 0.070, on mine 0.070
+  [goal_f0.5 q5]
+     SO40 a: build lin  -1.40 (ML  -1.41) | mine on build's  -1.40 | on mine  -1.39 +- 0.03 | (mine - build)/MC  +0.7 | sigma(S8) build 0.0008 mine 0.0008 (+0.2%) | power build 0.059, mine(lin) on build's 0.059, on mine 0.058
+     SO40 b: build lin  -0.65 (ML  -0.65) | mine on build's  -0.64 | on mine  -0.63 +- 0.02 | (mine - build)/MC  +1.3 | sigma(S8) build 0.0095 mine 0.0095 (-0.1%) | power build 0.057, mine(lin) on build's 0.057, on mine 0.056
+     SO40 c: build lin  -0.40 (ML  -0.40) | mine on build's  -0.38 | on mine  -0.41 +- 0.02 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0144 mine 0.0139 (-3.9%) | power build 0.057, mine(lin) on build's 0.057, on mine 0.056
+     SO40 d: build lin  +0.22 (ML  +0.23) | mine on build's  +0.24 | on mine  +0.22 +- 0.02 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0168 mine 0.0166 (-1.4%) | power build 0.055, mine(lin) on build's 0.055, on mine 0.054
+     SO40 e: build lin  +0.27 (ML  +0.29) | mine on build's  +0.29 | on mine  +0.25 +- 0.02 | (mine - build)/MC  -1.6 | sigma(S8) build 0.0280 mine 0.0262 (-6.3%) | power build 0.054, mine(lin) on build's 0.054, on mine 0.054
+     full a: build lin  -2.22 (ML  -2.23) | mine on build's  -2.21 | on mine  -2.20 +- 0.04 | (mine - build)/MC  +0.7 | sigma(S8) build 0.0005 mine 0.0005 (+0.2%) | power build 0.073, mine(lin) on build's 0.074, on mine 0.072
+     full b: build lin  -1.03 (ML  -1.03) | mine on build's  -1.01 | on mine  -0.99 +- 0.03 | (mine - build)/MC  +1.3 | sigma(S8) build 0.0060 mine 0.0060 (-0.1%) | power build 0.068, mine(lin) on build's 0.068, on mine 0.067
+     full c: build lin  -0.64 (ML  -0.63) | mine on build's  -0.59 | on mine  -0.64 +- 0.04 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0091 mine 0.0088 (-3.9%) | power build 0.068, mine(lin) on build's 0.068, on mine 0.067
+     full d: build lin  +0.37 (ML  +0.39) | mine on build's  +0.41 | on mine  +0.36 +- 0.03 | (mine - build)/MC  -0.8 | sigma(S8) build 0.0133 mine 0.0129 (-3.1%) | power build 0.062, mine(lin) on build's 0.062, on mine 0.062
+     full e: build lin  +0.42 (ML  +0.46) | mine on build's  +0.46 | on mine  +0.40 +- 0.04 | (mine - build)/MC  -1.6 | sigma(S8) build 0.0177 mine 0.0166 (-6.3%) | power build 0.062, mine(lin) on build's 0.061, on mine 0.061
+  [goal_f1 q5]
+     SO40 a: build lin  +1.85 (ML  +1.85) | mine on build's  +1.85 | on mine  +1.84 +- 0.03 | (mine - build)/MC  -0.1 | sigma(S8) build 0.0008 mine 0.0008 (+0.2%) | power build 0.061, mine(lin) on build's 0.061, on mine 0.062
+     SO40 b: build lin  +1.24 (ML  +1.23) | mine on build's  +1.24 | on mine  +1.25 +- 0.02 | (mine - build)/MC  +0.7 | sigma(S8) build 0.0095 mine 0.0095 (-0.1%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.053
+     SO40 c: build lin  +0.80 (ML  +0.80) | mine on build's  +0.81 | on mine  +0.79 +- 0.03 | (mine - build)/MC  -0.0 | sigma(S8) build 0.0144 mine 0.0139 (-3.9%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.053
+     SO40 d: build lin  +0.01 (ML  +0.01) | mine on build's  +0.02 | on mine  +0.00 +- 0.02 | (mine - build)/MC  -0.4 | sigma(S8) build 0.0168 mine 0.0166 (-1.4%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.052
+     SO40 e: build lin  +0.12 (ML  +0.11) | mine on build's  +0.13 | on mine  +0.10 +- 0.03 | (mine - build)/MC  -0.5 | sigma(S8) build 0.0280 mine 0.0262 (-6.3%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.052
+     full a: build lin  +2.93 (ML  +2.92) | mine on build's  +2.92 | on mine  +2.92 +- 0.05 | (mine - build)/MC  -0.1 | sigma(S8) build 0.0005 mine 0.0005 (+0.2%) | power build 0.079, mine(lin) on build's 0.080, on mine 0.083
+     full b: build lin  +1.96 (ML  +1.95) | mine on build's  +1.96 | on mine  +1.98 +- 0.04 | (mine - build)/MC  +0.7 | sigma(S8) build 0.0060 mine 0.0060 (-0.1%) | power build 0.056, mine(lin) on build's 0.056, on mine 0.058
+     full c: build lin  +1.27 (ML  +1.26) | mine on build's  +1.28 | on mine  +1.26 +- 0.05 | (mine - build)/MC  -0.0 | sigma(S8) build 0.0091 mine 0.0088 (-3.9%) | power build 0.056, mine(lin) on build's 0.056, on mine 0.058
+     full d: build lin  +0.09 (ML  +0.08) | mine on build's  +0.11 | on mine  +0.07 +- 0.03 | (mine - build)/MC  -0.4 | sigma(S8) build 0.0133 mine 0.0129 (-3.1%) | power build 0.054, mine(lin) on build's 0.054, on mine 0.056
+     full e: build lin  +0.18 (ML  +0.17) | mine on build's  +0.20 | on mine  +0.15 +- 0.04 | (mine - build)/MC  -0.5 | sigma(S8) build 0.0177 mine 0.0166 (-6.3%) | power build 0.054, mine(lin) on build's 0.054, on mine 0.056
+  [goal_f2 q5]
+     SO40 a: build lin  +4.76 (ML  +4.72) | mine on build's  +4.75 | on mine  +4.75 +- 0.04 | (mine - build)/MC  +0.8 | sigma(S8) build 0.0008 mine 0.0008 (+0.2%) | power build 0.159, mine(lin) on build's 0.164, on mine 0.171
+     SO40 b: build lin  +3.21 (ML  +3.17) | mine on build's  +3.20 | on mine  +3.23 +- 0.03 | (mine - build)/MC  +2.0 | sigma(S8) build 0.0095 mine 0.0095 (-0.1%) | power build 0.073, mine(lin) on build's 0.076, on mine 0.078
+     SO40 c: build lin  +2.16 (ML  +2.11) | mine on build's  +2.15 | on mine  +2.18 +- 0.04 | (mine - build)/MC  +1.8 | sigma(S8) build 0.0144 mine 0.0139 (-3.9%) | power build 0.073, mine(lin) on build's 0.076, on mine 0.078
+     SO40 d: build lin  -0.20 (ML  -0.19) | mine on build's  -0.19 | on mine  -0.22 +- 0.02 | (mine - build)/MC  -1.5 | sigma(S8) build 0.0168 mine 0.0166 (-1.4%) | power build 0.062, mine(lin) on build's 0.063, on mine 0.064
+     SO40 e: build lin  +0.05 (ML  +0.03) | mine on build's  +0.05 | on mine  +0.02 +- 0.03 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0280 mine 0.0262 (-6.3%) | power build 0.062, mine(lin) on build's 0.062, on mine 0.063
+     full a: build lin  +7.52 (ML  +7.47) | mine on build's  +7.51 | on mine  +7.51 +- 0.06 | (mine - build)/MC  +0.8 | sigma(S8) build 0.0005 mine 0.0005 (+0.2%) | power build 0.447, mine(lin) on build's 0.467, on mine 0.490
+     full b: build lin  +5.08 (ML  +5.01) | mine on build's  +5.06 | on mine  +5.10 +- 0.05 | (mine - build)/MC  +2.0 | sigma(S8) build 0.0060 mine 0.0060 (-0.1%) | power build 0.119, mine(lin) on build's 0.129, on mine 0.137
+     full c: build lin  +3.41 (ML  +3.34) | mine on build's  +3.41 | on mine  +3.45 +- 0.06 | (mine - build)/MC  +1.8 | sigma(S8) build 0.0091 mine 0.0088 (-3.9%) | power build 0.120, mine(lin) on build's 0.129, on mine 0.138
+     full d: build lin  -0.14 (ML  -0.14) | mine on build's  -0.12 | on mine  -0.17 +- 0.04 | (mine - build)/MC  -0.9 | sigma(S8) build 0.0133 mine 0.0129 (-3.1%) | power build 0.082, mine(lin) on build's 0.085, on mine 0.089
+     full e: build lin  +0.07 (ML  +0.05) | mine on build's  +0.08 | on mine  +0.03 +- 0.05 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0177 mine 0.0166 (-6.3%) | power build 0.082, mine(lin) on build's 0.085, on mine 0.088
+  [lowP_effi q5]
+     SO40 a: build lin  -0.17 (ML  -0.17) | mine on build's  -0.17 | on mine  -0.17 +- 0.02 | (mine - build)/MC  -0.1 | sigma(S8) build 0.0018 mine 0.0018 (-0.3%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.051
+     SO40 b: build lin  -0.19 (ML  -0.19) | mine on build's  -0.19 | on mine  -0.20 +- 0.02 | (mine - build)/MC  -0.6 | sigma(S8) build 0.0186 mine 0.0186 (+0.3%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.050
+     SO40 c: build lin  -0.14 (ML  -0.14) | mine on build's  -0.13 | on mine  -0.14 +- 0.02 | (mine - build)/MC  -0.0 | sigma(S8) build 0.0338 mine 0.0326 (-3.4%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.050
+     SO40 d: build lin  +0.04 (ML  +0.04) | mine on build's  +0.04 | on mine  +0.05 +- 0.01 | (mine - build)/MC  +0.2 | sigma(S8) build 0.0227 mine 0.0226 (-0.4%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.050
+     SO40 e: build lin  -0.01 (ML  -0.01) | mine on build's  -0.01 | on mine  -0.00 +- 0.02 | (mine - build)/MC  +0.3 | sigma(S8) build 0.0610 mine 0.0568 (-6.9%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.050
+     full a: build lin  -0.26 (ML  -0.26) | mine on build's  -0.26 | on mine  -0.27 +- 0.03 | (mine - build)/MC  -0.1 | sigma(S8) build 0.0012 mine 0.0012 (-0.3%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.052
+     full b: build lin  -0.31 (ML  -0.31) | mine on build's  -0.30 | on mine  -0.32 +- 0.03 | (mine - build)/MC  -0.6 | sigma(S8) build 0.0117 mine 0.0118 (+0.3%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     full c: build lin  -0.22 (ML  -0.22) | mine on build's  -0.21 | on mine  -0.22 +- 0.03 | (mine - build)/MC  -0.0 | sigma(S8) build 0.0214 mine 0.0206 (-3.4%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     full d: build lin  +0.04 (ML  +0.04) | mine on build's  +0.04 | on mine  +0.05 +- 0.02 | (mine - build)/MC  +0.2 | sigma(S8) build 0.0188 mine 0.0186 (-1.2%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     full e: build lin  -0.01 (ML  -0.01) | mine on build's  -0.01 | on mine  -0.01 +- 0.03 | (mine - build)/MC  +0.3 | sigma(S8) build 0.0386 mine 0.0359 (-6.9%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+  [lowP_f1 q5]
+     SO40 a: build lin  +0.57 (ML  +0.57) | mine on build's  +0.57 | on mine  +0.57 +- 0.02 | (mine - build)/MC  -0.2 | sigma(S8) build 0.0018 mine 0.0018 (-0.3%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     SO40 b: build lin  +0.39 (ML  +0.39) | mine on build's  +0.39 | on mine  +0.38 +- 0.02 | (mine - build)/MC  -0.8 | sigma(S8) build 0.0179 mine 0.0180 (+0.3%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.050
+     SO40 c: build lin  +0.21 (ML  +0.21) | mine on build's  +0.21 | on mine  +0.20 +- 0.02 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0326 mine 0.0315 (-3.4%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.050
+     SO40 d: build lin  -0.02 (ML  -0.02) | mine on build's  -0.02 | on mine  -0.02 +- 0.01 | (mine - build)/MC  +0.2 | sigma(S8) build 0.0223 mine 0.0222 (-0.5%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.050
+     SO40 e: build lin  +0.01 (ML  +0.01) | mine on build's  +0.01 | on mine  +0.01 +- 0.02 | (mine - build)/MC  +0.2 | sigma(S8) build 0.0582 mine 0.0543 (-6.8%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.050
+     full a: build lin  +0.91 (ML  +0.91) | mine on build's  +0.91 | on mine  +0.90 +- 0.03 | (mine - build)/MC  -0.2 | sigma(S8) build 0.0011 mine 0.0011 (-0.3%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.053
+     full b: build lin  +0.62 (ML  +0.62) | mine on build's  +0.61 | on mine  +0.59 +- 0.03 | (mine - build)/MC  -0.8 | sigma(S8) build 0.0113 mine 0.0114 (+0.3%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     full c: build lin  +0.33 (ML  +0.33) | mine on build's  +0.33 | on mine  +0.32 +- 0.03 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0206 mine 0.0199 (-3.4%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     full d: build lin  -0.02 (ML  -0.02) | mine on build's  -0.02 | on mine  -0.02 +- 0.02 | (mine - build)/MC  +0.2 | sigma(S8) build 0.0185 mine 0.0183 (-1.3%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.051
+     full e: build lin  +0.02 (ML  +0.02) | mine on build's  +0.02 | on mine  +0.02 +- 0.03 | (mine - build)/MC  +0.2 | sigma(S8) build 0.0368 mine 0.0343 (-6.8%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.051
+  [white q5]
+     SO40 a: build lin  -3.90 (ML  -3.95) | mine on build's  -3.89 | on mine  -3.91 +- 0.04 | (mine - build)/MC  +0.7 | sigma(S8) build 0.0009 mine 0.0009 (+0.0%) | power build 0.146, mine(lin) on build's 0.143, on mine 0.141
+     SO40 b: build lin  -0.57 (ML  -0.53) | mine on build's  -0.51 | on mine  -0.48 +- 0.03 | (mine - build)/MC  +1.6 | sigma(S8) build 0.0200 mine 0.0199 (-0.4%) | power build 0.145, mine(lin) on build's 0.142, on mine 0.141
+     SO40 c: build lin  -0.50 (ML  -0.47) | mine on build's  -0.43 | on mine  -0.40 +- 0.03 | (mine - build)/MC  +1.8 | sigma(S8) build 0.0219 mine 0.0215 (-1.6%) | power build 0.146, mine(lin) on build's 0.142, on mine 0.141
+     SO40 d: build lin  +1.07 (ML  +1.11) | mine on build's  +1.09 | on mine  +1.08 +- 0.02 | (mine - build)/MC  -1.3 | sigma(S8) build 0.0160 mine 0.0158 (-0.9%) | power build 0.088, mine(lin) on build's 0.086, on mine 0.086
+     SO40 e: build lin  +1.64 (ML  +1.73) | mine on build's  +1.63 | on mine  +1.64 +- 0.04 | (mine - build)/MC  -2.4 | sigma(S8) build 0.0342 mine 0.0325 (-5.0%) | power build 0.072, mine(lin) on build's 0.072, on mine 0.071
+     full a: build lin  -6.16 (ML  -6.24) | mine on build's  -6.14 | on mine  -6.19 +- 0.07 | (mine - build)/MC  +0.7 | sigma(S8) build 0.0006 mine 0.0006 (+0.0%) | power build 0.402, mine(lin) on build's 0.389, on mine 0.382
+     full b: build lin  -0.89 (ML  -0.84) | mine on build's  -0.81 | on mine  -0.76 +- 0.05 | (mine - build)/MC  +1.6 | sigma(S8) build 0.0127 mine 0.0126 (-0.4%) | power build 0.397, mine(lin) on build's 0.385, on mine 0.379
+     full c: build lin  -0.79 (ML  -0.74) | mine on build's  -0.68 | on mine  -0.64 +- 0.05 | (mine - build)/MC  +1.8 | sigma(S8) build 0.0138 mine 0.0136 (-1.6%) | power build 0.399, mine(lin) on build's 0.386, on mine 0.380
+     full d: build lin  +1.90 (ML  +2.07) | mine on build's  +1.93 | on mine  +1.93 +- 0.04 | (mine - build)/MC  -3.4 | sigma(S8) build 0.0135 mine 0.0133 (-1.9%) | power build 0.146, mine(lin) on build's 0.154, on mine 0.153
+     full e: build lin  +2.60 (ML  +2.74) | mine on build's  +2.58 | on mine  +2.60 +- 0.06 | (mine - build)/MC  -2.4 | sigma(S8) build 0.0216 mine 0.0206 (-5.0%) | power build 0.117, mine(lin) on build's 0.116, on mine 0.114
+  [baseline_effi q6]
+     SO40 a: build lin  -0.13 (ML  -0.13) | mine on build's  -0.13 | on mine  -0.15 +- 0.02 | (mine - build)/MC  -0.8 | sigma(S8) build 0.0014 mine 0.0014 (-0.1%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     SO40 b: build lin  -0.12 (ML  -0.12) | mine on build's  -0.12 | on mine  -0.12 +- 0.02 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0148 mine 0.0149 (+0.2%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     SO40 c: build lin  -0.07 (ML  -0.07) | mine on build's  -0.06 | on mine  -0.07 +- 0.02 | (mine - build)/MC  -0.1 | sigma(S8) build 0.0248 mine 0.0239 (-3.4%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     SO40 d: build lin  +0.04 (ML  +0.04) | mine on build's  +0.04 | on mine  +0.04 +- 0.01 | (mine - build)/MC  -0.2 | sigma(S8) build 0.0196 mine 0.0195 (-0.6%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.051
+     SO40 e: build lin  +0.04 (ML  +0.05) | mine on build's  +0.05 | on mine  +0.04 +- 0.02 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0465 mine 0.0434 (-6.6%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.051
+     full a: build lin  -0.21 (ML  -0.21) | mine on build's  -0.20 | on mine  -0.24 +- 0.04 | (mine - build)/MC  -0.8 | sigma(S8) build 0.0009 mine 0.0009 (-0.1%) | power build 0.051, mine(lin) on build's 0.052, on mine 0.052
+     full b: build lin  -0.19 (ML  -0.19) | mine on build's  -0.18 | on mine  -0.20 +- 0.03 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0094 mine 0.0094 (+0.2%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.052
+     full c: build lin  -0.11 (ML  -0.11) | mine on build's  -0.10 | on mine  -0.11 +- 0.04 | (mine - build)/MC  -0.1 | sigma(S8) build 0.0157 mine 0.0151 (-3.4%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.052
+     full d: build lin  +0.06 (ML  +0.06) | mine on build's  +0.07 | on mine  +0.05 +- 0.02 | (mine - build)/MC  -0.2 | sigma(S8) build 0.0165 mine 0.0163 (-1.6%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.052
+     full e: build lin  +0.07 (ML  +0.07) | mine on build's  +0.08 | on mine  +0.06 +- 0.04 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0294 mine 0.0274 (-6.6%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.052
+  [baseline_effii q6]
+     SO40 a: build lin  -0.23 (ML  -0.23) | mine on build's  -0.23 | on mine  -0.25 +- 0.02 | (mine - build)/MC  -0.7 | sigma(S8) build 0.0014 mine 0.0014 (-0.1%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     SO40 b: build lin  -0.20 (ML  -0.20) | mine on build's  -0.19 | on mine  -0.20 +- 0.02 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0149 mine 0.0150 (+0.2%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     SO40 c: build lin  -0.11 (ML  -0.11) | mine on build's  -0.11 | on mine  -0.12 +- 0.02 | (mine - build)/MC  -0.1 | sigma(S8) build 0.0250 mine 0.0241 (-3.4%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     SO40 d: build lin  +0.05 (ML  +0.05) | mine on build's  +0.05 | on mine  +0.04 +- 0.01 | (mine - build)/MC  -0.2 | sigma(S8) build 0.0196 mine 0.0195 (-0.6%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     SO40 e: build lin  +0.05 (ML  +0.05) | mine on build's  +0.05 | on mine  +0.04 +- 0.02 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0467 mine 0.0436 (-6.6%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     full a: build lin  -0.37 (ML  -0.37) | mine on build's  -0.37 | on mine  -0.40 +- 0.04 | (mine - build)/MC  -0.7 | sigma(S8) build 0.0009 mine 0.0009 (-0.1%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.053
+     full b: build lin  -0.31 (ML  -0.31) | mine on build's  -0.30 | on mine  -0.32 +- 0.03 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0094 mine 0.0095 (+0.2%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.052
+     full c: build lin  -0.18 (ML  -0.18) | mine on build's  -0.17 | on mine  -0.18 +- 0.04 | (mine - build)/MC  -0.1 | sigma(S8) build 0.0158 mine 0.0153 (-3.4%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.052
+     full d: build lin  +0.07 (ML  +0.07) | mine on build's  +0.07 | on mine  +0.06 +- 0.02 | (mine - build)/MC  -0.2 | sigma(S8) build 0.0166 mine 0.0163 (-1.6%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.052
+     full e: build lin  +0.07 (ML  +0.08) | mine on build's  +0.08 | on mine  +0.07 +- 0.04 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0295 mine 0.0276 (-6.6%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.052
+  [baseline_f0.5 q6]
+     SO40 a: build lin  -0.28 (ML  -0.28) | mine on build's  -0.28 | on mine  -0.29 +- 0.02 | (mine - build)/MC  -0.6 | sigma(S8) build 0.0013 mine 0.0013 (-0.1%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     SO40 b: build lin  -0.10 (ML  -0.10) | mine on build's  -0.10 | on mine  -0.10 +- 0.02 | (mine - build)/MC  +0.1 | sigma(S8) build 0.0140 mine 0.0140 (+0.2%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     SO40 c: build lin  -0.06 (ML  -0.06) | mine on build's  -0.05 | on mine  -0.06 +- 0.02 | (mine - build)/MC  -0.1 | sigma(S8) build 0.0232 mine 0.0224 (-3.4%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     SO40 d: build lin  +0.04 (ML  +0.04) | mine on build's  +0.05 | on mine  +0.04 +- 0.01 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0190 mine 0.0189 (-0.7%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.051
+     SO40 e: build lin  +0.06 (ML  +0.06) | mine on build's  +0.07 | on mine  +0.05 +- 0.02 | (mine - build)/MC  -0.5 | sigma(S8) build 0.0427 mine 0.0399 (-6.5%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.051
+     full a: build lin  -0.44 (ML  -0.44) | mine on build's  -0.44 | on mine  -0.46 +- 0.03 | (mine - build)/MC  -0.6 | sigma(S8) build 0.0008 mine 0.0008 (-0.1%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.052
+     full b: build lin  -0.16 (ML  -0.16) | mine on build's  -0.15 | on mine  -0.15 +- 0.03 | (mine - build)/MC  +0.1 | sigma(S8) build 0.0088 mine 0.0088 (+0.2%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.052
+     full c: build lin  -0.10 (ML  -0.10) | mine on build's  -0.08 | on mine  -0.10 +- 0.03 | (mine - build)/MC  -0.1 | sigma(S8) build 0.0147 mine 0.0142 (-3.4%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.052
+     full d: build lin  +0.07 (ML  +0.07) | mine on build's  +0.08 | on mine  +0.07 +- 0.02 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0160 mine 0.0157 (-1.8%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.052
+     full e: build lin  +0.10 (ML  +0.10) | mine on build's  +0.11 | on mine  +0.09 +- 0.03 | (mine - build)/MC  -0.5 | sigma(S8) build 0.0270 mine 0.0253 (-6.5%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.052
+  [baseline_f1 q6]
+     SO40 a: build lin  +0.98 (ML  +0.98) | mine on build's  +0.98 | on mine  +0.96 +- 0.02 | (mine - build)/MC  -0.9 | sigma(S8) build 0.0013 mine 0.0013 (-0.1%) | power build 0.053, mine(lin) on build's 0.053, on mine 0.053
+     SO40 b: build lin  +0.67 (ML  +0.67) | mine on build's  +0.67 | on mine  +0.66 +- 0.02 | (mine - build)/MC  -0.2 | sigma(S8) build 0.0140 mine 0.0140 (+0.2%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     SO40 c: build lin  +0.40 (ML  +0.40) | mine on build's  +0.40 | on mine  +0.39 +- 0.02 | (mine - build)/MC  -0.5 | sigma(S8) build 0.0232 mine 0.0224 (-3.4%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     SO40 d: build lin  -0.02 (ML  -0.02) | mine on build's  -0.02 | on mine  -0.02 +- 0.01 | (mine - build)/MC  -0.4 | sigma(S8) build 0.0190 mine 0.0189 (-0.7%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.051
+     SO40 e: build lin  +0.04 (ML  +0.04) | mine on build's  +0.04 | on mine  +0.03 +- 0.02 | (mine - build)/MC  -0.5 | sigma(S8) build 0.0427 mine 0.0399 (-6.5%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.051
+     full a: build lin  +1.55 (ML  +1.55) | mine on build's  +1.55 | on mine  +1.51 +- 0.04 | (mine - build)/MC  -0.9 | sigma(S8) build 0.0008 mine 0.0008 (-0.1%) | power build 0.058, mine(lin) on build's 0.058, on mine 0.059
+     full b: build lin  +1.06 (ML  +1.05) | mine on build's  +1.05 | on mine  +1.05 +- 0.03 | (mine - build)/MC  -0.2 | sigma(S8) build 0.0088 mine 0.0088 (+0.2%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.053
+     full c: build lin  +0.64 (ML  +0.64) | mine on build's  +0.64 | on mine  +0.62 +- 0.04 | (mine - build)/MC  -0.5 | sigma(S8) build 0.0147 mine 0.0142 (-3.4%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.053
+     full d: build lin  +0.00 (ML  +0.00) | mine on build's  +0.01 | on mine  -0.01 +- 0.02 | (mine - build)/MC  -0.4 | sigma(S8) build 0.0160 mine 0.0157 (-1.8%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.052
+     full e: build lin  +0.06 (ML  +0.06) | mine on build's  +0.06 | on mine  +0.04 +- 0.04 | (mine - build)/MC  -0.5 | sigma(S8) build 0.0270 mine 0.0253 (-6.5%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.052
+  [baseline_f2 q6]
+     SO40 a: build lin  +2.07 (ML  +2.06) | mine on build's  +2.07 | on mine  +2.04 +- 0.03 | (mine - build)/MC  -0.6 | sigma(S8) build 0.0013 mine 0.0013 (-0.1%) | power build 0.066, mine(lin) on build's 0.066, on mine 0.067
+     SO40 b: build lin  +1.45 (ML  +1.44) | mine on build's  +1.44 | on mine  +1.44 +- 0.03 | (mine - build)/MC  -0.1 | sigma(S8) build 0.0140 mine 0.0140 (+0.2%) | power build 0.054, mine(lin) on build's 0.054, on mine 0.055
+     SO40 c: build lin  +0.92 (ML  +0.92) | mine on build's  +0.92 | on mine  +0.92 +- 0.03 | (mine - build)/MC  +0.2 | sigma(S8) build 0.0232 mine 0.0224 (-3.4%) | power build 0.054, mine(lin) on build's 0.054, on mine 0.055
+     SO40 d: build lin  -0.10 (ML  -0.10) | mine on build's  -0.10 | on mine  -0.11 +- 0.02 | (mine - build)/MC  -1.1 | sigma(S8) build 0.0190 mine 0.0189 (-0.7%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.053
+     SO40 e: build lin  +0.04 (ML  +0.03) | mine on build's  +0.04 | on mine  +0.03 +- 0.03 | (mine - build)/MC  -0.1 | sigma(S8) build 0.0427 mine 0.0399 (-6.5%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.053
+     full a: build lin  +3.27 (ML  +3.26) | mine on build's  +3.27 | on mine  +3.23 +- 0.05 | (mine - build)/MC  -0.6 | sigma(S8) build 0.0008 mine 0.0008 (-0.1%) | power build 0.095, mine(lin) on build's 0.097, on mine 0.099
+     full b: build lin  +2.29 (ML  +2.28) | mine on build's  +2.28 | on mine  +2.28 +- 0.04 | (mine - build)/MC  -0.1 | sigma(S8) build 0.0088 mine 0.0088 (+0.2%) | power build 0.061, mine(lin) on build's 0.062, on mine 0.063
+     full c: build lin  +1.46 (ML  +1.45) | mine on build's  +1.45 | on mine  +1.46 +- 0.05 | (mine - build)/MC  +0.2 | sigma(S8) build 0.0147 mine 0.0142 (-3.4%) | power build 0.061, mine(lin) on build's 0.062, on mine 0.063
+     full d: build lin  -0.08 (ML  -0.07) | mine on build's  -0.08 | on mine  -0.09 +- 0.03 | (mine - build)/MC  -0.6 | sigma(S8) build 0.0160 mine 0.0157 (-1.8%) | power build 0.056, mine(lin) on build's 0.056, on mine 0.057
+     full e: build lin  +0.06 (ML  +0.05) | mine on build's  +0.06 | on mine  +0.05 +- 0.05 | (mine - build)/MC  -0.1 | sigma(S8) build 0.0270 mine 0.0253 (-6.5%) | power build 0.055, mine(lin) on build's 0.056, on mine 0.057
+  [goal_effi q6]
+     SO40 a: build lin  -0.22 (ML  -0.22) | mine on build's  -0.22 | on mine  -0.25 +- 0.03 | (mine - build)/MC  -0.9 | sigma(S8) build 0.0011 mine 0.0011 (+0.0%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.052
+     SO40 b: build lin  -0.20 (ML  -0.20) | mine on build's  -0.19 | on mine  -0.19 +- 0.02 | (mine - build)/MC  +0.5 | sigma(S8) build 0.0119 mine 0.0119 (+0.1%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.052
+     SO40 c: build lin  -0.11 (ML  -0.11) | mine on build's  -0.10 | on mine  -0.11 +- 0.03 | (mine - build)/MC  +0.0 | sigma(S8) build 0.0190 mine 0.0183 (-3.7%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.052
+     SO40 d: build lin  +0.08 (ML  +0.08) | mine on build's  +0.09 | on mine  +0.07 +- 0.01 | (mine - build)/MC  -0.7 | sigma(S8) build 0.0186 mine 0.0185 (-0.8%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     SO40 e: build lin  +0.10 (ML  +0.10) | mine on build's  +0.11 | on mine  +0.08 +- 0.03 | (mine - build)/MC  -0.8 | sigma(S8) build 0.0373 mine 0.0349 (-6.5%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     full a: build lin  -0.35 (ML  -0.35) | mine on build's  -0.35 | on mine  -0.39 +- 0.04 | (mine - build)/MC  -0.9 | sigma(S8) build 0.0007 mine 0.0007 (+0.0%) | power build 0.054, mine(lin) on build's 0.054, on mine 0.054
+     full b: build lin  -0.31 (ML  -0.31) | mine on build's  -0.30 | on mine  -0.29 +- 0.04 | (mine - build)/MC  +0.5 | sigma(S8) build 0.0075 mine 0.0076 (+0.1%) | power build 0.053, mine(lin) on build's 0.053, on mine 0.054
+     full c: build lin  -0.18 (ML  -0.18) | mine on build's  -0.16 | on mine  -0.18 +- 0.04 | (mine - build)/MC  +0.0 | sigma(S8) build 0.0120 mine 0.0116 (-3.7%) | power build 0.053, mine(lin) on build's 0.053, on mine 0.054
+     full d: build lin  +0.13 (ML  +0.13) | mine on build's  +0.14 | on mine  +0.11 +- 0.03 | (mine - build)/MC  -0.7 | sigma(S8) build 0.0154 mine 0.0151 (-2.2%) | power build 0.053, mine(lin) on build's 0.053, on mine 0.054
+     full e: build lin  +0.15 (ML  +0.16) | mine on build's  +0.17 | on mine  +0.13 +- 0.04 | (mine - build)/MC  -0.8 | sigma(S8) build 0.0236 mine 0.0220 (-6.5%) | power build 0.053, mine(lin) on build's 0.053, on mine 0.054
+  [goal_effii q6]
+     SO40 a: build lin  -0.44 (ML  -0.44) | mine on build's  -0.44 | on mine  -0.47 +- 0.03 | (mine - build)/MC  -0.9 | sigma(S8) build 0.0011 mine 0.0011 (+0.0%) | power build 0.053, mine(lin) on build's 0.053, on mine 0.053
+     SO40 b: build lin  -0.35 (ML  -0.35) | mine on build's  -0.34 | on mine  -0.34 +- 0.02 | (mine - build)/MC  +0.5 | sigma(S8) build 0.0120 mine 0.0120 (+0.1%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.052
+     SO40 c: build lin  -0.21 (ML  -0.20) | mine on build's  -0.19 | on mine  -0.21 +- 0.03 | (mine - build)/MC  -0.0 | sigma(S8) build 0.0193 mine 0.0186 (-3.7%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.052
+     SO40 d: build lin  +0.09 (ML  +0.10) | mine on build's  +0.10 | on mine  +0.09 +- 0.01 | (mine - build)/MC  -0.7 | sigma(S8) build 0.0187 mine 0.0186 (-0.8%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.052
+     SO40 e: build lin  +0.10 (ML  +0.11) | mine on build's  +0.12 | on mine  +0.09 +- 0.03 | (mine - build)/MC  -0.9 | sigma(S8) build 0.0377 mine 0.0353 (-6.5%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.052
+     full a: build lin  -0.70 (ML  -0.70) | mine on build's  -0.69 | on mine  -0.74 +- 0.04 | (mine - build)/MC  -0.9 | sigma(S8) build 0.0007 mine 0.0007 (+0.0%) | power build 0.057, mine(lin) on build's 0.057, on mine 0.057
+     full b: build lin  -0.55 (ML  -0.55) | mine on build's  -0.54 | on mine  -0.54 +- 0.03 | (mine - build)/MC  +0.5 | sigma(S8) build 0.0076 mine 0.0076 (+0.1%) | power build 0.055, mine(lin) on build's 0.055, on mine 0.055
+     full c: build lin  -0.33 (ML  -0.32) | mine on build's  -0.31 | on mine  -0.32 +- 0.04 | (mine - build)/MC  -0.0 | sigma(S8) build 0.0122 mine 0.0117 (-3.7%) | power build 0.055, mine(lin) on build's 0.055, on mine 0.055
+     full d: build lin  +0.15 (ML  +0.15) | mine on build's  +0.16 | on mine  +0.13 +- 0.03 | (mine - build)/MC  -0.7 | sigma(S8) build 0.0155 mine 0.0152 (-2.2%) | power build 0.054, mine(lin) on build's 0.054, on mine 0.055
+     full e: build lin  +0.17 (ML  +0.17) | mine on build's  +0.18 | on mine  +0.14 +- 0.04 | (mine - build)/MC  -0.9 | sigma(S8) build 0.0238 mine 0.0223 (-6.5%) | power build 0.054, mine(lin) on build's 0.054, on mine 0.055
+  [goal_f0.5 q6]
+     SO40 a: build lin  -0.61 (ML  -0.61) | mine on build's  -0.61 | on mine  -0.61 +- 0.02 | (mine - build)/MC  +0.1 | sigma(S8) build 0.0010 mine 0.0010 (+0.0%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.052
+     SO40 b: build lin  -0.26 (ML  -0.26) | mine on build's  -0.25 | on mine  -0.24 +- 0.02 | (mine - build)/MC  +1.0 | sigma(S8) build 0.0111 mine 0.0111 (+0.1%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.052
+     SO40 c: build lin  -0.15 (ML  -0.15) | mine on build's  -0.14 | on mine  -0.16 +- 0.02 | (mine - build)/MC  -0.1 | sigma(S8) build 0.0176 mine 0.0170 (-3.7%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.052
+     SO40 d: build lin  +0.10 (ML  +0.10) | mine on build's  +0.11 | on mine  +0.09 +- 0.01 | (mine - build)/MC  -0.5 | sigma(S8) build 0.0180 mine 0.0178 (-1.0%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     SO40 e: build lin  +0.13 (ML  +0.13) | mine on build's  +0.14 | on mine  +0.11 +- 0.02 | (mine - build)/MC  -1.1 | sigma(S8) build 0.0338 mine 0.0317 (-6.3%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     full a: build lin  -0.96 (ML  -0.97) | mine on build's  -0.96 | on mine  -0.96 +- 0.04 | (mine - build)/MC  +0.1 | sigma(S8) build 0.0006 mine 0.0006 (+0.0%) | power build 0.055, mine(lin) on build's 0.055, on mine 0.055
+     full b: build lin  -0.41 (ML  -0.41) | mine on build's  -0.40 | on mine  -0.37 +- 0.03 | (mine - build)/MC  +1.0 | sigma(S8) build 0.0070 mine 0.0070 (+0.1%) | power build 0.054, mine(lin) on build's 0.054, on mine 0.054
+     full c: build lin  -0.24 (ML  -0.24) | mine on build's  -0.22 | on mine  -0.25 +- 0.04 | (mine - build)/MC  -0.1 | sigma(S8) build 0.0112 mine 0.0107 (-3.7%) | power build 0.054, mine(lin) on build's 0.054, on mine 0.054
+     full d: build lin  +0.16 (ML  +0.17) | mine on build's  +0.18 | on mine  +0.15 +- 0.02 | (mine - build)/MC  -0.7 | sigma(S8) build 0.0147 mine 0.0143 (-2.4%) | power build 0.053, mine(lin) on build's 0.053, on mine 0.054
+     full e: build lin  +0.20 (ML  +0.21) | mine on build's  +0.23 | on mine  +0.17 +- 0.03 | (mine - build)/MC  -1.1 | sigma(S8) build 0.0214 mine 0.0200 (-6.3%) | power build 0.053, mine(lin) on build's 0.053, on mine 0.054
+  [goal_f1 q6]
+     SO40 a: build lin  +1.40 (ML  +1.40) | mine on build's  +1.40 | on mine  +1.38 +- 0.03 | (mine - build)/MC  -0.7 | sigma(S8) build 0.0010 mine 0.0010 (+0.0%) | power build 0.056, mine(lin) on build's 0.056, on mine 0.057
+     SO40 b: build lin  +0.93 (ML  +0.92) | mine on build's  +0.92 | on mine  +0.94 +- 0.02 | (mine - build)/MC  +0.6 | sigma(S8) build 0.0111 mine 0.0111 (+0.1%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.052
+     SO40 c: build lin  +0.58 (ML  +0.57) | mine on build's  +0.58 | on mine  +0.57 +- 0.03 | (mine - build)/MC  -0.2 | sigma(S8) build 0.0176 mine 0.0170 (-3.7%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.052
+     SO40 d: build lin  -0.02 (ML  -0.02) | mine on build's  -0.02 | on mine  -0.03 +- 0.02 | (mine - build)/MC  -0.7 | sigma(S8) build 0.0180 mine 0.0178 (-1.0%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     SO40 e: build lin  +0.05 (ML  +0.05) | mine on build's  +0.06 | on mine  +0.03 +- 0.03 | (mine - build)/MC  -0.7 | sigma(S8) build 0.0338 mine 0.0317 (-6.3%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     full a: build lin  +2.22 (ML  +2.21) | mine on build's  +2.21 | on mine  +2.18 +- 0.04 | (mine - build)/MC  -0.7 | sigma(S8) build 0.0006 mine 0.0006 (+0.0%) | power build 0.065, mine(lin) on build's 0.065, on mine 0.068
+     full b: build lin  +1.46 (ML  +1.46) | mine on build's  +1.46 | on mine  +1.48 +- 0.04 | (mine - build)/MC  +0.6 | sigma(S8) build 0.0070 mine 0.0070 (+0.1%) | power build 0.053, mine(lin) on build's 0.054, on mine 0.055
+     full c: build lin  +0.91 (ML  +0.91) | mine on build's  +0.91 | on mine  +0.90 +- 0.04 | (mine - build)/MC  -0.2 | sigma(S8) build 0.0112 mine 0.0107 (-3.7%) | power build 0.053, mine(lin) on build's 0.054, on mine 0.055
+     full d: build lin  +0.01 (ML  +0.01) | mine on build's  +0.02 | on mine  -0.01 +- 0.03 | (mine - build)/MC  -0.7 | sigma(S8) build 0.0147 mine 0.0143 (-2.4%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.053
+     full e: build lin  +0.08 (ML  +0.08) | mine on build's  +0.09 | on mine  +0.05 +- 0.04 | (mine - build)/MC  -0.7 | sigma(S8) build 0.0214 mine 0.0200 (-6.3%) | power build 0.052, mine(lin) on build's 0.052, on mine 0.053
+  [goal_f2 q6]
+     SO40 a: build lin  +3.17 (ML  +3.15) | mine on build's  +3.17 | on mine  +3.14 +- 0.03 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0010 mine 0.0010 (+0.0%) | power build 0.088, mine(lin) on build's 0.090, on mine 0.092
+     SO40 b: build lin  +2.14 (ML  +2.12) | mine on build's  +2.13 | on mine  +2.15 +- 0.03 | (mine - build)/MC  +1.0 | sigma(S8) build 0.0111 mine 0.0111 (+0.1%) | power build 0.059, mine(lin) on build's 0.060, on mine 0.062
+     SO40 c: build lin  +1.39 (ML  +1.38) | mine on build's  +1.39 | on mine  +1.41 +- 0.04 | (mine - build)/MC  +0.8 | sigma(S8) build 0.0176 mine 0.0170 (-3.7%) | power build 0.059, mine(lin) on build's 0.060, on mine 0.062
+     SO40 d: build lin  -0.16 (ML  -0.15) | mine on build's  -0.15 | on mine  -0.18 +- 0.02 | (mine - build)/MC  -1.7 | sigma(S8) build 0.0180 mine 0.0178 (-1.0%) | power build 0.055, mine(lin) on build's 0.055, on mine 0.056
+     SO40 e: build lin  +0.02 (ML  +0.01) | mine on build's  +0.02 | on mine  -0.01 +- 0.03 | (mine - build)/MC  -0.5 | sigma(S8) build 0.0338 mine 0.0317 (-6.3%) | power build 0.055, mine(lin) on build's 0.055, on mine 0.056
+     full a: build lin  +5.01 (ML  +4.98) | mine on build's  +5.01 | on mine  +4.97 +- 0.05 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0006 mine 0.0006 (+0.0%) | power build 0.175, mine(lin) on build's 0.180, on mine 0.191
+     full b: build lin  +3.38 (ML  +3.36) | mine on build's  +3.37 | on mine  +3.40 +- 0.05 | (mine - build)/MC  +1.0 | sigma(S8) build 0.0070 mine 0.0070 (+0.1%) | power build 0.076, mine(lin) on build's 0.078, on mine 0.083
+     full c: build lin  +2.20 (ML  +2.18) | mine on build's  +2.19 | on mine  +2.22 +- 0.06 | (mine - build)/MC  +0.8 | sigma(S8) build 0.0112 mine 0.0107 (-3.7%) | power build 0.076, mine(lin) on build's 0.078, on mine 0.083
+     full d: build lin  -0.13 (ML  -0.12) | mine on build's  -0.12 | on mine  -0.16 +- 0.04 | (mine - build)/MC  -1.1 | sigma(S8) build 0.0147 mine 0.0143 (-2.4%) | power build 0.063, mine(lin) on build's 0.063, on mine 0.066
+     full e: build lin  +0.03 (ML  +0.02) | mine on build's  +0.03 | on mine  -0.01 +- 0.05 | (mine - build)/MC  -0.5 | sigma(S8) build 0.0214 mine 0.0200 (-6.3%) | power build 0.062, mine(lin) on build's 0.063, on mine 0.066
+  [lowP_effi q6]
+     SO40 a: build lin  -0.01 (ML  -0.01) | mine on build's  -0.01 | on mine  -0.01 +- 0.02 | (mine - build)/MC  +0.4 | sigma(S8) build 0.0023 mine 0.0023 (-0.4%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.050
+     SO40 b: build lin  -0.02 (ML  -0.02) | mine on build's  -0.02 | on mine  -0.03 +- 0.02 | (mine - build)/MC  -0.5 | sigma(S8) build 0.0227 mine 0.0228 (+0.4%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.050
+     SO40 c: build lin  -0.01 (ML  -0.01) | mine on build's  -0.01 | on mine  -0.02 +- 0.02 | (mine - build)/MC  -0.4 | sigma(S8) build 0.0440 mine 0.0424 (-3.5%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.050
+     SO40 d: build lin  +0.00 (ML  +0.00) | mine on build's  +0.01 | on mine  +0.01 +- 0.01 | (mine - build)/MC  +0.0 | sigma(S8) build 0.0246 mine 0.0246 (-0.3%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.050
+     SO40 e: build lin  +0.00 (ML  +0.00) | mine on build's  +0.00 | on mine  -0.00 +- 0.02 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0772 mine 0.0716 (-7.2%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.050
+     full a: build lin  -0.02 (ML  -0.02) | mine on build's  -0.02 | on mine  -0.01 +- 0.03 | (mine - build)/MC  +0.4 | sigma(S8) build 0.0015 mine 0.0015 (-0.4%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.050
+     full b: build lin  -0.04 (ML  -0.04) | mine on build's  -0.04 | on mine  -0.05 +- 0.02 | (mine - build)/MC  -0.5 | sigma(S8) build 0.0144 mine 0.0144 (+0.4%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.050
+     full c: build lin  -0.02 (ML  -0.02) | mine on build's  -0.02 | on mine  -0.03 +- 0.03 | (mine - build)/MC  -0.4 | sigma(S8) build 0.0278 mine 0.0268 (-3.5%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.050
+     full d: build lin  +0.01 (ML  +0.01) | mine on build's  +0.01 | on mine  +0.00 +- 0.02 | (mine - build)/MC  -0.1 | sigma(S8) build 0.0202 mine 0.0200 (-0.9%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.050
+     full e: build lin  +0.00 (ML  +0.00) | mine on build's  +0.01 | on mine  -0.01 +- 0.03 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0488 mine 0.0453 (-7.2%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.050
+  [lowP_f1 q6]
+     SO40 a: build lin  +0.39 (ML  +0.38) | mine on build's  +0.39 | on mine  +0.39 +- 0.02 | (mine - build)/MC  +0.3 | sigma(S8) build 0.0023 mine 0.0022 (-0.4%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.051
+     SO40 b: build lin  +0.27 (ML  +0.27) | mine on build's  +0.27 | on mine  +0.26 +- 0.02 | (mine - build)/MC  -0.7 | sigma(S8) build 0.0219 mine 0.0219 (+0.4%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.050
+     SO40 c: build lin  +0.15 (ML  +0.15) | mine on build's  +0.15 | on mine  +0.14 +- 0.02 | (mine - build)/MC  -0.6 | sigma(S8) build 0.0422 mine 0.0407 (-3.5%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.050
+     SO40 d: build lin  -0.02 (ML  -0.02) | mine on build's  -0.02 | on mine  -0.02 +- 0.01 | (mine - build)/MC  +0.0 | sigma(S8) build 0.0242 mine 0.0241 (-0.4%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.050
+     SO40 e: build lin  +0.01 (ML  +0.01) | mine on build's  +0.01 | on mine  +0.00 +- 0.02 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0734 mine 0.0682 (-7.1%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.050
+     full a: build lin  +0.61 (ML  +0.61) | mine on build's  +0.61 | on mine  +0.62 +- 0.03 | (mine - build)/MC  +0.3 | sigma(S8) build 0.0014 mine 0.0014 (-0.4%) | power build 0.051, mine(lin) on build's 0.051, on mine 0.051
+     full b: build lin  +0.43 (ML  +0.43) | mine on build's  +0.43 | on mine  +0.41 +- 0.02 | (mine - build)/MC  -0.7 | sigma(S8) build 0.0138 mine 0.0139 (+0.4%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.051
+     full c: build lin  +0.24 (ML  +0.24) | mine on build's  +0.23 | on mine  +0.22 +- 0.03 | (mine - build)/MC  -0.6 | sigma(S8) build 0.0267 mine 0.0258 (-3.5%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.051
+     full d: build lin  -0.02 (ML  -0.02) | mine on build's  -0.02 | on mine  -0.02 +- 0.02 | (mine - build)/MC  -0.1 | sigma(S8) build 0.0198 mine 0.0197 (-0.9%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.050
+     full e: build lin  +0.01 (ML  +0.01) | mine on build's  +0.01 | on mine  +0.01 +- 0.03 | (mine - build)/MC  -0.3 | sigma(S8) build 0.0464 mine 0.0431 (-7.1%) | power build 0.050, mine(lin) on build's 0.050, on mine 0.050
+  [white q6]
+     SO40 a: build lin  -2.05 (ML  -2.07) | mine on build's  -2.04 | on mine  -2.08 +- 0.04 | (mine - build)/MC  -0.2 | sigma(S8) build 0.0011 mine 0.0011 (-0.1%) | power build 0.075, mine(lin) on build's 0.075, on mine 0.076
+     SO40 b: build lin  -0.11 (ML  -0.10) | mine on build's  -0.08 | on mine  -0.07 +- 0.03 | (mine - build)/MC  +1.0 | sigma(S8) build 0.0243 mine 0.0242 (-0.2%) | power build 0.076, mine(lin) on build's 0.075, on mine 0.076
+     SO40 c: build lin  -0.13 (ML  -0.12) | mine on build's  -0.09 | on mine  -0.08 +- 0.03 | (mine - build)/MC  +1.2 | sigma(S8) build 0.0268 mine 0.0265 (-1.3%) | power build 0.076, mine(lin) on build's 0.075, on mine 0.076
+     SO40 d: build lin  +0.63 (ML  +0.65) | mine on build's  +0.65 | on mine  +0.65 +- 0.02 | (mine - build)/MC  +0.2 | sigma(S8) build 0.0166 mine 0.0165 (-0.8%) | power build 0.062, mine(lin) on build's 0.063, on mine 0.063
+     SO40 e: build lin  +1.07 (ML  +1.11) | mine on build's  +1.06 | on mine  +1.08 +- 0.04 | (mine - build)/MC  -0.8 | sigma(S8) build 0.0418 mine 0.0397 (-5.1%) | power build 0.057, mine(lin) on build's 0.057, on mine 0.057
+     full a: build lin  -3.24 (ML  -3.27) | mine on build's  -3.23 | on mine  -3.29 +- 0.07 | (mine - build)/MC  -0.2 | sigma(S8) build 0.0007 mine 0.0007 (-0.1%) | power build 0.128, mine(lin) on build's 0.126, on mine 0.129
+     full b: build lin  -0.17 (ML  -0.16) | mine on build's  -0.12 | on mine  -0.11 +- 0.05 | (mine - build)/MC  +1.0 | sigma(S8) build 0.0154 mine 0.0153 (-0.2%) | power build 0.128, mine(lin) on build's 0.126, on mine 0.129
+     full c: build lin  -0.21 (ML  -0.20) | mine on build's  -0.14 | on mine  -0.13 +- 0.05 | (mine - build)/MC  +1.2 | sigma(S8) build 0.0170 mine 0.0168 (-1.3%) | power build 0.128, mine(lin) on build's 0.127, on mine 0.130
+     full d: build lin  +1.12 (ML  +1.18) | mine on build's  +1.14 | on mine  +1.16 +- 0.04 | (mine - build)/MC  -0.6 | sigma(S8) build 0.0144 mine 0.0142 (-1.5%) | power build 0.080, mine(lin) on build's 0.083, on mine 0.085
+     full e: build lin  +1.69 (ML  +1.75) | mine on build's  +1.68 | on mine  +1.70 +- 0.06 | (mine - build)/MC  -0.8 | sigma(S8) build 0.0265 mine 0.0251 (-5.1%) | power build 0.069, mine(lin) on build's 0.069, on mine 0.070
+max |my linearised on the build's Delta - build's linearised| = 0.111 sigma over 260 (setup, cut, survey, config)
+max |sigma(S8) mine / build - 1| = 0.072
+(my Delta - build ML)/MC over all 260 linearised rows: mean -0.21, rms 0.79, max |.| 3.4  (rows are strongly correlated: same skies)
+
+=== (C) Fisher sigmas (S8, Om, s8) at the truth: build vs mine, configs a and d, q5 ===
+  baseline_effi  SO40 a: S8 0.00111 vs 0.00111 (-0.01%); Om 0.00215 vs 0.00213 (-0.82%); s8 0.00195 vs 0.00193 (-1.13%)
+  baseline_effi  SO40 d: S8 0.01845 vs 0.01830 (-0.84%); Om 0.00929 vs 0.00907 (-2.37%); s8 0.00800 vs 0.00808 (+0.95%)
+  baseline_effi  full a: S8 0.00070 vs 0.00070 (-0.01%); Om 0.00136 vs 0.00135 (-0.82%); s8 0.00123 vs 0.00122 (-1.13%)
+  baseline_effi  full d: S8 0.01532 vs 0.01499 (-2.18%); Om 0.00795 vs 0.00766 (-3.75%); s8 0.00577 vs 0.00581 (+0.59%)
+  baseline_effii SO40 a: S8 0.00111 vs 0.00111 (-0.01%); Om 0.00216 vs 0.00214 (-0.83%); s8 0.00196 vs 0.00194 (-1.13%)
+  baseline_effii full a: S8 0.00070 vs 0.00070 (-0.01%); Om 0.00137 vs 0.00136 (-0.83%); s8 0.00124 vs 0.00122 (-1.13%)
+  baseline_f0.5  SO40 a: S8 0.00104 vs 0.00104 (+0.02%); Om 0.00202 vs 0.00201 (-0.80%); s8 0.00185 vs 0.00183 (-1.10%)
+  baseline_f0.5  SO40 d: S8 0.01794 vs 0.01777 (-0.96%); Om 0.00914 vs 0.00891 (-2.49%); s8 0.00755 vs 0.00762 (+0.96%)
+  baseline_f0.5  full a: S8 0.00066 vs 0.00066 (+0.02%); Om 0.00128 vs 0.00127 (-0.80%); s8 0.00117 vs 0.00116 (-1.10%)
+  baseline_f0.5  full d: S8 0.01476 vs 0.01441 (-2.35%); Om 0.00773 vs 0.00743 (-3.91%); s8 0.00543 vs 0.00546 (+0.54%)
+  baseline_f1    SO40 a: S8 0.00104 vs 0.00104 (+0.02%); Om 0.00202 vs 0.00201 (-0.80%); s8 0.00185 vs 0.00183 (-1.10%)
+  baseline_f1    SO40 b: S8 0.01183 vs 0.01184 (+0.10%); Om 0.00597 vs 0.00592 (-0.71%); s8 0.00465 vs 0.00470 (+1.07%)
+  baseline_f1    SO40 c: S8 0.01868 vs 0.01802 (-3.53%); Om 0.01177 vs 0.01120 (-4.86%); s8 0.00475 vs 0.00479 (+0.94%)
+  baseline_f1    SO40 d: S8 0.01794 vs 0.01777 (-0.96%); Om 0.00914 vs 0.00891 (-2.49%); s8 0.00755 vs 0.00762 (+0.96%)
+  baseline_f1    SO40 e: S8 0.03505 vs 0.03281 (-6.39%); Om 0.01874 vs 0.01726 (-7.92%); s8 0.01119 vs 0.01094 (-2.27%)
+  baseline_f1    full a: S8 0.00066 vs 0.00066 (+0.02%); Om 0.00128 vs 0.00127 (-0.80%); s8 0.00117 vs 0.00116 (-1.10%)
+  baseline_f1    full b: S8 0.00748 vs 0.00749 (+0.10%); Om 0.00377 vs 0.00375 (-0.71%); s8 0.00294 vs 0.00297 (+1.07%)
+  baseline_f1    full c: S8 0.01181 vs 0.01139 (-3.53%); Om 0.00744 vs 0.00708 (-4.86%); s8 0.00300 vs 0.00303 (+0.94%)
+  baseline_f1    full d: S8 0.01476 vs 0.01441 (-2.35%); Om 0.00773 vs 0.00743 (-3.91%); s8 0.00543 vs 0.00546 (+0.54%)
+  baseline_f1    full e: S8 0.02217 vs 0.02075 (-6.39%); Om 0.01185 vs 0.01091 (-7.92%); s8 0.00708 vs 0.00692 (-2.27%)
+  baseline_f2    SO40 a: S8 0.00104 vs 0.00104 (+0.02%); Om 0.00202 vs 0.00201 (-0.80%); s8 0.00185 vs 0.00183 (-1.10%)
+  baseline_f2    SO40 d: S8 0.01794 vs 0.01777 (-0.96%); Om 0.00914 vs 0.00891 (-2.49%); s8 0.00755 vs 0.00762 (+0.96%)
+  baseline_f2    full a: S8 0.00066 vs 0.00066 (+0.02%); Om 0.00128 vs 0.00127 (-0.80%); s8 0.00117 vs 0.00116 (-1.10%)
+  baseline_f2    full d: S8 0.01476 vs 0.01441 (-2.35%); Om 0.00773 vs 0.00743 (-3.91%); s8 0.00543 vs 0.00546 (+0.54%)
+  goal_effi      SO40 a: S8 0.00089 vs 0.00089 (+0.12%); Om 0.00176 vs 0.00175 (-0.71%); s8 0.00162 vs 0.00161 (-1.03%)
+  goal_effi      full a: S8 0.00056 vs 0.00056 (+0.12%); Om 0.00111 vs 0.00111 (-0.71%); s8 0.00103 vs 0.00102 (-1.03%)
+  goal_effii     SO40 a: S8 0.00090 vs 0.00090 (+0.12%); Om 0.00178 vs 0.00177 (-0.71%); s8 0.00164 vs 0.00162 (-1.04%)
+  goal_effii     full a: S8 0.00057 vs 0.00057 (+0.12%); Om 0.00113 vs 0.00112 (-0.71%); s8 0.00104 vs 0.00103 (-1.04%)
+  goal_f0.5      SO40 a: S8 0.00083 vs 0.00083 (+0.16%); Om 0.00164 vs 0.00163 (-0.67%); s8 0.00152 vs 0.00151 (-1.00%)
+  goal_f0.5      SO40 d: S8 0.01681 vs 0.01656 (-1.44%); Om 0.00874 vs 0.00847 (-3.04%); s8 0.00652 vs 0.00658 (+1.01%)
+  goal_f0.5      full a: S8 0.00052 vs 0.00053 (+0.16%); Om 0.00104 vs 0.00103 (-0.67%); s8 0.00096 vs 0.00095 (-1.00%)
+  goal_f0.5      full d: S8 0.01332 vs 0.01291 (-3.07%); Om 0.00707 vs 0.00673 (-4.70%); s8 0.00464 vs 0.00466 (+0.30%)
+  goal_f1        SO40 a: S8 0.00083 vs 0.00083 (+0.16%); Om 0.00164 vs 0.00163 (-0.67%); s8 0.00152 vs 0.00151 (-1.00%)
+  goal_f1        SO40 b: S8 0.00951 vs 0.00950 (-0.10%); Om 0.00492 vs 0.00488 (-0.82%); s8 0.00361 vs 0.00364 (+0.86%)
+  goal_f1        SO40 c: S8 0.01441 vs 0.01385 (-3.91%); Om 0.00926 vs 0.00878 (-5.19%); s8 0.00363 vs 0.00366 (+0.76%)
+  goal_f1        SO40 d: S8 0.01681 vs 0.01656 (-1.44%); Om 0.00874 vs 0.00847 (-3.04%); s8 0.00652 vs 0.00658 (+1.01%)
+  goal_f1        SO40 e: S8 0.02800 vs 0.02622 (-6.34%); Om 0.01508 vs 0.01388 (-7.95%); s8 0.00885 vs 0.00867 (-2.00%)
+  goal_f1        full a: S8 0.00052 vs 0.00053 (+0.16%); Om 0.00104 vs 0.00103 (-0.67%); s8 0.00096 vs 0.00095 (-1.00%)
+  goal_f1        full b: S8 0.00602 vs 0.00601 (-0.10%); Om 0.00311 vs 0.00309 (-0.82%); s8 0.00228 vs 0.00230 (+0.86%)
+  goal_f1        full c: S8 0.00912 vs 0.00876 (-3.91%); Om 0.00586 vs 0.00555 (-5.19%); s8 0.00230 vs 0.00231 (+0.76%)
+  goal_f1        full d: S8 0.01332 vs 0.01291 (-3.07%); Om 0.00707 vs 0.00673 (-4.70%); s8 0.00464 vs 0.00466 (+0.30%)
+  goal_f1        full e: S8 0.01771 vs 0.01658 (-6.34%); Om 0.00954 vs 0.00878 (-7.95%); s8 0.00559 vs 0.00548 (-2.00%)
+  goal_f2        SO40 a: S8 0.00083 vs 0.00083 (+0.16%); Om 0.00164 vs 0.00163 (-0.67%); s8 0.00152 vs 0.00151 (-1.00%)
+  goal_f2        SO40 d: S8 0.01681 vs 0.01656 (-1.44%); Om 0.00874 vs 0.00847 (-3.04%); s8 0.00652 vs 0.00658 (+1.01%)
+  goal_f2        full a: S8 0.00052 vs 0.00053 (+0.16%); Om 0.00104 vs 0.00103 (-0.67%); s8 0.00096 vs 0.00095 (-1.00%)
+  goal_f2        full d: S8 0.01332 vs 0.01291 (-3.07%); Om 0.00707 vs 0.00673 (-4.70%); s8 0.00464 vs 0.00466 (+0.30%)
+  lowP_effi      SO40 a: S8 0.00184 vs 0.00184 (-0.30%); Om 0.00346 vs 0.00342 (-1.04%); s8 0.00300 vs 0.00296 (-1.31%)
+  lowP_effi      full a: S8 0.00117 vs 0.00116 (-0.30%); Om 0.00219 vs 0.00216 (-1.04%); s8 0.00190 vs 0.00187 (-1.31%)
+  lowP_f1        SO40 a: S8 0.00178 vs 0.00177 (-0.28%); Om 0.00334 vs 0.00330 (-1.03%); s8 0.00290 vs 0.00287 (-1.30%)
+  lowP_f1        SO40 d: S8 0.02229 vs 0.02219 (-0.46%); Om 0.01069 vs 0.01049 (-1.92%); s8 0.01122 vs 0.01129 (+0.70%)
+  lowP_f1        full a: S8 0.00112 vs 0.00112 (-0.28%); Om 0.00211 vs 0.00209 (-1.03%); s8 0.00184 vs 0.00181 (-1.30%)
+  lowP_f1        full d: S8 0.01849 vs 0.01826 (-1.26%); Om 0.00940 vs 0.00914 (-2.77%); s8 0.00780 vs 0.00786 (+0.76%)
+  white          SO40 a: S8 0.00093 vs 0.00093 (+0.02%); Om 0.00179 vs 0.00177 (-0.76%); s8 0.00170 vs 0.00168 (-0.99%)
+  white          SO40 d: S8 0.01597 vs 0.01582 (-0.94%); Om 0.00689 vs 0.00673 (-2.23%); s8 0.00872 vs 0.00873 (+0.20%)
+  white          full a: S8 0.00059 vs 0.00059 (+0.02%); Om 0.00113 vs 0.00112 (-0.76%); s8 0.00107 vs 0.00106 (-0.99%)
+  white          full d: S8 0.01350 vs 0.01325 (-1.86%); Om 0.00584 vs 0.00566 (-3.15%); s8 0.00665 vs 0.00664 (-0.27%)
+
+=== (D) self route ===
+  my model fitted to its own expectation: max |bias| 1.0e-05 sigma (from the truth), 5.6e-05 sigma (from 2 sigma off), 20 fits
+  build's self route (fits.json): max |bias| 1.8e-07 sigma over 270 fits
+  my model fitted to the BUILD's naive N0 (baseline_effi, SO40, a): S8 +0.002, Om -0.001, s8 +0.003 sigma; chi2_min 0.006
+  my model fitted to the BUILD's naive N0 (baseline_effi, SO40, d): S8 -0.027, Om -0.020, s8 -0.029 sigma; chi2_min 0.005
+  my model fitted to the BUILD's naive N0 (baseline_effi, full, a): S8 +0.003, Om -0.002, s8 +0.005 sigma; chi2_min 0.015
+  my model fitted to the BUILD's naive N0 (baseline_effi, full, d): S8 -0.047, Om -0.040, s8 -0.052 sigma; chi2_min 0.011
+  my model fitted to the BUILD's naive N0 (baseline_f1, SO40, a): S8 +0.002, Om -0.001, s8 +0.003 sigma; chi2_min 0.007
+  my model fitted to the BUILD's naive N0 (baseline_f1, SO40, d): S8 -0.029, Om -0.023, s8 -0.032 sigma; chi2_min 0.005
+  my model fitted to the BUILD's naive N0 (baseline_f1, full, a): S8 +0.003, Om -0.002, s8 +0.005 sigma; chi2_min 0.017
+  my model fitted to the BUILD's naive N0 (baseline_f1, full, d): S8 -0.052, Om -0.044, s8 -0.057 sigma; chi2_min 0.013
+  my model fitted to the BUILD's naive N0 (goal_f1, SO40, a): S8 +0.003, Om -0.002, s8 +0.004 sigma; chi2_min 0.010
+  my model fitted to the BUILD's naive N0 (goal_f1, SO40, d): S8 -0.038, Om -0.032, s8 -0.040 sigma; chi2_min 0.008
+  my model fitted to the BUILD's naive N0 (goal_f1, full, a): S8 +0.004, Om -0.003, s8 +0.006 sigma; chi2_min 0.025
+  my model fitted to the BUILD's naive N0 (goal_f1, full, d): S8 -0.068, Om -0.060, s8 -0.072 sigma; chi2_min 0.018
+  my model fitted to the BUILD's naive N0 (lowP_f1, SO40, a): S8 +0.001, Om -0.000, s8 +0.002 sigma; chi2_min 0.003
+  my model fitted to the BUILD's naive N0 (lowP_f1, SO40, d): S8 -0.019, Om -0.013, s8 -0.022 sigma; chi2_min 0.003
+  my model fitted to the BUILD's naive N0 (lowP_f1, full, a): S8 +0.002, Om -0.001, s8 +0.002 sigma; chi2_min 0.008
+  my model fitted to the BUILD's naive N0 (lowP_f1, full, d): S8 -0.032, Om -0.024, s8 -0.037 sigma; chi2_min 0.006
+  my model fitted to the BUILD's naive N0 (white, SO40, a): S8 -0.015, Om -0.020, s8 +0.019 sigma; chi2_min 0.002
+  my model fitted to the BUILD's naive N0 (white, SO40, d): S8 -0.001, Om -0.006, s8 +0.004 sigma; chi2_min 0.002
+  my model fitted to the BUILD's naive N0 (white, full, a): S8 -0.024, Om -0.032, s8 +0.030 sigma; chi2_min 0.005
+  my model fitted to the BUILD's naive N0 (white, full, d): S8 -0.001, Om -0.007, s8 +0.006 sigma; chi2_min 0.005
+
+=== (E) Q3's own data vector (truth_catalogue_v2) with my white model + fitter vs the c12_fits_v2 logs ===
+  q5 SO40 a: c12 S8/Om/s8 -3.97 / -3.68 / +2.96 | mine -3.99 / -3.71 / +2.98 | max |diff| 0.03
+  q5 SO40 b: c12 S8/Om/s8 -0.53 / -1.16 / +0.17 | mine -0.54 / -1.17 / +0.16 | max |diff| 0.01
+  q5 SO40 c: c12 S8/Om/s8 -0.47 / -0.87 / +0.17 | mine -0.48 / -0.90 / +0.16 | max |diff| 0.03
+  q5 SO40 d: c12 S8/Om/s8 +1.11 / +0.16 / +1.83 | mine +1.11 / +0.18 / +1.79 | max |diff| 0.04
+  q5 SO40 e: c12 S8/Om/s8 +1.74 / +1.25 / +2.18 | mine +1.80 / +1.31 / +2.22 | max |diff| 0.06
+  q5 full a: c12 S8/Om/s8 -6.27 / -5.82 / +4.68 | mine -6.31 / -5.87 / +4.72 | max |diff| 0.05
+  q5 full b: c12 S8/Om/s8 -0.84 / -1.83 / +0.26 | mine -0.86 / -1.86 / +0.25 | max |diff| 0.03
+  q5 full c: c12 S8/Om/s8 -0.74 / -1.37 / +0.26 | mine -0.76 / -1.42 / +0.25 | max |diff| 0.05
+  q5 full d: c12 S8/Om/s8 +2.08 / +0.92 / +3.06 | mine +2.09 / +0.94 / +3.03 | max |diff| 0.03
+  q5 full e: c12 S8/Om/s8 +2.74 / +1.98 / +3.45 | mine +2.84 / +2.07 / +3.52 | max |diff| 0.10
+  q6 SO40 a: c12 S8/Om/s8 -2.08 / -2.27 / +2.03 | mine -2.10 / -2.29 / +2.04 | max |diff| 0.02
+  q6 SO40 b: c12 S8/Om/s8 -0.10 / -0.51 / +0.32 | mine -0.10 / -0.52 / +0.31 | max |diff| 0.01
+  q6 SO40 c: c12 S8/Om/s8 -0.13 / -0.44 / +0.31 | mine -0.13 / -0.45 / +0.31 | max |diff| 0.01
+  q6 SO40 d: c12 S8/Om/s8 +0.65 / -0.09 / +1.18 | mine +0.66 / -0.08 / +1.19 | max |diff| 0.01
+  q6 SO40 e: c12 S8/Om/s8 +1.11 / +0.80 / +1.41 | mine +1.15 / +0.83 / +1.43 | max |diff| 0.04
+  q6 full a: c12 S8/Om/s8 -3.30 / -3.59 / +3.21 | mine -3.32 / -3.62 / +3.23 | max |diff| 0.03
+  q6 full b: c12 S8/Om/s8 -0.16 / -0.81 / +0.50 | mine -0.17 / -0.82 / +0.50 | max |diff| 0.01
+  q6 full c: c12 S8/Om/s8 -0.20 / -0.70 / +0.49 | mine -0.20 / -0.72 / +0.49 | max |diff| 0.02
+  q6 full d: c12 S8/Om/s8 +1.18 / +0.32 / +1.91 | mine +1.21 / +0.33 / +1.92 | max |diff| 0.03
+  q6 full e: c12 S8/Om/s8 +1.76 / +1.26 / +2.22 | mine +1.82 / +1.31 / +2.27 | max |diff| 0.06
+  max |mine - c12| = 0.10 sigma
+
+=== (F) goodness-of-fit power (ML deviance; configs a, d; build vs mine on the build's / my Delta) ===
+  baseline_effi  SO40 a: chi2_min build 0.69 (power 0.055) | mine on build's 0.69 (0.055) | on mine 0.69 (0.055)
+  baseline_effi  SO40 d: chi2_min build 0.36 (power 0.052) | mine on build's 0.36 (0.052) | on mine 0.38 (0.053)
+  baseline_effi  full a: chi2_min build 1.73 (power 0.062) | mine on build's 1.73 (0.062) | on mine 1.72 (0.062)
+  baseline_effi  full d: chi2_min build 0.91 (power 0.056) | mine on build's 0.91 (0.056) | on mine 0.95 (0.057)
+  baseline_effii SO40 a: chi2_min build 0.95 (power 0.056) | mine on build's 0.96 (0.057) | on mine 0.94 (0.056)
+  baseline_effii full a: chi2_min build 2.38 (power 0.067) | mine on build's 2.39 (0.067) | on mine 2.35 (0.067)
+  baseline_f0.5  SO40 a: chi2_min build 0.40 (power 0.053) | mine on build's 0.41 (0.053) | on mine 0.39 (0.053)
+  baseline_f0.5  SO40 d: chi2_min build 0.25 (power 0.052) | mine on build's 0.24 (0.052) | on mine 0.25 (0.052)
+  baseline_f0.5  full a: chi2_min build 1.01 (power 0.057) | mine on build's 1.02 (0.057) | on mine 0.99 (0.057)
+  baseline_f0.5  full d: chi2_min build 0.61 (power 0.054) | mine on build's 0.60 (0.054) | on mine 0.62 (0.054)
+  baseline_f1    SO40 a: chi2_min build 0.82 (power 0.056) | mine on build's 0.82 (0.056) | on mine 0.94 (0.056)
+  baseline_f1    SO40 b: chi2_min build 0.19 (power 0.051) | mine on build's 0.19 (0.051) | on mine 0.28 (0.052)
+  baseline_f1    SO40 c: chi2_min build 0.19 (power 0.051) | mine on build's 0.19 (0.051) | on mine 0.28 (0.052)
+  baseline_f1    SO40 d: chi2_min build 0.12 (power 0.051) | mine on build's 0.12 (0.051) | on mine 0.20 (0.051)
+  baseline_f1    SO40 e: chi2_min build 0.12 (power 0.051) | mine on build's 0.12 (0.051) | on mine 0.19 (0.051)
+  baseline_f1    full a: chi2_min build 2.06 (power 0.065) | mine on build's 2.06 (0.065) | on mine 2.36 (0.067)
+  baseline_f1    full b: chi2_min build 0.47 (power 0.053) | mine on build's 0.47 (0.053) | on mine 0.70 (0.055)
+  baseline_f1    full c: chi2_min build 0.47 (power 0.053) | mine on build's 0.47 (0.053) | on mine 0.69 (0.055)
+  baseline_f1    full d: chi2_min build 0.30 (power 0.052) | mine on build's 0.30 (0.052) | on mine 0.49 (0.053)
+  baseline_f1    full e: chi2_min build 0.29 (power 0.052) | mine on build's 0.29 (0.052) | on mine 0.49 (0.053)
+  baseline_f2    SO40 a: chi2_min build 5.17 (power 0.092) | mine on build's 5.17 (0.092) | on mine 5.44 (0.095)
+  baseline_f2    SO40 d: chi2_min build 0.79 (power 0.055) | mine on build's 0.79 (0.055) | on mine 0.91 (0.056)
+  baseline_f2    full a: chi2_min build 12.91 (power 0.190) | mine on build's 12.93 (0.190) | on mine 13.60 (0.200)
+  baseline_f2    full d: chi2_min build 1.95 (power 0.064) | mine on build's 1.95 (0.064) | on mine 2.27 (0.067)
+  goal_effi      SO40 a: chi2_min build 1.59 (power 0.061) | mine on build's 1.59 (0.061) | on mine 1.53 (0.061)
+  goal_effi      full a: chi2_min build 3.97 (power 0.081) | mine on build's 3.98 (0.081) | on mine 3.83 (0.080)
+  goal_effii     SO40 a: chi2_min build 2.37 (power 0.067) | mine on build's 2.38 (0.067) | on mine 2.29 (0.067)
+  goal_effii     full a: chi2_min build 5.93 (power 0.100) | mine on build's 5.95 (0.100) | on mine 5.72 (0.098)
+  goal_f0.5      SO40 a: chi2_min build 1.25 (power 0.059) | mine on build's 1.26 (0.059) | on mine 1.20 (0.058)
+  goal_f0.5      SO40 d: chi2_min build 0.67 (power 0.055) | mine on build's 0.67 (0.055) | on mine 0.65 (0.054)
+  goal_f0.5      full a: chi2_min build 3.12 (power 0.073) | mine on build's 3.15 (0.074) | on mine 3.00 (0.072)
+  goal_f0.5      full d: chi2_min build 1.65 (power 0.062) | mine on build's 1.63 (0.062) | on mine 1.61 (0.061)
+  goal_f1        SO40 a: chi2_min build 1.51 (power 0.061) | mine on build's 1.51 (0.061) | on mine 1.64 (0.062)
+  goal_f1        SO40 b: chi2_min build 0.35 (power 0.052) | mine on build's 0.35 (0.052) | on mine 0.44 (0.053)
+  goal_f1        SO40 c: chi2_min build 0.35 (power 0.052) | mine on build's 0.35 (0.052) | on mine 0.44 (0.053)
+  goal_f1        SO40 d: chi2_min build 0.25 (power 0.052) | mine on build's 0.25 (0.052) | on mine 0.32 (0.052)
+  goal_f1        SO40 e: chi2_min build 0.24 (power 0.052) | mine on build's 0.24 (0.052) | on mine 0.31 (0.052)
+  goal_f1        full a: chi2_min build 3.77 (power 0.079) | mine on build's 3.77 (0.079) | on mine 4.11 (0.082)
+  goal_f1        full b: chi2_min build 0.87 (power 0.056) | mine on build's 0.87 (0.056) | on mine 1.11 (0.058)
+  goal_f1        full c: chi2_min build 0.87 (power 0.056) | mine on build's 0.87 (0.056) | on mine 1.11 (0.058)
+  goal_f1        full d: chi2_min build 0.60 (power 0.054) | mine on build's 0.60 (0.054) | on mine 0.79 (0.055)
+  goal_f1        full e: chi2_min build 0.59 (power 0.054) | mine on build's 0.59 (0.054) | on mine 0.78 (0.055)
+  goal_f2        SO40 a: chi2_min build 10.77 (power 0.159) | mine on build's 10.79 (0.159) | on mine 11.22 (0.165)
+  goal_f2        SO40 d: chi2_min build 1.65 (power 0.062) | mine on build's 1.65 (0.062) | on mine 1.78 (0.063)
+  goal_f2        full a: chi2_min build 26.93 (power 0.447) | mine on build's 26.97 (0.448) | on mine 28.04 (0.469)
+  goal_f2        full d: chi2_min build 4.09 (power 0.082) | mine on build's 4.09 (0.082) | on mine 4.42 (0.085)
+  lowP_effi      SO40 a: chi2_min build 0.08 (power 0.050) | mine on build's 0.08 (0.050) | on mine 0.11 (0.051)
+  lowP_effi      full a: chi2_min build 0.19 (power 0.051) | mine on build's 0.19 (0.051) | on mine 0.27 (0.052)
+  lowP_f1        SO40 a: chi2_min build 0.14 (power 0.051) | mine on build's 0.14 (0.051) | on mine 0.15 (0.051)
+  lowP_f1        SO40 d: chi2_min build 0.02 (power 0.050) | mine on build's 0.02 (0.050) | on mine 0.03 (0.050)
+  lowP_f1        full a: chi2_min build 0.36 (power 0.052) | mine on build's 0.36 (0.052) | on mine 0.38 (0.053)
+  lowP_f1        full d: chi2_min build 0.04 (power 0.050) | mine on build's 0.04 (0.050) | on mine 0.08 (0.051)
+  white          SO40 a: chi2_min build 9.86 (power 0.146) | mine on build's 9.87 (0.147) | on mine 9.72 (0.145)
+  white          SO40 d: chi2_min build 4.65 (power 0.088) | mine on build's 4.38 (0.085) | on mine 4.33 (0.085)
+  white          full a: chi2_min build 24.65 (power 0.402) | mine on build's 24.68 (0.402) | on mine 24.31 (0.395)
+  white          full d: chi2_min build 9.70 (power 0.146) | mine on build's 9.44 (0.142) | on mine 9.30 (0.141)
+
+=== (G) linearised decomposition of the S8 bias, SO40, q5 (my J, F): amplitude + z tilt + q shape = sum ===
+  baseline_effi  a on build Delta: -0.43 + -0.09 + -0.12 = -0.64
+  baseline_effi  a on mine  Delta: -0.44 + -0.12 + -0.11 = -0.67
+  baseline_effi  b on build Delta: -0.06 + +0.05 + -0.51 = -0.52
+  baseline_effi  b on mine  Delta: -0.06 + +0.05 + -0.50 = -0.51
+  baseline_effi  c on build Delta: -0.02 + +0.03 + -0.33 = -0.32
+  baseline_effi  c on mine  Delta: -0.02 + +0.02 + -0.34 = -0.34
+  baseline_effi  d on build Delta: -0.02 + -0.00 + +0.15 = +0.12
+  baseline_effi  d on mine  Delta: -0.02 + -0.02 + +0.15 = +0.11
+  baseline_effi  e on build Delta: -0.00 + +0.02 + +0.10 = +0.11
+  baseline_effi  e on mine  Delta: -0.00 + -0.02 + +0.10 = +0.08
+  baseline_f1    a on build Delta: +1.79 + -0.55 + +0.09 = +1.33
+  baseline_f1    a on mine  Delta: +1.79 + -0.57 + +0.09 = +1.31
+  baseline_f1    b on build Delta: +0.24 + +0.31 + +0.36 = +0.91
+  baseline_f1    b on mine  Delta: +0.24 + +0.32 + +0.37 = +0.93
+  baseline_f1    c on build Delta: +0.09 + +0.34 + +0.15 = +0.57
+  baseline_f1    c on mine  Delta: +0.09 + +0.32 + +0.15 = +0.56
+  baseline_f1    d on build Delta: +0.09 + -0.08 + -0.02 = -0.00
+  baseline_f1    d on mine  Delta: +0.09 + -0.09 + -0.01 = -0.02
+  baseline_f1    e on build Delta: +0.01 + +0.08 + -0.01 = +0.08
+  baseline_f1    e on mine  Delta: +0.01 + +0.05 + -0.00 = +0.05
+  goal_f1        a on build Delta: +2.48 + -0.74 + +0.11 = +1.85
+  goal_f1        a on mine  Delta: +2.50 + -0.77 + +0.11 = +1.84
+  goal_f1        b on build Delta: +0.32 + +0.47 + +0.44 = +1.24
+  goal_f1        b on mine  Delta: +0.33 + +0.47 + +0.46 = +1.25
+  goal_f1        c on build Delta: +0.12 + +0.51 + +0.18 = +0.81
+  goal_f1        c on mine  Delta: +0.12 + +0.48 + +0.19 = +0.79
+  goal_f1        d on build Delta: +0.09 + -0.06 + -0.01 = +0.02
+  goal_f1        d on mine  Delta: +0.09 + -0.07 + -0.01 = +0.00
+  goal_f1        e on build Delta: +0.00 + +0.13 + -0.00 = +0.13
+  goal_f1        e on mine  Delta: +0.00 + +0.10 + -0.01 = +0.10
+  lowP_f1        a on build Delta: +0.73 + -0.21 + +0.05 = +0.57
+  lowP_f1        a on mine  Delta: +0.72 + -0.20 + +0.05 = +0.57
+  lowP_f1        b on build Delta: +0.12 + +0.09 + +0.18 = +0.39
+  lowP_f1        b on mine  Delta: +0.11 + +0.09 + +0.18 = +0.38
+  lowP_f1        c on build Delta: +0.04 + +0.09 + +0.08 = +0.21
+  lowP_f1        c on mine  Delta: +0.04 + +0.10 + +0.07 = +0.20
+  lowP_f1        d on build Delta: +0.06 + -0.06 + -0.02 = -0.02
+  lowP_f1        d on mine  Delta: +0.06 + -0.06 + -0.02 = -0.02
+  lowP_f1        e on build Delta: +0.01 + +0.00 + -0.00 = +0.01
+  lowP_f1        e on mine  Delta: +0.01 + +0.01 + -0.00 = +0.01
+  white          a on build Delta: -2.62 + -1.04 + -0.22 = -3.89
+  white          a on mine  Delta: -2.64 + -1.06 + -0.22 = -3.91
+  white          b on build Delta: -0.14 + +0.55 + -0.92 = -0.51
+  white          b on mine  Delta: -0.14 + +0.57 + -0.91 = -0.48
+  white          c on build Delta: -0.09 + +0.30 + -0.65 = -0.43
+  white          c on mine  Delta: -0.09 + +0.33 + -0.65 = -0.40
+  white          d on build Delta: -0.08 + +0.23 + +0.95 = +1.09
+  white          d on mine  Delta: -0.09 + +0.21 + +0.96 = +1.08
+  white          e on build Delta: +0.06 + +0.36 + +1.21 = +1.63
+  white          e on mine  Delta: +0.06 + +0.36 + +1.22 = +1.64
+
+=== (H) the build's own Q3 reproduction (fits.json setup Q3_c11, route cat) vs the c12_fits_v2 logs (data only) ===
+  max |b_S8 (fits.json, rounded to 0.01) - c12 log| = 0.000 sigma over 28 fits
+
+=== (I) the build's compute / memory logs (read as data): totals recomputed from p10_compute.log rows; p03 / p03b time -l lines ===
+  12 rows: wall 4231.6 s = 70.5 min; cpu user 24470.4 s = 6.80 h
+  p03_kernels.log: max RSS 5.14 GB, peak footprint 12.56 GB
+  p03b_memcheck.log: max RSS 0.46 GB, peak footprint 0.42 GB

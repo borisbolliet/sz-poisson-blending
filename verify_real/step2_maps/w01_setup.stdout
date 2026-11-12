@@ -1,0 +1,61 @@
+[w01] grid 2400^2 x 0.25' (L = 600.0'), NUFFT block 1201^2 (|k| <= 600, l <= 21600 on the axes); threads 4; set-up 2.2s
+   [baseline] 48 nodes 0.100-138.89' (dln theta 0.15396); sigma_Y(nodes) 3.6865e-06 ... 8.0089e-02 arcmin^2; vs MMFModel/SZModel spline at the nodes: max rel 4.1e-07
+   [goal] 48 nodes 0.100-138.89' (dln theta 0.15396); sigma_Y(nodes) 2.6889e-06 ... 7.7916e-02 arcmin^2; vs MMFModel/SZModel spline at the nodes: max rel 4.1e-07
+   [white] 40 nodes 0.250-80.00' (dln theta 0.14791); sigma_Y(nodes) 4.9835e-06 ... 3.3811e-04 arcmin^2; vs MMFModel/SZModel spline at the nodes: max rel 3.6e-06
+
+(1) NUFFT read-out of the filtered map
+   [baseline] node   0.400': |NUFFT - irfft| at 400 pixel centres max 3.8e-15 Y; response at the cluster's own continuous position 0.999961 (exact 1 up to the self-response R_j(theta_j))
+   [baseline] node   1.007': |NUFFT - irfft| at 400 pixel centres max 3.5e-13 Y; response at the cluster's own continuous position 0.999966 (exact 1 up to the self-response R_j(theta_j))
+   [baseline] node   4.025': |NUFFT - irfft| at 400 pixel centres max 3.8e-13 Y; response at the cluster's own continuous position 0.999891 (exact 1 up to the self-response R_j(theta_j))
+   [baseline] node  16.090': |NUFFT - irfft| at 400 pixel centres max 2.3e-12 Y; response at the cluster's own continuous position 0.999759 (exact 1 up to the self-response R_j(theta_j))
+   [goal    ] node   0.400': |NUFFT - irfft| at 400 pixel centres max 6.6e-14 Y; response at the cluster's own continuous position 0.999959 (exact 1 up to the self-response R_j(theta_j))
+   [goal    ] node   1.007': |NUFFT - irfft| at 400 pixel centres max 1.2e-13 Y; response at the cluster's own continuous position 0.999964 (exact 1 up to the self-response R_j(theta_j))
+   [goal    ] node   4.025': |NUFFT - irfft| at 400 pixel centres max 1.4e-14 Y; response at the cluster's own continuous position 0.999881 (exact 1 up to the self-response R_j(theta_j))
+   [goal    ] node  16.090': |NUFFT - irfft| at 400 pixel centres max 1.3e-12 Y; response at the cluster's own continuous position 0.999697 (exact 1 up to the self-response R_j(theta_j))
+   [white   ] node   0.390': |NUFFT - irfft| at 400 pixel centres max 5.9e-12 Y; response at the cluster's own continuous position 0.999971 (exact 1 up to the self-response R_j(theta_j))
+   [white   ] node   0.946': |NUFFT - irfft| at 400 pixel centres max 4.6e-18 Y; response at the cluster's own continuous position 0.999966 (exact 1 up to the self-response R_j(theta_j))
+   [white   ] node   4.153': |NUFFT - irfft| at 400 pixel centres max 3.1e-17 Y; response at the cluster's own continuous position 0.999969 (exact 1 up to the self-response R_j(theta_j))
+   [white   ] node  15.722': |NUFFT - irfft| at 400 pixel centres max 1.4e-11 Y; response at the cluster's own continuous position 0.999961 (exact 1 up to the self-response R_j(theta_j))
+
+(2) self response R_j(theta): node-j filter on a painted unit-Y halo of size theta at its own position
+   [baseline] R_j(theta_j) - 1: nodes 0.25-60' max |.| 8.9e-04; all nodes min -1.9e-04 max +1.4e-02
+      R_j over the ln-theta windows: min 0.6765, max 1.5067
+   [goal    ] R_j(theta_j) - 1: nodes 0.25-60' max |.| 8.1e-04; all nodes min -2.1e-04 max +1.3e-02
+      R_j over the ln-theta windows: min 0.6745, max 1.5090
+   [white   ] R_j(theta_j) - 1: nodes 0.25-60' max |.| 5.6e-05; all nodes min -5.6e-05 max +1.7e-04
+      R_j over the ln-theta windows: min 0.8591, max 1.1547
+   [195s]
+
+(3) own Hankel rho_j(theta_B, s) tables (dominance rule only)
+   [baseline] table (48, 186, 1001) built in 2s; MMF y-response S(l) = sum_i w_i B_i f_i: max |S - 1| = 1.1e-15
+      (a) vs the build's response with the build's template on both sides (thA 0.4-16', thB 0.3-20', s 0-16'): max |diff| / max(1, |rho|) = 1.8e-04  (template ours vs build + S(l))
+      (b) thA= 0.400' thB= 0.40': map rho(s=0,1,2,5,20') = +0.9998 +0.4896 -0.0794 +0.0217 +8.16e-05; table - map max |.|/max(1,|rho|) = 1.6e-04
+      (b) thA= 1.007' thB= 2.00': map rho(s=0,1,2,5,20') = +0.5599 +0.3446 +0.0167 -0.0033 +1.14e-04; table - map max |.|/max(1,|rho|) = 9.2e-05
+      (b) thA= 1.007' thB= 0.30': map rho(s=0,1,2,5,20') = +1.5309 +0.8059 -0.0842 +0.0256 +1.67e-04; table - map max |.|/max(1,|rho|) = 1.5e-04
+      (b) thA= 4.025' thB= 1.00': map rho(s=0,1,2,5,20') = +4.0045 +2.6572 +0.3995 -0.1188 +8.05e-04; table - map max |.|/max(1,|rho|) = 1.7e-04
+      (b) thA=16.090' thB= 8.00': map rho(s=0,1,2,5,20') = +4.1583 +3.5476 +2.1881 -0.0393 -3.93e-03; table - map max |.|/max(1,|rho|) = 5.8e-04
+      (b) worst table vs map: 5.8e-04
+      (c) vs step 1's stored rho table (blendlib.rho_at; its interpolation error is up to 6.4e-3 rho(0)): max |diff|/max(1,|rho|) = 2.6e-03
+   [goal    ] table (48, 186, 1001) built in 2s; MMF y-response S(l) = sum_i w_i B_i f_i: max |S - 1| = 1.1e-15
+      (a) vs the build's response with the build's template on both sides (thA 0.4-16', thB 0.3-20', s 0-16'): max |diff| / max(1, |rho|) = 1.9e-04  (template ours vs build + S(l))
+      (b) thA= 0.400' thB= 0.40': map rho(s=0,1,2,5,20') = +0.9998 +0.4405 -0.1174 +0.0295 -4.49e-05; table - map max |.|/max(1,|rho|) = 1.9e-04
+      (b) thA= 1.007' thB= 2.00': map rho(s=0,1,2,5,20') = +0.5424 +0.3123 -0.0115 +0.0071 -2.51e-06; table - map max |.|/max(1,|rho|) = 8.3e-05
+      (b) thA= 1.007' thB= 0.30': map rho(s=0,1,2,5,20') = +1.5807 +0.7577 -0.1542 +0.0436 -6.21e-05; table - map max |.|/max(1,|rho|) = 1.7e-04
+      (b) thA= 4.025' thB= 1.00': map rho(s=0,1,2,5,20') = +4.2866 +2.6905 +0.1945 -0.0321 -1.11e-04; table - map max |.|/max(1,|rho|) = 1.7e-04
+      (b) thA=16.090' thB= 8.00': map rho(s=0,1,2,5,20') = +4.3750 +3.6420 +2.0722 -0.1141 -4.02e-03; table - map max |.|/max(1,|rho|) = 6.5e-04
+      (b) worst table vs map: 6.5e-04
+      (c) vs step 1's stored rho table (blendlib.rho_at; its interpolation error is up to 6.4e-3 rho(0)): max |diff|/max(1,|rho|) = 2.3e-03
+   [white   ] table (40, 186, 1001) built in 2s; MMF y-response S(l) = sum_i w_i B_i f_i: max |S - 1| = 0.0e+00
+      (a) vs the build's response with the build's template on both sides (thA 0.4-16', thB 0.3-20', s 0-16'): max |diff| / max(1, |rho|) = 1.3e-04  (template ours vs build + S(l))
+      (b) thA= 0.390' thB= 0.40': map rho(s=0,1,2,5,20') = +0.9948 +0.5672 +0.1120 +0.0000 +6.34e-10; table - map max |.|/max(1,|rho|) = 1.2e-04
+      (b) thA= 0.946' thB= 2.00': map rho(s=0,1,2,5,20') = +0.6307 +0.4755 +0.2288 +0.0162 -9.62e-09; table - map max |.|/max(1,|rho|) = 3.7e-05
+      (b) thA= 0.946' thB= 0.30': map rho(s=0,1,2,5,20') = +1.3494 +0.8383 +0.2295 +0.0018 +4.71e-09; table - map max |.|/max(1,|rho|) = 9.5e-05
+      (b) thA= 4.153' thB= 1.00': map rho(s=0,1,2,5,20') = +2.2382 +1.8643 +1.1702 +0.2051 +6.98e-04; table - map max |.|/max(1,|rho|) = 6.1e-05
+      (b) thA=15.722' thB= 8.00': map rho(s=0,1,2,5,20') = +1.7800 +1.7448 +1.6498 +1.2179 +1.68e-01; table - map max |.|/max(1,|rho|) = 4.8e-05
+      (b) worst table vs map: 1.2e-04
+      (c) vs step 1's stored rho table (blendlib.rho_at; its interpolation error is up to 6.4e-3 rho(0)): max |diff|/max(1,|rho|) = 1.6e-03
+   [203s]  peak rss 3.65 GB
+
+(4) timing of one patch
+   71,241 halos (0 with theta500 > 60'); draw 0.03s, paint 1.10s, rfft + block 0.01s, one node coefficients + NUFFT (300 points) 0.079s
+[w01] done 206s; peak rss 3.68 GB

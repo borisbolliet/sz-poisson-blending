@@ -1,0 +1,33 @@
+log                        wall [s]  cpu user [s]  max RSS [GB]  peak footprint [GB]
+p01_inputs                     10.1           9.0          3.27                 3.22
+p02_rates_truths             1167.7        6896.4          1.53                 1.46
+p03_kernels                  2030.5       12047.7          5.14                12.56
+p03_kernels_checks             27.9          27.6          0.28                 0.24
+p03b_memcheck                   1.0           0.8          0.46                 0.42
+p04_naive_model                52.0          52.0          0.91                 0.86
+p05_truth                      12.8          12.9          1.02                 0.97
+p06_fits                      660.0        3922.7          0.95                 0.10
+p06b_decompose                 11.4          11.6          0.89                 0.85
+p07_fixed_correction          254.9        1486.7          0.96                 0.84
+p08_figures                     2.5           2.3          0.25                 0.20
+p09_tables                      0.8           0.7          0.14                 0.10
+total: wall 4232 s = 70.5 min; cpu (user) 24470 s = 6.80 h
+(p08 and p09 were also run once before their final run, ~3 s each; not included)
+        0.04 real         0.03 user         0.00 sys
+            14565376  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                1529  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                  17  involuntary context switches
+           621147240  instructions retired
+           143943099  cycles elapsed
+             7488384  peak memory footprint

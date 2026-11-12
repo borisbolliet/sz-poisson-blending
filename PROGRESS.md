@@ -1,10 +1,10 @@
-# Progress report (11 November 2026)
+# Progress report (12 November 2026)
 
 This page summarises what has been done so far, what we found and what comes next.
 - **Idealised telescope (Q1–Q3):** details in [`REPORT.md`](REPORT.md).
-- **Realistic Simons Observatory setup:** details in [`analysis/realistic/step1/RESULTS.md`](analysis/realistic/step1/RESULTS.md).
+- **Realistic Simons Observatory setup:** details in [`analysis/realistic/step1/RESULTS.md`](analysis/realistic/step1/RESULTS.md) and [`analysis/realistic/step2/RESULTS.md`](analysis/realistic/step2/RESULTS.md).
 
-Every number below comes from a script in this repository. Logs are committed for the realistic setup, the patch pictures and the finder timing test; the Q1–Q3 logs are kept locally. Every Q1–Q3 and step-1 result was checked independently before being reported; the patch pictures and the timing test carry only their own internal checks.
+Every number below comes from a script in this repository. Logs are committed for the realistic setup, the patch pictures and the finder timing test; the Q1–Q3 logs are kept locally. Every Q1–Q3 and step-1 result, and every step-2 result except the arbiter's extra analyst setups and the map check's Poisson realisations, was checked independently before being reported (step 2's RESULTS.md says, claim by claim, which check confirmed it); the patch pictures and the timing test carry only their own internal checks.
 
 ## Status
 
@@ -14,7 +14,7 @@ Every number below comes from a script in this repository. Logs are committed fo
 | Q2 | How often is a detection blended at a signal-to-noise (S/N) threshold? | done, verified |
 | Q3 | Does ignoring blending bias cosmology from cluster counts? | done, verified (idealised telescope) |
 | Realistic step 1 | Does blending survive with SO's forecast noise, the CMB and a six-channel filter? | done, verified: **yes; Y boosts and losses about halved** |
-| Realistic step 2 | The cosmology bias with the SO filter | running; numbers will be added after the independent checks |
+| Realistic step 2 | Does the cosmology bias survive with the SO filter? | done, verified: **with the default analysis choices, Q3's S8 bias disappears when the Y–M relation is fitted (at most +0.6σ, SO-like, over all choices tried); with the relation fixed, +1.33σ to +1.85σ (SO-like), the opposite sign to Q3** |
 | Realistic step 3 | A realistic cluster finder | planned (see the last section) |
 
 ---
@@ -157,15 +157,57 @@ With the SO filter, most of the effect comes from undetectable neighbours.
   - An arbitration step tested every disputed claim.
   - Two small offsets remain open, neither of which changes the conclusions: up to 0.13 percentage points between methods, and 0.1–0.5 points in the z = 2–3 bin.
 
-### Realistic SO telescope, step 2 (running)
+### Realistic SO telescope, step 2: does the cosmology bias survive?
 
-Step 2 repeats the Q3 cosmology test with the SO filter, for baseline and goal noise. It also tests:
-- what the analyst does, e.g. measuring the noise level on the map itself, which already contains part of the faint-halo signal;
-- the attribution rule;
-- a halo population whose SZ power matches SPT's measurement, with (1−b) = 0.6;
-- whether a correction computed at one cosmology still works when the true S8 is 0.75 or 0.87.
+**Setup:**
+- **Telescope and sky:** as in step 1 (the SO filter, baseline and goal noise, no foregrounds).
+- **Fits:** as in Q3. Counts in 16 redshift × 9 S/N bins above q = 5, for an SO-like survey (16,500 deg²) and the full sky. The standard model, which ignores blending, is fitted to the expected blended counts (maximum likelihood, Fisher errors).
+- **Blended counts:** from step 1's P(D) with the SO filter. Each cluster is measured at its true position and size, with the summed signal of all other halos added.
 
-Results will be added here once both independent checks and the arbitration are complete.
+<p align="center"><img src="figures/realistic/step2_bias_bars.png" width="900"></p>
+
+*Bias in Ωm, σ8 and S8 for each set of fitted parameters (a–e, as in the table below), q > 5. Top: SO-like survey; bottom: full sky. Diamonds: the idealised filter (Q3 setup). Circles and squares: SO baseline and goal noise with the default attribution rule and the noise-only σ; the bars span the rules f_dom = 0.5–2 (other noise estimates are not shown). Triangles: SO baseline with a fainter halo population whose SZ power matches SPT's measurement. Grey band: |bias| < 1σ.*
+
+S8 bias, SO-like survey, q > 5, default attribution rule (f_dom = 1), S/N divided by the noise-only σ:
+
+| what is fitted | idealised filter (Q3 setup) | SO baseline | SO goal |
+|---|---|---|---|
+| a: Ωm, σ8 only (scaling relation fixed) | −3.95σ | **+1.33σ** | **+1.85σ** |
+| b: + mass bias (1−b), no prior | −0.53σ | +0.91σ | +1.23σ |
+| c: + (1−b) (no prior), scatter σlnY | −0.47σ | +0.57σ | +0.80σ |
+| d: + (1−b) with 4% prior, slope α, σlnY | +1.11σ | **−0.01σ** | **+0.01σ** |
+| e: as d, without the prior | +1.73σ | +0.07σ | +0.11σ |
+
+*The idealised column is Q3's setup run through the step-2 code (Q3 itself gave −3.97σ in a and +1.11σ in d). Full sky, baseline / goal: d +0.04σ / +0.08σ, a +2.11σ / +2.92σ.*
+
+**What step 2 shows:**
+- **Fit the scaling relation (d), and Q3's S8 bias is gone** (−0.01σ / +0.01σ, SO-like, baseline / goal, default choices). The same code with the idealised filter gives +1.11σ (SO-like) and +2.07σ (full sky), as Q3 did. So the change comes from the filter, not from the code.
+- **Why.** With the SO filter, the default attribution rule and the noise-only σ, blending raises the counts smoothly: +1.3% (baseline) and +1.4% (goal) in total, growing from +0.7% at z < 0.1 to +4.7% at z = 2–3 (baseline; +4.8% for clusters with q_A ≥ 0.5, as in the step-1 table) and largest near the threshold. A small shift of the slope α (−0.4σ), with Ωm −0.1σ and σ8 +0.1σ, absorbs this, and the Ωm and σ8 shifts cancel in S8. This needs α free: with α fixed (configs b and c) the change is not absorbed. In Q3, config d's bias came from how the count change varied with S/N (a loss at q = 5–7, a gain at q = 15–50); the fit mimicked it by moving the slope and the scatter, which pulled σ8 up. (If the noise level is instead the plain standard deviation of the map, the count change takes back Q3's S/N shape and config d rises to +0.3σ to +0.5σ.)
+- **Fix the scaling relation (a), and a bias of the opposite sign appears:** +1.33σ to +1.85σ (SO-like) and +2.11σ to +2.92σ (full sky). Only Ωm and σ8 can absorb the extra counts. Configs b and c keep the slope α fixed at its true value and fit (1−b) without a prior; an analysis that takes the slope from external calibration would be closer to them than to d. With the default choices they give +0.6σ to +1.2σ (SO-like; +0.90σ to +1.95σ on the full sky) and, like config a, they depend strongly on the attribution rule (up to +3.2σ for b, goal, f_dom = 2).
+- **The analyst's choices matter a lot when the relation is fixed, and little when it is fitted:**
+  - *Attribution rule,* f_dom = 0.5–2 (SO-like survey): config a from −0.75σ to +3.15σ (baseline) and from −1.41σ to +4.72σ (goal).
+  - *Noise level measured on the map,* which contains faint-halo signal, instead of the noise-only value: config a changes sign. A robust or clipped width gives −0.3σ to −1.4σ; the plain standard deviation gives −2.9σ (baseline) and −4.4σ (goal) (SO-like survey).
+  - *Config d over all 20 combinations computed* of noise estimate, attribution rule and instrument noise (8 of them, including the worst case, checked by the arbiter only): −0.19σ to +0.61σ (SO-like) and −0.14σ to +0.89σ (full sky). The worst case is goal noise with the plain standard deviation and the strict rule f_dom = 0.5. None comes back to Q3's +1.1σ and +2.1σ.
+- **A fit would rarely notice.** A goodness-of-fit test has power of at most 0.073 in configs b–e (SO-like survey; 0.05 means no power), and 0.153 even in the worst analyst setup (full sky: 0.12 and 0.43). Config a is easier to catch: up to 0.38 (SO-like) and 0.91 (full sky) over the setups tried.
+- **Correcting once works, if the blending model is right.** A correction computed at the fiducial cosmology (SO baseline, default rule) leaves ≤ 0.17σ in S8 when the true S8 is 0.75 or 0.87 (at fixed Ωm); ignoring blending there gives up to 2.8σ.
+- **A fainter SZ sky gives less.** With SZ power matching SPT's measurement ((1−b) = 0.6), config a drops to +0.57σ and config d stays at −0.02σ (SO-like, baseline).
+- **A higher threshold,** q > 6, lowers config a by about a quarter (+0.98σ / +1.40σ, SO-like, baseline / goal).
+- **Poisson noise does not change it.** In 200 noisy realisations (SO-like, baseline, default choices), blending shifts S8 by +1.334 ± 0.007σ in config a and −0.001 ± 0.004σ in config d, the same as the noiseless fits.
+
+**Verification:**
+- **Catalogue check,** with its own code (11 fresh full skies, direct sums over each cluster's neighbours, its own count model and fitter): config d −0.02σ / +0.00σ, config a +1.31σ / +1.84σ (SO-like, baseline / goal).
+- **Map check** (500 fresh 10°×10° patches, 50,000 deg², through the SO filter; plus the Poisson realisations): config d +0.01 ± 0.05σ / +0.02 ± 0.06σ, config a +1.39 ± 0.10σ / +1.90 ± 0.10σ (SO-like, baseline / goal).
+- **Arbitration:**
+  - The map check found configs c and e 0.1–0.3σ higher (SO-like). The arbiter measured the blending kernel directly on 60 more patches: it agrees with the P(D) kernel within the test's errors of about 10⁻⁴, so the offset was a fluctuation in the map check's sample of clusters.
+  - It confirmed σ(S8) in configs c and e to within 1.2%, added the plain-standard-deviation case raised by the map check, and computed the attribution-rule × noise-estimate corners, which only it checked (the worst cases quoted above). No published number changed.
+  - The correction off the fiducial was confirmed by the catalogue check only, on fresh skies at the two other S8 values.
+- **Open:**
+  - which attribution rule and noise estimate a real SO pipeline uses (step 3);
+  - freeing the redshift evolution of the Y–M relation in the fit, not yet tried;
+  - two small per-bin offsets between methods (z = 1–1.5 and z = 2–3), worth less than 0.1σ in S8 if real;
+  - no foregrounds, halo clustering, masks, bandpasses or relativistic SZ; the fiducial sky's SZ power is 2.65× SPT's;
+  - the map-measured noise level is assumed known exactly from the fiducial sky;
+  - Poisson realisations for one case only; the correction tested only along S8 at fixed Ωm (two truths); the fainter population and the robust width tried only with the default rule.
 
 ---
 
@@ -208,6 +250,10 @@ Only general scientific and cosmology libraries; everything SZ-specific is our o
   - the instrument and filter;
   - noise and confusion versus filter size;
   - the P(D) with the SO filter, and the go/no-go table.
+- **Realistic SO, step 2** ([`analysis/realistic/step2/`](analysis/realistic/step2/)):
+  - blended detection kernels from the P(D) with the SO filter, for each attribution rule and noise estimate;
+  - the counts model with the SO filter's noise;
+  - the cosmology fits (configs a–e), a linear split of the main biases into amplitude, redshift-tilt and S/N-shape parts, and the correction tested off the fiducial.
 - **Pictures of patches** ([`analysis/visual/`](analysis/visual/)): the two figures at the top of this page.
 
 ### How every result is checked
@@ -230,7 +276,7 @@ So far the realistic numbers measure each cluster at its true position with a fi
 - fragments and noise peaks;
 - which cluster a blended peak is assigned to.
 
-In Q3 these effects were larger than blending, and step 1 shows the answer depends on the assignment. Measuring them needs a real finder on realistic maps, with injected clusters.
+In Q3 these effects were larger than blending. Step 1 showed that the blending fractions depend on the assignment. Step 2 showed that the cosmology bias depends on it and on how the noise level is measured: over the cases computed, from −6.2σ to +4.7σ in S8 when the scaling relation is fixed (SO goal, SO-like survey), but only −0.2σ to +0.6σ when it is fitted. Measuring these effects needs a real finder on realistic maps, with injected clusters.
 
 **Plan:**
 - **A lean finder.** Reimplement, for our periodic simulated patches, the iterative multi-frequency matched filter of SZiFi (Zubeldia et al. 2023a,b), the finder being tested for SO. It will copy SZiFi's choices wherever they matter for blending:

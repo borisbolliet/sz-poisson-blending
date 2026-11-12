@@ -1,0 +1,29 @@
+seed 1001: N = 29,291,040 (expected 29,295,487); tiers (theta edges [1.5, 5.0, 15.0]): [28275265, 991400, 23574, 801], theta max per tier [1.5, 5.0, 14.99, 60.58]; rss 2.51 GB [17s]
+primaries: 3,000 (q_med >= 0.4 in some filter: 3,000; subsampled 0 x 33); mu (expected, white) at thA = 1, 4, 16': 0.5234 1.3419 4.9358; rss 2.76 GB [25s]
+neighbour sums: 3s, 2,683,488 pairs (894 per primary); rss 2.86 GB
+/Users/boris/GitHub/sz-poisson-blending/verify_real/step2_catalogue/vc01_sky.py:114: RuntimeWarning: invalid value encountered in arcsin
+  s_ = 2 * np.arcsin(0.5 * np.sqrt(c2)) / am
+TEST brute force (40 primaries, all 29,291,040 halos): max |delta_index - delta_brute|, |xmax diff| = 1.35e-09
+histograms: 1s; realised / expected kernel mean at thA = 1, 4, 16' (white): 0.9918 0.9918 0.9918
+  [baseline_f1] q>5: N_single 34.6  N_blended 35.6  Delta/N +3.0079%
+  [goal_f1] q>5: N_single 51.8  N_blended 53.9  Delta/N +4.1657%
+  [white_f1] q>5: N_single 36.4  N_blended 35.5  Delta/N -2.5569%
+saved; total 39s; peak rss 3.11 GB
+       39.61 real        39.12 user         0.61 sys
+          3113254912  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              219079  page reclaims
+                 110  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 179  voluntary context switches
+                 495  involuntary context switches
+        411466643794  instructions retired
+        128005747557  cycles elapsed
+          3052969024  peak memory footprint

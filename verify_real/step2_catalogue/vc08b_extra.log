@@ -1,0 +1,24 @@
+(1) step stability (baseline_f1, q5, build's Delta): sigma(S8) and linearised S8 bias for steps x1 / x2 / x0.5
+   SO40 a: x1.0: sigma 0.00104, lin +1.334 | x2.0: sigma 0.00104, lin +1.334 | x0.5: sigma 0.00104, lin +1.334
+   full a: x1.0: sigma 0.00066, lin +2.109 | x2.0: sigma 0.00066, lin +2.109 | x0.5: sigma 0.00066, lin +2.109
+   SO40 d: x1.0: sigma 0.01777, lin -0.003 | x2.0: sigma 0.01779, lin -0.004 | x0.5: sigma 0.01776, lin -0.003
+   full d: x1.0: sigma 0.01441, lin +0.047 | x2.0: sigma 0.01445, lin +0.046 | x0.5: sigma 0.01440, lin +0.047
+   config c SO40, my steps       : sigma(S8) 0.01802, sigma(Om) 0.01120
+   config c SO40, build steps    : sigma(S8) 0.01806, sigma(Om) 0.01124
+   config c SO40, build steps / 4: sigma(S8) 0.01800, sigma(Om) 0.01119
+   config e SO40, my steps       : sigma(S8) 0.03281, sigma(Om) 0.01726
+   config e SO40, build steps    : sigma(S8) 0.03300, sigma(Om) 0.01738
+   config e SO40, build steps / 4: sigma(S8) 0.03276, sigma(Om) 0.01722
+   config d SO40, my steps       : sigma(S8) 0.01777, sigma(Om) 0.00891
+   config d SO40, build steps    : sigma(S8) 0.01779, sigma(Om) 0.00894
+   config d SO40, build steps / 4: sigma(S8) 0.01776, sigma(Om) 0.00891
+
+(2) maximum goodness-of-fit power (95% test; linearised chi2_min) over MMF setups, q5 and q6
+   SO40 config a   on build Delta: max power 0.164 (goal_f2, a, q5; chi2_min 11.18)
+   SO40 config a   on mine  Delta: max power 0.171 (goal_f2, a, q5; chi2_min 11.62)
+   SO40 config b-e on build Delta: max power 0.076 (goal_f2, c, q5; chi2_min 3.37)
+   SO40 config b-e on mine  Delta: max power 0.078 (goal_f2, c, q5; chi2_min 3.64)
+   full config a   on build Delta: max power 0.467 (goal_f2, a, q5; chi2_min 27.94)
+   full config a   on mine  Delta: max power 0.490 (goal_f2, a, q5; chi2_min 29.05)
+   full config b-e on build Delta: max power 0.129 (goal_f2, c, q5; chi2_min 8.42)
+   full config b-e on mine  Delta: max power 0.138 (goal_f2, c, q5; chi2_min 9.11)

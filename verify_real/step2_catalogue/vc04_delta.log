@@ -1,0 +1,307 @@
+11 skies: seeds [1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011]
+  halos per sky (expected 29,295,487): 29,291,040, 29,283,532, 29,297,307, 29,303,972, 29,293,262, 29,305,102, 29,295,932, 29,297,390, 29,291,197, 29,298,457, 29,291,022
+  primaries per sky: 4,949,623, 4,946,881, 4,951,649, 4,954,063, 4,950,317, 4,954,276, 4,947,455, 4,954,960, 4,948,898, 4,950,175, 4,951,766; neighbour-sum time 117s/sky
+  realised / expected mean kernel response (white; = total Y of the sky / expected): 0.9918, 0.9986, 1.0043, 0.9884, 1.0033, 1.0038, 0.9980, 0.9985, 0.9918, 1.0065, 1.0043  (mean 0.9990, std 0.0061)
+
+=== [white_f1] q_cut 5 (vs build truth_white.npz) ===
+  Delta total: mine   -1411.2 +-  20.8 (block error; sky scatter  18.3) = -1.6454% +- 0.0243% of my N_single 85,767 | build   -1402.1 = -1.6320% | diff -9.1 = -0.44 sigma
+  per-bin pulls (mine - build)/err over 116 bins with N > 1: chi2 = 136.6 (p = 0.093); max |pull| 2.88; mean pull -0.135
+  same over the 99 bins with N > 10: chi2 = 100.9 (p = 0.427); max |pull| 2.53
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.031, max 0.062; |mine - build| in the same units: max 0.115
+  z tilt Delta/N  z = 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0
+     mine : -5.26+-0.12%  -2.36+-0.03%  -1.04+-0.03%  +0.16+-0.06%  +1.43+-0.16%  +4.19+-0.43%
+     build: -5.27%  -2.34%  -1.01%  +0.13%  +1.51%  +3.48%
+  q shape Delta/N per q bin (edges 5.0 7.3 10.6 15.4 22.4 32.5 47.3 68.8 100.0)
+     mine : -3.00+-0.04 -0.89+-0.05 +0.04+-0.07 +0.50+-0.08 +0.50+-0.10 +0.51+-0.12 +0.51+-0.15 +0.47+-0.20 +0.27+-0.17
+     build: -3.01 -0.83 +0.07 +0.44 +0.55 +0.53 +0.45 +0.36 +0.24
+  vs Q3 truth_catalogue_v2 (c11): Q3 total -1412.6; mine - Q3 = +1.4 (+0.07 sigma); per-bin chi2 136.3 / 116
+  my single counts (mean of 11 skies) / build Nn - 1: total -1.67e-03 (expected scatter of the mean ~1.0e-03 Poisson)
+
+=== [white_f1] q_cut 6 (vs build truth_white.npz) ===
+  Delta total: mine    -516.5 +-  16.9 (block error; sky scatter  15.0) = -0.8401% +- 0.0275% of my N_single 61,481 | build    -502.9 = -0.8161% | diff -13.5 = -0.80 sigma
+  per-bin pulls (mine - build)/err over 113 bins with N > 1: chi2 = 135.6 (p = 0.073); max |pull| 2.84; mean pull -0.167
+  same over the 98 bins with N > 10: chi2 = 105.4 (p = 0.286); max |pull| 2.60
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.030, max 0.062; |mine - build| in the same units: max 0.112
+  vs Q3 truth_catalogue_v2 (c11): Q3 total -509.7; mine - Q3 = -6.8 (-0.40 sigma); per-bin chi2 134.8 / 113
+  my single counts (mean of 11 skies) / build Nn - 1: total -2.36e-03 (expected scatter of the mean ~1.2e-03 Poisson)
+
+=== [baseline_f0.5] q_cut 5 (vs build truth_baseline_f0.5.npz) ===
+  Delta total: mine    -219.2 +-  10.9 (block error; sky scatter  11.1) = -0.2687% +- 0.0133% of my N_single 81,600 | build    -222.4 = -0.2722% | diff +3.2 = +0.29 sigma
+  per-bin pulls (mine - build)/err over 112 bins with N > 1: chi2 = 127.4 (p = 0.151); max |pull| 3.69; mean pull -0.050
+  same over the 88 bins with N > 10: chi2 = 99.1 (p = 0.196); max |pull| 3.69
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.015, max 0.026; |mine - build| in the same units: max 0.085
+  z tilt Delta/N  z = 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0
+     mine : -0.79+-0.11%  -0.51+-0.02%  -0.24+-0.02%  +0.16+-0.04%  +0.39+-0.08%  +1.05+-0.21%
+     build: -0.77%  -0.49%  -0.25%  +0.07%  +0.50%  +1.09%
+  q shape Delta/N per q bin (edges 5.0 7.3 10.6 15.4 22.4 32.5 47.3 68.8 100.0)
+     mine : -0.58+-0.02 +0.01+-0.03 +0.21+-0.03 +0.29+-0.04 +0.27+-0.05 +0.13+-0.06 +0.12+-0.09 +0.36+-0.15 +0.20+-0.24
+     build: -0.60 +0.04 +0.23 +0.28 +0.25 +0.20 +0.15 +0.11 +0.07
+  my single counts (mean of 11 skies) / build Nn - 1: total -1.33e-03 (expected scatter of the mean ~1.1e-03 Poisson)
+
+=== [baseline_f0.5] q_cut 6 (vs build truth_baseline_f0.5.npz) ===
+  Delta total: mine     -14.0 +-   8.3 (block error; sky scatter   9.4) = -0.0251% +- 0.0149% of my N_single 55,553 | build      -9.5 = -0.0171% | diff -4.4 = -0.53 sigma
+  per-bin pulls (mine - build)/err over 109 bins with N > 1: chi2 = 113.3 (p = 0.369); max |pull| 3.30; mean pull -0.080
+  same over the 85 bins with N > 10: chi2 = 94.2 (p = 0.232); max |pull| 3.30
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.015, max 0.026; |mine - build| in the same units: max 0.059
+  my single counts (mean of 11 skies) / build Nn - 1: total -1.89e-03 (expected scatter of the mean ~1.3e-03 Poisson)
+
+=== [baseline_f1] q_cut 5 (vs build truth_baseline_f1.npz) ===
+  Delta total: mine   +1047.3 +-  12.9 (block error; sky scatter  10.4) = +1.2835% +- 0.0158% of my N_single 81,600 | build   +1046.3 = +1.2805% | diff +1.1 = +0.08 sigma
+  per-bin pulls (mine - build)/err over 112 bins with N > 1: chi2 = 148.6 (p = 0.012); max |pull| 4.36; mean pull -0.118
+  same over the 88 bins with N > 10: chi2 = 116.0 (p = 0.024); max |pull| 4.36
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.018, max 0.033; |mine - build| in the same units: max 0.082
+  z tilt Delta/N  z = 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0
+     mine : +0.76+-0.13%  +0.85+-0.02%  +1.27+-0.02%  +2.10+-0.04%  +2.97+-0.10%  +4.68+-0.25%
+     build: +0.74%  +0.88%  +1.27%  +1.99%  +3.05%  +4.71%
+  q shape Delta/N per q bin (edges 5.0 7.3 10.6 15.4 22.4 32.5 47.3 68.8 100.0)
+     mine : +1.52+-0.02 +1.17+-0.03 +0.89+-0.04 +0.69+-0.05 +0.44+-0.06 +0.18+-0.07 +0.23+-0.14 +0.36+-0.15 +0.20+-0.24
+     build: +1.50 +1.20 +0.90 +0.65 +0.45 +0.31 +0.20 +0.13 +0.08
+  my single counts (mean of 11 skies) / build Nn - 1: total -1.33e-03 (expected scatter of the mean ~1.1e-03 Poisson)
+
+=== [baseline_f1] q_cut 6 (vs build truth_baseline_f1.npz) ===
+  Delta total: mine    +636.1 +-  10.0 (block error; sky scatter   9.0) = +1.1450% +- 0.0180% of my N_single 55,553 | build    +642.7 = +1.1547% | diff -6.6 = -0.66 sigma
+  per-bin pulls (mine - build)/err over 109 bins with N > 1: chi2 = 127.5 (p = 0.109); max |pull| 3.81; mean pull -0.141
+  same over the 85 bins with N > 10: chi2 = 103.9 (p = 0.080); max |pull| 3.81
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.017, max 0.035; |mine - build| in the same units: max 0.051
+  my single counts (mean of 11 skies) / build Nn - 1: total -1.89e-03 (expected scatter of the mean ~1.3e-03 Poisson)
+
+=== [baseline_f2] q_cut 5 (vs build truth_baseline_f2.npz) ===
+  Delta total: mine   +2254.3 +-  16.0 (block error; sky scatter  16.4) = +2.7626% +- 0.0196% of my N_single 81,600 | build   +2258.3 = +2.7639% | diff -4.0 = -0.25 sigma
+  per-bin pulls (mine - build)/err over 112 bins with N > 1: chi2 = 150.1 (p = 0.010); max |pull| 3.53; mean pull -0.157
+  same over the 88 bins with N > 10: chi2 = 105.9 (p = 0.094); max |pull| 3.53
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.020, max 0.047; |mine - build| in the same units: max 0.072
+  z tilt Delta/N  z = 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0
+     mine : +2.21+-0.16%  +2.07+-0.02%  +2.67+-0.03%  +4.09+-0.05%  +6.14+-0.12%  +9.72+-0.33%
+     build: +2.14%  +2.08%  +2.70%  +4.02%  +6.10%  +9.75%
+  q shape Delta/N per q bin (edges 5.0 7.3 10.6 15.4 22.4 32.5 47.3 68.8 100.0)
+     mine : +3.54+-0.03 +2.25+-0.04 +1.51+-0.05 +1.05+-0.06 +0.61+-0.07 +0.25+-0.08 +0.24+-0.14 +0.36+-0.15 +0.20+-0.24
+     build: +3.52 +2.30 +1.52 +0.99 +0.64 +0.40 +0.25 +0.15 +0.09
+  my single counts (mean of 11 skies) / build Nn - 1: total -1.33e-03 (expected scatter of the mean ~1.1e-03 Poisson)
+
+=== [baseline_f2] q_cut 6 (vs build truth_baseline_f2.npz) ===
+  Delta total: mine   +1247.8 +-  12.6 (block error; sky scatter  12.2) = +2.2462% +- 0.0226% of my N_single 55,553 | build   +1260.0 = +2.2639% | diff -12.2 = -0.97 sigma
+  per-bin pulls (mine - build)/err over 109 bins with N > 1: chi2 = 129.4 (p = 0.088); max |pull| 2.80; mean pull -0.186
+  same over the 85 bins with N > 10: chi2 = 103.6 (p = 0.083); max |pull| 2.80
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.019, max 0.051; |mine - build| in the same units: max 0.073
+  my single counts (mean of 11 skies) / build Nn - 1: total -1.89e-03 (expected scatter of the mean ~1.3e-03 Poisson)
+
+=== [baseline_effi] q_cut 5 (vs build truth_baseline_effi.npz) ===
+  Delta total: mine    -244.1 +-  11.7 (block error; sky scatter  10.1) = -0.3363% +- 0.0162% of my N_single 72,583 | build    -241.4 = -0.3321% | diff -2.7 = -0.23 sigma
+  per-bin pulls (mine - build)/err over 106 bins with N > 1: chi2 = 126.4 (p = 0.086); max |pull| 3.79; mean pull -0.146
+  same over the 86 bins with N > 10: chi2 = 109.2 (p = 0.047); max |pull| 3.79
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.018, max 0.033; |mine - build| in the same units: max 0.079
+  z tilt Delta/N  z = 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0
+     mine : -0.48+-0.13%  -0.44+-0.02%  -0.33+-0.02%  -0.11+-0.04%  -0.17+-0.10%  +0.09+-0.26%
+     build: -0.46%  -0.41%  -0.32%  -0.21%  -0.07%  +0.05%
+  q shape Delta/N per q bin (edges 5.0 7.3 10.6 15.4 22.4 32.5 47.3 68.8 100.0)
+     mine : -0.77+-0.02 +0.11+-0.03 +0.33+-0.04 +0.37+-0.05 +0.24+-0.06 +0.10+-0.08 +0.09+-0.14 +0.39+-0.19 +0.21+-0.20
+     build: -0.77 +0.14 +0.34 +0.33 +0.27 +0.20 +0.13 +0.09 +0.06
+  my single counts (mean of 11 skies) / build Nn - 1: total -1.49e-03 (expected scatter of the mean ~1.1e-03 Poisson)
+
+=== [baseline_effi] q_cut 6 (vs build truth_baseline_effi.npz) ===
+  Delta total: mine     +13.0 +-   9.3 (block error; sky scatter   9.1) = +0.0265% +- 0.0189% of my N_single 49,064 | build     +21.0 = +0.0426% | diff -8.0 = -0.86 sigma
+  per-bin pulls (mine - build)/err over 104 bins with N > 1: chi2 = 114.8 (p = 0.221); max |pull| 3.23; mean pull -0.163
+  same over the 83 bins with N > 10: chi2 = 96.3 (p = 0.150); max |pull| 3.23
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.016, max 0.036; |mine - build| in the same units: max 0.055
+  my single counts (mean of 11 skies) / build Nn - 1: total -2.03e-03 (expected scatter of the mean ~1.4e-03 Poisson)
+
+=== [baseline_effii] q_cut 5 (vs build truth_baseline_effii.npz) ===
+  Delta total: mine    -361.0 +-  11.6 (block error; sky scatter  10.1) = -0.5038% +- 0.0162% of my N_single 71,657 | build    -358.0 = -0.4988% | diff -3.0 = -0.26 sigma
+  per-bin pulls (mine - build)/err over 106 bins with N > 1: chi2 = 124.0 (p = 0.111); max |pull| 3.62; mean pull -0.147
+  same over the 86 bins with N > 10: chi2 = 108.0 (p = 0.055); max |pull| 3.62
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.018, max 0.033; |mine - build| in the same units: max 0.077
+  z tilt Delta/N  z = 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0
+     mine : -0.64+-0.13%  -0.57+-0.02%  -0.49+-0.02%  -0.35+-0.04%  -0.52+-0.10%  -0.43+-0.27%
+     build: -0.62%  -0.54%  -0.48%  -0.45%  -0.42%  -0.48%
+  q shape Delta/N per q bin (edges 5.0 7.3 10.6 15.4 22.4 32.5 47.3 68.8 100.0)
+     mine : -1.00+-0.02 -0.00+-0.03 +0.28+-0.04 +0.34+-0.05 +0.22+-0.06 +0.09+-0.08 +0.09+-0.15 +0.41+-0.20 +0.25+-0.21
+     build: -1.01 +0.03 +0.28 +0.30 +0.25 +0.18 +0.13 +0.08 +0.05
+  my single counts (mean of 11 skies) / build Nn - 1: total -1.51e-03 (expected scatter of the mean ~1.1e-03 Poisson)
+
+=== [baseline_effii] q_cut 6 (vs build truth_baseline_effii.npz) ===
+  Delta total: mine     -43.5 +-   9.2 (block error; sky scatter   9.1) = -0.0899% +- 0.0190% of my N_single 48,403 | build     -35.5 = -0.0731% | diff -8.0 = -0.87 sigma
+  per-bin pulls (mine - build)/err over 104 bins with N > 1: chi2 = 115.2 (p = 0.214); max |pull| 3.28; mean pull -0.165
+  same over the 83 bins with N > 10: chi2 = 97.0 (p = 0.140); max |pull| 3.28
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.016, max 0.036; |mine - build| in the same units: max 0.055
+  my single counts (mean of 11 skies) / build Nn - 1: total -2.04e-03 (expected scatter of the mean ~1.4e-03 Poisson)
+
+=== [goal_f0.5] q_cut 5 (vs build truth_goal_f0.5.npz) ===
+  Delta total: mine    -617.0 +-  15.4 (block error; sky scatter  14.2) = -0.4818% +- 0.0120% of my N_single 128,082 | build    -634.8 = -0.4952% | diff +17.7 = +1.15 sigma
+  per-bin pulls (mine - build)/err over 120 bins with N > 1: chi2 = 112.5 (p = 0.673); max |pull| 2.93; mean pull +0.001
+  same over the 99 bins with N > 10: chi2 = 98.6 (p = 0.492); max |pull| 2.93
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.017, max 0.029; |mine - build| in the same units: max 0.079
+  z tilt Delta/N  z = 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0
+     mine : -1.06+-0.11%  -0.76+-0.02%  -0.47+-0.02%  -0.10+-0.03%  +0.24+-0.06%  +0.82+-0.15%
+     build: -1.09%  -0.74%  -0.49%  -0.17%  +0.27%  +0.95%
+  q shape Delta/N per q bin (edges 5.0 7.3 10.6 15.4 22.4 32.5 47.3 68.8 100.0)
+     mine : -0.93+-0.02 -0.11+-0.02 +0.14+-0.03 +0.28+-0.03 +0.28+-0.04 +0.22+-0.06 +0.09+-0.07 +0.18+-0.12 +0.36+-0.22
+     build: -0.96 -0.12 +0.18 +0.27 +0.27 +0.23 +0.18 +0.13 +0.09
+  my single counts (mean of 11 skies) / build Nn - 1: total -7.01e-04 (expected scatter of the mean ~8.4e-04 Poisson)
+
+=== [goal_f0.5] q_cut 6 (vs build truth_goal_f0.5.npz) ===
+  Delta total: mine    -139.6 +-  11.8 (block error; sky scatter  11.1) = -0.1574% +- 0.0133% of my N_single 88,710 | build    -148.4 = -0.1671% | diff +8.8 = +0.74 sigma
+  per-bin pulls (mine - build)/err over 119 bins with N > 1: chi2 = 114.4 (p = 0.602); max |pull| 3.30; mean pull -0.032
+  same over the 95 bins with N > 10: chi2 = 96.5 (p = 0.437); max |pull| 3.30
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.016, max 0.032; |mine - build| in the same units: max 0.090
+  my single counts (mean of 11 skies) / build Nn - 1: total -1.15e-03 (expected scatter of the mean ~1.0e-03 Poisson)
+
+=== [goal_f1] q_cut 5 (vs build truth_goal_f1.npz) ===
+  Delta total: mine   +1777.8 +-  18.1 (block error; sky scatter  18.2) = +1.3880% +- 0.0141% of my N_single 128,082 | build   +1767.8 = +1.3792% | diff +10.0 = +0.55 sigma
+  per-bin pulls (mine - build)/err over 120 bins with N > 1: chi2 = 127.5 (p = 0.302); max |pull| 3.16; mean pull -0.056
+  same over the 99 bins with N > 10: chi2 = 108.9 (p = 0.233); max |pull| 3.16
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.019, max 0.036; |mine - build| in the same units: max 0.097
+  z tilt Delta/N  z = 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0
+     mine : +0.92+-0.13%  +0.89+-0.02%  +1.33+-0.02%  +2.14+-0.03%  +3.18+-0.07%  +4.89+-0.18%
+     build: +0.78%  +0.91%  +1.32%  +2.07%  +3.19%  +4.98%
+  q shape Delta/N per q bin (edges 5.0 7.3 10.6 15.4 22.4 32.5 47.3 68.8 100.0)
+     mine : +1.62+-0.02 +1.33+-0.03 +0.99+-0.04 +0.79+-0.04 +0.57+-0.05 +0.29+-0.06 +0.17+-0.08 +0.25+-0.14 +0.36+-0.22
+     build: +1.60 +1.33 +1.03 +0.76 +0.54 +0.37 +0.25 +0.16 +0.10
+  my single counts (mean of 11 skies) / build Nn - 1: total -7.01e-04 (expected scatter of the mean ~8.4e-04 Poisson)
+
+=== [goal_f1] q_cut 6 (vs build truth_goal_f1.npz) ===
+  Delta total: mine   +1125.7 +-  13.8 (block error; sky scatter  12.6) = +1.2690% +- 0.0155% of my N_single 88,710 | build   +1123.6 = +1.2651% | diff +2.1 = +0.15 sigma
+  per-bin pulls (mine - build)/err over 119 bins with N > 1: chi2 = 125.9 (p = 0.315); max |pull| 2.94; mean pull -0.095
+  same over the 95 bins with N > 10: chi2 = 107.8 (p = 0.174); max |pull| 2.94
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.018, max 0.035; |mine - build| in the same units: max 0.084
+  my single counts (mean of 11 skies) / build Nn - 1: total -1.15e-03 (expected scatter of the mean ~1.0e-03 Poisson)
+
+=== [goal_f2] q_cut 5 (vs build truth_goal_f2.npz) ===
+  Delta total: mine   +4080.6 +-  22.4 (block error; sky scatter  26.9) = +3.1859% +- 0.0175% of my N_single 128,082 | build   +4074.8 = +3.1791% | diff +5.8 = +0.26 sigma
+  per-bin pulls (mine - build)/err over 120 bins with N > 1: chi2 = 125.7 (p = 0.342); max |pull| 2.89; mean pull -0.101
+  same over the 99 bins with N > 10: chi2 = 108.1 (p = 0.249); max |pull| 2.89
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.022, max 0.049; |mine - build| in the same units: max 0.090
+  z tilt Delta/N  z = 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0
+     mine : +2.69+-0.16%  +2.37+-0.02%  +3.00+-0.02%  +4.45+-0.04%  +6.69+-0.09%  +10.36+-0.24%
+     build: +2.55%  +2.37%  +3.01%  +4.41%  +6.60%  +10.45%
+  q shape Delta/N per q bin (edges 5.0 7.3 10.6 15.4 22.4 32.5 47.3 68.8 100.0)
+     mine : +4.10+-0.03 +2.70+-0.03 +1.76+-0.04 +1.26+-0.05 +0.81+-0.06 +0.38+-0.06 +0.22+-0.09 +0.25+-0.14 +0.36+-0.22
+     build: +4.07 +2.71 +1.82 +1.21 +0.79 +0.50 +0.31 +0.19 +0.12
+  my single counts (mean of 11 skies) / build Nn - 1: total -7.01e-04 (expected scatter of the mean ~8.4e-04 Poisson)
+
+=== [goal_f2] q_cut 6 (vs build truth_goal_f2.npz) ===
+  Delta total: mine   +2328.7 +-  17.0 (block error; sky scatter  18.9) = +2.6251% +- 0.0192% of my N_single 88,710 | build   +2333.9 = +2.6279% | diff -5.1 = -0.30 sigma
+  per-bin pulls (mine - build)/err over 119 bins with N > 1: chi2 = 134.7 (p = 0.154); max |pull| 3.94; mean pull -0.149
+  same over the 95 bins with N > 10: chi2 = 120.1 (p = 0.042); max |pull| 3.94
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.021, max 0.049; |mine - build| in the same units: max 0.074
+  my single counts (mean of 11 skies) / build Nn - 1: total -1.15e-03 (expected scatter of the mean ~1.0e-03 Poisson)
+
+=== [goal_effi] q_cut 5 (vs build truth_goal_effi.npz) ===
+  Delta total: mine    -455.2 +-  16.1 (block error; sky scatter  16.0) = -0.4077% +- 0.0144% of my N_single 111,644 | build    -463.5 = -0.4148% | diff +8.3 = +0.51 sigma
+  per-bin pulls (mine - build)/err over 118 bins with N > 1: chi2 = 134.6 (p = 0.141); max |pull| 2.87; mean pull -0.070
+  same over the 93 bins with N > 10: chi2 = 111.7 (p = 0.090); max |pull| 2.87
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.018, max 0.036; |mine - build| in the same units: max 0.080
+  z tilt Delta/N  z = 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0
+     mine : -0.51+-0.13%  -0.54+-0.02%  -0.41+-0.02%  -0.20+-0.03%  -0.12+-0.08%  +0.18+-0.19%
+     build: -0.60%  -0.51%  -0.41%  -0.29%  -0.11%  +0.16%
+  q shape Delta/N per q bin (edges 5.0 7.3 10.6 15.4 22.4 32.5 47.3 68.8 100.0)
+     mine : -0.94+-0.02 +0.11+-0.03 +0.35+-0.04 +0.44+-0.04 +0.33+-0.05 +0.18+-0.06 +0.03+-0.10 +0.28+-0.13 +0.28+-0.24
+     build: -0.97 +0.13 +0.39 +0.40 +0.33 +0.24 +0.17 +0.11 +0.08
+  my single counts (mean of 11 skies) / build Nn - 1: total -8.58e-04 (expected scatter of the mean ~9.0e-04 Poisson)
+
+=== [goal_effi] q_cut 6 (vs build truth_goal_effi.npz) ===
+  Delta total: mine     +13.0 +-  12.3 (block error; sky scatter  11.6) = +0.0170% +- 0.0160% of my N_single 76,693 | build     +15.6 = +0.0203% | diff -2.6 = -0.21 sigma
+  per-bin pulls (mine - build)/err over 117 bins with N > 1: chi2 = 140.8 (p = 0.066); max |pull| 4.10; mean pull -0.106
+  same over the 91 bins with N > 10: chi2 = 121.1 (p = 0.019); max |pull| 4.10
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.018, max 0.034; |mine - build| in the same units: max 0.084
+  my single counts (mean of 11 skies) / build Nn - 1: total -1.36e-03 (expected scatter of the mean ~1.1e-03 Poisson)
+
+=== [goal_effii] q_cut 5 (vs build truth_goal_effii.npz) ===
+  Delta total: mine    -736.5 +-  15.8 (block error; sky scatter  15.8) = -0.6745% +- 0.0145% of my N_single 109,192 | build    -743.9 = -0.6807% | diff +7.4 = +0.47 sigma
+  per-bin pulls (mine - build)/err over 118 bins with N > 1: chi2 = 138.4 (p = 0.097); max |pull| 2.98; mean pull -0.086
+  same over the 93 bins with N > 10: chi2 = 113.7 (p = 0.072); max |pull| 2.98
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.018, max 0.036; |mine - build| in the same units: max 0.081
+  z tilt Delta/N  z = 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0
+     mine : -0.77+-0.13%  -0.75+-0.02%  -0.66+-0.02%  -0.55+-0.03%  -0.62+-0.08%  -0.55+-0.19%
+     build: -0.86%  -0.72%  -0.67%  -0.64%  -0.61%  -0.58%
+  q shape Delta/N per q bin (edges 5.0 7.3 10.6 15.4 22.4 32.5 47.3 68.8 100.0)
+     mine : -1.32+-0.02 -0.07+-0.03 +0.26+-0.04 +0.38+-0.04 +0.30+-0.05 +0.16+-0.06 +0.04+-0.10 +0.21+-0.13 +0.26+-0.22
+     build: -1.35 -0.05 +0.29 +0.34 +0.30 +0.22 +0.16 +0.10 +0.07
+  my single counts (mean of 11 skies) / build Nn - 1: total -8.85e-04 (expected scatter of the mean ~9.1e-04 Poisson)
+
+=== [goal_effii] q_cut 6 (vs build truth_goal_effii.npz) ===
+  Delta total: mine    -128.4 +-  12.1 (block error; sky scatter  11.5) = -0.1714% +- 0.0161% of my N_single 74,910 | build    -125.0 = -0.1667% | diff -3.4 = -0.28 sigma
+  per-bin pulls (mine - build)/err over 116 bins with N > 1: chi2 = 146.2 (p = 0.030); max |pull| 4.14; mean pull -0.122
+  same over the 90 bins with N > 10: chi2 = 122.6 (p = 0.013); max |pull| 4.14
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.018, max 0.033; |mine - build| in the same units: max 0.083
+  my single counts (mean of 11 skies) / build Nn - 1: total -1.39e-03 (expected scatter of the mean ~1.1e-03 Poisson)
+
+=== [lowP_f1] q_cut 5 (vs build truth_lowP_f1.npz) ===
+  Delta total: mine    +279.8 +-   6.1 (block error; sky scatter   6.4) = +0.9398% +- 0.0204% of my N_single 29,777 | build    +285.2 = +0.9554% | diff -5.3 = -0.88 sigma
+  per-bin pulls (mine - build)/err over 89 bins with N > 1: chi2 = 94.3 (p = 0.329); max |pull| 2.92; mean pull -0.141
+  same over the 67 bins with N > 10: chi2 = 75.5 (p = 0.222); max |pull| 2.92
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.014, max 0.025; |mine - build| in the same units: max 0.044
+  z tilt Delta/N  z = 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0
+     mine : +0.56+-0.16%  +0.74+-0.03%  +0.96+-0.03%  +1.46+-0.06%  +1.91+-0.14%  +2.78+-0.42%
+     build: +0.71%  +0.74%  +0.98%  +1.45%  +2.11%  +2.91%
+  q shape Delta/N per q bin (edges 5.0 7.3 10.6 15.4 22.4 32.5 47.3 68.8 100.0)
+     mine : +1.09+-0.03 +0.83+-0.04 +0.61+-0.05 +0.35+-0.06 +0.17+-0.08 +0.23+-0.14 +0.58+-0.23 -0.23+-0.14 -0.17+-0.18
+     build: +1.12 +0.83 +0.58 +0.40 +0.27 +0.17 +0.11 +0.07 +0.04
+  my single counts (mean of 11 skies) / build Nn - 1: total -2.34e-03 (expected scatter of the mean ~1.7e-03 Poisson)
+
+=== [lowP_f1] q_cut 6 (vs build truth_lowP_f1.npz) ===
+  Delta total: mine    +157.9 +-   4.6 (block error; sky scatter   4.4) = +0.8252% +- 0.0238% of my N_single 19,132 | build    +160.2 = +0.8351% | diff -2.3 = -0.51 sigma
+  per-bin pulls (mine - build)/err over 85 bins with N > 1: chi2 = 107.4 (p = 0.051); max |pull| 3.42; mean pull -0.156
+  same over the 62 bins with N > 10: chi2 = 89.2 (p = 0.013); max |pull| 3.42
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.013, max 0.028; |mine - build| in the same units: max 0.043
+  my single counts (mean of 11 skies) / build Nn - 1: total -2.50e-03 (expected scatter of the mean ~2.2e-03 Poisson)
+
+=== [lowP_effi] q_cut 5 (vs build truth_lowP_effi.npz) ===
+  Delta total: mine     -45.9 +-   5.8 (block error; sky scatter   6.1) = -0.1651% +- 0.0208% of my N_single 27,782 | build     -41.3 = -0.1483% | diff -4.6 = -0.79 sigma
+  per-bin pulls (mine - build)/err over 87 bins with N > 1: chi2 = 93.3 (p = 0.302); max |pull| 2.87; mean pull -0.151
+  same over the 66 bins with N > 10: chi2 = 75.9 (p = 0.190); max |pull| 2.87
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.014, max 0.025; |mine - build| in the same units: max 0.047
+  z tilt Delta/N  z = 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0
+     mine : -0.32+-0.16%  -0.17+-0.03%  -0.16+-0.03%  -0.11+-0.06%  -0.37+-0.14%  -0.88+-0.43%
+     build: -0.14%  -0.17%  -0.13%  -0.11%  -0.17%  -0.75%
+  q shape Delta/N per q bin (edges 5.0 7.3 10.6 15.4 22.4 32.5 47.3 68.8 100.0)
+     mine : -0.39+-0.03 +0.16+-0.04 +0.24+-0.05 +0.14+-0.06 +0.05+-0.09 +0.19+-0.13 +0.38+-0.25 -0.01+-0.21 -0.35+-0.23
+     build: -0.36 +0.15 +0.22 +0.19 +0.14 +0.10 +0.07 +0.04 +0.03
+  my single counts (mean of 11 skies) / build Nn - 1: total -2.37e-03 (expected scatter of the mean ~1.8e-03 Poisson)
+
+=== [lowP_effi] q_cut 6 (vs build truth_lowP_effi.npz) ===
+  Delta total: mine     +13.5 +-   4.3 (block error; sky scatter   4.0) = +0.0762% +- 0.0242% of my N_single 17,765 | build     +15.2 = +0.0851% | diff -1.6 = -0.37 sigma
+  per-bin pulls (mine - build)/err over 85 bins with N > 1: chi2 = 115.0 (p = 0.017); max |pull| 3.47; mean pull -0.130
+  same over the 60 bins with N > 10: chi2 = 89.4 (p = 0.008); max |pull| 3.47
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.012, max 0.027; |mine - build| in the same units: max 0.040
+  my single counts (mean of 11 skies) / build Nn - 1: total -2.51e-03 (expected scatter of the mean ~2.3e-03 Poisson)
+
+=== [white_f1_muB] q_cut 5 (vs build truth_white.npz) ===
+  Delta total: mine   -1455.8 +-  20.8 (block error; sky scatter  18.2) = -1.6974% +- 0.0243% of my N_single 85,767 | build   -1402.1 = -1.6320% | diff -53.8 = -2.58 sigma
+  per-bin pulls (mine - build)/err over 116 bins with N > 1: chi2 = 145.2 (p = 0.035); max |pull| 2.90; mean pull -0.285
+  same over the 99 bins with N > 10: chi2 = 109.1 (p = 0.230); max |pull| 2.90
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.031, max 0.062; |mine - build| in the same units: max 0.131
+  z tilt Delta/N  z = 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0
+     mine : -5.34+-0.12%  -2.42+-0.03%  -1.09+-0.03%  +0.11+-0.06%  +1.37+-0.16%  +4.12+-0.43%
+     build: -5.27%  -2.34%  -1.01%  +0.13%  +1.51%  +3.48%
+  q shape Delta/N per q bin (edges 5.0 7.3 10.6 15.4 22.4 32.5 47.3 68.8 100.0)
+     mine : -3.07+-0.04 -0.94+-0.05 -0.00+-0.07 +0.47+-0.08 +0.47+-0.10 +0.49+-0.12 +0.49+-0.15 +0.45+-0.20 +0.25+-0.17
+     build: -3.01 -0.83 +0.07 +0.44 +0.55 +0.53 +0.45 +0.36 +0.24
+  vs Q3 truth_catalogue_v2 (c11): Q3 total -1412.6; mine - Q3 = -43.3 (-2.08 sigma); per-bin chi2 142.2 / 116
+  my single counts (mean of 11 skies) / build Nn - 1: total -1.67e-03 (expected scatter of the mean ~1.0e-03 Poisson)
+
+=== [white_f1_muB] q_cut 6 (vs build truth_white.npz) ===
+  Delta total: mine    -544.8 +-  16.9 (block error; sky scatter  15.0) = -0.8861% +- 0.0275% of my N_single 61,481 | build    -502.9 = -0.8161% | diff -41.9 = -2.48 sigma
+  per-bin pulls (mine - build)/err over 113 bins with N > 1: chi2 = 143.5 (p = 0.028); max |pull| 2.90; mean pull -0.289
+  same over the 98 bins with N > 10: chi2 = 113.0 (p = 0.143); max |pull| 2.90
+  MC error per bin in Poisson sigma at SO40 (0.4 err / sqrt(0.4 N)): median 0.030, max 0.062; |mine - build| in the same units: max 0.125
+  vs Q3 truth_catalogue_v2 (c11): Q3 total -509.7; mine - Q3 = -35.1 (-2.08 sigma); per-bin chi2 141.1 / 113
+  my single counts (mean of 11 skies) / build Nn - 1: total -2.36e-03 (expected scatter of the mean ~1.2e-03 Poisson)
+
+=== summary, q_cut 5 (Delta/N in %) ===
+variant                      mine    build (m-b)/err  chi2/ndof |       z<0.1 mine   build |       z 2-3 mine   build
+white_f1          -1.645 +- 0.024   -1.632     -0.44  136.6/116 |   -5.26 +- 0.12   -5.27 |   +4.19 +- 0.43   +3.48
+baseline_f0.5     -0.269 +- 0.013   -0.272     +0.29  127.4/112 |   -0.79 +- 0.11   -0.77 |   +1.05 +- 0.21   +1.09
+baseline_f1       +1.283 +- 0.016   +1.280     +0.08  148.6/112 |   +0.76 +- 0.13   +0.74 |   +4.68 +- 0.25   +4.71
+baseline_f2       +2.763 +- 0.020   +2.764     -0.25  150.1/112 |   +2.21 +- 0.16   +2.14 |   +9.72 +- 0.33   +9.75
+baseline_effi     -0.336 +- 0.016   -0.332     -0.23  126.4/106 |   -0.48 +- 0.13   -0.46 |   +0.09 +- 0.26   +0.05
+baseline_effii    -0.504 +- 0.016   -0.499     -0.26  124.0/106 |   -0.64 +- 0.13   -0.62 |   -0.43 +- 0.27   -0.48
+goal_f0.5         -0.482 +- 0.012   -0.495     +1.15  112.5/120 |   -1.06 +- 0.11   -1.09 |   +0.82 +- 0.15   +0.95
+goal_f1           +1.388 +- 0.014   +1.379     +0.55  127.5/120 |   +0.92 +- 0.13   +0.78 |   +4.89 +- 0.18   +4.98
+goal_f2           +3.186 +- 0.017   +3.179     +0.26  125.7/120 |   +2.69 +- 0.16   +2.55 |  +10.36 +- 0.24  +10.45
+goal_effi         -0.408 +- 0.014   -0.415     +0.51  134.6/118 |   -0.51 +- 0.13   -0.60 |   +0.18 +- 0.19   +0.16
+goal_effii        -0.674 +- 0.015   -0.681     +0.47  138.4/118 |   -0.77 +- 0.13   -0.86 |   -0.55 +- 0.19   -0.58
+lowP_f1           +0.940 +- 0.020   +0.955     -0.88   94.3/ 89 |   +0.56 +- 0.16   +0.71 |   +2.78 +- 0.42   +2.91
+lowP_effi         -0.165 +- 0.021   -0.148     -0.79   93.3/ 87 |   -0.32 +- 0.16   -0.14 |   -0.88 +- 0.43   -0.75
+white_f1_muB      -1.697 +- 0.024   -1.632     -2.58  145.2/116 |   -5.34 +- 0.12   -5.27 |   +4.12 +- 0.43   +3.48
+
+saved out/delta_mine.npz; total 1s

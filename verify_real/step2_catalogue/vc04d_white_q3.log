@@ -1,0 +1,6 @@
+q>5 [white] total -1402.1 vs Q3 -1412.6; per bin max 0.0073 Poisson sigma (SO40)
+q>5 [white_prefix] total -1413.3 vs Q3 -1412.6; per bin max 0.0006 Poisson sigma (SO40)
+q>5 [mine, direct] total -1411.2 +- 20.8
+q>6 [white] total -502.9 vs Q3 -509.7; per bin max 0.0057 Poisson sigma (SO40)
+q>6 [white_prefix] total -510.0 vs Q3 -509.7; per bin max 0.0003 Poisson sigma (SO40)
+q>6 [mine, direct] total -516.5 +- 16.9

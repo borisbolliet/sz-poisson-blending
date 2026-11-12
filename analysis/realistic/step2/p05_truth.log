@@ -1,0 +1,345 @@
+=== [white] q_cut = 5 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 85,906.6 | naive via kernel grid 85,910.7 (rel +4.79e-05; per-bin max |rel| (mu>10) 3.75e-04) | blended 84,508.7
+  Delta total -1,402.1 = -1.6320% of N (primaries q_A >= 0.5 only: -1,389.5 = -1.6177%); SO40: -560.8
+  Delta/N per z bin: -0.0527 -0.0338 -0.0253 -0.0204 -0.0168 -0.0140 -0.0114 -0.0091 -0.0068 -0.0045 -0.0006 +0.0057 +0.0129 +0.0211 +0.0329 +0.0535
+  Delta/N per q bin: -0.0301 -0.0083 +0.0007 +0.0044 +0.0055 +0.0053 +0.0045 +0.0036 +0.0024
+  Delta / Poisson sigma per bin: full sky max |.| 3.61, rms 0.67; SO40 max 2.29, rms 0.42; total chi2 (full, Delta^2/N) 64.1
+  z tilt Delta/N in z = 0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3: -5.27% -2.34% -1.01% +0.13% +1.51% +3.48%  | q_A >= 0.5: -5.27% -2.34% -1.00% +0.17% +1.65% +3.97%
+=== [white] q_cut = 6 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 61,624.9 | naive via kernel grid 61,626.7 (rel +2.98e-05; per-bin max |rel| (mu>10) 1.28e-04) | blended 61,123.7
+  Delta total -502.9 = -0.8161% of N (primaries q_A >= 0.5 only: -502.9 = -0.8160%); SO40: -201.2
+  Delta/N per z bin: -0.0374 -0.0225 -0.0156 -0.0115 -0.0084 -0.0058 -0.0034 -0.0011 +0.0011 +0.0034 +0.0073 +0.0140 +0.0218 +0.0311 +0.0452 +0.0748
+  Delta/N per q bin: -0.0173 -0.0037 +0.0024 +0.0049 +0.0055 +0.0052 +0.0044 +0.0036 +0.0024
+  Delta / Poisson sigma per bin: full sky max |.| 2.21, rms 0.39; SO40 max 1.40, rms 0.24; total chi2 (full, Delta^2/N) 21.5
+  saved truth_white.npz  [1s]
+
+=== [white_prefix] q_cut = 5 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 85,906.6 | naive via kernel grid 85,910.7 (rel +4.79e-05; per-bin max |rel| (mu>10) 3.75e-04) | blended 84,497.5
+  Delta total -1,413.3 = -1.6450% of N (primaries q_A >= 0.5 only: -1,400.7 = -1.6307%); SO40: -565.3
+  Delta/N per z bin: -0.0529 -0.0340 -0.0255 -0.0205 -0.0169 -0.0141 -0.0115 -0.0092 -0.0069 -0.0046 -0.0008 +0.0056 +0.0128 +0.0210 +0.0327 +0.0533
+  Delta/N per q bin: -0.0303 -0.0085 +0.0006 +0.0044 +0.0054 +0.0052 +0.0045 +0.0036 +0.0024
+  Delta / Poisson sigma per bin: full sky max |.| 3.63, rms 0.67; SO40 max 2.29, rms 0.42; total chi2 (full, Delta^2/N) 64.7
+  z tilt Delta/N in z = 0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3: -5.29% -2.36% -1.02% +0.12% +1.50% +3.47%  | q_A >= 0.5: -5.29% -2.35% -1.01% +0.16% +1.64% +3.95%
+=== [white_prefix] q_cut = 6 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 61,624.9 | naive via kernel grid 61,626.7 (rel +2.98e-05; per-bin max |rel| (mu>10) 1.28e-04) | blended 61,116.7
+  Delta total -510.0 = -0.8276% of N (primaries q_A >= 0.5 only: -510.0 = -0.8275%); SO40: -204.0
+  Delta/N per z bin: -0.0376 -0.0226 -0.0157 -0.0116 -0.0085 -0.0059 -0.0035 -0.0012 +0.0010 +0.0033 +0.0072 +0.0139 +0.0217 +0.0310 +0.0451 +0.0747
+  Delta/N per q bin: -0.0175 -0.0038 +0.0023 +0.0049 +0.0055 +0.0051 +0.0044 +0.0036 +0.0024
+  Delta / Poisson sigma per bin: full sky max |.| 2.22, rms 0.39; SO40 max 1.40, rms 0.25; total chi2 (full, Delta^2/N) 21.7
+  saved truth_white_prefix.npz  [2s]
+
+=== [baseline_f1] q_cut = 5 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 81,703.9 | naive via kernel grid 81,708.5 (rel +5.70e-05; per-bin max |rel| (mu>10) 3.06e-04) | blended 82,754.8
+  Delta total +1,046.3 = +1.2805% of N (primaries q_A >= 0.5 only: +1,052.0 = +1.2877%); SO40: +418.5
+  Delta/N per z bin: +0.0074 +0.0076 +0.0081 +0.0089 +0.0097 +0.0107 +0.0118 +0.0130 +0.0143 +0.0158 +0.0184 +0.0231 +0.0287 +0.0352 +0.0451 +0.0645
+  Delta/N per q bin: +0.0150 +0.0120 +0.0090 +0.0065 +0.0045 +0.0031 +0.0020 +0.0013 +0.0008
+  Delta / Poisson sigma per bin: full sky max |.| 1.43, rms 0.34; SO40 max 0.91, rms 0.21; total chi2 (full, Delta^2/N) 16.4
+  z tilt Delta/N in z = 0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3: +0.74% +0.88% +1.27% +1.99% +3.05% +4.71%  | q_A >= 0.5: +0.74% +0.88% +1.28% +2.01% +3.10% +4.85%
+=== [baseline_f1] q_cut = 6 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 55,656.6 | naive via kernel grid 55,658.7 (rel +3.73e-05; per-bin max |rel| (mu>10) 1.57e-04) | blended 56,301.4
+  Delta total +642.7 = +1.1547% of N (primaries q_A >= 0.5 only: +642.7 = +1.1548%); SO40: +257.1
+  Delta/N per z bin: +0.0077 +0.0076 +0.0079 +0.0084 +0.0092 +0.0100 +0.0109 +0.0119 +0.0131 +0.0143 +0.0165 +0.0205 +0.0253 +0.0309 +0.0395 +0.0567
+  Delta/N per q bin: +0.0138 +0.0107 +0.0081 +0.0059 +0.0042 +0.0029 +0.0019 +0.0013 +0.0008
+  Delta / Poisson sigma per bin: full sky max |.| 1.02, rms 0.25; SO40 max 0.65, rms 0.16; total chi2 (full, Delta^2/N) 8.8
+  saved truth_baseline_f1.npz  [2s]
+
+=== [baseline_f0.5] q_cut = 5 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 81,703.9 | naive via kernel grid 81,708.5 (rel +5.70e-05; per-bin max |rel| (mu>10) 3.06e-04) | blended 81,486.1
+  Delta total -222.4 = -0.2722% of N (primaries q_A >= 0.5 only: -212.0 = -0.2595%); SO40: -89.0
+  Delta/N per z bin: -0.0077 -0.0065 -0.0054 -0.0046 -0.0040 -0.0034 -0.0029 -0.0023 -0.0017 -0.0011 +0.0001 +0.0020 +0.0042 +0.0068 +0.0103 +0.0160
+  Delta/N per q bin: -0.0060 +0.0004 +0.0023 +0.0028 +0.0025 +0.0020 +0.0015 +0.0011 +0.0007
+  Delta / Poisson sigma per bin: full sky max |.| 0.62, rms 0.13; SO40 max 0.39, rms 0.08; total chi2 (full, Delta^2/N) 2.5
+  z tilt Delta/N in z = 0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3: -0.77% -0.49% -0.25% +0.07% +0.50% +1.09%  | q_A >= 0.5: -0.77% -0.48% -0.24% +0.10% +0.57% +1.31%
+=== [baseline_f0.5] q_cut = 6 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 55,656.6 | naive via kernel grid 55,658.7 (rel +3.73e-05; per-bin max |rel| (mu>10) 1.57e-04) | blended 55,649.2
+  Delta total -9.5 = -0.0171% of N (primaries q_A >= 0.5 only: -9.5 = -0.0171%); SO40: -3.8
+  Delta/N per z bin: -0.0039 -0.0033 -0.0025 -0.0019 -0.0013 -0.0008 -0.0003 +0.0003 +0.0009 +0.0015 +0.0026 +0.0046 +0.0069 +0.0097 +0.0137 +0.0217
+  Delta/N per q bin: -0.0020 +0.0014 +0.0026 +0.0027 +0.0024 +0.0019 +0.0015 +0.0010 +0.0007
+  Delta / Poisson sigma per bin: full sky max |.| 0.28, rms 0.07; SO40 max 0.18, rms 0.04; total chi2 (full, Delta^2/N) 0.6
+  saved truth_baseline_f0.5.npz  [3s]
+
+=== [baseline_f2] q_cut = 5 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 81,703.9 | naive via kernel grid 81,708.5 (rel +5.70e-05; per-bin max |rel| (mu>10) 3.06e-04) | blended 83,966.8
+  Delta total +2,258.3 = +2.7639% of N (primaries q_A >= 0.5 only: +2,256.1 = +2.7617%); SO40: +903.3
+  Delta/N per z bin: +0.0214 +0.0200 +0.0199 +0.0207 +0.0220 +0.0236 +0.0254 +0.0275 +0.0298 +0.0324 +0.0373 +0.0462 +0.0572 +0.0707 +0.0925 +0.1398
+  Delta/N per q bin: +0.0352 +0.0230 +0.0152 +0.0099 +0.0064 +0.0040 +0.0025 +0.0015 +0.0009
+  Delta / Poisson sigma per bin: full sky max |.| 3.07, rms 0.73; SO40 max 1.94, rms 0.46; total chi2 (full, Delta^2/N) 76.4
+  z tilt Delta/N in z = 0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3: +2.14% +2.08% +2.70% +4.02% +6.10% +9.75%  | q_A >= 0.5: +2.14% +2.08% +2.70% +4.02% +6.10% +9.75%
+=== [baseline_f2] q_cut = 6 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 55,656.6 | naive via kernel grid 55,658.7 (rel +3.73e-05; per-bin max |rel| (mu>10) 1.57e-04) | blended 56,918.7
+  Delta total +1,260.0 = +2.2639% of N (primaries q_A >= 0.5 only: +1,260.0 = +2.2638%); SO40: +504.0
+  Delta/N per z bin: +0.0184 +0.0171 +0.0169 +0.0175 +0.0185 +0.0198 +0.0212 +0.0229 +0.0248 +0.0269 +0.0309 +0.0381 +0.0470 +0.0579 +0.0754 +0.1138
+  Delta/N per q bin: +0.0288 +0.0195 +0.0132 +0.0088 +0.0058 +0.0037 +0.0023 +0.0015 +0.0009
+  Delta / Poisson sigma per bin: full sky max |.| 2.00, rms 0.49; SO40 max 1.26, rms 0.31; total chi2 (full, Delta^2/N) 34.2
+  saved truth_baseline_f2.npz  [3s]
+
+=== [goal_f1] q_cut = 5 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 128,165.7 | naive via kernel grid 128,172.4 (rel +5.22e-05; per-bin max |rel| (mu>10) 2.46e-04) | blended 129,940.2
+  Delta total +1,767.8 = +1.3792% of N (primaries q_A >= 0.5 only: +1,773.3 = +1.3837%); SO40: +707.1
+  Delta/N per z bin: +0.0078 +0.0079 +0.0084 +0.0091 +0.0100 +0.0110 +0.0122 +0.0134 +0.0148 +0.0163 +0.0191 +0.0240 +0.0298 +0.0367 +0.0473 +0.0683
+  Delta/N per q bin: +0.0160 +0.0133 +0.0103 +0.0076 +0.0054 +0.0037 +0.0025 +0.0016 +0.0010
+  Delta / Poisson sigma per bin: full sky max |.| 1.92, rms 0.46; SO40 max 1.21, rms 0.29; total chi2 (full, Delta^2/N) 30.3
+  z tilt Delta/N in z = 0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3: +0.78% +0.91% +1.32% +2.07% +3.19% +4.98%  | q_A >= 0.5: +0.79% +0.91% +1.32% +2.08% +3.21% +5.04%
+=== [goal_f1] q_cut = 6 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 88,809.2 | naive via kernel grid 88,812.2 (rel +3.46e-05; per-bin max |rel| (mu>10) 1.38e-04) | blended 89,935.8
+  Delta total +1,123.6 = +1.2651% of N (primaries q_A >= 0.5 only: +1,123.6 = +1.2652%); SO40: +449.4
+  Delta/N per z bin: +0.0085 +0.0081 +0.0084 +0.0089 +0.0097 +0.0106 +0.0115 +0.0126 +0.0138 +0.0150 +0.0174 +0.0216 +0.0266 +0.0325 +0.0415 +0.0593
+  Delta/N per q bin: +0.0150 +0.0121 +0.0093 +0.0069 +0.0050 +0.0035 +0.0024 +0.0016 +0.0010
+  Delta / Poisson sigma per bin: full sky max |.| 1.42, rms 0.34; SO40 max 0.90, rms 0.22; total chi2 (full, Delta^2/N) 17.1
+  saved truth_goal_f1.npz  [4s]
+
+=== [goal_f0.5] q_cut = 5 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 128,165.7 | naive via kernel grid 128,172.4 (rel +5.22e-05; per-bin max |rel| (mu>10) 2.46e-04) | blended 127,537.6
+  Delta total -634.8 = -0.4952% of N (primaries q_A >= 0.5 only: -623.3 = -0.4864%); SO40: -253.9
+  Delta/N per z bin: -0.0109 -0.0093 -0.0080 -0.0072 -0.0065 -0.0059 -0.0053 -0.0048 -0.0042 -0.0035 -0.0024 -0.0004 +0.0019 +0.0046 +0.0087 +0.0161
+  Delta/N per q bin: -0.0096 -0.0012 +0.0018 +0.0027 +0.0027 +0.0023 +0.0018 +0.0013 +0.0009
+  Delta / Poisson sigma per bin: full sky max |.| 1.08, rms 0.24; SO40 max 0.68, rms 0.15; total chi2 (full, Delta^2/N) 8.0
+  z tilt Delta/N in z = 0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3: -1.09% -0.74% -0.49% -0.17% +0.27% +0.95%  | q_A >= 0.5: -1.09% -0.74% -0.48% -0.16% +0.31% +1.06%
+=== [goal_f0.5] q_cut = 6 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 88,809.2 | naive via kernel grid 88,812.2 (rel +3.46e-05; per-bin max |rel| (mu>10) 1.38e-04) | blended 88,663.9
+  Delta total -148.4 = -0.1671% of N (primaries q_A >= 0.5 only: -148.3 = -0.1670%); SO40: -59.3
+  Delta/N per z bin: -0.0061 -0.0053 -0.0044 -0.0037 -0.0031 -0.0025 -0.0020 -0.0014 -0.0008 -0.0002 +0.0009 +0.0029 +0.0053 +0.0080 +0.0122 +0.0203
+  Delta/N per q bin: -0.0045 +0.0004 +0.0023 +0.0028 +0.0026 +0.0022 +0.0017 +0.0013 +0.0009
+  Delta / Poisson sigma per bin: full sky max |.| 0.52, rms 0.11; SO40 max 0.33, rms 0.07; total chi2 (full, Delta^2/N) 1.9
+  saved truth_goal_f0.5.npz  [5s]
+
+=== [goal_f2] q_cut = 5 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 128,165.7 | naive via kernel grid 128,172.4 (rel +5.22e-05; per-bin max |rel| (mu>10) 2.46e-04) | blended 132,247.2
+  Delta total +4,074.8 = +3.1791% of N (primaries q_A >= 0.5 only: +4,068.5 = +3.1747%); SO40: +1,629.9
+  Delta/N per z bin: +0.0255 +0.0232 +0.0228 +0.0235 +0.0247 +0.0264 +0.0283 +0.0305 +0.0330 +0.0357 +0.0410 +0.0503 +0.0618 +0.0759 +0.0987 +0.1471
+  Delta/N per q bin: +0.0407 +0.0271 +0.0182 +0.0121 +0.0079 +0.0050 +0.0031 +0.0019 +0.0012
+  Delta / Poisson sigma per bin: full sky max |.| 4.42, rms 1.05; SO40 max 2.79, rms 0.66; total chi2 (full, Delta^2/N) 159.0
+  z tilt Delta/N in z = 0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3: +2.55% +2.37% +3.01% +4.41% +6.60% +10.45%  | q_A >= 0.5: +2.54% +2.37% +3.01% +4.40% +6.59% +10.40%
+=== [goal_f2] q_cut = 6 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 88,809.2 | naive via kernel grid 88,812.2 (rel +3.46e-05; per-bin max |rel| (mu>10) 1.38e-04) | blended 91,146.1
+  Delta total +2,333.9 = +2.6279% of N (primaries q_A >= 0.5 only: +2,333.7 = +2.6277%); SO40: +933.5
+  Delta/N per z bin: +0.0221 +0.0200 +0.0195 +0.0200 +0.0210 +0.0224 +0.0239 +0.0257 +0.0277 +0.0300 +0.0342 +0.0419 +0.0513 +0.0627 +0.0811 +0.1203
+  Delta/N per q bin: +0.0336 +0.0231 +0.0159 +0.0108 +0.0071 +0.0047 +0.0030 +0.0019 +0.0012
+  Delta / Poisson sigma per bin: full sky max |.| 2.94, rms 0.72; SO40 max 1.86, rms 0.45; total chi2 (full, Delta^2/N) 73.8
+  saved truth_goal_f2.npz  [5s]
+
+=== [baseline_effi] q_cut = 5 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 72,687.5 | naive via kernel grid 72,691.8 (rel +5.91e-05; per-bin max |rel| (mu>10) 3.23e-04) | blended 72,450.4
+  Delta total -241.4 = -0.3321% of N (primaries q_A >= 0.5 only: -227.7 = -0.3133%); SO40: -96.6
+  Delta/N per z bin: -0.0046 -0.0048 -0.0043 -0.0040 -0.0037 -0.0035 -0.0033 -0.0031 -0.0029 -0.0027 -0.0023 -0.0017 -0.0010 -0.0002 +0.0006 +0.0002
+  Delta/N per q bin: -0.0077 +0.0014 +0.0034 +0.0033 +0.0027 +0.0020 +0.0013 +0.0009 +0.0006
+  Delta / Poisson sigma per bin: full sky max |.| 0.58, rms 0.14; SO40 max 0.37, rms 0.09; total chi2 (full, Delta^2/N) 2.8
+  z tilt Delta/N in z = 0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3: -0.46% -0.41% -0.32% -0.21% -0.07% +0.05%  | q_A >= 0.5: -0.46% -0.40% -0.30% -0.17% +0.04% +0.39%
+=== [baseline_effi] q_cut = 6 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 49,161.9 | naive via kernel grid 49,163.8 (rel +3.85e-05; per-bin max |rel| (mu>10) 1.62e-04) | blended 49,184.8
+  Delta total +21.0 = +0.0426% of N (primaries q_A >= 0.5 only: +21.0 = +0.0428%); SO40: +8.4
+  Delta/N per z bin: -0.0007 -0.0012 -0.0010 -0.0007 -0.0004 -0.0000 +0.0003 +0.0006 +0.0010 +0.0014 +0.0022 +0.0036 +0.0054 +0.0076 +0.0111 +0.0185
+  Delta/N per q bin: -0.0017 +0.0026 +0.0035 +0.0032 +0.0025 +0.0018 +0.0013 +0.0009 +0.0006
+  Delta / Poisson sigma per bin: full sky max |.| 0.18, rms 0.05; SO40 max 0.12, rms 0.03; total chi2 (full, Delta^2/N) 0.4
+  saved truth_baseline_effi.npz  [6s]
+
+=== [baseline_effii] q_cut = 5 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 71,760.8 | naive via kernel grid 71,765.0 (rel +5.94e-05; per-bin max |rel| (mu>10) 3.25e-04) | blended 71,407.1
+  Delta total -358.0 = -0.4988% of N (primaries q_A >= 0.5 only: -343.8 = -0.4792%); SO40: -143.2
+  Delta/N per z bin: -0.0062 -0.0060 -0.0055 -0.0052 -0.0051 -0.0050 -0.0049 -0.0048 -0.0047 -0.0047 -0.0046 -0.0044 -0.0042 -0.0042 -0.0045 -0.0071
+  Delta/N per q bin: -0.0101 +0.0003 +0.0028 +0.0030 +0.0025 +0.0018 +0.0013 +0.0008 +0.0005
+  Delta / Poisson sigma per bin: full sky max |.| 0.70, rms 0.17; SO40 max 0.44, rms 0.11; total chi2 (full, Delta^2/N) 4.2
+  z tilt Delta/N in z = 0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3: -0.62% -0.54% -0.48% -0.45% -0.42% -0.48%  | q_A >= 0.5: -0.62% -0.53% -0.47% -0.41% -0.31% -0.12%
+=== [baseline_effii] q_cut = 6 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 48,499.6 | naive via kernel grid 48,501.4 (rel +3.86e-05; per-bin max |rel| (mu>10) 1.63e-04) | blended 48,466.0
+  Delta total -35.5 = -0.0731% of N (primaries q_A >= 0.5 only: -35.4 = -0.0730%); SO40: -14.2
+  Delta/N per z bin: -0.0019 -0.0021 -0.0018 -0.0016 -0.0013 -0.0011 -0.0008 -0.0006 -0.0003 +0.0000 +0.0006 +0.0018 +0.0032 +0.0049 +0.0077 +0.0140
+  Delta/N per q bin: -0.0033 +0.0018 +0.0030 +0.0029 +0.0023 +0.0017 +0.0012 +0.0008 +0.0005
+  Delta / Poisson sigma per bin: full sky max |.| 0.25, rms 0.06; SO40 max 0.16, rms 0.04; total chi2 (full, Delta^2/N) 0.5
+  saved truth_baseline_effii.npz  [6s]
+
+=== [goal_effi] q_cut = 5 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 111,733.9 | naive via kernel grid 111,740.0 (rel +5.42e-05; per-bin max |rel| (mu>10) 2.58e-04) | blended 111,276.5
+  Delta total -463.5 = -0.4148% of N (primaries q_A >= 0.5 only: -447.8 = -0.4008%); SO40: -185.4
+  Delta/N per z bin: -0.0060 -0.0060 -0.0054 -0.0050 -0.0047 -0.0045 -0.0043 -0.0040 -0.0038 -0.0036 -0.0031 -0.0023 -0.0014 -0.0003 +0.0013 +0.0039
+  Delta/N per q bin: -0.0097 +0.0013 +0.0039 +0.0040 +0.0033 +0.0024 +0.0017 +0.0011 +0.0008
+  Delta / Poisson sigma per bin: full sky max |.| 0.86, rms 0.21; SO40 max 0.55, rms 0.13; total chi2 (full, Delta^2/N) 6.4
+  z tilt Delta/N in z = 0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3: -0.60% -0.51% -0.41% -0.29% -0.11% +0.16%  | q_A >= 0.5: -0.60% -0.51% -0.40% -0.26% -0.04% +0.34%
+=== [goal_effi] q_cut = 6 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 76,794.9 | naive via kernel grid 76,797.6 (rel +3.59e-05; per-bin max |rel| (mu>10) 1.43e-04) | blended 76,813.2
+  Delta total +15.6 = +0.0203% of N (primaries q_A >= 0.5 only: +15.7 = +0.0204%); SO40: +6.2
+  Delta/N per z bin: -0.0013 -0.0017 -0.0014 -0.0011 -0.0008 -0.0005 -0.0001 +0.0003 +0.0007 +0.0011 +0.0019 +0.0034 +0.0053 +0.0076 +0.0112 +0.0189
+  Delta/N per q bin: -0.0026 +0.0029 +0.0041 +0.0038 +0.0031 +0.0023 +0.0016 +0.0011 +0.0008
+  Delta / Poisson sigma per bin: full sky max |.| 0.29, rms 0.08; SO40 max 0.19, rms 0.05; total chi2 (full, Delta^2/N) 1.0
+  saved truth_goal_effi.npz  [7s]
+
+=== [goal_effii] q_cut = 5 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 109,283.0 | naive via kernel grid 109,289.0 (rel +5.46e-05; per-bin max |rel| (mu>10) 2.60e-04) | blended 108,545.1
+  Delta total -743.9 = -0.6807% of N (primaries q_A >= 0.5 only: -727.6 = -0.6658%); SO40: -297.6
+  Delta/N per z bin: -0.0086 -0.0081 -0.0074 -0.0071 -0.0069 -0.0068 -0.0067 -0.0066 -0.0066 -0.0065 -0.0065 -0.0063 -0.0062 -0.0060 -0.0058 -0.0060
+  Delta/N per q bin: -0.0135 -0.0005 +0.0029 +0.0034 +0.0030 +0.0022 +0.0016 +0.0010 +0.0007
+  Delta / Poisson sigma per bin: full sky max |.| 1.10, rms 0.28; SO40 max 0.70, rms 0.18; total chi2 (full, Delta^2/N) 11.1
+  z tilt Delta/N in z = 0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3: -0.86% -0.72% -0.67% -0.64% -0.61% -0.58%  | q_A >= 0.5: -0.86% -0.72% -0.65% -0.61% -0.54% -0.39%
+=== [goal_effii] q_cut = 6 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 75,011.8 | naive via kernel grid 75,014.6 (rel +3.61e-05; per-bin max |rel| (mu>10) 1.44e-04) | blended 74,889.5
+  Delta total -125.0 = -0.1667% of N (primaries q_A >= 0.5 only: -125.0 = -0.1666%); SO40: -50.0
+  Delta/N per z bin: -0.0032 -0.0033 -0.0029 -0.0026 -0.0023 -0.0021 -0.0019 -0.0016 -0.0013 -0.0010 -0.0004 +0.0006 +0.0020 +0.0036 +0.0064 +0.0124
+  Delta/N per q bin: -0.0052 +0.0015 +0.0033 +0.0034 +0.0028 +0.0021 +0.0015 +0.0010 +0.0007
+  Delta / Poisson sigma per bin: full sky max |.| 0.43, rms 0.10; SO40 max 0.27, rms 0.06; total chi2 (full, Delta^2/N) 1.5
+  saved truth_goal_effii.npz  [8s]
+
+=== [lowP_f1] q_cut = 5 (truth [0.3111, 0.8102, 0.6, 1.79, 0.173]) ===
+  naive smooth 29,844.1 | naive via kernel grid 29,846.6 (rel +8.30e-05; per-bin max |rel| (mu>10) 4.95e-04) | blended 30,131.8
+  Delta total +285.2 = +0.9554% of N (primaries q_A >= 0.5 only: +289.9 = +0.9719%); SO40: +114.1
+  Delta/N per z bin: +0.0071 +0.0069 +0.0070 +0.0074 +0.0079 +0.0086 +0.0093 +0.0101 +0.0110 +0.0119 +0.0136 +0.0166 +0.0201 +0.0239 +0.0286 +0.0341
+  Delta/N per q bin: +0.0112 +0.0083 +0.0058 +0.0040 +0.0027 +0.0017 +0.0011 +0.0007 +0.0004
+  Delta / Poisson sigma per bin: full sky max |.| 0.61, rms 0.15; SO40 max 0.39, rms 0.09; total chi2 (full, Delta^2/N) 3.1
+  z tilt Delta/N in z = 0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3: +0.71% +0.74% +0.98% +1.45% +2.11% +2.91%  | q_A >= 0.5: +0.71% +0.74% +1.00% +1.50% +2.26% +3.48%
+=== [lowP_f1] q_cut = 6 (truth [0.3111, 0.8102, 0.6, 1.79, 0.173]) ===
+  naive smooth 19,178.6 | naive via kernel grid 19,179.5 (rel +4.73e-05; per-bin max |rel| (mu>10) 1.57e-04) | blended 19,339.7
+  Delta total +160.2 = +0.8351% of N (primaries q_A >= 0.5 only: +160.2 = +0.8352%); SO40: +64.1
+  Delta/N per z bin: +0.0066 +0.0063 +0.0064 +0.0067 +0.0071 +0.0076 +0.0082 +0.0089 +0.0096 +0.0105 +0.0119 +0.0146 +0.0178 +0.0217 +0.0274 +0.0393
+  Delta/N per q bin: +0.0099 +0.0072 +0.0051 +0.0036 +0.0024 +0.0016 +0.0010 +0.0007 +0.0004
+  Delta / Poisson sigma per bin: full sky max |.| 0.41, rms 0.10; SO40 max 0.26, rms 0.07; total chi2 (full, Delta^2/N) 1.5
+  saved truth_lowP_f1.npz  [8s]
+
+=== [lowP_effi] q_cut = 5 (truth [0.3111, 0.8102, 0.6, 1.79, 0.173]) ===
+  naive smooth 27,846.2 | naive via kernel grid 27,848.6 (rel +8.60e-05; per-bin max |rel| (mu>10) 5.45e-04) | blended 27,807.3
+  Delta total -41.3 = -0.1483% of N (primaries q_A >= 0.5 only: -31.7 = -0.1140%); SO40: -16.5
+  Delta/N per z bin: -0.0014 -0.0019 -0.0018 -0.0017 -0.0016 -0.0015 -0.0014 -0.0013 -0.0012 -0.0011 -0.0011 -0.0011 -0.0014 -0.0025 -0.0061 -0.0224
+  Delta/N per q bin: -0.0036 +0.0015 +0.0022 +0.0019 +0.0014 +0.0010 +0.0007 +0.0004 +0.0003
+  Delta / Poisson sigma per bin: full sky max |.| 0.17, rms 0.04; SO40 max 0.11, rms 0.03; total chi2 (full, Delta^2/N) 0.3
+  z tilt Delta/N in z = 0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3: -0.14% -0.17% -0.13% -0.11% -0.17% -0.75%  | q_A >= 0.5: -0.14% -0.16% -0.10% -0.02% +0.12% +0.35%
+=== [lowP_effi] q_cut = 6 (truth [0.3111, 0.8102, 0.6, 1.79, 0.173]) ===
+  naive smooth 17,808.7 | naive via kernel grid 17,809.5 (rel +4.82e-05; per-bin max |rel| (mu>10) 1.60e-04) | blended 17,824.7
+  Delta total +15.2 = +0.0851% of N (primaries q_A >= 0.5 only: +15.2 = +0.0853%); SO40: +6.1
+  Delta/N per z bin: +0.0007 +0.0001 +0.0001 +0.0003 +0.0004 +0.0006 +0.0008 +0.0010 +0.0013 +0.0016 +0.0021 +0.0030 +0.0042 +0.0057 +0.0080 +0.0131
+  Delta/N per q bin: +0.0001 +0.0020 +0.0022 +0.0018 +0.0013 +0.0009 +0.0006 +0.0004 +0.0003
+  Delta / Poisson sigma per bin: full sky max |.| 0.06, rms 0.02; SO40 max 0.04, rms 0.01; total chi2 (full, Delta^2/N) 0.0
+  saved truth_lowP_effi.npz  [9s]
+
+=== [S8_0.75_f1] q_cut = 5 (truth [0.3111, 0.7365, 0.8, 1.79, 0.173]) ===
+  naive smooth 36,729.0 | naive via kernel grid 36,731.5 (rel +6.85e-05; per-bin max |rel| (mu>10) 3.19e-04) | blended 37,097.8
+  Delta total +366.3 = +0.9972% of N (primaries q_A >= 0.5 only: +369.3 = +1.0056%); SO40: +146.5
+  Delta/N per z bin: +0.0071 +0.0070 +0.0072 +0.0077 +0.0084 +0.0092 +0.0100 +0.0110 +0.0120 +0.0132 +0.0153 +0.0191 +0.0235 +0.0288 +0.0362 +0.0500
+  Delta/N per q bin: +0.0118 +0.0087 +0.0061 +0.0042 +0.0028 +0.0018 +0.0012 +0.0007 +0.0004
+  Delta / Poisson sigma per bin: full sky max |.| 0.70, rms 0.17; SO40 max 0.44, rms 0.11; total chi2 (full, Delta^2/N) 4.3
+  z tilt Delta/N in z = 0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3: +0.71% +0.77% +1.06% +1.63% +2.48% +3.72%  | q_A >= 0.5: +0.71% +0.77% +1.07% +1.66% +2.58% +4.04%
+=== [S8_0.75_f1] q_cut = 6 (truth [0.3111, 0.7365, 0.8, 1.79, 0.173]) ===
+  naive smooth 23,992.8 | naive via kernel grid 23,993.9 (rel +4.44e-05; per-bin max |rel| (mu>10) 1.58e-04) | blended 24,201.8
+  Delta total +207.9 = +0.8665% of N (primaries q_A >= 0.5 only: +207.9 = +0.8665%); SO40: +83.2
+  Delta/N per z bin: +0.0066 +0.0064 +0.0066 +0.0069 +0.0075 +0.0081 +0.0088 +0.0096 +0.0105 +0.0115 +0.0132 +0.0164 +0.0203 +0.0250 +0.0319 +0.0467
+  Delta/N per q bin: +0.0104 +0.0076 +0.0054 +0.0038 +0.0026 +0.0017 +0.0011 +0.0007 +0.0004
+  Delta / Poisson sigma per bin: full sky max |.| 0.47, rms 0.12; SO40 max 0.29, rms 0.08; total chi2 (full, Delta^2/N) 2.1
+  saved truth_S8_0.75_f1.npz  [9s]
+
+=== [S8_0.87_f1] q_cut = 5 (truth [0.3111, 0.8543, 0.8, 1.79, 0.173]) ===
+  naive smooth 122,626.0 | naive via kernel grid 122,632.4 (rel +5.20e-05; per-bin max |rel| (mu>10) 2.43e-04) | blended 124,365.2
+  Delta total +1,732.8 = +1.4130% of N (primaries q_A >= 0.5 only: +1,740.6 = +1.4196%); SO40: +693.1
+  Delta/N per z bin: +0.0066 +0.0072 +0.0080 +0.0089 +0.0099 +0.0111 +0.0123 +0.0136 +0.0151 +0.0167 +0.0196 +0.0247 +0.0308 +0.0379 +0.0489 +0.0701
+  Delta/N per q bin: +0.0163 +0.0138 +0.0108 +0.0080 +0.0058 +0.0040 +0.0027 +0.0018 +0.0011
+  Delta / Poisson sigma per bin: full sky max |.| 1.94, rms 0.47; SO40 max 1.23, rms 0.29; total chi2 (full, Delta^2/N) 31.1
+  z tilt Delta/N in z = 0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3: +0.66% +0.88% +1.34% +2.14% +3.30% +5.16%  | q_A >= 0.5: +0.66% +0.88% +1.34% +2.15% +3.33% +5.24%
+=== [S8_0.87_f1] q_cut = 6 (truth [0.3111, 0.8543, 0.8, 1.79, 0.173]) ===
+  naive smooth 85,237.1 | naive via kernel grid 85,240.0 (rel +3.41e-05; per-bin max |rel| (mu>10) 1.35e-04) | blended 86,353.9
+  Delta total +1,114.0 = +1.3068% of N (primaries q_A >= 0.5 only: +1,114.0 = +1.3069%); SO40: +445.6
+  Delta/N per z bin: +0.0076 +0.0077 +0.0082 +0.0089 +0.0098 +0.0107 +0.0118 +0.0129 +0.0142 +0.0155 +0.0180 +0.0225 +0.0277 +0.0338 +0.0433 +0.0618
+  Delta/N per q bin: +0.0154 +0.0126 +0.0098 +0.0073 +0.0053 +0.0037 +0.0026 +0.0017 +0.0011
+  Delta / Poisson sigma per bin: full sky max |.| 1.45, rms 0.35; SO40 max 0.92, rms 0.22; total chi2 (full, Delta^2/N) 17.8
+  saved truth_S8_0.87_f1.npz  [10s]
+
+=== [baseline_f1_fineQA] q_cut = 5 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 81,703.9 | naive via kernel grid 81,705.0 (rel +1.42e-05; per-bin max |rel| (mu>10) 7.67e-05) | blended 82,751.1
+  Delta total +1,046.1 = +1.2804% of N (primaries q_A >= 0.5 only: +1,051.9 = +1.2876%); SO40: +418.4
+  Delta/N per z bin: +0.0074 +0.0076 +0.0081 +0.0089 +0.0097 +0.0107 +0.0118 +0.0130 +0.0143 +0.0158 +0.0184 +0.0231 +0.0287 +0.0352 +0.0451 +0.0645
+  Delta/N per q bin: +0.0150 +0.0120 +0.0090 +0.0065 +0.0045 +0.0031 +0.0020 +0.0013 +0.0008
+  Delta / Poisson sigma per bin: full sky max |.| 1.43, rms 0.34; SO40 max 0.91, rms 0.21; total chi2 (full, Delta^2/N) 16.4
+  z tilt Delta/N in z = 0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3: +0.74% +0.88% +1.27% +1.99% +3.05% +4.71%  | q_A >= 0.5: +0.74% +0.88% +1.28% +2.01% +3.10% +4.85%
+=== [baseline_f1_fineQA] q_cut = 6 (truth [0.3111, 0.8102, 0.8, 1.79, 0.173]) ===
+  naive smooth 55,656.6 | naive via kernel grid 55,657.1 (rel +9.33e-06; per-bin max |rel| (mu>10) 3.95e-05) | blended 56,299.7
+  Delta total +642.6 = +1.1546% of N (primaries q_A >= 0.5 only: +642.6 = +1.1546%); SO40: +257.0
+  Delta/N per z bin: +0.0077 +0.0076 +0.0079 +0.0084 +0.0092 +0.0100 +0.0109 +0.0119 +0.0131 +0.0143 +0.0165 +0.0205 +0.0253 +0.0309 +0.0394 +0.0567
+  Delta/N per q bin: +0.0137 +0.0107 +0.0081 +0.0059 +0.0042 +0.0029 +0.0019 +0.0013 +0.0008
+  Delta / Poisson sigma per bin: full sky max |.| 1.02, rms 0.25; SO40 max 0.65, rms 0.16; total chi2 (full, Delta^2/N) 8.8
+  saved truth_baseline_f1_fineQA.npz  [10s]
+
+=== (A) regression: old white filter vs Q3 (data_cosmo/truth_catalogue_v2.npz, c11) ===
+  [white] q>5: total Delta -1,402.1 vs Q3 -1,412.6 (diff +10.5 = +1.22e-04 of N); per-bin |dDelta| in Poisson sigma at 40% sky: max 0.007, rms 0.002; at full sky max 0.011; max |dDelta|/|Delta_Q3| over bins with |Delta_Q3| > 20: 0.014
+     Delta/N per z bin  step 2: -0.0527 -0.0338 -0.0253 -0.0204 -0.0168 -0.0140 -0.0114 -0.0091 -0.0068 -0.0045 -0.0006 +0.0057 +0.0129 +0.0211 +0.0329 +0.0535
+                        Q3    : -0.0529 -0.0339 -0.0255 -0.0205 -0.0169 -0.0141 -0.0115 -0.0092 -0.0069 -0.0046 -0.0008 +0.0056 +0.0128 +0.0210 +0.0328 +0.0534
+     Delta/N per q bin  step 2: -0.0301 -0.0083 +0.0007 +0.0044 +0.0055 +0.0053 +0.0045 +0.0036 +0.0024
+                        Q3    : -0.0303 -0.0085 +0.0006 +0.0044 +0.0054 +0.0052 +0.0045 +0.0036 +0.0024
+  [white] q>6: total Delta -502.9 vs Q3 -509.7 (diff +6.7 = +1.09e-04 of N); per-bin |dDelta| in Poisson sigma at 40% sky: max 0.006, rms 0.002; at full sky max 0.009; max |dDelta|/|Delta_Q3| over bins with |Delta_Q3| > 20: 0.010
+     Delta/N per z bin  step 2: -0.0374 -0.0225 -0.0156 -0.0115 -0.0084 -0.0058 -0.0034 -0.0011 +0.0011 +0.0034 +0.0073 +0.0140 +0.0218 +0.0311 +0.0452 +0.0748
+                        Q3    : -0.0376 -0.0226 -0.0157 -0.0116 -0.0085 -0.0059 -0.0035 -0.0012 +0.0010 +0.0033 +0.0072 +0.0139 +0.0217 +0.0310 +0.0451 +0.0747
+     Delta/N per q bin  step 2: -0.0173 -0.0037 +0.0024 +0.0049 +0.0055 +0.0052 +0.0044 +0.0036 +0.0024
+                        Q3    : -0.0175 -0.0038 +0.0024 +0.0049 +0.0055 +0.0051 +0.0044 +0.0036 +0.0024
+  [white_prefix] q>5: total Delta -1,413.3 vs Q3 -1,412.6 (diff -0.7 = -7.98e-06 of N); per-bin |dDelta| in Poisson sigma at 40% sky: max 0.001, rms 0.000; at full sky max 0.001; max |dDelta|/|Delta_Q3| over bins with |Delta_Q3| > 20: 0.002
+     Delta/N per z bin  step 2: -0.0529 -0.0340 -0.0255 -0.0205 -0.0169 -0.0141 -0.0115 -0.0092 -0.0069 -0.0046 -0.0008 +0.0056 +0.0128 +0.0210 +0.0327 +0.0533
+                        Q3    : -0.0529 -0.0339 -0.0255 -0.0205 -0.0169 -0.0141 -0.0115 -0.0092 -0.0069 -0.0046 -0.0008 +0.0056 +0.0128 +0.0210 +0.0328 +0.0534
+     Delta/N per q bin  step 2: -0.0303 -0.0085 +0.0006 +0.0044 +0.0054 +0.0052 +0.0045 +0.0036 +0.0024
+                        Q3    : -0.0303 -0.0085 +0.0006 +0.0044 +0.0054 +0.0052 +0.0045 +0.0036 +0.0024
+  [white_prefix] q>6: total Delta -510.0 vs Q3 -509.7 (diff -0.3 = -5.66e-06 of N); per-bin |dDelta| in Poisson sigma at 40% sky: max 0.000, rms 0.000; at full sky max 0.001; max |dDelta|/|Delta_Q3| over bins with |Delta_Q3| > 20: 0.001
+     Delta/N per z bin  step 2: -0.0376 -0.0226 -0.0157 -0.0116 -0.0085 -0.0059 -0.0035 -0.0012 +0.0010 +0.0033 +0.0072 +0.0139 +0.0217 +0.0310 +0.0451 +0.0747
+                        Q3    : -0.0376 -0.0226 -0.0157 -0.0116 -0.0085 -0.0059 -0.0035 -0.0012 +0.0010 +0.0033 +0.0072 +0.0139 +0.0217 +0.0310 +0.0451 +0.0747
+     Delta/N per q bin  step 2: -0.0175 -0.0038 +0.0023 +0.0049 +0.0055 +0.0051 +0.0044 +0.0036 +0.0024
+                        Q3    : -0.0175 -0.0038 +0.0024 +0.0049 +0.0055 +0.0051 +0.0044 +0.0036 +0.0024
+  fixed vs pre-fix rates (same step-2 code), q>5: total +11.2; per-bin max |diff| 0.008 Poisson sigma (40% sky)
+  fixed vs pre-fix rates (same step-2 code), q>6: total +7.1; per-bin max |diff| 0.006 Poisson sigma (40% sky)
+
+=== (B) q_A grid convergence (full sky, q_cut 5) ===
+  [baseline_f1] half q_A grid (every other node) vs production: total +2.01 (+2.5e-05 of N); per bin max |dDelta| 0.22 counts = 0.0032 Poisson sigma (full sky); rms 0.0007
+  [white] half q_A grid (every other node) vs production: total +3.30 (+3.8e-05 of N); per bin max |dDelta| 0.23 counts = 0.0038 Poisson sigma (full sky); rms 0.0011
+  [goal_f1] half q_A grid (every other node) vs production: total +3.67 (+2.9e-05 of N); per bin max |dDelta| 0.41 counts = 0.0046 Poisson sigma (full sky); rms 0.0011
+  [baseline_f1] production vs 2x finer q_A grid: total +0.14 (+1.7e-06 of N); per bin max |dDelta| 0.02 counts = 0.0003 Poisson sigma (full sky); rms 0.0001
+  [baseline_f1] same, q_cut 6: total +0.12 (+2.1e-06 of N); per bin max |dDelta| 0.01 counts = 0.0003 Poisson sigma (full sky); rms 0.0001
+
+=== (C) theta grid convergence: every other theta node (interpolation error ~4x that of the full grid) ===
+  [baseline_f1] nodes 0::2 (24 nodes) vs all 48: total -0.67 (-8.2e-06 of N); per bin max |dDelta| 0.16 counts = 0.0023 Poisson sigma (full sky); rms 0.0003
+  [baseline_f1] nodes 1::2 (24 nodes) vs all 48: total -0.68 (-8.3e-06 of N); per bin max |dDelta| 0.14 counts = 0.0020 Poisson sigma (full sky); rms 0.0004
+  [goal_f1] nodes 0::2 (24 nodes) vs all 48: total -1.04 (-8.1e-06 of N); per bin max |dDelta| 0.32 counts = 0.0037 Poisson sigma (full sky); rms 0.0005
+  [goal_f1] nodes 1::2 (24 nodes) vs all 48: total -1.07 (-8.3e-06 of N); per bin max |dDelta| 0.34 counts = 0.0040 Poisson sigma (full sky); rms 0.0005
+  [white] nodes 0::2 (20 nodes) vs all 40: total -7.49 (-8.7e-05 of N); per bin max |dDelta| 1.00 counts = 0.0155 Poisson sigma (full sky); rms 0.0029
+  [white] nodes 1::2 (20 nodes) vs all 40: total -7.47 (-8.7e-05 of N); per bin max |dDelta| 1.04 counts = 0.0147 Poisson sigma (full sky); rms 0.0029
+  [baseline_effi] nodes 0::2 (24 nodes) vs all 48: total -0.07 (-1.0e-06 of N); per bin max |dDelta| 0.06 counts = 0.0009 Poisson sigma (full sky); rms 0.0002
+  [baseline_effi] nodes 1::2 (24 nodes) vs all 48: total -0.03 (-4.7e-07 of N); per bin max |dDelta| 0.07 counts = 0.0010 Poisson sigma (full sky); rms 0.0002
+
+=== (D) primaries with q_A < 0.5 (step 1 excluded them): Delta(all) - Delta(q_A >= 0.5) ===
+  [white] q>5: -12.57 counts (-1.5e-04 of N); max per bin 2.06; q>6: -0.05
+  [white_prefix] q>5: -12.57 counts (-1.5e-04 of N); max per bin 2.06; q>6: -0.05
+  [baseline_f1] q>5: -5.71 counts (-7.0e-05 of N); max per bin 1.02; q>6: -0.01
+  [baseline_f0.5] q>5: -10.40 counts (-1.3e-04 of N); max per bin 1.76; q>6: -0.04
+  [baseline_f2] q>5: +2.25 counts (+2.8e-05 of N); max per bin 0.22; q>6: +0.06
+  [goal_f1] q>5: -5.44 counts (-4.2e-05 of N); max per bin 0.98; q>6: -0.01
+  [goal_f0.5] q>5: -11.41 counts (-8.9e-05 of N); max per bin 1.92; q>6: -0.04
+  [goal_f2] q>5: +6.25 counts (+4.9e-05 of N); max per bin 0.82; q>6: +0.11
+  [baseline_effi] q>5: -13.72 counts (-1.9e-04 of N); max per bin 2.26; q>6: -0.06
+  [baseline_effii] q>5: -14.15 counts (-2.0e-04 of N); max per bin 2.33; q>6: -0.06
+  [goal_effi] q>5: -15.75 counts (-1.4e-04 of N); max per bin 2.58; q>6: -0.07
+  [goal_effii] q>5: -16.34 counts (-1.5e-04 of N); max per bin 2.68; q>6: -0.07
+  [lowP_f1] q>5: -4.78 counts (-1.6e-04 of N); max per bin 0.83; q>6: -0.02
+  [lowP_effi] q>5: -9.56 counts (-3.4e-04 of N); max per bin 1.59; q>6: -0.04
+  [S8_0.75_f1] q>5: -3.00 counts (-8.2e-05 of N); max per bin 0.54; q>6: -0.01
+  [S8_0.87_f1] q>5: -7.74 counts (-6.3e-05 of N); max per bin 1.35; q>6: -0.02
+  [baseline_f1_fineQA] q>5: -5.73 counts (-7.0e-05 of N); max per bin 1.02; q>6: -0.01
+
+=== (E) step 1 (s09 P(D) expectation, primaries q_A > 0.5, szsim HMF table) vs step 2 (q_A >= 0.5), q > 5 ===
+  [white] N_det,b / N_single - 1: step 1 -1.6213% (84,506 / 85,898); step 2 -1.6177% (84,505 / 85,895); all primaries -1.6320%
+     z = 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0: step 1 -5.28% -2.34% -1.00% +0.17% +1.64% +3.96% | step 2 -5.27% -2.34% -1.00% +0.17% +1.65% +3.97%
+  [baseline_f1] N_det,b / N_single - 1: step 1 +1.2863% (82,741 / 81,690); step 2 +1.2877% (82,744 / 81,692); all primaries +1.2805%
+     z = 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0: step 1 +0.74% +0.88% +1.28% +2.01% +3.09% +4.84% | step 2 +0.74% +0.88% +1.28% +2.01% +3.10% +4.85%
+  [baseline_f0.5] N_det,b / N_single - 1: step 1 -0.2604% (81,477 / 81,690); step 2 -0.2595% (81,480 / 81,692); all primaries -0.2722%
+  [baseline_f2] N_det,b / N_single - 1: step 1 +2.7608% (83,946 / 81,690); step 2 +2.7617% (83,948 / 81,692); all primaries +2.7639%
+  [goal_f1] N_det,b / N_single - 1: step 1 +1.3820% (129,923 / 128,152); step 2 +1.3837% (129,927 / 128,154); all primaries +1.3792%
+     z = 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0: step 1 +0.78% +0.91% +1.32% +2.08% +3.21% +5.03% | step 2 +0.79% +0.91% +1.32% +2.08% +3.21% +5.04%
+  [goal_f0.5] N_det,b / N_single - 1: step 1 -0.4875% (127,527 / 128,152); step 2 -0.4864% (127,530 / 128,154); all primaries -0.4952%
+  [goal_f2] N_det,b / N_single - 1: step 1 +3.1737% (132,219 / 128,152); step 2 +3.1747% (132,222 / 128,154); all primaries +3.1791%
+total 12s
+       12.82 real        12.90 user         0.38 sys
+          1015218176  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               75473  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  18  voluntary context switches
+                 739  involuntary context switches
+        178635304332  instructions retired
+         42295896631  cycles elapsed
+           971033728  peak memory footprint

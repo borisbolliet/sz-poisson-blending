@@ -1,0 +1,26 @@
+seed 1011: N = 29,291,022 (expected 29,295,487); tiers (theta edges [1.5, 5.0, 15.0]): [28273297, 993435, 23469, 821], theta max per tier [1.5, 5.0, 15.0, 54.82]; rss 2.51 GB [18s]
+primaries: 4,951,766 (q_med >= 0.4 in some filter: 4,198,287; subsampled 753,479 x 33); mu (expected, white) at thA = 1, 4, 16': 0.5234 1.3419 4.9358; rss 3.75 GB [29s]
+neighbour sums: 123s, 4,574,865,461 pairs (924 per primary); rss 4.10 GB
+histograms: 24s; realised / expected kernel mean at thA = 1, 4, 16' (white): 1.0043 1.0043 1.0043
+  [baseline_f1] q>5: N_single 81,536.2  N_blended 82,537.8  Delta/N +1.2284%
+  [goal_f1] q>5: N_single 128,092.6  N_blended 129,788.0  Delta/N +1.3235%
+  [white_f1] q>5: N_single 85,732.3  N_blended 84,237.6  Delta/N -1.7434%
+saved; total 178s; peak rss 4.10 GB
+      178.10 real       457.29 user         1.44 sys
+          4101570560  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              313033  page reclaims
+                 205  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 799  voluntary context switches
+               13399  involuntary context switches
+       3199573718073  instructions retired
+       1396058175240  cycles elapsed
+          4041974784  peak memory footprint

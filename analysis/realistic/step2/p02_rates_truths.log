@@ -1,0 +1,39 @@
+(a) S8 = 0.75: sigma8 = 0.73650; factor vs direct colossus ratio at z = 0.1-2, M < 5e15: max rel diff 3.6e-14
+(a) S8 = 0.87: sigma8 = 0.85434; factor vs direct colossus ratio at z = 0.1-2, M < 5e15: max rel diff 3.5e-14
+(b) fiducial node 12 (0.63'): recomputed rates vs s09 stored: max |diff| / max |value| = 2.3e-12  [17s]
+(b) fiducial node 30 (10.14'): recomputed rates vs s09 stored: max |diff| / max |value| = 5.2e-12  [28s]
+
+=== S8 = 0.75 (sigma8 = 0.73650, Om = 0.3111): neighbours M500 > 1e13 full sky 20,373,831; factor at M = 1e13 / 1e14 / 1e15, z = 0.5: 0.8811 / 0.6560 / 0.2349
+   rate node 0/48 40s
+   rate node 12/48 183s
+   rate node 24/48 325s
+   rate node 36/48 467s
+   |mu_hist| max 2.7e-03; var_hist / Parseval - 1 inner nodes max 6.9e-04; extra max 0.0e+00; var/sigma^2 at 1, 4, 16': 0.1470 0.1819 0.1329
+   saved rates_S8_0.75.npz  [598s]
+
+=== S8 = 0.87 (sigma8 = 0.85434, Om = 0.3111): neighbours M500 > 1e13 full sky 35,197,605; factor at M = 1e13 / 1e14 / 1e15, z = 0.5: 1.0572 / 1.2138 / 1.9794
+   rate node 0/48 610s
+   rate node 12/48 752s
+   rate node 24/48 894s
+   rate node 36/48 1036s
+   |mu_hist| max 5.7e-03; var_hist / Parseval - 1 inner nodes max 7.5e-04; extra max 0.0e+00; var/sigma^2 at 1, 4, 16': 0.5216 0.6506 0.4837
+   saved rates_S8_0.87.npz  [1167s]
+total 1167s
+     1167.69 real      6896.39 user         9.36 sys
+          1529217024  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              118136  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  43  voluntary context switches
+              287280  involuntary context switches
+      72204695257159  instructions retired
+      21142765447934  cycles elapsed
+          1464800000  peak memory footprint

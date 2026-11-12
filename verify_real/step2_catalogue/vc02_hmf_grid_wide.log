@@ -1,0 +1,38 @@
+  Om node 1/26 [2s]
+  Om node 6/26 [12s]
+  Om node 11/26 [21s]
+  Om node 16/26 [31s]
+  Om node 21/26 [41s]
+  Om node 26/26 [50s]
+grid (26, 43, 96, 553) built in 50s; rho_c0 = 1.270528e+11 Msun/Mpc^3
+(1) fiducial: direct colossus at my nodes (Om 0.3111, s8 0.8102) vs szsim d2N_dzdlnM_fullsky:
+    z = 0.0443: max |rel| (d2N > 1e-3) = 2.6e-08
+    z = 0.4966: max |rel| (d2N > 1e-3) = 1.9e-09
+    z = 0.9966: max |rel| (d2N > 1e-3) = 7.8e-10
+    z = 1.9916: max |rel| (d2N > 1e-3) = 3.1e-10
+(2) my interpolation (tensor not-a-knot cubic spline) at off-node points vs direct colossus, d2N > 1e-2 per dz dlnM:
+    Om=0.3111 s8=0.8102: max |rel| 7.2e-03; count-weighted mean |rel| 3.3e-04
+    Om=0.2963 s8=0.7891: max |rel| 7.6e-03; count-weighted mean |rel| 3.4e-04
+    Om=0.3297 s8=0.8456: max |rel| 8.2e-03; count-weighted mean |rel| 3.1e-04
+    Om=0.3041 s8=0.8233: max |rel| 8.3e-03; count-weighted mean |rel| 3.2e-04
+    Om=0.2731 s8=0.7737: max |rel| 8.1e-03; count-weighted mean |rel| 3.2e-04
+    Om=0.3567 s8=0.8519: max |rel| 6.3e-03; count-weighted mean |rel| 2.7e-04
+total 53s
+       53.63 real        53.27 user         0.25 sys
+           851542016  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               59892  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 519  voluntary context switches
+                 667  involuntary context switches
+        815822289160  instructions retired
+        172414854653  cycles elapsed
+           810552192  peak memory footprint

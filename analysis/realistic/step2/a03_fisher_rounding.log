@@ -1,0 +1,71 @@
+[a03] (0) at the fiducial: grid spline vs direct colossus (rounded): max |dlnN| 7.72e-03; smooth vs rounded Tinker08: max |dlnN| 4.49e-03 (d2N > 1e-2)  [1s]
+    z = 0.01: Delta_m = 1574.643 (colossus uses 1575); dDelta_m/dOm0 ~ -5045 per unit Om
+    z = 0.5: Delta_m = 828.236 (colossus uses 828); dDelta_m/dOm0 ~ -2654 per unit Om
+    z = 1.0: Delta_m = 638.675 (colossus uses 639); dDelta_m/dOm0 ~ -2046 per unit Om
+    z = 2.0: Delta_m = 541.443 (colossus uses 541); dDelta_m/dOm0 ~ -1735 per unit Om
+
+=== (1) sigma(S8), SO40, q_cut 5: build (grid, Fitter3) | direct rounded, Om step h | direct smooth, Om step h ===
+   [baseline] rounded done [3s]
+   [baseline] smooth done [4s]
+  [baseline] a: build 0.00104 | rounded 0.00103 0.00104 0.00104 0.00104 0.00104 | smooth 0.00104 0.00104 0.00104 0.00104 0.00104
+  [baseline] b: build 0.01183 | rounded 0.01182 0.01187 0.01180 0.01183 0.01185 | smooth 0.01183 0.01183 0.01183 0.01183 0.01184
+  [baseline] c: build 0.01868 | rounded 0.01838 0.01901 0.01820 0.01849 0.01855 | smooth 0.01852 0.01853 0.01852 0.01851 0.01849
+  [baseline] d: build 0.01794 | rounded 0.01761 0.01790 0.01801 0.01792 0.01798 | smooth 0.01794 0.01794 0.01794 0.01795 0.01795
+  [baseline] e: build 0.03505 | rounded 0.03288 0.03545 0.03446 0.03458 0.03496 | smooth 0.03471 0.03475 0.03473 0.03473 0.03470
+   [goal] rounded done [6s]
+   [goal] smooth done [6s]
+  [goal    ] a: build 0.00083 | rounded 0.00082 0.00083 0.00083 0.00083 0.00083 | smooth 0.00083 0.00083 0.00083 0.00083 0.00083
+  [goal    ] b: build 0.00951 | rounded 0.00951 0.00955 0.00948 0.00951 0.00953 | smooth 0.00951 0.00951 0.00951 0.00951 0.00952
+  [goal    ] c: build 0.01441 | rounded 0.01421 0.01466 0.01408 0.01428 0.01433 | smooth 0.01430 0.01431 0.01430 0.01430 0.01428
+  [goal    ] d: build 0.01681 | rounded 0.01644 0.01678 0.01686 0.01678 0.01686 | smooth 0.01680 0.01681 0.01681 0.01681 0.01681
+  [goal    ] e: build 0.02800 | rounded 0.02643 0.02826 0.02764 0.02768 0.02800 | smooth 0.02778 0.02782 0.02781 0.02781 0.02779
+   [white] rounded done [8s]
+   [white] smooth done [8s]
+  [white   ] a: build 0.00093 | rounded 0.00093 0.00093 0.00094 0.00093 0.00093 | smooth 0.00093 0.00093 0.00093 0.00093 0.00093
+  [white   ] b: build 0.02001 | rounded 0.02002 0.02015 0.01977 0.01997 0.01998 | smooth 0.01998 0.01997 0.01997 0.01997 0.01997
+  [white   ] c: build 0.02189 | rounded 0.02184 0.02215 0.02140 0.02176 0.02177 | smooth 0.02178 0.02177 0.02177 0.02176 0.02174
+  [white   ] d: build 0.01597 | rounded 0.01579 0.01597 0.01595 0.01594 0.01596 | smooth 0.01595 0.01595 0.01595 0.01595 0.01595
+  [white   ] e: build 0.03421 | rounded 0.03296 0.03460 0.03320 0.03376 0.03387 | smooth 0.03381 0.03382 0.03382 0.03380 0.03376
+    (Om steps h = (0.001, 0.002, 0.004, 0.008, 0.0125))
+
+=== (2) linearised S8 bias of the build's Delta (SO40, q_cut 5), in Fisher sigma: build grid | rounded h | smooth h ===
+  [baseline_f1] a: build +1.335 | rounded +1.341 +1.335 +1.332 +1.335 +1.334 | smooth +1.335 +1.335 +1.334 +1.334 +1.334
+  [baseline_f1] b: build +0.917 | rounded +0.911 +0.916 +0.918 +0.916 +0.917 | smooth +0.917 +0.917 +0.917 +0.917 +0.917
+  [baseline_f1] c: build +0.573 | rounded +0.565 +0.568 +0.579 +0.574 +0.575 | smooth +0.574 +0.574 +0.574 +0.575 +0.575
+  [baseline_f1] d: build -0.008 | rounded -0.004 -0.010 -0.007 -0.007 -0.008 | smooth -0.008 -0.008 -0.008 -0.008 -0.007
+  [baseline_f1] e: build +0.076 | rounded +0.078 +0.074 +0.077 +0.077 +0.077 | smooth +0.077 +0.077 +0.077 +0.077 +0.077
+  [goal_f1    ] a: build +1.850 | rounded +1.858 +1.849 +1.845 +1.850 +1.848 | smooth +1.849 +1.849 +1.848 +1.849 +1.848
+  [goal_f1    ] b: build +1.240 | rounded +1.233 +1.238 +1.241 +1.240 +1.241 | smooth +1.240 +1.240 +1.240 +1.240 +1.240
+  [goal_f1    ] c: build +0.801 | rounded +0.791 +0.794 +0.809 +0.803 +0.804 | smooth +0.803 +0.803 +0.803 +0.804 +0.804
+  [goal_f1    ] d: build +0.010 | rounded +0.015 +0.008 +0.012 +0.012 +0.011 | smooth +0.011 +0.011 +0.011 +0.011 +0.011
+  [goal_f1    ] e: build +0.116 | rounded +0.118 +0.113 +0.119 +0.118 +0.118 | smooth +0.118 +0.118 +0.118 +0.118 +0.118
+  [white      ] a: build -3.895 | rounded -3.884 -3.895 -3.896 -3.894 -3.894 | smooth -3.894 -3.894 -3.894 -3.894 -3.894
+  [white      ] b: build -0.565 | rounded -0.527 -0.573 -0.545 -0.554 -0.556 | smooth -0.554 -0.554 -0.554 -0.554 -0.553
+  [white      ] c: build -0.503 | rounded -0.453 -0.511 -0.478 -0.487 -0.490 | smooth -0.488 -0.488 -0.488 -0.488 -0.487
+  [white      ] d: build +1.066 | rounded +1.071 +1.057 +1.082 +1.072 +1.072 | smooth +1.072 +1.072 +1.072 +1.072 +1.073
+  [white      ] e: build +1.641 | rounded +1.609 +1.631 +1.646 +1.640 +1.645 | smooth +1.642 +1.642 +1.642 +1.642 +1.643
+
+=== (3) summary: smooth (h = 0.002-0.008, mean) / build grid - 1 ===
+  [baseline_f1] a: sigma +0.001 (smooth step spread 0.000), lin bias +1.335 vs +1.335; b: sigma +0.000 (smooth step spread 0.001), lin bias +0.917 vs +0.917; c: sigma -0.008 (smooth step spread 0.002), lin bias +0.575 vs +0.573; d: sigma +0.000 (smooth step spread 0.001), lin bias -0.008 vs -0.008; e: sigma -0.009 (smooth step spread 0.002), lin bias +0.077 vs +0.076
+  [goal_f1] a: sigma +0.001 (smooth step spread 0.000), lin bias +1.849 vs +1.850; b: sigma +0.000 (smooth step spread 0.001), lin bias +1.240 vs +1.240; c: sigma -0.008 (smooth step spread 0.002), lin bias +0.803 vs +0.801; d: sigma +0.000 (smooth step spread 0.001), lin bias +0.011 vs +0.010; e: sigma -0.007 (smooth step spread 0.001), lin bias +0.118 vs +0.116
+  [white] a: sigma +0.001 (smooth step spread 0.000), lin bias -3.894 vs -3.895; b: sigma -0.002 (smooth step spread 0.000), lin bias -0.554 vs -0.565; c: sigma -0.005 (smooth step spread 0.001), lin bias -0.488 vs -0.503; d: sigma -0.001 (smooth step spread 0.000), lin bias +1.072 vs +1.066; e: sigma -0.012 (smooth step spread 0.002), lin bias +1.642 vs +1.641
+
+[a03] done 8s
+        9.18 real         9.37 user         0.22 sys
+           912261120  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               70199  page reclaims
+                  97  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 229  voluntary context switches
+                 805  involuntary context switches
+        120510252723  instructions retired
+         29764725712  cycles elapsed
+           868011072  peak memory footprint

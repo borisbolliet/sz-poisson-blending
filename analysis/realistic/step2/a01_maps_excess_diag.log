@@ -1,0 +1,81 @@
+[a01] maps verifier arrays: 500 patches x 12 setups; full-sky scale 0.8251
+
+=== (1) per-patch contributions to the linearised S8-bias difference (map - kernel, same primaries), SO40 ===
+    columns: total | bootstrap sigma | jackknife (10 groups) sigma | skewness of t_p | share of the 5 largest |t_p| | total without the 1 / 5 most positive patches
+  [goal_f1       ] a: +0.018 | 0.101 | 0.082 | skew +0.07 | top-5 share 0.035 | w/o top 1: +0.006, w/o top 5: -0.041
+  [goal_f1       ] b: +0.063 | 0.088 | 0.094 | skew +0.07 | top-5 share 0.040 | w/o top 1: +0.047, w/o top 5: +0.005
+  [goal_f1       ] c: +0.249 | 0.111 | 0.144 | skew +0.80 | top-5 share 0.051 | w/o top 1: +0.219, w/o top 5: +0.152
+  [goal_f1       ] d: +0.031 | 0.058 | 0.051 | skew -0.27 | top-5 share 0.046 | w/o top 1: +0.021, w/o top 5: -0.005
+  [goal_f1       ] e: +0.159 | 0.092 | 0.101 | skew -0.05 | top-5 share 0.047 | w/o top 1: +0.144, w/o top 5: +0.090
+  [baseline_f1   ] a: +0.040 | 0.094 | 0.101 | skew +0.10 | top-5 share 0.037 | w/o top 1: +0.028, w/o top 5: -0.016
+  [baseline_f1   ] b: -0.003 | 0.080 | 0.093 | skew -0.01 | top-5 share 0.041 | w/o top 1: -0.016, w/o top 5: -0.056
+  [baseline_f1   ] c: +0.111 | 0.104 | 0.145 | skew +1.20 | top-5 share 0.057 | w/o top 1: +0.079, w/o top 5: +0.013
+  [baseline_f1   ] d: +0.035 | 0.051 | 0.032 | skew -0.42 | top-5 share 0.042 | w/o top 1: +0.029, w/o top 5: +0.008
+  [baseline_f1   ] e: +0.123 | 0.089 | 0.111 | skew +0.04 | top-5 share 0.047 | w/o top 1: +0.104, w/o top 5: +0.056
+  [goal_f0.5     ] c: +0.127 | 0.095 | 0.139 | skew +0.69 | top-5 share 0.049 | w/o top 1: +0.099, w/o top 5: +0.049
+  [goal_f0.5     ] e: +0.137 | 0.077 | 0.102 | skew +0.18 | top-5 share 0.043 | w/o top 1: +0.120, w/o top 5: +0.080
+  [goal_f2       ] c: +0.145 | 0.129 | 0.140 | skew +0.44 | top-5 share 0.042 | w/o top 1: +0.116, w/o top 5: +0.050
+  [goal_f2       ] e: +0.131 | 0.105 | 0.116 | skew -0.11 | top-5 share 0.044 | w/o top 1: +0.113, w/o top 5: +0.056
+  [baseline_f0.5 ] c: -0.016 | 0.088 | 0.132 | skew +0.85 | top-5 share 0.059 | w/o top 1: -0.046, w/o top 5: -0.094
+  [baseline_f0.5 ] e: +0.070 | 0.071 | 0.101 | skew +0.36 | top-5 share 0.046 | w/o top 1: +0.050, w/o top 5: +0.016
+  [baseline_f2   ] c: +0.076 | 0.122 | 0.138 | skew +0.81 | top-5 share 0.049 | w/o top 1: +0.044, w/o top 5: -0.024
+  [baseline_f2   ] e: +0.128 | 0.102 | 0.098 | skew +0.06 | top-5 share 0.044 | w/o top 1: +0.106, w/o top 5: +0.058
+  [white_f1      ] c: +0.012 | 0.127 | 0.091 | skew +0.89 | top-5 share 0.047 | w/o top 1: -0.010, w/o top 5: -0.089
+  [white_f1      ] e: +0.059 | 0.133 | 0.138 | skew +0.35 | top-5 share 0.040 | w/o top 1: +0.034, w/o top 5: -0.033
+  [baseline_effi ] c: +0.099 | 0.100 | 0.133 | skew +1.07 | top-5 share 0.056 | w/o top 1: +0.069, w/o top 5: +0.006
+  [baseline_effi ] e: +0.117 | 0.086 | 0.102 | skew +0.02 | top-5 share 0.046 | w/o top 1: +0.099, w/o top 5: +0.053
+  [baseline_effii] c: +0.097 | 0.099 | 0.132 | skew +1.05 | top-5 share 0.056 | w/o top 1: +0.068, w/o top 5: +0.005
+  [baseline_effii] e: +0.115 | 0.086 | 0.101 | skew +0.02 | top-5 share 0.045 | w/o top 1: +0.098, w/o top 5: +0.053
+  [goal_effi     ] c: +0.245 | 0.111 | 0.148 | skew +1.00 | top-5 share 0.055 | w/o top 1: +0.212, w/o top 5: +0.142
+  [goal_effi     ] e: +0.158 | 0.093 | 0.104 | skew -0.03 | top-5 share 0.048 | w/o top 1: +0.141, w/o top 5: +0.089
+  [goal_effii    ] c: +0.238 | 0.111 | 0.148 | skew +1.03 | top-5 share 0.056 | w/o top 1: +0.206, w/o top 5: +0.134
+  [goal_effii    ] e: +0.157 | 0.093 | 0.104 | skew -0.03 | top-5 share 0.048 | w/o top 1: +0.139, w/o top 5: +0.088
+  [lowP_f1       ] c: +0.097 | 0.072 | 0.069 | skew +1.22 | top-5 share 0.067 | w/o top 1: +0.079, w/o top 5: +0.021
+  [lowP_f1       ] e: +0.058 | 0.059 | 0.042 | skew +0.15 | top-5 share 0.039 | w/o top 1: +0.047, w/o top 5: +0.017
+
+=== (2) goal_f1, config c (SO40): z bins carrying the difference (sum over q bins, full-sky counts and bias share) ===
+   z 0.01-0.10: map - kernel    +4.0 counts; config-c S8 share -0.007 +- 0.010 sigma
+   z 0.10-0.20: map - kernel    -1.3 counts; config-c S8 share -0.009 +- 0.012 sigma
+   z 0.20-0.30: map - kernel   +27.9 counts; config-c S8 share +0.052 +- 0.028 sigma
+   z 0.30-0.40: map - kernel    -6.9 counts; config-c S8 share -0.045 +- 0.025 sigma
+   z 0.40-0.50: map - kernel    +1.4 counts; config-c S8 share +0.005 +- 0.017 sigma
+   z 0.50-0.60: map - kernel    -0.0 counts; config-c S8 share -0.006 +- 0.021 sigma
+   z 0.60-0.70: map - kernel    +2.3 counts; config-c S8 share -0.016 +- 0.017 sigma
+   z 0.70-0.80: map - kernel    -7.6 counts; config-c S8 share -0.005 +- 0.013 sigma
+   z 0.80-0.90: map - kernel   +15.5 counts; config-c S8 share -0.016 +- 0.017 sigma
+   z 0.90-1.00: map - kernel    -1.0 counts; config-c S8 share -0.002 +- 0.018 sigma
+   z 1.00-1.25: map - kernel   -20.8 counts; config-c S8 share +0.029 +- 0.021 sigma
+   z 1.25-1.50: map - kernel   +17.8 counts; config-c S8 share +0.019 +- 0.014 sigma
+   z 1.50-1.75: map - kernel    +7.4 counts; config-c S8 share +0.021 +- 0.026 sigma
+   z 1.75-2.00: map - kernel   +14.2 counts; config-c S8 share +0.079 +- 0.036 sigma
+   z 2.00-2.50: map - kernel    +8.5 counts; config-c S8 share +0.090 +- 0.056 sigma
+   z 2.50-3.00: map - kernel    +3.1 counts; config-c S8 share +0.059 +- 0.044 sigma
+   z >= 1.5: share +0.250 +- 0.088 sigma; z < 1.5: -0.001 +- 0.067 sigma
+
+=== (3) look-elsewhere: pulls of the 60 (setup, config) comparisons at SO40 (12 setups x configs a-e) ===
+   largest |pull| 2.23 (goal_f1, config c); number with |pull| > 2: 3; > 1.5: 7; mean pull +0.69
+   config a: mean pull over the 12 setups +0.21 (they share skies, so they are strongly correlated)
+   config b: mean pull over the 12 setups +0.17 (they share skies, so they are strongly correlated)
+   config c: mean pull over the 12 setups +1.17 (they share skies, so they are strongly correlated)
+   config d: mean pull over the 12 setups +0.60 (they share skies, so they are strongly correlated)
+   config e: mean pull over the 12 setups +1.32 (they share skies, so they are strongly correlated)
+
+[a01] done 12s
+       12.51 real        12.69 user         0.25 sys
+           941178880  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               78224  page reclaims
+                 273  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 358  voluntary context switches
+                1018  involuntary context switches
+        172544269928  instructions retired
+         41375363082  cycles elapsed
+           897846336  peak memory footprint

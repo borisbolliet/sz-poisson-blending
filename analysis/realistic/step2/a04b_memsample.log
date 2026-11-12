@@ -1,0 +1,6 @@
+Arbiter / memory sample during the fit phase of a04b_mapsigma_fdom.py (6 pool workers + parent), taken while it ran.
+Command (every 6 s, up to 40 samples, stopping when a04b logged 'done'; the largest total was printed):
+  ps -Ao rss,command | grep -i python | grep -v grep | awk '{s+=$1} END {printf "%.2f\n", s/1e6}'
+  = sum of the resident memory of all python processes on the machine, in GB.
+Output (largest of the samples, GB):
+3.69

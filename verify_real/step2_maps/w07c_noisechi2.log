@@ -1,0 +1,12 @@
+   baseline_f1  SO40 a: map chi2_min 1.96 = build 0.82 + noise term ~0.99 (sum f_sky var/N0 over 144 bins) -> 1.81
+   baseline_f1  SO40 d: map chi2_min 1.27 = build 0.12 + noise term ~0.99 (sum f_sky var/N0 over 144 bins) -> 1.11
+   baseline_f1  full a: map chi2_min 4.91 = build 2.06 + noise term ~2.47 (sum f_sky var/N0 over 144 bins) -> 4.53
+   baseline_f1  full d: map chi2_min 3.13 = build 0.30 + noise term ~2.47 (sum f_sky var/N0 over 144 bins) -> 2.77
+   goal_f1      SO40 a: map chi2_min 3.13 = build 1.51 + noise term ~1.46 (sum f_sky var/N0 over 144 bins) -> 2.96
+   goal_f1      SO40 d: map chi2_min 1.66 = build 0.25 + noise term ~1.46 (sum f_sky var/N0 over 144 bins) -> 1.70
+   goal_f1      full a: map chi2_min 7.83 = build 3.77 + noise term ~3.64 (sum f_sky var/N0 over 144 bins) -> 7.41
+   goal_f1      full d: map chi2_min 4.07 = build 0.60 + noise term ~3.64 (sum f_sky var/N0 over 144 bins) -> 4.24
+   white_f1     SO40 a: map chi2_min 12.62 = build 9.86 + noise term ~2.78 (sum f_sky var/N0 over 144 bins) -> 12.64
+   white_f1     SO40 d: map chi2_min 7.11 = build 4.65 + noise term ~2.78 (sum f_sky var/N0 over 144 bins) -> 7.43
+   white_f1     full a: map chi2_min 31.54 = build 24.65 + noise term ~6.96 (sum f_sky var/N0 over 144 bins) -> 31.61
+   white_f1     full d: map chi2_min 16.12 = build 9.70 + noise term ~6.96 (sum f_sky var/N0 over 144 bins) -> 16.66

@@ -20,7 +20,8 @@ Every number below was computed by a script in this repository. Each one was als
 - **Detected clusters rarely sit together.** At signal-to-noise q > 5, only **0.7%** of detections have another detection within 2′.
 - **Blending is common anyway.** About **15%** of detections have their SZ signal inflated by more than 10%. About **8%** are detected only because of that boost, and about **10%** of real clusters are lost. The cause is mostly faint, undetectable halos at *other redshifts* along the line of sight.
 - **So blending is a confusion problem, not a pair problem.** It has to be computed from the summed signal of all faint neighbours (a "P(D)" calculation), not from pairs within a radius.
-- **Ignoring blending biases cosmology.** A cluster-count fit that ignores it shifts S8 by about **1σ** for an SO-like survey and **2σ** on the full sky. It usually passes goodness-of-fit, and mass-calibration nuisances do not absorb it. Modelling it exactly is cheap: about one minute per P(D) table, and it does not need recomputing at every step.
+- **Ignoring blending biases cosmology (idealised telescope).** A cluster-count fit that ignores it shifts S8 by about **1σ** for an SO-like survey and **2σ** on the full sky. It usually passes goodness-of-fit, and mass-calibration nuisances do not absorb it. Modelling it exactly is cheap: about one minute per P(D) table, and it does not need recomputing at every step.
+  - *With SO's realistic six-channel filter this changes* ([step 2](#towards-a-realistic-so-analysis-in-progress)): with the default analysis choices, if the Y–M normalisation, slope and scatter are fitted, the S8 bias disappears (at most +0.6σ for an SO-like survey over all choices tried); if the relation is fixed, a bias of +1.33σ to +1.85σ appears for an SO-like survey (+2.11σ to +2.92σ on the full sky), opposite in sign to the idealised telescope's −4.0σ (−6.3σ on the full sky).
 - **Two traps.**
   - Not removing the map's mean SZ signal roughly *triples* every blending fraction.
   - Not computing fractions on the *detected* sample underestimates blending by 1.3–1.5×.
@@ -162,7 +163,7 @@ We put blending into a binned (z, q) Poisson count likelihood and fitted the usu
 - So freeing nuisance parameters does not remove the bias; it changes which parameter absorbs it, and in which direction.
 - **Green** points are often far off, in either direction. They show that the detection pipeline itself (fragments, noise peaks) must be calibrated on simulations, and that this is a bigger effect than blending.
 
-**Bottom line.** If blending is ignored, a realistic SO-like analysis (row d) gets S8 too high by about 1σ, and a full-sky one by about 2σ.
+**Bottom line.** With the idealised telescope, if blending is ignored, an SO-like analysis with the most realistic fit (row d) gets S8 too high by about 1σ, and a full-sky one by about 2σ. With SO's realistic filter and the default analysis choices, this row-d bias drops to −0.01σ to +0.08σ; other attribution rules and noise estimates leave at most +0.6σ (SO-like) and +0.9σ (full sky) ([step 2](#towards-a-realistic-so-analysis-in-progress)).
 
 | fitted | SO-like 16,500 deg² | full sky |
 |---|---|---|
@@ -200,7 +201,11 @@ The results above use an idealised telescope. We are now repeating them with a r
   - At q > 5, 8.8% (baseline noise) and 10.4% (goal noise) of detections have their Y boosted by more than 10%, against 16.2% for the idealised telescope.
   - As a noise term, faint-halo SZ adds only 5–8% to the SO filter noise, in line with Raghunathan et al. (2022).
   - Details: [`analysis/realistic/step1/RESULTS.md`](analysis/realistic/step1/RESULTS.md).
-- **Step 2 (running):** the cosmology bias with the SO filter.
+- **Step 2 (done, independently verified): with the default analysis choices, Q3's S8 bias disappears when the scaling relation (normalisation, slope and scatter) is fitted.**
+  - When (1−b) (4% prior), the slope α and the scatter are fitted along with Ωm and σ8, the S8 bias is −0.01σ (baseline) and +0.01σ (goal) for an SO-like survey with the default analysis choices, and −0.19σ to +0.61σ over all attribution rules and noise estimates tried, against +1.1σ for the idealised telescope.
+  - With the scaling relation fixed, a bias of +1.33σ to +1.85σ appears instead, of the opposite sign to Q3's −4.0σ. It depends strongly on which cluster a blended peak is assigned to and on how the noise level is measured.
+  - All step-2 numbers measure each cluster at its true position and size, with the neighbours added through the P(D), and fit noiseless expected counts; foregrounds, halo clustering and a real cluster finder (step 3) are not yet included.
+  - Details: [`analysis/realistic/step2/RESULTS.md`](analysis/realistic/step2/RESULTS.md).
 - **Step 3 (next):** a realistic cluster finder, reimplementing the iterative matched filter of SZiFi.
 
 ---

@@ -1,0 +1,29 @@
+[w07b] max goodness-of-fit power of the map-route ML fits over the build's MMF setups (q_cut 5):
+   SO40 config a  : 0.184 (goal_f2 a)
+   SO40 config b-e: 0.075 (goal_f2 d)
+   full config a  : 0.535 (goal_f2 a)
+   full config b-e: 0.126 (goal_f2 d)
+   analyst variant baseline_std   SO40 a: S8 -2.79 Om -1.31 s8 +0.32 chi2min 7.2 power 0.113
+   analyst variant baseline_std   SO40 d: S8 +0.28 Om +0.17 s8 +0.37 chi2min 3.1 power 0.073
+   analyst variant baseline_std   full a: S8 -4.40 Om -2.06 s8 +0.51 chi2min 17.9 power 0.273
+   analyst variant baseline_std   full d: S8 +0.42 Om +0.28 s8 +0.58 chi2min 7.7 power 0.120
+   analyst variant baseline_clip  SO40 a: S8 -0.30 Om -0.48 s8 +0.53 chi2min 1.6 power 0.061
+   analyst variant baseline_clip  SO40 d: S8 +0.13 Om +0.04 s8 +0.22 chi2min 1.5 power 0.060
+   analyst variant baseline_clip  full a: S8 -0.47 Om -0.76 s8 +0.84 chi2min 4.0 power 0.081
+   analyst variant baseline_clip  full d: S8 +0.24 Om +0.15 s8 +0.37 chi2min 3.7 power 0.078
+   analyst variant baseline_rob   SO40 a: S8 -0.74 Om -0.60 s8 +0.45 chi2min 2.2 power 0.066
+   analyst variant baseline_rob   SO40 d: S8 +0.16 Om +0.08 s8 +0.24 chi2min 1.7 power 0.062
+   analyst variant baseline_rob   full a: S8 -1.17 Om -0.95 s8 +0.71 chi2min 5.4 power 0.095
+   analyst variant baseline_rob   full d: S8 +0.28 Om +0.18 s8 +0.40 chi2min 4.2 power 0.084
+   analyst variant goal_std       SO40 a: S8 -4.31 Om -1.97 s8 +0.46 chi2min 15.4 power 0.229
+   analyst variant goal_std       SO40 d: S8 +0.51 Om +0.34 s8 +0.66 chi2min 5.9 power 0.100
+   analyst variant goal_std       full a: S8 -6.81 Om -3.12 s8 +0.73 chi2min 38.4 power 0.667
+   analyst variant goal_std       full d: S8 +0.83 Om +0.61 s8 +1.08 chi2min 14.6 power 0.219
+   analyst variant goal_clip      SO40 a: S8 -0.79 Om -0.85 s8 +0.79 chi2min 2.7 power 0.070
+   analyst variant goal_clip      SO40 d: S8 +0.22 Om +0.13 s8 +0.32 chi2min 2.1 power 0.066
+   analyst variant goal_clip      full a: S8 -1.24 Om -1.35 s8 +1.24 chi2min 6.6 power 0.108
+   analyst variant goal_clip      full d: S8 +0.45 Om +0.34 s8 +0.58 chi2min 5.3 power 0.094
+   analyst variant goal_rob       SO40 a: S8 -1.31 Om -1.00 s8 +0.71 chi2min 3.7 power 0.079
+   analyst variant goal_rob       SO40 d: S8 +0.27 Om +0.17 s8 +0.36 chi2min 2.6 power 0.069
+   analyst variant goal_rob       full a: S8 -2.08 Om -1.58 s8 +1.12 chi2min 9.4 power 0.140
+   analyst variant goal_rob       full d: S8 +0.50 Om +0.39 s8 +0.64 chi2min 6.3 power 0.105

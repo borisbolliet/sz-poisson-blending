@@ -1,0 +1,44 @@
+(0) neighbour population: 3,939,280 points, N full sky = 29,301,858; s2lib copy with F = 1 identical to blendlib: True  [2s]
+    EDGES = [4.0, 5.0, 6.0, 7.0, 7.2711, 8.5287, 10.5737, 12.1231, 15.3765, 17.2324, 22.3607, 24.4949, 32.5172, 34.8182, 47.2871, 49.4923, 68.7656, 70.3508, 100.0]; equal to data_cosmo/kernel_catalogue.npz EDGES: True; QA grid 1065 nodes, equal to c03's: True
+(1) [baseline] sigma_Y exact at the 48 kernel nodes vs s09 sigA: max rel 4.1e-07; spline (SmoothModel) vs sigmaY_mmf.npz baseline_l100 (61 nodes 0.1-100'): max rel 8.8e-07
+(1) [goal] sigma_Y exact at the 48 kernel nodes vs s09 sigA: max rel 4.1e-07; spline (SmoothModel) vs sigmaY_mmf.npz goal_l100 (61 nodes 0.1-100'): max rel 1.0e-06
+(2) [baseline] Parseval at s05's 40 nodes vs confusion_var.npz: all max rel 0.0e+00, sub-threshold 0.0e+00  [4s]
+(3) [baseline] |mu_hist| max 4.4e-03; var_hist / Parseval - 1 over inner nodes: 7.3e-04 (max); extra (fixed) max 0.00e+00, vs s09's stored extra at inner nodes max |diff| 3.2e-06; s09's spurious outer values were [0.0135, 0.0124, 0.011, 0.0091, 0.0066, 0.0035, 0.0062, 0.0158, 0.024, 0.0309]
+(4) [baseline] r_i = sqrt(1 + var_subthr) at theta_A = 0.5, 1, 2, 4, 8, 16, 32': 1.0545 1.0608 1.0673 1.0686 1.0592 1.0414 1.0252; range over nodes 1.0094-1.0691
+    [baseline] r_ii = robust half-width at the same theta_A: 1.0616 1.0680 1.0746 1.0762 1.0676 1.0515 1.0364; range 1.0180-1.0766; vs s06b table D (pd_fractions QN_1e13): max |diff| inner nodes 1.6e-06, outer nodes 1.5e-02 (s06b had the spurious extra)
+(2) [goal] Parseval at s05's 40 nodes vs confusion_var.npz: all max rel 0.0e+00, sub-threshold 0.0e+00  [5s]
+(3) [goal] |mu_hist| max 4.2e-03; var_hist / Parseval - 1 over inner nodes: 7.7e-04 (max); extra (fixed) max 0.00e+00, vs s09's stored extra at inner nodes max |diff| 1.3e-05; s09's spurious outer values were [0.0208, 0.0191, 0.0169, 0.014, 0.0102, 0.0054, 0.0083, 0.021, 0.0318, 0.0407]
+(4) [goal] r_i = sqrt(1 + var_subthr) at theta_A = 0.5, 1, 2, 4, 8, 16, 32': 1.0678 1.0756 1.0834 1.0846 1.0724 1.0506 1.0310; range over nodes 1.0123-1.0855
+    [goal] r_ii = robust half-width at the same theta_A: 1.0799 1.0883 1.0971 1.0991 1.0878 1.0665 1.0462; range 1.0234-1.0997; vs s06b table D (pd_fractions QN_1e13): max |diff| inner nodes 6.5e-06, outer nodes 2.0e-02 (s06b had the spurious extra)
+(3) [white] 40 nodes 0.25-80.0'; mu_hist = s09 mu: max |diff| 0.0e+00; mu at 1, 4, 16, 80': 0.525 1.345 4.939 24.472
+    [white, pre-fix b03 rates (data/blending/analytic.npz)] mu_exact vs histogram moments: max |diff| 3.6e-15; at theta_A = 4, 16, 40, 80': mu (pre-fix) / mu (fixed) - 1 = +4.69e-04 +4.03e-04 +3.14e-04 +2.29e-04; var(|x|<500) pre-fix / fixed - 1 = +1.86e-02 +1.48e-02 +1.16e-02 +1.04e-02; rate(x>=500) pre-fix / fixed = 3.097 1.470 1.267 1.205
+
+(5) low-pressure population: (1-b) = 0.6, Y x c = (0.6/0.8)^1.79 = 0.59753, c^2 = 0.35704
+    Parseval (all) low / fiducial at the nodes: 0.357042-0.357042 (exact c^2 expected); scaled-rate variance / c^2 / fiducial - 1: 3.3e-16
+    sub-threshold set (own q_B < 5): fiducial 0.9975 of all neighbours, low-pressure 0.9991; sub-threshold variance low / fiducial at 0.5, 1, 2, 4, 8': 0.494 0.496 0.501 0.507 0.517
+    var_all / sigma_Y^2 at 0.5, 1, 2, 4, 8, 16': fiducial 0.292 0.334 0.384 0.416 0.390 0.307; low-pressure 0.104 0.119 0.137 0.148 0.139 0.110
+    var_subthr: fiducial 0.112 0.125 0.139 0.142 0.122 0.085; low-pressure 0.055 0.062 0.070 0.072 0.063 0.045
+    r_i (low) 1.0272 1.0306 1.0342 1.0354 1.0311 1.0222; r_ii (low) 1.0279 1.0310 1.0342 1.0352 1.0314 1.0241
+
+(6) Poisson tSZ power at l = 3000, 143 GHz (SPT: 3.42 +- 0.54 uK^2, Reichardt et al. 2021):
+    fiducial (1-b)=0.8      : 1e12 l(l+1)C_l/2pi = 1.1285 (HMF) / 1.1293 (stored sky 1, 29,298,030 halos, Y x 1.0000); D_3000(143) = 9.07 / 9.08 uK^2 = 2.65 / 2.65 x SPT (+10.5 / +10.5 sigma)
+    low-pressure (1-b)=0.6  : 1e12 l(l+1)C_l/2pi = 0.4029 (HMF) / 0.4032 (stored sky 1, 29,298,030 halos, Y x 0.5975); D_3000(143) = 3.24 / 3.24 uK^2 = 0.95 / 0.95 x SPT (-0.3 / -0.3 sigma)
+saved /Users/boris/GitHub/sz-poisson-blending/data_real/step2/inputs.npz; total 9s
+       10.09 real         9.02 user         1.02 sys
+          3271327744  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              404689  page reclaims
+                 264  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 167  voluntary context switches
+                 407  involuntary context switches
+        131378692459  instructions retired
+         32310852944  cycles elapsed
+          3222234880  peak memory footprint

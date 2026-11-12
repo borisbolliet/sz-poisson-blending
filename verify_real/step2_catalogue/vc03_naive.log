@@ -1,0 +1,50 @@
+(1)+(2) naive counts, full sky: mine vs the build's N0 (p05) and step 1's expected_detections
+  [white         ] q>5: mine     85,909.6 | build N0     85,906.6 (rel +3.54e-05); per bin (N0 > 10) max |rel| 4.0e-03, max |diff|/sqrt(N0) 0.026 (full sky); expected_detections 85,912.3 (rel -3.07e-05)
+      per z bin mine/build - 1: +5.5e-04 +1.8e-04 +2.0e-05 -1.4e-04 +3.4e-04 -1.2e-04 +2.0e-04 -9.3e-05 +9.9e-05 -1.1e-04 -2.0e-04 -4.5e-04 +6.9e-05 -4.6e-04 +4.8e-04 -1.0e-03
+      per q bin mine/build - 1: +1.4e-05 +2.7e-05 +4.6e-05 +7.3e-05 +1.1e-04 +1.8e-04 +2.9e-04 +4.7e-04 +1.0e-03
+  [white         ] q>6: mine     61,627.6 | build N0     61,624.9 (rel +4.48e-05); per bin (N0 > 10) max |rel| 4.0e-03, max |diff|/sqrt(N0) 0.026 (full sky); expected_detections 61,629.5 (rel -3.11e-05)
+  [baseline_f1   ] q>5: mine     81,701.6 | build N0     81,703.9 (rel -2.71e-05); per bin (N0 > 10) max |rel| 6.3e-03, max |diff|/sqrt(N0) 0.077 (full sky); expected_detections 81,704.5 (rel -3.46e-05)
+      per z bin mine/build - 1: -4.3e-03 +3.5e-05 +4.9e-05 -1.1e-04 +3.8e-04 -9.7e-05 +2.1e-04 -7.3e-05 +1.1e-04 -8.6e-05 -1.9e-04 -4.1e-04 +9.3e-05 -4.2e-04 +4.7e-04 -1.0e-03
+      per q bin mine/build - 1: -2.5e-05 -2.8e-05 -3.0e-05 -3.2e-05 -3.6e-05 -4.1e-05 -4.7e-05 -5.5e-05 -6.3e-05
+  [baseline_f1   ] q>6: mine     55,655.1 | build N0     55,656.6 (rel -2.81e-05); per bin (N0 > 10) max |rel| 6.5e-03, max |diff|/sqrt(N0) 0.067 (full sky); expected_detections 55,657.0 (rel -3.50e-05)
+  [goal_f1       ] q>5: mine    128,162.3 | build N0    128,165.7 (rel -2.67e-05); per bin (N0 > 10) max |rel| 6.8e-03, max |diff|/sqrt(N0) 0.091 (full sky); expected_detections 128,166.7 (rel -3.44e-05)
+  [goal_f1       ] q>6: mine     88,806.7 | build N0     88,809.2 (rel -2.77e-05); per bin (N0 > 10) max |rel| 7.1e-03, max |diff|/sqrt(N0) 0.080 (full sky); expected_detections 88,809.8 (rel -3.50e-05)
+  [baseline_effi ] q>5: mine     72,685.5 | build N0     72,687.5 (rel -2.75e-05); per bin (N0 > 10) max |rel| 6.1e-03, max |diff|/sqrt(N0) 0.072 (full sky)
+  [baseline_effi ] q>6: mine     49,160.5 | build N0     49,161.9 (rel -2.86e-05); per bin (N0 > 10) max |rel| 5.5e-03, max |diff|/sqrt(N0) 0.063 (full sky)
+  [baseline_effii] q>5: mine     71,758.8 | build N0     71,760.8 (rel -2.76e-05); per bin (N0 > 10) max |rel| 6.1e-03, max |diff|/sqrt(N0) 0.072 (full sky)
+  [baseline_effii] q>6: mine     48,498.2 | build N0     48,499.6 (rel -2.86e-05); per bin (N0 > 10) max |rel| 5.6e-03, max |diff|/sqrt(N0) 0.062 (full sky)
+  [goal_effi     ] q>5: mine    111,730.8 | build N0    111,733.9 (rel -2.74e-05); per bin (N0 > 10) max |rel| 6.6e-03, max |diff|/sqrt(N0) 0.086 (full sky)
+  [goal_effi     ] q>6: mine     76,792.7 | build N0     76,794.9 (rel -2.84e-05); per bin (N0 > 10) max |rel| 6.8e-03, max |diff|/sqrt(N0) 0.075 (full sky)
+  [goal_effii    ] q>5: mine    109,280.0 | build N0    109,283.0 (rel -2.75e-05); per bin (N0 > 10) max |rel| 6.7e-03, max |diff|/sqrt(N0) 0.085 (full sky)
+  [goal_effii    ] q>6: mine     75,009.7 | build N0     75,011.8 (rel -2.85e-05); per bin (N0 > 10) max |rel| 6.9e-03, max |diff|/sqrt(N0) 0.074 (full sky)
+  [lowP_f1       ] q>5: mine     29,843.3 | build N0     29,844.1 (rel -2.96e-05); per bin (N0 > 10) max |rel| 5.7e-03, max |diff|/sqrt(N0) 0.057 (full sky)
+  [lowP_f1       ] q>6: mine     19,178.0 | build N0     19,178.6 (rel -3.08e-05); per bin (N0 > 10) max |rel| 6.0e-03, max |diff|/sqrt(N0) 0.048 (full sky)
+  [lowP_effi     ] q>5: mine     27,845.4 | build N0     27,846.2 (rel -2.98e-05); per bin (N0 > 10) max |rel| 5.6e-03, max |diff|/sqrt(N0) 0.055 (full sky)
+  [lowP_effi     ] q>6: mine     17,808.1 | build N0     17,808.7 (rel -3.11e-05); per bin (N0 > 10) max |rel| 5.9e-03, max |diff|/sqrt(N0) 0.046 (full sky)
+  low-pressure total q>5 (mine) vs the build's quoted MMFModel(one_minus_b=0.6).expected_detections 29,844.3: see row lowP_f1
+
+(3) smoothness of mu(theta) (baseline, q_cut 5): relative second differences of the total and of the largest bin
+  Om    step 0.0005: max |2nd diff|/N: total 1.6e-05, bin (z 0.5-0.6, q 5-7.3) 2.3e-05; 1st diff/N range +4.560e-03 .. +4.850e-03
+  s8    step 0.0005: max |2nd diff|/N: total 1.8e-05, bin (z 0.5-0.6, q 5-7.3) 7.5e-06; 1st diff/N range +4.738e-03 .. +4.996e-03
+  slnY  step 0.0005: max |2nd diff|/N: total 7.8e-07, bin (z 0.5-0.6, q 5-7.3) 4.9e-07; 1st diff/N range +2.419e-04 .. +2.696e-04
+  alpha step 0.001: max |2nd diff|/N: total 9.9e-06, bin (z 0.5-0.6, q 5-7.3) 9.3e-06; 1st diff/N range -2.657e-03 .. -2.604e-03
+
+(4) one model evaluation: 22 ms; total 4s
+        5.43 real         5.16 user         0.23 sys
+           732643328  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               57230  page reclaims
+                 269  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 177  voluntary context switches
+                 191  involuntary context switches
+         35645056298  instructions retired
+         16469238788  cycles elapsed
+           688392832  peak memory footprint

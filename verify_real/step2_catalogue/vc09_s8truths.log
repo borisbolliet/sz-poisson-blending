@@ -1,0 +1,77 @@
+
+=== truth S8=0.75 (sigma8 = 0.7365), q_cut 5: 3 skies ===
+  Delta total mine +359.3 +- 13.9 = +0.972% +- 0.038% | build +366.3 = +0.997% | diff -0.50 sigma; my N_single 36,941, build Nn 36,732, my model mu(truth) 36,729
+  z tilt mine : +1.00+-0.26%  +0.72+-0.04%  +1.05+-0.05%  +1.69+-0.11%  +2.28+-0.32%  +2.64+-0.79%
+  z tilt build: +0.71%  +0.77%  +1.06%  +1.63%  +2.48%  +3.72%
+  SO40 a: ignore: build-vectors +0.71 | mine +0.69 +- 0.04   ||   fixed correction: build-vectors -0.10 | mine -0.10 +- 0.05
+  SO40 b: ignore: build-vectors +0.45(lin) | mine +0.45(lin) +- 0.03   ||   fixed correction: build-vectors -0.04(lin) | mine -0.05(lin) +- 0.03
+  SO40 c: ignore: build-vectors +0.24(lin) | mine +0.23(lin) +- 0.03   ||   fixed correction: build-vectors -0.02(lin) | mine -0.02(lin) +- 0.04
+  SO40 d: ignore: build-vectors -0.03 | mine -0.00 +- 0.02   ||   fixed correction: build-vectors -0.01 | mine +0.01 +- 0.02
+  SO40 e: ignore: build-vectors +0.03(lin) | mine +0.04(lin) +- 0.03   ||   fixed correction: build-vectors -0.02(lin) | mine +0.02(lin) +- 0.04
+  full a: ignore: build-vectors +1.12 | mine +1.09 +- 0.06   ||   fixed correction: build-vectors -0.16 | mine -0.16 +- 0.07
+  full b: ignore: build-vectors +0.72(lin) | mine +0.71(lin) +- 0.05   ||   fixed correction: build-vectors -0.07(lin) | mine -0.09(lin) +- 0.05
+  full c: ignore: build-vectors +0.39(lin) | mine +0.37(lin) +- 0.05   ||   fixed correction: build-vectors -0.03(lin) | mine -0.04(lin) +- 0.06
+  full d: ignore: build-vectors -0.01 | mine +0.02 +- 0.03   ||   fixed correction: build-vectors -0.02 | mine +0.02 +- 0.04
+  full e: ignore: build-vectors +0.04(lin) | mine +0.07(lin) +- 0.05   ||   fixed correction: build-vectors -0.02(lin) | mine +0.02(lin) +- 0.06
+
+=== truth S8=0.87 (sigma8 = 0.8543), q_cut 5: 3 skies ===
+  Delta total mine +1733.4 +- 34.6 = +1.416% +- 0.028% | build +1732.8 = +1.413% | diff +0.02 sigma; my N_single 122,459, build Nn 122,632, my model mu(truth) 122,582
+  z tilt mine : +0.97+-0.27%  +0.90+-0.05%  +1.32+-0.04%  +2.15+-0.07%  +3.39+-0.14%  +4.59+-0.31%
+  z tilt build: +0.66%  +0.88%  +1.34%  +2.14%  +3.30%  +5.16%
+  SO40 a: ignore: build-vectors +1.76 | mine +1.79 +- 0.06   ||   fixed correction: build-vectors +0.03 | mine +0.08 +- 0.07
+  SO40 b: ignore: build-vectors +1.26(lin) | mine +1.25(lin) +- 0.05   ||   fixed correction: build-vectors +0.01(lin) | mine -0.01(lin) +- 0.06
+  SO40 c: ignore: build-vectors +0.84(lin) | mine +0.81(lin) +- 0.06   ||   fixed correction: build-vectors +0.00(lin) | mine +0.00(lin) +- 0.07
+  SO40 d: ignore: build-vectors +0.05 | mine +0.02 +- 0.03   ||   fixed correction: build-vectors +0.04 | mine +0.02 +- 0.04
+  SO40 e: ignore: build-vectors +0.16(lin) | mine +0.10(lin) +- 0.05   ||   fixed correction: build-vectors +0.05(lin) | mine +0.03(lin) +- 0.06
+  full a: ignore: build-vectors +2.78 | mine +2.84 +- 0.10   ||   fixed correction: build-vectors +0.04 | mine +0.13 +- 0.11
+  full b: ignore: build-vectors +2.00(lin) | mine +1.98(lin) +- 0.08   ||   fixed correction: build-vectors +0.02(lin) | mine -0.02(lin) +- 0.09
+  full c: ignore: build-vectors +1.33(lin) | mine +1.28(lin) +- 0.09   ||   fixed correction: build-vectors +0.01(lin) | mine +0.01(lin) +- 0.11
+  full d: ignore: build-vectors +0.16 | mine +0.08 +- 0.06   ||   fixed correction: build-vectors +0.07 | mine +0.04 +- 0.07
+  full e: ignore: build-vectors +0.26(lin) | mine +0.16(lin) +- 0.08   ||   fixed correction: build-vectors +0.08(lin) | mine +0.05(lin) +- 0.10
+
+=== truth S8=0.75 (sigma8 = 0.7365), q_cut 6: 3 skies ===
+  Delta total mine +202.9 +- 9.6 = +0.840% +- 0.040% | build +207.9 = +0.866% | diff -0.52 sigma; my N_single 24,145, build Nn 23,994, my model mu(truth) 23,993
+  SO40 a: ignore: build-vectors +0.48 | mine +0.46 +- 0.03   ||   fixed correction: build-vectors -0.11 | mine -0.11 +- 0.04
+  SO40 b: ignore: build-vectors +0.31(lin) | mine +0.31(lin) +- 0.03   ||   fixed correction: build-vectors -0.05(lin) | mine -0.05(lin) +- 0.03
+  SO40 c: ignore: build-vectors +0.16(lin) | mine +0.14(lin) +- 0.03   ||   fixed correction: build-vectors -0.02(lin) | mine -0.04(lin) +- 0.04
+  SO40 d: ignore: build-vectors -0.02 | mine +0.01 +- 0.02   ||   fixed correction: build-vectors -0.01 | mine +0.03 +- 0.02
+  SO40 e: ignore: build-vectors +0.02(lin) | mine +0.03(lin) +- 0.03   ||   fixed correction: build-vectors -0.01(lin) | mine +0.01(lin) +- 0.04
+  full a: ignore: build-vectors +0.76 | mine +0.73 +- 0.05   ||   fixed correction: build-vectors -0.17 | mine -0.17 +- 0.06
+  full b: ignore: build-vectors +0.49(lin) | mine +0.49(lin) +- 0.05   ||   fixed correction: build-vectors -0.08(lin) | mine -0.08(lin) +- 0.05
+  full c: ignore: build-vectors +0.26(lin) | mine +0.22(lin) +- 0.06   ||   fixed correction: build-vectors -0.03(lin) | mine -0.06(lin) +- 0.06
+  full d: ignore: build-vectors -0.02 | mine +0.02 +- 0.03   ||   fixed correction: build-vectors -0.01 | mine +0.03 +- 0.03
+  full e: ignore: build-vectors +0.03(lin) | mine +0.05(lin) +- 0.05   ||   fixed correction: build-vectors -0.01(lin) | mine +0.02(lin) +- 0.06
+
+=== truth S8=0.87 (sigma8 = 0.8543), q_cut 6: 3 skies ===
+  Delta total mine +1104.7 +- 25.5 = +1.299% +- 0.030% | build +1114.0 = +1.307% | diff -0.36 sigma; my N_single 85,068, build Nn 85,240, my model mu(truth) 85,205
+  SO40 a: ignore: build-vectors +1.35 | mine +1.37 +- 0.06   ||   fixed correction: build-vectors +0.08 | mine +0.13 +- 0.06
+  SO40 b: ignore: build-vectors +0.95(lin) | mine +0.94(lin) +- 0.05   ||   fixed correction: build-vectors +0.04(lin) | mine +0.03(lin) +- 0.05
+  SO40 c: ignore: build-vectors +0.61(lin) | mine +0.61(lin) +- 0.06   ||   fixed correction: build-vectors +0.02(lin) | mine +0.04(lin) +- 0.07
+  SO40 d: ignore: build-vectors +0.01 | mine -0.02 +- 0.03   ||   fixed correction: build-vectors +0.02 | mine +0.00 +- 0.03
+  SO40 e: ignore: build-vectors +0.08(lin) | mine +0.04(lin) +- 0.05   ||   fixed correction: build-vectors +0.02(lin) | mine +0.01(lin) +- 0.06
+  full a: ignore: build-vectors +2.14 | mine +2.17 +- 0.09   ||   fixed correction: build-vectors +0.13 | mine +0.20 +- 0.10
+  full b: ignore: build-vectors +1.51(lin) | mine +1.49(lin) +- 0.07   ||   fixed correction: build-vectors +0.06(lin) | mine +0.05(lin) +- 0.08
+  full c: ignore: build-vectors +0.97(lin) | mine +0.96(lin) +- 0.10   ||   fixed correction: build-vectors +0.03(lin) | mine +0.06(lin) +- 0.11
+  full d: ignore: build-vectors +0.05 | mine +0.01 +- 0.06   ||   fixed correction: build-vectors +0.03 | mine +0.01 +- 0.06
+  full e: ignore: build-vectors +0.13(lin) | mine +0.07(lin) +- 0.08   ||   fixed correction: build-vectors +0.04(lin) | mine +0.02(lin) +- 0.10
+[build vectors] max |S8 bias| fixed correction: config a 0.167, configs b-e 0.080; ignoring blending 2.782
+[mine vectors] max |S8 bias| fixed correction: config a 0.200, configs b-e 0.086; ignoring blending 2.837
+total 683s
+      683.43 real       678.76 user         4.50 sys
+          1012482048  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               74305  page reclaims
+                 207  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 622  voluntary context switches
+                6112  involuntary context switches
+       4530918678240  instructions retired
+       2186724622648  cycles elapsed
+           968346752  peak memory footprint

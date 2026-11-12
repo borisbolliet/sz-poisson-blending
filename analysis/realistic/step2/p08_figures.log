@@ -1,0 +1,21 @@
+wrote /Users/boris/GitHub/sz-poisson-blending/figures/realistic/step2_bias_bars.png
+wrote /Users/boris/GitHub/sz-poisson-blending/figures/realistic/step2_bias_bars_mapsigma.png
+wrote /Users/boris/GitHub/sz-poisson-blending/figures/realistic/step2_delta_zq.png
+        2.48 real         2.31 user         0.16 sys
+           245268480  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               31884  page reclaims
+                  79  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                  35  involuntary context switches
+         29421839441  instructions retired
+          7987368361  cycles elapsed
+           197920448  peak memory footprint

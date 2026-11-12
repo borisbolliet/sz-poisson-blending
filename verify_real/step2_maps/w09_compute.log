@@ -1,0 +1,13 @@
+[w09] script | wall [s] | user CPU [s] | max RSS [GB] | peak footprint [GB] | parallelism
+   w01_setup              |      207 |      212 |  3.68 |  3.62 | 4 threads (alone)
+   w02_maps               |     2547 |     5446 |  2.40 |  2.35 | 3 threads (+ w05 on 1 core)
+   w03_noise              |      775 |     1022 |  2.77 |  2.84 | 3 threads (+ w05)
+   w04_delta              |     1105 |     1097 |  1.19 |  1.15 | 3 BLAS threads, mostly 1 (+ w05)
+   w05_poisson            |     4497 |     4472 |  0.96 |  0.92 | 1 process
+   w06_poisson_summary    |        2 |        2 |  0.88 |  0.84 | 1
+   w08_sameprimaries      |       62 |       61 |  1.09 |  1.05 | 3 BLAS threads
+   w08b_allconfigs        |       27 |       27 |  0.96 |  0.91 | 3 BLAS threads
+   total (sequential sum) wall 153.7 min, CPU 3.43 h; w02 and w05 ran concurrently (3 + 1 cores), then w03/w04 + w05
+   note: an earlier 2-patch test of w02 (not kept) reached a 12.2 GB peak memory footprint (3.4 GB RSS) for ~14 s because
+   each npz[key][j] access re-read the whole rho table and the node views kept every copy alive (the same trap as the
+   build's p03); fixed by reading each array once before the production run.

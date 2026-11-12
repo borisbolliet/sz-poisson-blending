@@ -1,0 +1,17 @@
+(C13) config d, q5: bias in sigma of Om / s8 / (1-b) / alpha / slnY ; S8 ; chi2_min (my model + fitter)
+   baseline_f1  SO40 on build: Om -0.09 / s8 +0.13 / omb -0.06 / alpha -0.41 / slnY +0.00 ; S8 -0.001 ; chi2_min 0.12
+   baseline_f1  SO40 on mine : Om -0.12+-0.01 / s8 +0.14+-0.02 / omb -0.04+-0.01 / alpha -0.42+-0.02 / slnY -0.02+-0.02 ; S8 -0.016 ; chi2_min 0.20
+   baseline_f1  full on build: Om -0.06 / s8 +0.22 / omb -0.12 / alpha -0.58 / slnY +0.02 ; S8 +0.047 ; chi2_min 0.30
+   baseline_f1  full on mine : Om -0.10+-0.03 / s8 +0.22+-0.03 / omb -0.08+-0.03 / alpha -0.60+-0.03 / slnY -0.01+-0.03 ; S8 +0.016 ; chi2_min 0.49
+   goal_f1      SO40 on build: Om -0.08 / s8 +0.19 / omb -0.10 / alpha -0.51 / slnY +0.01 ; S8 +0.021 ; chi2_min 0.25
+   goal_f1      SO40 on mine : Om -0.11+-0.02 / s8 +0.19+-0.02 / omb -0.08+-0.02 / alpha -0.53+-0.03 / slnY -0.00+-0.02 ; S8 +0.001 ; chi2_min 0.32
+   goal_f1      full on build: Om -0.02 / s8 +0.33 / omb -0.21 / alpha -0.70 / slnY +0.04 ; S8 +0.104 ; chi2_min 0.60
+   goal_f1      full on mine : Om -0.07+-0.03 / s8 +0.31+-0.04 / omb -0.17+-0.03 / alpha -0.74+-0.04 / slnY +0.02+-0.04 ; S8 +0.065 ; chi2_min 0.79
+(C7 fdom 0.5-2, configs d, e) SO40 on build Delta: -0.18 (goal_f2 d, ML) to +0.29 (goal_f0.5 e, lin)
+(C7 fdom 0.5-2, configs d, e) SO40 on mine  Delta: -0.21 (goal_f2 d, ML) to +0.25 (goal_f0.5 e, lin)
+(C7 fdom 0.5-2, configs d, e) full on build Delta: -0.12 (goal_f2 d, ML) to +0.46 (goal_f0.5 e, lin)
+(C7 fdom 0.5-2, configs d, e) full on mine  Delta: -0.17 (goal_f2 d, ML) to +0.40 (goal_f0.5 e, lin)
+(C10 map-sigma, configs d, e) SO40 on build Delta: +0.11 (baseline_effi e, lin) to +0.26 (goal_effii d, lin)
+(C10 map-sigma, configs d, e) SO40 on mine  Delta: +0.08 (baseline_effi e, lin) to +0.24 (goal_effii d, lin)
+(C10 map-sigma, configs d, e) full on build Delta: +0.17 (baseline_effi e, lin) to +0.40 (goal_effii e, lin)
+(C10 map-sigma, configs d, e) full on mine  Delta: +0.13 (baseline_effi e, lin) to +0.35 (goal_effii d, lin)

@@ -1,0 +1,50 @@
+(1) white: SmoothModelS(SZModel spline) vs cosmolib2.SmoothModel
+   q>5: 85,906.6 vs 85,906.6 (max per-bin |diff| 0.0e+00); expected_detections 85,912.3 (rel -6.61e-05)
+   q>6: 61,624.9 vs 61,624.9 (max per-bin |diff| 0.0e+00); expected_detections 61,629.5 (rel -7.59e-05)
+
+(2) SO MMF naive totals (full sky) vs step 1
+   [baseline] q>5: SmoothModelS 81,703.9; expected_detections 81,704.5 (rel -7.51e-06); step-1 s09 grid N_single 81,690.2 (rel +1.67e-04)
+      per z bin (16 bins 0.01-3) SmoothModelS / expected_detections - 1: +4.2e-03 -1.8e-04 -2.7e-04 -1.6e-05 -7.2e-05 +4.7e-05 -1.3e-05 +2.1e-04 -2.0e-04 -1.1e-04 -1.1e-04 +7.4e-05 +2.0e-04 +1.4e-04 +2.0e-04 +1.9e-05
+      N per z bin: 730 4,152 7,471 9,354 9,883 9,481 8,599 7,377 6,058 4,811 7,648 3,606 1,558 622 316 37
+      N per q bin ([5.0, 7.27, 10.57, 15.38, 22.36, 32.52, 47.29, 68.77, 100.0] ...): 44,800 21,015 9,581 4,061 1,550 515 144 32 6
+   [baseline] q>6: SmoothModelS 55,656.6; expected_detections 55,657.0 (rel -6.84e-06); step-1 s09 grid N_single 55,658.8 (rel -3.88e-05)
+   [goal] q>5: SmoothModelS 128,165.7; expected_detections 128,166.7 (rel -7.68e-06); step-1 s09 grid N_single 128,151.8 (rel +1.08e-04)
+      per z bin (16 bins 0.01-3) SmoothModelS / expected_detections - 1: +4.5e-03 -1.3e-04 -2.5e-04 -1.7e-05 -7.2e-05 +3.9e-05 -1.6e-05 +1.8e-04 -2.0e-04 -1.1e-04 -1.1e-04 +6.2e-05 +1.8e-04 +1.3e-04 +1.8e-04 +9.5e-06
+      N per z bin: 940 5,628 10,469 13,483 14,628 14,401 13,395 11,787 9,927 8,087 13,406 6,742 3,111 1,328 734 99
+      N per q bin ([5.0, 7.27, 10.57, 15.38, 22.36, 32.52, 47.29, 68.77, 100.0] ...): 68,175 33,113 15,699 6,970 2,813 1,001 303 75 17
+   [goal] q>6: SmoothModelS 88,809.2; expected_detections 88,809.8 (rel -7.28e-06); step-1 s09 grid N_single 88,812.5 (rel -3.78e-05)
+
+(3) low-pressure population, (1-b) = 0.6 (baseline MMF)
+   q>5: SmoothModelS 29,844.1; MMFModel(one_minus_b=0.6).expected_detections 29,844.3 (rel -5.61e-06); SO40: 11,938
+   q>6: SmoothModelS 19,178.6; MMFModel(one_minus_b=0.6).expected_detections 19,178.7 (rel -4.53e-06); SO40: 7,671
+
+(4) map-sigma models: sigma_eff = r(theta) sigma_Y fixed on the fiducial sky; naive totals
+   [baseline (i)] q>5: sigma_Y model 81,703.9; sigma_eff model 72,687.5 (-11.04%)
+   [baseline (i)] q>6: sigma_Y model 55,656.6; sigma_eff model 49,161.9 (-11.67%)
+   [baseline (ii)] q>5: sigma_Y model 81,703.9; sigma_eff model 71,760.8 (-12.17%)
+   [baseline (ii)] q>6: sigma_Y model 55,656.6; sigma_eff model 48,499.6 (-12.86%)
+   [goal (i)] q>5: sigma_Y model 128,165.7; sigma_eff model 111,733.9 (-12.82%)
+   [goal (i)] q>6: sigma_Y model 88,809.2; sigma_eff model 76,794.9 (-13.53%)
+   [goal (ii)] q>5: sigma_Y model 128,165.7; sigma_eff model 109,283.0 (-14.73%)
+   [goal (ii)] q>6: sigma_Y model 88,809.2; sigma_eff model 75,011.8 (-15.54%)
+   [lowP (i)] q>5: sigma_Y model 29,844.1; sigma_eff model 27,846.2 (-6.69%)
+   [lowP (i)] q>6: sigma_Y model 19,178.6; sigma_eff model 17,808.7 (-7.14%)
+total 51s
+       52.04 real        52.05 user         0.52 sys
+           908345344  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               73593  page reclaims
+                  90  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 230  voluntary context switches
+                1576  involuntary context switches
+        775475859531  instructions retired
+        165692901219  cycles elapsed
+           864963520  peak memory footprint

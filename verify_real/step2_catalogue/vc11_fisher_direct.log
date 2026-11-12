@@ -1,0 +1,28 @@
+[baseline_f1 SO40 a] build S8 0.00104 Om 0.00202 | spline grid: S8 0.00104 Om 0.00201 | direct colossus, h 0.002: S8 0.00104 Om 0.00202 | direct colossus, h 0.004: S8 0.00104 Om 0.00202
+[baseline_f1 SO40 b] build S8 0.01183 Om 0.00597 | spline grid: S8 0.01184 Om 0.00592 | direct colossus, h 0.002: S8 0.01169 Om 0.00589 | direct colossus, h 0.004: S8 0.01182 Om 0.00595
+[baseline_f1 SO40 c] build S8 0.01868 Om 0.01177 | spline grid: S8 0.01802 Om 0.01120 | direct colossus, h 0.002: S8 0.01756 Om 0.01101 | direct colossus, h 0.004: S8 0.01834 Om 0.01151
+[baseline_f1 SO40 d] build S8 0.01794 Om 0.00914 | spline grid: S8 0.01777 Om 0.00891 | direct colossus, h 0.002: S8 0.01775 Om 0.00895 | direct colossus, h 0.004: S8 0.01791 Om 0.00908
+[baseline_f1 SO40 e] build S8 0.03505 Om 0.01874 | spline grid: S8 0.03281 Om 0.01726 | direct colossus, h 0.002: S8 0.03214 Om 0.01698 | direct colossus, h 0.004: S8 0.03413 Om 0.01814
+[white SO40 a] build S8 0.00093 Om 0.00179 | spline grid: S8 0.00093 Om 0.00177 | direct colossus, h 0.002: S8 0.00093 Om 0.00178 | direct colossus, h 0.004: S8 0.00094 Om 0.00178
+[white SO40 b] build S8 0.02001 Om 0.00797 | spline grid: S8 0.01993 Om 0.00787 | direct colossus, h 0.002: S8 0.01957 Om 0.00778 | direct colossus, h 0.004: S8 0.01995 Om 0.00793
+[white SO40 c] build S8 0.02189 Om 0.01027 | spline grid: S8 0.02154 Om 0.00997 | direct colossus, h 0.002: S8 0.02106 Om 0.00981 | direct colossus, h 0.004: S8 0.02168 Om 0.01013
+[white SO40 d] build S8 0.01597 Om 0.00689 | spline grid: S8 0.01582 Om 0.00673 | direct colossus, h 0.002: S8 0.01585 Om 0.00678 | direct colossus, h 0.004: S8 0.01596 Om 0.00685
+[white SO40 e] build S8 0.03421 Om 0.01484 | spline grid: S8 0.03251 Om 0.01392 | direct colossus, h 0.002: S8 0.03218 Om 0.01384 | direct colossus, h 0.004: S8 0.03367 Om 0.01454
+       12.25 real        16.66 user         0.19 sys
+           690176000  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               54480  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                2277  involuntary context switches
+        168015038991  instructions retired
+         50240490968  cycles elapsed
+           645909120  peak memory footprint

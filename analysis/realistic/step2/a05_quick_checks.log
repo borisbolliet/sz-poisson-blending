@@ -1,0 +1,62 @@
+=== (1) stored kernels vs s09 node tables T{fdom}_det (q_A interpolated linearly onto s09's q nodes) ===
+   [baseline_f1  ] 37 inner nodes, q_cut 5/6/7, s09 q nodes in 0.05-30: max |K_stored - T_det| = 1.9e-08 (at theta 34.743', q_cut 6)
+   [baseline_f0.5] 37 inner nodes, q_cut 5/6/7, s09 q nodes in 0.05-30: max |K_stored - T_det| = 1.9e-08 (at theta 34.743', q_cut 6)
+   [baseline_f2  ] 37 inner nodes, q_cut 5/6/7, s09 q nodes in 0.05-30: max |K_stored - T_det| = 7.6e-08 (at theta 10.138', q_cut 5)
+   [goal_f1      ] 37 inner nodes, q_cut 5/6/7, s09 q nodes in 0.05-30: max |K_stored - T_det| = 1.9e-08 (at theta 64.318', q_cut 6)
+   [goal_f0.5    ] 37 inner nodes, q_cut 5/6/7, s09 q nodes in 0.05-30: max |K_stored - T_det| = 1.9e-08 (at theta 64.318', q_cut 7)
+   [goal_f2      ] 37 inner nodes, q_cut 5/6/7, s09 q nodes in 0.05-30: max |K_stored - T_det| = 1.3e-07 (at theta 6.388', q_cut 5)
+   [white        ] 40 inner nodes, q_cut 5/6/7, s09 q nodes in 0.05-30: max |K_stored - T_det| = 1.7e-08 (at theta 0.39', q_cut 5)
+
+=== (2) theta interpolation: 48 nodes (production, linear in ln theta) vs 95 nodes (cubic midpoints) ===
+   [baseline_f1  ] q>5: Delta +1046.3 (48 nodes) vs +1046.4 (95 nodes, cubic midpoints): total diff +0.17 counts (+2.1e-06 of N); per bin max 0.0005 Poisson sigma (full sky), at SO40 0.0003; production data vector check: |D1 - stored| max 0.0e+00
+   [goal_f1      ] q>5: Delta +1767.8 (48 nodes) vs +1768.1 (95 nodes, cubic midpoints): total diff +0.26 counts (+2.0e-06 of N); per bin max 0.0006 Poisson sigma (full sky), at SO40 0.0004; production data vector check: |D1 - stored| max 0.0e+00
+   [white        ] q>5: Delta -1402.1 (48 nodes) vs -1400.2 (95 nodes, cubic midpoints): total diff +1.87 counts (+2.2e-05 of N); per bin max 0.0030 Poisson sigma (full sky), at SO40 0.0019; production data vector check: |D1 - stored| max 0.0e+00
+   [baseline_effi] q>5: Delta -241.4 (48 nodes) vs -241.4 (95 nodes, cubic midpoints): total diff +0.01 counts (+1.9e-07 of N); per bin max 0.0002 Poisson sigma (full sky), at SO40 0.0001; production data vector check: |D1 - stored| max 0.0e+00
+
+=== (3) step 1 (s09 rows: N_det,b / N_single - 1, primaries q_A > 0.5) vs the build (truth D05 / Nn05), q > 5 ===
+   [baseline_f1  ] step 1 +1.2863% | step 2 +1.2877% | difference +0.0014 pp
+   [baseline_f0.5] step 1 -0.2604% | step 2 -0.2595% | difference +0.0009 pp
+   [baseline_f2  ] step 1 +2.7608% | step 2 +2.7617% | difference +0.0009 pp
+   [goal_f1      ] step 1 +1.3820% | step 2 +1.3837% | difference +0.0017 pp
+   [goal_f0.5    ] step 1 -0.4875% | step 2 -0.4864% | difference +0.0011 pp
+   [goal_f2      ] step 1 +3.1737% | step 2 +3.1747% | difference +0.0010 pp
+   [white        ] step 1 -1.6213% | step 2 -1.6177% | difference +0.0036 pp
+
+=== (4) sensitivity of the S8 bias to the open per-redshift offsets (linear response, q_cut 5) ===
+    perturbation: Delta/N changed by a fixed amount (pp) in every q bin of a redshift range (dN = shift x N_naive)
+   [baseline_f1] SO40 z 2-3, -0.3 pp (step 1 direct counts, goal): S8 bias shift a +0.003; b -0.008; c -0.018; d -0.000; e -0.011
+   [baseline_f1] SO40 z 2-3, -0.5 pp (largest step-1 offset): S8 bias shift a +0.005; b -0.013; c -0.030; d -0.000; e -0.018
+   [baseline_f1] SO40 z 1-1.5, +0.1 pp (catalogue verifier): S8 bias shift a -0.003; b +0.007; c -0.005; d -0.010; e -0.019
+   [baseline_f1] SO40 z 1.5-3, +0.7 pp (maps verifier, map - kernel, goal): S8 bias shift a -0.028; b +0.068; c +0.129; d -0.009; e +0.062
+   [baseline_f1] full z 2-3, -0.3 pp (step 1 direct counts, goal): S8 bias shift a +0.004; b -0.013; c -0.029; d -0.007; e -0.017
+   [baseline_f1] full z 2-3, -0.5 pp (largest step-1 offset): S8 bias shift a +0.007; b -0.021; c -0.048; d -0.011; e -0.029
+   [baseline_f1] full z 1-1.5, +0.1 pp (catalogue verifier): S8 bias shift a -0.004; b +0.010; c -0.009; d -0.021; e -0.030
+   [baseline_f1] full z 1.5-3, +0.7 pp (maps verifier, map - kernel, goal): S8 bias shift a -0.044; b +0.107; c +0.204; d +0.028; e +0.099
+   [goal_f1    ] SO40 z 2-3, -0.3 pp (step 1 direct counts, goal): S8 bias shift a +0.004; b -0.014; c -0.029; d -0.003; e -0.017
+   [goal_f1    ] SO40 z 2-3, -0.5 pp (largest step-1 offset): S8 bias shift a +0.007; b -0.023; c -0.048; d -0.005; e -0.029
+   [goal_f1    ] SO40 z 1-1.5, +0.1 pp (catalogue verifier): S8 bias shift a +0.001; b +0.007; c -0.011; d -0.015; e -0.027
+   [goal_f1    ] SO40 z 1.5-3, +0.7 pp (maps verifier, map - kernel, goal): S8 bias shift a -0.035; b +0.104; c +0.181; d +0.005; e +0.085
+   [goal_f1    ] full z 2-3, -0.3 pp (step 1 direct counts, goal): S8 bias shift a +0.007; b -0.022; c -0.046; d -0.014; e -0.027
+   [goal_f1    ] full z 2-3, -0.5 pp (largest step-1 offset): S8 bias shift a +0.011; b -0.037; c -0.077; d -0.024; e -0.045
+   [goal_f1    ] full z 1-1.5, +0.1 pp (catalogue verifier): S8 bias shift a +0.002; b +0.011; c -0.018; d -0.031; e -0.043
+   [goal_f1    ] full z 1.5-3, +0.7 pp (maps verifier, map - kernel, goal): S8 bias shift a -0.055; b +0.165; c +0.287; d +0.062; e +0.134
+
+[a05] done 6s
+        6.36 real         6.54 user         0.25 sys
+          1140637696  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               80838  page reclaims
+                 207  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  94  voluntary context switches
+                 855  involuntary context switches
+         81071411003  instructions retired
+         21304215300  cycles elapsed
+          1096601024  peak memory footprint
