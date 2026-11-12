@@ -18,6 +18,8 @@ Every number below was computed by a script in this repository. Each one was als
 
 ## Key results
 
+Q1–Q3 use an *idealised telescope*: one map of the SZ signal itself (Compton y) with a 1.4′ beam and uniform white noise, and nothing else on the sky, so no CMB, atmospheric noise or foregrounds ([the model](#the-model)). The realistic Simons Observatory steps are [further down](#towards-a-realistic-so-analysis-in-progress).
+
 - **Close pairs follow Poisson statistics exactly.** The number of clusters in an aperture depends only on the number of clusters per square degree and on the aperture's area. The same law holds around a detected cluster.
 - **Detected clusters rarely sit together.** At signal-to-noise q > 5, only **0.7%** of detections have another detection within 2′.
 - **Blending is common anyway.** About **15%** of detections have their SZ signal inflated by more than 10%. About **8%** are detected only because of that boost, and about **10%** of real clusters are lost. The cause is mostly faint, undetectable halos at *other redshifts* along the line of sight.
@@ -40,7 +42,7 @@ Every number below was computed by a script in this repository. Each one was als
 | Range | 10¹³–10¹⁶ M☉, 0 < z < 3, full sky (≈ 29 million halos) |
 | Positions | independent and uniform on the sphere (Poisson) |
 | SZ signal | Planck 2013 Y500–M500 relation, 17% log-normal scatter, Arnaud pressure profile |
-| Telescope | SO-like: 1.4′ beam, uniform white noise, no CMB or foregrounds |
+| Telescope ("idealised") | one map of Compton y instead of maps at several frequencies. 1.4′ beam (as SO's 145 GHz channel), uniform white y-noise of 4×10⁻⁶ arcmin (11 μK′ at 145 GHz, close to SO baseline's 10 μK′ there), no CMB, atmospheric noise or foregrounds. Its depth is close to our SO baseline model's, but its map noise is white: it does not rise on large scales as SO's does ([step 1](PROGRESS.md#realistic-so-telescope-step-1-does-blending-survive)) |
 | Detection | matched filter; detected if signal-to-noise q > q_cut (4–7) |
 
 | q_cut | 4 | 5 | 6 | 7 |
@@ -195,7 +197,7 @@ We put blending into a binned (z, q) Poisson count likelihood and fitted the usu
 
 ## Towards a realistic SO analysis (in progress)
 
-The results above use an idealised telescope. We are now repeating them with a realistic model of the Simons Observatory (SO) large-aperture telescope: six frequency channels, atmospheric noise, the CMB and a multi-frequency matched filter. The full summary is in [`PROGRESS.md`](PROGRESS.md).
+Q1–Q3 above use the [idealised telescope](#the-model): one y map with white noise and nothing else on the sky. We are now repeating them with a realistic model of the Simons Observatory (SO) large-aperture telescope: six frequency channels, atmospheric noise, the CMB and a multi-frequency matched filter. The full summary is in [`PROGRESS.md`](PROGRESS.md).
 
 <p align="center"><img src="figures/visual/patch_so.png" width="900"></p>
 

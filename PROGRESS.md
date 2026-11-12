@@ -1,7 +1,7 @@
 # Progress report (12 November 2026)
 
 This page summarises what has been done so far, what we found and what comes next.
-- **Idealised telescope (Q1–Q3):** details in [`REPORT.md`](REPORT.md).
+- **Idealised telescope (Q1–Q3):** one map of Compton y with a 1.4′ beam and uniform white noise, and nothing else on the sky (no CMB, atmospheric noise or foregrounds). Details in [`REPORT.md`](REPORT.md).
 - **Current conclusions:** [`CONCLUSIONS.md`](CONCLUSIONS.md). **Review of SZiFi** (possible bugs, improvements, speed): [`SZIFI_REVIEW.md`](SZIFI_REVIEW.md).
 - **Realistic Simons Observatory setup:** details in [`analysis/realistic/step1/RESULTS.md`](analysis/realistic/step1/RESULTS.md), [`analysis/realistic/step2/RESULTS.md`](analysis/realistic/step2/RESULTS.md), [`analysis/realistic/step3/RESULTS.md`](analysis/realistic/step3/RESULTS.md) (step 3a), [`analysis/realistic/step3b/RESULTS.md`](analysis/realistic/step3b/RESULTS.md) and [`analysis/realistic/step3_szifi_real/RESULTS.md`](analysis/realistic/step3_szifi_real/RESULTS.md) (SZiFi itself).
 
@@ -71,7 +71,7 @@ Script: [`analysis/visual/v01_patches.py`](analysis/visual/v01_patches.py) (abou
 **Setup:**
 - **Halos:** Tinker08 mass function, Planck18 cosmology, 10¹³–10¹⁶ M☉ and 0.01 < z < 3. That is about 29 million halos on the full sky, placed independently (Poisson).
 - **SZ signal:** Planck 2013 Y–M relation with 17% log-normal scatter, Arnaud pressure profile.
-- **Telescope:** 1.4′ beam, white y-noise 4×10⁻⁶ arcmin, no CMB or foregrounds.
+- **Telescope ("idealised"):** one map of Compton y instead of maps at several frequencies. It has a 1.4′ beam (as SO's 145 GHz channel), white y-noise of 4×10⁻⁶ arcmin (an rms of 4×10⁻⁶ in a 1′ pixel), and no CMB, atmospheric noise or foregrounds. Its depth is close to our SO baseline model's, but its map noise is white: it does not rise on large scales as SO's does (step 1 below).
 - **Detection:** matched filter. At q > 5 this gives about 86,000 detections on the full sky.
 
 **Q1, close pairs.**
@@ -483,6 +483,5 @@ Only general scientific and cosmology libraries; everything SZ-specific is our o
 ## Next
 
 - foregrounds (CIB, radio, kSZ);
-- clustered halos from the Websky simulation;
 - the P(D) inside a full cluster-count likelihood code;
 - a paper draft.

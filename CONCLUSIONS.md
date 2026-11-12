@@ -5,6 +5,14 @@ What we can say so far about the blending of SZ galaxy clusters and its effect o
 - **Sources.** Every number here is quoted from [`PROGRESS.md`](PROGRESS.md), [`README.md`](README.md) or a step's `RESULTS.md`, except the absolute S8 shifts in section 7, which [`analysis/conclusions/c01_s8_shifts.log`](analysis/conclusions/c01_s8_shifts.log) prints from step 3b's stored fits. Those files name the script, log and checks behind each number.
 - **Checks.** Each number was checked by at least one independent re-implementation, or re-run on fresh random seeds, except the few listed under [How sure we are](#how-sure-we-are). For the realistic steps two checks ran per step, an arbiter tested every disputed claim, and each `RESULTS.md` says which check confirmed which number.
 - **Terms.**
+  - *Idealised telescope* (Q1–Q3): one map of the SZ signal itself (Compton y), instead of maps at several frequencies.
+    - It has a 1.4′ Gaussian beam, the same as SO's 145 GHz channel, and uniform white noise of 4×10⁻⁶ arcmin in y: an rms of 4×10⁻⁶ in a 1′ × 1′ pixel. At 145 GHz that is 11 μK′, close to SO baseline's 10 μK′ there. So it is roughly SO baseline's 145 GHz channel on its own, read directly as y, with its white noise only.
+    - Nothing else is on the sky: no CMB, atmosphere, CIB, radio sources, kSZ or Galactic emission.
+    - Clusters are found with a matched filter built for this beam and white noise. Its noise model leaves out the SZ of other halos, and unlike SO's filter it responds to the sky's mean y, which Q2 and Q3 subtract.
+    - Q1, Q2's calculations and Q3's fits need no map. They use the filter's noise σ_Y, computed analytically, with the filter at each cluster's true position and size. Q2's map results, and a check of Q3 that reuses them, come from a 12-scale version of the filter (0.5′–10′) run on simulated 10° × 10° patches.
+    - Its depth is close to our SO baseline model's: 85,912 expected detections at q > 5 on the full sky without blending, against 81,705 for SO baseline and 128,167 for SO goal.
+    - For compact clusters (θ500 = 0.5′), SO's six-channel filter measures Y with 0.80× (baseline) and 0.60× (goal) the idealised telescope's noise, because SO's 93 and 145 GHz channels together reach a lower y-noise on small scales. For extended ones (θ500 = 10′) it has 3.3× and 2.9× the noise. The idealised telescope's map noise is white, the same on all scales, while SO's rises steeply on large scales, where the CMB and the atmosphere together dominate.
+  - *Realistic SO setup* (steps 1–3b and the SZiFi runs): the six channels of SO's large-aperture telescope (27–280 GHz, beams 7.4′ to 0.9′) with SO's forecast white and atmospheric noise at uniform depth, the lensed CMB, and a multi-frequency matched filter, called "the SO filter" below. Like the idealised telescope, it has no CIB, radio sources, kSZ or Galactic emission yet. One SZiFi check used only SZiFi's own four SO channels (93–280 GHz).
   - *SO-like*: a survey of 16,500 deg² (40% of the sky).
   - *Baseline / goal*: SO's two forecast noise levels.
   - *q*: signal-to-noise; detections have q > 5 unless stated.
@@ -149,13 +157,13 @@ Bias in S8 from ignoring blending, SO-like survey, q > 5, baseline / goal noise 
   - **Step 3b tile samples.** At baseline the builder's 1,548 tiles and the 800 made with the sims check's generators differ by 2.6σ (−1.36% against −1.64%), for an unknown reason. If the difference is real, the baseline biases carry about ±0.05σ (config d) and ±0.25σ (config a) more.
   - **Q3 maps.** The simulated maps show 0.77 ± 0.11 of the count deficit the P(D) model predicts, so Q3's biases may be about 20% smaller.
   - **SZiFi at goal.** With the round-off problem removed and our test tiles' edges filled periodically, SZiFi's final noise level at 0.5′ is within 0.002 of the re-implementation. But that is only because its sharper template already adds +0.010 before masking: the masking step itself raises the noise level 0.012 ± 0.003 less. At 15′, SZiFi ends 0.003–0.004 higher than its template explains, at both noise levels. Neither difference was traced.
-  - **SZiFi on its own set-up.** The edge effect of our periodic test tiles has a tail (up to +0.017 in r on one tile). SZiFi's own apodised tiles, and whether its round-off problem affects its Planck runs, were not tested.
+  - **SZiFi on its own setup.** The edge effect of our periodic test tiles has a tail (up to +0.017 in r on one tile). SZiFi's own apodised tiles, and whether its round-off problem affects its Planck runs, were not tested.
 
 ## What is not included yet
 
 - **Sky.**
   - No foregrounds (CIB, radio sources, kSZ, Galactic emission).
-  - Halos are placed independently (Poisson). In the idealised robustness test, clustering raised contamination and boosting by about 10% (×1.1).
+  - Halos are placed independently (Poisson). In the idealised robustness test, clustering raised contamination and boosting by about 10% (×1.1). We treat this as second order and leave clustered halos (Websky) out of this paper.
   - The simulated halos give 2.65× the SZ power that SPT measures. With a fainter population matching SPT, step 2's config a drops from +1.33σ to +0.57σ (SO-like, baseline).
 - **Instrument and maps.**
   - No survey masks, bandpasses or relativistic SZ.
@@ -176,6 +184,5 @@ Bias in S8 from ignoring blending, SO-like survey, q > 5, baseline / goal noise 
   - whether SZiFi's 'mixed_gaussian' covariance works on its own apodised SO tiles.
 - **Next:**
   - foregrounds (CIB, radio, kSZ);
-  - clustered halos from the Websky simulation;
   - the P(D) inside a full cluster-count likelihood code;
   - a paper draft.
