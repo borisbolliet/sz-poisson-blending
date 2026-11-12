@@ -1,0 +1,21 @@
+tile 0 baseline: production finder rerun identical to the stored outputs (both iterations): True
+wrote data_real/szifi_review/out/maps/baseline_real_000.npy: shape (1200, 1200, 6), 34.6 MB
+done [4 s]; peak RSS 0.84 GB
+        4.62 real         4.08 user         0.26 sys
+           838008832  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               61168  page reclaims
+                2705  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 798  voluntary context switches
+                1758  involuntary context switches
+         49901969536  instructions retired
+         13969350775  cycles elapsed
+           775408448  peak memory footprint

@@ -1,0 +1,78 @@
+SZiFi run (S1, tile 0, baseline, edge buffer 8') under cProfile: wall 90.6 s; peak RSS 1.72 GB
+(1) against the build's stored S1 run of the same tile: 22 of 22 catalogue / sigma arrays identical; q > 4 detections 338 (iteration 0) and 313 (iteration 1), stored 338 and 313
+
+(2) time per stage in this run of 90.6 s: cProfile's cumulative time and share, and the driver's own wall-clock timer of the same stage where it has one
+  stage                                                                             calls cProfile [s]  share timer [s]
+  filtering + peak finding, 15 scales x 2 iterations (filter_maps.find_clusters)        2         66.5    73%      66.5
+    cluster templates (gnfw.get_t_map_convolved)                                       30         14.0    15%         -
+    band limit of each template and of the map (maps.filter_tmap)                      32         15.6    17%         -
+    matched filter and convolution (mmf.get_mmf_q_map)                                 30         33.0    36%         -
+      template FFTs (maps.get_fft_f, from get_mmf_q_map)                               30          5.6     6%         -
+      Fourier-space filter product C^-1 T (mmf.get_tem_conv_fft)                       30          8.3     9%         -
+        of which per-mode 6x6 matrix-vector products (utils.get_inv_cov_conjugate)     30          6.3     7%         -
+      inverse FFTs of the filters (maps.get_ifft_f, from get_mmf_q_map)                30          5.1     6%         -
+      SED weighting (maps.get_tmap_times_fvec, from get_mmf_q_map)                     30          1.6     2%         -
+      zero-padded convolutions, one per channel (scipy.signal.fftconvolve)            180         10.9    12%         -
+  noise re-estimate: spectra (cross_spec.get_cross_spec)                                2          3.0     3%       3.0
+  noise re-estimate: inverse covariance (cross_spec.get_inv_cov)                        2          4.1     5%       4.1
+    of which interpolation to the 2D grid (spec.interp_cov)                             2          2.2     2%         -
+  masking: cluster mask (mmf.get_cluster_mask)                                          1          5.0     6%       5.0
+  masking: inpainting (maps.inpaint_freq)                                               3          5.4     6%       5.4
+  masking: blending the holes back (maps.circular_cosine_blend_adaptive)               12          4.7     5%       4.7
+  the stages above together                                                                       88.8    98%
+
+(3) 2D Fourier transforms in numpy and scipy (NaMaster's own are not counted): 1152 with numpy (fft2 / ifft2) and 540 with scipy inside fftconvolve (zero-padded grids), 1692 together; time in them 25.2 + 9.3 = 34.4 s (38% of the run)
+    numpy.einsum kernel: 30 calls, 6.3 s (7%)
+    numpy.linalg.inv: 2 calls, 1.9 s
+    NaMaster (pymaster C library): 69 calls, 2.9 s
+    repeated work (parts of the stage times above, not in addition to them):
+      the l grid of the tile, recomputed (maps.rmap.get_ell): 568 calls, 4.0 s cumulative
+      distance maps from the tile centre (maps.rmap.get_distance_map_wrt_centre): 368 calls, 3.4 s cumulative
+      beam convolutions of templates (maps.get_gaussian_convolution): 180 calls, 11.5 s cumulative
+      masked discs, one per detection (maps.ps_mask.get_mask_map): 338 calls, 4.8 s cumulative
+
+(4) the 25 functions with the largest own time (pstats; paths shortened)
+     ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+       2304   25.162    0.011   25.163    0.011 numpy/fft/_pocketfft.py:58(_raw_fft)
+         30    6.337    0.211    6.337    0.211 {built-in method numpy._core._multiarray_umath.c_einsum}
+        360    5.379    0.015    5.380    0.015 {built-in method scipy.fft._duccfft.pyduccfft.r2c}
+         12    4.079    0.340    4.667    0.389 szifi/maps.py:1268(circular_cosine_blend_adaptive)
+        180    3.904    0.022    3.904    0.022 {built-in method scipy.fft._duccfft.pyduccfft.c2r}
+         60    3.432    0.057    3.433    0.057 szifi/maps.py:1045(get_tmap_times_fvec)
+        568    2.838    0.005    4.030    0.007 szifi/maps.py:108(get_ell)
+         42    2.793    0.066    2.793    0.066 {built-in method _nmtlib.comp_pspec_coupled_flat}
+        368    2.675    0.007    3.435    0.009 szifi/maps.py:84(get_distance_map_wrt_centre)
+         18    2.587    0.144    5.395    0.300 szifi/maps.py:1246(inpaint)
+         66    2.245    0.034   12.311    0.187 szifi/maps.py:242(get_fft_f)
+         66    2.227    0.034   11.086    0.168 szifi/maps.py:252(get_ifft_f)
+        150    2.116    0.014    2.116    0.014 {method 'argmax' of 'numpy.ndarray' objects}
+          2    1.913    0.956    1.913    0.956 numpy/linalg/_linalg.py:547(inv)
+        216    1.764    0.008    4.485    0.021 szifi/maps.py:262(filter_fft)
+        180    1.404    0.008    1.404    0.008 szifi/maps.py:357(get_bl)
+        338    1.266    0.004    4.751    0.014 szifi/maps.py:894(get_mask_map)
+       1165    1.176    0.001    1.176    0.001 {method 'copy' of 'numpy.ndarray' objects}
+         30    1.167    0.039   33.041    1.101 szifi/mmf.py:1125(get_mmf_q_map)
+         72    1.007    0.014    1.007    0.014 {method 'searchsorted' of 'numpy.ndarray' objects}
+      11932    0.872    0.000    0.957    0.000 llvmlite/binding/ffi.py:210(__call__)
+        180    0.830    0.005   11.466    0.064 szifi/maps.py:297(get_gaussian_convolution)
+         30    0.750    0.025    1.808    0.060 szifi/model.py:256(get_t_map)
+        740    0.744    0.001    0.744    0.001 {method 'repeat' of 'numpy.ndarray' objects}
+         30    0.700    0.023   12.166    0.406 szifi/maps.py:988(convolve_tmap_experiment)
+       92.55 real        68.40 user        24.11 sys
+          1715240960  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            14870366  page reclaims
+                  83  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  82  voluntary context switches
+                 684  involuntary context switches
+        855686793862  instructions retired
+        297788505295  cycles elapsed
+          1597182464  peak memory footprint

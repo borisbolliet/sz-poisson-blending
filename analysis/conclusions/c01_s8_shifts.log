@@ -1,0 +1,14 @@
+step 3b pooled fits, q > 5: shift in S8 (best fit minus truth), its statistical error, and the bias in sigma
+  mode     survey config  shift in S8  sigma(S8)     bias
+  baseline SO40   a          -0.00239    0.00103    -2.33
+  baseline SO40   d          +0.00580    0.01804    +0.32
+  baseline full   a          -0.00239    0.00065    -3.68
+  baseline full   d          +0.00749    0.01488    +0.50
+  goal     SO40   a          -0.00353    0.00083    -4.23
+  goal     SO40   d          +0.01151    0.01699    +0.68
+  goal     full   a          -0.00353    0.00053    -6.69
+  goal     full   d          +0.01422    0.01344    +1.06
+  baseline SO40: sigma(S8) of config d / config a = 17.6; |shift| of config d / config a = 2.4
+  baseline full: sigma(S8) of config d / config a = 22.9; |shift| of config d / config a = 3.1
+  goal SO40: sigma(S8) of config d / config a = 20.4; |shift| of config d / config a = 3.3
+  goal full: sigma(S8) of config d / config a = 25.5; |shift| of config d / config a = 4.0

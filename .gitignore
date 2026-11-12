@@ -18,4 +18,5 @@ verify_real/**/out/
 !analysis/realistic/**/*.log
 !verify_real/**/*.log
 !analysis/visual/*.log
+!analysis/conclusions/*.log
 !analysis/finder/*.log

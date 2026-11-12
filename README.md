@@ -12,6 +12,8 @@ Every number below was computed by a script in this repository. Each one was als
 
 📈 **Latest: progress report, realistic Simons Observatory setup and next steps:** [`PROGRESS.md`](PROGRESS.md)
 
+🧭 **Current conclusions:** [`CONCLUSIONS.md`](CONCLUSIONS.md) · 🔍 **Review of the SZiFi cluster finder (possible bugs and improvements):** [`SZIFI_REVIEW.md`](SZIFI_REVIEW.md)
+
 ---
 
 ## Key results
@@ -225,10 +227,10 @@ The results above use an idealised telescope. We are now repeating them with a r
 - **SZiFi itself (done; checked twice and arbitrated; the runs with periodic edge filling by the arbiter only, recomputed for the report; the re-implementation's counts on the same tiles computed for the report only): once a round-off problem in SZiFi is avoided, SZiFi's own code confirms step 3a's re-implementation.**
   - SZiFi's unchanged code ran on 30 of step 3a's tiles per noise level, plus noise-only tiles, in a separate environment. Before masking it finds the same objects as our finder (99.97–99.99% matched within 1′).
   - With its default masking settings, on 12 of these tiles per noise level, it ends within 0.01 of step 3a's re-implementation in r. With the masked discs at our test tiles' edges also filled periodically, it finds 22% (baseline) and 24% (goal) fewer q > 5 clusters than our finder; the re-implementation finds 20% / 24% fewer on the same tiles (whole tiles).
-  - This holds once the round-off problem is avoided, either with an ℓ range that covers every Fourier mode or by setting SZiFi's inverse covariance to zero outside step 3a's ℓ range (same r to 3×10⁻⁴). Otherwise, with step 3a's ℓ range (100–20000), SZiFi amplifies round-off in the modes left out and masks spurious large-scale detections, and its noise level ends 2–3% higher at the smallest filter size.
+  - This holds once the round-off problem is avoided, either with an ℓ range that leaves none of SZiFi's spectral bins wholly outside it or by setting SZiFi's inverse covariance to zero outside step 3a's ℓ range (same r to 3×10⁻⁴). Otherwise, with step 3a's ℓ range (100–20000), SZiFi amplifies round-off in the modes left out and masks spurious large-scale detections, and its noise level ends 2–3% higher at the smallest filter size.
   - With the SO example script's ℓ_sep = 12000, SZiFi counts the same q > 5 clusters as our finder within 2%. The SO example's own covariance ('mixed_gaussian') breaks down on our test tiles. With an isotropic covariance the example works and finds 3.5% / 7.7% fewer q > 5 clusters than our finder.
   - So SZiFi itself supports the masked noise levels behind step 3b's two SZiFi variants (within 0.006 in r with the default settings and within 0.012 with ℓ_sep = 12000, once the round-off problem is avoided and the edges are filled periodically). The count change and the S8 fits were not recomputed with SZiFi itself.
-  - Details: [`analysis/realistic/step3_szifi_real/RESULTS.md`](analysis/realistic/step3_szifi_real/RESULTS.md).
+  - Details: [`analysis/realistic/step3_szifi_real/RESULTS.md`](analysis/realistic/step3_szifi_real/RESULTS.md). The problems found in SZiFi, with code locations, suggested fixes and a speed profile: [`SZIFI_REVIEW.md`](SZIFI_REVIEW.md).
 - **Next:** foregrounds, clustered halos and a full likelihood.
 
 ---
@@ -275,6 +277,7 @@ figures/      all figures
 twopager/     two-page PDF summary and LaTeX source
 REPORT.md     readable report;  REPORT_detailed.md: every number, test and open disagreement
 PROGRESS.md   progress report: results so far, methods, next steps
+CONCLUSIONS.md   current conclusions;  SZIFI_REVIEW.md: review of the SZiFi cluster finder (bugs, improvements, speed)
 ```
 
 Simulated catalogues and maps (`data/`, ~7 GB, `data_cosmo/`, ~0.5 GB, and `data_real/`, ~2 GB) are not included. Regenerate them with `szsim` and the scripts in `analysis/`; each figure's script is listed in `REPORT.md`.

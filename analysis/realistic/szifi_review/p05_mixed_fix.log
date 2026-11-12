@@ -1,0 +1,28 @@
+Coupling matrix found
+p05: tile 0 baseline, S3 settings, noise iteration 0; covariance grid (556, 556) [9 s]
+modes with l > 0 on the covariance grid: 309135
+  covariance        modes with an eigenvalue <= 0 (count)  a^T C^-1 a < 0        weight / isotropic: median, 1-99%
+  isotropic                         0.00% (     0)           0.00%   +1.000  [+1.00e+00, +1.00e+00]
+  mixed_gaussian                   45.49% (140613)           6.13%   +0.983  [-3.61e+00, +5.07e+00]
+  direct (own)                      0.00% (     0)           0.00%   +0.992  [+1.38e-01, +1.09e+00]
+  whitened (own)                    0.00% (     0)           0.00%   +1.003  [+9.36e-01, +1.08e+00]
+  diagonal / isotropic, median: mixed_gaussian 0.997, direct (own) 1.001, whitened (own) 0.997
+done [12 s]
+       14.46 real        11.71 user         2.47 sys
+          1320615936  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1334993  page reclaims
+                 172  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                2665  voluntary context switches
+                 232  involuntary context switches
+        157187763777  instructions retired
+         45593213904  cycles elapsed
+          1251954432  peak memory footprint

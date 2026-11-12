@@ -1,0 +1,22 @@
+S1 with max_it = 2 on tile 0 (baseline): 90 s; filtering passes 2; noise iterations stored 2
+  identify_clusters call 0 (loop index i = 0): old masked clusters 0, new ones 338; tested catalogue 0 rows, of which 0 new detections not identified with an old one (q_opt = -1); old clusters not found again 0 (not tested); convergence test as written: True; the same test on every entry: True
+  identify_clusters call 1 (loop index i = 1): old masked clusters 338, new ones 313; tested catalogue 428 rows, of which 90 new detections not identified with an old one (q_opt = -1); old clusters not found again 12 (not tested); convergence test as written: True; the same test on every entry: False
+against the build's stored run with max_it = 1: 22 of 22 catalogue / sigma arrays identical
+       92.07 real        67.46 user        24.41 sys
+          1712783360  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            14866923  page reclaims
+                 217  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1930  voluntary context switches
+                 856  involuntary context switches
+        847598766748  instructions retired
+        295681652437  cycles elapsed
+          1595101696  peak memory footprint

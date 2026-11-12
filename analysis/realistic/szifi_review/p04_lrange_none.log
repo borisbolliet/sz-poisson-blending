@@ -1,0 +1,1 @@
+lrange = None: TypeError: cannot unpack non-iterable NoneType object; raised in SZiFi at szifi/mmf.py:179 (find_clusters)

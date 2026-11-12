@@ -1,0 +1,104 @@
+SZiFi clone at commit 73626fb084adc4e664f7322aaff573e6f0df21ea (expected 73626fb084adc4e664f7322aaff573e6f0df21ea): OK; unchanged (git status empty): OK; no __pycache__: OK
+
+  E4  szifi/mmf.py:179   holds '[lmin,lmax]': OK
+  E4  szifi/mmf.py:181   holds 'indices_filter': OK
+  E4  szifi/mmf.py:185   holds 'filter_tmap': OK
+  E4  szifi/mmf.py:186   holds 'filter_tmap': OK
+  E4  szifi/spec.py:24    holds 'l0_bins': OK
+  E4  szifi/spec.py:25    holds 'lf_bins': OK
+  E4  szifi/spec.py:398   holds 'extrapolate': OK
+  E4  szifi/spec.py:317   holds 'np.linalg.inv': OK
+  E4  szifi/mmf.py:664   holds 'filter_tmap': OK
+  E4  szifi/mmf.py:1155  holds 'fftconvolve': OK
+  E4  szifi/params.py:24    holds '[100,2500]': OK
+  E4  szifi/params.py:13    holds 'decouple_type': OK
+  E4  test_files/run_szifi_so_car.py:30    holds '300000': OK
+  E4  surveys/data_planck.py:40    holds '1024': OK
+  E4  surveys/data_planck.py:41    holds '14.8': OK
+  E4  surveys/data_planck.py:75    holds 'get_apodised_mask': OK
+  E4  surveys/data_planck.py:76    holds 'get_apodised_mask': OK
+  E5  szifi/spec.py:333   holds 'n_freq': OK
+  E5  szifi/spec.py:363   holds '/ps_isotropic': OK
+  E5  szifi/spec.py:373   holds 'gaussian_filter': OK
+  E5  szifi/spec.py:382   holds '*ps_isotropic': OK
+  E5  szifi/mmf.py:1162  holds 'norm': OK
+  E5  szifi/mmf.py:1168  holds 'np.sqrt(norm)': OK
+  E6  szifi/mmf.py:465   holds 'identify_clusters': OK
+  E6  szifi/mmf.py:467   holds 'np.all': OK
+  E6  szifi/mmf.py:442   holds 'max_it': OK
+  E6  szifi/cat.py:301   holds 'deepcopy(catalogue_1)': OK
+  E6  szifi/cat.py:373   holds 'indices_catalogue_2==0.': OK
+  E6  szifi/cat.py:384   holds 'np.array([-1])': OK
+  E6  szifi/cat.py:392   holds 'catalogue_1_new.append': OK
+  E3  szifi/cat.py:140   holds 'get_angdist': OK
+  E3  szifi/sphere.py:94    holds 'hp.rotator.angdist': OK
+  E3  szifi/cat.py:176   holds 'AgglomerativeClustering': OK
+  E3  szifi/cat.py:178   holds 'affinity=': OK
+  E3  szifi/cat.py:291   holds 'hp.rotator.angdist': OK
+  E3  szifi/sphere.py:86    holds 'hp.rotator.angdist': OK
+  E3  szifi/cat.py:323   holds 'get_angdist': OK
+  E3  szifi/cat.py:327   holds 'get_angdist': OK
+  E2  szifi/params.py:22    holds 'snr_weigthing': OK
+  E2  szifi/mmf.py:95    holds 'snr_weighting': OK
+  E2  szifi/mmf.py:687   holds 'snr_weighting': OK
+  E2  test_files/run_szifi_planck.py:14    holds 'params_szifi_default': OK
+  E2  test_files/run_szifi_planck_with_fixed.py:10    holds 'params_szifi_default': OK
+  E2  test_files/run_szifi_planck_with_fixed_rsz.py:10    holds 'params_szifi_default': OK
+  E2  test_files/run_szifi_planck_constrained.py:11    holds 'params_szifi_default': OK
+  E7  szifi/mmf.py:628   holds 'theta_cart': OK
+  E7  szifi/mmf.py:629   holds '0.5*self.pix.nx': OK
+  E7  szifi/maps.py:58    holds '+0.5': OK
+  E7  szifi/maps.py:65    holds '+0.5': OK
+  E7  szifi/mmf.py:1155  holds 'mode="same"': OK
+  E7  szifi/maps.py:72    holds '+0.5': OK
+  E7  szifi/maps.py:79    holds '+0.5': OK
+  E1  szifi/params.py:47    holds 'maxima_lomem': OK
+  E1  szifi/mmf.py:578   holds 'n_theta > 3': OK
+  E1  szifi/mmf.py:711   holds 'continue': OK
+  E1  szifi/mmf.py:748   holds 'sigma_vec[j]': OK
+  E1  szifi/params.py:6     holds 'theta_500_vec_arcmin': OK
+  E1  test_files/run_szifi_so_car.py:14    holds '[2.,3.]': OK
+  D1  szifi/params.py:24    holds 'None': OK
+  D1  szifi/mmf.py:179   holds '[lmin,lmax]': OK
+  D2  szifi/params.py:20    holds 'anisotropic_gaussian': OK
+  D2  szifi/spec.py:292   holds '"isotropic"': OK
+  D2  szifi/spec.py:303   holds 'anisotropic_gaussian': OK
+  D2  szifi/spec.py:307   holds 'mixed_boxcar': OK
+  D2  szifi/spec.py:312   holds 'return cov_tensor': OK
+  D3  szifi/mmf.py:5     holds 'filterwarnings': OK
+  D4  szifi/params.py:49    holds '/Users/': OK
+  D4  szifi/params.py:50    holds '/Users/': OK
+  D4  szifi/params.py:51    holds '/Users/': OK
+  D4  szifi/params.py:53    holds '/Users/': OK
+  D5  szifi/params.py:52    holds 'save_and_load_template': OK
+  D5  szifi/mmf.py:611   holds 'RuntimeError': OK
+  D5  szifi/mmf.py:490   holds 'os.remove': OK
+  D5  szifi/mmf.py:491   holds 'os.remove': OK
+  D5  szifi/mmf.py:613   holds 'save_and_load_template': OK
+  D6  szifi/mmf.py:238   holds 'mask_cluster': OK
+  D6  szifi/mmf.py:242   holds 'inpaint': OK
+  D6  szifi/mmf.py:253   holds 'circular_cosine_blend_adaptive': OK
+  D6  szifi/params.py:31    holds 'inpaint': OK
+  A2  test_files/run_szifi_planck.py:58    holds 'radius_arcmin = 10.': OK
+  A2  test_files/run_szifi_planck.py:60    holds 'fof': OK
+  A2  test_files/run_szifi_planck.py:61    holds 'fof': OK
+  S4  szifi/params.py:28    holds 'nearest': OK
+  S4  szifi/spec.py:220   holds 'ell_eff[1:]': OK
+  P4  szifi/car.py:7     holds 'pkg_resources': OK
+  P5  szifi/__init__.py:3     holds 'from .maps import *': OK
+
+86 of 86 checks pass (83 distinct lines)
+
+Absences:
+  D2 szifi/params.py:20 lists the covariance types without 'mixed': OK
+  D1 no file of the package tests the parameter lrange for None: OK (0 files do)
+  E4 SZiFi's Planck script sets no l range (uses the default): OK
+  E2 none of SZiFi's 4 Planck example scripts sets 'snr_weighting': OK
+  P2 setup.py declares no dependencies (no install_requires): OK
+  P1 no licence file in the clone's top folder: OK []
+
+E4: Fourier modes and spectral bins outside SZiFi's l range
+  our tiles (1200 px of 0.5'), l range [100, 20000]: 32.7% of the modes outside; 22 of the 299 kept bins hold no mode inside; highest l 30547, axis Nyquist l 21600
+  our tiles, l range [100, 30600]: 0.0% of the modes outside; 0 of the 299 kept bins hold no mode inside; highest l 30547, axis Nyquist l 21600
+  our tiles, l range [1, 300000] (SO example): 0.0% of the modes outside; 0 of the 299 kept bins hold no mode inside; highest l 30547, axis Nyquist l 21600
+  SZiFi's Planck tiles (1024 px over 14.8 deg), default l range [100, 2500]: 96.8% of the modes outside; 205 of the 255 kept bins hold no mode inside; highest l 17613, axis Nyquist l 12454

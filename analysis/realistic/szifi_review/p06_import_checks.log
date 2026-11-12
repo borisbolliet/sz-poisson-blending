@@ -1,0 +1,16 @@
+before import szifi, numpy's 'invalid value' warning for sqrt(-1) reaches the user: True
+import szifi adds 6 warnings filter(s): action 'ignore', category Warning, message any, module any; action 'ignore', category FITSFixedWarning, message any, module any; action 'always', category ConsistencyWarning, message any, module 'healpy.rotator'; action 'always', category StringTruncateWarning, message any, module any; action 'ignore', category Warning, message 'the matrix subclass is not the recommended way', module any; action 'always', category SpecialFunctionWarning, message any, module any
+after import szifi, numpy's 'invalid value' warning for sqrt(-1) reaches the user: False
+import szifi loads pixell   : True
+import szifi loads pymaster : True
+import szifi loads sklearn  : True
+import szifi loads yaml     : True
+import szifi loads numba    : True
+import szifi loads healpy   : True
+import szifi loads astropy  : True
+import szifi loads scipy    : True
+szifi.utils is the module 'pixell.utils' (SZiFi's own is 'szifi.utils')
+szifi.utils is the utils that szifi/maps.py imports from pixell: True
+szifi.car imported by 'import szifi': False
+import szifi.car (setuptools 80.10.2): 1 warning(s) about pkg_resources
+  UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
