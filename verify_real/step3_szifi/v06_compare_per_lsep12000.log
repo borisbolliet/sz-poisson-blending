@@ -1,0 +1,123 @@
+v06: SZiFi-convention finder (linear same-mode convolution) vs the build; matching radius 1', margin 2.0' from the tile edges
+
+==================== baseline: 10 realistic tiles (1000 deg^2)
+  r(theta) = sigma / sigma(analytic CMB + noise), each with its own template; mean over tiles [tile std]
+    theta [']                                     0.50    0.64    0.81    1.04    1.32    1.68    2.15    2.74    3.49    4.45    5.68    7.24    9.23   11.76   15.00
+    build, before iteration                      1.1119  1.1177  1.1238  1.1305  1.1380  1.1458  1.1530  1.1591  1.1632  1.1644  1.1621  1.1559  1.1459  1.1328  1.1175
+    SZiFi conventions, before iteration          1.1185  1.1230  1.1279  1.1335  1.1401  1.1473  1.1541  1.1599  1.1639  1.1650  1.1627  1.1565  1.1467  1.1339  1.1188
+    build, after iteration (whitened mask)       1.0386  1.0404  1.0422  1.0440  1.0460  1.0479  1.0494  1.0503  1.0502  1.0489  1.0461  1.0419  1.0362  1.0296  1.0223
+       tile std                                  0.0021  0.0021  0.0021  0.0022  0.0022  0.0022  0.0023  0.0025  0.0027  0.0031  0.0036  0.0043  0.0050  0.0057  0.0062
+    SZiFi, after iteration (inpaint+blend+lsep)  1.0308  1.0330  1.0355  1.0382  1.0415  1.0450  1.0481  1.0505  1.0518  1.0516  1.0496  1.0458  1.0406  1.0344  1.0278
+       tile std                                  0.0059  0.0059  0.0060  0.0061  0.0062  0.0064  0.0066  0.0068  0.0070  0.0072  0.0074  0.0076  0.0077  0.0077  0.0077
+    SZiFi, no inpainting (= before)              1.1185  1.1230  1.1279  1.1335  1.1401  1.1473  1.1541  1.1599  1.1639  1.1650  1.1627  1.1565  1.1467  1.1339  1.1188
+    step 2 (i), build's t05 log                  1.0545  1.0566  1.0588  1.0611  1.0635  1.0659  1.0678  1.0689  1.0691  1.0679  1.0654  1.0613  1.0560  1.0498  1.0432
+    step 2 (iii), build's t05 log                1.1367  1.1427  1.1492  1.1561  1.1636  1.1715  1.1786  1.1845  1.1886  1.1899  1.1880  1.1826  1.1735  1.1615  1.1472
+    SZiFi after: (r-1)/(r_(i)-1)                 0.56    0.58    0.60    0.63    0.65    0.68    0.71    0.73    0.75    0.76    0.76    0.75    0.72    0.69    0.64
+    SZiFi after: (r-1)/(r_(iii)-1)               0.23    0.23    0.24    0.25    0.25    0.26    0.27    0.27    0.27    0.27    0.26    0.25    0.23    0.21    0.19
+    build after: (r-1)/(r_(i)-1) [these tiles]    0.71    0.71    0.72    0.72    0.72    0.73    0.73    0.73    0.73    0.72    0.71    0.68    0.65    0.59    0.52
+    sigma ratio after/before: build 0.9010-0.9343; SZiFi 0.9033-0.9217
+    unmasked fraction: SZiFi 0.798 [0.745-0.873], build 0.792; SZiFi blend weight in the holes: mean w 0.735, mean w^2 0.613
+    auto spectra after/before, l   100- 1000: SZiFi 0.9552 (before the lsep division 0.9552); build 1.0106
+    auto spectra after/before, l  1000- 3000: SZiFi 0.9383 (before the lsep division 0.9383); build 0.9768
+    auto spectra after/before, l  3000- 6000: SZiFi 0.9063 (before the lsep division 0.9063); build 0.9653
+    auto spectra after/before, l  6000-12000: SZiFi 0.9223 (before the lsep division 0.9223); build 0.9973
+    auto spectra after/before, l 12000-20000: SZiFi 1.1571 (before the lsep division 0.9215); build 0.9922
+  detections per tile (mean), q > 4 / 4.5 / 5:
+    build it0                               :  313.0 /  221.4 /  170.3
+    build it1 (final)                       :  409.5 /  279.8 /  210.2
+    SZiFi it0 (= final without inpainting)  :  307.5 /  219.5 /  165.6
+    SZiFi it1 (final with inpainting)       :  411.8 /  284.0 /  210.4
+    q > 5 before -> after the iteration: build 1703 -> 2102 (+23.4%); SZiFi 1656 -> 2104 (+27.1%)
+  catalogue matching (objects >= 2.0' from the edges):
+   q > 4.5:
+    build it0 -> SZiFi it0 (same iteration)                   : N  2195, matched 100.0%; dq mean +0.008 std 0.185; same scale 53.6%, within 1 step 86.4%; offset median 0.35', mean (dy, dx) (+0.002, +0.001)'
+    SZiFi it0 -> build it0                                    : N  2168, matched 100.0%; dq mean +0.004 std 0.182; same scale 54.0%, within 1 step 86.5%; offset median 0.35', mean (dy, dx) (-0.007, -0.009)'
+    build it1 -> SZiFi it1 (finals, SZiFi inpainting)         : N  2770, matched 100.0%; dq mean +0.022 std 0.200; same scale 51.5%, within 1 step 84.7%; offset median 0.35', mean (dy, dx) (+0.001, +0.003)'
+    SZiFi it1 -> build it1                                    : N  2806, matched  99.9%; dq mean -0.013 std 0.198; same scale 51.0%, within 1 step 84.1%; offset median 0.35', mean (dy, dx) (-0.009, -0.006)'
+    build it1 -> SZiFi it0 (finals, SZiFi without inpainting) : N  2770, matched  98.7%; dq mean -0.658 std 0.572; same scale 51.0%, within 1 step 84.1%; offset median 0.35', mean (dy, dx) (+0.002, -0.001)'
+    SZiFi it0 -> build it1                                    : N  2168, matched  99.9%; dq mean +0.729 std 0.621; same scale 52.5%, within 1 step 85.2%; offset median 0.35', mean (dy, dx) (-0.009, -0.007)'
+   q > 5.0:
+    build it0 -> SZiFi it0 (same iteration)                   : N  1689, matched 100.0%; dq mean +0.010 std 0.196; same scale 55.5%, within 1 step 88.9%; offset median 0.35', mean (dy, dx) (+0.006, +0.001)'
+    SZiFi it0 -> build it0                                    : N  1638, matched 100.0%; dq mean +0.000 std 0.194; same scale 55.7%, within 1 step 89.2%; offset median 0.35', mean (dy, dx) (-0.006, -0.008)'
+    build it1 -> SZiFi it1 (finals, SZiFi inpainting)         : N  2084, matched 100.0%; dq mean +0.021 std 0.212; same scale 53.2%, within 1 step 86.6%; offset median 0.35', mean (dy, dx) (+0.003, +0.006)'
+    SZiFi it1 -> build it1                                    : N  2079, matched  99.9%; dq mean -0.014 std 0.211; same scale 53.2%, within 1 step 86.4%; offset median 0.35', mean (dy, dx) (-0.005, -0.008)'
+    build it1 -> SZiFi it0 (finals, SZiFi without inpainting) : N  2084, matched 100.0%; dq mean -0.745 std 0.623; same scale 52.6%, within 1 step 85.7%; offset median 0.35', mean (dy, dx) (+0.003, +0.003)'
+    SZiFi it0 -> build it1                                    : N  1638, matched  99.9%; dq mean +0.822 std 0.681; same scale 54.2%, within 1 step 88.2%; offset median 0.35', mean (dy, dx) (-0.007, -0.007)'
+    build it0 -> SZiFi it0, SZiFi's reported pixel (no -1/2), q>5: N  1689, matched 100.0%; dq mean +0.010 std 0.197; same scale 55.5%, within 1 step 89.0%; offset median 0.50', mean (dy, dx) (+0.251, +0.247)'
+
+==================== goal: 10 realistic tiles (1000 deg^2)
+  r(theta) = sigma / sigma(analytic CMB + noise), each with its own template; mean over tiles [tile std]
+    theta [']                                     0.50    0.64    0.81    1.04    1.32    1.68    2.15    2.74    3.49    4.45    5.68    7.24    9.23   11.76   15.00
+    build, before iteration                      1.1527  1.1608  1.1696  1.1794  1.1903  1.2016  1.2119  1.2205  1.2261  1.2274  1.2237  1.2144  1.2000  1.1814  1.1600
+    SZiFi conventions, before iteration          1.1628  1.1690  1.1758  1.1840  1.1936  1.2039  1.2135  1.2217  1.2270  1.2282  1.2244  1.2151  1.2008  1.1824  1.1613
+    build, after iteration (whitened mask)       1.0522  1.0546  1.0570  1.0596  1.0624  1.0650  1.0670  1.0682  1.0682  1.0665  1.0630  1.0577  1.0507  1.0425  1.0335
+       tile std                                  0.0023  0.0024  0.0025  0.0026  0.0028  0.0030  0.0032  0.0035  0.0037  0.0040  0.0043  0.0046  0.0051  0.0055  0.0060
+    SZiFi, after iteration (inpaint+blend+lsep)  1.0554  1.0586  1.0620  1.0661  1.0708  1.0757  1.0800  1.0834  1.0850  1.0843  1.0811  1.0753  1.0673  1.0580  1.0482
+       tile std                                  0.0103  0.0105  0.0108  0.0111  0.0115  0.0118  0.0122  0.0125  0.0127  0.0127  0.0126  0.0122  0.0117  0.0110  0.0104
+    SZiFi, no inpainting (= before)              1.1628  1.1690  1.1758  1.1840  1.1936  1.2039  1.2135  1.2217  1.2270  1.2282  1.2244  1.2151  1.2008  1.1824  1.1613
+    step 2 (i), build's t05 log                  1.0678  1.0704  1.0731  1.0760  1.0790  1.0818  1.0840  1.0852  1.0853  1.0836  1.0802  1.0751  1.0684  1.0608  1.0528
+    step 2 (iii), build's t05 log                1.1904  1.1989  1.2079  1.2176  1.2283  1.2390  1.2487  1.2566  1.2619  1.2631  1.2599  1.2517  1.2386  1.2217  1.2017
+    SZiFi after: (r-1)/(r_(i)-1)                 0.82    0.83    0.85    0.87    0.90    0.93    0.95    0.98    1.00    1.01    1.01    1.00    0.98    0.95    0.91
+    SZiFi after: (r-1)/(r_(iii)-1)               0.29    0.29    0.30    0.30    0.31    0.32    0.32    0.32    0.32    0.32    0.31    0.30    0.28    0.26    0.24
+    build after: (r-1)/(r_(i)-1) [these tiles]    0.77    0.78    0.78    0.78    0.79    0.79    0.80    0.80    0.80    0.80    0.79    0.77    0.74    0.70    0.63
+    sigma ratio after/before: build 0.8696-0.9130; SZiFi 0.8838-0.9079
+    unmasked fraction: SZiFi 0.774 [0.729-0.827], build 0.765; SZiFi blend weight in the holes: mean w 0.735, mean w^2 0.614
+    auto spectra after/before, l   100- 1000: SZiFi 0.9508 (before the lsep division 0.9508); build 1.0043
+    auto spectra after/before, l  1000- 3000: SZiFi 0.9388 (before the lsep division 0.9388); build 0.9711
+    auto spectra after/before, l  3000- 6000: SZiFi 0.8900 (before the lsep division 0.8900); build 0.9446
+    auto spectra after/before, l  6000-12000: SZiFi 0.9133 (before the lsep division 0.9133); build 0.9950
+    auto spectra after/before, l 12000-20000: SZiFi 1.1805 (before the lsep division 0.9127); build 0.9905
+  detections per tile (mean), q > 4 / 4.5 / 5:
+    build it0                               :  419.1 /  308.9 /  237.5
+    build it1 (final)                       :  586.1 /  407.1 /  316.1
+    SZiFi it0 (= final without inpainting)  :  412.4 /  304.4 /  236.1
+    SZiFi it1 (final with inpainting)       :  567.1 /  399.5 /  306.6
+    q > 5 before -> after the iteration: build 2375 -> 3161 (+33.1%); SZiFi 2361 -> 3066 (+29.9%)
+  catalogue matching (objects >= 2.0' from the edges):
+   q > 4.5:
+    build it0 -> SZiFi it0 (same iteration)                   : N  3060, matched 100.0%; dq mean +0.008 std 0.222; same scale 52.0%, within 1 step 86.0%; offset median 0.35', mean (dy, dx) (-0.009, +0.001)'
+    SZiFi it0 -> build it0                                    : N  3003, matched 100.0%; dq mean +0.003 std 0.219; same scale 52.0%, within 1 step 86.1%; offset median 0.35', mean (dy, dx) (+0.002, -0.008)'
+    build it1 -> SZiFi it1 (finals, SZiFi inpainting)         : N  4029, matched 100.0%; dq mean -0.067 std 0.260; same scale 50.2%, within 1 step 84.5%; offset median 0.35', mean (dy, dx) (-0.005, -0.002)'
+    SZiFi it1 -> build it1                                    : N  3940, matched 100.0%; dq mean +0.076 std 0.261; same scale 50.5%, within 1 step 84.5%; offset median 0.35', mean (dy, dx) (-0.002, -0.003)'
+    build it1 -> SZiFi it0 (finals, SZiFi without inpainting) : N  4029, matched  96.0%; dq mean -0.890 std 0.761; same scale 49.6%, within 1 step 83.6%; offset median 0.35', mean (dy, dx) (-0.007, -0.002)'
+    SZiFi it0 -> build it1                                    : N  3003, matched 100.0%; dq mean +1.007 std 0.830; same scale 51.3%, within 1 step 85.4%; offset median 0.35', mean (dy, dx) (+0.000, -0.007)'
+   q > 5.0:
+    build it0 -> SZiFi it0 (same iteration)                   : N  2353, matched 100.0%; dq mean +0.006 std 0.235; same scale 54.1%, within 1 step 87.8%; offset median 0.35', mean (dy, dx) (-0.010, +0.002)'
+    SZiFi it0 -> build it0                                    : N  2331, matched 100.0%; dq mean +0.000 std 0.235; same scale 53.3%, within 1 step 87.5%; offset median 0.35', mean (dy, dx) (+0.006, -0.008)'
+    build it1 -> SZiFi it1 (finals, SZiFi inpainting)         : N  3127, matched 100.0%; dq mean -0.075 std 0.279; same scale 51.4%, within 1 step 86.5%; offset median 0.35', mean (dy, dx) (-0.003, -0.000)'
+    SZiFi it1 -> build it1                                    : N  3024, matched 100.0%; dq mean +0.085 std 0.280; same scale 51.4%, within 1 step 86.3%; offset median 0.35', mean (dy, dx) (-0.000, -0.006)'
+    build it1 -> SZiFi it0 (finals, SZiFi without inpainting) : N  3127, matched  99.9%; dq mean -0.990 std 0.812; same scale 50.9%, within 1 step 85.7%; offset median 0.35', mean (dy, dx) (-0.006, +0.000)'
+    SZiFi it0 -> build it1                                    : N  2331, matched 100.0%; dq mean +1.122 std 0.901; same scale 52.5%, within 1 step 86.4%; offset median 0.35', mean (dy, dx) (+0.005, -0.008)'
+    build it0 -> SZiFi it0, SZiFi's reported pixel (no -1/2), q>5: N  2353, matched 100.0%; dq mean +0.007 std 0.235; same scale 54.0%, within 1 step 87.8%; offset median 0.50', mean (dy, dx) (+0.238, +0.251)'
+
+==================== baseline: 6 noise-only tiles (600 deg^2)
+    sigma / analytic, theta [']                  0.50    0.81    1.32    2.15    3.49    5.68    9.23   15.00
+    build it0                                  0.9981  0.9983  0.9984  0.9986  0.9988  0.9989  0.9986  0.9972
+    build it1 (whitened)                       0.9947  0.9946  0.9944  0.9943  0.9942  0.9942  0.9939  0.9924
+    SZiFi it0                                  0.9983  0.9984  0.9986  0.9988  0.9991  0.9993  0.9993  0.9983
+    SZiFi it1 (inpaint)                        0.9841  0.9844  0.9847  0.9850  0.9853  0.9854  0.9854  0.9850
+    SZiFi unmasked fraction 0.914; build 0.905
+    false detections per 100 deg^2 (no merge), q > 4 / 4.5 / 5 [counts]:
+    build it0                               :  47.50 /   5.83 /   0.33   [285, 35, 2]
+    build it1 (final)                       :  53.50 /   6.00 /   0.83   [321, 36, 5]
+    SZiFi it0 (= final without inpainting)  :  43.83 /   5.00 /   0.50   [263, 30, 3]
+    SZiFi it1 (final with inpainting)       :  55.00 /   6.67 /   1.00   [330, 40, 6]
+
+==================== goal: 6 noise-only tiles (600 deg^2)
+    sigma / analytic, theta [']                  0.50    0.81    1.32    2.15    3.49    5.68    9.23   15.00
+    build it0                                  0.9980  0.9981  0.9982  0.9984  0.9986  0.9987  0.9984  0.9972
+    build it1 (whitened)                       0.9946  0.9945  0.9943  0.9942  0.9941  0.9941  0.9936  0.9920
+    SZiFi it0                                  0.9981  0.9982  0.9984  0.9986  0.9988  0.9991  0.9990  0.9982
+    SZiFi it1 (inpaint)                        0.9791  0.9793  0.9795  0.9799  0.9802  0.9804  0.9805  0.9805
+    SZiFi unmasked fraction 0.893; build 0.879
+    false detections per 100 deg^2 (no merge), q > 4 / 4.5 / 5 [counts]:
+    build it0                               :  55.50 /   6.00 /   0.33   [333, 36, 2]
+    build it1 (final)                       :  59.83 /   7.83 /   0.50   [359, 47, 3]
+    SZiFi it0 (= final without inpainting)  :  49.50 /   5.17 /   0.50   [297, 31, 3]
+    SZiFi it1 (final with inpainting)       :  66.50 /   9.17 /   1.33   [399, 55, 8]
+
+==================== baseline: injection tiles [0, 30, 60, 90, 120, 180] (one per size)
+
+==================== goal: injection tiles [0, 30, 60, 90, 120, 180] (one per size)
+
+done

@@ -1,0 +1,24 @@
+
+baseline, 10 tile tiles: detections per 100 deg^2 by distance from the tile edge [0.0, 2.5, 10.0, 30.0, 60.0]..301.0' (q > 4.5 | q > 5)
+  build final    :   229.0 |  156.7    261.4 |  190.0    295.7 |  220.2    305.9 |  230.0    272.5 |  205.9   total q>5 2102
+  SZiFi per it1  :   216.9 |  150.6    190.0 |  140.9    227.4 |  175.2    235.3 |  178.8    214.5 |  164.2   total q>5 1667
+  SZiFi lin it0  : 10447.5 | 9254.6   1272.5 |  815.0    227.4 |  169.6    241.8 |  185.9    215.8 |  164.1   total q>5 3512
+  SZiFi lin it1  :  9712.5 | 8489.4    833.4 |  506.6    215.4 |  161.5    222.9 |  172.9    198.6 |  152.7   total q>5 3129
+
+goal, 10 tile tiles: detections per 100 deg^2 by distance from the tile edge [0.0, 2.5, 10.0, 30.0, 60.0]..301.0' (q > 4.5 | q > 5)
+  build final    :   355.5 |  289.2    367.7 |  298.2    427.5 |  326.2    420.0 |  330.6    404.1 |  312.3   total q>5 3161
+  SZiFi per it1  :   325.4 |  247.0    281.9 |  214.5    316.6 |  239.5    323.5 |  262.4    301.7 |  236.6   total q>5 2404
+  SZiFi lin it0  : 11839.3 | 10791.0   2130.4 | 1450.2    317.4 |  235.4    324.1 |  252.9    299.1 |  233.4   total q>5 4718
+  SZiFi lin it1  : 10833.1 | 9845.0   1386.9 |  908.9    294.9 |  226.6    303.5 |  236.5    272.7 |  213.3   total q>5 4128
+
+baseline, 3 noise tiles: detections per 100 deg^2 by distance from the tile edge [0.0, 2.5, 10.0, 30.0, 60.0]..301.0' (q > 4.5 | q > 5)
+  build final    :     0.0 |    0.0     13.6 |    0.0      0.0 |    0.0      5.9 |    2.0      6.8 |    0.5   total q>5 2
+  SZiFi per it1  :     0.0 |    0.0      6.8 |    0.0      0.0 |    0.0      5.9 |    0.0      5.2 |    0.0   total q>5 0
+  SZiFi lin it0  : 12391.6 | 11347.3   1273.2 |  653.6      0.0 |    0.0      5.9 |    2.0      6.8 |    0.0   total q>5 662
+  SZiFi lin it1  : 11869.5 | 10825.1    551.5 |  333.6      0.0 |    0.0      3.9 |    0.0      2.6 |    0.0   total q>5 588
+
+goal, 3 noise tiles: detections per 100 deg^2 by distance from the tile edge [0.0, 2.5, 10.0, 30.0, 60.0]..301.0' (q > 4.5 | q > 5)
+  build final    :     0.0 |    0.0      6.8 |    0.0      5.4 |    0.0     11.8 |    2.0      7.8 |    0.0   total q>5 1
+  SZiFi per it1  :     0.0 |    0.0      0.0 |    0.0      2.7 |    0.0      5.9 |    2.0      4.2 |    0.0   total q>5 1
+  SZiFi lin it0  : 12974.1 | 12130.5   2423.8 | 1674.9      2.7 |    0.0      7.8 |    2.0      5.2 |    0.0   total q>5 851
+  SZiFi lin it1  : 12552.3 | 11407.5   1123.4 |  687.7      0.0 |    0.0      3.9 |    0.0      2.1 |    0.0   total q>5 669

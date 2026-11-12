@@ -1,0 +1,13 @@
+x03: 0 noise-only tiles (x 2 levels x 2 mask methods) + 270 injection tiles (x 2 levels), 2 processes
+     0 ('inj', 0.3, 0): 4.4 s, worker peak RSS 0.90 GB [elapsed 5 s]
+    25 ('inj', 0.3, 25): 3.9 s, worker peak RSS 0.90 GB [elapsed 51 s]
+    50 ('inj', 0.6, 50): 4.7 s, worker peak RSS 0.90 GB [elapsed 106 s]
+    75 ('inj', 1.2, 75): 4.1 s, worker peak RSS 0.91 GB [elapsed 156 s]
+   100 ('inj', 2.4, 100): 4.5 s, worker peak RSS 0.90 GB [elapsed 211 s]
+   125 ('inj', 4.8, 125): 4.2 s, worker peak RSS 0.91 GB [elapsed 261 s]
+   150 ('inj', 4.8, 150): 4.6 s, worker peak RSS 0.89 GB [elapsed 316 s]
+   175 ('inj', 4.8, 175): 4.2 s, worker peak RSS 0.90 GB [elapsed 367 s]
+   200 ('inj', 9.6, 200): 4.6 s, worker peak RSS 0.90 GB [elapsed 421 s]
+   225 ('inj', 9.6, 225): 3.9 s, worker peak RSS 0.90 GB [elapsed 470 s]
+   250 ('inj', 9.6, 250): 4.3 s, worker peak RSS 0.90 GB [elapsed 520 s]
+x03 runs done in 556 s wall

@@ -1,0 +1,23 @@
+x13: P(credited q_obs > 5 | q_inj 4-6) per size, three independent injection sets (tile-bootstrap errors)
+
+baseline
+  theta  0.3': build 0.5242 +- 0.0131  own1 0.4986 +- 0.0128  own2 0.5345 +- 0.0127
+  theta  0.6': build 0.5481 +- 0.0135  own1 0.5613 +- 0.0108  own2 0.5653 +- 0.0141
+  theta  1.2': build 0.5533 +- 0.0165  own1 0.5759 +- 0.0117  own2 0.5697 +- 0.0158
+  theta  2.4': build 0.6234 +- 0.0136  own1 0.5600 +- 0.0118  own2 0.6162 +- 0.0123
+  theta  4.8': build 0.6276 +- 0.0144  own1 0.5965 +- 0.0135  own2 0.6221 +- 0.0134
+  theta  9.6': build 0.5837 +- 0.0133  own1 0.6046 +- 0.0141  own2 0.5809 +- 0.0153
+  build - own1: per size +1.4, -0.8, -1.1, +3.5, +1.6, -1.1 sigma; chi2 19.8 for 6; weighted mean difference +0.0115 +- 0.0076
+  build - own2: per size -0.6, -0.9, -0.7, +0.4, +0.3, +0.1 sigma; chi2 1.9 for 6; weighted mean difference -0.0042 +- 0.0080
+  own1 - own2: per size -2.0, -0.2, +0.3, -3.3, -1.3, +1.1 sigma; chi2 18.2 for 6; weighted mean difference -0.0183 +- 0.0076
+
+goal
+  theta  0.3': build 0.5228 +- 0.0119  own1 0.4936 +- 0.0126  own2 0.5302 +- 0.0135
+  theta  0.6': build 0.5431 +- 0.0132  own1 0.5541 +- 0.0101  own2 0.5660 +- 0.0157
+  theta  1.2': build 0.5533 +- 0.0162  own1 0.5745 +- 0.0110  own2 0.5677 +- 0.0131
+  theta  2.4': build 0.6118 +- 0.0154  own1 0.5702 +- 0.0110  own2 0.6093 +- 0.0125
+  theta  4.8': build 0.6284 +- 0.0150  own1 0.5980 +- 0.0129  own2 0.6229 +- 0.0110
+  theta  9.6': build 0.5819 +- 0.0138  own1 0.5983 +- 0.0152  own2 0.5917 +- 0.0136
+  build - own1: per size +1.7, -0.7, -1.1, +2.2, +1.5, -0.8 sigma; chi2 12.3 for 6; weighted mean difference +0.0091 +- 0.0076
+  build - own2: per size -0.4, -1.1, -0.7, +0.1, +0.3, -0.5 sigma; chi2 2.2 for 6; weighted mean difference -0.0072 +- 0.0079
+  own1 - own2: per size -2.0, -0.6, +0.4, -2.4, -1.5, +0.3 sigma; chi2 12.3 for 6; weighted mean difference -0.0176 +- 0.0073

@@ -1,0 +1,49 @@
+x11: count change vs a criterion-matched unit-noise calibration: 100 noise tiles x 20000 virtual clusters
+
+==================== baseline: r_noise 0.9879-0.9947; P_alone at q = 4.5 / 5 / 5.5 / 6 for theta bins centred at 0.38', 0.87', 1.99', 4.56', 10.45'
+   theta  0.38': 0.369 / 0.553 / 0.729 / 0.855   (N per q bin ~4766)
+   theta  0.87': 0.389 / 0.583 / 0.751 / 0.877   (N per q bin ~4761)
+   theta  1.99': 0.421 / 0.608 / 0.767 / 0.890   (N per q bin ~4787)
+   theta  4.56': 0.438 / 0.621 / 0.786 / 0.897   (N per q bin ~4742)
+   theta 10.45': 0.435 / 0.625 / 0.796 / 0.901   (N per q bin ~4762)
+  own fresh skies (x04) (100 tiles): credited 19818, isolated search 19913, N_exp_alone 20445.0
+     split 1 (credited vs isolated search): -0.48 +- 0.28%
+     split 2' (isolated search vs criterion-matched unit-noise calibration): -2.60 +- 0.38 (tiles) +- 0.12% (calibration); z bins +5.5, -2.9, -2.1, -2.6, -6.7, -11.5
+     N1' (credited vs criterion-matched calibration): -3.07 +- 0.38 +- 0.12%; z bins +2.4, -3.4, -2.7, -2.6, -6.7, -12.5
+     with the own injections (x03): N1 -0.81 +- 0.38%, split 2 -0.33 +- 0.39% (tile errors only); z 2-3 -9.8%
+     with the own second injection set (x03b): N1 -2.90 +- 0.37%, split 2 -2.43 +- 0.39% (tile errors only); z 2-3 -10.4%
+     with the build's selection fit: N1 -3.46 +- 0.37%, split 2 -3.00 +- 0.37% (tile errors only); z 2-3 -9.5%
+     with the own injections, both sets pooled: N1 -1.78 +- 0.37%, split 2 -1.31 +- 0.39% (tile errors only); z 2-3 -10.0%
+  build's skies (stored arrays) (324 tiles): credited 64355, isolated search 64475, N_exp_alone 66090.8
+     split 1 (credited vs isolated search): -0.19 +- 0.13%
+     split 2' (isolated search vs criterion-matched unit-noise calibration): -2.44 +- 0.18 (tiles) +- 0.12% (calibration); z bins -1.3, -2.4, -2.5, -2.2, -4.2, -0.3
+     N1' (credited vs criterion-matched calibration): -2.63 +- 0.19 +- 0.12%; z bins -3.5, -2.6, -2.4, -3.1, -4.0, -6.9
+     with the own injections (x03): N1 -0.35 +- 0.20%, split 2 -0.16 +- 0.19% (tile errors only); z 2-3 -3.7%
+     with the own second injection set (x03b): N1 -2.44 +- 0.19%, split 2 -2.26 +- 0.18% (tile errors only); z 2-3 -4.3%
+     with the build's selection fit: N1 -3.02 +- 0.19%, split 2 -2.84 +- 0.18% (tile errors only); z 2-3 -3.6%
+     with the own injections, both sets pooled: N1 -1.33 +- 0.20%, split 2 -1.14 +- 0.18% (tile errors only); z 2-3 -3.9%
+
+==================== goal: r_noise 0.9885-0.9949; P_alone at q = 4.5 / 5 / 5.5 / 6 for theta bins centred at 0.38', 0.87', 1.99', 4.56', 10.45'
+   theta  0.38': 0.363 / 0.543 / 0.724 / 0.852   (N per q bin ~4766)
+   theta  0.87': 0.384 / 0.577 / 0.746 / 0.869   (N per q bin ~4761)
+   theta  1.99': 0.416 / 0.604 / 0.763 / 0.885   (N per q bin ~4787)
+   theta  4.56': 0.432 / 0.624 / 0.782 / 0.896   (N per q bin ~4742)
+   theta 10.45': 0.433 / 0.625 / 0.795 / 0.899   (N per q bin ~4762)
+  own fresh skies (x04) (100 tiles): credited 29952, isolated search 29998, N_exp_alone 30978.0
+     split 1 (credited vs isolated search): -0.15 +- 0.21%
+     split 2' (isolated search vs criterion-matched unit-noise calibration): -3.16 +- 0.30 (tiles) +- 0.12% (calibration); z bins -0.1, -2.2, -3.4, -4.0, -4.1, -11.3
+     N1' (credited vs criterion-matched calibration): -3.31 +- 0.32 +- 0.12%; z bins -1.6, -2.8, -3.4, -3.4, -5.4, -13.2
+     with the own injections (x03): N1 -1.47 +- 0.32%, split 2 -1.32 +- 0.30% (tile errors only); z 2-3 -12.2%
+     with the own second injection set (x03b): N1 -2.57 +- 0.32%, split 2 -2.42 +- 0.31% (tile errors only); z 2-3 -12.7%
+     with the build's selection fit: N1 -3.20 +- 0.31%, split 2 -3.06 +- 0.31% (tile errors only); z 2-3 -11.2%
+     with the own injections, both sets pooled: N1 -2.02 +- 0.32%, split 2 -1.87 +- 0.30% (tile errors only); z 2-3 -12.4%
+  build's skies (stored arrays) (324 tiles): credited 96544, isolated search 96781, N_exp_alone 99998.3
+     split 1 (credited vs isolated search): -0.24 +- 0.12%
+     split 2' (isolated search vs criterion-matched unit-noise calibration): -3.22 +- 0.15 (tiles) +- 0.12% (calibration); z bins -3.8, -3.0, -2.9, -4.0, -5.9, -3.0
+     N1' (credited vs criterion-matched calibration): -3.45 +- 0.16 +- 0.12%; z bins -5.3, -3.6, -2.8, -4.4, -5.0, -4.7
+     with the own injections (x03): N1 -1.61 +- 0.15%, split 2 -1.37 +- 0.16% (tile errors only); z 2-3 -3.4%
+     with the own second injection set (x03b): N1 -2.71 +- 0.16%, split 2 -2.47 +- 0.16% (tile errors only); z 2-3 -3.7%
+     with the build's selection fit: N1 -3.35 +- 0.15%, split 2 -3.11 +- 0.15% (tile errors only); z 2-3 -2.5%
+     with the own injections, both sets pooled: N1 -2.16 +- 0.16%, split 2 -1.92 +- 0.15% (tile errors only); z 2-3 -3.5%
+
+done [66 s]

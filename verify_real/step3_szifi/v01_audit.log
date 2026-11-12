@@ -1,0 +1,193 @@
+[Redacted copy for the public repository: SZiFi has no licence, so the quoted SZiFi source lines are replaced by
+ their file:line references. The full log is kept locally in out/v01_audit_full.log (not committed); rerun
+ v01_audit.py against a local SZiFi clone (git HEAD 73626fb) to see the lines.]
+
+SZiFi clone: /Users/boris/GitHub/szifi (git HEAD 73626fb, 2026-08-28).  Files read as text only.
+
+--- 1. Defaults (params.py): q_th 4, q_th_noise 4, mask_radius 3, max_it 1, bin_fac 4, cov_type isotropic, interp nearest, maxima_lomem; also inpaint True (diffusive, 100), lsep 3000, decouple master, lrange [100,2500], beam 'real', 2 default scales, float32 maps
+   szifi/params.py:7: [line not reproduced]
+   szifi/params.py:8: [line not reproduced]
+   szifi/params.py:9: [line not reproduced]
+   szifi/params.py:11: [line not reproduced]
+   szifi/params.py:19: [line not reproduced]
+   szifi/params.py:20: [line not reproduced]
+   szifi/params.py:28: [line not reproduced]
+   szifi/params.py:47: [line not reproduced]
+   szifi/params.py:31: [line not reproduced]
+   szifi/params.py:30: [line not reproduced]
+   szifi/params.py:29: [line not reproduced]
+   szifi/params.py:32: [line not reproduced]
+   szifi/params.py:13: [line not reproduced]
+   szifi/params.py:24: [line not reproduced]
+   szifi/params.py:26: [line not reproduced]
+   szifi/params.py:6: [line not reproduced]
+   szifi/params.py:54: [line not reproduced]
+   szifi/params.py:34: [line not reproduced]
+
+--- 2. Covariance bins: width bin_fac*pi/(nx*dx); l0 <= l < lf (custom path); first bin dropped; nearest interpolation over bin centres with scipy interp1d
+   szifi/spec.py:24: [line not reproduced]
+   szifi/spec.py:25: [line not reproduced]
+   szifi/spec.py:173: [line not reproduced]
+   szifi/spec.py:183: [line not reproduced]
+   szifi/spec.py:253: [line not reproduced]
+   szifi/spec.py:254: [line not reproduced]
+   szifi/spec.py:398: [line not reproduced]
+   => bin width for nx = 1200, dx = 0.5': 72.000000 (build: 72)
+
+--- 3. The spectra are taken of the l-FILTERED noise map (modes outside lrange are zero) and averaged over ALL modes of a bin, so the two bins that straddle lmin and lmax are diluted (the build averages over in-band modes only, stated in RESULTS section 0.5)
+   szifi/mmf.py:186: [line not reproduced]
+   szifi/mmf.py:261: [line not reproduced]
+   szifi/mmf.py:262: [line not reproduced]
+   szifi/mmf.py:263: [line not reproduced]
+   szifi/mmf.py:264: [line not reproduced]
+
+--- 4. The cluster mask reaches the covariance ONLY through inpainting: get_cross_spec uses mask_point only inside 'if inpaint_flag == True' (correct_for_inpainting); the power-spectrum mask is ps.mask = mask_ps, not the cluster mask.  So with inpaint=False SZiFi's 'iteration' re-estimates exactly the iteration-0 covariance
+   szifi/mmf.py:238: [line not reproduced]
+   szifi/mmf.py:142: [line not reproduced]
+   szifi/mmf.py:143: [line not reproduced]
+   szifi/mmf.py:144: [line not reproduced]
+   szifi/mmf.py:145: [line not reproduced]
+   szifi/mmf.py:146: [line not reproduced]
+   szifi/mmf.py:147: [line not reproduced]
+   szifi/mmf.py:148: [line not reproduced]
+   szifi/mmf.py:149: [line not reproduced]
+   szifi/mmf.py:150: [line not reproduced]
+   szifi/mmf.py:151: [line not reproduced]
+   szifi/mmf.py:152: [line not reproduced]
+   szifi/mmf.py:153: [line not reproduced]
+   szifi/mmf.py:154: [line not reproduced]
+   szifi/mmf.py:242: [line not reproduced]
+   szifi/mmf.py:243: [line not reproduced]
+   szifi/mmf.py:244: [line not reproduced]
+   szifi/mmf.py:245: [line not reproduced]
+   szifi/mmf.py:246: [line not reproduced]
+   szifi/mmf.py:247: [line not reproduced]
+   szifi/mmf.py:248: [line not reproduced]
+   szifi/mmf.py:249: [line not reproduced]
+   szifi/mmf.py:250: [line not reproduced]
+   szifi/mmf.py:251: [line not reproduced]
+   szifi/mmf.py:252: [line not reproduced]
+   szifi/mmf.py:253: [line not reproduced]
+   szifi/mmf.py:254: [line not reproduced]
+   szifi/spec.py:249: [line not reproduced]
+   szifi/spec.py:250: [line not reproduced]
+   szifi/spec.py:251: [line not reproduced]
+   szifi/spec.py:31: [line not reproduced]
+
+--- 5. correct_for_inpainting: divide by the unmasked fraction only for ell > lsep (default 3000)
+   szifi/spec.py:444: [line not reproduced]
+   szifi/spec.py:445: [line not reproduced]
+   szifi/spec.py:446: [line not reproduced]
+   szifi/spec.py:447: [line not reproduced]
+   szifi/spec.py:448: [line not reproduced]
+   szifi/spec.py:449: [line not reproduced]
+   szifi/spec.py:450: [line not reproduced]
+   szifi/spec.py:451: [line not reproduced]
+   szifi/spec.py:452: [line not reproduced]
+   szifi/spec.py:453: [line not reproduced]
+   szifi/spec.py:454: [line not reproduced]
+
+--- 6. 'fsky' decoupling divides the coupled spectrum by f*<m^2>^2/<m^4> of the PS mask (= f^2 for a binary mask)
+   szifi/spec.py:138: [line not reproduced]
+   szifi/spec.py:139: [line not reproduced]
+   szifi/spec.py:140: [line not reproduced]
+   szifi/spec.py:141: [line not reproduced]
+   szifi/spec.py:142: [line not reproduced]
+   szifi/spec.py:143: [line not reproduced]
+   szifi/spec.py:144: [line not reproduced]
+   szifi/spec.py:145: [line not reproduced]
+
+--- 7. After inpainting SZiFi blends the inpainted holes back towards the ORIGINAL map (cosine taper in the distance to the hole edge; edge = original, centre = inpainted).  Not mentioned by the build
+   szifi/maps.py:1268: [line not reproduced]
+   szifi/maps.py:1325: [line not reproduced]
+   szifi/maps.py:1326: [line not reproduced]
+   szifi/maps.py:1327: [line not reproduced]
+   szifi/maps.py:1328: [line not reproduced]
+   szifi/maps.py:1329: [line not reproduced]
+   szifi/maps.py:1330: [line not reproduced]
+   szifi/maps.py:1331: [line not reproduced]
+   szifi/maps.py:1332: [line not reproduced]
+   szifi/maps.py:1333: [line not reproduced]
+   szifi/maps.py:1334: [line not reproduced]
+   szifi/maps.py:1335: [line not reproduced]
+   szifi/maps.py:1306: [line not reproduced]
+   szifi/maps.py:1323: [line not reproduced]
+
+--- 8. Diffusive inpainting: n_inpaint passes over the hole pixels in np.where order, each set to the mean of its in-map 8 neighbours (in place)
+   szifi/maps.py:1347: [line not reproduced]
+   szifi/maps.py:1348: [line not reproduced]
+   szifi/maps.py:1349: [line not reproduced]
+   szifi/maps.py:1350: [line not reproduced]
+   szifi/maps.py:1351: [line not reproduced]
+   szifi/maps.py:1352: [line not reproduced]
+   szifi/maps.py:1353: [line not reproduced]
+   szifi/maps.py:1354: [line not reproduced]
+   szifi/maps.py:1355: [line not reproduced]
+   szifi/maps.py:1356: [line not reproduced]
+   szifi/maps.py:1357: [line not reproduced]
+   szifi/maps.py:1358: [line not reproduced]
+   szifi/maps.py:1359: [line not reproduced]
+   szifi/maps.py:1360: [line not reproduced]
+   szifi/maps.py:1361: [line not reproduced]
+
+--- 9. get_cluster_mask: masks detections with q_opt > q_th_noise; radius theta_500 * mask_radius (clipped to [min, max]); pixels with distance <= r (ps_mask)
+   szifi/mmf.py:509: [line not reproduced]
+   szifi/mmf.py:524: [line not reproduced]
+   szifi/mmf.py:525: [line not reproduced]
+   szifi/maps.py:915: [line not reproduced]
+
+--- 10. S/N maps (get_mmf_q_map): filter = IFFT(C^-1 a T) (no conjugate), y = sum_i fftconvolve(map, filter, mode='same') [LINEAR, zero padded, not periodic], norm = sum(tem*filter) dx dy, std = 1/sqrt(norm)
+   szifi/mmf.py:1132: [line not reproduced]
+   szifi/mmf.py:1133: [line not reproduced]
+   szifi/mmf.py:1155: [line not reproduced]
+   szifi/mmf.py:1162: [line not reproduced]
+   szifi/mmf.py:1168: [line not reproduced]
+   szifi/utils.py:182: [line not reproduced]
+
+--- 11. Template: real-space Arnaud profile (truncated at 5 R500 in 3D) tabulated on 1000 radii to 5 theta500, np.interp at pixel-centre distances from the tile centre (index nx/2 - 1/2); Gaussian beam exp(-fwhm^2 l(l+1)/(16 ln 2)); normalised to the central y
+   szifi/mmf.py:628: [line not reproduced]
+   szifi/mmf.py:629: [line not reproduced]
+   szifi/model.py:75: [line not reproduced]
+   szifi/model.py:76: [line not reproduced]
+   szifi/model.py:99: [line not reproduced]
+   szifi/maps.py:58: [line not reproduced]
+   szifi/model.py:429: [line not reproduced]
+   szifi/maps.py:359: [line not reproduced]
+   szifi/mmf.py:662: [line not reproduced]
+
+--- 12. Peak finding 'maxima_lomem' (n_theta > 3): strict maxima along both map axes with -inf padding; scale axis argmax of [q_(j-1), q_j, q_(j+1)] == 1 with q_(-1) = 0 (q_j > q_(j-1), q_j >= q_(j+1)); last scale argmax of [q_(n-2), q_(n-1)] == 1; catalogue order scale then row-major (np.argwhere); detection pixel coordinate (i + 1/2) dx
+   szifi/mmf.py:578: [line not reproduced]
+   szifi/mmf.py:588: [line not reproduced]
+   szifi/mmf.py:718: [line not reproduced]
+   szifi/mmf.py:729: [line not reproduced]
+   szifi/mmf.py:1080: [line not reproduced]
+   szifi/mmf.py:1103: [line not reproduced]
+   szifi/mmf.py:1110: [line not reproduced]
+   szifi/mmf.py:1111: [line not reproduced]
+   szifi/maps.py:72: [line not reproduced]
+
+--- 13. Merging (cat.merge_detections): 'closest' = anchor is the first remaining entry, keep the highest q with distance < radius of the anchor, drop that group; 'fof' = sklearn single linkage with distance_threshold = radius, keep the highest q.  Planck script: q > 5 cut first, then fof at 10'
+   szifi/cat.py:140: [line not reproduced]
+   szifi/cat.py:143: [line not reproduced]
+   szifi/cat.py:146: [line not reproduced]
+   szifi/cat.py:158: [line not reproduced]
+   szifi/cat.py:176: [line not reproduced]
+   szifi/cat.py:177: [line not reproduced]
+   szifi/cat.py:178: [line not reproduced]
+   test_files/run_szifi_planck.py:51: [line not reproduced]
+   test_files/run_szifi_planck.py:58: [line not reproduced]
+   test_files/run_szifi_planck.py:60: [line not reproduced]
+
+--- 14. SZiFi's own SO example (run_szifi_so_car.py) does NOT use the defaults the build copies: lsep 12000, orphics inpainting, cov_type mixed_gaussian, q_th 4.5, min mask radius 1', NaMaster 'master' decoupling
+   test_files/run_szifi_so_car.py:37: [line not reproduced]
+   test_files/run_szifi_so_car.py:35: [line not reproduced]
+   test_files/run_szifi_so_car.py:28: [line not reproduced]
+   test_files/run_szifi_so_car.py:15: [line not reproduced]
+   test_files/run_szifi_so_car.py:48: [line not reproduced]
+   test_files/run_szifi_so_car.py:21: [line not reproduced]
+
+--- 15. Planck survey file: t_noi = t_obs (the covariance is estimated from the data themselves), nx = 1024 (even: the 'same'-mode half-pixel offset applies to Planck tiles too)
+   surveys/data_planck.py:67: [line not reproduced]
+   surveys/data_planck.py:40: [line not reproduced]
+
+patterns not found: 0

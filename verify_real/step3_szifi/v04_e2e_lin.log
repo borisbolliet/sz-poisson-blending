@@ -1,0 +1,46 @@
+v04: conv lin, 26 jobs, 2 processes
+  baseline tile-33   :   17.5 s, worker peak RSS 2.08 GB; n_det it0 503, it1 438  [elapsed 18 s]
+  baseline tile-0    :   17.7 s, worker peak RSS 1.92 GB; n_det it0 591, it1 525  [elapsed 18 s]
+  baseline tile-99   :   14.8 s, worker peak RSS 2.00 GB; n_det it0 585, it1 592  [elapsed 33 s]
+  baseline tile-66   :   15.5 s, worker peak RSS 2.08 GB; n_det it0 575, it1 475  [elapsed 34 s]
+  baseline tile-132  :   15.2 s, worker peak RSS 2.01 GB; n_det it0 626, it1 528  [elapsed 48 s]
+  baseline tile-165  :   15.1 s, worker peak RSS 2.08 GB; n_det it0 572, it1 494  [elapsed 49 s]
+  baseline tile-231  :   14.3 s, worker peak RSS 2.08 GB; n_det it0 535, it1 487  [elapsed 63 s]
+  baseline tile-198  :   15.5 s, worker peak RSS 2.01 GB; n_det it0 589, it1 502  [elapsed 64 s]
+  baseline tile-297  :   17.0 s, worker peak RSS 2.23 GB; n_det it0 600, it1 570  [elapsed 82 s]
+  baseline tile-264  :   17.8 s, worker peak RSS 2.17 GB; n_det it0 633, it1 556  [elapsed 82 s]
+  baseline noise-0   :   12.4 s, worker peak RSS 2.23 GB; n_det it0 359, it1 288  [elapsed 94 s]
+  baseline noise-20  :   12.7 s, worker peak RSS 2.17 GB; n_det it0 401, it1 335  [elapsed 94 s]
+  baseline noise-40  :   11.8 s, worker peak RSS 2.23 GB; n_det it0 331, it1 276  [elapsed 106 s]
+  goal     tile-0    :   16.9 s, worker peak RSS 2.17 GB; n_det it0 760, it1 670  [elapsed 111 s]
+  goal     tile-33   :   17.4 s, worker peak RSS 2.23 GB; n_det it0 682, it1 562  [elapsed 123 s]
+  goal     tile-66   :   15.5 s, worker peak RSS 2.17 GB; n_det it0 752, it1 652  [elapsed 127 s]
+  goal     tile-99   :   16.6 s, worker peak RSS 2.22 GB; n_det it0 719, it1 743  [elapsed 141 s]
+  goal     tile-132  :   17.5 s, worker peak RSS 1.90 GB; n_det it0 811, it1 679  [elapsed 145 s]
+  goal     tile-165  :   15.9 s, worker peak RSS 2.22 GB; n_det it0 717, it1 580  [elapsed 157 s]
+  goal     tile-198  :   15.7 s, worker peak RSS 1.98 GB; n_det it0 771, it1 657  [elapsed 161 s]
+  goal     tile-231  :   15.2 s, worker peak RSS 2.22 GB; n_det it0 719, it1 627  [elapsed 172 s]
+  goal     tile-264  :   15.2 s, worker peak RSS 1.98 GB; n_det it0 761, it1 690  [elapsed 176 s]
+  goal     tile-297  :   14.9 s, worker peak RSS 2.22 GB; n_det it0 778, it1 722  [elapsed 187 s]
+  goal     noise-0   :   11.6 s, worker peak RSS 1.98 GB; n_det it0 446, it1 346  [elapsed 188 s]
+  goal     noise-20  :   14.7 s, worker peak RSS 2.01 GB; n_det it0 477, it1 338  [elapsed 203 s]
+  goal     noise-40  :   14.1 s, worker peak RSS 2.02 GB; n_det it0 436, it1 320  [elapsed 203 s]
+v04 done [203 s]
+      203.42 real       398.24 user         5.56 sys
+          2226323456  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1717662  page reclaims
+                1032  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                3641  voluntary context switches
+               20011  involuntary context switches
+          5173312137  instructions retired
+          2111845949  cycles elapsed
+            80119232  peak memory footprint

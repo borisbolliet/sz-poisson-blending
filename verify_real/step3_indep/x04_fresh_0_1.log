@@ -1,0 +1,3 @@
+x04: fresh tiles 0..0 with 1 processes -> /Users/boris/GitHub/sz-poisson-blending/verify_real/step3_indep/out/fresh
+  tile   0: 71357 halos,  32.8 s (paint 6.7; baseline: find 2.2 diag 1.1 dec 6.5 forced 2.1; goal: find 1.5 diag 1.1 dec 9.1 forced 2.2); worker peak RSS 1.42 GB [elapsed 33 s]
+x04 done in 33 s wall

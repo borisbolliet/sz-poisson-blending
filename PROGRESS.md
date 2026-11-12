@@ -2,9 +2,13 @@
 
 This page summarises what has been done so far, what we found and what comes next.
 - **Idealised telescope (Q1–Q3):** details in [`REPORT.md`](REPORT.md).
-- **Realistic Simons Observatory setup:** details in [`analysis/realistic/step1/RESULTS.md`](analysis/realistic/step1/RESULTS.md) and [`analysis/realistic/step2/RESULTS.md`](analysis/realistic/step2/RESULTS.md).
+- **Realistic Simons Observatory setup:** details in [`analysis/realistic/step1/RESULTS.md`](analysis/realistic/step1/RESULTS.md), [`analysis/realistic/step2/RESULTS.md`](analysis/realistic/step2/RESULTS.md) and [`analysis/realistic/step3/RESULTS.md`](analysis/realistic/step3/RESULTS.md).
 
-Every number below comes from a script in this repository. Logs are committed for the realistic setup, the patch pictures and the finder timing test; the Q1–Q3 logs are kept locally. Every Q1–Q3 and step-1 result, and every step-2 result except the arbiter's extra analyst setups and the map check's Poisson realisations, was checked independently before being reported (step 2's RESULTS.md says, claim by claim, which check confirmed it); the patch pictures and the timing test carry only their own internal checks.
+Every number below comes from a script in this repository. Logs are committed for the realistic setup, the patch pictures and the finder timing test; the Q1–Q3 logs are kept locally. Every Q1–Q3 and step-1 result was checked independently before being reported. So was every step-2 and step-3a result, except a few that only one reviewer computed or checked:
+- step 2: the arbiter's extra analyst setups, and the map check's Poisson realisations;
+- step 3a: the count-change preview with its selection calibration, and the class fractions and count change with SZiFi's default settings (the arbiter).
+
+Each RESULTS.md says, claim by claim, which check confirmed it. The patch pictures and the timing test carry only their own internal checks.
 
 ## Status
 
@@ -15,7 +19,8 @@ Every number below comes from a script in this repository. Logs are committed fo
 | Q3 | Does ignoring blending bias cosmology from cluster counts? | done, verified (idealised telescope) |
 | Realistic step 1 | Does blending survive with SO's forecast noise, the CMB and a six-channel filter? | done, verified: **yes; Y boosts and losses about halved** |
 | Realistic step 2 | Does the cosmology bias survive with the SO filter? | done, verified: **with the default analysis choices, Q3's S8 bias disappears when the Y–M relation is fitted (at most +0.6σ, SO-like, over all choices tried); with the relation fixed, +1.33σ to +1.85σ (SO-like), the opposite sign to Q3** |
-| Realistic step 3 | A realistic cluster finder | planned (see the last section) |
+| Realistic step 3a | What does a real cluster finder do with blended peaks? | done, verified: **it credits each peak to its brighter cluster (like f_dom ≈ 0.7) and adds some blending by searching over position and size. It matches the step-2 cases whose S8 bias is +0.1σ to +0.4σ with the Y–M relation fitted and −0.6σ to −3.7σ with it fixed (SO-like; a preview read off step 2's table, for our finder's way of estimating the noise after masking)** |
+| Realistic step 3b | Cosmology fits with the finder's own catalogue | next (see the last section) |
 
 ---
 
@@ -150,7 +155,7 @@ With the SO filter, most of the effect comes from undetectable neighbours.
   - Boosts over the threshold fall by only 15–23%.
   - It changes the redshift shape of the counts.
 - **The SO filter needs no mean removal.** It is compensated: it ignores a uniform SZ background.
-- **The numbers depend on the attribution rule,** i.e. on which cluster a blended peak is assigned to. We count each peak once, under its brightest contributor. Only a real cluster finder with injected clusters can pin this down (step 3).
+- **The numbers depend on the attribution rule,** i.e. on which cluster a blended peak is assigned to. Our default rule (f_dom = 1) is meant to count each peak once, under its brightest contributor; step 3a found that it credits both clusters in 25–69% of the peaks where a second cluster adds at least 10% of the signal. A real cluster finder pins this down (step 3a).
 - **The fractions are probably upper bounds.** There are no foregrounds yet, and the halo model's SZ power is 2.65× the value SPT measures.
 - **Verification:**
   - Two independent checks, a re-derivation with separate code and map simulations, reproduce the headline fractions to within about 0.1 percentage point.
@@ -202,12 +207,69 @@ S8 bias, SO-like survey, q > 5, default attribution rule (f_dom = 1), S/N divide
   - It confirmed σ(S8) in configs c and e to within 1.2%, added the plain-standard-deviation case raised by the map check, and computed the attribution-rule × noise-estimate corners, which only it checked (the worst cases quoted above). No published number changed.
   - The correction off the fiducial was confirmed by the catalogue check only, on fresh skies at the two other S8 values.
 - **Open:**
-  - which attribution rule and noise estimate a real SO pipeline uses (step 3);
+  - which attribution rule and noise estimate a real SO pipeline uses (step 3a, below, measures them for a SZiFi-like finder);
   - freeing the redshift evolution of the Y–M relation in the fit, not yet tried;
   - two small per-bin offsets between methods (z = 1–1.5 and z = 2–3), worth less than 0.1σ in S8 if real;
   - no foregrounds, halo clustering, masks, bandpasses or relativistic SZ; the fiducial sky's SZ power is 2.65× SPT's;
   - the map-measured noise level is assumed known exactly from the fiducial sky;
   - Poisson realisations for one case only; the correction tested only along S8 at fixed Ωm (two truths); the fainter population and the robust width tried only with the default rule.
+
+### Realistic SO telescope, step 3a: what does a real cluster finder do?
+
+**Setup:**
+- **Finder:** our own lean version of SZiFi's iterative multi-frequency matched filter (Zubeldia et al. 2023a,b), the finder being tested for SO, in [`szsim/finder.py`](szsim/finder.py). SZiFi's code was read, not copied. Like SZiFi, the finder:
+  - estimates the noise from each tile, so the SZ of other halos enters its noise level;
+  - finds peaks in position and in size (15 sizes, 0.5′–15′);
+  - masks its q > 4 detections, re-estimates the noise and filters again once (the re-estimate differs from SZiFi's; see below).
+- **Why our own version:** SZiFi is built for real data (sky tiling, masks, foreground removal), which our periodic simulated tiles do not need. Applying the filter the way SZiFi does took 11.4 s per tile in a timing test, against 0.3 s for the same algebra in Fourier space ([`analysis/finder/f00_bench_filtering.py`](analysis/finder/f00_bench_filtering.py)).
+- **Sky:** 324 tiles of 10°×10° per noise level (32,400 deg², about twice the SO-like area), SO baseline and goal noise. Each tile holds all halos above 10¹³ M☉, the lensed CMB, white noise and atmosphere. Noise-only tiles and tiles with injected isolated clusters measure the finder's own false detections and selection.
+- **Exact bookkeeping:** every detection is split into the signal of each halo, the CMB and the noise, so each can be labelled clean, boosted, a fragment or a false detection.
+
+<p align="center"><img src="figures/realistic/step3_r_theta.png" width="900"></p>
+
+*The finder's noise level relative to the noise-only value, r = σ_finder/σ_Y, against filter size (left: baseline; right: goal). Blue: before the masking step. Orange: our finder after it. Red: our re-implementation of SZiFi's masking step with its default settings, written from its source code. Green: the same with the setting of SZiFi's SO example script. Black lines: step 2's three noise estimates.*
+
+| q > 5, 32,400 deg² per noise level | finder, SO baseline | finder, SO goal | step 1 (true positions), baseline / goal |
+|---|---|---|---|
+| detections | 69,496 | 103,739 | – |
+| Y boosted by > 10% | **10.6%** | **12.0%** | 8.8% / 10.4% |
+| detected only because of neighbours | 6.0% | 6.3% | 6.2% / 6.9% |
+| lost (of clusters detectable alone) | 6.2% | 6.6% | 4.9% / 5.4% |
+| fragments of a brighter detection (of all) | 5.6% | 5.4% | – |
+| no real cluster behind the peak (of all) | 1.7% | 1.5% | – |
+| size off by more than a factor 2 | 21.9% | 20.6% | – |
+
+*Unless marked "of all", fractions are of the real detections that are not fragments.*
+
+**What step 3a shows:**
+- **Up to the masking step, the finder matches SZiFi.** Given the same noise model, its noise level equals step 1's filter to 4×10⁻⁶. An emulation of SZiFi's own noise estimate, templates and peak rules, written from its source code, gives the same catalogue before the masking step: 100% of q > 5 detections matched. SZiFi itself was not run.
+- **Which noise level?** Before masking, the noise level holds the SZ of all halos, detected clusters included: the CMB, the noise and the tile's own SZ power predict it to 0.2–0.7%. That is close to step 2's noise estimate (iii), the plain standard deviation of the filtered map: r − 1 is 84–92% of (iii)'s excess. Masking the detections removes most of it. Our finder ends at r = 1.02–1.07, about 0.7 of the way from the noise-only value to step 2's noise estimate (i), which adds to the noise-only σ the scatter from halos below the detection threshold. How the masked noise is estimated matters:
+  - Our re-implementation of SZiFi's masking step with the setting of its SO example script (dividing by the unmasked fraction only above ℓ = 12000) lands within 0.02 of our finder in r, but its noise level is about 2.5% low on maps without halos.
+  - With SZiFi's default settings (dividing above ℓ = 3000; set for Planck), our re-implementation overestimates the noise at SO resolution. It blends the masked discs back towards the original map but still divides the small-scale power by the unmasked fraction. At small sizes r ends at 1.14 (baseline) and 1.18 (goal), close to (iii), and the noise level is 2.6% and 3.4% too high even on maps without halos.
+- **Which attribution?** The finder credits a blended peak to the brighter cluster (97–98% of the time when the second one contributes less than half as much) and never counts a peak twice. Step 2's default rule (f_dom = 1) credits both clusters in 25–69% of the peaks where a second cluster adds at least 10% of the signal. The finder behaves like the rule with f_dom ≈ 0.7: a peak is credited to a cluster only if no single neighbour adds more than 0.7 of that cluster's own S/N (independent check: 0.71 ± 0.05 and 0.70 ± 0.03).
+- **The search adds blending.** At the true positions, the finder's own filter reproduces step 1's numbers to within about 1 percentage point. Searching over position and size pulls peaks towards bright neighbours and grows the size to include them: compared with the same filter at the true positions (Y boosted for 8.3% / 9.3%, lost 4.8% / 5.1%), 2.3 / 2.6 points more Y boosts and 1.4 / 1.5 points more losses (baseline / goal).
+- **Do not merge at 10′.** SZiFi's Planck scripts merge detections within 10′. At SO depth that throws away 7% (baseline) and 10–11% (goal) of real clusters, because real clusters often sit that close. Merging within 1–2′ removes the fragments and only 0.1–0.2% of real clusters.
+- **Count change (a preview).** We compare the clusters the finder credits with what an analysis expects from the finder's own selection, calibrated on simulated clusters without neighbours and applied to the finder's S/N at face value: **−0.8 ± 0.4% (baseline) and −1.5 ± 0.3% (goal)**, with no trend in redshift (errors of 1–4 points above z = 1.5).
+  - The finder's noise level gives −1.2% / −1.7%: an isolated cluster sees less than unit noise in the finder's units, so fewer scatter above q = 5. Neighbours and the search give back +0.5% / +0.3%.
+  - The ± errors are statistical only. Calibrating the selection on noise-only tiles instead of injection tiles gives −1.6% / −2.7%, and injection sets of the same size scatter by up to 1–2 points.
+  - With our re-implementation of SZiFi's default settings, and the same selection model: −4.7% / −5.8%, a larger deficit than any case in step 2's table (at most −3.6% / −4.4%). Part of it is the noise bias those settings have even without halos, so not all of it is blending.
+- **What this means for cosmology (a preview read off step 2's table, not a fit).** The step-2 cases that match the finder's total count and redshift shape, attribution f_dom = 0.5–1 with noise estimate (i), gave an S8 bias of (SO-like survey; the f_dom = 0.5 ends were checked by step 2's arbiter only):
+  - **+0.12σ to +0.22σ (baseline) and +0.22σ to +0.40σ (goal) with the scaling relation fitted** (config d);
+  - **−0.64σ to −2.39σ and −1.00σ to −3.66σ with it fixed** (config a): negative, as in Q3, not positive as with step 2's default choices.
+  - Caveats: these hold for our finder's masking step. The cases were matched on count totals and redshift shape only, not on the S/N shape that drives config d. With the noise-only calibration, the goal count change (−2.7%) lies beyond the matched cases.
+  - With SZiFi's default masking, the nearest step-2 case (f_dom 0.5, noise estimate (iii)) gave config d +0.35σ / +0.61σ and config a −4.21σ / −6.23σ.
+
+**Verification:**
+- **SZiFi check:** reproduced SZiFi's conventions from its source code and applied them to the same tiles. SZiFi itself was not run: three packages it imports (NaMaster, pixell, scikit-learn) are not installed in our environment, and our sandbox did not allow running its code.
+- **Independent check:** its own code for every step (painting, CMB and noise, noise estimate, filter, peaks, masking, merging, bookkeeping). It ran on the build's tiles and on 100 new skies, 200 noise-only tiles and two sets of 270 injection tiles per noise level. On the same tiles it matches the finder to machine precision. On new skies it reproduces the blending fractions, attribution and noise levels within about 2σ.
+- **Arbitration:**
+  - The build's first count change, −3.4% / −4.0% with a steep drop at z = 2–3, is withdrawn. The independent check found that the selection model let undetectable faint halos count (0.7–0.9 points of it); the arbiter's 4× larger injection set removed most of the rest. The redshift trend was not real.
+  - The SZiFi check found that our masking step is not SZiFi's. The arbiter wrote its own implementation of SZiFi's masking step, confirmed the effect and ran it on 100 tiles per noise level.
+- **Open:**
+  - which masked-noise estimate an SO pipeline will use: it moves the count change from −0.8% to −4.7% (baseline);
+  - the selection calibration: calibrating on injection tiles or on noise-only tiles differs by about 1 point, and injection sets of the same size scatter more than expected;
+  - SZiFi itself not yet run;
+  - no foregrounds, halo clustering or masks; the halo population's SZ power is 2.65× SPT's.
 
 ---
 
@@ -254,6 +316,10 @@ Only general scientific and cosmology libraries; everything SZ-specific is our o
   - blended detection kernels from the P(D) with the SO filter, for each attribution rule and noise estimate;
   - the counts model with the SO filter's noise;
   - the cosmology fits (configs a–e), a linear split of the main biases into amplitude, redshift-tilt and S/N-shape parts, and the correction tested off the fiducial.
+- **Realistic SO, step 3a** ([`szsim/finder.py`](szsim/finder.py), [`analysis/realistic/step3/`](analysis/realistic/step3/)):
+  - the SZiFi-like finder, the tile simulator and the exact split of each detection into halos, CMB and noise;
+  - noise-only and injection runs for the finder's own false detections and selection;
+  - SZiFi's masked-noise step as an option, for comparison.
 - **Pictures of patches** ([`analysis/visual/`](analysis/visual/)): the two figures at the top of this page.
 
 ### How every result is checked
@@ -269,30 +335,13 @@ Only general scientific and cosmology libraries; everything SZ-specific is our o
 
 ---
 
-## Next: a realistic cluster finder (step 3)
+## Next: cosmology with the finder's own catalogue (step 3b)
 
-So far the realistic numbers measure each cluster at its true position with a filter of its true size, and add the neighbours through the P(D). That isolates the blending every finder suffers. A real finder adds its own effects:
-- searching over positions and sizes;
-- fragments and noise peaks;
-- which cluster a blended peak is assigned to.
-
-In Q3 these effects were larger than blending. Step 1 showed that the blending fractions depend on the assignment. Step 2 showed that the cosmology bias depends on it and on how the noise level is measured: over the cases computed, from −6.2σ to +4.7σ in S8 when the scaling relation is fixed (SO goal, SO-like survey), but only −0.2σ to +0.6σ when it is fitted. Measuring these effects needs a real finder on realistic maps, with injected clusters.
-
-**Plan:**
-- **A lean finder.** Reimplement, for our periodic simulated patches, the iterative multi-frequency matched filter of SZiFi (Zubeldia et al. 2023a,b), the finder being tested for SO. It will copy SZiFi's choices wherever they matter for blending:
-  - the noise covariance estimated from the data, so faint-halo SZ enters the noise model;
-  - one iteration that masks detected clusters;
-  - peaks that are maxima in both position and size;
-  - the same merging rule.
-- **Why a reimplementation:** SZiFi is built for real data (sky tiling, masks, inpainting, power-spectrum decoupling, foreground deprojection), which our simulations do not need. In a timing test on a 10°×10°, six-channel tile with 12 filter sizes:
-  - applying the filter the way SZiFi's `get_mmf_q_map` does (per channel, by zero-padded convolution) took 11.4 s;
-  - the same algebra in Fourier space, with the channel combination done once for all sizes, took 0.3 s;
-  - after a one-pixel registration shift, the two S/N maps agree to 3×10⁻⁶ in the tile interior at the two sizes compared (0.66′ and 4.42′; random test maps);
-  - script and log: [`analysis/finder/f00_bench_filtering.py`](analysis/finder/f00_bench_filtering.py), [`.log`](analysis/finder/f00_bench_filtering.log).
-- **Checks:**
-  - SZiFi itself on a subset of tiles (identical S/N maps when given the same noise model; matching catalogues otherwise);
-  - noise-only skies and injected clusters.
-- **Science:** run the finder on SO-sized skies, measure attribution and the count changes in (z, q), and redo the cosmology fits.
+Step 3a measured what a SZiFi-like finder does with blended peaks, but its cosmology numbers are read off step 2's table. Step 3b fits the finder's own counts:
+- **Selection.** Calibrate the finder's selection with one large injection set (at least 10⁵ clusters per noise level), for the whole distribution of measured S/N rather than only q > 5, and settle the unit-noise reference.
+- **Data vector.** Measure the finder's count change in step 2's 16 redshift × 9 S/N bins from the 324 tiles per noise level, and apply it to the model counts of an SO-like survey and of the full sky.
+- **Fits.** Redo configs a–e, for our finder and for SZiFi's default masking.
+- **Checks.** Two independent checks and an arbitration, as before; SZiFi itself on a subset of tiles if it can be run in our environment.
 
 **After that:**
 - foregrounds (CIB, radio, kSZ);

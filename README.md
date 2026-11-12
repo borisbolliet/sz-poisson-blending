@@ -6,7 +6,7 @@ Full-sky Poisson simulations of galaxy clusters seen through the thermal Sunyaev
 2. **Given a detection signal-to-noise threshold, how often are detections blended?**
 3. **Does ignoring blending bias cosmology from cluster counts, and can a likelihood account for it?**
 
-Every number below was computed by a script in this repository. Each one was also checked by an independent re-implementation, or re-run on fresh random seeds.
+Every number below was computed by a script in this repository. Each one was also checked by an independent re-implementation, or re-run on fresh random seeds; for the realistic SO steps, [`PROGRESS.md`](PROGRESS.md) lists the few numbers that only one reviewer checked.
 
 📄 **Two-page summary:** [`twopager/twopager.pdf`](twopager/twopager.pdf) · 📘 **Report:** [`REPORT.md`](REPORT.md) · 🔬 **All numbers and tests:** [`REPORT_detailed.md`](REPORT_detailed.md), [`REPORT_cosmo_detailed.md`](REPORT_cosmo_detailed.md)
 
@@ -22,6 +22,7 @@ Every number below was computed by a script in this repository. Each one was als
 - **So blending is a confusion problem, not a pair problem.** It has to be computed from the summed signal of all faint neighbours (a "P(D)" calculation), not from pairs within a radius.
 - **Ignoring blending biases cosmology (idealised telescope).** A cluster-count fit that ignores it shifts S8 by about **1σ** for an SO-like survey and **2σ** on the full sky. It usually passes goodness-of-fit, and mass-calibration nuisances do not absorb it. Modelling it exactly is cheap: about one minute per P(D) table, and it does not need recomputing at every step.
   - *With SO's realistic six-channel filter this changes* ([step 2](#towards-a-realistic-so-analysis-in-progress)): with the default analysis choices, if the Y–M normalisation, slope and scatter are fitted, the S8 bias disappears (at most +0.6σ for an SO-like survey over all choices tried); if the relation is fixed, a bias of +1.33σ to +1.85σ appears for an SO-like survey (+2.11σ to +2.92σ on the full sky), opposite in sign to the idealised telescope's −4.0σ (−6.3σ on the full sky).
+  - *A SZiFi-like cluster finder does not make step 2's default choices (f_dom = 1, noise-only σ)* ([step 3a](#towards-a-realistic-so-analysis-in-progress)): it credits each blended peak to its brighter cluster, and its noise level includes part of the SZ of other halos. The step-2 cases that match its count change gave an S8 bias of +0.1σ to +0.4σ with the relation fitted and −0.6σ to −3.7σ with it fixed (SO-like survey; a preview read off step 2's table, not yet a fit; with SZiFi's default masking settings the count change goes beyond step 2's table).
 - **Two traps.**
   - Not removing the map's mean SZ signal roughly *triples* every blending fraction.
   - Not computing fractions on the *detected* sample underestimates blending by 1.3–1.5×.
@@ -163,7 +164,7 @@ We put blending into a binned (z, q) Poisson count likelihood and fitted the usu
 - So freeing nuisance parameters does not remove the bias; it changes which parameter absorbs it, and in which direction.
 - **Green** points are often far off, in either direction. They show that the detection pipeline itself (fragments, noise peaks) must be calibrated on simulations, and that this is a bigger effect than blending.
 
-**Bottom line.** With the idealised telescope, if blending is ignored, an SO-like analysis with the most realistic fit (row d) gets S8 too high by about 1σ, and a full-sky one by about 2σ. With SO's realistic filter and the default analysis choices, this row-d bias drops to −0.01σ to +0.08σ; other attribution rules and noise estimates leave at most +0.6σ (SO-like) and +0.9σ (full sky) ([step 2](#towards-a-realistic-so-analysis-in-progress)).
+**Bottom line.** With the idealised telescope, if blending is ignored, an SO-like analysis with the most realistic fit (row d) gets S8 too high by about 1σ, and a full-sky one by about 2σ. With SO's realistic filter and the default analysis choices, this row-d bias drops to −0.01σ to +0.08σ; other attribution rules and noise estimates leave at most +0.6σ (SO-like) and +0.9σ (full sky) ([step 2](#towards-a-realistic-so-analysis-in-progress)). Our SZiFi-like cluster finder matches step-2 cases with a row-d bias of +0.1σ to +0.4σ (SO-like; step 3a, a preview read off step 2's table; with SZiFi's default masking settings the count change goes beyond that table).
 
 | fitted | SO-like 16,500 deg² | full sky |
 |---|---|---|
@@ -206,7 +207,14 @@ The results above use an idealised telescope. We are now repeating them with a r
   - With the scaling relation fixed, a bias of +1.33σ to +1.85σ appears instead, of the opposite sign to Q3's −4.0σ. It depends strongly on which cluster a blended peak is assigned to and on how the noise level is measured.
   - All step-2 numbers measure each cluster at its true position and size, with the neighbours added through the P(D), and fit noiseless expected counts; foregrounds, halo clustering and a real cluster finder (step 3) are not yet included.
   - Details: [`analysis/realistic/step2/RESULTS.md`](analysis/realistic/step2/RESULTS.md).
-- **Step 3 (next):** a realistic cluster finder, reimplementing the iterative matched filter of SZiFi.
+- **Step 3a (done; checked twice and arbitrated; the count-change preview by the arbiter only): a real cluster finder makes its own choices, and they matter.**
+  - Our lean version of SZiFi's iterative matched filter ([`szsim/finder.py`](szsim/finder.py)) ran on 324 simulated SO tiles per noise level (32,400 deg²). Up to its masking step, which differs from SZiFi's, it gives the same catalogue as an emulation of SZiFi written from its source code (SZiFi itself was not run).
+  - It credits each blended peak to its brighter cluster, like step 2's attribution rule with f_dom ≈ 0.7 (a peak is credited to a cluster only if no single neighbour adds more than 0.7 of its S/N). After masking its detections, its noise level sits about 0.7 of the way from the noise-only value to step 2's noise estimate (i), which adds the scatter from halos below the detection threshold.
+  - Searching over position and size adds blending: at q > 5, 10.6% (baseline) and 12.0% (goal) of real, non-fragment detections have Y boosted by more than 10%, against 8.3% and 9.3% with the same filter at the true positions (step 1: 8.8% and 10.4%).
+  - Count change at q > 5 (a preview): −0.8% (baseline) and −1.5% (goal), or −1.6% / −2.7% with the selection calibrated on noise-only tiles. The step-2 cases that match its total count and redshift shape (f_dom = 0.5–1, noise estimate (i)) gave an S8 bias of +0.12σ to +0.40σ with the relation fitted and −0.64σ to −3.66σ with it fixed (SO-like).
+  - Our re-implementation of SZiFi's default masking settings (set for Planck) overestimates the noise at SO resolution, even on maps without halos. With it the count change would be −4.7% / −5.8%.
+  - Details: [`analysis/realistic/step3/RESULTS.md`](analysis/realistic/step3/RESULTS.md).
+- **Step 3b (next):** fit cosmology to the finder's own counts.
 
 ---
 
@@ -254,7 +262,7 @@ REPORT.md     readable report;  REPORT_detailed.md: every number, test and open 
 PROGRESS.md   progress report: results so far, methods, next steps
 ```
 
-Simulated catalogues and maps (`data/`, ~7 GB, `data_cosmo/`, ~0.5 GB, and `data_real/`, ~0.5 GB) are not included. Regenerate them with `szsim` and the scripts in `analysis/`; each figure's script is listed in `REPORT.md`.
+Simulated catalogues and maps (`data/`, ~7 GB, `data_cosmo/`, ~0.5 GB, and `data_real/`, ~2 GB) are not included. Regenerate them with `szsim` and the scripts in `analysis/`; each figure's script is listed in `REPORT.md`.
 
 **Requirements:** Python 3.12 with numpy, scipy, colossus, numba, healpy, matplotlib, astropy, camb (for the SO setup) and emcee (for the MCMC).
 

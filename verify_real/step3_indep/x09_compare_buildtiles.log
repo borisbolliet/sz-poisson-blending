@@ -1,0 +1,11 @@
+x09: own pipeline on build tiles [0, 1, 2] vs the build's stored arrays
+  tile   0 baseline: catalogue unmatched 0, max |dq| 3.2e-06; q > 5: 230, primary differs 0, max |d c_p| 2.2e-09 sigma, max |d delta| 2.8e-06 sigma; q_alone of primaries max |d| 7.8e-03; forced common 873: max |d q_alone| 7.8e-03, own 8.4e-03, nb 4.2e-04, tsz 3.3e-06, cn 1.2e-07 sigma
+  tile   0 goal    : catalogue unmatched 0, max |dq| 4.7e-06; q > 5: 340, primary differs 0, max |d c_p| 4.7e-09 sigma, max |d delta| 4.2e-06 sigma; q_alone of primaries max |d| 1.0e-02; forced common 1310: max |d q_alone| 1.0e-02, own 1.1e-02, nb 8.8e-04, tsz 5.2e-06, cn 2.5e-07 sigma
+  tile   1 baseline: catalogue unmatched 0, max |dq| 5.5e-06; q > 5: 212, primary differs 0, max |d c_p| 4.9e-09 sigma, max |d delta| 4.2e-06 sigma; q_alone of primaries max |d| 1.7e-02; forced common 885: max |d q_alone| 1.7e-02, own 1.7e-02, nb 9.3e-04, tsz 5.7e-06, cn 3.1e-07 sigma
+  tile   1 goal    : catalogue unmatched 0, max |dq| 7.2e-06; q > 5: 315, primary differs 0, max |d c_p| 1.1e-08 sigma, max |d delta| 5.9e-06 sigma; q_alone of primaries max |d| 2.2e-02; forced common 1276: max |d q_alone| 2.2e-02, own 2.2e-02, nb 1.2e-03, tsz 8.2e-06, cn 4.1e-07 sigma
+  tile   2 baseline: catalogue unmatched 0, max |dq| 5.2e-05; q > 5: 227, primary differs 0, max |d c_p| 1.1e-07 sigma, max |d delta| 4.6e-05 sigma; q_alone of primaries max |d| 1.9e-02; forced common 832: max |d q_alone| 1.9e-02, own 1.9e-02, nb 8.8e-04, tsz 5.6e-05, cn 2.4e-06 sigma
+  tile   2 goal    : catalogue unmatched 0, max |dq| 6.5e-05; q > 5: 327, primary differs 0, max |d c_p| 2.2e-07 sigma, max |d delta| 6.5e-05 sigma; q_alone of primaries max |d| 2.2e-02; forced common 1223: max |d q_alone| 2.2e-02, own 2.2e-02, nb 1.2e-03, tsz 8.4e-05, cn 2.9e-06 sigma
+
+summary over 3 tiles x 2 levels: catalogue unmatched 0; q > 5 detections 1651: primary differs 0, max |d c_p| 2.2e-07 sigma, max |d delta| 6.5e-05 sigma, label flips: real 0, Y boosted > 10% 0, only thanks to neighbours 0
+  isolated search q_alone, own vs build: primaries median |d| 1.7e-04, max 2.2e-02; all common forced halos (6399): median 5.1e-05, 99% 2.7e-03, max 2.2e-02; q_alone > 5 flips 1
+  forced photometry (sigma units), max over all: own response 2.2e-02, largest neighbour 1.2e-03, tSZ 8.4e-05, CMB + noise 2.9e-06; nearest-scale differences 0

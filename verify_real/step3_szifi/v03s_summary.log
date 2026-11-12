@@ -1,0 +1,58 @@
+
+=== baseline: 10 tiles, the build's iteration-1 covariance given to SZiFi-convention filtering
+  theta [']                            0.50   0.64   0.81   1.04   1.32   1.68   2.15   2.74   3.49   4.45   5.68   7.24   9.23  11.76  15.00
+  (i) SZiFi's linear 'same' convolution vs periodic, identical template (the build's): |dq| by distance from the edge
+        0.0-  2.5'  max 25.733 25.881 25.981 26.008 25.919 25.670 25.214 24.518 23.553 22.310 20.802 19.072 17.351 15.824 14.174
+                    rms  4.287  4.335  4.382  4.425  4.462  4.485  4.485  4.455  4.385  4.268  4.099  3.878  3.611  3.312  2.999
+        2.5- 10.0'  max  9.769  9.976 10.136 10.300 10.437 10.448 10.288 10.222 10.119  9.758  9.123  8.250  8.296  8.527  8.619
+                    rms  1.050  1.075  1.097  1.119  1.145  1.168  1.179  1.181  1.171  1.147  1.112  1.072  1.034  1.007  0.995
+       10.0- 30.0'  max  0.942  0.975  1.007  1.030  1.053  1.106  1.110  1.132  1.141  1.134  1.098  1.045  0.986  0.931  0.891
+                    rms  0.078  0.080  0.083  0.086  0.089  0.093  0.097  0.100  0.105  0.109  0.114  0.119  0.125  0.131  0.137
+       30.0- 60.0'  max  0.386  0.386  0.384  0.383  0.393  0.410  0.426  0.439  0.447  0.448  0.481  0.514  0.550  0.582  0.609
+                    rms  0.056  0.057  0.059  0.060  0.062  0.064  0.066  0.069  0.072  0.076  0.080  0.085  0.091  0.099  0.108
+       60.0-301.0'  max  0.393  0.399  0.406  0.413  0.421  0.437  0.457  0.474  0.486  0.491  0.497  0.498  0.497  0.491  0.514
+                    rms  0.040  0.041  0.042  0.044  0.045  0.047  0.049  0.051  0.054  0.057  0.060  0.064  0.068  0.074  0.081
+  (ii) SZiFi's sampled template vs the build's, periodic, same covariance, >= 30' from the edges:
+      rms dq        0.053  0.042  0.032  0.024  0.017  0.012  0.009  0.006  0.005  0.004  0.003  0.003  0.002  0.002  0.002
+      max |dq|      1.053  0.831  0.616  0.434  0.293  0.201  0.137  0.098  0.071  0.056  0.044  0.042  0.042  0.043  0.041
+      correlation  0.9988 0.9992 0.9996 0.9998 0.9999 0.9999 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+  (iii) both (SZiFi template, linear convolution) vs the build, >= 30' from the edges:
+      rms dq        0.069  0.062  0.057  0.054  0.052  0.053  0.054  0.056  0.058  0.061  0.065  0.069  0.074  0.080  0.087
+      max |dq|      1.059  0.837  0.622  0.515  0.489  0.472  0.463  0.477  0.488  0.495  0.500  0.510  0.547  0.579  0.607
+  (iv) at the build's 2798 final detections with q > 4.5 (same pixel and scale, periodic, SZiFi template): q_SZiFi - q_build mean -0.0038, std 0.0164, min -0.148, max +0.051
+      scales 0.50-0.81': N   623, mean -0.0196, std 0.0283, relative mean -0.0037
+      scales 1.04-1.68': N   806, mean +0.0011, std 0.0067, relative mean +0.0002
+      scales 2.15-3.49': N   915, mean +0.0007, std 0.0040, relative mean +0.0001
+      scales 4.45-7.24': N   387, mean +0.0000, std 0.0024, relative mean -0.0000
+      scales 9.23-15.00': N    67, mean -0.0003, std 0.0015, relative mean -0.0001
+      build q > 5: 2102; of these with q_SZiFi < 5: 7; build 4.5 < q <= 5 with q_SZiFi > 5: 7
+  sigma ratio SZiFi template (y0 units) / build template (sr units), relative to tile 0: spread over tiles max 4.0e-04 (the template effect on sigma is tile-independent)
+
+=== goal: 10 tiles, the build's iteration-1 covariance given to SZiFi-convention filtering
+  theta [']                            0.50   0.64   0.81   1.04   1.32   1.68   2.15   2.74   3.49   4.45   5.68   7.24   9.23  11.76  15.00
+  (i) SZiFi's linear 'same' convolution vs periodic, identical template (the build's): |dq| by distance from the edge
+        0.0-  2.5'  max 32.687 32.942 33.142 33.252 33.209 32.950 32.414 31.557 30.348 28.781 26.885 24.721 22.390 20.021 17.740
+                    rms  5.309  5.362  5.413  5.460  5.496  5.513  5.500  5.449  5.351  5.197  4.985  4.714  4.394  4.041  3.675
+        2.5- 10.0'  max 12.172 12.230 12.238 12.481 12.862 13.106 13.157 12.962 12.462 11.641 10.813  9.982  9.566  9.746  9.781
+                    rms  1.239  1.269  1.297  1.326  1.359  1.384  1.394  1.391  1.369  1.328  1.271  1.204  1.138  1.085  1.051
+       10.0- 30.0'  max  0.919  0.962  1.005  1.042  1.079  1.158  1.165  1.212  1.224  1.216  1.180  1.125  1.065  1.019  1.004
+                    rms  0.076  0.079  0.081  0.084  0.087  0.091  0.095  0.099  0.103  0.108  0.113  0.118  0.124  0.131  0.138
+       30.0- 60.0'  max  0.453  0.459  0.467  0.474  0.480  0.482  0.480  0.491  0.505  0.512  0.508  0.534  0.570  0.607  0.642
+                    rms  0.060  0.061  0.063  0.065  0.066  0.069  0.071  0.074  0.077  0.080  0.085  0.090  0.096  0.103  0.112
+       60.0-301.0'  max  0.476  0.491  0.508  0.526  0.545  0.566  0.585  0.602  0.616  0.622  0.623  0.615  0.599  0.583  0.567
+                    rms  0.044  0.045  0.047  0.048  0.050  0.052  0.054  0.056  0.059  0.062  0.065  0.069  0.073  0.078  0.085
+  (ii) SZiFi's sampled template vs the build's, periodic, same covariance, >= 30' from the edges:
+      rms dq        0.058  0.047  0.036  0.027  0.019  0.014  0.010  0.008  0.006  0.005  0.004  0.003  0.003  0.002  0.002
+      max |dq|      1.378  1.093  0.815  0.580  0.397  0.273  0.188  0.132  0.098  0.074  0.060  0.062  0.063  0.064  0.062
+      correlation  0.9986 0.9991 0.9995 0.9997 0.9999 0.9999 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+  (iii) both (SZiFi template, linear convolution) vs the build, >= 30' from the edges:
+      rms dq        0.076  0.068  0.062  0.059  0.057  0.058  0.059  0.061  0.063  0.066  0.070  0.074  0.078  0.084  0.092
+      max |dq|      1.365  1.080  0.802  0.566  0.556  0.574  0.591  0.607  0.619  0.625  0.624  0.616  0.600  0.605  0.640
+  (iv) at the build's 4071 final detections with q > 4.5 (same pixel and scale, periodic, SZiFi template): q_SZiFi - q_build mean -0.0041, std 0.0180, min -0.158, max +0.045
+      scales 0.50-0.81': N   919, mean -0.0204, std 0.0312, relative mean -0.0038
+      scales 1.04-1.68': N  1245, mean +0.0009, std 0.0078, relative mean +0.0002
+      scales 2.15-3.49': N  1366, mean +0.0008, std 0.0045, relative mean +0.0001
+      scales 4.45-7.24': N   455, mean -0.0000, std 0.0029, relative mean -0.0000
+      scales 9.23-15.00': N    86, mean -0.0006, std 0.0020, relative mean -0.0001
+      build q > 5: 3161; of these with q_SZiFi < 5: 15; build 4.5 < q <= 5 with q_SZiFi > 5: 2
+  sigma ratio SZiFi template (y0 units) / build template (sr units), relative to tile 0: spread over tiles max 4.5e-04 (the template effect on sigma is tile-independent)

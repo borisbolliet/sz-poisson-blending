@@ -1,0 +1,35 @@
+theta nodes: 141 from 0.240' to 64.90' (d ln theta = 0.04); r nodes per profile 16384; painting beam 0.8' FWHM; table radius 5 theta + 7 sigma_paint
+tables built in 52 s -> /Users/boris/GitHub/sz-poisson-blending/data_real/step3/paint_tables.npz
+    rebuilt tables vs the copy used by the production runs (paint_tables_production.npz): max |difference| = 0.0e+00 (max value 1.93e+00)
+(1) int 2 pi r P dr / g(0) - 1 (Simpson on the table nodes): max |.| = 8.61e-06 (median 3.7e-08); g(0) / RATIO_5R500 - 1 = 1.83e-05
+(2) single painted halo vs exact Fourier synthesis on the in-band modes (max |diff| / max |exact|; rms over modes / rms exact)
+    theta500 =  0.260' at (375.06, 538.33)': painted vs exact max 3.04e-10, rms 2.62e-10; node mixture vs own-size template: max 2.6e-07 of g(0)
+    theta500 =  0.500' at (465.41, 135.12)': painted vs exact max 1.22e-09, rms 1.06e-09; node mixture vs own-size template: max 5.5e-05 of g(0)
+    theta500 =  0.731' at (180.10, 524.13)': painted vs exact max 2.06e-09, rms 2.68e-09; node mixture vs own-size template: max 3.7e-05 of g(0)
+    theta500 =  1.000' at (  3.16, 492.74)': painted vs exact max 3.40e-09, rms 5.60e-09; node mixture vs own-size template: max 6.7e-05 of g(0)
+    theta500 =  2.370' at (478.24, 280.76)': painted vs exact max 1.60e-08, rms 5.73e-08; node mixture vs own-size template: max 5.7e-05 of g(0)
+    theta500 =  5.000' at (181.82, 167.06)': painted vs exact max 3.62e-07, rms 2.29e-06; node mixture vs own-size template: max 2.4e-05 of g(0)
+    theta500 = 12.300' at (152.92, 267.05)': painted vs exact max 1.45e-06, rms 8.39e-06; node mixture vs own-size template: max 7.8e-05 of g(0)
+    theta500 = 30.000' at (302.73, 332.10)': painted vs exact max 2.65e-06, rms 1.50e-05; node mixture vs own-size template: max 8.1e-05 of g(0)
+    theta500 = 55.000' at (597.30, 475.60)': painted vs exact max 4.38e-06, rms 2.08e-05; node mixture vs own-size template: max 6.5e-05 of g(0)
+    worst max |diff| / max|exact| = 4.38e-06
+(3) patch 0: 71291 halos painted (incl. FFT and crop) in 1.6 s on one core; k = 0 mode / (sum Y500 RATIO) = 1.000018
+done [54 s]
+       54.85 real       217.59 user         1.28 sys
+           711786496  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              344993  page reclaims
+                 546  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 439  voluntary context switches
+                4445  involuntary context switches
+         34174644351  instructions retired
+          9055966813  cycles elapsed
+           407521472  peak memory footprint

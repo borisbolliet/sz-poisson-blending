@@ -1,0 +1,31 @@
+script             what                                                          wall [s]   CPU [s]  proc  parent RSS  worker peak    bound
+t00_paint_tables   paint tables (once)                                                 55       219     6      0.71 GB       nan GB    0.7 GB
+t01_check_a        check (a), decomposition exactness                                  24        24     1      2.13 GB       nan GB    2.1 GB
+t02_noise_only     check (b): 100 noise-only tiles x 2 levels x 2 mask methods        191       378     2      0.94 GB      0.94 GB    2.0 GB
+t03_injections     check (c): 270 injection tiles x 2 levels                          388       770     2      0.93 GB      0.93 GB    2.0 GB
+t04_tiles          realistic tiles: 324 x 2 levels, finder + decomposition           1729      6871     4      1.41 GB      1.41 GB    5.7 GB
+t04_tiles_s12      realistic tiles 0-39, 12 scales                                    207       821     4      1.37 GB      1.37 GB    5.6 GB
+t04_tiles_s20      realistic tiles 0-39, 20 scales                                    218       868     4      1.51 GB      1.51 GB    6.1 GB
+t05_analysis       science numbers                                                    172       171     1      0.78 GB       nan GB    0.8 GB
+t05b_scales        12 / 15 / 20 scales                                                 45        45     1      0.28 GB       nan GB    0.3 GB
+t06_figures        figures                                                              6         6     1      1.12 GB       nan GB    1.1 GB
+t08_extra_checks   tile statistics, isolated-search window                              3         3     1      0.13 GB       nan GB    0.1 GB
+total              (sequential sum; t02 and t03 ran while t04 ran)                   3039     10175   = 0.84 h wall, 2.83 CPU-hours
+        0.02 real         0.01 user         0.00 sys
+            14090240  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                1498  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                  20  involuntary context switches
+           248068493  instructions retired
+            77514214  cycles elapsed
+             7062464  peak memory footprint

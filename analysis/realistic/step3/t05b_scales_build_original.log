@@ -1,0 +1,43 @@
+==================== baseline: tiles 0-39
+  12 scales: q > 5 detections 8670, credited halos 8022, N_exp 8313.0, Delta/N -3.50 +- 0.52%
+     of main: Y > 10% 11.01%, > 20% 6.00%, only thanks to neighbours 5.81%, merges 0.54%, wrong size 21.86%; of all: no real cluster 1.88%, fragments 5.59%; lost 5.76%
+     r after iteration at 0.5, 1, 2, 4, 8, 15': 1.0399 1.0450 1.0500 1.0501 1.0402 1.0237
+  15 scales: q > 5 detections 8691, credited halos 8025, N_exp 8311.4, Delta/N -3.45 +- 0.50%
+     of main: Y > 10% 10.93%, > 20% 5.97%, only thanks to neighbours 5.71%, merges 0.51%, wrong size 21.97%; of all: no real cluster 1.86%, fragments 5.80%; lost 5.66%
+     r after iteration at 0.5, 1, 2, 4, 8, 15': 1.0400 1.0451 1.0502 1.0502 1.0401 1.0237
+  20 scales: q > 5 detections 8672, credited halos 8027, N_exp 8312.0, Delta/N -3.43 +- 0.52%
+     of main: Y > 10% 10.89%, > 20% 5.98%, only thanks to neighbours 5.69%, merges 0.54%, wrong size 21.73%; of all: no real cluster 1.90%, fragments 5.54%; lost 5.75%
+     r after iteration at 0.5, 1, 2, 4, 8, 15': 1.0399 1.0450 1.0502 1.0502 1.0401 1.0236
+  12 vs 15 scales: credited halos -0.04%, q > 5 detections -0.24%
+  20 vs 15 scales: credited halos +0.02%, q > 5 detections -0.22%
+==================== goal: tiles 0-39
+  12 scales: q > 5 detections 12941, credited halos 12063, N_exp 12495.5, Delta/N -3.46 +- 0.34%
+     of main: Y > 10% 12.36%, > 20% 6.77%, only thanks to neighbours 6.42%, merges 0.67%, wrong size 20.46%; of all: no real cluster 1.48%, fragments 5.30%; lost 6.71%
+     r after iteration at 0.5, 1, 2, 4, 8, 15': 1.0536 1.0608 1.0679 1.0681 1.0553 1.0344
+  15 scales: q > 5 detections 12939, credited halos 12055, N_exp 12494.2, Delta/N -3.52 +- 0.33%
+     of main: Y > 10% 12.38%, > 20% 6.81%, only thanks to neighbours 6.47%, merges 0.67%, wrong size 20.52%; of all: no real cluster 1.48%, fragments 5.36%; lost 6.83%
+     r after iteration at 0.5, 1, 2, 4, 8, 15': 1.0537 1.0608 1.0680 1.0682 1.0552 1.0346
+  20 scales: q > 5 detections 12986, credited halos 12074, N_exp 12494.9, Delta/N -3.37 +- 0.35%
+     of main: Y > 10% 12.40%, > 20% 6.82%, only thanks to neighbours 6.51%, merges 0.67%, wrong size 20.24%; of all: no real cluster 1.51%, fragments 5.51%; lost 6.81%
+     r after iteration at 0.5, 1, 2, 4, 8, 15': 1.0536 1.0608 1.0680 1.0682 1.0550 1.0342
+  12 vs 15 scales: credited halos +0.07%, q > 5 detections +0.02%
+  20 vs 15 scales: credited halos +0.16%, q > 5 detections +0.36%
+done [45 s]
+       45.04 real        44.45 user         0.48 sys
+           279232512  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               28304  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 225  voluntary context switches
+                 862  involuntary context switches
+        461283046651  instructions retired
+        144712190181  cycles elapsed
+           222447424  peak memory footprint

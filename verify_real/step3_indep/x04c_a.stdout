@@ -1,0 +1,5 @@
+x04: fresh tiles 0..2 with 2 processes -> /Users/boris/GitHub/sz-poisson-blending/verify_real/step3_indep/out/buildtiles
+  tile   1: 71570 halos,  25.7 s (paint 3.9; baseline: find 1.7 diag 1.1 dec 5.2 forced 1.8; goal: find 1.4 diag 1.0 dec 7.0 forced 2.3); worker peak RSS 1.34 GB [elapsed 27 s]
+  tile   0: 71291 halos,  26.6 s (paint 4.0; baseline: find 1.7 diag 1.1 dec 5.5 forced 1.7; goal: find 1.4 diag 1.1 dec 7.5 forced 2.3); worker peak RSS 1.36 GB [elapsed 27 s]
+  tile   2: 71237 halos,  25.1 s (paint 3.5; baseline: find 1.4 diag 1.0 dec 5.3 forced 1.6; goal: find 1.4 diag 1.0 dec 7.4 forced 2.3); worker peak RSS 1.35 GB [elapsed 52 s]
+x04 done in 52 s wall

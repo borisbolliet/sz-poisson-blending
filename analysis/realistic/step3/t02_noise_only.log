@@ -1,0 +1,81 @@
+  tile   0: 3.9 s, worker peak RSS 0.94 GB [elapsed 4 s]
+  tile  10: 3.7 s, worker peak RSS 0.94 GB [elapsed 22 s]
+  tile  20: 4.0 s, worker peak RSS 0.93 GB [elapsed 42 s]
+  tile  30: 3.6 s, worker peak RSS 0.93 GB [elapsed 60 s]
+  tile  40: 3.9 s, worker peak RSS 0.94 GB [elapsed 80 s]
+  tile  50: 3.9 s, worker peak RSS 0.94 GB [elapsed 98 s]
+  tile  60: 3.9 s, worker peak RSS 0.93 GB [elapsed 117 s]
+  tile  70: 3.7 s, worker peak RSS 0.94 GB [elapsed 136 s]
+  tile  80: 4.1 s, worker peak RSS 0.93 GB [elapsed 155 s]
+  tile  90: 3.5 s, worker peak RSS 0.94 GB [elapsed 173 s]
+runs done: 100 tiles x 2 noise levels x 2 mask methods in 188 s wall
+
+=========== baseline: 100 noise-only tiles (10000 deg^2)
+(1) estimated spectra (iteration 0) / input model, mean over tiles [pull mean, pull rms] per l range
+  l 100-500 (6 bins): 27: 0.9872 [-0.05, 1.06]; 39: 0.9868 [-0.06, 1.06]; 93: 0.9841 [-0.07, 1.06]; 145: 0.9812 [-0.08, 1.05]; 225: 0.9984 [-0.03, 1.04]; 280: 0.9976 [-0.01, 0.99] | 15 cross spectra: pull mean -0.05, rms 1.07
+  l 500-2000 (21 bins): 27: 1.0022 [+0.02, 1.01]; 39: 1.0003 [-0.01, 1.00]; 93: 1.0008 [+0.00, 0.99]; 145: 1.0005 [-0.00, 1.00]; 225: 1.0002 [-0.01, 0.98]; 280: 1.0012 [+0.01, 0.97] | 15 cross spectra: pull mean +0.01, rms 1.00
+  l 2000-5000 (41 bins): 27: 0.9992 [-0.02, 0.98]; 39: 1.0000 [-0.00, 1.00]; 93: 1.0011 [+0.03, 1.00]; 145: 1.0001 [+0.00, 0.99]; 225: 0.9991 [-0.02, 0.99]; 280: 0.9990 [-0.02, 1.00] | 15 cross spectra: pull mean -0.00, rms 1.00
+  l 5000-10000 (70 bins): 27: 1.0002 [+0.01, 1.00]; 39: 0.9999 [-0.01, 1.01]; 93: 1.0004 [+0.01, 1.01]; 145: 0.9999 [-0.00, 0.99]; 225: 0.9995 [-0.02, 0.99]; 280: 0.9998 [-0.01, 0.99] | 15 cross spectra: pull mean -0.00, rms 1.00
+  l 10000-20000 (139 bins): 27: 1.0000 [+0.00, 1.01]; 39: 1.0000 [+0.00, 1.01]; 93: 0.9998 [-0.01, 1.00]; 145: 1.0000 [-0.00, 1.01]; 225: 0.9999 [-0.00, 1.01]; 280: 1.0000 [+0.00, 0.99] | 15 cross spectra: pull mean -0.00, rms 1.00
+(2) sigma(theta) / analytic sigma: mean [tile-to-tile std] at theta = 0.50', 0.81', 1.32', 2.15', 3.49', 5.68', 9.23', 15.00'
+  iteration 0                       : 0.9982 [0.0021], 0.9982 [0.0022], 0.9980 [0.0023], 0.9978 [0.0025], 0.9975 [0.0027], 0.9968 [0.0029], 0.9958 [0.0034], 0.9943 [0.0044]
+  iteration 1, whitened (finder)    : 0.9953 [0.0022], 0.9950 [0.0024], 0.9946 [0.0025], 0.9940 [0.0027], 0.9934 [0.0028], 0.9925 [0.0031], 0.9914 [0.0036], 0.9897 [0.0050]
+  iteration 1, literal binary f_sky : 1.2858 [0.0513], 1.3026 [0.0546], 1.3179 [0.0576], 1.3239 [0.0590], 1.3089 [0.0567], 1.2690 [0.0506], 1.2137 [0.0429], 1.1612 [0.0365]
+  tiles with no q > 4 peak at iteration 0 (no iteration): 0 of 100
+(3) false detections per 100 deg^2 (final catalogue), q > 4 / 4.5 / 5:
+  whitened none     : 50.420 +- 0.710 / 7.640 +- 0.276 / 0.800 +- 0.089   (counts [5042, 764, 80])
+  whitened closest1 : 46.240 +- 0.680 / 7.090 +- 0.266 / 0.760 +- 0.087   (counts [4624, 709, 76])
+  whitened closest2 : 46.110 +- 0.679 / 7.080 +- 0.266 / 0.760 +- 0.087   (counts [4611, 708, 76])
+  whitened closest10: 45.330 +- 0.673 / 7.070 +- 0.266 / 0.760 +- 0.087   (counts [4533, 707, 76])
+  whitened fof10    : 45.310 +- 0.673 / 7.070 +- 0.266 / 0.760 +- 0.087   (counts [4531, 707, 76])
+  binary   none     : 2.790 +- 0.167 / 0.250 +- 0.050 / 0.010 +- 0.010   (counts [279, 25, 1])
+  binary   closest1 : 2.640 +- 0.162 / 0.230 +- 0.048 / 0.010 +- 0.010   (counts [264, 23, 1])
+  binary   closest2 : 2.640 +- 0.162 / 0.230 +- 0.048 / 0.010 +- 0.010   (counts [264, 23, 1])
+  binary   closest10: 2.630 +- 0.162 / 0.230 +- 0.048 / 0.010 +- 0.010   (counts [263, 23, 1])
+  binary   fof10    : 2.630 +- 0.162 / 0.230 +- 0.048 / 0.010 +- 0.010   (counts [263, 23, 1])
+  iteration 0 (no merge): 46.330 +- 0.681 / 6.210 +- 0.249 / 0.600 +- 0.077   (counts [np.int64(4633), np.int64(621), np.int64(60)])
+
+=========== goal: 100 noise-only tiles (10000 deg^2)
+(1) estimated spectra (iteration 0) / input model, mean over tiles [pull mean, pull rms] per l range
+  l 100-500 (6 bins): 27: 0.9872 [-0.05, 1.06]; 39: 0.9868 [-0.06, 1.06]; 93: 0.9840 [-0.07, 1.06]; 145: 0.9812 [-0.08, 1.05]; 225: 0.9984 [-0.03, 1.04]; 280: 0.9976 [-0.01, 0.99] | 15 cross spectra: pull mean -0.05, rms 1.07
+  l 500-2000 (21 bins): 27: 1.0020 [+0.02, 1.01]; 39: 1.0003 [-0.01, 1.00]; 93: 1.0007 [+0.00, 0.99]; 145: 1.0004 [-0.00, 1.00]; 225: 1.0003 [-0.00, 0.98]; 280: 1.0012 [+0.01, 0.97] | 15 cross spectra: pull mean +0.00, rms 1.00
+  l 2000-5000 (41 bins): 27: 0.9992 [-0.02, 0.98]; 39: 1.0000 [-0.00, 1.00]; 93: 1.0010 [+0.02, 1.00]; 145: 1.0001 [+0.00, 0.99]; 225: 0.9991 [-0.02, 0.99]; 280: 0.9991 [-0.02, 1.00] | 15 cross spectra: pull mean -0.00, rms 1.00
+  l 5000-10000 (70 bins): 27: 1.0002 [+0.01, 1.00]; 39: 0.9999 [-0.01, 1.01]; 93: 1.0004 [+0.01, 1.01]; 145: 0.9999 [-0.00, 0.99]; 225: 0.9995 [-0.02, 0.99]; 280: 0.9998 [-0.01, 0.99] | 15 cross spectra: pull mean -0.00, rms 1.00
+  l 10000-20000 (139 bins): 27: 1.0000 [+0.00, 1.01]; 39: 1.0000 [+0.00, 1.01]; 93: 0.9998 [-0.01, 1.00]; 145: 1.0000 [-0.00, 1.01]; 225: 0.9999 [-0.00, 1.01]; 280: 1.0000 [+0.00, 0.99] | 15 cross spectra: pull mean -0.00, rms 1.00
+(2) sigma(theta) / analytic sigma: mean [tile-to-tile std] at theta = 0.50', 0.81', 1.32', 2.15', 3.49', 5.68', 9.23', 15.00'
+  iteration 0                       : 0.9983 [0.0020], 0.9982 [0.0021], 0.9981 [0.0022], 0.9979 [0.0024], 0.9976 [0.0026], 0.9970 [0.0028], 0.9961 [0.0032], 0.9946 [0.0041]
+  iteration 1, whitened (finder)    : 0.9954 [0.0022], 0.9950 [0.0023], 0.9946 [0.0024], 0.9941 [0.0026], 0.9934 [0.0028], 0.9926 [0.0030], 0.9914 [0.0035], 0.9898 [0.0045]
+  iteration 1, literal binary f_sky : 1.4183 [0.0634], 1.4420 [0.0671], 1.4629 [0.0703], 1.4667 [0.0705], 1.4380 [0.0658], 1.3745 [0.0569], 1.2936 [0.0472], 1.2203 [0.0396]
+  tiles with no q > 4 peak at iteration 0 (no iteration): 0 of 100
+(3) false detections per 100 deg^2 (final catalogue), q > 4 / 4.5 / 5:
+  whitened none     : 55.030 +- 0.742 / 8.260 +- 0.287 / 0.850 +- 0.092   (counts [5503, 826, 85])
+  whitened closest1 : 50.780 +- 0.713 / 7.670 +- 0.277 / 0.800 +- 0.089   (counts [5078, 767, 80])
+  whitened closest2 : 50.630 +- 0.712 / 7.660 +- 0.277 / 0.800 +- 0.089   (counts [5063, 766, 80])
+  whitened closest10: 49.700 +- 0.705 / 7.650 +- 0.277 / 0.800 +- 0.089   (counts [4970, 765, 80])
+  whitened fof10    : 49.680 +- 0.705 / 7.650 +- 0.277 / 0.800 +- 0.089   (counts [4968, 765, 80])
+  binary   none     : 1.650 +- 0.128 / 0.140 +- 0.037 / 0.000 +- 0.010   (counts [165, 14, 0])
+  binary   closest1 : 1.560 +- 0.125 / 0.130 +- 0.036 / 0.000 +- 0.010   (counts [156, 13, 0])
+  binary   closest2 : 1.560 +- 0.125 / 0.130 +- 0.036 / 0.000 +- 0.010   (counts [156, 13, 0])
+  binary   closest10: 1.550 +- 0.124 / 0.130 +- 0.036 / 0.000 +- 0.010   (counts [155, 13, 0])
+  binary   fof10    : 1.550 +- 0.124 / 0.130 +- 0.036 / 0.000 +- 0.010   (counts [155, 13, 0])
+  iteration 0 (no merge): 50.690 +- 0.712 / 6.870 +- 0.262 / 0.710 +- 0.084   (counts [np.int64(5069), np.int64(687), np.int64(71)])
+
+done [191 s]; mean time per tile (2 levels x 2 methods) 3.7 s
+      191.36 real       373.26 user         4.29 sys
+           942882816  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              966674  page reclaims
+                1724  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                5912  voluntary context switches
+               17267  involuntary context switches
+         35621107036  instructions retired
+          9761407354  cycles elapsed
+           910380160  peak memory footprint

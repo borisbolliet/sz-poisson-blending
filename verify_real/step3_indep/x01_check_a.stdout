@@ -1,0 +1,89 @@
+x01: check (a) on build tiles [0, 137, 290]; nm = 969608 in-band modes (full plane), 277 bins
+
+(6) sigma(theta) with the analytic per-mode covariance (own lattice sum) vs step 1's MMFModel.sigma_Y_exact
+  baseline: step-1 template: max |sigma/exact - 1| = 3.6e-06 (at theta 15.00'); smooth template: +1.0e-06 .. +2.5e-04
+     sigma [arcmin^2] at 0.5, 1.04, 2.15, 4.45, 9.23, 15': 4.5092e-06, 6.3533e-06, 1.1839e-05, 3.1676e-05, 1.2114e-04, 3.4293e-04
+  goal: step-1 template: max |sigma/exact - 1| = 3.0e-06 (at theta 15.00'); smooth template: +2.0e-06 .. +2.6e-04
+     sigma [arcmin^2] at 0.5, 1.04, 2.15, 4.45, 9.23, 15': 3.3558e-06, 4.8387e-06, 9.3247e-06, 2.6017e-05, 1.0430e-04, 3.0522e-04
+
+==================== tile 0: 71291 halos; painted (7.2 s)
+--- baseline
+  (1) unmasked covariance, own estimate vs build it0_C: max |dC_ij| / sqrt(C_ii C_jj) = 7.0e-08 (median 3.3e-10); with the own 4-point template: 3.4e-05
+      whitened masked covariance (mask: build's 343 it0 detections q > 4, unmasked fraction 0.798634 vs build 0.798634), own vs build it1_C: max 7.3e-08 (median 4.3e-10)
+  (2) sigma from the build's C (own code) vs build's stored sigma: it0 max |ratio - 1| = 6.4e-15, it1 4.4e-15; from the own masked C: 1.4e-09
+  (3) it0 catalogue (build's it0_C): own 343 peaks q > 4, build 343; matched 343, own-only 0, build-only 0; max |dq| = 2.9e-06
+      it1 catalogue (build's it1_C): own 436, build 436; matched 436, own-only 0, build-only 0; max |dq| = 3.2e-06
+      same with the own-template sky: matched 434, own-only 0, build-only 2; |dq| median 9.7e-05, max 7.8e-03
+      full own pipeline (own C0, own it0 peaks, own mask, own masked C1): it1 436 vs build 436; matched 436, own-only 0, build-only 0; max |dq| = 3.2e-06; sigma it1 vs build max |ratio-1| = 1.4e-09
+  (4) filtered components at the build's 436 final detections, own - build, max |.| in sigma: tsz 3.2e-06, cmb 8.6e-15, noise 3.8e-14; total 3.2e-06
+      tSZ with the own 4-point template (exact-size template to <= 2.5e-5 of g(0)) - build: median |.| 9.8e-05 sigma, max 7.8e-03 sigma; relative to the tSZ value: median 2.9e-05
+  (5) per-channel inverse FFTs summed in real space vs the combined route: max |dq| over 3 scales x 1.44e6 pixels = 9.1e-15; direct real-space convolution (kernel . shifted map) at the 12 highest-q detections vs the build's q: max |dq| = 6.7e-07
+--- goal
+  (1) unmasked covariance, own estimate vs build it0_C: max |dC_ij| / sqrt(C_ii C_jj) = 1.1e-07 (median 4.5e-10); with the own 4-point template: 4.4e-05
+      whitened masked covariance (mask: build's 438 it0 detections q > 4, unmasked fraction 0.739985 vs build 0.739985), own vs build it1_C: max 1.2e-07 (median 6.6e-10)
+  (2) sigma from the build's C (own code) vs build's stored sigma: it0 max |ratio - 1| = 5.1e-15, it1 6.9e-15; from the own masked C: 1.3e-09
+  (3) it0 catalogue (build's it0_C): own 438 peaks q > 4, build 438; matched 438, own-only 0, build-only 0; max |dq| = 4.5e-06
+      it1 catalogue (build's it1_C): own 603, build 603; matched 603, own-only 0, build-only 0; max |dq| = 4.7e-06
+      same with the own-template sky: matched 602, own-only 1, build-only 1; |dq| median 1.0e-04, max 1.0e-02
+      full own pipeline (own C0, own it0 peaks, own mask, own masked C1): it1 603 vs build 603; matched 603, own-only 0, build-only 0; max |dq| = 4.7e-06; sigma it1 vs build max |ratio-1| = 1.3e-09
+  (4) filtered components at the build's 603 final detections, own - build, max |.| in sigma: tsz 4.7e-06, cmb 1.4e-14, noise 4.5e-14; total 4.7e-06
+      tSZ with the own 4-point template (exact-size template to <= 2.5e-5 of g(0)) - build: median |.| 1.0e-04 sigma, max 1.0e-02 sigma; relative to the tSZ value: median 2.9e-05
+  (5) per-channel inverse FFTs summed in real space vs the combined route: max |dq| over 3 scales x 1.44e6 pixels = 1.4e-14; direct real-space convolution (kernel . shifted map) at the 12 highest-q detections vs the build's q: max |dq| = 9.5e-07
+
+==================== tile 137: 71121 halos; painted (7.3 s)
+--- baseline
+  (1) unmasked covariance, own estimate vs build it0_C: max |dC_ij| / sqrt(C_ii C_jj) = 1.5e-06 (median 9.9e-10); with the own 4-point template: 4.4e-05
+      whitened masked covariance (mask: build's 318 it0 detections q > 4, unmasked fraction 0.784560 vs build 0.784560), own vs build it1_C: max 1.2e-06 (median 1.7e-09)
+  (2) sigma from the build's C (own code) vs build's stored sigma: it0 max |ratio - 1| = 6.9e-15, it1 3.7e-15; from the own masked C: 1.4e-08
+  (3) it0 catalogue (build's it0_C): own 318 peaks q > 4, build 318; matched 318, own-only 0, build-only 0; max |dq| = 4.3e-05
+      it1 catalogue (build's it1_C): own 420, build 420; matched 420, own-only 0, build-only 0; max |dq| = 4.7e-05
+      same with the own-template sky: matched 419, own-only 1, build-only 1; |dq| median 8.7e-05, max 1.6e-02
+      full own pipeline (own C0, own it0 peaks, own mask, own masked C1): it1 420 vs build 420; matched 420, own-only 0, build-only 0; max |dq| = 4.8e-05; sigma it1 vs build max |ratio-1| = 1.5e-08
+  (4) filtered components at the build's 420 final detections, own - build, max |.| in sigma: tsz 4.7e-05, cmb 1.3e-14, noise 3.2e-14; total 4.7e-05
+      tSZ with the own 4-point template (exact-size template to <= 2.5e-5 of g(0)) - build: median |.| 8.7e-05 sigma, max 1.6e-02 sigma; relative to the tSZ value: median 3.0e-05
+  (5) per-channel inverse FFTs summed in real space vs the combined route: max |dq| over 3 scales x 1.44e6 pixels = 1.4e-14; direct real-space convolution (kernel . shifted map) at the 12 highest-q detections vs the build's q: max |dq| = 1.3e-05
+--- goal
+  (1) unmasked covariance, own estimate vs build it0_C: max |dC_ij| / sqrt(C_ii C_jj) = 1.8e-06 (median 1.4e-09); with the own 4-point template: 5.9e-05
+      whitened masked covariance (mask: build's 423 it0 detections q > 4, unmasked fraction 0.736269 vs build 0.736269), own vs build it1_C: max 1.9e-06 (median 2.5e-09)
+  (2) sigma from the build's C (own code) vs build's stored sigma: it0 max |ratio - 1| = 7.1e-15, it1 5.3e-15; from the own masked C: 1.3e-08
+  (3) it0 catalogue (build's it0_C): own 423 peaks q > 4, build 423; matched 423, own-only 0, build-only 0; max |dq| = 5.2e-05
+      it1 catalogue (build's it1_C): own 578, build 578; matched 578, own-only 0, build-only 0; max |dq| = 6.0e-05
+      same with the own-template sky: matched 578, own-only 0, build-only 0; |dq| median 1.0e-04, max 1.8e-02
+      full own pipeline (own C0, own it0 peaks, own mask, own masked C1): it1 578 vs build 578; matched 578, own-only 0, build-only 0; max |dq| = 6.0e-05; sigma it1 vs build max |ratio-1| = 1.3e-08
+  (4) filtered components at the build's 578 final detections, own - build, max |.| in sigma: tsz 6.0e-05, cmb 1.6e-14, noise 3.8e-14; total 6.0e-05
+      tSZ with the own 4-point template (exact-size template to <= 2.5e-5 of g(0)) - build: median |.| 1.0e-04 sigma, max 1.8e-02 sigma; relative to the tSZ value: median 2.8e-05
+  (5) per-channel inverse FFTs summed in real space vs the combined route: max |dq| over 3 scales x 1.44e6 pixels = 1.4e-14; direct real-space convolution (kernel . shifted map) at the 12 highest-q detections vs the build's q: max |dq| = 1.5e-05
+
+==================== tile 290: 71199 halos; painted (6.9 s)
+--- baseline
+  (1) unmasked covariance, own estimate vs build it0_C: max |dC_ij| / sqrt(C_ii C_jj) = 1.0e-07 (median 6.5e-10); with the own 4-point template: 4.5e-05
+      whitened masked covariance (mask: build's 291 it0 detections q > 4, unmasked fraction 0.788489 vs build 0.788489), own vs build it1_C: max 1.1e-07 (median 8.0e-10)
+  (2) sigma from the build's C (own code) vs build's stored sigma: it0 max |ratio - 1| = 5.7e-15, it1 3.8e-15; from the own masked C: 3.2e-09
+  (3) it0 catalogue (build's it0_C): own 291 peaks q > 4, build 291; matched 291, own-only 0, build-only 0; max |dq| = 2.6e-06
+      it1 catalogue (build's it1_C): own 395, build 395; matched 395, own-only 0, build-only 0; max |dq| = 5.4e-06
+      same with the own-template sky: matched 395, own-only 0, build-only 0; |dq| median 9.6e-05, max 8.6e-03
+      full own pipeline (own C0, own it0 peaks, own mask, own masked C1): it1 395 vs build 395; matched 395, own-only 0, build-only 0; max |dq| = 5.3e-06; sigma it1 vs build max |ratio-1| = 3.3e-09
+  (4) filtered components at the build's 395 final detections, own - build, max |.| in sigma: tsz 5.4e-06, cmb 1.7e-14, noise 3.1e-14; total 5.4e-06
+      tSZ with the own 4-point template (exact-size template to <= 2.5e-5 of g(0)) - build: median |.| 9.6e-05 sigma, max 8.6e-03 sigma; relative to the tSZ value: median 3.2e-05
+  (5) per-channel inverse FFTs summed in real space vs the combined route: max |dq| over 3 scales x 1.44e6 pixels = 1.4e-14; direct real-space convolution (kernel . shifted map) at the 12 highest-q detections vs the build's q: max |dq| = 1.4e-06
+--- goal
+  (1) unmasked covariance, own estimate vs build it0_C: max |dC_ij| / sqrt(C_ii C_jj) = 1.4e-07 (median 8.8e-10); with the own 4-point template: 5.6e-05
+      whitened masked covariance (mask: build's 393 it0 detections q > 4, unmasked fraction 0.754924 vs build 0.754924), own vs build it1_C: max 1.4e-07 (median 1.2e-09)
+  (2) sigma from the build's C (own code) vs build's stored sigma: it0 max |ratio - 1| = 4.0e-15, it1 6.4e-15; from the own masked C: 4.4e-09
+  (3) it0 catalogue (build's it0_C): own 393 peaks q > 4, build 393; matched 393, own-only 0, build-only 0; max |dq| = 5.9e-06
+      it1 catalogue (build's it1_C): own 534, build 534; matched 534, own-only 0, build-only 0; max |dq| = 7.7e-06
+      same with the own-template sky: matched 534, own-only 0, build-only 0; |dq| median 9.7e-05, max 1.1e-02
+      full own pipeline (own C0, own it0 peaks, own mask, own masked C1): it1 534 vs build 534; matched 534, own-only 0, build-only 0; max |dq| = 7.5e-06; sigma it1 vs build max |ratio-1| = 4.4e-09
+  (4) filtered components at the build's 534 final detections, own - build, max |.| in sigma: tsz 7.7e-06, cmb 1.9e-14, noise 4.2e-14; total 7.7e-06
+      tSZ with the own 4-point template (exact-size template to <= 2.5e-5 of g(0)) - build: median |.| 9.7e-05 sigma, max 1.1e-02 sigma; relative to the tSZ value: median 3.0e-05
+  (5) per-channel inverse FFTs summed in real space vs the combined route: max |dq| over 3 scales x 1.44e6 pixels = 1.4e-14; direct real-space convolution (kernel . shifted map) at the 12 highest-q detections vs the build's q: max |dq| = 2.4e-06
+
+summary (tile, mode): C0 err, C1 err, sigma0, sigma1 err, max|dq| it0, it1 (build C), unmatched it1, full own pipeline max|dq|, unmatched
+    0 baseline 7.0e-08 7.3e-08 6.4e-15 4.4e-15 2.9e-06 3.2e-06 0 3.2e-06 0
+    0 goal     1.1e-07 1.2e-07 5.1e-15 6.9e-15 4.5e-06 4.7e-06 0 4.7e-06 0
+  137 baseline 1.5e-06 1.2e-06 6.9e-15 3.7e-15 4.3e-05 4.7e-05 0 4.8e-05 0
+  137 goal     1.8e-06 1.9e-06 7.1e-15 5.3e-15 5.2e-05 6.0e-05 0 6.0e-05 0
+  290 baseline 1.0e-07 1.1e-07 5.7e-15 3.8e-15 2.6e-06 5.4e-06 0 5.3e-06 0
+  290 goal     1.4e-07 1.4e-07 4.0e-15 6.4e-15 5.9e-06 7.7e-06 0 7.5e-06 0
+
+done [62 s], peak RSS 2.14 GB

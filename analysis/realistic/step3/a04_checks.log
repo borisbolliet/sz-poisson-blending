@@ -1,0 +1,67 @@
+a04: 13 tile units, 3 processes
+  ('dw', 213): 139.2 s, worker peak RSS 1.33 GB [elapsed 140 s]
+  ('dw', 107): 139.6 s, worker peak RSS 1.33 GB [elapsed 140 s]
+  ('dw', 0): 144.7 s, worker peak RSS 1.33 GB [elapsed 145 s]
+  ('r5', 0): 7.1 s, worker peak RSS 1.33 GB [elapsed 147 s]
+  ('r5', 33): 7.3 s, worker peak RSS 1.33 GB [elapsed 147 s]
+  ('r5', 66): 7.5 s, worker peak RSS 1.33 GB [elapsed 153 s]
+  ('r5', 99): 6.9 s, worker peak RSS 1.33 GB [elapsed 154 s]
+  ('r5', 132): 6.7 s, worker peak RSS 1.33 GB [elapsed 154 s]
+  ('r5', 165): 7.0 s, worker peak RSS 1.33 GB [elapsed 160 s]
+  ('r5', 198): 6.9 s, worker peak RSS 1.33 GB [elapsed 161 s]
+  ('r5', 231): 6.9 s, worker peak RSS 1.33 GB [elapsed 161 s]
+  ('r5', 264): 7.0 s, worker peak RSS 1.33 GB [elapsed 167 s]
+  ('r5', 297): 7.7 s, worker peak RSS 1.24 GB [elapsed 169 s]
+regeneration: max |q - stored q| over all regenerated final catalogues = 1.1e-13
+
+==================== baseline
+(D3) closure tSZ_map - sum over halos, in sigma, 114 q > 5 detections of tiles [0, 107, 213] (half the worst, half random):
+     radial tables for every halo (the build's d_tab_sum): median |.| 2.2e-02, max 4.8e-02
+     exact lattice sums within    5' (16 halos, median), tables beyond: median |.| 2.2e-02, max 4.9e-02
+     exact lattice sums within   15' (139 halos, median), tables beyond: median |.| 2.1e-02, max 4.8e-02
+     exact lattice sums within   30' (562 halos, median), tables beyond: median |.| 2.0e-02, max 4.5e-02
+(W1) isolated search, 809 halos with q_alone(+-3') > 4.5 on tiles [0, 107, 213]:
+     +-6' maximum higher than the +-3' one: 0.00% (max increase 0.000); q_alone crosses 5 because of the larger window: 0 of 625 above 5
+     q_alone(+-6') > 5: maximum within 1' of the halo for 99.84%, within 2' for 100.00% (+-3' window: 99.84% within 1')
+(R5) width of the CMB + noise part of the finder's S/N maps after the iteration, 10 tiles, at 0.50' / 1.04' / 2.15' / 4.45' / 9.23' / 15.00'
+     pixel standard deviation (realised)      : 0.9632 / 0.9581 / 0.9531 / 0.9538 / 0.9656 / 0.9782   [range over theta 0.9524-0.9782]
+     analytic expectation (the build's R5)    : 0.9673 / 0.9626 / 0.9580 / 0.9596 / 0.9740 / 0.9904   [range 0.9575-0.9904]
+     1 / r_after                               : 0.9628 / 0.9578 / 0.9529 / 0.9534 / 0.9651 / 0.9782
+     realised / (1 / r_after) - 1: 0.0042 (largest over theta of the tile mean |.|)
+(tie) modes exactly on a bin edge: 1584 of 485357 in-band rfft modes (0.33%); sigma(SZiFi's lower-bin rule) / sigma(build) - 1 over theta and tiles: iteration 0 +0.009% to +0.182%, iteration 1 +0.008% to +0.183%
+
+==================== goal
+(D3) closure tSZ_map - sum over halos, in sigma, 118 q > 5 detections of tiles [0, 107, 213] (half the worst, half random):
+     radial tables for every halo (the build's d_tab_sum): median |.| 2.7e-02, max 5.8e-02
+     exact lattice sums within    5' (16 halos, median), tables beyond: median |.| 2.7e-02, max 5.5e-02
+     exact lattice sums within   15' (140 halos, median), tables beyond: median |.| 2.6e-02, max 5.4e-02
+     exact lattice sums within   30' (563 halos, median), tables beyond: median |.| 2.5e-02, max 5.4e-02
+(W1) isolated search, 1153 halos with q_alone(+-3') > 4.5 on tiles [0, 107, 213]:
+     +-6' maximum higher than the +-3' one: 0.00% (max increase 0.000); q_alone crosses 5 because of the larger window: 0 of 921 above 5
+     q_alone(+-6') > 5: maximum within 1' of the halo for 99.89%, within 2' for 100.00% (+-3' window: 99.89% within 1')
+(R5) width of the CMB + noise part of the finder's S/N maps after the iteration, 10 tiles, at 0.50' / 1.04' / 2.15' / 4.45' / 9.23' / 15.00'
+     pixel standard deviation (realised)      : 0.9519 / 0.9451 / 0.9383 / 0.9390 / 0.9536 / 0.9692   [range over theta 0.9373-0.9692]
+     analytic expectation (the build's R5)    : 0.9557 / 0.9492 / 0.9429 / 0.9444 / 0.9615 / 0.9808   [range 0.9420-0.9808]
+     1 / r_after                               : 0.9504 / 0.9437 / 0.9372 / 0.9376 / 0.9518 / 0.9676
+     realised / (1 / r_after) - 1: 0.0035 (largest over theta of the tile mean |.|)
+(tie) modes exactly on a bin edge: 1584 of 485357 in-band rfft modes (0.33%); sigma(SZiFi's lower-bin rule) / sigma(build) - 1 over theta and tiles: iteration 0 +0.009% to +0.172%, iteration 1 +0.008% to +0.169%
+
+done [169 s]
+      169.44 real       495.86 user         2.26 sys
+          1334296576  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              559638  page reclaims
+                 547  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  99  voluntary context switches
+                5533  involuntary context switches
+          4792250088  instructions retired
+          1614558126  cycles elapsed
+            77956544  peak memory footprint

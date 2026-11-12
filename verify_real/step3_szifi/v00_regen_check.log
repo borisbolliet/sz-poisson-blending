@@ -1,0 +1,27 @@
+tile   0 baseline it0: 343 detections (stored 343); same pixels/scales True; max |dq| 0.0e+00; max |sigma/stored - 1| 0.0e+00; max |C_bin/stored - 1| 0.0e+00
+tile   0 baseline it1: 436 detections (stored 436); same pixels/scales True; max |dq| 0.0e+00; max |sigma/stored - 1| 0.0e+00; max |C_bin/stored - 1| 0.0e+00
+tile   0 goal     it0: 438 detections (stored 438); same pixels/scales True; max |dq| 0.0e+00; max |sigma/stored - 1| 0.0e+00; max |C_bin/stored - 1| 0.0e+00
+tile   0 goal     it1: 603 detections (stored 603); same pixels/scales True; max |dq| 0.0e+00; max |sigma/stored - 1| 0.0e+00; max |C_bin/stored - 1| 0.0e+00
+tile 165 baseline it0: 320 detections (stored 320); same pixels/scales True; max |dq| 0.0e+00; max |sigma/stored - 1| 0.0e+00; max |C_bin/stored - 1| 0.0e+00
+tile 165 baseline it1: 415 detections (stored 415); same pixels/scales True; max |dq| 0.0e+00; max |sigma/stored - 1| 0.0e+00; max |C_bin/stored - 1| 0.0e+00
+tile 165 goal     it0: 423 detections (stored 423); same pixels/scales True; max |dq| 0.0e+00; max |sigma/stored - 1| 0.0e+00; max |C_bin/stored - 1| 0.0e+00
+tile 165 goal     it1: 609 detections (stored 609); same pixels/scales True; max |dq| 0.0e+00; max |sigma/stored - 1| 0.0e+00; max |C_bin/stored - 1| 0.0e+00
+done [12 s]; peak RSS 1.14 GB
+       13.03 real        12.78 user         0.22 sys
+          1136115712  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               81391  page reclaims
+                  95  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  40  voluntary context switches
+                 161  involuntary context switches
+        145011084355  instructions retired
+         40755010734  cycles elapsed
+          1073466688  peak memory footprint

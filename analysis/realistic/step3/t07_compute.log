@@ -1,0 +1,29 @@
+Build:
+script                       what                                                                              wall [s]   CPU [s]  proc  parent RSS  worker peak    bound
+t00_paint_tables             paint tables (once)                                                                     55       219     6      0.71 GB       nan GB    0.7 GB
+t01_check_a                  check (a), decomposition exactness                                                      24        24     1      2.13 GB       nan GB    2.1 GB
+t02_noise_only               check (b): 100 noise-only tiles x 2 levels x 2 mask methods                            191       378     2      0.94 GB      0.94 GB    2.0 GB
+t03_injections               check (c): 270 injection tiles x 2 levels                                              388       770     2      0.93 GB      0.93 GB    2.0 GB
+t04_tiles                    realistic tiles: 324 x 2 levels, finder + decomposition                               1729      6871     4      1.41 GB      1.41 GB    5.7 GB
+t04_tiles_s12                realistic tiles 0-39, 12 scales                                                        207       821     4      1.37 GB      1.37 GB    5.6 GB
+t04_tiles_s20                realistic tiles 0-39, 20 scales                                                        218       868     4      1.51 GB      1.51 GB    6.1 GB
+t05_analysis_build_original  science numbers (build's version)                                                      172       171     1      0.78 GB       nan GB    0.8 GB
+t05b_scales_build_original   12 / 15 / 20 scales (build's version)                                                   45        45     1      0.28 GB       nan GB    0.3 GB
+t06_figures_build_original   figures (build's version)                                                                6         6     1      1.12 GB       nan GB    1.1 GB
+t08_extra_checks             tile statistics, isolated-search window                                                  3         3     1      0.13 GB       nan GB    0.1 GB
+total                        (sequential sum; t02 and t03 ran while t04 ran)                                       3039     10175   = 0.84 h wall, 2.83 CPU-hours
+
+Arbiter:
+script                       what                                                                              wall [s]   CPU [s]  proc  parent RSS  worker peak    bound
+a01_szifi_iteration          SZiFi's own iteration vs the build's: 30 + 30 + 12 tiles x 2 levels x 4 variants       298      1157     4      1.52 GB      1.52 GB    6.2 GB
+a02_injections_hi            second injection set: 1080 tiles x 2 levels                                            614      3005     5      0.90 GB      0.88 GB    4.5 GB
+t04_tiles_szifi              realistic tiles 0-99 x 2 levels with SZiFi's iteration (t04 MASK szifi)                550      2189     4      1.45 GB      1.45 GB    5.9 GB
+t05_analysis                 science numbers, rerun after the fix (324 tiles)                                       274       271     1      0.67 GB       nan GB    0.7 GB
+t05_analysis_n100            science numbers, tiles 0-99 (production finder)                                        164       164     1      0.65 GB       nan GB    0.7 GB
+t05_analysis_szifi           science numbers, tiles 0-99 (SZiFi's iteration)                                        163       162     1      0.61 GB       nan GB    0.6 GB
+a03_selection_check          isolated search vs credited detection on 360 a02 tiles x 2 levels; N1 calibrations       421      1488     4      1.08 GB      1.04 GB    4.3 GB
+t05b_scales                  12 / 15 / 20 scales, rerun                                                              64        63     1      0.29 GB       nan GB    0.3 GB
+a04_checks                   D3, R5, W1, tie-rule tests                                                             169       498     3      1.33 GB      1.33 GB    4.1 GB
+a05_virtual                  virtual clusters on 60 noise-only tiles x 2 levels                                      91       338     4      1.31 GB      1.30 GB    5.3 GB
+t06_figures                  figures, rerun                                                                           7         7     1      1.13 GB       nan GB    1.1 GB
+total                        (sequential sum; some single-process runs overlapped pooled ones)                     2813      9343   = 0.78 h wall, 2.60 CPU-hours

@@ -1,0 +1,27 @@
+x08: S1 check, own fresh tiles 0..29, 12 / 15 / 20 scales
+
+==================== baseline
+  12 scales: q > 5 detections 6452, credited halos 5946, N_exp 6161.8, Delta/N -3.50%
+     of main: Y > 10% 10.54%, > 20% 6.09%, only thanks to neighbours 6.14%, merges 0.49%, wrong size 21.49%; of all: no real cluster 2.09%, fragments 5.75%; lost 6.06%
+     r after iteration at 0.5, 1, 2, 4, 8, 15': 1.0405 1.0456 1.0506 1.0505 1.0404 1.0234
+  15 scales: q > 5 detections 6467, credited halos 5948, N_exp 6160.7, Delta/N -3.45%
+     of main: Y > 10% 10.64%, > 20% 6.17%, only thanks to neighbours 6.36%, merges 0.49%, wrong size 21.64%; of all: no real cluster 2.13%, fragments 5.89%; lost 6.18%
+     r after iteration at 0.5, 1, 2, 4, 8, 15': 1.0406 1.0457 1.0507 1.0507 1.0404 1.0233
+  20 scales: q > 5 detections 6463, credited halos 5960, N_exp 6161.2, Delta/N -3.27%
+     of main: Y > 10% 10.59%, > 20% 6.17%, only thanks to neighbours 6.34%, merges 0.49%, wrong size 21.34%; of all: no real cluster 2.06%, fragments 5.72%; lost 6.04%
+     r after iteration at 0.5, 1, 2, 4, 8, 15': 1.0405 1.0456 1.0507 1.0506 1.0403 1.0233
+  12 vs 15 scales: credited halos -0.03%, q > 5 detections -0.23%, max class-fraction change 0.22 pp, max |r change| 1.5e-04, Delta/N change -0.05 pp
+  20 vs 15 scales: credited halos +0.20%, q > 5 detections -0.06%, max class-fraction change 0.30 pp, max |r change| 9.6e-05, Delta/N change +0.19 pp
+
+==================== goal
+  12 scales: q > 5 detections 9642, credited halos 8954, N_exp 9216.1, Delta/N -2.84%
+     of main: Y > 10% 11.84%, > 20% 6.90%, only thanks to neighbours 6.35%, merges 0.63%, wrong size 20.17%; of all: no real cluster 1.66%, fragments 5.48%; lost 6.48%
+     r after iteration at 0.5, 1, 2, 4, 8, 15': 1.0541 1.0611 1.0681 1.0683 1.0554 1.0342
+  15 scales: q > 5 detections 9642, credited halos 8954, N_exp 9213.8, Delta/N -2.82%
+     of main: Y > 10% 11.94%, > 20% 6.97%, only thanks to neighbours 6.31%, merges 0.63%, wrong size 20.33%; of all: no real cluster 1.66%, fragments 5.48%; lost 6.49%
+     r after iteration at 0.5, 1, 2, 4, 8, 15': 1.0541 1.0612 1.0683 1.0685 1.0555 1.0344
+  20 scales: q > 5 detections 9638, credited halos 8957, N_exp 9213.6, Delta/N -2.79%
+     of main: Y > 10% 11.86%, > 20% 6.93%, only thanks to neighbours 6.33%, merges 0.63%, wrong size 20.06%; of all: no real cluster 1.64%, fragments 5.43%; lost 6.40%
+     r after iteration at 0.5, 1, 2, 4, 8, 15': 1.0542 1.0613 1.0683 1.0685 1.0553 1.0341
+  12 vs 15 scales: credited halos +0.00%, q > 5 detections +0.00%, max class-fraction change 0.16 pp, max |r change| 2.6e-04, Delta/N change -0.02 pp
+  20 vs 15 scales: credited halos +0.03%, q > 5 detections -0.04%, max class-fraction change 0.26 pp, max |r change| 2.6e-04, Delta/N change +0.03 pp

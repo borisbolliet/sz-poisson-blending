@@ -1,0 +1,24 @@
+[tile] pid 0 baseline: rerun catalogue identical to the stored one: True
+[tile] classes of the q > 5 detections: neighbours < 10% of own signal: 189, neighbours > 10%: 8, detected only thanks to neighbours: 14, no real cluster (c_p < 2 sigma): 3, fragment of a brighter detection: 15, merge of two q > 5 halos: 1
+wrote /Users/boris/GitHub/sz-poisson-blending/figures/realistic/step3_tile.png [5 s]
+wrote /Users/boris/GitHub/sz-poisson-blending/figures/realistic/step3_r_theta.png
+wrote /Users/boris/GitHub/sz-poisson-blending/figures/realistic/step3_selection.png
+wrote /Users/boris/GitHub/sz-poisson-blending/figures/realistic/step3_classes.png [6 s]
+        6.74 real         6.36 user         0.26 sys
+          1131577344  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               80234  page reclaims
+                 404  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 491  voluntary context switches
+                 521  involuntary context switches
+         78888016741  instructions retired
+         21287999506  cycles elapsed
+          1066110400  peak memory footprint

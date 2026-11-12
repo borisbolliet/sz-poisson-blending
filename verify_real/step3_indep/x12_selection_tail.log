@@ -1,0 +1,46 @@
+x12: the build's N_exp and its far-sub-threshold part, build's skies (324 tiles), build's selection fit
+
+==================== baseline
+  fitted floor Phi((-5 - mu) / s) per injected size: 0.3': 1.6e-05, 0.6': 1.5e-06, 1.2': 4.0e-06, 2.4': 1.4e-05, 4.8': 8.6e-05, 9.6': 2.6e-05
+  injections theta 0.3': q_inj 1.5-2.0: 0 of 383 detected; model mean P there 2.0e-04
+  injections theta 0.6': q_inj 1.5-2.0: 0 of 323 detected; model mean P there 1.6e-03
+  injections theta 1.2': q_inj 1.5-2.0: 0 of 373 detected; model mean P there 1.6e-03
+  injections theta 2.4': q_inj 1.5-2.0: 0 of 361 detected; model mean P there 1.6e-03
+  injections theta 4.8': q_inj 1.5-2.0: 0 of 323 detected; model mean P there 5.0e-04
+  injections theta 9.6': q_inj 1.5-2.0: 0 of 323 detected; model mean P there 5.8e-04
+  per tile: halos with q' < 1.4: 69684; their summed P_sel 0.79 (vs credited 198.6 per tile)
+  N_exp from halos with q' > 0.0: 66616.4; Delta/N = -3.39 +- 0.19%; z bins -1.4, -4.2, -2.9, -2.4, -4.4, -12.3   <- the build's nominal number (claims N1, N3)
+  N_exp from halos with q' > 1.4: 66359.4; Delta/N = -3.02 +- 0.20%; z bins -1.0, -4.2, -2.6, -1.5, -1.6, -3.6
+  N_exp from halos with q' > 2.0: 66149.7; Delta/N = -2.71 +- 0.20%; z bins -1.0, -4.0, -2.3, -0.9, -0.7, -2.1
+  N_exp from halos with q' > 2.5: 65621.4; Delta/N = -1.93 +- 0.19%; z bins -0.4, -3.4, -1.5, +0.2, +0.9, +0.4
+  share of N_exp from q' < 1.4, per z bin: 0.32%, 0.09%, 0.24%, 0.92%, 2.89%, 9.07%
+
+==================== goal
+  fitted floor Phi((-5 - mu) / s) per injected size: 0.3': 3.1e-05, 0.6': 1.1e-06, 1.2': 7.7e-06, 2.4': 1.6e-05, 4.8': 1.5e-04, 9.6': 2.4e-06
+  injections theta 0.3': q_inj 1.5-2.0: 0 of 383 detected; model mean P there 9.2e-05
+  injections theta 0.6': q_inj 1.5-2.0: 0 of 323 detected; model mean P there 1.9e-03
+  injections theta 1.2': q_inj 1.5-2.0: 0 of 373 detected; model mean P there 1.1e-03
+  injections theta 2.4': q_inj 1.5-2.0: 0 of 361 detected; model mean P there 1.4e-03
+  injections theta 4.8': q_inj 1.5-2.0: 0 of 323 detected; model mean P there 3.1e-04
+  injections theta 9.6': q_inj 1.5-2.0: 0 of 323 detected; model mean P there 1.3e-03
+  per tile: halos with q' < 1.4: 69097; their summed P_sel 2.18 (vs credited 298.0 per tile)
+  N_exp from halos with q' > 0.0: 100596.9; Delta/N = -4.03 +- 0.15%; z bins -3.2, -4.9, -2.9, -4.4, -7.0, -10.8   <- the build's nominal number (claims N1, N3)
+  N_exp from halos with q' > 1.4: 99892.2; Delta/N = -3.35 +- 0.15%; z bins -2.8, -4.8, -2.4, -2.8, -3.4, -2.5
+  N_exp from halos with q' > 2.0: 99638.4; Delta/N = -3.11 +- 0.15%; z bins -2.7, -4.7, -2.2, -2.4, -2.6, -1.1
+  N_exp from halos with q' > 2.5: 98957.6; Delta/N = -2.44 +- 0.15%; z bins -2.1, -4.1, -1.6, -1.4, -1.1, +1.3
+  share of N_exp from q' < 1.4, per z bin: 0.42%, 0.11%, 0.51%, 1.60%, 3.69%, 8.54%
+
+done [12 s]
+
+-------- own fresh skies (x04, 100 tiles): N_exp with all halos vs q' > 1.4, build's selection fit (as t05) and own pooled fit
+  baseline: credited 19818
+     build's fit, all halos (t05 convention)      : N_exp 20607.8; Delta/N = -3.83 +- 0.38%; z bins +4.7, -5.1, -3.1, -1.9, -7.1, -16.7 (z 2-3 +- 4.9)
+     build's fit, q' > 1.4                        : N_exp 20528.5; Delta/N = -3.46 +- 0.37%; z bins +5.1, -5.0, -2.9, -1.0, -4.4, -9.5 (z 2-3 +- 5.1)
+     own pooled fit (x03 + x03b), all halos       : N_exp 21070.4; Delta/N = -5.94 +- 0.37%; z bins +4.7, -3.0, -5.7, -11.1, -19.2, -25.7 (z 2-3 +- 4.7)
+     own pooled fit (x03 + x03b), q' > 1.4        : N_exp 20178.0; Delta/N = -1.78 +- 0.38%; z bins +4.9, -2.5, -1.4, -0.8, -4.7, -10.0 (z 2-3 +- 5.4)
+  goal: credited 29952
+     build's fit, all halos (t05 convention)      : N_exp 31160.9; Delta/N = -3.88 +- 0.32%; z bins +0.6, -4.1, -3.5, -3.3, -7.3, -18.0 (z 2-3 +- 3.9)
+     build's fit, q' > 1.4                        : N_exp 30943.4; Delta/N = -3.20 +- 0.32%; z bins +1.0, -4.0, -3.0, -1.7, -3.8, -11.2 (z 2-3 +- 4.2)
+     own pooled fit (x03 + x03b), all halos       : N_exp 31242.9; Delta/N = -4.13 +- 0.32%; z bins +0.3, -2.5, -4.0, -6.2, -10.2, -17.9 (z 2-3 +- 3.8)
+     own pooled fit (x03 + x03b), q' > 1.4        : N_exp 30568.6; Delta/N = -2.02 +- 0.31%; z bins +0.5, -2.1, -1.8, -1.6, -4.2, -12.4 (z 2-3 +- 4.2)
+done [33 s]

@@ -1,0 +1,12 @@
+x10: virtual injections on noise-only tiles 0..99, 20000 virtual clusters per tile, 2 processes
+  tile   0: 0.0 s, worker peak RSS 0.12 GB [elapsed 1 s]
+  tile  10: 7.7 s, worker peak RSS 1.13 GB [elapsed 40 s]
+  tile  20: 7.5 s, worker peak RSS 1.14 GB [elapsed 77 s]
+  tile  30: 7.5 s, worker peak RSS 1.14 GB [elapsed 114 s]
+  tile  39: 8.1 s, worker peak RSS 1.12 GB [elapsed 153 s]
+  tile  50: 7.5 s, worker peak RSS 1.13 GB [elapsed 191 s]
+  tile  60: 7.5 s, worker peak RSS 1.13 GB [elapsed 229 s]
+  tile  70: 7.6 s, worker peak RSS 1.13 GB [elapsed 266 s]
+  tile  80: 8.0 s, worker peak RSS 1.12 GB [elapsed 305 s]
+  tile  90: 7.5 s, worker peak RSS 1.12 GB [elapsed 343 s]
+x10 done in 380 s wall

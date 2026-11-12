@@ -1,0 +1,11 @@
+(1) sigma(theta), the build's template + analytic covariance, our MMF vs MMFModel.sigma_Y_exact (l = 100-20000)
+  baseline: max |ours / exact - 1| = 3.6e-06 (theta = 15.00')
+  goal: max |ours / exact - 1| = 3.0e-06 (theta = 15.00')
+(2) merging of the build's final q > 5 catalogues: SZiFi 'closest' (non-periodic) vs the build's (periodic)
+  baseline radius  1.0': q > 5 entries 2102; kept: build 1988, SZiFi rule 1988; in both 1988; differing entries farther than 2 radii from an edge: 0
+  baseline radius  2.0': q > 5 entries 2102; kept: build 1986, SZiFi rule 1986; in both 1986; differing entries farther than 2 radii from an edge: 0
+  baseline radius 10.0': q > 5 entries 2102; kept: build 1853, SZiFi rule 1853; in both 1853; differing entries farther than 2 radii from an edge: 0
+  goal     radius  1.0': q > 5 entries 3161; kept: build 2989, SZiFi rule 2989; in both 2989; differing entries farther than 2 radii from an edge: 0
+  goal     radius  2.0': q > 5 entries 3161; kept: build 2987, SZiFi rule 2987; in both 2987; differing entries farther than 2 radii from an edge: 0
+  goal     radius 10.0': q > 5 entries 3161; kept: build 2694, SZiFi rule 2697; in both 2694; differing entries farther than 2 radii from an edge: 0
+done

@@ -1,0 +1,35 @@
+(1) 324 tiles: halos per tile 69964-71940 (mean 71027); theta500 0.258'-58.1'; halos with q_true > 5 per tile: baseline 176.8, goal 279.5
+(2) isolated search: offset of the window maximum from the halo's pixel, and the credited fraction
+  baseline:
+    q_alone 4.5-5: N  20349; maximum more than 1' away  5.78%, more than 2'  0.34%; credited  13.5% (maximum within 1':  14.1%; beyond:   3.5%)
+    q_alone 5-5.5: N  13521; maximum more than 1' away  1.69%, more than 2'  0.06%; credited  74.9% (maximum within 1':  75.7%; beyond:  32.0%)
+    q_alone 5.5-6: N   9413; maximum more than 1' away  0.52%, more than 2'  0.01%; credited  96.5% (maximum within 1':  96.7%; beyond:  65.3%)
+    q_alone 6-8: N  20316; maximum more than 1' away  0.09%, more than 2'  0.00%; credited  99.0% (maximum within 1':  99.0%; beyond:  77.8%)
+    q_alone 8-inf: N  21225; maximum more than 1' away  0.00%, more than 2'  0.00%; credited  99.6% (maximum within 1':  99.6%; beyond: 100.0%)
+    all q_alone > 5: maximum within 1' of the halo for 99.54%
+  goal:
+    q_alone 4.5-5: N  27947; maximum more than 1' away  3.23%, more than 2'  0.21%; credited  14.7% (maximum within 1':  15.1%; beyond:   2.9%)
+    q_alone 5-5.5: N  19045; maximum more than 1' away  1.00%, more than 2'  0.04%; credited  72.9% (maximum within 1':  73.3%; beyond:  31.6%)
+    q_alone 5.5-6: N  13720; maximum more than 1' away  0.30%, more than 2'  0.01%; credited  95.6% (maximum within 1':  95.7%; beyond:  63.4%)
+    q_alone 6-8: N  30319; maximum more than 1' away  0.05%, more than 2'  0.00%; credited  98.5% (maximum within 1':  98.5%; beyond:  93.8%)
+    q_alone 8-inf: N  33697; maximum more than 1' away  0.00%, more than 2'  0.00%; credited  99.6% (maximum within 1':  99.6%; beyond:   nan%)
+    all q_alone > 5: maximum within 1' of the halo for 99.74%
+done [2 s]
+        2.86 real         2.55 user         0.30 sys
+           127500288  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               17064  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                  43  involuntary context switches
+         34975359787  instructions retired
+          9211110719  cycles elapsed
+            86705664  peak memory footprint

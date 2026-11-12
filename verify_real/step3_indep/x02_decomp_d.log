@@ -1,0 +1,77 @@
+x02: check (d) on build tiles [0, 137, 290]
+
+==================== tile 0 (painted 7.1 s)
+--- baseline: 230 final detections with q > 5 (exact sums 6.3 s)
+  primary alone, own lattice sum with the build's template mixture vs build c_p: max |d| = 1.3e-12 sigma (max relative 1.0e-13)
+  primary alone with the halo's own-size template vs build c_p: median |d| 1.7e-04 sigma, max 7.8e-03 sigma; relative median 2.8e-05, max 7.2e-04
+  delta (all other halos) own - build: mixture template max |d| 1.3e-10 arcmin^2 = 2.8e-06 sigma; own templates median 8.7e-06 sigma, max 4.4e-04 sigma
+  2nd-4th contributors (690 values): mixture max |d| 1.6e-13 sigma; own template median 1.1e-06, max 4.6e-04 sigma
+  class flips build -> own numbers (own templates): real 0, Y boosted > 10% 0, > 20% 0 (of 230; build real 227, b10 25, b20 18)
+  own ranking (continuous tables, all halos within 60', top 4 re-ranked by exact sums): same primary as the build for 230 of 230; same top-3 set 223 (4.1 s)
+  literal maps for 6 detections (3 brightest primaries, 3 largest delta/c_p): q; c_p [sigma] map / lattice sum / build; delta [sigma] rest map / own / build  (23 s)
+     q   7.60; c_p 6.684169 / 6.684169 / 6.688981; delta -0.237346 / -0.237341 / -0.237328
+     q   7.97; c_p 8.663289 / 8.663289 / 8.668338; delta -0.148198 / -0.148187 / -0.148210
+     q  27.11; c_p 26.904804 / 26.904804 / 26.912645; delta -0.051580 / -0.051575 / -0.051577
+     q   6.33; c_p 2.964673 / 2.964673 / 2.964887; delta +2.657378 / +2.657378 / +2.657414
+     q   5.89; c_p 3.746100 / 3.746100 / 3.746307; delta +2.574460 / +2.574460 / +2.574413
+     q   5.06; c_p 1.417331 / 1.417331 / 1.417295; delta +0.935299 / +0.935299 / +0.935248
+--- goal: 340 final detections with q > 5 (exact sums 9.1 s)
+  primary alone, own lattice sum with the build's template mixture vs build c_p: max |d| = 1.3e-12 sigma (max relative 1.2e-13)
+  primary alone with the halo's own-size template vs build c_p: median |d| 1.7e-04 sigma, max 1.0e-02 sigma; relative median 2.7e-05, max 7.7e-04
+  delta (all other halos) own - build: mixture template max |d| 1.9e-10 arcmin^2 = 4.2e-06 sigma; own templates median 1.3e-05 sigma, max 5.2e-04 sigma
+  2nd-4th contributors (1020 values): mixture max |d| 1.8e-13 sigma; own template median 1.5e-06, max 5.5e-04 sigma
+  class flips build -> own numbers (own templates): real 0, Y boosted > 10% 0, > 20% 0 (of 340; build real 336, b10 54, b20 32)
+  own ranking (continuous tables, all halos within 60', top 4 re-ranked by exact sums): same primary as the build for 340 of 340; same top-3 set 324 (5.7 s)
+
+==================== tile 137 (painted 7.2 s)
+--- baseline: 217 final detections with q > 5 (exact sums 5.8 s)
+  primary alone, own lattice sum with the build's template mixture vs build c_p: max |d| = 1.2e-12 sigma (max relative 9.7e-14)
+  primary alone with the halo's own-size template vs build c_p: median |d| 1.8e-04 sigma, max 1.6e-02 sigma; relative median 3.6e-05, max 1.1e-03
+  delta (all other halos) own - build: mixture template max |d| 1.4e-09 arcmin^2 = 4.7e-05 sigma; own templates median 1.7e-05 sigma, max 3.8e-04 sigma
+  2nd-4th contributors (651 values): mixture max |d| 1.9e-13 sigma; own template median 1.4e-06, max 3.8e-04 sigma
+  class flips build -> own numbers (own templates): real 0, Y boosted > 10% 0, > 20% 0 (of 217; build real 216, b10 31, b20 16)
+  own ranking (continuous tables, all halos within 60', top 4 re-ranked by exact sums): same primary as the build for 217 of 217; same top-3 set 196 (3.7 s)
+  literal maps for 6 detections (3 brightest primaries, 3 largest delta/c_p): q; c_p [sigma] map / lattice sum / build; delta [sigma] rest map / own / build  (24 s)
+     q  15.66; c_p 15.019318 / 15.019318 / 15.035317; delta +0.019901 / +0.019896 / +0.019895
+     q   5.51; c_p 7.172177 / 7.172177 / 7.173326; delta -0.316084 / -0.316065 / -0.316086
+     q  42.96; c_p 43.249216 / 43.249216 / 43.252610; delta +0.003730 / +0.003742 / +0.003740
+     q   5.98; c_p 3.130571 / 3.130571 / 3.130498; delta +3.035371 / +3.035371 / +3.035362
+     q   6.72; c_p 3.953210 / 3.953210 / 3.953011; delta +2.175031 / +2.175031 / +2.175062
+     q   6.20; c_p 2.921406 / 2.921406 / 2.921259; delta +1.568086 / +1.568086 / +1.568462
+--- goal: 312 final detections with q > 5 (exact sums 8.4 s)
+  primary alone, own lattice sum with the build's template mixture vs build c_p: max |d| = 1.3e-12 sigma (max relative 1.3e-13)
+  primary alone with the halo's own-size template vs build c_p: median |d| 1.7e-04 sigma, max 1.8e-02 sigma; relative median 3.1e-05, max 1.1e-03
+  delta (all other halos) own - build: mixture template max |d| 2.2e-09 arcmin^2 = 6.0e-05 sigma; own templates median 1.7e-05 sigma, max 4.8e-04 sigma
+  2nd-4th contributors (936 values): mixture max |d| 3.0e-13 sigma; own template median 1.4e-06, max 4.7e-04 sigma
+  class flips build -> own numbers (own templates): real 0, Y boosted > 10% 0, > 20% 0 (of 312; build real 305, b10 45, b20 22)
+  own ranking (continuous tables, all halos within 60', top 4 re-ranked by exact sums): same primary as the build for 312 of 312; same top-3 set 277 (5.3 s)
+
+==================== tile 290 (painted 6.8 s)
+--- baseline: 208 final detections with q > 5 (exact sums 5.6 s)
+  primary alone, own lattice sum with the build's template mixture vs build c_p: max |d| = 1.2e-12 sigma (max relative 9.4e-14)
+  primary alone with the halo's own-size template vs build c_p: median |d| 1.7e-04 sigma, max 8.6e-03 sigma; relative median 3.0e-05, max 7.0e-04
+  delta (all other halos) own - build: mixture template max |d| 1.2e-10 arcmin^2 = 2.8e-06 sigma; own templates median 1.4e-05 sigma, max 7.0e-04 sigma
+  2nd-4th contributors (624 values): mixture max |d| 9.3e-14 sigma; own template median 1.5e-06, max 3.4e-04 sigma
+  class flips build -> own numbers (own templates): real 0, Y boosted > 10% 0, > 20% 0 (of 208; build real 205, b10 26, b20 17)
+  own ranking (continuous tables, all halos within 60', top 4 re-ranked by exact sums): same primary as the build for 208 of 208; same top-3 set 192 (3.6 s)
+  literal maps for 6 detections (3 brightest primaries, 3 largest delta/c_p): q; c_p [sigma] map / lattice sum / build; delta [sigma] rest map / own / build  (22 s)
+     q   8.42; c_p 6.386410 / 6.386410 / 6.390884; delta -0.077497 / -0.077500 / -0.077499
+     q  37.34; c_p 38.091099 / 38.091099 / 38.097015; delta -0.412260 / -0.412248 / -0.412944
+     q  20.55; c_p 19.198104 / 19.198104 / 19.203641; delta +0.629762 / +0.629752 / +0.629725
+     q   5.98; c_p 3.056605 / 3.056605 / 3.057059; delta +2.572893 / +2.572893 / +2.573313
+     q   8.31; c_p 5.185798 / 5.185798 / 5.185757; delta +3.232786 / +3.232786 / +3.233056
+     q   5.48; c_p 1.932097 / 1.932097 / 1.932090; delta +1.047424 / +1.047424 / +1.047454
+--- goal: 300 final detections with q > 5 (exact sums 8.1 s)
+  primary alone, own lattice sum with the build's template mixture vs build c_p: max |d| = 2.0e-12 sigma (max relative 1.1e-13)
+  primary alone with the halo's own-size template vs build c_p: median |d| 1.8e-04 sigma, max 1.1e-02 sigma; relative median 3.1e-05, max 7.5e-04
+  delta (all other halos) own - build: mixture template max |d| 2.3e-10 arcmin^2 = 3.8e-06 sigma; own templates median 1.6e-05 sigma, max 8.6e-04 sigma
+  2nd-4th contributors (900 values): mixture max |d| 1.7e-13 sigma; own template median 1.8e-06, max 4.6e-04 sigma
+  class flips build -> own numbers (own templates): real 0, Y boosted > 10% 0, > 20% 0 (of 300; build real 292, b10 39, b20 23)
+  own ranking (continuous tables, all halos within 60', top 4 re-ranked by exact sums): same primary as the build for 300 of 300; same top-3 set 277 (5.1 s)
+
+(D4) exact lattice response of a unit-Y500 halo (theta 1') to the scale-1.04' filter at distance r in 4 directions: max - min over directions, in units of the response at r = 0
+  analytic covariance: r 0.3': 4.3e-11; r 1.0': 5.7e-10; r 2.5': 1.8e-09; r 5.0': 3.2e-09; r 10.0': 1.7e-08; r 30.0': 4.0e-09
+  build tile 0 it1_C (binned): r 0.3': 7.4e-08; r 1.0': 8.4e-06; r 2.5': 2.0e-04; r 5.0': 6.7e-04; r 10.0': 6.2e-04; r 30.0': 3.1e-04
+
+summary: 1607 detections q > 5 in 3 tiles x 2 levels; mixture-template c_p max |d| 2.0e-12 sigma; own-template c_p median |d| 1.7e-04, max 1.8e-02 sigma; delta max |d| 8.6e-04 sigma; same primary 1607/1607; class flips 0
+done [165 s], peak RSS 1.21 GB

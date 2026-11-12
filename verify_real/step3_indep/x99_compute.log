@@ -1,0 +1,18 @@
+x01_check_a.time                   wall       62 s   user CPU       62 s   max RSS (parent; workers report their own peaks in the run logs)  2.14 GB
+x02_decomp_d.time                  wall      165 s   user CPU      164 s   max RSS (parent; workers report their own peaks in the run logs)  1.21 GB
+x03_noise_inj.time                 wall      529 s   user CPU     1574 s   max RSS (parent; workers report their own peaks in the run logs)  0.93 GB
+x03_noise_inj_b.time               wall      222 s   user CPU      440 s   max RSS (parent; workers report their own peaks in the run logs)  0.86 GB
+x03b_inj2.time                     wall      557 s   user CPU     1105 s   max RSS (parent; workers report their own peaks in the run logs)  0.92 GB
+x04_fresh_0_100.time               wall     1072 s   user CPU     3167 s   max RSS (parent; workers report their own peaks in the run logs)  1.40 GB
+x04b_s12.time                      wall      276 s   user CPU      817 s   max RSS (parent; workers report their own peaks in the run logs)  1.36 GB
+x04b_s20.time                      wall      293 s   user CPU      870 s   max RSS (parent; workers report their own peaks in the run logs)  1.50 GB
+x04c_a.time                        wall       52 s   user CPU       79 s   max RSS (parent; workers report their own peaks in the run logs)  1.36 GB
+x05_check_c.time                   wall        4 s   user CPU        4 s   max RSS (parent; workers report their own peaks in the run logs)  0.51 GB
+x06_fresh_analysis.time            wall       57 s   user CPU       56 s   max RSS (parent; workers report their own peaks in the run logs)  0.24 GB
+x07_build_arrays.time              wall      326 s   user CPU      323 s   max RSS (parent; workers report their own peaks in the run logs)  0.97 GB
+x09_compare_buildtiles.time        wall        1 s   user CPU        1 s   max RSS (parent; workers report their own peaks in the run logs)  0.16 GB
+x10_virtual_selection.time         wall      380 s   user CPU      749 s   max RSS (parent; workers report their own peaks in the run logs)  1.16 GB
+x11_split2.time                    wall       67 s   user CPU       66 s   max RSS (parent; workers report their own peaks in the run logs)  0.33 GB
+x12_selection_tail.time            wall       33 s   user CPU       33 s   max RSS (parent; workers report their own peaks in the run logs)  0.28 GB
+total: 4097 s wall (sum of runs) = 1.14 h; 9510 s user CPU = 2.64 CPU-h (multiprocessing workers' CPU is included in user time on macOS only for waited children; worker counts: x04 3, x03 3 then 2, x03b 2, x10 2, x04b 3, x04c 2)
+peak concurrent memory (worker peaks from the run logs): x04 3 x 1.42 GB = 4.3 GB; x03 3 x 0.93 + x07 0.97 = 3.8 GB; x10 2 x 1.16 + x03b 2 x 0.92 = 4.2 GB; x04b 3 x 1.50 = 4.5 GB; all <= 5 GB, <= 4 processes at a time

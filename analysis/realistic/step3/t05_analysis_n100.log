@@ -1,0 +1,214 @@
+t05: 100 realistic tiles (10000 deg^2 per noise level) from /Users/boris/GitHub/sz-poisson-blending/data_real/step3/tiles
+selection calibration for N_exp: arbiter (t03 + a02 pooled); P_det = 0 below the credit limit q_inj = 2 r_inj
+
+==================== baseline: 100 tiles
+(4a) noise normalisation r(theta) = sigma_finder / sigma_Y: mean [tile-to-tile std]
+  theta [']                    0.50    0.64    0.81    1.04    1.32    1.68    2.15    2.74    3.49    4.45    5.68    7.24    9.23   11.76   15.00
+  finder, before iteration             1.1166  1.1226  1.1292  1.1363  1.1442  1.1525  1.1602  1.1668  1.1713  1.1729  1.1709  1.1647  1.1548  1.1416  1.1262
+     std                               0.0106  0.0113  0.0121  0.0131  0.0142  0.0156  0.0170  0.0184  0.0199  0.0212  0.0224  0.0232  0.0236  0.0236  0.0232
+  finder, after iteration              1.0399  1.0417  1.0435  1.0454  1.0474  1.0494  1.0508  1.0516  1.0514  1.0500  1.0472  1.0430  1.0376  1.0313  1.0245
+     std                               0.0026  0.0027  0.0028  0.0029  0.0031  0.0032  0.0034  0.0035  0.0037  0.0038  0.0040  0.0042  0.0045  0.0049  0.0055
+  CMB + noise only, estimated          0.9982  0.9982  0.9982  0.9981  0.9980  0.9979  0.9978  0.9977  0.9975  0.9972  0.9968  0.9964  0.9958  0.9951  0.9943
+     std                               0.0021  0.0021  0.0022  0.0022  0.0023  0.0024  0.0025  0.0026  0.0027  0.0028  0.0029  0.0031  0.0034  0.0038  0.0044
+  analytic CMB+noise + tile tSZ power  1.1185  1.1246  1.1312  1.1384  1.1464  1.1549  1.1628  1.1696  1.1745  1.1764  1.1748  1.1693  1.1601  1.1477  1.1334
+     std                               0.0105  0.0113  0.0121  0.0131  0.0142  0.0155  0.0169  0.0184  0.0198  0.0212  0.0223  0.0231  0.0236  0.0236  0.0232
+  literal binary f_sky iteration       1.7277  1.7524  1.7771  1.8016  1.8243  1.8408  1.8465  1.8388  1.8162  1.7786  1.7289  1.6716  1.6122  1.5550  1.5023
+     std                               0.0434  0.0449  0.0464  0.0479  0.0492  0.0501  0.0503  0.0499  0.0488  0.0474  0.0460  0.0448  0.0441  0.0438  0.0439
+  mask effect on CMB + noise alone     0.9975  0.9975  0.9974  0.9974  0.9973  0.9972  0.9972  0.9971  0.9970  0.9969  0.9967  0.9966  0.9963  0.9961  0.9957
+  step 2 (i) sub-threshold confusion   1.0545  1.0566  1.0588  1.0611  1.0635  1.0659  1.0678  1.0689  1.0691  1.0679  1.0654  1.0613  1.0560  1.0498  1.0432
+  step 2 (ii) robust width             1.0616  1.0638  1.0660  1.0683  1.0707  1.0732  1.0751  1.0763  1.0766  1.0755  1.0732  1.0695  1.0646  1.0590  1.0531
+  step 2 (iii) plain std               1.1367  1.1427  1.1492  1.1561  1.1636  1.1715  1.1786  1.1845  1.1886  1.1899  1.1880  1.1826  1.1735  1.1615  1.1472
+  (r_finder_after - 1) / (r_(i) - 1):  0.73  0.74  0.74  0.74  0.75  0.75  0.75  0.75  0.74  0.74  0.72  0.70  0.67  0.63  0.57
+  (r_finder_after - 1) / (r_(ii) - 1):  0.65  0.65  0.66  0.67  0.67  0.67  0.68  0.68  0.67  0.66  0.65  0.62  0.58  0.53  0.46
+  (r_finder_after - 1) / (r_(iii) - 1):  0.29  0.29  0.29  0.29  0.29  0.29  0.28  0.28  0.27  0.26  0.25  0.24  0.22  0.19  0.17
+  (r_finder_before - 1) / (r_(iii) - 1):  0.85  0.86  0.87  0.87  0.88  0.89  0.90  0.90  0.91  0.91  0.91  0.90  0.89  0.88  0.86
+  masked fraction at the iteration: mean 21.2% [range 15.5-29.1%]
+  std of the CMB + noise part of the finder's S/N maps (after iteration; 40 tiles, analytic CMB + noise through each tile's filter): 0.9662 0.9647 0.9631 0.9615 0.9598 0.9582 0.9572 0.9568 0.9574 0.9592 0.9625 0.9673 0.9734 0.9806 0.9887
+     compare 1 / r_after: 0.9616 0.9600 0.9583 0.9566 0.9548 0.9531 0.9519 0.9512 0.9515 0.9528 0.9554 0.9594 0.9644 0.9704 0.9769
+(4b) final detections q > 5: 21399 (214.0 per tile); real and not fragments ('main'): 19780
+  no real cluster (c_p < 2 sigma): 1.66 +- 0.09% of all q > 5
+  fragments (second detection of a halo): 5.91 +- 0.16% of all q > 5
+  Y boosted > 10% by neighbours                                         : 10.70 +- 0.22% of main
+  Y boosted > 20%                                                       : 6.18 +- 0.17% of main
+  detected only thanks to neighbours (isolated search)                  : 6.00 +- 0.17% of main
+    same, at the detection's own position and size                      : 7.12 +- 0.18% of main
+  Y lowered by > 10%                                                    : 1.47 +- 0.09% of main
+  merge (second halo q_true > 5, > 10% of c_p, not detected itself)     : 0.53 +- 0.05% of main
+  wrong size (theta_det / theta500 outside 1/2-2)                       : 21.79 +- 0.29% of main
+  wrong size among clean main detections 20.41 +- 0.30%, among Y boosted > 10% 33.32 +- 1.02%
+  mean neighbour signal / own signal of main detections: +3.19%
+  lost: halos with q_alone > 5 not credited with a q > 5 detection: 6.24 +- 0.17% (of 19832)
+  forced photometry at the true positions (finder's filter, nearest scale; dominance fdom = 1; halos q_true > 2): blended detections 17419, single 17253 (change +0.96%)
+     Y boosted > 10% 8.32 +- 0.21%; > 20% 4.47 +- 0.16%; boosted over threshold 6.00 +- 0.18%; lost 5.10 +- 0.17% (of single); mean bias +2.05%
+  decomposition closure (q > 5): map value = tSZ + CMB + noise to 3.4e-13 (worst tile, relative); tSZ - sum of all halos' table contributions: median |.| 8.6e-03 sigma (1.1e-03 of the map value), 95% 2.6e-02 sigma, max 5.9e-02 sigma
+(4c) attribution: main q > 5 detections whose second contributor B gives >= 10% of the primary A's signal: 2059 (10.4% of main)
+  c_B/c_A 0.1-0.25: N = 1095; A has the larger true q (step 1 sigma_Y) in 98%; detection closer to A than B in 88%
+     fdom 0.5: A only 84%, B only 0%, both 16%, neither 0%
+     fdom 1.0: A only 74%, B only 0%, both 26%, neither 0%
+     fdom 2.0: A only 58%, B only 0%, both 42%, neither 0%
+  c_B/c_A 0.25-0.5: N = 545; A has the larger true q (step 1 sigma_Y) in 98%; detection closer to A than B in 81%
+     fdom 0.5: A only 75%, B only 0%, both 25%, neither 1%
+     fdom 1.0: A only 59%, B only 0%, both 41%, neither 0%
+     fdom 2.0: A only 27%, B only 0%, both 73%, neither 0%
+  c_B/c_A 0.5-1: N = 419; A has the larger true q (step 1 sigma_Y) in 84%; detection closer to A than B in 68%
+     fdom 0.5: A only 32%, B only 2%, both 34%, neither 32%
+     fdom 1.0: A only 32%, B only 0%, both 68%, neither 0%
+     fdom 2.0: A only 0%, B only 0%, both 100%, neither 0%
+  effective dominance rule: halos q_true > 3 that the isolated search would detect (q_alone > 5), binned in x_max / q_true at their true position (largest single neighbour, step 1's filter); fraction credited by the finder:
+     x_max/q in [0, 0.1): N =  18461, credited  95.12%
+     x_max/q in [0.1, 0.25): N =    646, credited  96.75%
+     x_max/q in [0.25, 0.5): N =    188, credited  89.89%
+     x_max/q in [0.5, 0.75): N =     51, credited  66.67%
+     x_max/q in [0.75, 1.0): N =     14, credited  35.71%
+     x_max/q in [1.0, 1.5): N =     12, credited   0.00%
+     x_max/q in [1.5, 2.0): N =      9, credited   0.00%
+     x_max/q in [2.0, 4.0): N =      3, credited   0.00%
+     credited although q_alone < 5 (boosted over the threshold): 1033; their x_max/q median 0.11
+(4d) count change at q > 5: credited halos vs the finder's own no-neighbour selection; tile bootstrap
+  z bins: 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0
+  finder normalisation (q = Y/sigma_finder): N_det 19780, N_exp 19952.8; Delta/N = -0.87 +- 0.32%
+     per z bin: -0.10+-3.59%, -1.18+-0.51%, -0.64+-0.56%, -1.24+-1.03%, +0.95+-2.44%, +2.33+-7.44%
+  sigma_Y normalisation (q_obs r > 5; q = Y/sigma_Y): N_det 21920, N_exp 21902.3; Delta/N = +0.08 +- 0.36%
+     per z bin: +0.14+-3.47%, -0.28+-0.52%, -0.13+-0.53%, +0.91+-1.10%, +3.90+-2.44%, +2.83+-6.96%
+  reference: the build's t03 fit as published (no credit limit): N_exp 20498.5; Delta/N = -3.51 +- 0.32%; per z bin -0.50%, -4.48%, -2.84%, -3.04%, -3.07%, -9.04%
+  reference: the build's t03 fit with the credit limit: N_exp 20354.8; Delta/N = -2.82 +- 0.33%; per z bin -0.10%, -4.21%, -2.29%, -1.61%, +0.60%, +1.86%
+  split 1, neighbours at fixed filter and noise: credited vs isolated search (q_alone > 5): N_alone 19832; -0.26 +- 0.24%; per z bin -5.29+-1.90%, -0.28+-0.37%, -0.02+-0.37%, -0.70+-0.71%, +1.28+-1.81%, -8.14+-5.40%
+  split 2, normalisation convention: isolated search vs unit-noise selection: -0.61 +- 0.34%; per z bin +5.48+-3.76%, -0.90+-0.54%, -0.62+-0.52%, -0.55+-1.02%, -0.33+-2.28%, +11.39+-8.51%
+  sigma_Y normalisation, split 1 (neighbours at fixed filter and noise): -1.10 +- 0.25%; per z bin -5.39+-1.93%, -0.30+-0.36%, -1.31+-0.38%, -1.42+-0.76%, -2.74+-1.65%, -14.81+-4.91%
+  sigma_Y normalisation, split 2 (isolated search vs unit-noise selection): +1.19 +- 0.32%; per z bin +5.85+-3.80%, +0.02+-0.52%, +1.20+-0.47%, +2.36+-1.05%, +6.83+-2.57%, +20.71+-9.76%
+  selection-model uncertainty (40 refits on bootstrap resamples of the injection tiles): total 0.29%; per z bin 0.48%, 0.28%, 0.37%, 0.49%, 0.56%, 1.03%  (check: refit mean vs nominal N_exp -0.06%)
+  finder normalisation, tile bootstrap (+) selection model: total -0.87 +- 0.44%; per z bin -0.10+-3.65%, -1.18+-0.60%, -0.64+-0.68%, -1.24+-1.14%, +0.95+-2.55%, +2.33+-7.67%
+  same with the binned completeness table instead of the fit: N_exp 20031.4; Delta/N = -1.25 +- 0.32%; per z bin -0.42%, -1.50%, -1.02%, -1.77%, +0.19%, +1.19%
+  merge none     : N_det 19780; Delta/N = -0.87 +- 0.33%  (q > 5 catalogue entries 21044)
+  merge closest1 : N_det 19754; Delta/N = -1.00 +- 0.33%  (q > 5 catalogue entries 19767)
+  merge closest2 : N_det 19749; Delta/N = -1.02 +- 0.33%  (q > 5 catalogue entries 19749)
+  merge closest10: N_det 18379; Delta/N = -7.89 +- 0.32%  (q > 5 catalogue entries 18379)
+  merge fof10    : N_det 18307; Delta/N = -8.25 +- 0.33%  (q > 5 catalogue entries 18307)
+  q > 5 detections before the iteration: 16761 vs after 21399
+  counting every q > 5 catalogue entry (spurious ones included) minus the noise-only false rate (t02, 100 tiles), against N_exp:
+     none     : entries 21399, expected false 80.0, (entries - false) / N_exp - 1 = +6.85 +- 0.38% (credited only: -0.87%)
+     closest1 : entries 20097, expected false 76.0, (entries - false) / N_exp - 1 = +0.34 +- 0.32% (credited only: -1.00%)
+     closest2 : entries 20080, expected false 76.0, (entries - false) / N_exp - 1 = +0.26 +- 0.33% (credited only: -1.02%)
+     closest10: entries 18661, expected false 76.0, (entries - false) / N_exp - 1 = -6.86 +- 0.32% (credited only: -7.89%)
+     fof10    : entries 18587, expected false 76.0, (entries - false) / N_exp - 1 = -7.23 +- 0.31% (credited only: -8.25%)
+  step 2 (f1): Delta/N = +1.28%; per z bin +0.74%, +0.88%, +1.27%, +1.99%, +3.05%, +4.71%
+  step 2 (effi): Delta/N = -0.33%; per z bin -0.46%, -0.41%, -0.32%, -0.21%, -0.07%, +0.05%
+  step 2 (effii): Delta/N = -0.50%; per z bin -0.62%, -0.54%, -0.48%, -0.45%, -0.42%, -0.48%
+  step 2 (effiii): Delta/N = -2.44%; per z bin -2.40%, -2.16%, -2.40%, -3.02%, -3.95%, -5.51%
+  compute: per tile and noise level find 1.1 s, diagnostics 1.0 s, decomposition 6.7 s; per tile (both levels, painting incl.) 22.1 s
+
+==================== goal: 100 tiles
+(4a) noise normalisation r(theta) = sigma_finder / sigma_Y: mean [tile-to-tile std]
+  theta [']                    0.50    0.64    0.81    1.04    1.32    1.68    2.15    2.74    3.49    4.45    5.68    7.24    9.23   11.76   15.00
+  finder, before iteration             1.1579  1.1664  1.1757  1.1860  1.1976  1.2095  1.2205  1.2298  1.2361  1.2380  1.2346  1.2255  1.2111  1.1923  1.1707
+     std                               0.0124  0.0133  0.0144  0.0157  0.0172  0.0189  0.0207  0.0227  0.0246  0.0263  0.0276  0.0285  0.0288  0.0284  0.0275
+  finder, after iteration              1.0534  1.0558  1.0583  1.0610  1.0638  1.0665  1.0685  1.0696  1.0694  1.0676  1.0640  1.0586  1.0517  1.0437  1.0353
+     std                               0.0028  0.0029  0.0030  0.0032  0.0033  0.0035  0.0037  0.0039  0.0040  0.0042  0.0044  0.0046  0.0048  0.0050  0.0054
+  CMB + noise only, estimated          0.9983  0.9983  0.9982  0.9982  0.9981  0.9980  0.9979  0.9978  0.9976  0.9974  0.9970  0.9966  0.9961  0.9954  0.9946
+     std                               0.0020  0.0020  0.0021  0.0021  0.0022  0.0023  0.0024  0.0025  0.0026  0.0027  0.0028  0.0029  0.0032  0.0036  0.0041
+  analytic CMB+noise + tile tSZ power  1.1598  1.1684  1.1778  1.1882  1.1998  1.2119  1.2231  1.2326  1.2392  1.2415  1.2385  1.2300  1.2162  1.1983  1.1778
+     std                               0.0125  0.0134  0.0145  0.0158  0.0173  0.0190  0.0208  0.0227  0.0246  0.0263  0.0277  0.0285  0.0289  0.0285  0.0276
+  literal binary f_sky iteration       1.9795  2.0123  2.0451  2.0774  2.1056  2.1229  2.1239  2.1058  2.0673  2.0105  1.9402  1.8630  1.7856  1.7124  1.6450
+     std                               0.0429  0.0444  0.0460  0.0475  0.0488  0.0496  0.0498  0.0494  0.0488  0.0481  0.0477  0.0478  0.0483  0.0491  0.0499
+  mask effect on CMB + noise alone     0.9975  0.9975  0.9975  0.9974  0.9974  0.9973  0.9973  0.9972  0.9971  0.9970  0.9968  0.9966  0.9964  0.9961  0.9958
+  step 2 (i) sub-threshold confusion   1.0678  1.0704  1.0731  1.0760  1.0790  1.0818  1.0840  1.0852  1.0853  1.0836  1.0802  1.0751  1.0684  1.0608  1.0528
+  step 2 (ii) robust width             1.0799  1.0828  1.0857  1.0887  1.0921  1.0953  1.0978  1.0993  1.0996  1.0982  1.0951  1.0902  1.0839  1.0766  1.0687
+  step 2 (iii) plain std               1.1904  1.1989  1.2079  1.2176  1.2283  1.2390  1.2487  1.2566  1.2619  1.2631  1.2599  1.2517  1.2386  1.2217  1.2017
+  (r_finder_after - 1) / (r_(i) - 1):  0.79  0.79  0.80  0.80  0.81  0.81  0.82  0.82  0.81  0.81  0.80  0.78  0.76  0.72  0.67
+  (r_finder_after - 1) / (r_(ii) - 1):  0.67  0.67  0.68  0.69  0.69  0.70  0.70  0.70  0.70  0.69  0.67  0.65  0.62  0.57  0.51
+  (r_finder_after - 1) / (r_(iii) - 1):  0.28  0.28  0.28  0.28  0.28  0.28  0.28  0.27  0.27  0.26  0.25  0.23  0.22  0.20  0.18
+  (r_finder_before - 1) / (r_(iii) - 1):  0.83  0.84  0.85  0.85  0.87  0.88  0.89  0.90  0.90  0.90  0.90  0.90  0.88  0.87  0.85
+  masked fraction at the iteration: mean 24.1% [range 18.9-34.7%]
+  std of the CMB + noise part of the finder's S/N maps (after iteration; 40 tiles, analytic CMB + noise through each tile's filter): 0.9547 0.9525 0.9503 0.9480 0.9456 0.9434 0.9418 0.9411 0.9417 0.9439 0.9479 0.9537 0.9610 0.9696 0.9789
+     compare 1 / r_after: 0.9491 0.9469 0.9447 0.9423 0.9398 0.9375 0.9358 0.9349 0.9352 0.9369 0.9402 0.9451 0.9514 0.9587 0.9666
+(4b) final detections q > 5: 32078 (320.8 per tile); real and not fragments ('main'): 29840
+  no real cluster (c_p < 2 sigma): 1.41 +- 0.07% of all q > 5
+  fragments (second detection of a halo): 5.56 +- 0.13% of all q > 5
+  Y boosted > 10% by neighbours                                         : 12.30 +- 0.19% of main
+  Y boosted > 20%                                                       : 7.11 +- 0.15% of main
+  detected only thanks to neighbours (isolated search)                  : 6.65 +- 0.14% of main
+    same, at the detection's own position and size                      : 7.82 +- 0.16% of main
+  Y lowered by > 10%                                                    : 1.73 +- 0.08% of main
+  merge (second halo q_true > 5, > 10% of c_p, not detected itself)     : 0.67 +- 0.05% of main
+  wrong size (theta_det / theta500 outside 1/2-2)                       : 20.65 +- 0.23% of main
+  wrong size among clean main detections 19.11 +- 0.24%, among Y boosted > 10% 31.65 +- 0.77%
+  mean neighbour signal / own signal of main detections: +3.71%
+  lost: halos with q_alone > 5 not credited with a q > 5 detection: 6.65 +- 0.14% (of 29842)
+  forced photometry at the true positions (finder's filter, nearest scale; dominance fdom = 1; halos q_true > 2): blended detections 26684, single 26289 (change +1.50%)
+     Y boosted > 10% 9.58 +- 0.18%; > 20% 5.33 +- 0.14%; boosted over threshold 6.54 +- 0.15%; lost 5.13 +- 0.14% (of single); mean bias +2.47%
+  decomposition closure (q > 5): map value = tSZ + CMB + noise to 2.5e-13 (worst tile, relative); tSZ - sum of all halos' table contributions: median |.| 9.7e-03 sigma (1.3e-03 of the map value), 95% 3.0e-02 sigma, max 7.2e-02 sigma
+(4c) attribution: main q > 5 detections whose second contributor B gives >= 10% of the primary A's signal: 3528 (11.8% of main)
+  c_B/c_A 0.1-0.25: N = 1853; A has the larger true q (step 1 sigma_Y) in 98%; detection closer to A than B in 89%
+     fdom 0.5: A only 83%, B only 0%, both 17%, neither 0%
+     fdom 1.0: A only 73%, B only 0%, both 27%, neither 0%
+     fdom 2.0: A only 58%, B only 0%, both 42%, neither 0%
+  c_B/c_A 0.25-0.5: N = 960; A has the larger true q (step 1 sigma_Y) in 98%; detection closer to A than B in 82%
+     fdom 0.5: A only 74%, B only 0%, both 24%, neither 1%
+     fdom 1.0: A only 59%, B only 0%, both 41%, neither 0%
+     fdom 2.0: A only 26%, B only 0%, both 74%, neither 0%
+  c_B/c_A 0.5-1: N = 715; A has the larger true q (step 1 sigma_Y) in 83%; detection closer to A than B in 66%
+     fdom 0.5: A only 30%, B only 2%, both 35%, neither 33%
+     fdom 1.0: A only 32%, B only 0%, both 68%, neither 0%
+     fdom 2.0: A only 0%, B only 0%, both 100%, neither 0%
+  effective dominance rule: halos q_true > 3 that the isolated search would detect (q_alone > 5), binned in x_max / q_true at their true position (largest single neighbour, step 1's filter); fraction credited by the finder:
+     x_max/q in [0, 0.1): N =  27661, credited  94.58%
+     x_max/q in [0.1, 0.25): N =   1171, credited  97.01%
+     x_max/q in [0.25, 0.5): N =    339, credited  88.79%
+     x_max/q in [0.5, 0.75): N =     84, credited  57.14%
+     x_max/q in [0.75, 1.0): N =     32, credited  28.12%
+     x_max/q in [1.0, 1.5): N =     26, credited   0.00%
+     x_max/q in [1.5, 2.0): N =     13, credited   0.00%
+     x_max/q in [2.0, 4.0): N =     11, credited   0.00%
+     credited although q_alone < 5 (boosted over the threshold): 1755; their x_max/q median 0.12
+(4d) count change at q > 5: credited halos vs the finder's own no-neighbour selection; tile bootstrap
+  z bins: 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0
+  finder normalisation (q = Y/sigma_finder): N_det 29840, N_exp 30223.3; Delta/N = -1.27 +- 0.28%
+     per z bin: -2.07+-3.51%, -1.87+-0.45%, -0.62+-0.46%, -2.06+-0.71%, -0.17+-1.78%, +0.29+-4.88%
+  sigma_Y normalisation (q_obs r > 5; q = Y/sigma_Y): N_det 33888, N_exp 33953.4; Delta/N = -0.19 +- 0.26%
+     per z bin: -0.02+-3.48%, -0.98+-0.46%, +0.33+-0.41%, -0.84+-0.78%, +3.38+-1.76%, +1.47+-4.24%
+  reference: the build's t03 fit as published (no credit limit): N_exp 31023.4; Delta/N = -3.81 +- 0.27%; per z bin -2.26%, -4.73%, -2.63%, -4.62%, -5.25%, -10.29%
+  reference: the build's t03 fit with the credit limit: N_exp 30728.1; Delta/N = -2.89 +- 0.27%; per z bin -1.73%, -4.49%, -1.93%, -2.62%, -0.85%, -0.52%
+  split 1, neighbours at fixed filter and noise: credited vs isolated search (q_alone > 5): N_alone 29842; -0.01 +- 0.22%; per z bin -4.35+-2.42%, -0.31+-0.34%, +0.27+-0.33%, +0.04+-0.57%, +1.16+-1.13%, -5.15+-2.93%
+  split 2, normalisation convention: isolated search vs unit-noise selection: -1.26 +- 0.27%; per z bin +2.38+-3.42%, -1.57+-0.42%, -0.88+-0.40%, -2.11+-0.78%, -1.31+-1.54%, +5.74+-5.02%
+  sigma_Y normalisation, split 1 (neighbours at fixed filter and noise): -1.41 +- 0.20%; per z bin -4.63+-2.50%, -1.12+-0.33%, -1.06+-0.33%, -2.22+-0.52%, -2.71+-1.14%, -9.43+-2.54%
+  sigma_Y normalisation, split 2 (isolated search vs unit-noise selection): +1.24 +- 0.25%; per z bin +4.84+-3.27%, +0.14+-0.44%, +1.40+-0.36%, +1.42+-0.77%, +6.26+-1.62%, +12.03+-4.85%
+  selection-model uncertainty (40 refits on bootstrap resamples of the injection tiles): total 0.31%; per z bin 0.41%, 0.29%, 0.39%, 0.46%, 0.58%, 0.95%  (check: refit mean vs nominal N_exp -0.05%)
+  finder normalisation, tile bootstrap (+) selection model: total -1.27 +- 0.42%; per z bin -2.07+-3.52%, -1.87+-0.53%, -0.62+-0.60%, -2.06+-0.83%, -0.17+-1.82%, +0.29+-5.07%
+  same with the binned completeness table instead of the fit: N_exp 30330.8; Delta/N = -1.62 +- 0.27%; per z bin -2.36%, -2.16%, -0.94%, -2.51%, -0.89%, -0.74%
+  merge none     : N_det 29840; Delta/N = -1.27 +- 0.28%  (q > 5 catalogue entries 31625)
+  merge closest1 : N_det 29799; Delta/N = -1.40 +- 0.27%  (q > 5 catalogue entries 29811)
+  merge closest2 : N_det 29789; Delta/N = -1.44 +- 0.28%  (q > 5 catalogue entries 29790)
+  merge closest10: N_det 26745; Delta/N = -11.51 +- 0.29%  (q > 5 catalogue entries 26747)
+  merge fof10    : N_det 26531; Delta/N = -12.22 +- 0.30%  (q > 5 catalogue entries 26531)
+  q > 5 detections before the iteration: 23832 vs after 32078
+  counting every q > 5 catalogue entry (spurious ones included) minus the noise-only false rate (t02, 100 tiles), against N_exp:
+     none     : entries 32078, expected false 85.0, (entries - false) / N_exp - 1 = +5.86 +- 0.36% (credited only: -1.27%)
+     closest1 : entries 30232, expected false 80.0, (entries - false) / N_exp - 1 = -0.24 +- 0.27% (credited only: -1.40%)
+     closest2 : entries 30210, expected false 80.0, (entries - false) / N_exp - 1 = -0.31 +- 0.28% (credited only: -1.44%)
+     closest10: entries 27080, expected false 80.0, (entries - false) / N_exp - 1 = -10.66 +- 0.28% (credited only: -11.51%)
+     fof10    : entries 26859, expected false 80.0, (entries - false) / N_exp - 1 = -11.40 +- 0.30% (credited only: -12.22%)
+  step 2 (f1): Delta/N = +1.38%; per z bin +0.78%, +0.91%, +1.32%, +2.07%, +3.19%, +4.98%
+  step 2 (effi): Delta/N = -0.41%; per z bin -0.60%, -0.51%, -0.41%, -0.29%, -0.11%, +0.16%
+  step 2 (effii): Delta/N = -0.68%; per z bin -0.86%, -0.72%, -0.67%, -0.64%, -0.61%, -0.58%
+  step 2 (effiii): Delta/N = -3.05%; per z bin -3.06%, -2.68%, -2.96%, -3.69%, -4.75%, -6.38%
+  compute: per tile and noise level find 1.1 s, diagnostics 1.0 s, decomposition 9.0 s; per tile (both levels, painting incl.) 22.1 s
+
+done [163 s]
+      163.97 real       162.45 user         1.18 sys
+           654917632  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               65457  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1344  voluntary context switches
+                2607  involuntary context switches
+       1631019381750  instructions retired
+        486954729020  cycles elapsed
+           587762176  peak memory footprint

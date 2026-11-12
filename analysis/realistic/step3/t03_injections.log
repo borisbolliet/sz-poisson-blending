@@ -1,0 +1,158 @@
+t03: 540 tile runs (270 tiles x 2 noise levels), 2 processes
+  run   0 ('goal', 0.3, 0): 2.1 s, worker peak RSS 0.75 GB [elapsed 3 s]
+  run  40 ('goal', 0.3, 20): 1.7 s, worker peak RSS 0.92 GB [elapsed 30 s]
+  run  80 ('goal', 0.6, 40): 1.5 s, worker peak RSS 0.93 GB [elapsed 58 s]
+  run 120 ('baseline', 1.2, 60): 1.7 s, worker peak RSS 0.93 GB [elapsed 86 s]
+  run 160 ('baseline', 1.2, 80): 1.7 s, worker peak RSS 0.93 GB [elapsed 113 s]
+  run 200 ('baseline', 2.4, 100): 1.7 s, worker peak RSS 0.92 GB [elapsed 141 s]
+  run 240 ('baseline', 4.8, 120): 1.6 s, worker peak RSS 0.93 GB [elapsed 169 s]
+  run 280 ('baseline', 4.8, 140): 1.7 s, worker peak RSS 0.92 GB [elapsed 198 s]
+  run 320 ('baseline', 4.8, 160): 1.7 s, worker peak RSS 0.93 GB [elapsed 226 s]
+  run 360 ('baseline', 9.6, 180): 1.7 s, worker peak RSS 0.93 GB [elapsed 254 s]
+  run 400 ('baseline', 9.6, 200): 1.8 s, worker peak RSS 0.93 GB [elapsed 284 s]
+  run 440 ('baseline', 9.6, 220): 1.7 s, worker peak RSS 0.92 GB [elapsed 313 s]
+  run 480 ('baseline', 9.6, 240): 1.7 s, worker peak RSS 0.93 GB [elapsed 343 s]
+  run 520 ('goal', 9.6, 260): 1.8 s, worker peak RSS 0.93 GB [elapsed 373 s]
+runs done in 386 s wall
+
+=========== baseline: 270 injection tiles; credited = filtered tSZ of the nearest injected cluster >= 2 sigma
+  finder sigma (final) / sigma_Y on injection tiles: mean 0.9972, range of tile means 0.9851-1.0080
+  uncredited detections q > 5 (noise peaks): 236 in 27000 deg^2 = 0.874 per 100 deg^2
+  completeness P(credited q_obs > 5) in q_inj bins [models: N(q,1): Phi(q-5); N(sqrt(q^2+3),1)]:
+  q_inj bin    th= 0.3'      th= 0.6'      th= 1.2'      th= 2.4'      th= 4.8'      th= 9.6'       Phi(q-5)  Phi(sqrt(q^2+3)-5)
+   1.5- 2.0   0.000+-0.000  0.000+-0.000  0.000+-0.000  0.000+-0.000  0.000+-0.000  0.000+-0.000   0.001     0.006
+   2.0- 2.5   0.000+-0.000  0.008+-0.005  0.003+-0.003  0.017+-0.007  0.005+-0.004  0.000+-0.000   0.003     0.016
+   2.5- 3.0   0.021+-0.007  0.023+-0.008  0.034+-0.009  0.031+-0.009  0.044+-0.012  0.039+-0.011   0.013     0.041
+   3.0- 3.5   0.051+-0.012  0.072+-0.014  0.081+-0.015  0.082+-0.014  0.082+-0.015  0.085+-0.015   0.042     0.096
+   3.5- 4.0   0.137+-0.019  0.117+-0.017  0.174+-0.020  0.181+-0.019  0.215+-0.022  0.184+-0.022   0.108     0.195
+   4.0- 4.5   0.246+-0.023  0.280+-0.024  0.282+-0.023  0.375+-0.027  0.371+-0.028  0.341+-0.028   0.229     0.342
+   4.5- 5.0   0.421+-0.027  0.485+-0.026  0.481+-0.027  0.536+-0.027  0.560+-0.029  0.451+-0.031   0.402     0.522
+   5.0- 5.5   0.619+-0.025  0.611+-0.026  0.649+-0.026  0.731+-0.024  0.703+-0.027  0.667+-0.030   0.598     0.700
+   5.5- 6.0   0.774+-0.021  0.817+-0.021  0.810+-0.020  0.825+-0.020  0.864+-0.019  0.863+-0.020   0.771     0.840
+   6.0- 6.5   0.907+-0.015  0.903+-0.017  0.923+-0.014  0.929+-0.013  0.939+-0.014  0.940+-0.013   0.892     0.929
+   6.5- 7.0   0.952+-0.011  0.955+-0.011  0.974+-0.009  0.977+-0.008  0.987+-0.007  0.968+-0.010   0.958     0.974
+   7.0- 7.5   0.985+-0.007  0.981+-0.007  0.989+-0.005  1.000+-0.000  0.985+-0.007  0.997+-0.003   0.987     0.992
+   7.5- 8.0   0.992+-0.005  1.000+-0.000  0.997+-0.003  0.997+-0.003  1.000+-0.000  1.000+-0.000   0.997     0.998
+   8.0- 8.5   1.000+-0.000  1.000+-0.000  1.000+-0.000  1.000+-0.000  1.000+-0.000  0.996+-0.004   0.999     1.000
+   8.5- 9.0   1.000+-0.000  1.000+-0.000  1.000+-0.000  1.000+-0.000  1.000+-0.000  1.000+-0.000   1.000     1.000
+   9.0- 9.5   1.000+-0.000  1.000+-0.000  1.000+-0.000  1.000+-0.000  1.000+-0.000  1.000+-0.000   1.000     1.000
+  q_inj >= 10 (discrete values): completeness, mean q_obs - q_inj [std]; mean q_obs - sqrt(q^2+3) 
+  q = 10.5: 1.000, -0.37 [1.01], -0.51 | 1.000, -0.27 [1.07], -0.41 | 1.000, -0.16 [1.01], -0.30 | 1.000, -0.04 [0.95], -0.18 | 1.000, +0.10 [0.99], -0.04 | 1.000, +0.22 [1.11], +0.07
+  q = 12.0: 1.000, -0.36 [1.04], -0.48 | 1.000, -0.24 [1.03], -0.37 | 1.000, -0.04 [0.98], -0.16 | 1.000, -0.16 [0.92], -0.28 | 1.000, +0.01 [0.97], -0.11 | 1.000, -0.07 [0.97], -0.19
+  q = 15.0: 1.000, -0.33 [1.03], -0.43 | 1.000, -0.31 [0.94], -0.41 | 1.000, -0.06 [0.96], -0.16 | 1.000, -0.08 [0.98], -0.18 | 1.000, +0.09 [1.00], -0.01 | 1.000, +0.07 [0.96], -0.03
+  q = 20.0: 1.000, -0.60 [1.12], -0.67 | 1.000, -0.47 [1.09], -0.54 | 1.000, -0.23 [1.03], -0.30 | 1.000, -0.26 [0.95], -0.33 | 1.000, +0.04 [0.93], -0.03 | 1.000, -0.09 [0.95], -0.17
+  q = 30.0: 1.000, -1.00 [1.15], -1.05 | 1.000, -0.86 [1.09], -0.91 | 1.000, -0.59 [1.11], -0.64 | 1.000, -0.64 [1.05], -0.69 | 1.000, -0.02 [1.08], -0.07 | 1.000, -0.10 [1.00], -0.15
+  fit P(q_obs > 5) = Phi((sqrt(q^2 + b) - 5 - mu) / s) per theta_inj (all injections, maximum likelihood):
+    theta_inj 0.3': b = -2.79, mu = -0.366, s = 1.114   (N = 6750)
+    theta_inj 0.6': b = +0.08, mu = -0.112, s = 1.046   (N = 6750)
+    theta_inj 1.2': b = -0.62, mu = -0.273, s = 1.059   (N = 6750)
+    theta_inj 2.4': b = -1.47, mu = -0.508, s = 1.074   (N = 6750)
+    theta_inj 4.8': b = -3.06, mu = -0.749, s = 1.131   (N = 6000)
+    theta_inj 9.6': b = -2.47, mu = -0.559, s = 1.098   (N = 5760)
+  among credited detections (q_obs > 5), q_inj in [6, 9.5]: q_obs - q_inj mean [std]; vs N(sqrt(q^2+3),1): mean of q_obs - sqrt(q^2+3)
+    theta_inj 0.3': -0.083 [0.965]; -0.276 [0.962];  forced (true pixel, nearest scale): -0.278 [1.032]  (N = 2459)
+    theta_inj 0.6': -0.018 [0.909]; -0.210 [0.907];  forced (true pixel, nearest scale): -0.230 [0.966]  (N = 2509)
+    theta_inj 1.2': +0.041 [0.916]; -0.153 [0.915];  forced (true pixel, nearest scale): -0.177 [0.977]  (N = 2457)
+    theta_inj 2.4': +0.115 [0.954]; -0.079 [0.953];  forced (true pixel, nearest scale): -0.121 [0.999]  (N = 2464)
+    theta_inj 4.8': +0.197 [0.952]; +0.003 [0.950];  forced (true pixel, nearest scale): -0.043 [1.011]  (N = 2187)
+    theta_inj 9.6': +0.146 [0.965]; -0.048 [0.963];  forced (true pixel, nearest scale): -0.090 [1.015]  (N = 2161)
+  theta and position recovery for credited detections q_obs > 5: theta_est / theta_inj median [16-84%]; offset median [84%] (arcmin)
+    theta_inj  0.3', q_inj 5-7: theta ratio 1.67 [1.67-3.45], factor > 2 off: 0.360; offset 0.25' [0.39']; fragments (extra credited q > 5) per detected cluster 0.049  (N = 1196)
+    theta_inj  0.3', q_inj 7-10: theta ratio 1.67 [1.67-2.71], factor > 2 off: 0.285; offset 0.22' [0.34']; fragments (extra credited q > 5) per detected cluster 0.030  (N = 1791)
+    theta_inj  0.3', q_inj 10-31: theta ratio 1.67 [1.67-2.12], factor > 2 off: 0.166; offset 0.21' [0.30']; fragments (extra credited q > 5) per detected cluster 0.010  (N = 980)
+    theta_inj  0.6', q_inj 5-7: theta ratio 1.06 [0.83-2.20], factor > 2 off: 0.214; offset 0.25' [0.40']; fragments (extra credited q > 5) per detected cluster 0.060  (N = 1126)
+    theta_inj  0.6', q_inj 7-10: theta ratio 1.06 [0.83-2.20], factor > 2 off: 0.173; offset 0.23' [0.36']; fragments (extra credited q > 5) per detected cluster 0.051  (N = 1880)
+    theta_inj  0.6', q_inj 10-31: theta ratio 1.06 [0.83-1.73], factor > 2 off: 0.057; offset 0.20' [0.29']; fragments (extra credited q > 5) per detected cluster 0.014  (N = 1028)
+    theta_inj  1.2', q_inj 5-7: theta ratio 0.86 [0.42-1.79], factor > 2 off: 0.331; offset 0.27' [0.42']; fragments (extra credited q > 5) per detected cluster 0.068  (N = 1195)
+    theta_inj  1.2', q_inj 7-10: theta ratio 1.10 [0.53-1.79], factor > 2 off: 0.190; offset 0.23' [0.36']; fragments (extra credited q > 5) per detected cluster 0.054  (N = 1801)
+    theta_inj  1.2', q_inj 10-31: theta ratio 1.10 [0.86-1.40], factor > 2 off: 0.027; offset 0.20' [0.30']; fragments (extra credited q > 5) per detected cluster 0.013  (N = 1001)
+    theta_inj  2.4', q_inj 5-7: theta ratio 0.89 [0.55-1.45], factor > 2 off: 0.205; offset 0.28' [0.48']; fragments (extra credited q > 5) per detected cluster 0.088  (N = 1245)
+    theta_inj  2.4', q_inj 7-10: theta ratio 0.89 [0.70-1.45], factor > 2 off: 0.091; offset 0.25' [0.40']; fragments (extra credited q > 5) per detected cluster 0.051  (N = 1774)
+    theta_inj  2.4', q_inj 10-31: theta ratio 1.14 [0.89-1.14], factor > 2 off: 0.005; offset 0.21' [0.31']; fragments (extra credited q > 5) per detected cluster 0.019  (N = 1027)
+    theta_inj  4.8', q_inj 5-7: theta ratio 0.93 [0.57-1.51], factor > 2 off: 0.103; offset 0.34' [0.53']; fragments (extra credited q > 5) per detected cluster 0.077  (N = 1073)
+    theta_inj  4.8', q_inj 7-10: theta ratio 0.93 [0.73-1.51], factor > 2 off: 0.039; offset 0.26' [0.43']; fragments (extra credited q > 5) per detected cluster 0.035  (N = 1597)
+    theta_inj  4.8', q_inj 10-31: theta ratio 0.93 [0.93-1.18], factor > 2 off: 0.003; offset 0.22' [0.32']; fragments (extra credited q > 5) per detected cluster 0.011  (N = 883)
+    theta_inj  9.6', q_inj 5-7: theta ratio 0.96 [0.59-1.23], factor > 2 off: 0.066; offset 0.37' [0.62']; fragments (extra credited q > 5) per detected cluster 0.063  (N = 1058)
+    theta_inj  9.6', q_inj 7-10: theta ratio 0.96 [0.75-1.23], factor > 2 off: 0.016; offset 0.31' [0.50']; fragments (extra credited q > 5) per detected cluster 0.032  (N = 1535)
+    theta_inj  9.6', q_inj 10-31: theta ratio 0.96 [0.96-1.23], factor > 2 off: 0.000; offset 0.22' [0.36']; fragments (extra credited q > 5) per detected cluster 0.010  (N = 861)
+
+=========== goal: 270 injection tiles; credited = filtered tSZ of the nearest injected cluster >= 2 sigma
+  finder sigma (final) / sigma_Y on injection tiles: mean 0.9970, range of tile means 0.9866-1.0067
+  uncredited detections q > 5 (noise peaks): 250 in 27000 deg^2 = 0.926 per 100 deg^2
+  completeness P(credited q_obs > 5) in q_inj bins [models: N(q,1): Phi(q-5); N(sqrt(q^2+3),1)]:
+  q_inj bin    th= 0.3'      th= 0.6'      th= 1.2'      th= 2.4'      th= 4.8'      th= 9.6'       Phi(q-5)  Phi(sqrt(q^2+3)-5)
+   1.5- 2.0   0.000+-0.000  0.000+-0.000  0.000+-0.000  0.000+-0.000  0.000+-0.000  0.000+-0.000   0.001     0.006
+   2.0- 2.5   0.000+-0.000  0.008+-0.005  0.003+-0.003  0.015+-0.006  0.005+-0.004  0.000+-0.000   0.003     0.016
+   2.5- 3.0   0.021+-0.007  0.029+-0.009  0.031+-0.009  0.028+-0.009  0.047+-0.012  0.046+-0.012   0.013     0.041
+   3.0- 3.5   0.060+-0.013  0.070+-0.014  0.072+-0.014  0.093+-0.015  0.076+-0.015  0.073+-0.014   0.042     0.096
+   3.5- 4.0   0.125+-0.018  0.120+-0.017  0.169+-0.020  0.186+-0.019  0.192+-0.021  0.174+-0.021   0.108     0.195
+   4.0- 4.5   0.246+-0.023  0.275+-0.024  0.275+-0.022  0.363+-0.027  0.388+-0.028  0.331+-0.027   0.229     0.342
+   4.5- 5.0   0.421+-0.027  0.474+-0.026  0.487+-0.027  0.513+-0.027  0.567+-0.029  0.444+-0.030   0.402     0.522
+   5.0- 5.5   0.602+-0.026  0.611+-0.026  0.643+-0.026  0.714+-0.024  0.703+-0.027  0.671+-0.030   0.598     0.700
+   5.5- 6.0   0.784+-0.021  0.814+-0.021  0.818+-0.020  0.831+-0.020  0.845+-0.020  0.869+-0.019   0.771     0.840
+   6.0- 6.5   0.899+-0.016  0.887+-0.018  0.920+-0.015  0.937+-0.013  0.920+-0.015  0.951+-0.012   0.892     0.929
+   6.5- 7.0   0.952+-0.011  0.949+-0.011  0.968+-0.010  0.968+-0.009  0.983+-0.007  0.974+-0.009   0.958     0.974
+   7.0- 7.5   0.982+-0.007  0.981+-0.007  0.995+-0.004  1.000+-0.000  0.985+-0.007  0.997+-0.003   0.987     0.992
+   7.5- 8.0   0.992+-0.005  1.000+-0.000  0.995+-0.004  0.997+-0.003  1.000+-0.000  1.000+-0.000   0.997     0.998
+   8.0- 8.5   1.000+-0.000  1.000+-0.000  1.000+-0.000  1.000+-0.000  1.000+-0.000  0.993+-0.005   0.999     1.000
+   8.5- 9.0   1.000+-0.000  1.000+-0.000  1.000+-0.000  1.000+-0.000  1.000+-0.000  1.000+-0.000   1.000     1.000
+   9.0- 9.5   1.000+-0.000  1.000+-0.000  1.000+-0.000  1.000+-0.000  1.000+-0.000  1.000+-0.000   1.000     1.000
+  q_inj >= 10 (discrete values): completeness, mean q_obs - q_inj [std]; mean q_obs - sqrt(q^2+3) 
+  q = 10.5: 1.000, -0.40 [1.03], -0.54 | 1.000, -0.28 [1.06], -0.42 | 1.000, -0.16 [1.01], -0.30 | 1.000, -0.03 [0.94], -0.17 | 1.000, +0.11 [0.97], -0.03 | 1.000, +0.21 [1.11], +0.07
+  q = 12.0: 1.000, -0.39 [1.04], -0.52 | 1.000, -0.27 [1.00], -0.39 | 1.000, -0.06 [0.97], -0.18 | 1.000, -0.18 [0.91], -0.30 | 1.000, -0.03 [0.98], -0.15 | 1.000, -0.05 [0.96], -0.18
+  q = 15.0: 1.000, -0.39 [1.03], -0.49 | 1.000, -0.35 [0.94], -0.45 | 1.000, -0.08 [0.97], -0.18 | 1.000, -0.11 [0.99], -0.20 | 1.000, +0.08 [1.00], -0.02 | 1.000, +0.03 [0.97], -0.07
+  q = 20.0: 1.000, -0.67 [1.13], -0.75 | 1.000, -0.54 [1.09], -0.61 | 1.000, -0.24 [1.03], -0.32 | 1.000, -0.29 [0.97], -0.36 | 1.000, +0.02 [0.92], -0.06 | 1.000, -0.09 [0.97], -0.16
+  q = 30.0: 1.000, -1.08 [1.18], -1.13 | 1.000, -0.94 [1.11], -0.99 | 1.000, -0.61 [1.12], -0.66 | 1.000, -0.68 [1.05], -0.73 | 1.000, -0.05 [1.07], -0.10 | 1.000, -0.10 [1.00], -0.15
+  fit P(q_obs > 5) = Phi((sqrt(q^2 + b) - 5 - mu) / s) per theta_inj (all injections, maximum likelihood):
+    theta_inj 0.3': b = -3.37, mu = -0.423, s = 1.142   (N = 6750)
+    theta_inj 0.6': b = +0.56, mu = -0.044, s = 1.047   (N = 6750)
+    theta_inj 1.2': b = -1.38, mu = -0.347, s = 1.076   (N = 6750)
+    theta_inj 2.4': b = -1.62, mu = -0.511, s = 1.081   (N = 6750)
+    theta_inj 4.8': b = -3.52, mu = -0.781, s = 1.167   (N = 6000)
+    theta_inj 9.6': b = -0.65, mu = -0.341, s = 1.020   (N = 5760)
+  among credited detections (q_obs > 5), q_inj in [6, 9.5]: q_obs - q_inj mean [std]; vs N(sqrt(q^2+3),1): mean of q_obs - sqrt(q^2+3)
+    theta_inj 0.3': -0.106 [0.967]; -0.299 [0.964];  forced (true pixel, nearest scale): -0.301 [1.034]  (N = 2455)
+    theta_inj 0.6': -0.036 [0.913]; -0.228 [0.910];  forced (true pixel, nearest scale): -0.251 [0.971]  (N = 2502)
+    theta_inj 1.2': +0.030 [0.914]; -0.163 [0.912];  forced (true pixel, nearest scale): -0.189 [0.976]  (N = 2455)
+    theta_inj 2.4': +0.105 [0.952]; -0.089 [0.950];  forced (true pixel, nearest scale): -0.132 [0.998]  (N = 2464)
+    theta_inj 4.8': +0.185 [0.951]; -0.009 [0.949];  forced (true pixel, nearest scale): -0.058 [1.012]  (N = 2180)
+    theta_inj 9.6': +0.150 [0.965]; -0.044 [0.963];  forced (true pixel, nearest scale): -0.078 [1.013]  (N = 2166)
+  theta and position recovery for credited detections q_obs > 5: theta_est / theta_inj median [16-84%]; offset median [84%] (arcmin)
+    theta_inj  0.3', q_inj 5-7: theta ratio 1.67 [1.67-3.45], factor > 2 off: 0.354; offset 0.25' [0.38']; fragments (extra credited q > 5) per detected cluster 0.045  (N = 1191)
+    theta_inj  0.3', q_inj 7-10: theta ratio 1.67 [1.67-2.71], factor > 2 off: 0.282; offset 0.22' [0.34']; fragments (extra credited q > 5) per detected cluster 0.027  (N = 1790)
+    theta_inj  0.3', q_inj 10-31: theta ratio 1.67 [1.67-2.12], factor > 2 off: 0.163; offset 0.21' [0.30']; fragments (extra credited q > 5) per detected cluster 0.018  (N = 980)
+    theta_inj  0.6', q_inj 5-7: theta ratio 1.06 [0.83-2.20], factor > 2 off: 0.207; offset 0.25' [0.39']; fragments (extra credited q > 5) per detected cluster 0.058  (N = 1118)
+    theta_inj  0.6', q_inj 7-10: theta ratio 1.06 [0.83-2.20], factor > 2 off: 0.169; offset 0.22' [0.34']; fragments (extra credited q > 5) per detected cluster 0.045  (N = 1880)
+    theta_inj  0.6', q_inj 10-31: theta ratio 1.06 [0.83-1.73], factor > 2 off: 0.054; offset 0.20' [0.29']; fragments (extra credited q > 5) per detected cluster 0.016  (N = 1028)
+    theta_inj  1.2', q_inj 5-7: theta ratio 0.86 [0.42-1.79], factor > 2 off: 0.313; offset 0.26' [0.41']; fragments (extra credited q > 5) per detected cluster 0.061  (N = 1193)
+    theta_inj  1.2', q_inj 7-10: theta ratio 1.10 [0.53-1.79], factor > 2 off: 0.188; offset 0.23' [0.36']; fragments (extra credited q > 5) per detected cluster 0.051  (N = 1802)
+    theta_inj  1.2', q_inj 10-31: theta ratio 1.10 [0.86-1.40], factor > 2 off: 0.029; offset 0.20' [0.30']; fragments (extra credited q > 5) per detected cluster 0.013  (N = 1001)
+    theta_inj  2.4', q_inj 5-7: theta ratio 0.89 [0.55-1.45], factor > 2 off: 0.192; offset 0.27' [0.46']; fragments (extra credited q > 5) per detected cluster 0.082  (N = 1241)
+    theta_inj  2.4', q_inj 7-10: theta ratio 0.89 [0.70-1.45], factor > 2 off: 0.083; offset 0.24' [0.38']; fragments (extra credited q > 5) per detected cluster 0.047  (N = 1774)
+    theta_inj  2.4', q_inj 10-31: theta ratio 1.14 [0.89-1.14], factor > 2 off: 0.004; offset 0.21' [0.30']; fragments (extra credited q > 5) per detected cluster 0.017  (N = 1027)
+    theta_inj  4.8', q_inj 5-7: theta ratio 0.93 [0.57-1.51], factor > 2 off: 0.116; offset 0.31' [0.50']; fragments (extra credited q > 5) per detected cluster 0.068  (N = 1060)
+    theta_inj  4.8', q_inj 7-10: theta ratio 0.93 [0.73-1.51], factor > 2 off: 0.033; offset 0.26' [0.41']; fragments (extra credited q > 5) per detected cluster 0.039  (N = 1597)
+    theta_inj  4.8', q_inj 10-31: theta ratio 0.93 [0.93-1.18], factor > 2 off: 0.002; offset 0.22' [0.31']; fragments (extra credited q > 5) per detected cluster 0.009  (N = 883)
+    theta_inj  9.6', q_inj 5-7: theta ratio 0.96 [0.59-1.23], factor > 2 off: 0.067; offset 0.36' [0.58']; fragments (extra credited q > 5) per detected cluster 0.057  (N = 1067)
+    theta_inj  9.6', q_inj 7-10: theta ratio 0.96 [0.75-1.23], factor > 2 off: 0.016; offset 0.30' [0.48']; fragments (extra credited q > 5) per detected cluster 0.029  (N = 1534)
+    theta_inj  9.6', q_inj 10-31: theta ratio 0.96 [0.96-1.23], factor > 2 off: 0.000; offset 0.22' [0.35']; fragments (extra credited q > 5) per detected cluster 0.007  (N = 861)
+
+done [388 s]
+      388.12 real       759.95 user        10.24 sys
+           932577280  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             2072800  page reclaims
+                3817  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               11285  voluntary context switches
+               35381  involuntary context switches
+         22835221690  instructions retired
+          7377310957  cycles elapsed
+           114132608  peak memory footprint

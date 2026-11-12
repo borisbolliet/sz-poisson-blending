@@ -1,0 +1,110 @@
+a03: 720 injection tile runs (a02 tiles, 60 per size, both levels), 4 processes
+/Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3/a03_selection_check.py:91: RuntimeWarning: invalid value encountered in subtract
+  np.savez(fn, k=k, theta_inj=th, q_inj=q, q_cred=qb, q_alone=qa, regen=np.nanmax(np.abs(np.where(np.isfinite(qb), qb - ref, 0.0))),
+  run   0 ('goal', 1001): 2.8 s, worker peak RSS 1.04 GB [elapsed 3 s]
+/Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3/a03_selection_check.py:91: RuntimeWarning: invalid value encountered in subtract
+  np.savez(fn, k=k, theta_inj=th, q_inj=q, q_cred=qb, q_alone=qa, regen=np.nanmax(np.abs(np.where(np.isfinite(qb), qb - ref, 0.0))),
+/Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3/a03_selection_check.py:91: RuntimeWarning: invalid value encountered in subtract
+  np.savez(fn, k=k, theta_inj=th, q_inj=q, q_cred=qb, q_alone=qa, regen=np.nanmax(np.abs(np.where(np.isfinite(qb), qb - ref, 0.0))),
+/Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3/a03_selection_check.py:91: RuntimeWarning: invalid value encountered in subtract
+  np.savez(fn, k=k, theta_inj=th, q_inj=q, q_cred=qb, q_alone=qa, regen=np.nanmax(np.abs(np.where(np.isfinite(qb), qb - ref, 0.0))),
+  run  60 ('baseline', 1030): 2.1 s, worker peak RSS 1.04 GB [elapsed 33 s]
+  run 120 ('baseline', 1120): 2.1 s, worker peak RSS 1.04 GB [elapsed 63 s]
+  run 180 ('goal', 1149): 2.0 s, worker peak RSS 1.04 GB [elapsed 91 s]
+/Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3/a03_selection_check.py:91: RuntimeWarning: invalid value encountered in subtract
+  np.savez(fn, k=k, theta_inj=th, q_inj=q, q_cred=qb, q_alone=qa, regen=np.nanmax(np.abs(np.where(np.isfinite(qb), qb - ref, 0.0))),
+  run 240 ('baseline', 1240): 1.9 s, worker peak RSS 1.04 GB [elapsed 122 s]
+/Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3/a03_selection_check.py:91: RuntimeWarning: invalid value encountered in subtract
+  np.savez(fn, k=k, theta_inj=th, q_inj=q, q_cred=qb, q_alone=qa, regen=np.nanmax(np.abs(np.where(np.isfinite(qb), qb - ref, 0.0))),
+/Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3/a03_selection_check.py:91: RuntimeWarning: invalid value encountered in subtract
+  np.savez(fn, k=k, theta_inj=th, q_inj=q, q_cred=qb, q_alone=qa, regen=np.nanmax(np.abs(np.where(np.isfinite(qb), qb - ref, 0.0))),
+/Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3/a03_selection_check.py:91: RuntimeWarning: invalid value encountered in subtract
+  np.savez(fn, k=k, theta_inj=th, q_inj=q, q_cred=qb, q_alone=qa, regen=np.nanmax(np.abs(np.where(np.isfinite(qb), qb - ref, 0.0))),
+  run 300 ('baseline', 1270): 1.7 s, worker peak RSS 1.04 GB [elapsed 152 s]
+  run 360 ('baseline', 1360): 2.0 s, worker peak RSS 1.04 GB [elapsed 180 s]
+  run 420 ('baseline', 1390): 2.0 s, worker peak RSS 1.04 GB [elapsed 210 s]
+/Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3/a03_selection_check.py:91: RuntimeWarning: invalid value encountered in subtract
+  np.savez(fn, k=k, theta_inj=th, q_inj=q, q_cred=qb, q_alone=qa, regen=np.nanmax(np.abs(np.where(np.isfinite(qb), qb - ref, 0.0))),
+  run 480 ('baseline', 1480): 2.4 s, worker peak RSS 1.04 GB [elapsed 240 s]
+/Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3/a03_selection_check.py:91: RuntimeWarning: invalid value encountered in subtract
+  np.savez(fn, k=k, theta_inj=th, q_inj=q, q_cred=qb, q_alone=qa, regen=np.nanmax(np.abs(np.where(np.isfinite(qb), qb - ref, 0.0))),
+/Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3/a03_selection_check.py:91: RuntimeWarning: invalid value encountered in subtract
+  np.savez(fn, k=k, theta_inj=th, q_inj=q, q_cred=qb, q_alone=qa, regen=np.nanmax(np.abs(np.where(np.isfinite(qb), qb - ref, 0.0))),
+/Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3/a03_selection_check.py:91: RuntimeWarning: invalid value encountered in subtract
+  np.savez(fn, k=k, theta_inj=th, q_inj=q, q_cred=qb, q_alone=qa, regen=np.nanmax(np.abs(np.where(np.isfinite(qb), qb - ref, 0.0))),
+  run 540 ('baseline', 1510): 2.0 s, worker peak RSS 1.04 GB [elapsed 270 s]
+  run 600 ('baseline', 1720): 2.1 s, worker peak RSS 1.04 GB [elapsed 300 s]
+  run 660 ('goal', 1749): 2.1 s, worker peak RSS 1.04 GB [elapsed 328 s]
+/Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3/a03_selection_check.py:91: RuntimeWarning: invalid value encountered in subtract
+  np.savez(fn, k=k, theta_inj=th, q_inj=q, q_cred=qb, q_alone=qa, regen=np.nanmax(np.abs(np.where(np.isfinite(qb), qb - ref, 0.0))),
+runs done in 357 s wall
+
+==================== baseline: 360 injection tiles, 63840 clusters
+  regeneration: max |q_cred - a02's stored q| = 9.3e-14
+  (1) on the same clusters: P_alone (isolated search > 5) / P_cred (credited q_obs > 5) per q_inj bin
+    0.3': 2.0-2.5: 0.004/0.002  2.5-3.0: 0.024/0.023  3.0-3.5: 0.053/0.051  3.5-4.0: 0.127/0.127  4.0-5.0: 0.374/0.376  5.0-6.0: 0.708/0.707  6.0-8.0: 0.959/0.959   | alone only 0.10%, credited only 0.07% of all
+    0.6': 2.0-2.5: 0.008/0.006  2.5-3.0: 0.027/0.025  3.0-3.5: 0.064/0.063  3.5-4.0: 0.152/0.151  4.0-5.0: 0.375/0.376  5.0-6.0: 0.720/0.718  6.0-8.0: 0.966/0.967   | alone only 0.15%, credited only 0.08% of all
+    1.2': 2.0-2.5: 0.008/0.005  2.5-3.0: 0.026/0.025  3.0-3.5: 0.067/0.067  3.5-4.0: 0.174/0.174  4.0-5.0: 0.393/0.395  5.0-6.0: 0.748/0.747  6.0-8.0: 0.972/0.971   | alone only 0.17%, credited only 0.11% of all
+    2.4': 2.0-2.5: 0.010/0.007  2.5-3.0: 0.033/0.030  3.0-3.5: 0.071/0.071  3.5-4.0: 0.146/0.147  4.0-5.0: 0.405/0.402  5.0-6.0: 0.760/0.760  6.0-8.0: 0.971/0.971   | alone only 0.19%, credited only 0.09% of all
+    4.8': 2.0-2.5: 0.006/0.004  2.5-3.0: 0.018/0.018  3.0-3.5: 0.076/0.078  3.5-4.0: 0.173/0.175  4.0-5.0: 0.434/0.440  5.0-6.0: 0.772/0.778  6.0-8.0: 0.967/0.969   | alone only 0.13%, credited only 0.35% of all
+    9.6': 2.0-2.5: 0.010/0.003  2.5-3.0: 0.038/0.038  3.0-3.5: 0.076/0.065  3.5-4.0: 0.219/0.216  4.0-5.0: 0.414/0.412  5.0-6.0: 0.761/0.755  6.0-8.0: 0.978/0.978   | alone only 0.44%, credited only 0.08% of all
+  (2) N1 = credited / N_exp - 1 on the build's 324 tiles (credited 64355), P_cred = 0 below q_inj = 2 r_inj; tile-bootstrap error; z bins 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0
+     build's t03 fit (38,760 clusters)         : N_exp   66151.8; N1 = -2.72 +- 0.19%; z bins -1.0, -4.0, -2.3, -1.0, -0.7, -2.1
+     a02 fit alone (155,040)                   : N_exp   64676.3; N1 = -0.50 +- 0.20%; z bins -1.0, -0.5, -0.5, -0.6, -0.3, -1.7
+     pooled fit (nominal)                      : N_exp   64855.1; N1 = -0.77 +- 0.20%; z bins -1.0, -0.9, -0.7, -0.6, -0.3, -1.7
+     pooled binned table                       : N_exp   65108.5; N1 = -1.16 +- 0.20%; z bins -1.3, -1.3, -1.1, -1.1, -1.1, -2.7
+     a02 quarter 0 (38,760)                    : N_exp   64853.2; N1 = -0.77 +- 0.20%; z bins -1.4, -1.3, -0.4, -0.2, -0.9, -3.4
+     a02 quarter 1                             : N_exp   64846.3; N1 = -0.76 +- 0.20%; z bins -0.5, -0.7, -0.7, -1.0, -0.9, -2.3
+     a02 quarter 2                             : N_exp   64882.3; N1 = -0.81 +- 0.20%; z bins -1.3, -0.6, -1.0, -1.0, -0.6, -1.5
+     a02 quarter 3                             : N_exp   64132.2; N1 = +0.35 +- 0.20%; z bins -0.8, +0.8, +0.2, -0.2, +0.8, +0.2
+     this script's P_cred table, halos q_true > 2: N_exp   64828.0; N1 = -0.73 +- 0.20%; z bins -1.0, -0.4, -0.7, -1.3, -1.8, -4.2
+     scatter of N1 between the four a02 quarters: std 0.56 pp (each quarter has t03's size)
+  (3) criterion-matched split on the same halos (q_true > 2), P from this script's injection tiles:
+     normalisation: isolated search on the realistic tiles vs P_alone of isolated clusters: -1.20 +- 0.18%; z bins -0.4, -0.6, -1.5, -1.4, -3.2, +0.7
+     N1 with this script's P_cred table: -0.73 +- 0.20%
+     neighbours and search at fixed noise: (1 + N1) / (1 + normalisation) - 1 = +0.48%   [criterion ratio sum P_alone / sum P_cred - 1 = +0.67%; credited / isolated search - 1 = -0.19%]
+
+==================== goal: 360 injection tiles, 63840 clusters
+  regeneration: max |q_cred - a02's stored q| = 8.5e-14
+  (1) on the same clusters: P_alone (isolated search > 5) / P_cred (credited q_obs > 5) per q_inj bin
+    0.3': 2.0-2.5: 0.004/0.001  2.5-3.0: 0.024/0.020  3.0-3.5: 0.054/0.055  3.5-4.0: 0.125/0.125  4.0-5.0: 0.371/0.371  5.0-6.0: 0.700/0.700  6.0-8.0: 0.959/0.958   | alone only 0.14%, credited only 0.07% of all
+    0.6': 2.0-2.5: 0.009/0.005  2.5-3.0: 0.029/0.025  3.0-3.5: 0.064/0.064  3.5-4.0: 0.143/0.144  4.0-5.0: 0.372/0.372  5.0-6.0: 0.711/0.710  6.0-8.0: 0.968/0.968   | alone only 0.14%, credited only 0.05% of all
+    1.2': 2.0-2.5: 0.006/0.005  2.5-3.0: 0.026/0.026  3.0-3.5: 0.066/0.065  3.5-4.0: 0.167/0.167  4.0-5.0: 0.385/0.386  5.0-6.0: 0.735/0.735  6.0-8.0: 0.968/0.969   | alone only 0.10%, credited only 0.09% of all
+    2.4': 2.0-2.5: 0.007/0.004  2.5-3.0: 0.030/0.026  3.0-3.5: 0.072/0.069  3.5-4.0: 0.148/0.147  4.0-5.0: 0.403/0.403  5.0-6.0: 0.751/0.752  6.0-8.0: 0.972/0.971   | alone only 0.17%, credited only 0.06% of all
+    4.8': 2.0-2.5: 0.006/0.004  2.5-3.0: 0.018/0.018  3.0-3.5: 0.072/0.072  3.5-4.0: 0.181/0.183  4.0-5.0: 0.418/0.421  5.0-6.0: 0.776/0.780  6.0-8.0: 0.972/0.972   | alone only 0.13%, credited only 0.22% of all
+    9.6': 2.0-2.5: 0.013/0.003  2.5-3.0: 0.038/0.038  3.0-3.5: 0.083/0.072  3.5-4.0: 0.223/0.219  4.0-5.0: 0.406/0.406  5.0-6.0: 0.758/0.751  6.0-8.0: 0.979/0.978   | alone only 0.47%, credited only 0.10% of all
+  (2) N1 = credited / N_exp - 1 on the build's 324 tiles (credited 96544), P_cred = 0 below q_inj = 2 r_inj; tile-bootstrap error; z bins 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0
+     build's t03 fit (38,760 clusters)         : N_exp   99641.5; N1 = -3.11 +- 0.15%; z bins -2.7, -4.7, -2.2, -2.4, -2.6, -1.1
+     a02 fit alone (155,040)                   : N_exp   97790.2; N1 = -1.27 +- 0.16%; z bins -3.1, -1.7, -0.7, -1.8, -1.8, -0.2
+     pooled fit (nominal)                      : N_exp   98010.1; N1 = -1.50 +- 0.16%; z bins -3.0, -2.1, -0.9, -1.8, -1.9, -0.3
+     pooled binned table                       : N_exp   98362.1; N1 = -1.85 +- 0.16%; z bins -3.4, -2.4, -1.2, -2.3, -2.6, -1.2
+     a02 quarter 0 (38,760)                    : N_exp   97783.7; N1 = -1.27 +- 0.15%; z bins -4.1, -2.5, -0.4, -0.9, -1.0, +0.7
+     a02 quarter 1                             : N_exp   97946.8; N1 = -1.43 +- 0.16%; z bins -2.3, -2.0, -0.8, -1.8, -2.1, -0.8
+     a02 quarter 2                             : N_exp   98127.0; N1 = -1.61 +- 0.16%; z bins -2.5, -1.4, -1.4, -2.5, -2.2, +0.1
+     a02 quarter 3                             : N_exp   97328.4; N1 = -0.81 +- 0.16%; z bins -3.5, -0.7, -0.4, -1.9, -2.2, -0.9
+     this script's P_cred table, halos q_true > 2: N_exp   97904.9; N1 = -1.39 +- 0.16%; z bins -3.1, -1.4, -0.9, -2.4, -3.0, -2.0
+     scatter of N1 between the four a02 quarters: std 0.35 pp (each quarter has t03's size)
+  (3) criterion-matched split on the same halos (q_true > 2), P from this script's injection tiles:
+     normalisation: isolated search on the realistic tiles vs P_alone of isolated clusters: -1.71 +- 0.15%; z bins -3.0, -1.3, -1.4, -2.7, -5.2, -2.7
+     N1 with this script's P_cred table: -1.39 +- 0.16%
+     neighbours and search at fixed noise: (1 + N1) / (1 + normalisation) - 1 = +0.33%   [criterion ratio sum P_alone / sum P_cred - 1 = +0.57%; credited / isolated search - 1 = -0.24%]
+
+done [420 s]
+      420.71 real      1479.46 user         8.70 sys
+          1079771136  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1151985  page reclaims
+                1368  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                9147  voluntary context switches
+               20759  involuntary context switches
+        920593500919  instructions retired
+        198506343543  cycles elapsed
+           170149632  peak memory footprint

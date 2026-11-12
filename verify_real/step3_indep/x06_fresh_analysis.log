@@ -1,0 +1,249 @@
+x06: 100 own fresh tiles per noise level (10000 deg^2), own finder
+
+==================== baseline: 100 tiles; r_inj (own injections) 0.9932-0.9985, build 0.9932-0.9984
+(4a) r(theta) = sigma_finder / sigma_Y, mean [tile-to-tile std]
+  theta [']                              0.50    0.64    0.81    1.04    1.32    1.68    2.15    2.74    3.49    4.45    5.68    7.24    9.23   11.76   15.00
+  finder, before iteration             1.1200  1.1263  1.1331  1.1405  1.1487  1.1574  1.1654  1.1723  1.1770  1.1787  1.1766  1.1703  1.1598  1.1461  1.1300
+     std                               0.0111  0.0118  0.0126  0.0135  0.0146  0.0157  0.0170  0.0182  0.0193  0.0203  0.0210  0.0214  0.0214  0.0210  0.0204
+  finder, after iteration              1.0400  1.0418  1.0436  1.0455  1.0475  1.0494  1.0509  1.0517  1.0515  1.0500  1.0471  1.0428  1.0372  1.0307  1.0238
+     std                               0.0030  0.0031  0.0032  0.0034  0.0035  0.0037  0.0039  0.0041  0.0042  0.0044  0.0046  0.0048  0.0051  0.0054  0.0060
+  CMB + noise only, estimated          0.9984  0.9983  0.9983  0.9982  0.9981  0.9980  0.9979  0.9977  0.9975  0.9972  0.9967  0.9962  0.9956  0.9948  0.9938
+     std                               0.0020  0.0021  0.0022  0.0022  0.0023  0.0024  0.0025  0.0027  0.0028  0.0029  0.0031  0.0033  0.0036  0.0039  0.0044
+  analytic CMB+noise + tile tSZ power  1.1221  1.1284  1.1353  1.1428  1.1511  1.1599  1.1682  1.1753  1.1803  1.1824  1.1807  1.1750  1.1653  1.1524  1.1374
+     std                               0.0110  0.0117  0.0125  0.0135  0.0145  0.0157  0.0170  0.0182  0.0193  0.0203  0.0209  0.0211  0.0210  0.0205  0.0197
+  literal binary f_sky iteration       1.7303  1.7551  1.7798  1.8043  1.8269  1.8434  1.8489  1.8411  1.8182  1.7804  1.7306  1.6733  1.6139  1.5566  1.5038
+     std                               0.0393  0.0407  0.0421  0.0435  0.0447  0.0456  0.0459  0.0456  0.0449  0.0440  0.0431  0.0425  0.0423  0.0425  0.0428
+  mask effect on CMB + noise alone     0.9974  0.9974  0.9973  0.9972  0.9972  0.9971  0.9970  0.9969  0.9968  0.9966  0.9965  0.9963  0.9960  0.9957  0.9953
+  pixel std of the CMB+noise S/N maps  0.9626  0.9610  0.9593  0.9575  0.9556  0.9538  0.9524  0.9516  0.9517  0.9530  0.9555  0.9594  0.9645  0.9704  0.9769
+     compare 1 / r_after               0.9615  0.9599  0.9582  0.9565  0.9546  0.9529  0.9516  0.9509  0.9511  0.9524  0.9550  0.9590  0.9641  0.9702  0.9768
+  (r_after - 1) / (r_(i) - 1):     0.73  0.74  0.74  0.74  0.75  0.75  0.75  0.75  0.74  0.74  0.72  0.70  0.66  0.62  0.55
+  (r_after - 1) / (r_(ii) - 1):    0.65  0.65  0.66  0.67  0.67  0.68  0.68  0.68  0.67  0.66  0.64  0.62  0.58  0.52  0.45
+  (r_before - 1) / (r_(iii) - 1):  0.88  0.89  0.89  0.90  0.91  0.92  0.93  0.93  0.94  0.94  0.94  0.93  0.92  0.90  0.88
+  analytic + tile tSZ vs r_before: +0.18% .. +0.66%; masked fraction mean 20.9%
+  SUMMARY r: before 1.120-1.179 (build 1.118-1.176); after 1.024-1.052 (build 1.024-1.051); fraction of (iii) excess before 0.88-0.94 (build (0.86, 0.92)); fraction of (i) excess after 0.55-0.75 (build (0.55, 0.74)); literal binary 1.50-1.85 (build (1.5, 1.85)); CMB+noise width 0.952-0.977 (build (0.957, 0.989))
+  standard error of the tile mean r_after: 0.0006; r_before: 0.0021
+  q > 5 detections before -> after the iteration: 16665 -> 21469 (+28.8%; build 54337 -> 69496 (+27.9%))
+(4b) final detections q > 5: 21469 (214.7 per tile); main: 19818
+  no real cluster (c_p < 2 sigma), of all q > 5                 : own    1.91 +- 0.09   build    1.75   (own - build) / own error = +1.7
+  fragments, of all q > 5                                       : own    5.79 +- 0.16   build    5.65   (own - build) / own error = +0.8
+  Y boosted > 10%, of main                                      : own   10.40 +- 0.22   build   10.62   (own - build) / own error = -1.0
+  Y boosted > 20%, of main                                      : own    5.74 +- 0.17   build    5.90   (own - build) / own error = -1.0
+  detected only thanks to neighbours (isolated search), of main : own    5.92 +- 0.17   build    6.04   (own - build) / own error = -0.7
+    same at the detection's own position and scale              : own    6.84 +- 0.18   build    7.07   (own - build) / own error = -1.3
+  lost (q_alone > 5, not credited), of q_alone > 5              : own    6.37 +- 0.17   build    6.22   (own - build) / own error = +0.9
+  Y lowered by > 10%, of main                                   : own    1.23 +- 0.08   build    1.44   (own - build) / own error = -2.7
+  merges, of main                                               : own    0.46 +- 0.05   build    0.45   (own - build) / own error = +0.2
+  wrong size, of main                                           : own   21.18 +- 0.29   build   21.91   (own - build) / own error = -2.5
+  wrong size among clean main                                   : own   20.06 +- 0.30   build   20.80   (own - build) / own error = -2.5
+  wrong size among Y boosted > 10%                              : own   30.81 +- 1.02   build   31.32   (own - build) / own error = -0.5
+  mean delta / c_p of main: own +3.01% (build +3.08%)
+  forced photometry at the true positions (finder's filter, nearest scale, fdom = 1; q_true > 2): blended 17555, single 17369
+    Y boosted > 10%                                             : own    8.04 +- 0.21   build    8.28   (own - build) / own error = -1.2
+    Y boosted > 20%                                             : own    4.20 +- 0.15   build    4.44   (own - build) / own error = -1.6
+    boosted over the threshold                                  : own    5.65 +- 0.17   build    6.00   (own - build) / own error = -2.0
+    lost (of single)                                            : own    4.63 +- 0.16   build    4.84   (own - build) / own error = -1.3
+    change in detections (blended / single - 1)                 : own    1.07 +- 0.24   build    1.22   (own - build) / own error = -0.6
+  mean Y bias (forced): +1.97%
+  search minus true position: Y > 10% +2.36 pp (build +2.3 / +2.6); lost +1.73 pp (build +1.4 / +1.5); only thanks to neighbours +0.27 pp (build ~0)
+(4c) main detections with a second contributor >= 10% of the primary: 1958 (9.9% of main; build 10.3%)
+  c_B/c_A 0.1-0.25: N = 1089; A has the larger true q in 98%; closer to A in 87%
+     fdom 0.5: A only 84%, B only 0%, both 16%, neither 0%
+     fdom 1.0: A only 75%, B only 0%, both 25%, neither 0%
+     fdom 2.0: A only 61%, B only 0%, both 39%, neither 0%
+  c_B/c_A 0.25-0.5: N = 493; A has the larger true q in 98%; closer to A in 81%
+     fdom 0.5: A only 76%, B only 0%, both 23%, neither 0%
+     fdom 1.0: A only 59%, B only 0%, both 41%, neither 0%
+     fdom 2.0: A only 27%, B only 0%, both 73%, neither 0%
+  c_B/c_A 0.5-1: N = 376; A has the larger true q in 85%; closer to A in 67%
+     fdom 0.5: A only 33%, B only 1%, both 33%, neither 33%
+     fdom 1.0: A only 29%, B only 1%, both 70%, neither 0%
+     fdom 2.0: A only 0%, B only 0%, both 100%, neither 0%
+  effective dominance: halos q_true > 3 with q_alone > 5, by x_max / q_true at the true position (step 1's filter); credited fraction [build]:
+     x_max/q in [0, 0.1): N =  18499, credited  95.00 +- 0.16%   [build 95.25%]
+     x_max/q in [0.1, 0.25): N =    700, credited  97.14 +- 0.63%   [build 96.74%]
+     x_max/q in [0.25, 0.5): N =    162, credited  87.65 +- 2.58%   [build 89.55%]
+     x_max/q in [0.5, 0.75): N =     43, credited  58.14 +- 7.52%   [build 66.91%]
+     x_max/q in [0.75, 1.0): N =     17, credited  41.18 +- 11.94%   [build 27.87%]
+     x_max/q in [1.0, 1.5): N =      6, credited   0.00 +- 0.00%   [build 3.33%]
+     x_max/q in [1.5, 2.0): N =      2, credited   0.00 +- 0.00%
+     x_max/q in [2.0, 4.0): N =      3, credited   0.00 +- 0.00%
+     x_max/q in [4.0, inf): N =      1, credited   0.00 +- 0.00%
+  50% crossing of the credited fraction (logistic fit, x_max/q 0.25-1.5, N = 228): x_max/q = 0.708 +- 0.048 (bootstrap 16-84%; logistic width 0.181)  (build: 'fdom ~ 0.7')
+(4d) count change at q > 5: credited halos vs the unit-noise selection of isolated clusters; tile bootstrap
+  z bins: 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0
+  finder normalisation, OWN selection (own injections): N 19818 vs 19979.0; Delta/N = -0.81 +- 0.38%
+     per z bin: +4.58+-4.02%, -1.27+-0.53%, -0.30+-0.50%, -0.44+-1.15%, -4.32+-2.54%, -9.76+-5.23%
+  finder normalisation, BUILD's selection fit and r_inj: N 19818 vs 20528.5; Delta/N = -3.46 +- 0.37%
+     per z bin: +5.13+-4.16%, -5.01+-0.50%, -2.88+-0.49%, -0.99+-1.12%, -4.42+-2.47%, -9.53+-5.28%
+  finder normalisation, own binned completeness table: N 19818 vs 20140.1; Delta/N = -1.60 +- 0.37%
+     per z bin: +3.65+-4.08%, -2.00+-0.52%, -0.98+-0.48%, -1.53+-1.09%, -5.97+-2.41%, -12.23+-5.07%
+  split 1: credited vs isolated search (neighbours, fixed noise): N 19818 vs 19913.0; Delta/N = -0.48 +- 0.28%
+     per z bin: -2.96+-2.54%, -0.53+-0.41%, -0.55+-0.35%, +0.00+-0.72%, +0.00+-1.80%, -1.16+-3.83%
+  split 2: isolated search vs own unit-noise selection: N 19913 vs 19979.0; Delta/N = -0.33 +- 0.40%
+     per z bin: +7.77+-3.90%, -0.74+-0.55%, +0.25+-0.51%, -0.44+-1.02%, -4.32+-2.58%, -8.69+-5.41%
+  selection-model uncertainty (40 refits): 0.90%; per z bin 1.53%, 0.72%, 1.24%, 1.75%, 1.80%, 2.91%
+  RESULT N1: Delta/N = -0.81 +- 0.38 (tiles) +- 0.90% (selection)   [build -3.39 +- 0.19 +- 0.84%]; difference / combined error = +2.0
+  RESULT N3 (z 2-3): -9.8 +- 6.0%  [build -12.3%]
+  RESULT N2: split 1 -0.48 +- 0.28% [build -0.19]; split 2 -0.33 +- 0.40% (+- 0.90 selection) [build -3.21]
+  with the build's selection fit on the own skies: -3.46 +- 0.37%; own binned table: -1.60% [build's table variant -4.08%]
+  merge none     : credited 19818 (+0.00% vs no merge); Delta/N = -0.81 +- 0.38%  [build -3.39%]; catalogue entries q > 5 21469
+  merge closest1 : credited 19806 (-0.06% vs no merge); Delta/N = -0.87 +- 0.38%  [build -3.50%]; catalogue entries q > 5 20197
+  merge closest2 : credited 19802 (-0.08% vs no merge); Delta/N = -0.89 +- 0.38%  [build -3.53%]; catalogue entries q > 5 20191
+  merge closest10: credited 18446 (-6.92% vs no merge); Delta/N = -7.67 +- 0.35%  [build -10.02%]; catalogue entries q > 5 18789
+  merge fof10    : credited 18361 (-7.35% vs no merge); Delta/N = -8.10 +- 0.36%  [build -10.37%]; catalogue entries q > 5 18698
+  step 2 (f1): Delta/N = +1.28%
+  step 2 (effi): Delta/N = -0.33%
+  step 2 (effii): Delta/N = -0.50%
+  step 2 (effiii): Delta/N = -2.44%
+  compute: per tile and level find 1.7 s, diagnostics 1.2 s, decomposition 7.3 s, forced/isolated 1.8 s; per tile (both levels, painting incl.) 32.2 s; worker peak RSS max 1.42 GB
+
+==================== goal: 100 tiles; r_inj (own injections) 0.9931-0.9981, build 0.9931-0.9982
+(4a) r(theta) = sigma_finder / sigma_Y, mean [tile-to-tile std]
+  theta [']                              0.50    0.64    0.81    1.04    1.32    1.68    2.15    2.74    3.49    4.45    5.68    7.24    9.23   11.76   15.00
+  finder, before iteration             1.1622  1.1710  1.1806  1.1913  1.2033  1.2157  1.2272  1.2369  1.2435  1.2456  1.2422  1.2328  1.2177  1.1982  1.1758
+     std                               0.0135  0.0144  0.0154  0.0166  0.0180  0.0196  0.0212  0.0229  0.0244  0.0256  0.0265  0.0268  0.0265  0.0257  0.0244
+  finder, after iteration              1.0535  1.0559  1.0584  1.0611  1.0639  1.0666  1.0686  1.0697  1.0695  1.0677  1.0640  1.0585  1.0515  1.0434  1.0348
+     std                               0.0032  0.0034  0.0035  0.0036  0.0038  0.0040  0.0042  0.0044  0.0046  0.0048  0.0049  0.0051  0.0052  0.0055  0.0060
+  CMB + noise only, estimated          0.9984  0.9984  0.9983  0.9983  0.9982  0.9981  0.9980  0.9979  0.9977  0.9974  0.9970  0.9965  0.9959  0.9952  0.9943
+     std                               0.0020  0.0020  0.0021  0.0021  0.0022  0.0023  0.0024  0.0025  0.0026  0.0027  0.0029  0.0031  0.0033  0.0036  0.0040
+  analytic CMB+noise + tile tSZ power  1.1642  1.1731  1.1828  1.1936  1.2057  1.2182  1.2299  1.2399  1.2468  1.2492  1.2463  1.2375  1.2231  1.2045  1.1831
+     std                               0.0133  0.0143  0.0153  0.0166  0.0180  0.0196  0.0213  0.0230  0.0245  0.0257  0.0264  0.0266  0.0262  0.0253  0.0239
+  literal binary f_sky iteration       1.9840  2.0168  2.0496  2.0818  2.1099  2.1270  2.1277  2.1093  2.0706  2.0136  1.9432  1.8661  1.7887  1.7154  1.6480
+     std                               0.0444  0.0458  0.0473  0.0486  0.0497  0.0504  0.0504  0.0500  0.0494  0.0489  0.0487  0.0489  0.0493  0.0499  0.0502
+  mask effect on CMB + noise alone     0.9974  0.9973  0.9973  0.9972  0.9971  0.9971  0.9970  0.9969  0.9968  0.9967  0.9966  0.9964  0.9962  0.9958  0.9955
+  pixel std of the CMB+noise S/N maps  0.9514  0.9492  0.9470  0.9445  0.9419  0.9395  0.9376  0.9366  0.9367  0.9384  0.9417  0.9466  0.9530  0.9603  0.9682
+     compare 1 / r_after               0.9492  0.9470  0.9448  0.9424  0.9399  0.9376  0.9358  0.9348  0.9350  0.9366  0.9399  0.9447  0.9511  0.9584  0.9664
+  (r_after - 1) / (r_(i) - 1):     0.79  0.79  0.80  0.80  0.81  0.81  0.82  0.82  0.82  0.81  0.80  0.78  0.75  0.71  0.66
+  (r_after - 1) / (r_(ii) - 1):    0.67  0.68  0.68  0.69  0.69  0.70  0.70  0.70  0.70  0.69  0.67  0.65  0.61  0.57  0.51
+  (r_before - 1) / (r_(iii) - 1):  0.85  0.86  0.87  0.88  0.89  0.90  0.91  0.92  0.93  0.93  0.93  0.92  0.91  0.89  0.87
+  analytic + tile tSZ vs r_before: +0.17% .. +0.62%; masked fraction mean 23.7%
+  SUMMARY r: before 1.162-1.246 (build 1.16-1.242); after 1.035-1.070 (build 1.035-1.069); fraction of (iii) excess before 0.85-0.93 (build (0.84, 0.92)); fraction of (i) excess after 0.66-0.82 (build (0.67, 0.81)); literal binary 1.65-2.13 (build (1.64, 2.13)); CMB+noise width 0.937-0.968 (build (0.941, 0.979))
+  standard error of the tile mean r_after: 0.0006; r_before: 0.0027
+  q > 5 detections before -> after the iteration: 23722 -> 32206 (+35.8%; build 77116 -> 103739 (+34.5%))
+(4b) final detections q > 5: 32206 (322.1 per tile); main: 29952
+  no real cluster (c_p < 2 sigma), of all q > 5                 : own    1.51 +- 0.07   build    1.50   (own - build) / own error = +0.1
+  fragments, of all q > 5                                       : own    5.49 +- 0.13   build    5.44   (own - build) / own error = +0.4
+  Y boosted > 10%, of main                                      : own   11.92 +- 0.19   build   11.96   (own - build) / own error = -0.2
+  Y boosted > 20%, of main                                      : own    6.80 +- 0.15   build    6.80   (own - build) / own error = +0.0
+  detected only thanks to neighbours (isolated search), of main : own    6.33 +- 0.14   build    6.34   (own - build) / own error = -0.0
+    same at the detection's own position and scale              : own    7.35 +- 0.15   build    7.44   (own - build) / own error = -0.6
+  lost (q_alone > 5, not credited), of q_alone > 5              : own    6.48 +- 0.14   build    6.57   (own - build) / own error = -0.7
+  Y lowered by > 10%, of main                                   : own    1.75 +- 0.08   build    1.72   (own - build) / own error = +0.4
+  merges, of main                                               : own    0.65 +- 0.05   build    0.66   (own - build) / own error = -0.1
+  wrong size, of main                                           : own   20.09 +- 0.23   build   20.63   (own - build) / own error = -2.3
+  wrong size among clean main                                   : own   18.70 +- 0.24   build   19.31   (own - build) / own error = -2.5
+  wrong size among Y boosted > 10%                              : own   30.34 +- 0.77   build   30.40   (own - build) / own error = -0.1
+  mean delta / c_p of main: own +3.48% (build +3.53%)
+  forced photometry at the true positions (finder's filter, nearest scale, fdom = 1; q_true > 2): blended 26818, single 26518
+    Y boosted > 10%                                             : own    9.08 +- 0.18   build    9.33   (own - build) / own error = -1.4
+    Y boosted > 20%                                             : own    4.89 +- 0.13   build    5.16   (own - build) / own error = -2.0
+    boosted over the threshold                                  : own    6.13 +- 0.15   build    6.28   (own - build) / own error = -1.0
+    lost (of single)                                            : own    5.07 +- 0.13   build    5.11   (own - build) / own error = -0.3
+    change in detections (blended / single - 1)                 : own    1.13 +- 0.22   build    1.26   (own - build) / own error = -0.6
+  mean Y bias (forced): +2.25%
+  search minus true position: Y > 10% +2.84 pp (build +2.3 / +2.6); lost +1.41 pp (build +1.4 / +1.5); only thanks to neighbours +0.20 pp (build ~0)
+(4c) main detections with a second contributor >= 10% of the primary: 3452 (11.5% of main; build 11.6%)
+  c_B/c_A 0.1-0.25: N = 1926; A has the larger true q in 97%; closer to A in 87%
+     fdom 0.5: A only 82%, B only 0%, both 18%, neither 0%
+     fdom 1.0: A only 74%, B only 0%, both 26%, neither 0%
+     fdom 2.0: A only 59%, B only 0%, both 41%, neither 0%
+  c_B/c_A 0.25-0.5: N = 867; A has the larger true q in 97%; closer to A in 81%
+     fdom 0.5: A only 76%, B only 0%, both 23%, neither 1%
+     fdom 1.0: A only 58%, B only 0%, both 42%, neither 0%
+     fdom 2.0: A only 27%, B only 0%, both 73%, neither 0%
+  c_B/c_A 0.5-1: N = 659; A has the larger true q in 85%; closer to A in 66%
+     fdom 0.5: A only 33%, B only 1%, both 34%, neither 32%
+     fdom 1.0: A only 29%, B only 0%, both 71%, neither 0%
+     fdom 2.0: A only 0%, B only 0%, both 100%, neither 0%
+  effective dominance: halos q_true > 3 with q_alone > 5, by x_max / q_true at the true position (step 1's filter); credited fraction [build]:
+     x_max/q in [0, 0.1): N =  27920, credited  94.62 +- 0.14%   [build 94.63%]
+     x_max/q in [0.1, 0.25): N =   1175, credited  95.83 +- 0.58%   [build 96.35%]
+     x_max/q in [0.25, 0.5): N =    297, credited  83.16 +- 2.17%   [build 87.51%]
+     x_max/q in [0.5, 0.75): N =     86, credited  66.28 +- 5.10%   [build 63.94%]
+     x_max/q in [0.75, 1.0): N =     28, credited  35.71 +- 9.06%   [build 27.18%]
+     x_max/q in [1.0, 1.5): N =     23, credited   0.00 +- 0.00%   [build 0.00%]
+     x_max/q in [1.5, 2.0): N =      3, credited   0.00 +- 0.00%
+     x_max/q in [2.0, 4.0): N =     12, credited   0.00 +- 0.00%
+     x_max/q in [4.0, inf): N =      3, credited   0.00 +- 0.00%
+  50% crossing of the credited fraction (logistic fit, x_max/q 0.25-1.5, N = 434): x_max/q = 0.697 +- 0.027 (bootstrap 16-84%; logistic width 0.205)  (build: 'fdom ~ 0.7')
+(4d) count change at q > 5: credited halos vs the unit-noise selection of isolated clusters; tile bootstrap
+  z bins: 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0
+  finder normalisation, OWN selection (own injections): N 29952 vs 30398.1; Delta/N = -1.47 +- 0.32%
+     per z bin: +0.69+-3.23%, -1.39+-0.46%, -1.22+-0.38%, -1.41+-0.79%, -3.96+-1.60%, -12.22+-4.02%
+  finder normalisation, BUILD's selection fit and r_inj: N 29952 vs 30943.4; Delta/N = -3.20 +- 0.31%
+     per z bin: +1.04+-3.28%, -3.98+-0.42%, -2.98+-0.38%, -1.74+-0.78%, -3.84+-1.62%, -11.22+-4.17%
+  finder normalisation, own binned completeness table: N 29952 vs 30630.6; Delta/N = -2.22 +- 0.32%
+     per z bin: -0.44+-3.22%, -2.09+-0.45%, -1.80+-0.38%, -2.44+-0.78%, -5.57+-1.59%, -14.26+-4.00%
+  split 1: credited vs isolated search (neighbours, fixed noise): N 29952 vs 29998.0; Delta/N = -0.15 +- 0.21%
+     per z bin: -1.46+-2.23%, -0.58+-0.32%, +0.04+-0.30%, +0.65+-0.60%, -1.35+-1.39%, -2.09+-2.99%
+  split 2: isolated search vs own unit-noise selection: N 29998 vs 30398.1; Delta/N = -1.32 +- 0.31%
+     per z bin: +2.18+-3.08%, -0.82+-0.48%, -1.26+-0.35%, -2.05+-0.72%, -2.65+-1.40%, -10.35+-3.97%
+  selection-model uncertainty (40 refits): 0.60%; per z bin 1.13%, 0.64%, 0.75%, 1.04%, 1.27%, 1.80%
+  RESULT N1: Delta/N = -1.47 +- 0.32 (tiles) +- 0.60% (selection)   [build -4.03 +- 0.16 +- 0.95%]; difference / combined error = +2.2
+  RESULT N3 (z 2-3): -12.2 +- 4.4%  [build -10.8%]
+  RESULT N2: split 1 -0.15 +- 0.21% [build -0.24]; split 2 -1.32 +- 0.31% (+- 0.60 selection) [build -3.79]
+  with the build's selection fit on the own skies: -3.20 +- 0.31%; own binned table: -2.22% [build's table variant -4.27%]
+  merge none     : credited 29952 (+0.00% vs no merge); Delta/N = -1.47 +- 0.32%  [build -4.03%]; catalogue entries q > 5 32206
+  merge closest1 : credited 29915 (-0.12% vs no merge); Delta/N = -1.59 +- 0.31%  [build -4.16%]; catalogue entries q > 5 30380
+  merge closest2 : credited 29911 (-0.14% vs no merge); Delta/N = -1.60 +- 0.32%  [build -4.19%]; catalogue entries q > 5 30363
+  merge closest10: credited 26857 (-10.33% vs no merge); Delta/N = -11.65 +- 0.28%  [build -13.93%]; catalogue entries q > 5 27248
+  merge fof10    : credited 26585 (-11.24% vs no merge); Delta/N = -12.54 +- 0.28%  [build -14.68%]; catalogue entries q > 5 26968
+  step 2 (f1): Delta/N = +1.38%
+  step 2 (effi): Delta/N = -0.41%
+  step 2 (effii): Delta/N = -0.68%
+  step 2 (effiii): Delta/N = -3.05%
+  compute: per tile and level find 1.7 s, diagnostics 1.2 s, decomposition 10.4 s, forced/isolated 2.4 s; per tile (both levels, painting incl.) 32.2 s; worker peak RSS max 1.42 GB
+
+SUMMARY own vs build (percent; z = (own - build) / own error):
+  baseline none           own   +1.905 +- 0.093   build   +1.750   z +1.7
+  baseline frag           own   +5.785 +- 0.159   build   +5.650   z +0.8
+  baseline b10            own  +10.400 +- 0.217   build  +10.620   z -1.0
+  baseline b20            own   +5.742 +- 0.165   build   +5.900   z -1.0
+  baseline needs          own   +5.919 +- 0.168   build   +6.040   z -0.7
+  baseline needs_det      own   +6.842 +- 0.179   build   +7.070   z -1.3
+  baseline lost           own   +6.368 +- 0.173   build   +6.220   z +0.9
+  baseline low10          own   +1.226 +- 0.078   build   +1.440   z -2.7
+  baseline merge          own   +0.459 +- 0.048   build   +0.450   z +0.2
+  baseline wrong          own  +21.178 +- 0.290   build  +21.910   z -2.5
+  baseline wrong_clean    own  +20.060 +- 0.301   build  +20.800   z -2.5
+  baseline wrong_b10      own  +30.810 +- 1.017   build  +31.320   z -0.5
+  baseline fp_b10         own   +8.038 +- 0.205   build   +8.280   z -1.2
+  baseline fp_b20         own   +4.198 +- 0.151   build   +4.440   z -1.6
+  baseline fp_boost       own   +5.645 +- 0.174   build   +6.000   z -2.0
+  baseline fp_lost        own   +4.635 +- 0.160   build   +4.840   z -1.3
+  baseline fdom50         own   +0.708 +- 0.048   build   +0.700   z +0.2
+  baseline N1             own   -0.806 +- 0.981   build   -3.390   z +2.6
+  baseline split1         own   -0.477 +- 0.282   build   -0.190   z -1.0
+  baseline split2         own   -0.330 +- 0.989   build   -3.210   z +2.9
+  baseline merge_none     own   +0.000
+  baseline merge_closest1 own   -0.061
+  baseline merge_closest2 own   -0.081
+  baseline merge_closest10 own   -6.923
+  baseline merge_fof10    own   -7.352
+  goal     none           own   +1.509 +- 0.068   build   +1.500   z +0.1
+  goal     frag           own   +5.490 +- 0.127   build   +5.440   z +0.4
+  goal     b10            own  +11.916 +- 0.187   build  +11.960   z -0.2
+  goal     b20            own   +6.801 +- 0.145   build   +6.800   z +0.0
+  goal     needs          own   +6.333 +- 0.141   build   +6.340   z -0.0
+  goal     needs_det      own   +7.345 +- 0.151   build   +7.440   z -0.6
+  goal     lost           own   +6.477 +- 0.142   build   +6.570   z -0.7
+  goal     low10          own   +1.749 +- 0.076   build   +1.720   z +0.4
+  goal     merge          own   +0.654 +- 0.047   build   +0.660   z -0.1
+  goal     wrong          own  +20.089 +- 0.232   build  +20.630   z -2.3
+  goal     wrong_clean    own  +18.701 +- 0.240   build  +19.310   z -2.5
+  goal     wrong_b10      own  +30.345 +- 0.770   build  +30.400   z -0.1
+  goal     fp_b10         own   +9.080 +- 0.175   build   +9.330   z -1.4
+  goal     fp_b20         own   +4.892 +- 0.132   build   +5.160   z -2.0
+  goal     fp_boost       own   +6.134 +- 0.147   build   +6.280   z -1.0
+  goal     fp_lost        own   +5.072 +- 0.135   build   +5.110   z -0.3
+  goal     fdom50         own   +0.697 +- 0.027   build   +0.700   z -0.1
+  goal     N1             own   -1.468 +- 0.679   build   -4.030   z +3.8
+  goal     split1         own   -0.153 +- 0.206   build   -0.240   z +0.4
+  goal     split2         own   -1.316 +- 0.677   build   -3.790   z +3.7
+  goal     merge_none     own   +0.000
+  goal     merge_closest1 own   -0.124
+  goal     merge_closest2 own   -0.137
+  goal     merge_closest10 own  -10.333
+  goal     merge_fof10    own  -11.241
+
+done [56 s]
