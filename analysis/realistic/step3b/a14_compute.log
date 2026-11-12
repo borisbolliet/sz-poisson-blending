@@ -1,0 +1,19 @@
+log                                        wall [s]  CPU [s]  peak/process [GB] processes
+a01_paired_compare.log                           11        9               1.83         1
+a02_cross_pipeline_baseline.log                 221      659               1.76         3
+a02_cross_pipeline_baseline_new400.log         1438     4301               1.75         3
+a03_cross_compare.log                             7        4               1.05         1
+a04_estimators.log                               59       59               2.57         1
+a05_mlboot_check.log                              0        0               0.03         1
+a06_fit_checks.log                              749      748               1.02         1
+a06b_fit_checks_fof.log                         256      482               1.37         2
+a07_sparse_dense.log                              1        1               0.07         1
+a08_kernel_mc.log                               169      168               0.44         1
+a09_misc.log                                     74       73               1.99         1
+a10_pooled.log                                   74       69               4.61         1
+a11_new_tiles.log                                32       29               1.30         1
+a12_painter_check.log                            86      170               1.43         2
+a13_pooled_fits.log                             177      457               1.05         3
+sum over 15 logged runs: wall 3354 s (0.93 h), CPU 7229 s (2.01 CPU-h); first start to last end 0.71 h
+most processes at once: 5; largest sum of processes x per-process peak at once: 10.22 GB (a06b_fit_checks_fof.log, a10_pooled.log, a12_painter_check.log)
+largest per-process peak: 4.61 GB; swaps: 0

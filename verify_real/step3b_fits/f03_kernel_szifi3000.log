@@ -1,0 +1,87 @@
+f03: szifi3000, 24 noise-only tile runs (tiles [np.int64(7), np.int64(34), np.int64(61), np.int64(88), np.int64(115), np.int64(142), np.int64(169), np.int64(196), np.int64(223), np.int64(250), np.int64(277), np.int64(304)]), nodes [(6, 5.0), (12, 6.0), (18, 6.5)], 8 x 12 clusters per node per tile, 1 processes
+  1/24 ('szifi3000', 'baseline', 7): 9 s (finder 2 s); sigma vs build max |rel| 0.0e+00; peak RSS 1.45 GB [10 s]
+  2/24 ('szifi3000', 'goal', 7): 9 s (finder 2 s); sigma vs build max |rel| 0.0e+00; peak RSS 1.50 GB [18 s]
+  3/24 ('szifi3000', 'baseline', 34): 9 s (finder 2 s); sigma vs build max |rel| 0.0e+00; peak RSS 1.52 GB [27 s]
+  4/24 ('szifi3000', 'goal', 34): 8 s (finder 2 s); sigma vs build max |rel| 0.0e+00; peak RSS 1.52 GB [35 s]
+  5/24 ('szifi3000', 'baseline', 61): 8 s (finder 2 s); sigma vs build max |rel| 0.0e+00; peak RSS 1.52 GB [43 s]
+  6/24 ('szifi3000', 'goal', 61): 8 s (finder 2 s); sigma vs build max |rel| 0.0e+00; peak RSS 1.52 GB [51 s]
+  7/24 ('szifi3000', 'baseline', 88): 8 s (finder 2 s); sigma vs build max |rel| 0.0e+00; peak RSS 1.52 GB [59 s]
+  8/24 ('szifi3000', 'goal', 88): 8 s (finder 2 s); sigma vs build max |rel| 0.0e+00; peak RSS 1.52 GB [68 s]
+  9/24 ('szifi3000', 'baseline', 115): 8 s (finder 2 s); sigma vs build max |rel| 0.0e+00; peak RSS 1.52 GB [76 s]
+  10/24 ('szifi3000', 'goal', 115): 8 s (finder 2 s); sigma vs build max |rel| 0.0e+00; peak RSS 1.52 GB [84 s]
+  11/24 ('szifi3000', 'baseline', 142): 8 s (finder 2 s); sigma vs build max |rel| 0.0e+00; peak RSS 1.52 GB [92 s]
+  12/24 ('szifi3000', 'goal', 142): 9 s (finder 2 s); sigma vs build max |rel| 0.0e+00; peak RSS 1.52 GB [101 s]
+  13/24 ('szifi3000', 'baseline', 169): 9 s (finder 2 s); sigma vs build max |rel| 0.0e+00; peak RSS 1.52 GB [110 s]
+  14/24 ('szifi3000', 'goal', 169): 9 s (finder 2 s); sigma vs build max |rel| 0.0e+00; peak RSS 1.52 GB [119 s]
+  15/24 ('szifi3000', 'baseline', 196): 9 s (finder 2 s); sigma vs build max |rel| 0.0e+00; peak RSS 1.52 GB [128 s]
+  16/24 ('szifi3000', 'goal', 196): 9 s (finder 3 s); sigma vs build max |rel| 0.0e+00; peak RSS 1.52 GB [137 s]
+  17/24 ('szifi3000', 'baseline', 223): 8 s (finder 2 s); sigma vs build max |rel| 0.0e+00; peak RSS 1.52 GB [145 s]
+  18/24 ('szifi3000', 'goal', 223): 8 s (finder 2 s); sigma vs build max |rel| 0.0e+00; peak RSS 1.52 GB [153 s]
+  19/24 ('szifi3000', 'baseline', 250): 8 s (finder 2 s); sigma vs build max |rel| 0.0e+00; peak RSS 1.52 GB [160 s]
+  20/24 ('szifi3000', 'goal', 250): 8 s (finder 2 s); sigma vs build max |rel| 0.0e+00; peak RSS 1.52 GB [168 s]
+  21/24 ('szifi3000', 'baseline', 277): 8 s (finder 2 s); sigma vs build max |rel| 0.0e+00; peak RSS 1.52 GB [177 s]
+  22/24 ('szifi3000', 'goal', 277): 9 s (finder 2 s); sigma vs build max |rel| 0.0e+00; peak RSS 1.52 GB [185 s]
+  23/24 ('szifi3000', 'baseline', 304): 9 s (finder 2 s); sigma vs build max |rel| 0.0e+00; peak RSS 1.52 GB [194 s]
+  24/24 ('szifi3000', 'goal', 304): 9 s (finder 2 s); sigma vs build max |rel| 0.0e+00; peak RSS 1.52 GB [203 s]
+
+==== comparison, szifi3000
+  baseline: 12 noise-only tiles; my sigma_finder vs the build's stored sigma of the same tiles: max |rel| 0.0e+00; r(0.5') = 1.0266 +- 0.0030 (tile mean)
+     translation check (cluster painted at a shifted position vs the shifted window): max |diff| / peak = 1.9e-14 (3 nodes)
+  baseline node theta  0.952' q'  5.00 (node): 1152 clusters (build n 555); credited 0.8967; own S/N at the credited peak / q' (median) 0.9460; centre own/q' 0.9758
+      e      :    4.00    5.00    6.00    7.00
+      K mine :  0.8967  0.5642  0.1797  0.0217   (+- 0.0101)
+      K raw  :  0.8991  0.5514  0.1604  0.0144   (+- 0.0142)
+      K table:  0.8991  0.5514  0.1609  0.0144
+      pull raw/table: -0.2/-0.2 +0.5/+0.5 +1.0/+1.0 +1.1/+1.1
+  baseline node theta  3.810' q'  6.00 (node): 1152 clusters (build n 574); credited 0.9905; own S/N at the credited peak / q' (median) 0.9552; centre own/q' 0.9858
+      e      :    5.00    6.00    7.00    7.27
+      K mine :  0.9062  0.5938  0.2274  0.1389   (+- 0.0113)
+      K raw  :  0.9077  0.5819  0.1777  0.1132   (+- 0.0146)
+      K table:  0.9077  0.5819  0.1777  0.1132
+      pull raw/table: -0.1/-0.1 +0.5/+0.5 +2.5/+2.5 +1.5/+1.5
+  baseline node theta 15.239' q'  6.50 (node): 1152 clusters (build n 538); credited 0.9983; own S/N at the credited peak / q' (median) 0.9712; centre own/q' 0.9958
+      e      :    5.00    6.00    7.00    7.27    8.53
+      K mine :  0.9575  0.7483  0.3828  0.2630  0.0252   (+- 0.0128)
+      K raw  :  0.9591  0.7491  0.3717  0.2714  0.0130   (+- 0.0187)
+      K table:  0.9585  0.7491  0.3717  0.2714  0.0165
+      pull raw/table: -0.2/-0.1 -0.0/-0.0 +0.4/+0.4 -0.4/-0.4 +1.8/+1.3
+  goal: 12 noise-only tiles; my sigma_finder vs the build's stored sigma of the same tiles: max |rel| 0.0e+00; r(0.5') = 1.0337 +- 0.0027 (tile mean)
+     translation check (cluster painted at a shifted position vs the shifted window): max |diff| / peak = 2.1e-14 (3 nodes)
+  goal node theta  0.952' q'  5.00 (node): 1152 clusters (build n 571); credited 0.9028; own S/N at the credited peak / q' (median) 0.9475; centre own/q' 0.9780
+      e      :    4.00    5.00    6.00    7.00
+      K mine :  0.9028  0.5651  0.1710  0.0286   (+- 0.0099)
+      K raw  :  0.9019  0.5324  0.1909  0.0210   (+- 0.0145)
+      K table:  0.9019  0.5328  0.1909  0.0210
+      pull raw/table: +0.1/+0.1 +1.3/+1.3 -1.0/-1.0 +1.0/+1.0
+  goal node theta  3.810' q'  6.00 (node): 1152 clusters (build n 519); credited 0.9861; own S/N at the credited peak / q' (median) 0.9555; centre own/q' 0.9852
+      e      :    5.00    6.00    7.00    7.27
+      K mine :  0.8872  0.5729  0.1884  0.1163   (+- 0.0105)
+      K raw  :  0.8825  0.5645  0.1908  0.1175   (+- 0.0157)
+      K table:  0.8833  0.5645  0.1908  0.1175
+      pull raw/table: +0.3/+0.2 +0.3/+0.3 -0.1/-0.1 -0.1/-0.1
+  goal node theta 15.239' q'  6.50 (node): 1152 clusters (build n 507); credited 0.9965; own S/N at the credited peak / q' (median) 0.9702; centre own/q' 0.9945
+      e      :    5.00    6.00    7.00    7.27    8.53
+      K mine :  0.9601  0.7526  0.3819  0.2743  0.0260   (+- 0.0127)
+      K raw  :  0.9487  0.7495  0.3570  0.2663  0.0256   (+- 0.0193)
+      K table:  0.9487  0.7495  0.3570  0.2663  0.0256
+      pull raw/table: +1.0/+1.0 +0.1/+0.1 +1.0/+1.0 +0.3/+0.3 +0.0/+0.0
+  all sensitive (node, edge) pairs, mine vs the build's measured fraction: 26 pulls, mean +0.49, rms 0.89, max |pull| 2.46 (pulls within a node are correlated across edges)
+total 203 s
+      203.39 real       201.53 user         1.26 sys
+          1523417088  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              362888  page reclaims
+                  83  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 119  voluntary context switches
+                4314  involuntary context switches
+       2045731923424  instructions retired
+        614231138219  cycles elapsed
+          1466667200  peak memory footprint

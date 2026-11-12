@@ -1,0 +1,55 @@
+f04: 294 tasks (0 already done), kinds ['lin', 'ml', 'an', 'self'], 3 processes
+   1/294 ['self', 'prod_none', 'baseline', '-', '-', 5.0, 'SO40', 'e'] 49s S8 ml +0.000 (lin +0.000) nev 686 bound [] [from truth +0.000] [51s]
+   2/294 ['self', 'prod_none', 'goal', '-', '-', 5.0, 'SO40', 'd'] 50s S8 ml +0.000 (lin +0.000) nev 686 bound [] [from truth +0.000] [51s]
+   3/294 ['self', 'prod_none', 'baseline', '-', '-', 5.0, 'SO40', 'd'] 50s S8 ml +0.000 (lin +0.000) nev 690 bound [] [from truth +0.000] [51s]
+   4/294 ['ml', 'prod_none', 'baseline', 'build', 'Rs', 5.0, 'SO40', 'd'] 45s S8 ml +0.373 (lin +0.358) nev 650 bound [] [97s]
+   5/294 ['self', 'prod_none', 'goal', '-', '-', 5.0, 'SO40', 'e'] 49s S8 ml +0.000 (lin +0.000) nev 696 bound [] [from truth +0.000] [99s]
+   6/294 ['ml', 'prod_none', 'baseline', 'mine', 'R', 5.0, 'SO40', 'd'] 42s S8 ml +0.454 (lin +0.410) nev 608 bound [] [139s]
+   7/294 ['ml', 'prod_none', 'baseline', 'mine', 'Rs', 5.0, 'SO40', 'd'] 89s S8 ml +0.418 (lin +0.402) nev 1293 bound [] [from truth +0.418] [140s]
+   8/294 ['ml', 'prod_none', 'baseline', 'mine', 'Rp', 5.0, 'SO40', 'd'] 41s S8 ml +0.354 (lin +0.340) nev 609 bound [] [141s]
+   9/294 ['ml', 'prod_none', 'baseline', 'build', 'Rs', 5.0, 'SO40', 'e'] 45s S8 ml +0.491 (lin +0.404) nev 612 bound [] [185s]
+   10/294 ['ml', 'prod_none', 'baseline', 'mine', 'R', 5.0, 'SO40', 'e'] 53s S8 ml +0.888 (lin +0.548) nev 708 bound [] [194s]
+   11/294 ['ml', 'prod_none', 'baseline', 'mine', 'Rp', 5.0, 'SO40', 'e'] 48s S8 ml +0.589 (lin +0.411) nev 656 bound [] [233s]
+   12/294 ['ml', 'prod_none', 'baseline', 'mine', 'Rs', 5.0, 'SO40', 'e'] 117s S8 ml +0.589 (lin +0.483) nev 1618 bound [] [from truth +0.589] [256s]
+   13/294 ['ml', 'prod_none', 'baseline', 'build', 'Rs', 5.0, 'full', 'd'] 44s S8 ml +0.606 (lin +0.569) nev 607 bound [] [278s]
+   14/294 ['ml', 'prod_none', 'baseline', 'mine', 'Rs', 5.0, 'full', 'd'] 92s S8 ml +0.691 (lin +0.657) nev 1294 bound [] [from truth +0.691] [286s]
+   15/294 ['ml', 'prod_none', 'baseline', 'mine', 'R', 5.0, 'full', 'd'] 49s S8 ml +0.932 (lin +0.703) nev 617 bound [] [304s]
+   16/294 ['ml', 'prod_none', 'baseline', 'mine', 'Rp', 5.0, 'full', 'd'] 51s S8 ml +0.614 (lin +0.557) nev 637 bound [] [328s]
+   17/294 ['ml', 'prod_none', 'baseline', 'build', 'Rs', 5.0, 'full', 'e'] 49s S8 ml +0.776 (lin +0.639) nev 616 bound [] [353s]
+   18/294 ['ml', 'prod_none', 'baseline', 'mine', 'Rp', 5.0, 'full', 'e'] 53s S8 ml +0.931 (lin +0.649) nev 628 bound [] [406s]
+   19/294 ['ml', 'prod_none', 'baseline', 'mine', 'R', 5.0, 'full', 'e'] 81s S8 ml +1.404 (lin +0.867) nev 951 bound [] [410s]
+   20/294 ['ml', 'prod_none', 'baseline', 'mine', 'Rs', 5.0, 'full', 'e'] 131s S8 ml +0.931 (lin +0.764) nev 1610 bound [] [from truth +0.931] [417s]
+   21/294 ['ml', 'prod_none', 'baseline', 'mine', 'Rs', 6.0, 'SO40', 'd'] 48s S8 ml +0.103 (lin +0.102) nev 610 bound [] [454s]
+   22/294 ['ml', 'prod_none', 'baseline', 'build', 'Rs', 6.0, 'SO40', 'd'] 51s S8 ml +0.061 (lin +0.061) nev 637 bound [] [461s]
+   23/294 ['ml', 'prod_none', 'baseline', 'mine', 'Rs', 6.0, 'SO40', 'e'] 47s S8 ml +0.177 (lin +0.160) nev 594 bound [] [465s]
+   24/294 ['ml', 'prod_none', 'baseline', 'build', 'Rs', 6.0, 'SO40', 'e'] 47s S8 ml +0.122 (lin +0.113) nev 591 bound [] [501s]
+   25/294 ['ml', 'prod_none', 'baseline', 'mine', 'Rs', 6.0, 'full', 'd'] 46s S8 ml +0.188 (lin +0.183) nev 583 bound [] [506s]
+   26/294 ['ml', 'prod_none', 'baseline', 'build', 'Rs', 6.0, 'full', 'd'] 47s S8 ml +0.122 (lin +0.118) nev 593 bound [] [512s]
+   27/294 ['ml', 'prod_none', 'baseline', 'build', 'Rs', 6.0, 'full', 'e'] 50s S8 ml +0.193 (lin +0.178) nev 577 bound [] [557s]
+   28/294 ['ml', 'prod_none', 'baseline', 'mine', 'Rs', 6.0, 'full', 'e'] 73s S8 ml +0.280 (lin +0.253) nev 850 bound [] [574s]
+   29/294 ['ml', 'prod_none', 'goal', 'build', 'Rs', 5.0, 'SO40', 'd'] 51s S8 ml +0.676 (lin +0.644) nev 687 bound [] [608s]
+   30/294 ['ml', 'prod_none', 'goal', 'mine', 'R', 5.0, 'SO40', 'd'] 44s S8 ml +0.867 (lin +0.823) nev 597 bound [] [617s]
+   31/294 ['ml', 'prod_none', 'goal', 'mine', 'Rs', 5.0, 'SO40', 'd'] 111s S8 ml +0.710 (lin +0.679) nev 1437 bound [] [from truth +0.710] [623s]
+   32/294 ['ml', 'prod_none', 'goal', 'mine', 'Rp', 5.0, 'SO40', 'd'] 45s S8 ml +0.689 (lin +0.661) nev 682 bound [] [653s]
+   33/294 ['ml', 'prod_none', 'goal', 'build', 'Rs', 5.0, 'SO40', 'e'] 47s S8 ml +0.720 (lin +0.627) nev 717 bound [] [670s]
+time: command terminated abnormally
+      675.74 real         0.70 user         0.21 sys
+           102072320  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               27410  page reclaims
+                 206  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1187  voluntary context switches
+                1170  involuntary context switches
+          7174880839  instructions retired
+          2699230446  cycles elapsed
+            76891392  peak memory footprint
+/opt/homebrew/Cellar/python@3.12/3.12.9/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/resource_tracker.py:255: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

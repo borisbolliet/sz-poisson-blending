@@ -1,0 +1,21 @@
+a12: the verifier's tiles 0..23 (baseline) painted with the build's painter, against the NUFFT-painted a02 runs
+  credited halos at q > 5: both 4742, only with the build's painter 1, only with the NUFFT painter 0; q_obs (credited in both): mean difference +7.10e-04, rms 1.96e-03, max |.| 3.59e-02 (4742 halos); max |sigma ratio - 1| 1.4e-04
+a12 done in 86 s
+       86.32 real       168.72 user         1.64 sys
+          1429504000  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              368156  page reclaims
+                 384  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1085  voluntary context switches
+                9493  involuntary context switches
+          4757689623  instructions retired
+          1989300716  cycles elapsed
+            77891008  peak memory footprint

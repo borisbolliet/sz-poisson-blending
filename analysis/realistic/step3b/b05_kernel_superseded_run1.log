@@ -1,0 +1,47 @@
+==================== prod / baseline: 1296000 virtual clusters on 324 noise-only tiles (51840 per theta node)
+  noise-only tiles: r = sigma_finder / sigma_Y after the iteration at 0.5' / 4.45' / 15': 0.9948 / 0.9925 / 0.9891 (tile-to-tile std 0.0023)
+  noise peaks per 100 deg^2 (final catalogue), q > 4 / 4.5 / 5, merge none / closest 1' / fof 10': 50.98 / 7.69 / 0.82; 46.62 / 7.15 / 0.78; 45.67 / 7.11 / 0.78
+  credit limit: credited fraction (q_obs > 4) at q' = 1, 1.5, 1.75, max over theta nodes: 0.0000, 0.0000, 0.0000 (40316 clusters); at q' = 2: 0.0000
+  clusters per (theta, q') node: q' 2-10: 435-611 (mean 533); q' 10.5-27.5: 147-239; log-uniform (model) per theta node: 7444-7797
+  Monte Carlo error of K(e = 5) at the q' 2-10 nodes: median 0.0072, max 0.0227
+  monotone fix (PAVA): max |K - measured| over the measured nodes 0.0325; in units of the binomial error: max 6.19
+  model (lambda q' + eps) vs measured nodes q' 20-27.5: pulls over all theta nodes and edges: rms 0.35, max |pull| 8.28 (7600 comparisons)
+  model self-consistency in log-q' bins (25-400; edges >= 22): observed - model fraction: max |.| 0.121, rms 0.0167
+  log-uniform clusters (q' 25-400): not credited 0; efficiency lambda per node (median): 0.969 0.976 0.982 0.987 0.993 0.970 0.807 (nodes [0.24, 0.6, 1.51, 3.81, 9.6, 24.19, 60.96]); eps mean +0.038, std 1.008
+  window check (tiles 0-7, 2x window): q_obs identical for 32000 of 32000 clusters; changed across q = 5: 0; max |dq| 0.00e+00
+  accuracy of the virtual response (tile 0, 2 clusters per node, +-2W window): max |virtual - exact| / peak = 4.9e-04 (angle-averaged tables alone: 3.6e-03; at theta <= 2.4': 8.3e-04)
+  half-split: N_exp(q > 5) over the realistic halos with the full / even-tile / odd-tile kernels: 65346.9 / 64968.7 / 65678.3; even/odd - 1 = -1.081% -> Monte Carlo error of the full kernel's N_exp ~ 0.540%; per coarse z bin (even/odd - 1): +0.19%, -0.30%, -1.48%, -1.98%, -1.40%, -0.25%
+  saved kernel_prod_baseline.npz [9 s]
+==================== prod / goal: 1296000 virtual clusters on 324 noise-only tiles (51840 per theta node)
+  noise-only tiles: r = sigma_finder / sigma_Y after the iteration at 0.5' / 4.45' / 15': 0.9950 / 0.9927 / 0.9895 (tile-to-tile std 0.0021)
+  noise peaks per 100 deg^2 (final catalogue), q > 4 / 4.5 / 5, merge none / closest 1' / fof 10': 55.43 / 8.35 / 0.87; 50.70 / 7.77 / 0.83; 49.63 / 7.75 / 0.83
+  credit limit: credited fraction (q_obs > 4) at q' = 1, 1.5, 1.75, max over theta nodes: 0.0000, 0.0000, 0.0000 (39787 clusters); at q' = 2: 0.0000
+  clusters per (theta, q') node: q' 2-10: 456-617 (mean 533); q' 10.5-27.5: 149-237; log-uniform (model) per theta node: 7381-7844
+  Monte Carlo error of K(e = 5) at the q' 2-10 nodes: median 0.0069, max 0.0228
+  monotone fix (PAVA): max |K - measured| over the measured nodes 0.0272; in units of the binomial error: max 7.50
+  model (lambda q' + eps) vs measured nodes q' 20-27.5: pulls over all theta nodes and edges: rms 0.33, max |pull| 5.18 (7600 comparisons)
+  model self-consistency in log-q' bins (25-400; edges >= 22): observed - model fraction: max |.| 0.162, rms 0.0196
+  log-uniform clusters (q' 25-400): not credited 0; efficiency lambda per node (median): 0.965 0.974 0.980 0.985 0.992 0.971 0.814 (nodes [0.24, 0.6, 1.51, 3.81, 9.6, 24.19, 60.96]); eps mean +0.037, std 1.007
+  window check (tiles 0-7, 2x window): q_obs identical for 32000 of 32000 clusters; changed across q = 5: 0; max |dq| 0.00e+00
+  accuracy of the virtual response (tile 0, 2 clusters per node, +-2W window): max |virtual - exact| / peak = 5.7e-04 (angle-averaged tables alone: 3.5e-03; at theta <= 2.4': 8.5e-04)
+  half-split: N_exp(q > 5) over the realistic halos with the full / even-tile / odd-tile kernels: 98986.5 / 99154.2 / 98788.6; even/odd - 1 = +0.370% -> Monte Carlo error of the full kernel's N_exp ~ 0.185%; per coarse z bin (even/odd - 1): +1.05%, +0.61%, +0.03%, +0.76%, +0.12%, +2.45%
+  saved kernel_prod_goal.npz [9 s]
+done [19 s]; peak RSS 0.28 GB
+       19.36 real        18.47 user         0.58 sys
+           319782912  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               37985  page reclaims
+                 217  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                3197  voluntary context switches
+                1729  involuntary context switches
+        240339108554  instructions retired
+         58132157074  cycles elapsed
+           290899904  peak memory footprint

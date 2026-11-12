@@ -1,0 +1,26 @@
+b04: dense injections (a02 design) on noise-only tiles 0..119 x ('baseline', 'goal'), 1 processes
+  (0, 'baseline'): 8.0 s, worker peak RSS 1.66 GB [elapsed 9 s]
+  (20, 'baseline'): 8.0 s, worker peak RSS 1.65 GB [elapsed 141 s]
+  (40, 'baseline'): 7.9 s, worker peak RSS 1.65 GB [elapsed 276 s]
+  (60, 'baseline'): 7.6 s, worker peak RSS 1.65 GB [elapsed 409 s]
+  (80, 'baseline'): 7.7 s, worker peak RSS 1.65 GB [elapsed 542 s]
+  (100, 'baseline'): 7.7 s, worker peak RSS 1.65 GB [elapsed 674 s]
+b04 done: 240 jobs in 798 s wall; largest worker peak RSS 1.68 GB
+      799.03 real       791.73 user         5.86 sys
+          1683816448  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1469688  page reclaims
+                1245  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                5077  voluntary context switches
+               16238  involuntary context switches
+          4845705707  instructions retired
+          2401292283  cycles elapsed
+            78054976  peak memory footprint

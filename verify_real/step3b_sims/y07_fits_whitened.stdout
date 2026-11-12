@@ -1,0 +1,159 @@
+y07 [whitened]: 114 ML fits on 3 processes
+  [1/114] baseline q5 Rs          a full: S8 -4.189 (lin -4.158) Om -2.227 s8 +0.878 | chi2 23.23 power 0.373 | polish shift 0.000 at bound [] [4s] [elapsed 5s]
+  [2/114] baseline q5 Rs          a SO40: S8 -2.649 (lin -2.630) Om -1.408 s8 +0.555 | chi2 9.29 power 0.139 | polish shift 0.000 at bound [] [7s] [elapsed 8s]
+  [3/114] baseline q5 Rs          d full: S8 +0.243 (lin +0.219) Om +0.154 s8 +0.362 omb:-0.11 alpha:+1.43 slnY:+0.12 | chi2 15.16 power 0.228 | polish shift 0.000 at bound [] [9s] [elapsed 14s]
+  [4/114] baseline q5 Rs          d SO40: S8 +0.157 (lin +0.148) Om +0.085 s8 +0.232 omb:-0.05 alpha:+0.95 slnY:+0.06 | chi2 6.07 power 0.102 | polish shift 0.000 at bound [] [15s] [elapsed 16s]
+  [5/114] baseline q5 Rs          e full: S8 +0.281 (lin +0.228) Om +0.221 s8 +0.382 omb:-0.19 alpha:+1.29 slnY:+0.16 | chi2 15.15 power 0.228 | polish shift 0.000 at bound [] [8s] [elapsed 22s]
+  [6/114] baseline q5 Rs          e SO40: S8 +0.177 (lin +0.144) Om +0.140 s8 +0.242 omb:-0.12 alpha:+0.81 slnY:+0.10 | chi2 6.06 power 0.102 | polish shift 0.000 at bound [] [16s] [elapsed 23s]
+  [7/114] baseline q5 Rp          a SO40: S8 -2.655 (lin -2.635) Om -1.471 s8 +0.642 | chi2 11.07 power 0.163 | polish shift 0.000 at bound [] [8s] [elapsed 24s]
+  [8/114] baseline q5 Rp          a full: S8 -4.198 (lin -4.167) Om -2.325 s8 +1.015 | chi2 27.67 power 0.462 | polish shift 0.000 at bound [] [5s] [elapsed 27s]
+  [9/114] baseline q5 Rp          d SO40: S8 +0.109 (lin +0.102) Om +0.026 s8 +0.213 omb:-0.01 alpha:+0.90 slnY:+0.07 | chi2 7.94 power 0.123 | polish shift 0.000 at bound [] [15s] [elapsed 38s]
+  [10/114] baseline q5 Rp          d full: S8 +0.144 (lin +0.129) Om +0.043 s8 +0.305 omb:-0.03 alpha:+1.34 slnY:+0.12 | chi2 19.86 power 0.312 | polish shift 0.000 at bound [] [15s] [elapsed 39s]
+  [11/114] baseline q5 Rp          e SO40: S8 +0.077 (lin +0.060) Om +0.035 s8 +0.162 omb:-0.03 alpha:+0.72 slnY:+0.08 | chi2 7.94 power 0.123 | polish shift 0.000 at bound [] [14s] [elapsed 41s]
+  [12/114] baseline q5 R           a SO40: S8 -2.730 (lin -2.706) Om -2.013 s8 +1.383 | chi2 14.65 power 0.217 | polish shift 0.000 at bound [] [3s] [elapsed 42s]
+  [13/114] baseline q5 R           a full: S8 -4.316 (lin -4.279) Om -3.182 s8 +2.187 | chi2 36.63 power 0.635 | polish shift 0.000 at bound [] [6s] [elapsed 47s]
+  [14/114] baseline q5 R           d SO40: S8 -0.073 (lin -0.076) Om -0.277 s8 +0.269 omb:+0.08 alpha:+0.58 slnY:+0.11 | chi2 12.90 power 0.192 | polish shift 0.000 at bound [] [7s] [elapsed 49s]
+  [15/114] baseline q5 Rp          e full: S8 +0.122 (lin +0.095) Om +0.055 s8 +0.256 omb:-0.04 alpha:+1.14 slnY:+0.12 | chi2 19.86 power 0.312 | polish shift 0.000 at bound [] [13s] [elapsed 52s]
+  [16/114] baseline q5 R           d full: S8 -0.163 (lin -0.171) Om -0.403 s8 +0.315 omb:+0.17 alpha:+0.81 slnY:+0.14 | chi2 32.22 power 0.558 | polish shift 0.000 at bound [] [6s] [elapsed 53s]
+  [17/114] baseline q5 R           e SO40: S8 -0.161 (lin -0.174) Om -0.259 s8 +0.070 omb:+0.17 alpha:+0.36 slnY:+0.04 | chi2 12.88 power 0.191 | polish shift 0.000 at bound [] [7s] [elapsed 56s]
+  [18/114] goal     q5 Rs          a SO40: S8 -4.477 (lin -4.432) Om -2.554 s8 +1.217 | chi2 17.78 power 0.271 | polish shift 0.000 at bound [] [6s] [elapsed 59s]
+  [19/114] goal     q5 Rs          a full: S8 -7.079 (lin -7.007) Om -4.039 s8 +1.923 | chi2 44.46 power 0.762 | polish shift 0.000 at bound [] [4s] [elapsed 60s]
+  [20/114] baseline q5 R           e full: S8 -0.255 (lin -0.276) Om -0.409 s8 +0.110 omb:+0.26 alpha:+0.57 slnY:+0.06 | chi2 32.20 power 0.558 | polish shift 0.000 at bound [] [15s] [elapsed 66s]
+  [21/114] goal     q5 Rs          d full: S8 +1.008 (lin +0.894) Om +0.554 s8 +1.726 omb:-0.33 alpha:+3.31 slnY:-1.29 | chi2 18.86 power 0.294 | polish shift 0.000 at bound [] [8s] [elapsed 69s]
+  [22/114] goal     q5 Rs          d SO40: S8 +0.686 (lin +0.634) Om +0.331 s8 +1.153 omb:-0.15 alpha:+2.20 slnY:-0.86 | chi2 7.57 power 0.119 | polish shift 0.000 at bound [] [10s] [elapsed 69s]
+  [23/114] goal     q5 Rs          e SO40: S8 +0.643 (lin +0.521) Om +0.426 s8 +1.047 omb:-0.32 alpha:+1.95 slnY:-0.71 | chi2 7.52 power 0.118 | polish shift 0.000 at bound [] [8s] [elapsed 74s]
+  [24/114] goal     q5 Rp          a SO40: S8 -4.423 (lin -4.380) Om -2.561 s8 +1.256 | chi2 20.43 power 0.319 | polish shift 0.000 at bound [] [6s] [elapsed 75s]
+  [25/114] goal     q5 Rs          e full: S8 +1.017 (lin +0.823) Om +0.673 s8 +1.655 omb:-0.50 alpha:+3.08 slnY:-1.12 | chi2 18.80 power 0.293 | polish shift 0.000 at bound [] [10s] [elapsed 78s]
+  [26/114] goal     q5 Rp          a full: S8 -6.993 (lin -6.925) Om -4.050 s8 +1.986 | chi2 51.08 power 0.844 | polish shift 0.000 at bound [] [7s] [elapsed 81s]
+  [27/114] goal     q5 Rp          d SO40: S8 +0.618 (lin +0.581) Om +0.298 s8 +1.038 omb:-0.16 alpha:+2.06 slnY:-0.63 | chi2 10.74 power 0.160 | polish shift 0.000 at bound [] [11s] [elapsed 86s]
+  [28/114] goal     q5 Rp          d full: S8 +0.918 (lin +0.840) Om +0.510 s8 +1.562 omb:-0.33 alpha:+3.09 slnY:-0.93 | chi2 26.80 power 0.450 | polish shift 0.000 at bound [] [11s] [elapsed 90s]
+  [29/114] goal     q5 Rp          e SO40: S8 +0.587 (lin +0.508) Om +0.391 s8 +0.948 omb:-0.30 alpha:+1.82 slnY:-0.50 | chi2 10.70 power 0.159 | polish shift 0.000 at bound [] [9s] [elapsed 91s]
+  [30/114] goal     q5 R           a full: S8 -7.172 (lin -7.096) Om -4.422 s8 +2.422 | chi2 62.06 power 0.931 | polish shift 0.000 at bound [] [3s] [elapsed 94s]
+  [31/114] goal     q5 R           a SO40: S8 -4.536 (lin -4.488) Om -2.797 s8 +1.532 | chi2 24.82 power 0.405 | polish shift 0.000 at bound [] [6s] [elapsed 96s]
+  [32/114] goal     q5 Rp          e full: S8 +0.928 (lin +0.803) Om +0.618 s8 +1.499 omb:-0.48 alpha:+2.88 slnY:-0.80 | chi2 26.74 power 0.449 | polish shift 0.000 at bound [] [19s] [elapsed 105s]
+  [33/114] goal     q5 R           d SO40: S8 +0.826 (lin +0.763) Om +0.479 s8 +1.248 omb:-0.43 alpha:+2.08 slnY:-0.51 | chi2 16.06 power 0.243 | polish shift 0.000 at bound [] [11s] [elapsed 105s]
+  [34/114] goal     q5 R           d full: S8 +1.437 (lin +1.274) Om +0.993 s8 +2.062 omb:-0.91 alpha:+3.30 slnY:-0.68 | chi2 39.72 power 0.695 | polish shift 0.000 at bound [] [10s] [elapsed 106s]
+  [35/114] baseline q6 Rs          a SO40: S8 -1.007 (lin -1.004) Om -0.913 s8 +0.758 | chi2 2.60 power 0.069 | polish shift 0.000 at bound [] [11s] [elapsed 118s]
+  [36/114] goal     q5 R           e SO40: S8 +1.068 (lin +0.925) Om +0.854 s8 +1.415 omb:-0.78 alpha:+2.12 slnY:-0.29 | chi2 15.74 power 0.238 | polish shift 0.000 at bound [] [15s] [elapsed 121s]
+  [37/114] goal     q5 R           e full: S8 +1.689 (lin +1.463) Om +1.350 s8 +2.237 omb:-1.24 alpha:+3.35 slnY:-0.45 | chi2 39.36 power 0.689 | polish shift 0.000 at bound [] [16s] [elapsed 123s]
+  [38/114] baseline q6 Rs          d SO40: S8 +0.227 (lin +0.222) Om -0.035 s8 +0.540 omb:-0.06 alpha:+0.53 slnY:-0.38 | chi2 2.28 power 0.067 | polish shift 0.000 at bound [] [10s] [elapsed 128s]
+  [39/114] goal     q6 Rs          a SO40: S8 -1.482 (lin -1.475) Om -0.932 s8 +0.519 | chi2 5.05 power 0.091 | polish shift 0.000 at bound [] [13s] [elapsed 136s]
+  [40/114] baseline q6 Rs          e SO40: S8 +0.243 (lin +0.224) Om +0.130 s8 +0.463 omb:-0.17 alpha:+0.50 slnY:-0.25 | chi2 2.26 power 0.067 | polish shift 0.000 at bound [] [17s] [elapsed 138s]
+  [41/114] goal     q6 Rs          e SO40: S8 +0.192 (lin +0.174) Om +0.165 s8 +0.230 omb:-0.17 alpha:+0.50 slnY:+0.15 | chi2 3.90 power 0.081 | polish shift 0.000 at bound [] [9s] [elapsed 144s]
+  [42/114] baseline q5 self        a SO40: S8 +0.000 (lin +0.000) Om +0.000 s8 +0.000 | chi2 0.00 power 0.050 | polish shift 0.000 at bound [] [5s] [elapsed 145s]
+  [43/114] goal     q6 Rs          d SO40: S8 +0.106 (lin +0.104) Om +0.054 s8 +0.164 omb:-0.08 alpha:+0.51 slnY:+0.11 | chi2 3.91 power 0.081 | polish shift 0.000 at bound [] [18s] [elapsed 146s]
+  [44/114] goal     q5 self        a SO40: S8 +0.000 (lin +0.000) Om +0.000 s8 +0.000 | chi2 0.00 power 0.050 | polish shift 0.000 at bound [] [4s] [elapsed 149s]
+  [45/114] baseline q5 self        d SO40: S8 +0.000 (lin +0.000) Om +0.000 s8 +0.000 omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2 0.00 power 0.050 | polish shift 0.000 at bound [] [9s] [elapsed 154s]
+  [46/114] goal     q5 self        d SO40: S8 +0.000 (lin +0.000) Om +0.000 s8 +0.000 omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2 0.00 power 0.050 | polish shift 0.000 at bound [] [9s] [elapsed 156s]
+  [47/114] baseline q5 Rs_closest1 d SO40: S8 +0.184 (lin +0.172) Om +0.095 s8 +0.280 omb:-0.05 alpha:+1.04 slnY:+0.03 | chi2 6.31 power 0.105 | polish shift 0.000 at bound [] [16s] [elapsed 165s]
+  [48/114] baseline q5 Rs_fof10    d SO40: S8 +1.143 (lin +0.871) Om +0.609 s8 +1.703 omb:-0.47 alpha:+5.32 slnY:-0.34 | chi2 46.44 power 0.794 | polish shift 0.000 at bound [] [14s] [elapsed 168s]
+  [49/114] goal     q5 Rs_fof10    d SO40: S8 +2.762 (lin +1.843) Om +1.540 s8 +4.232 omb:-1.29 alpha:+9.85 slnY:-2.45 | chi2 101.09 power 0.999 | polish shift 0.000 at bound ['slnY'] [4s] [elapsed 172s]
+  [50/114] goal     q5 Rp_keepnr   d SO40: S8 +0.117 (lin +0.112) Om -0.071 s8 +0.417 omb:-0.09 alpha:+0.40 slnY:-0.05 | chi2 5.87 power 0.100 | polish shift 0.000 at bound [] [13s] [elapsed 185s]
+  [51/114] baseline q5 Rs_fof10    a SO40: S8 -14.377 (lin -13.809) Om -6.985 s8 +2.200 | chi2 118.57 power 1.000 | polish shift 0.000 at bound [] [3s] [elapsed 188s]
+  [52/114] goal     q5 Rs_closest1 d SO40: S8 +0.709 (lin +0.653) Om +0.345 s8 +1.187 omb:-0.17 alpha:+2.29 slnY:-0.87 | chi2 8.07 power 0.125 | polish shift 0.000 at bound [] [26s] [elapsed 191s]
+  [53/114] goal     q5 Rs_fof10    a SO40: S8 -26.496 (lin -24.929) Om -12.955 s8 +4.526 | chi2 320.59 power 1.000 | polish shift 0.001 at bound [] [3s] [elapsed 191s]
+  [54/114] baseline q5 an0_cat     a SO40: S8 +12.844 (lin +13.370) Om +7.416 s8 -3.277 | chi2 108.44 power 0.999 | polish shift 0.000 at bound [] [3s] [elapsed 194s]
+  [55/114] baseline q5 Rp_keepnr   d SO40: S8 -0.353 (lin -0.356) Om -0.371 s8 -0.240 omb:+0.02 alpha:-0.75 slnY:+0.43 | chi2 5.44 power 0.096 | polish shift 0.000 at bound [] [44s] [elapsed 199s]
+  [56/114] baseline q5 an0_iso     a SO40: S8 +15.364 (lin +16.122) Om +8.846 s8 -3.841 | chi2 167.42 power 1.000 | polish shift 0.001 at bound [] [5s] [elapsed 204s]
+  [57/114] baseline q5 an0_cat     d SO40: S8 -0.912 (lin -1.189) Om -0.245 s8 -1.710 omb:+0.02 alpha:-4.92 slnY:+0.43 | chi2 27.32 power 0.460 | polish shift 0.000 at bound [] [20s] [elapsed 212s]
+  [58/114] baseline q5 an0_cat     e SO40: S8 -0.466 (lin -0.890) Om -0.134 s8 -1.135 omb:+0.03 alpha:-3.79 slnY:+0.38 | chi2 27.32 power 0.460 | polish shift 0.000 at bound [] [25s] [elapsed 219s]
+  [59/114] baseline q5 an2_cat     a SO40: S8 -1.156 (lin -1.168) Om +1.423 s8 -2.649 | chi2 4.39 power 0.085 | polish shift 0.000 at bound [] [6s] [elapsed 225s]
+  [60/114] baseline q5 an2_cat     d SO40: S8 -0.097 (lin -0.103) Om +0.360 s8 -0.781 omb:+0.00 alpha:+0.06 slnY:+0.20 | chi2 4.17 power 0.083 | polish shift 0.000 at bound [] [10s] [elapsed 235s]
+  [61/114] baseline q5 an0_iso     d SO40: S8 -1.011 (lin -1.408) Om -0.275 s8 -1.891 omb:+0.00 alpha:-5.75 slnY:+0.39 | chi2 49.73 power 0.834 | polish shift 0.000 at bound [] [33s] [elapsed 237s]
+  [62/114] baseline q5 an2_iso     a SO40: S8 +1.488 (lin +1.489) Om +2.878 s8 -3.235 | chi2 3.96 power 0.081 | polish shift 0.000 at bound [] [4s] [elapsed 241s]
+  [63/114] baseline q5 an2_cat     e SO40: S8 -0.056 (lin -0.049) Om +0.168 s8 -0.528 omb:+0.01 alpha:+0.04 slnY:+0.18 | chi2 4.17 power 0.083 | polish shift 0.000 at bound [] [12s] [elapsed 247s]
+  [64/114] baseline q5 an2_iso     d SO40: S8 -0.283 (lin -0.306) Om +0.255 s8 -1.051 omb:+0.07 alpha:-0.91 slnY:+0.17 | chi2 1.98 power 0.064 | polish shift 0.000 at bound [] [9s] [elapsed 250s]
+  [65/114] baseline q5 an0_iso     e SO40: S8 -0.497 (lin -1.123) Om -0.130 s8 -1.241 omb:+0.00 alpha:-4.41 slnY:+0.35 | chi2 49.73 power 0.834 | polish shift 0.000 at bound [] [42s] [elapsed 253s]
+  [66/114] baseline q5 an2_iso     e SO40: S8 -0.248 (lin -0.279) Om +0.016 s8 -0.788 omb:+0.14 alpha:-0.78 slnY:+0.11 | chi2 1.96 power 0.064 | polish shift 0.000 at bound [] [7s] [elapsed 253s]
+  [67/114] baseline q5 an3_cat     a SO40: S8 -9.371 (lin -9.206) Om -1.989 s8 -2.306 | chi2 52.24 power 0.856 | polish shift 0.000 at bound [] [11s] [elapsed 262s]
+  [68/114] baseline q5 an3_cat     e SO40: S8 +0.594 (lin +0.440) Om +0.736 s8 +0.240 omb:-0.38 alpha:+2.74 slnY:+0.08 | chi2 21.26 power 0.339 | polish shift 0.000 at bound [] [15s] [elapsed 268s]
+  [69/114] baseline q5 an3_cat     d SO40: S8 +0.528 (lin +0.437) Om +0.834 s8 -0.069 omb:-0.16 alpha:+3.19 slnY:-0.02 | chi2 21.34 power 0.341 | polish shift 0.000 at bound [] [17s] [elapsed 270s]
+  [70/114] baseline q5 an3_iso     a SO40: S8 -6.663 (lin -6.600) Om -0.529 s8 -2.899 | chi2 21.29 power 0.336 | polish shift 0.000 at bound [] [9s] [elapsed 271s]
+  [71/114] baseline q5 an3_iso     d SO40: S8 +0.288 (lin +0.244) Om +0.687 s8 -0.400 omb:-0.05 alpha:+2.12 slnY:-0.04 | chi2 7.10 power 0.114 | polish shift 0.000 at bound [] [7s] [elapsed 275s]
+  [72/114] goal     q5 an0_cat     a SO40: S8 +13.274 (lin +13.718) Om +7.823 s8 -3.702 | chi2 136.41 power 1.000 | polish shift 0.000 at bound [] [5s] [elapsed 277s]
+  [73/114] baseline q5 an3_iso     e SO40: S8 +0.242 (lin +0.212) Om +0.436 s8 -0.189 omb:-0.11 alpha:+1.72 slnY:-0.00 | chi2 7.09 power 0.113 | polish shift 0.000 at bound [] [18s] [elapsed 288s]
+  [74/114] goal     q5 an0_iso     a SO40: S8 +17.550 (lin +18.342) Om +10.437 s8 -4.938 | chi2 242.27 power 1.000 | polish shift 0.000 at bound [] [6s] [elapsed 296s]
+  [75/114] goal     q5 an0_cat     e SO40: S8 -1.076 (lin -1.719) Om -0.766 s8 -1.654 omb:+0.63 alpha:-4.31 slnY:-0.02 | chi2 40.43 power 0.706 | polish shift 0.000 at bound [] [32s] [elapsed 309s]
+  [76/114] goal     q5 an0_iso     d SO40: S8 -1.719 (lin -2.339) Om -0.875 s8 -2.790 omb:+0.37 alpha:-7.00 slnY:+0.62 | chi2 72.62 power 0.974 | polish shift 0.000 at bound [] [24s] [elapsed 320s]
+  [77/114] goal     q5 an2_cat     a SO40: S8 -3.869 (lin -3.861) Om +0.430 s8 -2.665 | chi2 9.12 power 0.137 | polish shift 0.000 at bound [] [6s] [elapsed 325s]
+  [78/114] goal     q5 an0_iso     e SO40: S8 -1.312 (lin -2.370) Om -0.837 s8 -2.234 omb:+0.58 alpha:-5.76 slnY:+0.43 | chi2 72.43 power 0.974 | polish shift 0.000 at bound [] [31s] [elapsed 339s]
+  [79/114] goal     q5 an2_cat     d SO40: S8 +0.028 (lin +0.019) Om +0.227 s8 -0.316 omb:+0.20 alpha:+0.99 slnY:-0.52 | chi2 6.56 power 0.108 | polish shift 0.000 at bound [] [14s] [elapsed 340s]
+  [80/114] goal     q5 an0_cat     d SO40: S8 -1.241 (lin -1.576) Om -0.685 s8 -1.919 omb:+0.39 alpha:-5.13 slnY:+0.18 | chi2 40.64 power 0.710 | polish shift 0.001 at bound [] [65s] [elapsed 342s]
+  [81/114] goal     q5 an2_iso     a SO40: S8 +0.609 (lin +0.599) Om +3.069 s8 -3.937 | chi2 5.37 power 0.094 | polish shift 0.000 at bound [] [8s] [elapsed 348s]
+  [82/114] goal     q5 an2_cat     e SO40: S8 -0.247 (lin -0.211) Om -0.139 s8 -0.458 omb:+0.39 alpha:+0.59 slnY:-0.63 | chi2 6.49 power 0.107 | polish shift 0.000 at bound [] [9s] [elapsed 348s]
+  [83/114] goal     q5 an3_cat     a SO40: S8 -13.884 (lin -13.567) Om -3.751 s8 -2.105 | chi2 92.09 power 0.996 | polish shift 0.001 at bound [] [4s] [elapsed 352s]
+  [84/114] goal     q5 an2_iso     e SO40: S8 -0.745 (lin -0.836) Om -0.432 s8 -1.357 omb:+0.60 alpha:-1.23 slnY:+0.04 | chi2 2.31 power 0.067 | polish shift 0.000 at bound [] [6s] [elapsed 354s]
+  [85/114] goal     q5 an2_iso     d SO40: S8 -0.640 (lin -0.681) Om -0.091 s8 -1.447 omb:+0.34 alpha:-1.20 slnY:+0.22 | chi2 2.48 power 0.068 | polish shift 0.000 at bound [] [13s] [elapsed 355s]
+  [86/114] goal     q5 an3_iso     a SO40: S8 -9.304 (lin -9.195) Om -1.113 s8 -3.384 | chi2 32.21 power 0.552 | polish shift 0.000 at bound [] [6s] [elapsed 361s]
+  [87/114] goal     q5 an3_cat     d SO40: S8 +1.020 (lin +0.840) Om +0.964 s8 +0.904 omb:-0.16 alpha:+4.87 slnY:-1.34 | chi2 32.20 power 0.558 | polish shift 0.000 at bound [] [9s] [elapsed 361s]
+  [88/114] goal     q5 an3_cat     e SO40: S8 +0.860 (lin +0.626) Om +0.805 s8 +0.886 omb:-0.32 alpha:+4.13 slnY:-1.16 | chi2 32.16 power 0.557 | polish shift 0.000 at bound [] [9s] [elapsed 363s]
+  [89/114] baseline q5 anz2_cat    a SO40: S8 -7.151 (lin -7.179) Om +4.798 s8 -10.425 | chi2 481.41 power 1.000 | polish shift 0.000 at bound [] [4s] [elapsed 367s]
+  [90/114] goal     q5 an3_iso     d SO40: S8 +0.213 (lin +0.173) Om +0.552 s8 -0.412 omb:+0.10 alpha:+2.46 slnY:-0.17 | chi2 11.02 power 0.164 | polish shift 0.000 at bound [] [8s] [elapsed 368s]
+  [91/114] goal     q5 an3_iso     e SO40: S8 -0.015 (lin +0.019) Om +0.177 s8 -0.429 omb:+0.20 alpha:+1.88 slnY:-0.22 | chi2 11.00 power 0.164 | polish shift 0.000 at bound [] [10s] [elapsed 371s]
+  [92/114] baseline q5 anz2_iso    a SO40: S8 -4.447 (lin -4.523) Om +6.406 s8 -11.128 | chi2 409.77 power 1.000 | polish shift 0.001 at bound [] [5s] [elapsed 377s]
+  [93/114] baseline q5 anz2_cat    d SO40: S8 -7.649 (lin -8.712) Om -3.754 s8 -11.645 omb:+8.52 alpha:-0.68 slnY:+2.25 | chi2 175.18 power 1.000 | polish shift 0.000 at bound [] [11s] [elapsed 378s]
+  [94/114] baseline q5 anz2_cat    e SO40: S8 -11.580 (lin -11.459) Om -8.022 s8 -14.797 omb:+17.85 alpha:-2.09 slnY:-1.83 | chi2 118.60 power 1.000 | polish shift 0.118 at bound ['slnY'] [16s] [elapsed 385s]
+  [95/114] baseline q5 anz2_iso    e SO40: S8 -11.102 (lin -11.250) Om -7.633 s8 -14.319 omb:+16.64 alpha:-2.61 slnY:-1.83 | chi2 100.50 power 0.999 | polish shift 0.064 at bound ['slnY'] [9s] [elapsed 388s]
+  [96/114] baseline q5 anz3_cat    a SO40: S8 -27.822 (lin -26.834) Om +3.024 s8 -18.865 | chi2 2923.35 power 1.000 | polish shift 0.001 at bound [] [3s] [elapsed 388s]
+  [97/114] baseline q5 anz2_iso    d SO40: S8 -7.437 (lin -8.651) Om -3.594 s8 -11.415 omb:+8.25 alpha:-1.28 slnY:+2.05 | chi2 151.29 power 1.000 | polish shift 0.000 at bound [] [16s] [elapsed 393s]
+  [98/114] baseline q5 anz3_iso    a SO40: S8 -24.926 (lin -24.276) Om +4.893 s8 -19.783 | chi2 2719.74 power 1.000 | polish shift 0.004 at bound [] [4s] [elapsed 397s]
+  [99/114] baseline q5 anz3_cat    e SO40: S8 -26.977 (lin -26.811) Om -13.212 s8 -34.468 omb:+32.06 alpha:-1.71 slnY:+2.50 | chi2 413.66 power 1.000 | polish shift 4.331 at bound ['omb'] [27s] [elapsed 415s]
+  [100/114] baseline q5 anz3_cat    d SO40: S8 -25.036 (lin -24.149) Om -9.347 s8 -38.928 omb:+15.44 alpha:-5.50 slnY:+6.80 | chi2 578.69 power 1.000 | polish shift 0.000 at bound [] [28s] [elapsed 416s]
+  [101/114] goal     q5 anz2_cat    a SO40: S8 -10.190 (lin -10.134) Om +2.416 s8 -8.686 | chi2 406.86 power 1.000 | polish shift 0.001 at bound [] [4s] [elapsed 420s]
+  [102/114] goal     q5 anz2_cat    d SO40: S8 -5.821 (lin -6.790) Om -3.711 s8 -8.006 omb:+7.96 alpha:+0.86 slnY:+0.97 | chi2 163.22 power 1.000 | polish shift 0.000 at bound [] [10s] [elapsed 432s]
+  [103/114] baseline q5 anz3_iso    d SO40: S8 -24.306 (lin -23.677) Om -9.025 s8 -37.818 omb:+15.46 alpha:-5.55 slnY:+6.43 | chi2 525.92 power 1.000 | polish shift 0.000 at bound [] [37s] [elapsed 433s]
+  [104/114] goal     q5 anz2_cat    e SO40: S8 -8.995 (lin -9.390) Om -6.961 s8 -11.081 omb:+14.15 alpha:-1.18 slnY:-2.20 | chi2 134.77 power 1.000 | polish shift 0.000 at bound ['slnY'] [4s] [elapsed 435s]
+  [105/114] goal     q5 anz2_iso    a SO40: S8 -5.643 (lin -5.692) Om +5.245 s8 -10.113 | chi2 287.80 power 1.000 | polish shift 0.000 at bound [] [4s] [elapsed 437s]
+  [106/114] goal     q5 anz2_iso    e SO40: S8 -8.463 (lin -9.006) Om -6.444 s8 -10.685 omb:+12.69 alpha:-2.14 slnY:-2.02 | chi2 90.56 power 0.996 | polish shift 0.000 at bound [] [7s] [elapsed 445s]
+  [107/114] goal     q5 anz2_iso    d SO40: S8 -5.647 (lin -6.710) Om -3.355 s8 -8.232 omb:+7.20 alpha:-0.50 slnY:+1.08 | chi2 117.68 power 1.000 | polish shift 0.000 at bound [] [14s] [elapsed 449s]
+  [108/114] goal     q5 anz3_cat    a SO40: S8 -31.835 (lin -30.676) Om -0.818 s8 -15.558 | chi2 2538.94 power 1.000 | polish shift 0.001 at bound [] [4s] [elapsed 449s]
+  [109/114] goal     q5 anz3_cat    d SO40: S8 -20.544 (lin -21.819) Om -10.288 s8 -30.391 omb:+19.32 alpha:-2.23 slnY:+5.61 | chi2 603.79 power 1.000 | polish shift 0.000 at bound [] [19s] [elapsed 469s]
+  [110/114] goal     q5 anz3_iso    a SO40: S8 -27.080 (lin -26.403) Om +2.252 s8 -17.186 | chi2 2212.70 power 1.000 | polish shift 0.001 at bound [] [4s] [elapsed 472s]
+  [111/114] baseline q5 anz3_iso    e SO40: S8 -26.577 (lin -26.207) Om -13.106 s8 -33.649 omb:+32.06 alpha:-2.00 slnY:+2.06 | chi2 364.50 power 1.000 | polish shift 7.844 at bound ['omb'] [64s] [elapsed 478s]
+  [112/114] goal     q5 anz3_iso    d SO40: S8 -19.856 (lin -21.108) Om -9.817 s8 -29.600 omb:+18.53 alpha:-3.03 slnY:+5.24 | chi2 505.60 power 1.000 | polish shift 0.000 at bound [] [17s] [elapsed 489s]
+  [113/114] goal     q5 anz3_iso    e SO40: S8 -23.554 (lin -23.525) Om -14.505 s8 -28.975 omb:+36.04 alpha:-1.05 slnY:-0.52 | chi2 360.31 power 1.000 | polish shift 2.229 at bound ['omb'] [22s] [elapsed 500s]
+  [114/114] goal     q5 anz3_cat    e SO40: S8 -23.690 (lin -24.437) Om -14.508 s8 -29.398 omb:+36.04 alpha:+0.06 slnY:+0.43 | chi2 448.09 power 1.000 | polish shift 3.066 at bound ['omb'] [53s] [elapsed 503s]
+
+linearised S8 biases (sigma) with tile-bootstrap errors, q_cut 5 [SO40 | full]:
+  baseline R           a: -2.71+-0.31 | -4.28+-0.49; b: -1.51+-0.29 | -2.39+-0.46; c: -0.88+-0.35 | -1.39+-0.56; d: -0.08+-0.19 | -0.17+-0.36; e: -0.17+-0.35 | -0.28+-0.56
+  baseline Rjoint      a: -2.71+-0.34 | -4.28+-0.54; b: -1.51+-0.30 | -2.39+-0.47; c: -0.88+-0.35 | -1.39+-0.56; d: -0.08+-0.19 | -0.17+-0.34; e: -0.17+-0.32 | -0.28+-0.51
+  baseline Rp          a: -2.64+-0.23 | -4.17+-0.37; b: -1.83+-0.21 | -2.89+-0.34; c: -1.00+-0.27 | -1.58+-0.42; d: +0.10+-0.14 | +0.13+-0.25; e: +0.06+-0.24 | +0.10+-0.38
+  baseline Rs          a: -2.63+-0.24 | -4.16+-0.37; b: -1.82+-0.21 | -2.87+-0.34; c: -0.97+-0.22 | -1.53+-0.34; d: +0.15+-0.12 | +0.22+-0.21; e: +0.14+-0.19 | +0.23+-0.30
+  baseline Rs_N        a: -2.63 | -4.16; b: -1.56 | -2.46; c: -1.02 | -1.61; d: +0.28 | +0.39; e: +0.23 | +0.36
+  baseline Rp_closest1 a: -2.81+-0.23 | -4.44+-0.37; b: -1.93+-0.21 | -3.06+-0.33; c: -1.08+-0.27 | -1.71+-0.42; d: +0.13+-0.14 | +0.17+-0.25; e: +0.09+-0.24 | +0.14+-0.38
+  baseline Rp_fof10    a: -13.67+-0.27 | -21.62+-0.42; b: -8.23+-0.21 | -13.01+-0.34; c: -4.76+-0.28 | -7.52+-0.44; d: +0.75+-0.16 | +1.05+-0.29; e: +0.63+-0.27 | +0.99+-0.42
+  baseline Rp_keepnr   a: -0.18+-0.24 | -0.29+-0.38; b: +0.52+-0.24 | +0.83+-0.37; c: +0.57+-0.32 | +0.91+-0.50; d: -0.36+-0.15 | -0.45+-0.28; e: -0.21+-0.27 | -0.34+-0.43
+  baseline Rs_closest1 a: -2.81 | -4.44; b: -1.93 | -3.05; c: -1.05 | -1.67; d: +0.17 | +0.25; e: +0.16 | +0.25
+  baseline Rs_fof10    a: -13.81 | -21.83; b: -8.32 | -13.16; c: -4.64 | -7.34; d: +0.87 | +1.33; e: +0.91 | +1.44
+  goal     R           a: -4.49+-0.31 | -7.10+-0.49; b: -2.61+-0.28 | -4.13+-0.45; c: -1.50+-0.33 | -2.37+-0.52; d: +0.76+-0.20 | +1.27+-0.37; e: +0.93+-0.31 | +1.46+-0.49
+  goal     Rjoint      a: -4.49+-0.31 | -7.10+-0.50; b: -2.61+-0.28 | -4.13+-0.45; c: -1.50+-0.31 | -2.37+-0.48; d: +0.76+-0.22 | +1.27+-0.41; e: +0.93+-0.34 | +1.46+-0.53
+  goal     Rp          a: -4.38+-0.22 | -6.92+-0.35; b: -2.95+-0.21 | -4.66+-0.34; c: -1.93+-0.24 | -3.05+-0.37; d: +0.58+-0.14 | +0.84+-0.27; e: +0.51+-0.23 | +0.80+-0.37
+  goal     Rs          a: -4.43+-0.21 | -7.01+-0.33; b: -2.99+-0.21 | -4.72+-0.34; c: -2.05+-0.23 | -3.25+-0.37; d: +0.63+-0.16 | +0.89+-0.29; e: +0.52+-0.24 | +0.82+-0.38
+  goal     Rs_N        a: -4.41 | -6.98; b: -2.97 | -4.70; c: -2.09 | -3.30; d: +0.60 | +0.82; e: +0.45 | +0.72
+  goal     Rp_closest1 a: -4.63+-0.22 | -7.31+-0.35; b: -3.09+-0.21 | -4.88+-0.33; c: -1.98+-0.23 | -3.13+-0.37; d: +0.61+-0.14 | +0.90+-0.27; e: +0.56+-0.23 | +0.89+-0.37
+  goal     Rp_fof10    a: -24.66+-0.27 | -39.00+-0.43; b: -14.07+-0.23 | -22.25+-0.36; c: -8.17+-0.27 | -12.92+-0.43; d: +1.79+-0.17 | +2.78+-0.32; e: +1.86+-0.27 | +2.94+-0.43
+  goal     Rp_keepnr   a: -1.71+-0.24 | -2.70+-0.38; b: -0.62+-0.23 | -0.98+-0.36; c: -0.33+-0.26 | -0.52+-0.41; d: +0.11+-0.16 | +0.21+-0.31; e: +0.18+-0.26 | +0.28+-0.41
+  goal     Rs_closest1 a: -4.69 | -7.42; b: -3.13 | -4.95; c: -2.13 | -3.37; d: +0.65 | +0.93; e: +0.54 | +0.86
+  goal     Rs_fof10    a: -24.93 | -39.42; b: -14.24 | -22.52; c: -8.32 | -13.15; d: +1.84 | +2.85; e: +1.90 | +3.00
+
+p06b split (linearised S8, SO40, q_cut 5): amplitude / z tilt / q shape = sum; nuisance shifts (sigma)
+  baseline Rs  a: -2.46 / +0.16 / -0.32 = -2.63; Om -1.41 s8 +0.55
+  baseline Rs  d: -0.13 / -0.11 / +0.39 = +0.15; Om +0.08 s8 +0.22 omb -0.04 alpha +0.93 slnY +0.06
+  baseline Rs  e: -0.02 / -0.04 / +0.19 = +0.14; Om +0.11 s8 +0.21 omb -0.09 alpha +0.78 slnY +0.09
+  baseline Rp  a: -2.41 / +0.10 / -0.33 = -2.64; Om -1.47 s8 +0.64
+  baseline Rp  d: -0.13 / -0.13 / +0.36 = +0.10; Om +0.02 s8 +0.21 omb -0.00 alpha +0.89 slnY +0.07
+  baseline Rp  e: -0.01 / -0.11 / +0.19 = +0.06; Om +0.02 s8 +0.15 omb -0.01 alpha +0.70 slnY +0.07
+  baseline R   a: -1.99 / -0.42 / -0.29 = -2.71; Om -2.01 s8 +1.38
+  baseline R   d: -0.10 / -0.35 / +0.38 = -0.08; Om -0.28 s8 +0.26 omb +0.08 alpha +0.57 slnY +0.11
+  baseline R   e: -0.01 / -0.36 / +0.20 = -0.17; Om -0.27 s8 +0.06 omb +0.18 alpha +0.34 slnY +0.03
+  goal     Rs  a: -3.97 / +0.04 / -0.50 = -4.43; Om -2.55 s8 +1.21
+  goal     Rs  d: -0.15 / +0.21 / +0.58 = +0.63; Om +0.30 s8 +1.08 omb -0.12 alpha +2.11 slnY -0.66
+  goal     Rs  e: -0.01 / +0.08 / +0.44 = +0.52; Om +0.32 s8 +0.91 omb -0.22 alpha +1.80 slnY -0.56
+  goal     Rp  a: -3.89 / +0.02 / -0.50 = -4.38; Om -2.56 s8 +1.25
+  goal     Rp  d: -0.15 / +0.19 / +0.54 = +0.58; Om +0.28 s8 +0.98 omb -0.14 alpha +1.98 slnY -0.50
+  goal     Rp  e: -0.01 / +0.11 / +0.40 = +0.51; Om +0.33 s8 +0.85 omb -0.24 alpha +1.71 slnY -0.41
+  goal     R   a: -3.85 / -0.13 / -0.50 = -4.49; Om -2.79 s8 +1.52
+  goal     R   d: -0.15 / +0.26 / +0.65 = +0.76; Om +0.44 s8 +1.17 omb -0.39 alpha +1.99 slnY -0.42
+  goal     R   e: -0.01 / +0.42 / +0.51 = +0.93; Om +0.73 s8 +1.25 omb -0.71 alpha +1.95 slnY -0.21
+
+y07 done in 528 s

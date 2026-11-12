@@ -1,0 +1,43 @@
+=================== baseline ===================
+(1) baseline: 60 of the verifier's tiles re-created and run through the build's code; identical halo rows (q' >= 1.5) in 60; max |q'_build / q'_sims - 1| = 5.9e-08; max |r_build / r_sims - 1| = 8.7e-15
+    credited halos, merge none   q > 5: both 11911, build pipeline only 0, verifier only 1 (of 11912)
+    credited halos, merge closest1 q > 5: both 11887, build pipeline only 0, verifier only 1 (of 11888)
+    credited halos, merge fof10  q > 5: both 10989, build pipeline only 0, verifier only 1 (of 10990)
+    isolated copies              q > 5: both 12122, build pipeline only 0, verifier only 0 (of 12122)
+    q_obs (credited by both, merge none): max |difference| 1.88e-06; q_iso: max |difference| 3.04e-02, mean +4.39e-04, rms 1.27e-03 (19559 copies)
+(2), (3) per-tile paired loss at q > 5
+  build Q2         tiles   324: N_iso - N_det mean  2.63 +- 0.26, std 4.75 +- 0.18, skew +0.18, excess kurtosis -0.03; percentiles 1/5/25/50/75/95/99: -7, -4.85, -1, 2.5, 6, 10.85, 13.77; std of N_det 13.22, of N_iso 13.62
+      per tile: halos with q' > 20 6.42, with theta500 > 8' and q' > 4 2.46; fit N_iso - N_det = 2.63 + -0.053 +- 0.103 x (bright - mean) + 0.036 +- 0.175 x (big - mean)
+  build new tiles  tiles  1224: N_iso - N_det mean  2.77 +- 0.14, std 4.93 +- 0.11, skew +0.05, excess kurtosis +0.15; percentiles 1/5/25/50/75/95/99: -9, -5, -1, 3, 6, 11, 15; std of N_det 13.43, of N_iso 14.03
+      per tile: halos with q' > 20 6.44, with theta500 > 8' and q' > 4 2.63; fit N_iso - N_det = 2.77 + 0.035 +- 0.058 x (bright - mean) + 0.102 +- 0.087 x (big - mean)
+  sims verifier    tiles   400: N_iso - N_det mean  3.46 +- 0.26, std 5.20 +- 0.18, skew +0.08, excess kurtosis +0.05; percentiles 1/5/25/50/75/95/99: -8, -5, 0, 3, 7, 11, 15; std of N_det 12.88, of N_iso 13.43
+      per tile: halos with q' > 20 6.55, with theta500 > 8' and q' > 4 2.64; fit N_iso - N_det = 3.46 + 0.348 +- 0.105 x (bright - mean) + 0.033 +- 0.157 x (big - mean)
+  sims - build (all 1,548 tiles): mean +0.71 +- 0.29 per tile (+2.48 sigma); Mann-Whitney p = 0.011; KS p = 0.086; Levene (equal variance) p = 0.154
+=================== goal ===================
+(2), (3) per-tile paired loss at q > 5
+  build Q2         tiles   324: N_iso - N_det mean  6.73 +- 0.38, std 6.82 +- 0.28, skew +0.02, excess kurtosis +0.23; percentiles 1/5/25/50/75/95/99: -8.77, -5, 2, 7, 11, 19, 23.54; std of N_det 16.66, of N_iso 17.13
+      per tile: halos with q' > 20 11.19, with theta500 > 8' and q' > 4 2.79; fit N_iso - N_det = 6.73 + 0.123 +- 0.116 x (bright - mean) + 0.241 +- 0.237 x (big - mean)
+  build new tiles  tiles  1224: N_iso - N_det mean  6.25 +- 0.18, std 6.43 +- 0.13, skew -0.10, excess kurtosis +0.05; percentiles 1/5/25/50/75/95/99: -8.77, -4, 2, 6, 11, 17, 21; std of N_det 16.84, of N_iso 17.33
+      per tile: halos with q' > 20 11.44, with theta500 > 8' and q' > 4 2.93; fit N_iso - N_det = 6.25 + 0.136 +- 0.058 x (bright - mean) + 0.102 +- 0.107 x (big - mean)
+  sims verifier    tiles   400: N_iso - N_det mean  6.66 +- 0.31, std 6.30 +- 0.22, skew +0.34, excess kurtosis +0.07; percentiles 1/5/25/50/75/95/99: -6.01, -3, 3, 6, 10, 18.05, 23; std of N_det 16.13, of N_iso 17.23
+      per tile: halos with q' > 20 11.59, with theta500 > 8' and q' > 4 2.98; fit N_iso - N_det = 6.66 + 0.226 +- 0.096 x (bright - mean) + 0.168 +- 0.178 x (big - mean)
+  sims - build (all 1,548 tiles): mean +0.31 +- 0.36 per tile (+0.86 sigma); Mann-Whitney p = 0.851; KS p = 0.945; Levene (equal variance) p = 0.272
+done [6 s]; peak RSS 1.05 GB
+        6.90 real         3.37 user         0.97 sys
+          1054343168  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               76694  page reclaims
+                 297  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               22864  voluntary context switches
+                4518  involuntary context switches
+         42423366299  instructions retired
+         13368236516  cycles elapsed
+           875072960  peak memory footprint

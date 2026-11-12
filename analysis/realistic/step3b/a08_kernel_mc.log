@@ -1,0 +1,21 @@
+baseline: N_exp(q > 5) full kernel 65346.9; 40 random half splits: std of A/B - 1 = 0.439% (+- 0.050), i.e. full-kernel error 0.219%; largest |A/B - 1| 1.20%; even/odd split -1.081% = -2.46 x the split std; 100 bootstrap resamples: relative std 0.197% (+- 0.014) [85 s]
+goal: N_exp(q > 5) full kernel 98986.5; 40 random half splits: std of A/B - 1 = 0.498% (+- 0.056), i.e. full-kernel error 0.249%; largest |A/B - 1| 1.40%; even/odd split +0.370% = +0.74 x the split std; 100 bootstrap resamples: relative std 0.221% (+- 0.016) [168 s]
+done [168 s]; peak RSS 0.44 GB
+      168.82 real       167.04 user         1.44 sys
+           437174272  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               51115  page reclaims
+                 209  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                3101  voluntary context switches
+                2862  involuntary context switches
+       1374176157634  instructions retired
+        526078916441  cycles elapsed
+           270124992  peak memory footprint

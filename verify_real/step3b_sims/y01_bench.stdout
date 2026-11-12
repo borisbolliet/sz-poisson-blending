@@ -1,0 +1,38 @@
+threads: {'OMP_NUM_THREADS': '1', 'OPENBLAS_NUM_THREADS': '1', 'VECLIB_MAXIMUM_THREADS': '1', 'NUMBA_NUM_THREADS': '1'}
+halos: 71153 (lambda 71014.3)  [2.6s]
+paint: 4.3s; rss 0.81 GB
+[baseline] CMB+noise draw 0.4s
+[baseline] whitened: finder realistic 1.4s, halo-free 1.3s; r after (0.5'/4.45'/15') realistic 1.0389/1.0486/1.0201, before 1.1246; halo-free 0.9932/0.9884/0.9835; q>5 dets 196 (it0 153); noise q>5 0; fsky 0.815; rss 1.30 GB
+[baseline] szifi   : finder realistic 3.2s, halo-free 2.2s; r after (0.5'/4.45'/15') realistic 1.1158/1.1048/1.0464, before 1.1246; halo-free 1.0250/1.0055/0.9799; q>5 dets 173 (it0 153); noise q>5 0; fsky 0.815; rss 1.51 GB
+[baseline] response tables (144 nodes, r <= 45'): 0.1s; rss 1.51 GB
+[baseline]   theta   0.3': virtual table vs exact painted response, max |diff|/peak over 12' window 7.95e-04 (within 6': 7.21e-04)
+[baseline]   theta   1.2': virtual table vs exact painted response, max |diff|/peak over 12' window 9.24e-04 (within 6': 7.98e-04)
+[baseline]   theta   4.8': virtual table vs exact painted response, max |diff|/peak over 12' window 1.37e-03 (within 6': 8.69e-04)
+[baseline]   theta  15.0': virtual table vs exact painted response, max |diff|/peak over 12' window 1.93e-03 (within 6': 8.73e-04)
+[baseline]   theta  30.0': virtual table vs exact painted response, max |diff|/peak over 12' window 2.11e-03 (within 6': 8.45e-04)
+[baseline]   theta  61.0': virtual table vs exact painted response, max |diff|/peak over 12' window 2.11e-03 (within 6': 8.00e-04)
+[baseline] (3) q_obs painted-through-filter vs virtual (same noise window): 60 clusters, credited differently 0; max |dq| 3.29e-05
+[baseline] 500 placements x 368 q' values: 1.6s; credited at q'=5 (e=5): 0.576; max peak offset (arcmin) by theta node: 0.9 0.7 0.9 1.0 1.0 2.2 4.1
+[baseline] window doubled: 5.0s; entries changed 0 of 184000
+[baseline] decomposition: tables 0.1s, ranking+exact 0.6s (196 dets, 3 exact, 0 re-ranked); no-real 2
+[baseline]   merge none: credited halos 177, real entries 194, no-real 2
+[baseline]   merge closest1: credited halos 177, real entries 177, no-real 2
+[baseline]   merge fof10: credited halos 165, real entries 165, no-real 2
+[goal] CMB+noise draw 0.4s
+[goal] whitened: finder realistic 1.4s, halo-free 1.4s; r after (0.5'/4.45'/15') realistic 1.0516/1.0651/1.0293, before 1.1702; halo-free 0.9941/0.9896/0.9849; q>5 dets 311 (it0 213); noise q>5 1; fsky 0.749; rss 1.60 GB
+[goal] szifi   : finder realistic 3.9s, halo-free 2.7s; r after (0.5'/4.45'/15') realistic 1.1880/1.1810/1.0856, before 1.1702; halo-free 1.0364/1.0148/0.9842; q>5 dets 222 (it0 213); noise q>5 0; fsky 0.749; rss 1.65 GB
+[goal] response tables (144 nodes, r <= 45'): 0.1s; rss 1.65 GB
+[goal]   theta   0.3': virtual table vs exact painted response, max |diff|/peak over 12' window 7.73e-04 (within 6': 7.35e-04)
+[goal]   theta   1.2': virtual table vs exact painted response, max |diff|/peak over 12' window 9.00e-04 (within 6': 8.18e-04)
+[goal]   theta   4.8': virtual table vs exact painted response, max |diff|/peak over 12' window 1.34e-03 (within 6': 9.45e-04)
+[goal]   theta  15.0': virtual table vs exact painted response, max |diff|/peak over 12' window 1.94e-03 (within 6': 9.49e-04)
+[goal]   theta  30.0': virtual table vs exact painted response, max |diff|/peak over 12' window 2.16e-03 (within 6': 8.93e-04)
+[goal]   theta  61.0': virtual table vs exact painted response, max |diff|/peak over 12' window 2.16e-03 (within 6': 8.68e-04)
+[goal] (3) q_obs painted-through-filter vs virtual (same noise window): 60 clusters, credited differently 0; max |dq| 2.12e-05
+[goal] 500 placements x 368 q' values: 1.6s; credited at q'=5 (e=5): 0.508; max peak offset (arcmin) by theta node: 0.6 0.6 0.9 0.8 1.8 1.8 2.0
+[goal] window doubled: 4.9s; entries changed 0 of 184000
+[goal] decomposition: tables 0.1s, ranking+exact 0.2s (311 dets, 0 exact, 0 re-ranked); no-real 3
+[goal]   merge none: credited halos 289, real entries 308, no-real 3
+[goal]   merge closest1: credited halos 289, real entries 289, no-real 2
+[goal]   merge fof10: credited halos 255, real entries 255, no-real 2
+total 101s; peak rss 1.65 GB

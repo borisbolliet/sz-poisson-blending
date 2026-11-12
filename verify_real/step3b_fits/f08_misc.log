@@ -1,0 +1,37 @@
+(1) r = sigma_finder / sigma_Y after the iteration, mean over tiles, at 0.5' / 4.45' / 15' (tile-to-tile std at 0.5')
+  prod       baseline Q2 tiles (324): 1.0394 / 1.0496 / 1.0240 (std 0.0027); scale 9 = 4.452'
+                      new tiles (1224): 1.0395 / 1.0496 / 1.0239; all 1548: 1.0395
+  (2) my model, q > 5: rbar of all 1548 tiles / rbar of the Q2 tiles - 1 = -0.0114%; per bin max |rel| (mu > 10) 3.35e-04
+  prod       goal     Q2 tiles (324): 1.0531 / 1.0674 / 1.0352 (std 0.0028); scale 9 = 4.452'
+                      new tiles (1224): 1.0532 / 1.0673 / 1.0349; all 1548: 1.0531
+  (2) my model, q > 5: rbar of all 1548 tiles / rbar of the Q2 tiles - 1 = -0.0026%; per bin max |rel| (mu > 10) 4.69e-04
+  szifi3000  baseline Q2 tiles (324): 1.1357 / 1.1192 / 1.0489 (std 0.0168); scale 9 = 4.452'
+  szifi3000  goal     Q2 tiles (324): 1.1800 / 1.1714 / 1.0786 (std 0.0199); scale 9 = 4.452'
+  szifi12000 baseline Q2 tiles (324): 1.0193 / 1.0446 / 1.0259 (std 0.0062); scale 9 = 4.452'
+  szifi12000 goal     Q2 tiles (324): 1.0391 / 1.0756 / 1.0471 (std 0.0073); scale 9 = 4.452'
+peak RSS 0.74 GB
+(3) from the stored per-halo tables of the 324 Q2 tiles: credited halos (merge none / closest 1' / fof 10'), catalogue entries with q > 5 (sum of 'n5'), 'no real cluster' entries (nr_q > 5) as a fraction of them (claims F3, F4)
+  prod       baseline: credited 64355 / 64283 / 59710; entries q > 5: 69496; no-real entries 1215 = 1.75%
+  prod       goal    : credited 96544 / 96409 / 85833; entries q > 5: 103739; no-real entries 1554 = 1.50%
+  szifi3000  baseline: credited 53247 / 53208 / 50115; entries q > 5: 56645; no-real entries 517 = 0.91%
+  szifi3000  goal    : credited 75941 / 75875 / 69572; entries q > 5: 80138; no-real entries 507 = 0.63%
+  szifi12000 baseline: credited 66133 / 66076 / 61253; entries q > 5: 71535; no-real entries 1399 = 1.96%
+  szifi12000 goal    : credited 97413 / 97283 / 86544; entries q > 5: 104543; no-real entries 1645 = 1.57%
+        3.00 real         1.80 user         1.50 sys
+           737198080  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               67406  page reclaims
+               53884  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                5098  voluntary context switches
+               54168  involuntary context switches
+         17231289089  instructions retired
+          9429523075  cycles elapsed
+           248842688  peak memory footprint

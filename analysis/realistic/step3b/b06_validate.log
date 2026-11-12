@@ -1,0 +1,205 @@
+==================== baseline
+  (1a) t03 injection tiles (15% of clusters at q_inj 10.5-30): 38760 clusters; observed / expected credited (kernel at each cluster's theta, q') - 1, tile bootstrap:
+     q_obs > 4: -0.39 +- 0.17%  (observed 29339, expected 29454.1)
+     q_obs > 5: +0.19 +- 0.21%  (observed 25227, expected 25178.5)
+     q_obs > 6: +0.05 +- 0.22%  (observed 20786, expected 20774.8)
+     q_obs > 7: -0.10 +- 0.30%  (observed 16471, expected 16487.1)
+     halo-weighted (N_exp of the realistic halos, q' 1.75-9), q_obs > 5: +2.56 +- 1.37%
+     theta  0.300': P(q_obs > 5) observed/kernel per q' range: 2-3: 0.011/0.014  3-4: 0.098/0.086  4-5: 0.342/0.357  5-6: 0.697/0.702  6-7: 0.931/0.924  7-9: 0.994/0.995   [pulls -0.8 +1.1 -0.8 -0.3 +0.7 -0.4]
+     theta  0.600': P(q_obs > 5) observed/kernel per q' range: 2-3: 0.015/0.015  3-4: 0.098/0.108  4-5: 0.395/0.376  5-6: 0.716/0.729  6-7: 0.936/0.939  7-9: 0.995/0.996   [pulls -0.0 -0.9 +1.1 -0.8 -0.3 -0.6]
+     theta  1.200': P(q_obs > 5) observed/kernel per q' range: 2-3: 0.020/0.016  3-4: 0.131/0.126  4-5: 0.373/0.383  5-6: 0.738/0.745  6-7: 0.948/0.943  7-9: 0.996/0.997   [pulls +0.7 +0.4 -0.6 -0.4 +0.5 -0.3]
+     theta  2.400': P(q_obs > 5) observed/kernel per q' range: 2-3: 0.024/0.015  3-4: 0.136/0.126  4-5: 0.453/0.416  5-6: 0.784/0.764  6-7: 0.953/0.943  7-9: 0.999/0.997   [pulls +1.9 +0.9 +1.9 +1.2 +1.1 +1.5]
+     theta  4.800': P(q_obs > 5) observed/kernel per q' range: 2-3: 0.022/0.020  3-4: 0.148/0.132  4-5: 0.456/0.421  5-6: 0.785/0.778  6-7: 0.962/0.955  7-9: 0.996/0.998   [pulls +0.4 +1.2 +1.7 +0.4 +0.8 -1.0]
+     theta  9.600': P(q_obs > 5) observed/kernel per q' range: 2-3: 0.015/0.019  3-4: 0.132/0.145  4-5: 0.386/0.421  5-6: 0.756/0.774  6-7: 0.951/0.953  7-9: 0.998/0.997   [pulls -0.8 -0.9 -1.7 -1.0 -0.2 +0.8]
+     chi^2 of the binned comparison: 33.6 for 36 bins
+  (1b) a02 injection tiles: 155040 clusters; observed / expected credited (kernel at each cluster's theta, q') - 1, tile bootstrap:
+     q_obs > 4: -0.70 +- 0.10%  (observed 106041, expected 106785.2)
+     q_obs > 5: -0.41 +- 0.15%  (observed 80289, expected 80619.2)
+     q_obs > 6: -0.19 +- 0.23%  (observed 53625, expected 53725.0)
+     q_obs > 7: -1.37 +- 0.39%  (observed 28887, expected 29287.4)
+     halo-weighted (N_exp of the realistic halos, q' 1.75-9), q_obs > 5: -0.78 +- 0.50%
+     theta  0.300': P(q_obs > 5) observed/kernel per q' range: 2-3: 0.012/0.014  3-4: 0.095/0.088  4-5: 0.362/0.359  5-6: 0.706/0.700  6-7: 0.925/0.924  7-9: 0.991/0.990   [pulls -1.4 +1.5 +0.4 +0.9 +0.1 +0.7]
+     theta  0.600': P(q_obs > 5) observed/kernel per q' range: 2-3: 0.015/0.015  3-4: 0.101/0.107  4-5: 0.366/0.372  5-6: 0.722/0.727  6-7: 0.942/0.937  7-9: 0.993/0.993   [pulls -0.4 -1.3 -0.8 -0.7 +1.2 -0.1]
+     theta  1.200': P(q_obs > 5) observed/kernel per q' range: 2-3: 0.015/0.015  3-4: 0.118/0.127  4-5: 0.398/0.392  5-6: 0.741/0.740  6-7: 0.945/0.942  7-9: 0.994/0.994   [pulls -0.4 -1.9 +0.9 +0.1 +0.8 -0.3]
+     theta  2.400': P(q_obs > 5) observed/kernel per q' range: 2-3: 0.017/0.015  3-4: 0.118/0.124  4-5: 0.401/0.413  5-6: 0.749/0.759  6-7: 0.947/0.943  7-9: 0.994/0.995   [pulls +0.8 -1.3 -1.5 -1.5 +1.3 -0.4]
+     theta  4.800': P(q_obs > 5) observed/kernel per q' range: 2-3: 0.013/0.021  3-4: 0.132/0.129  4-5: 0.430/0.420  5-6: 0.765/0.773  6-7: 0.947/0.956  7-9: 0.995/0.996   [pulls -3.2 +0.6 +1.2 -1.1 -2.7 -1.4]
+     theta  9.600': P(q_obs > 5) observed/kernel per q' range: 2-3: 0.017/0.020  3-4: 0.135/0.144  4-5: 0.409/0.420  5-6: 0.745/0.769  6-7: 0.948/0.955  7-9: 0.996/0.995   [pulls -1.0 -1.6 -1.3 -3.4 -2.3 +1.4]
+     chi^2 of the binned comparison: 71.2 for 36 bins
+  (1c) t03 + a02 pooled: 193800 clusters; observed / expected credited (kernel at each cluster's theta, q') - 1, tile bootstrap:
+     q_obs > 4: -0.63 +- 0.09%  (observed 135380, expected 136239.3)
+     q_obs > 5: -0.27 +- 0.12%  (observed 105516, expected 105797.7)
+     q_obs > 6: -0.12 +- 0.17%  (observed 74411, expected 74499.8)
+     q_obs > 7: -0.91 +- 0.27%  (observed 45358, expected 45774.5)
+     halo-weighted (N_exp of the realistic halos, q' 1.75-9), q_obs > 5: -0.26 +- 0.46%
+     chi^2 of the binned comparison: 0.0 for 0 bins
+  (2a) sparse injections, end to end: 22680 clusters; observed / expected credited (kernel at each cluster's theta, q') - 1, tile bootstrap:
+     q_obs > 4: -0.25 +- 0.22%  (observed 17246, expected 17289.0)
+     q_obs > 5: +0.00 +- 0.26%  (observed 14419, expected 14418.6)
+     q_obs > 6: -0.31 +- 0.36%  (observed 11438, expected 11473.4)
+     q_obs > 7: -0.70 +- 0.45%  (observed 8588, expected 8648.5)
+     halo-weighted (N_exp of the realistic halos, q' 1.75-9), q_obs > 5: +2.32 +- 1.89%
+     chi^2 of the binned comparison: 0.0 for 0 bins
+  (2b) the same clusters inserted virtually on the noise-only filter: 22680 clusters; observed / expected credited (kernel at each cluster's theta, q') - 1, tile bootstrap:
+     q_obs > 4: +0.27 +- 0.22%  (observed 17338, expected 17290.7)
+     q_obs > 5: -0.08 +- 0.26%  (observed 14409, expected 14420.5)
+     q_obs > 6: -0.28 +- 0.34%  (observed 11444, expected 11475.8)
+     q_obs > 7: -0.38 +- 0.46%  (observed 8618, expected 8651.1)
+     halo-weighted (N_exp of the realistic halos, q' 1.75-9), q_obs > 5: +2.06 +- 2.00%
+     chi^2 of the binned comparison: 0.0 for 0 bins
+  (2c) paired painted - virtual (same clusters, same CMB + noise): identical q_obs 0.237; credited in both 17240, only painted 6, only virtual 98; q_obs > 5: painted 14419, virtual 14409, disagree 74
+     dq = q_painted - q_virtual: mean -0.0098, std 0.0406, 1/50/99% [-0.1339, -0.0073, 0.0876]; dq/q: mean -0.00089, std 0.00553
+        q_virtual 4-6: N 5796, mean dq -0.0033, std 0.0361
+        q_virtual 6-10: N 8071, mean dq -0.0056, std 0.0351
+        q_virtual 10-40: N 3373, mean dq -0.0311, std 0.0517
+     sigma of the sparse injection tile vs the noise-only tile (q'_painted / q'_virtual - 1): mean -1.93e-04, max |.| 6.2e-03
+     merge closest1: isolated clusters whose credited q > 5 changes: 0 of 22680
+     merge fof10: isolated clusters whose credited q > 5 changes: 1 of 22680
+  (3) dense experiment: 120 tiles, 21280 clusters; sigma_dense / sigma_noise-only at 0.5' / 4.45' / 15': +0.0027 / +0.0036 / +0.0022; masked fraction dense 17.97%, noise-only 9.94%
+  (3a) P: painted, end to end (q' in the dense tile's units): 21280 clusters; observed / expected credited (kernel at each cluster's theta, q') - 1, tile bootstrap:
+     q_obs > 4: -0.89 +- 0.29%  (observed 14451, expected 14580.5)
+     q_obs > 5: -0.38 +- 0.41%  (observed 10959, expected 11000.4)
+     q_obs > 6: +0.56 +- 0.59%  (observed 7347, expected 7306.3)
+     q_obs > 7: -1.73 +- 1.04%  (observed 3877, expected 3945.3)
+     halo-weighted (N_exp of the realistic halos, q' 1.75-9), q_obs > 5: +0.54 +- 1.15%
+     chi^2 of the binned comparison: 0.0 for 0 bins
+  (3b) Vd: virtual, dense tile's filter (same units): 21280 clusters; observed / expected credited (kernel at each cluster's theta, q') - 1, tile bootstrap:
+     q_obs > 4: -0.90 +- 0.29%  (observed 14449, expected 14580.5)
+     q_obs > 5: -0.32 +- 0.40%  (observed 10965, expected 11000.4)
+     q_obs > 6: +0.42 +- 0.62%  (observed 7337, expected 7306.3)
+     q_obs > 7: -1.63 +- 1.02%  (observed 3881, expected 3945.3)
+     halo-weighted (N_exp of the realistic halos, q' 1.75-9), q_obs > 5: +0.60 +- 1.16%
+     chi^2 of the binned comparison: 0.0 for 0 bins
+  (3c) Vn: virtual, noise-only filter (its units): 21280 clusters; observed / expected credited (kernel at each cluster's theta, q') - 1, tile bootstrap:
+     q_obs > 4: -0.24 +- 0.28%  (observed 14597, expected 14631.5)
+     q_obs > 5: -0.23 +- 0.40%  (observed 11041, expected 11066.5)
+     q_obs > 6: +0.45 +- 0.61%  (observed 7419, expected 7385.6)
+     q_obs > 7: -0.99 +- 0.97%  (observed 3984, expected 4023.7)
+     halo-weighted (N_exp of the realistic halos, q' 1.75-9), q_obs > 5: +0.72 +- 1.22%
+     chi^2 of the binned comparison: 0.0 for 0 bins
+     paired, q_obs > 4, cluster-weighted: (obs/exp)[Vd] - (obs/exp)[Vn] = -0.67 +- 0.09%
+     paired, q_obs > 4, halo-weighted: (obs/exp)[Vd] - (obs/exp)[Vn] = -1.76 +- 0.46%
+     paired, q_obs > 4, cluster-weighted: (obs/exp)[P] - (obs/exp)[Vn] = -0.65 +- 0.10%
+     paired, q_obs > 4, halo-weighted: (obs/exp)[P] - (obs/exp)[Vn] = -1.74 +- 0.49%
+     paired, q_obs > 4, cluster-weighted: (obs/exp)[P] - (obs/exp)[Vd] = +0.01 +- 0.05%
+     paired, q_obs > 4, halo-weighted: (obs/exp)[P] - (obs/exp)[Vd] = +0.02 +- 0.28%
+     paired, q_obs > 5, cluster-weighted: (obs/exp)[Vd] - (obs/exp)[Vn] = -0.09 +- 0.11%
+     paired, q_obs > 5, halo-weighted: (obs/exp)[Vd] - (obs/exp)[Vn] = -0.17 +- 0.34%
+     paired, q_obs > 5, cluster-weighted: (obs/exp)[P] - (obs/exp)[Vn] = -0.15 +- 0.11%
+     paired, q_obs > 5, halo-weighted: (obs/exp)[P] - (obs/exp)[Vn] = -0.23 +- 0.38%
+     paired, q_obs > 5, cluster-weighted: (obs/exp)[P] - (obs/exp)[Vd] = -0.05 +- 0.06%
+     paired, q_obs > 5, halo-weighted: (obs/exp)[P] - (obs/exp)[Vd] = -0.06 +- 0.20%
+     paired P - Vd: q_obs > 5 disagree 46 of 21280 (20 / 26 one-sided); dq mean -0.0003, std 0.0152
+     paired Vd - Vn: q_obs > 5 disagree 128 of 21280 (26 / 102 one-sided); dq mean -0.0266, std 0.0400
+     paired P - Vn: q_obs > 5 disagree 144 of 21280 (31 / 113 one-sided); dq mean -0.0269, std 0.0434
+==================== goal
+  (1a) t03 injection tiles (15% of clusters at q_inj 10.5-30): 38760 clusters; observed / expected credited (kernel at each cluster's theta, q') - 1, tile bootstrap:
+     q_obs > 4: -0.27 +- 0.17%  (observed 29337, expected 29417.4)
+     q_obs > 5: +0.13 +- 0.22%  (observed 25171, expected 25138.6)
+     q_obs > 6: +0.00 +- 0.22%  (observed 20758, expected 20757.1)
+     q_obs > 7: -0.42 +- 0.31%  (observed 16378, expected 16446.6)
+     halo-weighted (N_exp of the realistic halos, q' 1.75-9), q_obs > 5: +1.45 +- 1.32%
+     theta  0.300': P(q_obs > 5) observed/kernel per q' range: 2-3: 0.011/0.012  3-4: 0.096/0.101  4-5: 0.341/0.344  5-6: 0.696/0.710  6-7: 0.926/0.926  7-9: 0.994/0.996   [pulls -0.2 -0.5 -0.2 -0.8 +0.1 -1.6]
+     theta  0.600': P(q_obs > 5) observed/kernel per q' range: 2-3: 0.018/0.013  3-4: 0.098/0.100  4-5: 0.384/0.376  5-6: 0.713/0.718  6-7: 0.926/0.937  7-9: 0.995/0.996   [pulls +1.4 -0.1 +0.4 -0.3 -1.2 -0.7]
+     theta  1.200': P(q_obs > 5) observed/kernel per q' range: 2-3: 0.018/0.015  3-4: 0.120/0.123  4-5: 0.374/0.384  5-6: 0.737/0.747  6-7: 0.942/0.945  7-9: 0.997/0.997   [pulls +0.7 -0.3 -0.5 -0.6 -0.3 +0.3]
+     theta  2.400': P(q_obs > 5) observed/kernel per q' range: 2-3: 0.022/0.017  3-4: 0.143/0.122  4-5: 0.433/0.406  5-6: 0.777/0.753  6-7: 0.953/0.945  7-9: 0.999/0.997   [pulls +1.0 +1.7 +1.4 +1.5 +0.9 +1.4]
+     theta  4.800': P(q_obs > 5) observed/kernel per q' range: 2-3: 0.023/0.017  3-4: 0.130/0.131  4-5: 0.470/0.414  5-6: 0.777/0.778  6-7: 0.949/0.943  7-9: 0.996/0.998   [pulls +1.3 -0.1 +2.8 -0.1 +0.6 -2.0]
+     theta  9.600': P(q_obs > 5) observed/kernel per q' range: 2-3: 0.016/0.015  3-4: 0.121/0.135  4-5: 0.379/0.428  5-6: 0.761/0.762  6-7: 0.957/0.946  7-9: 0.997/0.997   [pulls +0.3 -1.0 -2.4 -0.1 +1.3 +0.3]
+     chi^2 of the binned comparison: 42.7 for 36 bins
+  (1b) a02 injection tiles: 155040 clusters; observed / expected credited (kernel at each cluster's theta, q') - 1, tile bootstrap:
+     q_obs > 4: -0.70 +- 0.11%  (observed 105809, expected 106550.2)
+     q_obs > 5: -0.44 +- 0.14%  (observed 80019, expected 80371.0)
+     q_obs > 6: -0.66 +- 0.24%  (observed 53284, expected 53639.5)
+     q_obs > 7: -1.37 +- 0.39%  (observed 28653, expected 29052.1)
+     halo-weighted (N_exp of the realistic halos, q' 1.75-9), q_obs > 5: -1.35 +- 0.49%
+     theta  0.300': P(q_obs > 5) observed/kernel per q' range: 2-3: 0.011/0.012  3-4: 0.092/0.102  4-5: 0.353/0.345  5-6: 0.702/0.710  6-7: 0.924/0.925  7-9: 0.992/0.993   [pulls -0.2 -2.2 +1.2 -1.2 -0.5 -0.4]
+     theta  0.600': P(q_obs > 5) observed/kernel per q' range: 2-3: 0.014/0.012  3-4: 0.099/0.098  4-5: 0.362/0.370  5-6: 0.716/0.717  6-7: 0.940/0.935  7-9: 0.994/0.993   [pulls +0.8 +0.0 -1.2 -0.2 +1.2 +0.8]
+     theta  1.200': P(q_obs > 5) observed/kernel per q' range: 2-3: 0.014/0.014  3-4: 0.113/0.126  4-5: 0.391/0.393  5-6: 0.731/0.744  6-7: 0.943/0.944  7-9: 0.993/0.994   [pulls -0.2 -2.4 -0.3 -1.9 -0.4 -0.9]
+     theta  2.400': P(q_obs > 5) observed/kernel per q' range: 2-3: 0.016/0.016  3-4: 0.117/0.121  4-5: 0.398/0.404  5-6: 0.744/0.748  6-7: 0.948/0.945  7-9: 0.995/0.995   [pulls -0.4 -0.9 -0.9 -0.6 +0.9 +0.5]
+     theta  4.800': P(q_obs > 5) observed/kernel per q' range: 2-3: 0.015/0.017  3-4: 0.128/0.128  4-5: 0.420/0.414  5-6: 0.766/0.772  6-7: 0.948/0.945  7-9: 0.995/0.997   [pulls -0.8 +0.0 +0.7 -1.0 +1.0 -3.5]
+     theta  9.600': P(q_obs > 5) observed/kernel per q' range: 2-3: 0.017/0.016  3-4: 0.132/0.135  4-5: 0.412/0.430  5-6: 0.749/0.758  6-7: 0.950/0.950  7-9: 0.997/0.995   [pulls +0.9 -0.4 -2.3 -1.3 -0.0 +1.9]
+     chi^2 of the binned comparison: 52.6 for 36 bins
+  (1c) t03 + a02 pooled: 193800 clusters; observed / expected credited (kernel at each cluster's theta, q') - 1, tile bootstrap:
+     q_obs > 4: -0.60 +- 0.09%  (observed 135146, expected 135967.6)
+     q_obs > 5: -0.30 +- 0.12%  (observed 105190, expected 105509.6)
+     q_obs > 6: -0.48 +- 0.17%  (observed 74042, expected 74396.5)
+     q_obs > 7: -1.03 +- 0.27%  (observed 45031, expected 45498.7)
+     halo-weighted (N_exp of the realistic halos, q' 1.75-9), q_obs > 5: -0.85 +- 0.44%
+     chi^2 of the binned comparison: 0.0 for 0 bins
+  (2a) sparse injections, end to end: 22680 clusters; observed / expected credited (kernel at each cluster's theta, q') - 1, tile bootstrap:
+     q_obs > 4: -0.23 +- 0.21%  (observed 17227, expected 17265.9)
+     q_obs > 5: +0.27 +- 0.28%  (observed 14433, expected 14393.9)
+     q_obs > 6: -0.43 +- 0.34%  (observed 11400, expected 11448.9)
+     q_obs > 7: -0.47 +- 0.44%  (observed 8586, expected 8626.7)
+     halo-weighted (N_exp of the realistic halos, q' 1.75-9), q_obs > 5: +2.01 +- 1.93%
+     chi^2 of the binned comparison: 0.0 for 0 bins
+  (2b) the same clusters inserted virtually on the noise-only filter: 22680 clusters; observed / expected credited (kernel at each cluster's theta, q') - 1, tile bootstrap:
+     q_obs > 4: +0.25 +- 0.22%  (observed 17310, expected 17267.6)
+     q_obs > 5: +0.33 +- 0.28%  (observed 14444, expected 14395.8)
+     q_obs > 6: -0.34 +- 0.33%  (observed 11412, expected 11451.5)
+     q_obs > 7: -0.35 +- 0.42%  (observed 8599, expected 8629.5)
+     halo-weighted (N_exp of the realistic halos, q' 1.75-9), q_obs > 5: +1.82 +- 1.88%
+     chi^2 of the binned comparison: 0.0 for 0 bins
+  (2c) paired painted - virtual (same clusters, same CMB + noise): identical q_obs 0.238; credited in both 17220, only painted 7, only virtual 90; q_obs > 5: painted 14433, virtual 14444, disagree 95
+     dq = q_painted - q_virtual: mean -0.0100, std 0.0390, 1/50/99% [-0.1287, -0.0077, 0.0813]; dq/q: mean -0.00094, std 0.00533
+        q_virtual 4-6: N 5808, mean dq -0.0037, std 0.0346
+        q_virtual 6-10: N 8033, mean dq -0.0061, std 0.0346
+        q_virtual 10-40: N 3379, mean dq -0.0298, std 0.0484
+     sigma of the sparse injection tile vs the noise-only tile (q'_painted / q'_virtual - 1): mean -1.86e-04, max |.| 6.9e-03
+     merge closest1: isolated clusters whose credited q > 5 changes: 1 of 22680
+     merge fof10: isolated clusters whose credited q > 5 changes: 2 of 22680
+  (3) dense experiment: 120 tiles, 21280 clusters; sigma_dense / sigma_noise-only at 0.5' / 4.45' / 15': +0.0023 / +0.0032 / +0.0022; masked fraction dense 19.35%, noise-only 11.56%
+  (3a) P: painted, end to end (q' in the dense tile's units): 21280 clusters; observed / expected credited (kernel at each cluster's theta, q') - 1, tile bootstrap:
+     q_obs > 4: -0.67 +- 0.28%  (observed 14453, expected 14550.5)
+     q_obs > 5: -0.20 +- 0.39%  (observed 10956, expected 10978.0)
+     q_obs > 6: -0.15 +- 0.64%  (observed 7290, expected 7301.3)
+     q_obs > 7: -3.43 +- 1.00%  (observed 3777, expected 3911.3)
+     halo-weighted (N_exp of the realistic halos, q' 1.75-9), q_obs > 5: +0.77 +- 1.21%
+     chi^2 of the binned comparison: 0.0 for 0 bins
+  (3b) Vd: virtual, dense tile's filter (same units): 21280 clusters; observed / expected credited (kernel at each cluster's theta, q') - 1, tile bootstrap:
+     q_obs > 4: -0.65 +- 0.27%  (observed 14456, expected 14550.5)
+     q_obs > 5: -0.26 +- 0.39%  (observed 10949, expected 10978.0)
+     q_obs > 6: -0.25 +- 0.66%  (observed 7283, expected 7301.3)
+     q_obs > 7: -3.46 +- 1.11%  (observed 3776, expected 3911.3)
+     halo-weighted (N_exp of the realistic halos, q' 1.75-9), q_obs > 5: +0.48 +- 1.19%
+     chi^2 of the binned comparison: 0.0 for 0 bins
+  (3c) Vn: virtual, noise-only filter (its units): 21280 clusters; observed / expected credited (kernel at each cluster's theta, q') - 1, tile bootstrap:
+     q_obs > 4: -0.12 +- 0.28%  (observed 14578, expected 14595.7)
+     q_obs > 5: -0.11 +- 0.39%  (observed 11025, expected 11037.1)
+     q_obs > 6: +0.02 +- 0.61%  (observed 7374, expected 7372.2)
+     q_obs > 7: -2.51 +- 1.01%  (observed 3881, expected 3981.1)
+     halo-weighted (N_exp of the realistic halos, q' 1.75-9), q_obs > 5: +1.08 +- 1.13%
+     chi^2 of the binned comparison: 0.0 for 0 bins
+     paired, q_obs > 4, cluster-weighted: (obs/exp)[Vd] - (obs/exp)[Vn] = -0.53 +- 0.08%
+     paired, q_obs > 4, halo-weighted: (obs/exp)[Vd] - (obs/exp)[Vn] = -1.40 +- 0.36%
+     paired, q_obs > 4, cluster-weighted: (obs/exp)[P] - (obs/exp)[Vn] = -0.55 +- 0.08%
+     paired, q_obs > 4, halo-weighted: (obs/exp)[P] - (obs/exp)[Vn] = -1.67 +- 0.34%
+     paired, q_obs > 4, cluster-weighted: (obs/exp)[P] - (obs/exp)[Vd] = -0.02 +- 0.04%
+     paired, q_obs > 4, halo-weighted: (obs/exp)[P] - (obs/exp)[Vd] = -0.27 +- 0.18%
+     paired, q_obs > 5, cluster-weighted: (obs/exp)[Vd] - (obs/exp)[Vn] = -0.15 +- 0.09%
+     paired, q_obs > 5, halo-weighted: (obs/exp)[Vd] - (obs/exp)[Vn] = -0.60 +- 0.38%
+     paired, q_obs > 5, cluster-weighted: (obs/exp)[P] - (obs/exp)[Vn] = -0.09 +- 0.09%
+     paired, q_obs > 5, halo-weighted: (obs/exp)[P] - (obs/exp)[Vn] = -0.32 +- 0.35%
+     paired, q_obs > 5, cluster-weighted: (obs/exp)[P] - (obs/exp)[Vd] = +0.06 +- 0.06%
+     paired, q_obs > 5, halo-weighted: (obs/exp)[P] - (obs/exp)[Vd] = +0.29 +- 0.14%
+     paired P - Vd: q_obs > 5 disagree 45 of 21280 (26 / 19 one-sided); dq mean +0.0001, std 0.0137
+     paired Vd - Vn: q_obs > 5 disagree 120 of 21280 (22 / 98 one-sided); dq mean -0.0238, std 0.0390
+     paired P - Vn: q_obs > 5 disagree 121 of 21280 (26 / 95 one-sided); dq mean -0.0237, std 0.0417
+saved validate.json; done [10 s]
+       10.28 real         9.43 user         0.62 sys
+           390791168  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               34214  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                3025  voluntary context switches
+                 447  involuntary context switches
+        113683379952  instructions retired
+         29974252991  cycles elapsed
+           350242880  peak memory footprint

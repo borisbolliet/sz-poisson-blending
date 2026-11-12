@@ -1,0 +1,24 @@
+b09b: 244 ML fits (headline, R_s, q_cut 5, SO40; 60 bootstrap resamples) on 6 processes
+  baseline d: central ML +0.360 (lin +0.344); over 60 resamples: ML mean +0.346, std 0.047; linearised std 0.045; ratio 1.05; fits at a bound 0
+  baseline e: central ML +0.466 (lin +0.390); over 60 resamples: ML mean +0.437, std 0.080; linearised std 0.069; ratio 1.16; fits at a bound 0
+  goal     d: central ML +0.661 (lin +0.610); over 60 resamples: ML mean +0.653, std 0.077; linearised std 0.071; ratio 1.09; fits at a bound 0
+  goal     e: central ML +0.709 (lin +0.583); over 60 resamples: ML mean +0.692, std 0.110; linearised std 0.093; ratio 1.18; fits at a bound 0
+done [519 s]
+      520.08 real      2911.36 user        10.24 sys
+           969916416  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              730918  page reclaims
+                 577  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1163  voluntary context switches
+              186889  involuntary context switches
+          8347950265  instructions retired
+          3372377522  cycles elapsed
+            97322496  peak memory footprint

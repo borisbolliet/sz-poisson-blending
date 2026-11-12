@@ -1,0 +1,94 @@
+linearised S8 bias [sigma] with my model; paired bootstrap std of the differences between my estimators
+  prod_none       baseline q>5 SO40 a: my R_s -2.141 (fine -2.142, coarse -2.134) +- 0.113; R_p -2.155 +- 0.113; R -2.391 (alt -2.359) +- 0.163 | build R_s -2.142 +- 0.108, R_p -2.155, R -2.391 | my R_s - R_p +0.014 +- 0.020; build R_s - my R_p +0.013
+  prod_none       baseline q>5 SO40 d: my R_s +0.384 (fine +0.370, coarse +0.355) +- 0.060; R_p +0.341 +- 0.064; R +0.432 (alt +0.427) +- 0.096 | build R_s +0.346 +- 0.055, R_p +0.341, R +0.432 | my R_s - R_p +0.043 +- 0.031; build R_s - my R_p +0.004
+  prod_none       baseline q>5 SO40 e: my R_s +0.462 (fine +0.450, coarse +0.435) +- 0.101; R_p +0.427 +- 0.114; R +0.618 (alt +0.623) +- 0.171 | build R_s +0.391 +- 0.089, R_p +0.427, R +0.618 | my R_s - R_p +0.035 +- 0.060; build R_s - my R_p -0.036
+  prod_none       baseline q>5 full d: my R_s +0.623 (fine +0.602, coarse +0.579) +- 0.109; R_p +0.562 +- 0.119; R +0.758 (alt +0.755) +- 0.179 | build R_s +0.545 +- 0.097, R_p +0.562, R +0.758 | my R_s - R_p +0.060 +- 0.060; build R_s - my R_p -0.017
+  prod_none       baseline q>5 full e: my R_s +0.731 (fine +0.712, coarse +0.687) +- 0.160; R_p +0.675 +- 0.180; R +0.978 (alt +0.985) +- 0.271 | build R_s +0.618 +- 0.140, R_p +0.675, R +0.978 | my R_s - R_p +0.056 +- 0.095; build R_s - my R_p -0.058
+  prod_none       baseline q>6 SO40 a: my R_s -0.749 (fine -0.753, coarse -0.744) +- 0.109; R_p -0.737 +- 0.111; R -0.855 (alt -0.847) +- 0.145 | build R_s -0.729 +- 0.106, R_p -0.737, R -0.855 | my R_s - R_p -0.012 +- 0.020; build R_s - my R_p +0.008
+  prod_none       baseline q>6 SO40 d: my R_s +0.092 (fine +0.059, coarse +0.085) +- 0.059; R_p +0.047 +- 0.063; R -0.001 (alt -0.007) +- 0.090 | build R_s +0.052 +- 0.054, R_p +0.047, R -0.001 | my R_s - R_p +0.046 +- 0.033; build R_s - my R_p +0.005
+  prod_none       baseline q>6 SO40 e: my R_s +0.141 (fine +0.121, coarse +0.153) +- 0.101; R_p +0.080 +- 0.116; R -0.150 (alt -0.158) +- 0.165 | build R_s +0.095 +- 0.088, R_p +0.080, R -0.150 | my R_s - R_p +0.062 +- 0.068; build R_s - my R_p +0.015
+  prod_none       baseline q>6 full d: my R_s +0.162 (fine +0.119, coarse +0.161) +- 0.100; R_p +0.086 +- 0.109; R -0.078 (alt -0.088) +- 0.159 | build R_s +0.099 +- 0.090, R_p +0.086, R -0.078 | my R_s - R_p +0.076 +- 0.061; build R_s - my R_p +0.013
+  prod_none       baseline q>6 full e: my R_s +0.223 (fine +0.191, coarse +0.242) +- 0.159; R_p +0.126 +- 0.183; R -0.237 (alt -0.250) +- 0.262 | build R_s +0.150 +- 0.138, R_p +0.126, R -0.237 | my R_s - R_p +0.098 +- 0.107; build R_s - my R_p +0.024
+  prod_none       goal     q>5 SO40 a: my R_s -4.132 (fine -4.122, coarse -4.135) +- 0.121; R_p -4.130 +- 0.120; R -3.996 (alt -3.951) +- 0.161 | build R_s -4.132 +- 0.120, R_p -4.130, R -3.996 | my R_s - R_p -0.003 +- 0.020; build R_s - my R_p -0.002
+  prod_none       goal     q>5 SO40 d: my R_s +0.654 (fine +0.604, coarse +0.637) +- 0.073; R_p +0.628 +- 0.077; R +0.805 (alt +0.818) +- 0.105 | build R_s +0.615 +- 0.069, R_p +0.628, R +0.805 | my R_s - R_p +0.026 +- 0.037; build R_s - my R_p -0.013
+  prod_none       goal     q>5 SO40 e: my R_s +0.668 (fine +0.571, coarse +0.648) +- 0.115; R_p +0.617 +- 0.125; R +1.111 (alt +1.149) +- 0.168 | build R_s +0.590 +- 0.103, R_p +0.617, R +1.111 | my R_s - R_p +0.051 +- 0.063; build R_s - my R_p -0.027
+  prod_none       goal     q>5 full d: my R_s +1.013 (fine +0.904, coarse +0.984) +- 0.138; R_p +0.956 +- 0.147; R +1.443 (alt +1.479) +- 0.199 | build R_s +0.926 +- 0.126, R_p +0.956, R +1.443 | my R_s - R_p +0.057 +- 0.073; build R_s - my R_p -0.030
+  prod_none       goal     q>5 full e: my R_s +1.056 (fine +0.902, coarse +1.025) +- 0.182; R_p +0.975 +- 0.197; R +1.757 (alt +1.816) +- 0.266 | build R_s +0.933 +- 0.162, R_p +0.975, R +1.757 | my R_s - R_p +0.080 +- 0.099; build R_s - my R_p -0.042
+  prod_none       goal     q>6 SO40 a: my R_s -1.538 (fine -1.540, coarse -1.542) +- 0.110; R_p -1.550 +- 0.109; R -1.700 (alt -1.694) +- 0.142 | build R_s -1.559 +- 0.109, R_p -1.550, R -1.700 | my R_s - R_p +0.011 +- 0.019; build R_s - my R_p -0.009
+  prod_none       goal     q>6 SO40 d: my R_s +0.249 (fine +0.218, coarse +0.272) +- 0.061; R_p +0.256 +- 0.065; R +0.187 (alt +0.187) +- 0.088 | build R_s +0.255 +- 0.055, R_p +0.256, R +0.187 | my R_s - R_p -0.007 +- 0.029; build R_s - my R_p -0.001
+  prod_none       goal     q>6 SO40 e: my R_s +0.219 (fine +0.198, coarse +0.301) +- 0.102; R_p +0.260 +- 0.114; R +0.408 (alt +0.418) +- 0.155 | build R_s +0.251 +- 0.087, R_p +0.260, R +0.408 | my R_s - R_p -0.042 +- 0.055; build R_s - my R_p -0.009
+  prod_none       goal     q>6 full d: my R_s +0.356 (fine +0.316, coarse +0.427) +- 0.110; R_p +0.388 +- 0.121; R +0.414 (alt +0.419) +- 0.164 | build R_s +0.381 +- 0.097, R_p +0.388, R +0.414 | my R_s - R_p -0.031 +- 0.057; build R_s - my R_p -0.007
+  prod_none       goal     q>6 full e: my R_s +0.346 (fine +0.313, coarse +0.477) +- 0.161; R_p +0.412 +- 0.180; R +0.646 (alt +0.661) +- 0.245 | build R_s +0.397 +- 0.138, R_p +0.412, R +0.646 | my R_s - R_p -0.066 +- 0.087; build R_s - my R_p -0.015
+  szifi3000_none  baseline q>5 SO40 a: my R_s -4.709 (fine -4.734, coarse -4.744) +- 0.264; R_p -4.739 +- 0.259; R -4.951 (alt -4.913) +- 0.327 | build R_s -4.761 +- 0.259, R_p -4.739, R -4.951 | my R_s - R_p +0.029 +- 0.058; build R_s - my R_p -0.022
+  szifi3000_none  baseline q>5 SO40 d: my R_s +0.172 (fine -0.005, coarse +0.261) +- 0.132; R_p -0.037 +- 0.150; R -0.023 (alt -0.019) +- 0.209 | build R_s +0.145 +- 0.126, R_p -0.037, R -0.023 | my R_s - R_p +0.209 +- 0.075; build R_s - my R_p +0.183
+  szifi3000_none  baseline q>5 SO40 e: my R_s -0.085 (fine -0.324, coarse +0.048) +- 0.225; R_p -0.358 +- 0.271; R -0.250 (alt -0.228) +- 0.378 | build R_s -0.036 +- 0.192, R_p -0.358, R -0.250 | my R_s - R_p +0.274 +- 0.150; build R_s - my R_p +0.323
+  szifi3000_none  baseline q>5 full d: my R_s +0.113 (fine -0.185, coarse +0.270) +- 0.233; R_p -0.235 +- 0.277; R -0.161 (alt -0.145) +- 0.384 | build R_s +0.116 +- 0.213, R_p -0.235, R -0.161 | my R_s - R_p +0.348 +- 0.148; build R_s - my R_p +0.351
+  szifi3000_none  baseline q>5 full e: my R_s -0.134 (fine -0.512, coarse +0.076) +- 0.356; R_p -0.567 +- 0.429; R -0.395 (alt -0.360) +- 0.597 | build R_s -0.056 +- 0.304, R_p -0.567, R -0.395 | my R_s - R_p +0.433 +- 0.237; build R_s - my R_p +0.510
+  szifi3000_none  baseline q>6 SO40 a: my R_s -2.055 (fine -2.145, coarse -2.110) +- 0.237; R_p -2.105 +- 0.246; R -2.488 (alt -2.477) +- 0.337 | build R_s -2.071 +- 0.238, R_p -2.105, R -2.488 | my R_s - R_p +0.050 +- 0.062; build R_s - my R_p +0.034
+  szifi3000_none  baseline q>6 SO40 d: my R_s -0.043 (fine -0.107, coarse -0.015) +- 0.126; R_p -0.016 +- 0.143; R -0.213 (alt -0.218) +- 0.196 | build R_s -0.056 +- 0.114, R_p -0.016, R -0.213 | my R_s - R_p -0.027 +- 0.077; build R_s - my R_p -0.040
+  szifi3000_none  baseline q>6 SO40 e: my R_s -0.070 (fine -0.250, coarse -0.110) +- 0.212; R_p -0.005 +- 0.276; R -0.310 (alt -0.315) +- 0.366 | build R_s -0.195 +- 0.184, R_p -0.005, R -0.310 | my R_s - R_p -0.065 +- 0.177; build R_s - my R_p -0.190
+  szifi3000_none  baseline q>6 full d: my R_s -0.076 (fine -0.225, coarse -0.068) +- 0.200; R_p -0.018 +- 0.234; R -0.359 (alt -0.365) +- 0.335 | build R_s -0.148 +- 0.180, R_p -0.018, R -0.359 | my R_s - R_p -0.058 +- 0.139; build R_s - my R_p -0.130
+  szifi3000_none  baseline q>6 full e: my R_s -0.111 (fine -0.395, coarse -0.174) +- 0.335; R_p -0.008 +- 0.437; R -0.491 (alt -0.499) +- 0.579 | build R_s -0.308 +- 0.292, R_p -0.008, R -0.491 | my R_s - R_p -0.103 +- 0.280; build R_s - my R_p -0.300
+  szifi3000_none  goal     q>5 SO40 a: my R_s -7.959 (fine -7.916, coarse -7.896) +- 0.261; R_p -7.788 +- 0.255; R -7.621 (alt -7.576) +- 0.333 | build R_s -7.883 +- 0.256, R_p -7.788, R -7.621 | my R_s - R_p -0.171 +- 0.060; build R_s - my R_p -0.095
+  szifi3000_none  goal     q>5 SO40 d: my R_s +0.915 (fine +0.912, coarse +0.904) +- 0.151; R_p +0.901 +- 0.161; R +0.841 (alt +0.851) +- 0.216 | build R_s +0.883 +- 0.140, R_p +0.901, R +0.841 | my R_s - R_p +0.013 +- 0.083; build R_s - my R_p -0.019
+  szifi3000_none  goal     q>5 SO40 e: my R_s +1.004 (fine +1.001, coarse +0.985) +- 0.243; R_p +1.010 +- 0.275; R +1.056 (alt +1.092) +- 0.368 | build R_s +0.936 +- 0.213, R_p +1.010, R +1.056 | my R_s - R_p -0.006 +- 0.156; build R_s - my R_p -0.074
+  szifi3000_none  goal     q>5 full d: my R_s +1.450 (fine +1.446, coarse +1.429) +- 0.279; R_p +1.442 +- 0.305; R +1.419 (alt +1.451) +- 0.413 | build R_s +1.378 +- 0.251, R_p +1.442, R +1.419 | my R_s - R_p +0.008 +- 0.165; build R_s - my R_p -0.064
+  szifi3000_none  goal     q>5 full e: my R_s +1.587 (fine +1.583, coarse +1.557) +- 0.384; R_p +1.597 +- 0.434; R +1.670 (alt +1.727) +- 0.581 | build R_s +1.479 +- 0.336, R_p +1.597, R +1.670 | my R_s - R_p -0.010 +- 0.246; build R_s - my R_p -0.117
+  szifi3000_none  goal     q>6 SO40 a: my R_s -3.557 (fine -3.555, coarse -3.538) +- 0.258; R_p -3.557 +- 0.259; R -4.124 (alt -4.113) +- 0.306 | build R_s -3.579 +- 0.253, R_p -3.557, R -4.124 | my R_s - R_p -0.000 +- 0.061; build R_s - my R_p -0.023
+  szifi3000_none  goal     q>6 SO40 d: my R_s +0.207 (fine +0.119, coarse +0.211) +- 0.130; R_p +0.186 +- 0.142; R +0.111 (alt +0.108) +- 0.183 | build R_s +0.212 +- 0.124, R_p +0.186, R +0.111 | my R_s - R_p +0.021 +- 0.072; build R_s - my R_p +0.025
+  szifi3000_none  goal     q>6 SO40 e: my R_s +0.066 (fine +0.067, coarse +0.083) +- 0.225; R_p +0.087 +- 0.248; R +0.052 (alt +0.054) +- 0.338 | build R_s +0.194 +- 0.188, R_p +0.087, R +0.052 | my R_s - R_p -0.022 +- 0.150; build R_s - my R_p +0.107
+  szifi3000_none  goal     q>6 full d: my R_s +0.231 (fine +0.149, coarse +0.244) +- 0.231; R_p +0.223 +- 0.250; R +0.133 (alt +0.131) +- 0.336 | build R_s +0.306 +- 0.209, R_p +0.223, R +0.133 | my R_s - R_p +0.008 +- 0.136; build R_s - my R_p +0.083
+  szifi3000_none  goal     q>6 full e: my R_s +0.104 (fine +0.106, coarse +0.132) +- 0.355; R_p +0.138 +- 0.392; R +0.082 (alt +0.085) +- 0.534 | build R_s +0.307 +- 0.297, R_p +0.138, R +0.082 | my R_s - R_p -0.034 +- 0.237; build R_s - my R_p +0.169
+  prod_fof10      baseline q>5 SO40 a: my R_s -12.743 (fine +nan, coarse +nan) +- 0.140; R_p -12.787 +- 0.134; R -12.997 (alt -12.969) +- 0.163 | build R_s -12.750 +- 0.135, R_p -12.787, R -12.997 | my R_s - R_p +0.043 +- 0.031; build R_s - my R_p +0.036
+  prod_fof10      baseline q>5 SO40 d: my R_s +0.837 (fine +nan, coarse +nan) +- 0.070; R_p +0.803 +- 0.073; R +0.889 (alt +0.883) +- 0.097 | build R_s +0.812 +- 0.065, R_p +0.803, R +0.889 | my R_s - R_p +0.034 +- 0.036; build R_s - my R_p +0.009
+  prod_fof10      baseline q>5 SO40 e: my R_s +0.933 (fine +nan, coarse +nan) +- 0.116; R_p +0.902 +- 0.129; R +1.081 (alt +1.085) +- 0.174 | build R_s +0.867 +- 0.103, R_p +0.902, R +1.081 | my R_s - R_p +0.030 +- 0.070; build R_s - my R_p -0.036
+  prod_fof10      baseline q>5 full d: my R_s +1.312 (fine +nan, coarse +nan) +- 0.125; R_p +1.263 +- 0.135; R +1.446 (alt +1.443) +- 0.182 | build R_s +1.251 +- 0.114, R_p +1.263, R +1.446 | my R_s - R_p +0.049 +- 0.071; build R_s - my R_p -0.012
+  prod_fof10      baseline q>5 full e: my R_s +1.475 (fine +nan, coarse +nan) +- 0.184; R_p +1.427 +- 0.204; R +1.709 (alt +1.715) +- 0.275 | build R_s +1.371 +- 0.163, R_p +1.427, R +1.709 | my R_s - R_p +0.048 +- 0.110; build R_s - my R_p -0.056
+  prod_fof10      baseline q>6 SO40 a: my R_s -6.252 (fine +nan, coarse +nan) +- 0.126; R_p -6.266 +- 0.125; R -6.376 (alt -6.368) +- 0.150 | build R_s -6.241 +- 0.122, R_p -6.266, R -6.376 | my R_s - R_p +0.015 +- 0.025; build R_s - my R_p +0.026
+  prod_fof10      baseline q>6 SO40 d: my R_s +0.286 (fine +nan, coarse +nan) +- 0.068; R_p +0.243 +- 0.071; R +0.191 (alt +0.186) +- 0.090 | build R_s +0.253 +- 0.061, R_p +0.243, R +0.191 | my R_s - R_p +0.044 +- 0.036; build R_s - my R_p +0.011
+  prod_fof10      baseline q>6 SO40 e: my R_s +0.324 (fine +nan, coarse +nan) +- 0.113; R_p +0.238 +- 0.128; R +0.016 (alt +0.009) +- 0.167 | build R_s +0.267 +- 0.098, R_p +0.238, R +0.016 | my R_s - R_p +0.086 +- 0.076; build R_s - my R_p +0.030
+  prod_fof10      baseline q>6 full d: my R_s +0.442 (fine +nan, coarse +nan) +- 0.114; R_p +0.356 +- 0.122; R +0.192 (alt +0.183) +- 0.159 | build R_s +0.381 +- 0.102, R_p +0.356, R +0.192 | my R_s - R_p +0.086 +- 0.068; build R_s - my R_p +0.026
+  prod_fof10      baseline q>6 full e: my R_s +0.512 (fine +nan, coarse +nan) +- 0.178; R_p +0.376 +- 0.202; R +0.026 (alt +0.015) +- 0.264 | build R_s +0.423 +- 0.155, R_p +0.376, R +0.026 | my R_s - R_p +0.136 +- 0.120; build R_s - my R_p +0.047
+  prod_fof10      goal     q>5 SO40 a: my R_s -24.425 (fine +nan, coarse +nan) +- 0.154; R_p -24.378 +- 0.144; R -24.283 (alt -24.245) +- 0.164 | build R_s -24.417 +- 0.151, R_p -24.378, R -24.283 | my R_s - R_p -0.047 +- 0.038; build R_s - my R_p -0.039
+  prod_fof10      goal     q>5 SO40 d: my R_s +1.922 (fine +nan, coarse +nan) +- 0.089; R_p +1.956 +- 0.089; R +2.084 (alt +2.095) +- 0.106 | build R_s +1.923 +- 0.083, R_p +1.956, R +2.084 | my R_s - R_p -0.034 +- 0.046; build R_s - my R_p -0.033
+  prod_fof10      goal     q>5 SO40 e: my R_s +2.000 (fine +nan, coarse +nan) +- 0.141; R_p +2.085 +- 0.144; R +2.478 (alt +2.509) +- 0.171 | build R_s +1.983 +- 0.122, R_p +2.085, R +2.478 | my R_s - R_p -0.085 +- 0.079; build R_s - my R_p -0.102
+  prod_fof10      goal     q>5 full d: my R_s +3.001 (fine +nan, coarse +nan) +- 0.168; R_p +3.088 +- 0.171; R +3.464 (alt +3.494) +- 0.202 | build R_s +2.991 +- 0.150, R_p +3.088, R +3.464 | my R_s - R_p -0.087 +- 0.092; build R_s - my R_p -0.097
+  prod_fof10      goal     q>5 full e: my R_s +3.162 (fine +nan, coarse +nan) +- 0.222; R_p +3.296 +- 0.228; R +3.917 (alt +3.966) +- 0.270 | build R_s +3.136 +- 0.193, R_p +3.296, R +3.917 | my R_s - R_p -0.134 +- 0.125; build R_s - my R_p -0.161
+  prod_fof10      goal     q>6 SO40 a: my R_s -12.664 (fine +nan, coarse +nan) +- 0.136; R_p -12.703 +- 0.130; R -12.834 (alt -12.829) +- 0.151 | build R_s -12.690 +- 0.134, R_p -12.703, R -12.834 | my R_s - R_p +0.039 +- 0.029; build R_s - my R_p +0.013
+  prod_fof10      goal     q>6 SO40 d: my R_s +0.814 (fine +nan, coarse +nan) +- 0.072; R_p +0.796 +- 0.074; R +0.730 (alt +0.729) +- 0.092 | build R_s +0.812 +- 0.066, R_p +0.796, R +0.730 | my R_s - R_p +0.017 +- 0.036; build R_s - my R_p +0.015
+  prod_fof10      goal     q>6 SO40 e: my R_s +0.817 (fine +nan, coarse +nan) +- 0.120; R_p +0.841 +- 0.129; R +0.967 (alt +0.975) +- 0.158 | build R_s +0.818 +- 0.104, R_p +0.841, R +0.967 | my R_s - R_p -0.024 +- 0.068; build R_s - my R_p -0.023
+  prod_fof10      goal     q>6 full d: my R_s +1.227 (fine +nan, coarse +nan) +- 0.130; R_p +1.226 +- 0.137; R +1.240 (alt +1.244) +- 0.169 | build R_s +1.226 +- 0.116, R_p +1.226, R +1.240 | my R_s - R_p +0.001 +- 0.071; build R_s - my R_p +0.000
+  prod_fof10      goal     q>6 full e: my R_s +1.291 (fine +nan, coarse +nan) +- 0.190; R_p +1.330 +- 0.204; R +1.528 (alt +1.541) +- 0.251 | build R_s +1.294 +- 0.164, R_p +1.330, R +1.528 | my R_s - R_p -0.038 +- 0.108; build R_s - my R_p -0.036
+
+kernel Monte Carlo noise (headline, q_cut 5): linearised S8 bias with the build's even / odd half kernels in my model; R recomputed with N_exp from the same half kernel (324 Q2 tiles; my binning, bilinear interpolation)
+  baseline SO40 a: my R_s: even -2.130 / odd -2.150 (diff +0.020; full -2.141); R (Q2 tiles): even -1.759 / odd -2.775 (diff +1.016; full -2.308); N_exp(q > 5, Q2) even/odd - 1 = -1.08%
+  baseline SO40 d: my R_s: even +0.367 / odd +0.397 (diff -0.029; full +0.384); R (Q2 tiles): even +0.113 / odd +0.183 (diff -0.070; full +0.156); N_exp(q > 5, Q2) even/odd - 1 = -1.08%
+  baseline SO40 e: my R_s: even +0.433 / odd +0.477 (diff -0.044; full +0.462); R (Q2 tiles): even -0.118 / odd +0.226 (diff -0.344; full +0.050); N_exp(q > 5, Q2) even/odd - 1 = -1.08%
+  baseline full a: my R_s: even -3.368 / odd -3.400 (diff +0.032; full -3.385); R (Q2 tiles): even -2.781 / odd -4.387 (diff +1.606; full -3.649); N_exp(q > 5, Q2) even/odd - 1 = -1.08%
+  baseline full d: my R_s: even +0.591 / odd +0.642 (diff -0.051; full +0.623); R (Q2 tiles): even +0.033 / odd +0.300 (diff -0.266; full +0.172); N_exp(q > 5, Q2) even/odd - 1 = -1.08%
+  baseline full e: my R_s: even +0.685 / odd +0.754 (diff -0.069; full +0.731); R (Q2 tiles): even -0.187 / odd +0.357 (diff -0.543; full +0.078); N_exp(q > 5, Q2) even/odd - 1 = -1.08%
+  goal     SO40 a: my R_s: even -4.148 / odd -4.117 (diff -0.031; full -4.132); R (Q2 tiles): even -4.672 / odd -3.833 (diff -0.840; full -4.270); N_exp(q > 5, Q2) even/odd - 1 = +0.37%
+  goal     SO40 d: my R_s: even +0.626 / odd +0.655 (diff -0.030; full +0.654); R (Q2 tiles): even +0.817 / odd +0.549 (diff +0.268; full +0.709); N_exp(q > 5, Q2) even/odd - 1 = +0.37%
+  goal     SO40 e: my R_s: even +0.608 / odd +0.678 (diff -0.069; full +0.668); R (Q2 tiles): even +0.939 / odd +0.878 (diff +0.061; full +0.926); N_exp(q > 5, Q2) even/odd - 1 = +0.37%
+  goal     full a: my R_s: even -6.558 / odd -6.509 (diff -0.049; full -6.534); R (Q2 tiles): even -7.388 / odd -6.060 (diff -1.328; full -6.752); N_exp(q > 5, Q2) even/odd - 1 = +0.37%
+  goal     full d: my R_s: even +0.951 / odd +1.020 (diff -0.069; full +1.013); R (Q2 tiles): even +1.342 / odd +1.064 (diff +0.278; full +1.234); N_exp(q > 5, Q2) even/odd - 1 = +0.37%
+  goal     full e: my R_s: even +0.962 / odd +1.071 (diff -0.109; full +1.056); R (Q2 tiles): even +1.485 / odd +1.389 (diff +0.096; full +1.464); N_exp(q > 5, Q2) even/odd - 1 = +0.37%
+done [34 s]; peak RSS 1.57 GB
+       35.10 real        92.21 user         1.43 sys
+          1567784960  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              155334  page reclaims
+                 199  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                3572  voluntary context switches
+               42665  involuntary context switches
+        241326689182  instructions retired
+        254108970879  cycles elapsed
+          1079840960  peak memory footprint

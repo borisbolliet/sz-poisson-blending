@@ -1,0 +1,39 @@
+=================== baseline ===================
+(1) sparse injections, 22680 clusters on 324 halo-free skies (7 sets of <= 10 per sky); sigma of the injection tile / halo-free tile - 1 at 0.5' / 4.45' / 15': +0.008% / +0.017% / +0.029%
+    q_obs > 4.0: painted 17246, virtual (halo-free filter) 17338: painted / virtual - 1 = -0.53 +- 0.06%
+    q_obs > 4.5: painted 15889, virtual (halo-free filter) 15900: painted / virtual - 1 = -0.07 +- 0.06%
+    q_obs > 5.0: painted 14419, virtual (halo-free filter) 14409: painted / virtual - 1 = +0.07 +- 0.06%
+    q_obs > 6.0: painted 11438, virtual (halo-free filter) 11444: painted / virtual - 1 = -0.05 +- 0.08%
+(2) dense injections, 21280 clusters on 120 halo-free skies; sigma dense / halo-free - 1 at 0.5' / 4.45' / 15': +0.269% / +0.356% / +0.224%
+    P / Vn: q > 4.0: -1.00 +- 0.10%; q > 4.5: -0.61 +- 0.09%; q > 5.0: -0.74 +- 0.12%; q > 6.0: -0.97 +- 0.15%
+    Vd / Vn: q > 4.0: -1.01 +- 0.09%; q > 4.5: -0.67 +- 0.09%; q > 5.0: -0.69 +- 0.11%; q > 6.0: -1.11 +- 0.14%
+    P / Vd: q > 4.0: +0.01 +- 0.05%; q > 4.5: +0.06 +- 0.05%; q > 5.0: -0.05 +- 0.06%; q > 6.0: +0.14 +- 0.09%
+=================== goal ===================
+(1) sparse injections, 22680 clusters on 324 halo-free skies (7 sets of <= 10 per sky); sigma of the injection tile / halo-free tile - 1 at 0.5' / 4.45' / 15': +0.006% / +0.018% / +0.029%
+    q_obs > 4.0: painted 17227, virtual (halo-free filter) 17310: painted / virtual - 1 = -0.48 +- 0.06%
+    q_obs > 4.5: painted 15878, virtual (halo-free filter) 15889: painted / virtual - 1 = -0.07 +- 0.06%
+    q_obs > 5.0: painted 14433, virtual (halo-free filter) 14444: painted / virtual - 1 = -0.08 +- 0.07%
+    q_obs > 6.0: painted 11400, virtual (halo-free filter) 11412: painted / virtual - 1 = -0.11 +- 0.08%
+(2) dense injections, 21280 clusters on 120 halo-free skies; sigma dense / halo-free - 1 at 0.5' / 4.45' / 15': +0.229% / +0.319% / +0.224%
+    P / Vn: q > 4.0: -0.86 +- 0.08%; q > 4.5: -0.59 +- 0.10%; q > 5.0: -0.63 +- 0.09%; q > 6.0: -1.14 +- 0.16%
+    Vd / Vn: q > 4.0: -0.84 +- 0.08%; q > 4.5: -0.57 +- 0.09%; q > 5.0: -0.69 +- 0.09%; q > 6.0: -1.23 +- 0.15%
+    P / Vd: q > 4.0: -0.02 +- 0.04%; q > 4.5: -0.02 +- 0.05%; q > 5.0: +0.06 +- 0.07%; q > 6.0: +0.10 +- 0.08%
+peak RSS 0.07 GB
+        0.78 real         0.41 user         0.14 sys
+            70270976  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                5503  page reclaims
+                 168  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                2499  voluntary context switches
+                 165  involuntary context switches
+          3989394609  instructions retired
+          1663639160  cycles elapsed
+            57345152  peak memory footprint

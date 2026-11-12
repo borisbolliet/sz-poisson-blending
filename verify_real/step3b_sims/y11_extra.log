@@ -1,0 +1,64 @@
+
+=== [baseline] (400 tiles) ===
+(1) model at the truth x tiles' area vs the tiles' N_exp (q > 5): 80,448.1 vs 80,491.4 (+0.05% +- 0.29% tile bootstrap); per z bin chi2 16.2 for 16 bins
+(2) Rs SO40 a: chi2_min 9.29, noise term 2.42 -> +6.88 (power 0.11; as fitted 0.14)
+(2) Rs SO40 d: chi2_min 6.07, noise term 2.42 -> +3.65 (power 0.08; as fitted 0.10)
+(2) Rs SO40 e: chi2_min 6.06, noise term 2.42 -> +3.64 (power 0.08; as fitted 0.10)
+(2) Rs full a: chi2_min 23.23, noise term 6.04 -> +17.19 (power 0.26; as fitted 0.37)
+(2) Rs full d: chi2_min 15.16, noise term 6.04 -> +9.12 (power 0.14; as fitted 0.23)
+(2) Rs full e: chi2_min 15.15, noise term 6.04 -> +9.11 (power 0.14; as fitted 0.23)
+(2) Rp SO40 a: chi2_min 11.07, noise term 6.68 -> +4.39 (power 0.08; as fitted 0.16)
+(2) Rp SO40 d: chi2_min 7.94, noise term 6.68 -> +1.26 (power 0.06; as fitted 0.12)
+(2) Rp SO40 e: chi2_min 7.94, noise term 6.68 -> +1.26 (power 0.06; as fitted 0.12)
+(2) Rp full a: chi2_min 27.67, noise term 16.70 -> +10.97 (power 0.16; as fitted 0.46)
+(2) Rp full d: chi2_min 19.86, noise term 16.70 -> +3.16 (power 0.07; as fitted 0.31)
+(2) Rp full e: chi2_min 19.86, noise term 16.70 -> +3.16 (power 0.07; as fitted 0.31)
+(2) R  SO40 a: chi2_min 14.65, noise term 11.98 -> +2.67 (power 0.07; as fitted 0.22)
+(2) R  SO40 d: chi2_min 12.90, noise term 11.98 -> +0.92 (power 0.06; as fitted 0.19)
+(2) R  SO40 e: chi2_min 12.88, noise term 11.98 -> +0.90 (power 0.06; as fitted 0.19)
+(2) R  full a: chi2_min 36.63, noise term 29.95 -> +6.68 (power 0.11; as fitted 0.63)
+(2) R  full d: chi2_min 32.22, noise term 29.95 -> +2.27 (power 0.07; as fitted 0.56)
+(2) R  full e: chi2_min 32.20, noise term 29.95 -> +2.25 (power 0.07; as fitted 0.56)
+(3) R      d: own bootstrap error 0.193 (400 tiles) -> scaled to 1,548 tiles 0.098; to 324 tiles 0.214
+(3) Rp     d: own bootstrap error 0.137 (400 tiles) -> scaled to 1,548 tiles 0.070; to 324 tiles 0.152
+(3) Rs     d: own bootstrap error 0.116 (400 tiles) -> scaled to 1,548 tiles 0.059; to 324 tiles 0.129
+(3) Rjoint d: own bootstrap error 0.189 (400 tiles) -> scaled to 1,548 tiles 0.096; to 324 tiles 0.210
+(3) R      e: own bootstrap error 0.351 (400 tiles) -> scaled to 1,548 tiles 0.178; to 324 tiles 0.390
+(3) Rp     e: own bootstrap error 0.243 (400 tiles) -> scaled to 1,548 tiles 0.123; to 324 tiles 0.270
+(3) Rs     e: own bootstrap error 0.190 (400 tiles) -> scaled to 1,548 tiles 0.097; to 324 tiles 0.211
+(3) Rjoint e: own bootstrap error 0.322 (400 tiles) -> scaled to 1,548 tiles 0.164; to 324 tiles 0.358
+(4) SO40 a: linearised S8 with R_s -2.63 -> with the injection reference (N_exp x (1 - 0.0026)) -2.27
+(4) SO40 d: linearised S8 with R_s +0.15 -> with the injection reference (N_exp x (1 - 0.0026)) +0.17
+(4) SO40 e: linearised S8 with R_s +0.14 -> with the injection reference (N_exp x (1 - 0.0026)) +0.15
+
+=== [goal] (400 tiles) ===
+(1) model at the truth x tiles' area vs the tiles' N_exp (q > 5): 121,858.9 vs 121,889.5 (+0.03% +- 0.24% tile bootstrap); per z bin chi2 14.9 for 16 bins
+(2) Rs SO40 a: chi2_min 17.78, noise term 3.81 -> +13.98 (power 0.21; as fitted 0.27)
+(2) Rs SO40 d: chi2_min 7.57, noise term 3.81 -> +3.76 (power 0.08; as fitted 0.12)
+(2) Rs SO40 e: chi2_min 7.52, noise term 3.81 -> +3.71 (power 0.08; as fitted 0.12)
+(2) Rs full a: chi2_min 44.46, noise term 9.52 -> +34.94 (power 0.60; as fitted 0.76)
+(2) Rs full d: chi2_min 18.86, noise term 9.52 -> +9.34 (power 0.14; as fitted 0.29)
+(2) Rs full e: chi2_min 18.80, noise term 9.52 -> +9.29 (power 0.14; as fitted 0.29)
+(2) Rp SO40 a: chi2_min 20.43, noise term 8.18 -> +12.25 (power 0.18; as fitted 0.32)
+(2) Rp SO40 d: chi2_min 10.74, noise term 8.18 -> +2.56 (power 0.07; as fitted 0.16)
+(2) Rp SO40 e: chi2_min 10.70, noise term 8.18 -> +2.52 (power 0.07; as fitted 0.16)
+(2) Rp full a: chi2_min 51.08, noise term 20.45 -> +30.63 (power 0.52; as fitted 0.84)
+(2) Rp full d: chi2_min 26.80, noise term 20.45 -> +6.35 (power 0.11; as fitted 0.45)
+(2) Rp full e: chi2_min 26.74, noise term 20.45 -> +6.29 (power 0.10; as fitted 0.45)
+(2) R  SO40 a: chi2_min 24.82, noise term 12.16 -> +12.67 (power 0.19; as fitted 0.41)
+(2) R  SO40 d: chi2_min 16.06, noise term 12.16 -> +3.90 (power 0.08; as fitted 0.24)
+(2) R  SO40 e: chi2_min 15.74, noise term 12.16 -> +3.59 (power 0.08; as fitted 0.24)
+(2) R  full a: chi2_min 62.06, noise term 30.39 -> +31.67 (power 0.54; as fitted 0.93)
+(2) R  full d: chi2_min 39.72, noise term 30.39 -> +9.33 (power 0.14; as fitted 0.69)
+(2) R  full e: chi2_min 39.36, noise term 30.39 -> +8.97 (power 0.14; as fitted 0.69)
+(3) R      d: own bootstrap error 0.199 (400 tiles) -> scaled to 1,548 tiles 0.101; to 324 tiles 0.221
+(3) Rp     d: own bootstrap error 0.144 (400 tiles) -> scaled to 1,548 tiles 0.073; to 324 tiles 0.160
+(3) Rs     d: own bootstrap error 0.156 (400 tiles) -> scaled to 1,548 tiles 0.079; to 324 tiles 0.173
+(3) Rjoint d: own bootstrap error 0.219 (400 tiles) -> scaled to 1,548 tiles 0.111; to 324 tiles 0.243
+(3) R      e: own bootstrap error 0.307 (400 tiles) -> scaled to 1,548 tiles 0.156; to 324 tiles 0.342
+(3) Rp     e: own bootstrap error 0.231 (400 tiles) -> scaled to 1,548 tiles 0.117; to 324 tiles 0.257
+(3) Rs     e: own bootstrap error 0.240 (400 tiles) -> scaled to 1,548 tiles 0.122; to 324 tiles 0.266
+(3) Rjoint e: own bootstrap error 0.337 (400 tiles) -> scaled to 1,548 tiles 0.171; to 324 tiles 0.375
+(4) SO40 a: linearised S8 with R_s -4.43 -> with the injection reference (N_exp x (1 - 0.0085)) -2.95
+(4) SO40 d: linearised S8 with R_s +0.63 -> with the injection reference (N_exp x (1 - 0.0085)) +0.70
+(4) SO40 e: linearised S8 with R_s +0.52 -> with the injection reference (N_exp x (1 - 0.0085)) +0.53

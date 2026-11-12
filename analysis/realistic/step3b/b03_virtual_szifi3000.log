@@ -1,0 +1,54 @@
+b03: variant szifi3000, noise-only tiles 0..323 x ('baseline', 'goal'), 5 processes; 4000 kernel clusters per tile
+    2 baseline:  17.7 s (finder 6.9, kernel 2.3, iso 0.3 [702 halos], sparse 0.0); worker peak RSS 1.17 GB [elapsed 18 s]
+   10 baseline:   4.7 s (finder 2.0, kernel 2.4, iso 0.3 [803 halos], sparse 0.0); worker peak RSS 1.19 GB [elapsed 61 s]
+   20 baseline:   4.8 s (finder 2.3, kernel 2.2, iso 0.3 [742 halos], sparse 0.0); worker peak RSS 1.19 GB [elapsed 79 s]
+   30 baseline:   4.7 s (finder 2.0, kernel 2.4, iso 0.3 [731 halos], sparse 0.0); worker peak RSS 1.19 GB [elapsed 99 s]
+   40 baseline:   4.5 s (finder 1.9, kernel 2.3, iso 0.3 [735 halos], sparse 0.0); worker peak RSS 1.19 GB [elapsed 118 s]
+   50 baseline:   4.7 s (finder 2.1, kernel 2.3, iso 0.3 [730 halos], sparse 0.0); worker peak RSS 1.19 GB [elapsed 138 s]
+   59 goal    :   5.1 s (finder 2.3, kernel 2.3, iso 0.4 [1021 halos], sparse 0.0); worker peak RSS 1.18 GB [elapsed 158 s]
+   69 goal    :   5.4 s (finder 2.7, kernel 2.3, iso 0.4 [1054 halos], sparse 0.0); worker peak RSS 1.20 GB [elapsed 178 s]
+   80 baseline:   5.0 s (finder 2.4, kernel 2.3, iso 0.3 [708 halos], sparse 0.0); worker peak RSS 1.20 GB [elapsed 198 s]
+   89 goal    :   5.3 s (finder 2.6, kernel 2.3, iso 0.5 [1035 halos], sparse 0.0); worker peak RSS 1.20 GB [elapsed 218 s]
+  100 goal    :   4.6 s (finder 2.0, kernel 2.2, iso 0.4 [1056 halos], sparse 0.0); worker peak RSS 1.33 GB [elapsed 240 s]
+  110 baseline:   5.0 s (finder 2.3, kernel 2.4, iso 0.3 [768 halos], sparse 0.0); worker peak RSS 1.29 GB [elapsed 262 s]
+  120 baseline:   5.2 s (finder 2.5, kernel 2.4, iso 0.3 [696 halos], sparse 0.0); worker peak RSS 1.30 GB [elapsed 282 s]
+  130 baseline:   4.8 s (finder 2.1, kernel 2.4, iso 0.3 [731 halos], sparse 0.0); worker peak RSS 1.29 GB [elapsed 302 s]
+  140 baseline:   4.8 s (finder 2.1, kernel 2.4, iso 0.3 [741 halos], sparse 0.0); worker peak RSS 1.29 GB [elapsed 321 s]
+  151 baseline:   4.5 s (finder 1.8, kernel 2.4, iso 0.3 [740 halos], sparse 0.0); worker peak RSS 1.39 GB [elapsed 341 s]
+  160 baseline:   4.7 s (finder 2.0, kernel 2.4, iso 0.3 [743 halos], sparse 0.0); worker peak RSS 1.39 GB [elapsed 360 s]
+  169 goal    :   5.4 s (finder 2.6, kernel 2.4, iso 0.4 [1061 halos], sparse 0.0); worker peak RSS 1.33 GB [elapsed 380 s]
+  181 goal    :   4.7 s (finder 2.1, kernel 2.2, iso 0.4 [1017 halos], sparse 0.0); worker peak RSS 1.30 GB [elapsed 401 s]
+  190 baseline:   5.3 s (finder 2.6, kernel 2.4, iso 0.3 [765 halos], sparse 0.0); worker peak RSS 1.30 GB [elapsed 421 s]
+  200 goal    :   4.9 s (finder 2.4, kernel 2.2, iso 0.4 [1029 halos], sparse 0.0); worker peak RSS 1.33 GB [elapsed 443 s]
+  210 baseline:   4.9 s (finder 2.4, kernel 2.3, iso 0.3 [706 halos], sparse 0.0); worker peak RSS 1.32 GB [elapsed 465 s]
+  220 baseline:   4.6 s (finder 1.9, kernel 2.4, iso 0.3 [686 halos], sparse 0.0); worker peak RSS 1.32 GB [elapsed 484 s]
+  230 baseline:   4.5 s (finder 1.9, kernel 2.3, iso 0.3 [761 halos], sparse 0.0); worker peak RSS 1.32 GB [elapsed 504 s]
+  240 baseline:   4.7 s (finder 2.0, kernel 2.4, iso 0.3 [771 halos], sparse 0.0); worker peak RSS 1.32 GB [elapsed 524 s]
+  250 baseline:   4.2 s (finder 1.7, kernel 2.2, iso 0.3 [763 halos], sparse 0.0); worker peak RSS 1.32 GB [elapsed 543 s]
+  259 goal    :   5.2 s (finder 2.5, kernel 2.3, iso 0.4 [1057 halos], sparse 0.0); worker peak RSS 1.32 GB [elapsed 563 s]
+  269 goal    :   5.2 s (finder 2.5, kernel 2.3, iso 0.4 [972 halos], sparse 0.0); worker peak RSS 1.32 GB [elapsed 582 s]
+  279 goal    :   5.9 s (finder 3.2, kernel 2.3, iso 0.4 [1020 halos], sparse 0.0); worker peak RSS 1.26 GB [elapsed 603 s]
+  290 baseline:   5.0 s (finder 2.4, kernel 2.3, iso 0.3 [703 halos], sparse 0.0); worker peak RSS 1.26 GB [elapsed 624 s]
+  300 goal    :   4.9 s (finder 2.2, kernel 2.3, iso 0.4 [1054 halos], sparse 0.0); worker peak RSS 1.20 GB [elapsed 646 s]
+  310 baseline:   4.5 s (finder 1.8, kernel 2.4, iso 0.3 [815 halos], sparse 0.0); worker peak RSS 1.26 GB [elapsed 668 s]
+  320 baseline:   5.2 s (finder 2.7, kernel 2.3, iso 0.3 [705 halos], sparse 0.0); worker peak RSS 1.29 GB [elapsed 688 s]
+  323 goal    :   5.0 s (finder 2.3, kernel 2.2, iso 0.4 [1018 halos], sparse 0.0); worker peak RSS 1.33 GB [elapsed 696 s]
+b03 done: 648 jobs in 696 s wall; largest worker peak RSS 1.39 GB
+      696.92 real      3445.29 user        17.83 sys
+          1387675648  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             5190625  page reclaims
+                2091  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                5471  voluntary context switches
+               78357  involuntary context switches
+          5042939663  instructions retired
+          2013729949  cycles elapsed
+            78120384  peak memory footprint

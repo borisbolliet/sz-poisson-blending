@@ -1,0 +1,215 @@
+==================== baseline: 420832 halos (q_true >= 1.5) in the 324 Q2 tiles; new tiles (b14 / b15) for the production setups: 1224 (1589689 halos); 2000 tile-bootstrap resamples; pooled-correction cells 25 theta x 108 q' nodes
+  [prod_none] tiles 1548; halos with q' >= 1.9 without an isolated copy (Q2 tiles): 0; halos whose blended and isolated outcome differ at e = 5: 38156 of 328534 credited in either
+  [cell-grid check] q > 5: R_s with every other q' node: model-weighted total -1.361% vs -1.362%; max |dR| over bins with mu > 10: 0.0042
+  [prod_none] q > 5: N_det 307333, N_exp 312188.5, N_iso 311579; count change N_det/N_exp - 1 = -1.56 +- 0.09%; N_det/N_iso - 1 = -1.36 +- 0.06%; R_s (tile-halo weights) -1.36 +- 0.06%, R_s (full-sky model weights) -1.36 +- 0.06%; check N_iso/N_exp - 1 = -0.20 +- 0.09%
+     coarse z bins 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0 [%]:
+        R  : -2.7+-0.9, -1.4+-0.1, -1.6+-0.1, -1.6+-0.3, -1.8+-0.7, -3.3+-1.8
+        R_p: -3.3+-0.6, -1.4+-0.1, -1.3+-0.1, -1.5+-0.2, -1.8+-0.4, -0.7+-1.4
+        R_s: -3.2+-0.5, -1.3+-0.1, -1.3+-0.1, -1.5+-0.1, -1.7+-0.3, -1.5+-0.8
+     q bins 5-7.27, 7.27-10.6, 10.6-15.4, 15.4-22.4, 22.4-32.5, 32.5-47.3, 47.3-68.8, 68.8-100, 100-inf [%]:
+        R  : -2.7+-0.2, -0.0+-0.2, +0.4+-0.3, -0.4+-0.4, +0.0+-0.5, -0.7+-0.8, +1.9+-1.5, +0.2+-2.2, +8.1+-7.7
+        R_s: -2.3+-0.1, -0.1+-0.2, +0.1+-0.2, +0.4+-0.3, -0.4+-0.4, +0.1+-0.6, -0.7+-1.2, -0.5+-1.5, +0.0+-0.0
+     consistency R vs R_s over 99 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 126.4
+     consistency R_p vs R_s over 99 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 87.0
+     median bootstrap error per bin (N_exp >= 10): R 0.0177, R_p 0.0116, R_s 0.0068; bins with N_exp < 1: 24 holding 2 credited halos
+  [cell-grid check] q > 6: R_s with every other q' node: model-weighted total -0.492% vs -0.492%; max |dR| over bins with mu > 10: 0.0056
+     [14 s]
+  [prod_closest1] tiles 1548; halos with q' >= 1.9 without an isolated copy (Q2 tiles): 0; halos whose blended and isolated outcome differ at e = 5: 38099 of 328333 credited in either
+  [prod_closest1] q > 5: N_det 306988, N_exp 312188.5, N_iso 311579; count change N_det/N_exp - 1 = -1.67 +- 0.09%; N_det/N_iso - 1 = -1.47 +- 0.06%; R_s (tile-halo weights) -1.47 +- 0.06%, R_s (full-sky model weights) -1.47 +- 0.06%; check N_iso/N_exp - 1 = -0.20 +- 0.09%
+     coarse z bins 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0 [%]:
+        R  : -2.7+-0.9, -1.5+-0.1, -1.7+-0.1, -1.8+-0.3, -2.0+-0.7, -3.6+-1.8
+        R_p: -3.3+-0.6, -1.4+-0.1, -1.4+-0.1, -1.7+-0.2, -1.9+-0.4, -1.0+-1.3
+        R_s: -3.3+-0.5, -1.4+-0.1, -1.4+-0.1, -1.7+-0.1, -1.8+-0.3, -1.8+-0.7
+     q bins 5-7.27, 7.27-10.6, 10.6-15.4, 15.4-22.4, 22.4-32.5, 32.5-47.3, 47.3-68.8, 68.8-100, 100-inf [%]:
+        R  : -2.8+-0.2, -0.1+-0.2, +0.4+-0.3, -0.4+-0.4, +0.0+-0.5, -0.7+-0.8, +1.9+-1.5, +0.2+-2.2, +8.1+-7.7
+        R_s: -2.5+-0.1, -0.1+-0.2, +0.1+-0.2, +0.4+-0.3, -0.4+-0.4, +0.1+-0.6, -0.7+-1.2, -0.5+-1.5, +0.0+-0.0
+     consistency R vs R_s over 99 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 128.0
+     consistency R_p vs R_s over 99 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 88.7
+     median bootstrap error per bin (N_exp >= 10): R 0.0177, R_p 0.0116, R_s 0.0068; bins with N_exp < 1: 24 holding 2 credited halos
+     [9 s]
+  [prod_fof10] tiles 1548; halos with q' >= 1.9 without an isolated copy (Q2 tiles): 0; halos whose blended and isolated outcome differ at e = 5: 56059 of 326110 credited in either
+  [prod_fof10] q > 5: N_det 284582, N_exp 312188.5, N_iso 311579; count change N_det/N_exp - 1 = -8.84 +- 0.09%; N_det/N_iso - 1 = -8.66 +- 0.07%; R_s (tile-halo weights) -8.65 +- 0.07%, R_s (full-sky model weights) -8.64 +- 0.07%; check N_iso/N_exp - 1 = -0.20 +- 0.09%
+     coarse z bins 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0 [%]:
+        R  : -8.6+-0.9, -8.1+-0.1, -9.0+-0.1, -9.9+-0.3, -10.7+-0.6, -12.2+-1.8
+        R_p: -9.1+-0.7, -8.0+-0.1, -8.7+-0.1, -9.8+-0.2, -10.7+-0.5, -9.9+-1.4
+        R_s: -9.2+-0.6, -8.0+-0.1, -8.7+-0.1, -9.8+-0.2, -10.5+-0.3, -10.7+-0.8
+     q bins 5-7.27, 7.27-10.6, 10.6-15.4, 15.4-22.4, 22.4-32.5, 32.5-47.3, 47.3-68.8, 68.8-100, 100-inf [%]:
+        R  : -12.9+-0.2, -4.6+-0.2, -1.3+-0.3, -1.0+-0.4, -0.2+-0.5, -0.8+-0.8, +1.9+-1.5, +0.2+-2.2, +8.1+-7.7
+        R_s: -12.5+-0.1, -4.7+-0.2, -1.6+-0.2, -0.2+-0.3, -0.6+-0.4, +0.0+-0.6, -0.7+-1.2, -0.5+-1.5, +0.0+-0.0
+     consistency R vs R_s over 99 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 120.3
+     consistency R_p vs R_s over 99 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 76.9
+     median bootstrap error per bin (N_exp >= 10): R 0.0175, R_p 0.0117, R_s 0.0068; bins with N_exp < 1: 24 holding 2 credited halos
+     [9 s]
+  [prod_keepnr] tiles 1548; halos with q' >= 1.9 without an isolated copy (Q2 tiles): 0; halos whose blended and isolated outcome differ at e = 5: 38156 of 328534 credited in either
+  [prod_keepnr] q > 5: N_det 313175, N_exp 312188.5, N_iso 311579; count change N_det/N_exp - 1 = +0.32 +- 0.09%; N_det/N_iso - 1 = +0.51 +- 0.07%; R_s (tile-halo weights) +0.51 +- 0.07%, R_s (full-sky model weights) +0.51 +- 0.07%; check N_iso/N_exp - 1 = -0.20 +- 0.09%
+     coarse z bins 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0 [%]:
+        R  : -0.9+-0.9, +0.0+-0.1, +0.2+-0.1, +0.9+-0.3, +2.6+-0.7, +5.9+-2.0
+        R_p: -1.5+-0.6, +0.1+-0.1, +0.5+-0.1, +1.0+-0.2, +2.7+-0.5, +8.7+-1.7
+        R_s: -1.5+-0.6, +0.2+-0.1, +0.5+-0.1, +1.1+-0.1, +2.7+-0.3, +6.6+-0.9
+     q bins 5-7.27, 7.27-10.6, 10.6-15.4, 15.4-22.4, 22.4-32.5, 32.5-47.3, 47.3-68.8, 68.8-100, 100-inf [%]:
+        R  : +0.5+-0.2, -0.0+-0.2, +0.4+-0.3, -0.4+-0.4, +0.0+-0.5, -0.7+-0.8, +1.9+-1.5, +0.2+-2.2, +8.1+-7.7
+        R_s: +0.9+-0.1, -0.1+-0.2, +0.1+-0.2, +0.4+-0.3, -0.4+-0.4, +0.1+-0.6, -0.7+-1.2, -0.5+-1.5, +0.0+-0.0
+     consistency R vs R_s over 99 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 128.6
+     consistency R_p vs R_s over 99 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 90.2
+     median bootstrap error per bin (N_exp >= 10): R 0.0188, R_p 0.0116, R_s 0.0068; bins with N_exp < 1: 24 holding 2 credited halos
+     [12 s]
+  [szifi3000_none] tiles 324; halos with q' >= 1.9 without an isolated copy (Q2 tiles): 0; halos whose blended and isolated outcome differ at e = 5: 7240 of 57916 credited in either
+  [szifi3000_none] q > 5: N_det 53247, N_exp 55431.9, N_iso 55345; count change N_det/N_exp - 1 = -3.94 +- 0.21%; N_det/N_iso - 1 = -3.79 +- 0.15%; R_s (tile-halo weights) -3.80 +- 0.16%, R_s (full-sky model weights) -3.78 +- 0.15%; check N_iso/N_exp - 1 = -0.16 +- 0.20%
+     coarse z bins 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0 [%]:
+        R  : -1.6+-1.9, -3.3+-0.3, -4.2+-0.3, -4.6+-0.7, -6.5+-1.5, -7.9+-4.5
+        R_p: -2.5+-1.6, -3.2+-0.2, -3.9+-0.2, -4.7+-0.4, -6.7+-1.1, -4.9+-3.2
+        R_s: -3.1+-1.4, -3.3+-0.2, -3.8+-0.2, -4.8+-0.3, -6.2+-0.7, -7.6+-1.6
+     q bins 5-7.27, 7.27-10.6, 10.6-15.4, 15.4-22.4, 22.4-32.5, 32.5-47.3, 47.3-68.8, 68.8-100, 100-inf [%]:
+        R  : -5.5+-0.4, -2.0+-0.5, -1.9+-0.7, -0.6+-0.9, +1.3+-1.3, -0.2+-1.8, +3.7+-3.5, -2.9+-7.2, -100.0+-nan
+        R_s: -5.3+-0.3, -2.1+-0.4, -1.2+-0.5, -0.5+-0.7, +0.5+-0.9, -1.2+-1.3, +1.8+-2.8, +0.0+-0.0, +0.0+-0.0
+     consistency R vs R_s over 79 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 56.2
+     consistency R_p vs R_s over 79 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 80.4
+     median bootstrap error per bin (N_exp >= 10): R 0.0312, R_p 0.0195, R_s 0.0130; bins with N_exp < 1: 45 holding 4 credited halos
+     [4 s]
+  [szifi12000_none] tiles 324; halos with q' >= 1.9 without an isolated copy (Q2 tiles): 0; halos whose blended and isolated outcome differ at e = 5: 8337 of 70910 credited in either
+  [szifi12000_none] q > 5: N_det 66133, N_exp 67523.6, N_iso 67350; count change N_det/N_exp - 1 = -2.06 +- 0.19%; N_det/N_iso - 1 = -1.81 +- 0.14%; R_s (tile-halo weights) -1.81 +- 0.14%, R_s (full-sky model weights) -1.80 +- 0.14%; check N_iso/N_exp - 1 = -0.26 +- 0.19%
+     coarse z bins 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0 [%]:
+        R  : -1.9+-2.0, -1.8+-0.3, -2.1+-0.3, -2.0+-0.6, -3.7+-1.4, -6.5+-3.8
+        R_p: -4.0+-1.4, -1.7+-0.2, -1.7+-0.2, -2.2+-0.4, -1.7+-0.9, -3.6+-2.8
+        R_s: -3.2+-1.2, -1.6+-0.2, -1.8+-0.2, -2.1+-0.3, -2.2+-0.6, -3.1+-1.5
+     q bins 5-7.27, 7.27-10.6, 10.6-15.4, 15.4-22.4, 22.4-32.5, 32.5-47.3, 47.3-68.8, 68.8-100, 100-inf [%]:
+        R  : -3.2+-0.4, -0.6+-0.5, -0.2+-0.6, -0.3+-0.8, -1.0+-1.2, +1.6+-1.5, -1.5+-3.2, -2.2+-8.8, +11.4+-nan
+        R_s: -2.7+-0.3, -0.7+-0.4, -0.0+-0.5, -0.4+-0.6, +1.5+-0.8, -1.1+-1.1, -3.7+-2.3, +0.0+-0.0, +0.0+-0.0
+     consistency R vs R_s over 83 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 108.0
+     consistency R_p vs R_s over 83 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 93.4
+     median bootstrap error per bin (N_exp >= 10): R 0.0309, R_p 0.0198, R_s 0.0123; bins with N_exp < 1: 39 holding 3 credited halos
+     [4 s]
+  [prod_none_q2] tiles 324; halos with q' >= 1.9 without an isolated copy (Q2 tiles): 0; halos whose blended and isolated outcome differ at e = 5: 7945 of 68754 credited in either
+  [prod_none_q2] q > 5: N_det 64355, N_exp 65346.9, N_iso 65208; count change N_det/N_exp - 1 = -1.52 +- 0.19%; N_det/N_iso - 1 = -1.31 +- 0.13%; R_s (tile-halo weights) -1.31 +- 0.13%, R_s (full-sky model weights) -1.31 +- 0.13%; check N_iso/N_exp - 1 = -0.21 +- 0.19%
+     coarse z bins 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0 [%]:
+        R  : -1.5+-2.0, -1.3+-0.3, -1.6+-0.3, -1.6+-0.6, -2.2+-1.4, -4.4+-4.0
+        R_p: -2.4+-1.3, -1.2+-0.2, -1.2+-0.2, -1.9+-0.4, -1.2+-0.9, -2.7+-3.1
+        R_s: -2.2+-1.1, -1.2+-0.2, -1.2+-0.2, -1.7+-0.3, -1.8+-0.6, -3.5+-1.7
+     q bins 5-7.27, 7.27-10.6, 10.6-15.4, 15.4-22.4, 22.4-32.5, 32.5-47.3, 47.3-68.8, 68.8-100, 100-inf [%]:
+        R  : -2.6+-0.4, +0.1+-0.5, -0.1+-0.6, -0.2+-0.8, +0.1+-1.1, +0.6+-1.7, -0.0+-2.9, +1.1+-7.6, +57.7+-nan
+        R_s: -2.2+-0.2, -0.0+-0.3, -0.1+-0.5, +0.0+-0.6, +1.3+-0.9, -1.0+-1.3, -2.7+-2.3, +0.0+-0.0, +0.0+-0.0
+     consistency R vs R_s over 83 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 98.3
+     consistency R_p vs R_s over 83 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 63.0
+     median bootstrap error per bin (N_exp >= 10): R 0.0320, R_p 0.0197, R_s 0.0126; bins with N_exp < 1: 41 holding 4 credited halos
+     [3 s]
+  step 3a's preview recomputed, prod, tiles 0-323: N_det(q > 5) 64355; with step 3a's selection (production finder's injection fits) N_exp 64855.1 -> -0.77 +- 0.20%; with this variant's virtual kernel N_exp 65346.9 -> -1.52 +- 0.19% (kernel change -0.75% in N_exp)
+  step 3a's preview recomputed, szifi3000, tiles 0-99: N_det(q > 5) 16370; with step 3a's selection (production finder's injection fits) N_exp 17176.7 -> -4.70 +- 0.34%; with this variant's virtual kernel N_exp 17058.1 -> -4.03 +- 0.34% (kernel change +0.70% in N_exp)
+  step 3a's preview recomputed, szifi3000, tiles 0-323: N_det(q > 5) 53247; with step 3a's selection (production finder's injection fits) N_exp 55822.4 -> -4.61 +- 0.21%; with this variant's virtual kernel N_exp 55431.9 -> -3.94 +- 0.21% (kernel change +0.70% in N_exp)
+  step 3a's preview recomputed, szifi12000, tiles 0-323: N_det(q > 5) 66133; with step 3a's selection (production finder's injection fits) N_exp 66328.0 -> -0.29 +- 0.19%; with this variant's virtual kernel N_exp 67523.6 -> -2.06 +- 0.19% (kernel change -1.77% in N_exp)
+==================== goal: 618269 halos (q_true >= 1.5) in the 324 Q2 tiles; new tiles (b14 / b15) for the production setups: 1224 (2331058 halos); 2000 tile-bootstrap resamples; pooled-correction cells 25 theta x 108 q' nodes
+  [prod_none] tiles 1548; halos with q' >= 1.9 without an isolated copy (Q2 tiles): 0; halos whose blended and isolated outcome differ at e = 5: 63002 of 498761 credited in either
+  [cell-grid check] q > 5: R_s with every other q' node: model-weighted total -2.079% vs -2.079%; max |dR| over bins with mu > 10: 0.0046
+  [prod_none] q > 5: N_det 462343, N_exp 472959.0, N_iso 472177; count change N_det/N_exp - 1 = -2.24 +- 0.07%; N_det/N_iso - 1 = -2.08 +- 0.05%; R_s (tile-halo weights) -2.08 +- 0.05%, R_s (full-sky model weights) -2.08 +- 0.05%; check N_iso/N_exp - 1 = -0.17 +- 0.07%
+     coarse z bins 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0 [%]:
+        R  : -2.7+-0.8, -2.0+-0.1, -2.1+-0.1, -3.1+-0.2, -2.8+-0.5, -2.0+-1.1
+        R_p: -2.4+-0.6, -2.1+-0.1, -1.9+-0.1, -2.4+-0.1, -1.8+-0.3, -3.1+-0.9
+        R_s: -2.6+-0.5, -2.1+-0.1, -2.0+-0.1, -2.2+-0.1, -2.1+-0.2, -2.7+-0.5
+     q bins 5-7.27, 7.27-10.6, 10.6-15.4, 15.4-22.4, 22.4-32.5, 32.5-47.3, 47.3-68.8, 68.8-100, 100-inf [%]:
+        R  : -3.6+-0.1, -0.9+-0.2, +0.0+-0.2, +0.2+-0.3, -0.1+-0.4, -1.6+-0.6, +0.2+-1.0, +1.6+-1.7, -1.7+-3.6
+        R_s: -3.4+-0.1, -0.6+-0.1, +0.2+-0.2, +0.4+-0.2, -0.2+-0.3, -0.8+-0.5, -0.6+-0.8, +1.0+-1.3, +0.2+-2.3
+     consistency R vs R_s over 106 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 209.3
+     consistency R_p vs R_s over 106 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 150.2
+     median bootstrap error per bin (N_exp >= 10): R 0.0157, R_p 0.0100, R_s 0.0060; bins with N_exp < 1: 19 holding 0 credited halos
+  [cell-grid check] q > 6: R_s with every other q' node: model-weighted total -0.913% vs -0.914%; max |dR| over bins with mu > 10: 0.0044
+     [14 s]
+  [prod_closest1] tiles 1548; halos with q' >= 1.9 without an isolated copy (Q2 tiles): 0; halos whose blended and isolated outcome differ at e = 5: 62889 of 498398 credited in either
+  [prod_closest1] q > 5: N_det 461730, N_exp 472959.0, N_iso 472177; count change N_det/N_exp - 1 = -2.37 +- 0.07%; N_det/N_iso - 1 = -2.21 +- 0.05%; R_s (tile-halo weights) -2.21 +- 0.05%, R_s (full-sky model weights) -2.21 +- 0.05%; check N_iso/N_exp - 1 = -0.17 +- 0.07%
+     coarse z bins 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0 [%]:
+        R  : -2.9+-0.8, -2.1+-0.1, -2.2+-0.1, -3.2+-0.2, -3.1+-0.5, -2.2+-1.1
+        R_p: -2.6+-0.6, -2.2+-0.1, -2.1+-0.1, -2.5+-0.1, -2.0+-0.3, -3.4+-0.9
+        R_s: -2.8+-0.5, -2.2+-0.1, -2.1+-0.1, -2.3+-0.1, -2.3+-0.2, -2.9+-0.5
+     q bins 5-7.27, 7.27-10.6, 10.6-15.4, 15.4-22.4, 22.4-32.5, 32.5-47.3, 47.3-68.8, 68.8-100, 100-inf [%]:
+        R  : -3.8+-0.1, -0.9+-0.2, +0.0+-0.2, +0.2+-0.3, -0.1+-0.4, -1.6+-0.6, +0.2+-1.0, +1.6+-1.7, -1.7+-3.6
+        R_s: -3.6+-0.1, -0.6+-0.1, +0.1+-0.2, +0.4+-0.2, -0.2+-0.3, -0.8+-0.5, -0.6+-0.8, +1.0+-1.3, +0.2+-2.3
+     consistency R vs R_s over 106 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 209.1
+     consistency R_p vs R_s over 106 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 149.6
+     median bootstrap error per bin (N_exp >= 10): R 0.0157, R_p 0.0100, R_s 0.0060; bins with N_exp < 1: 19 holding 0 credited halos
+     [11 s]
+  [prod_fof10] tiles 1548; halos with q' >= 1.9 without an isolated copy (Q2 tiles): 0; halos whose blended and isolated outcome differ at e = 5: 103832 of 493251 credited in either
+  [prod_fof10] q > 5: N_det 410493, N_exp 472959.0, N_iso 472177; count change N_det/N_exp - 1 = -13.21 +- 0.07%; N_det/N_iso - 1 = -13.06 +- 0.06%; R_s (tile-halo weights) -13.04 +- 0.07%, R_s (full-sky model weights) -13.04 +- 0.07%; check N_iso/N_exp - 1 = -0.17 +- 0.07%
+     coarse z bins 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0 [%]:
+        R  : -12.2+-0.8, -12.1+-0.1, -13.2+-0.1, -15.0+-0.2, -16.0+-0.5, -15.1+-1.1
+        R_p: -11.9+-0.7, -12.3+-0.1, -13.0+-0.1, -14.3+-0.2, -15.1+-0.4, -16.1+-0.9
+        R_s: -12.1+-0.6, -12.3+-0.1, -13.0+-0.1, -14.1+-0.1, -15.0+-0.2, -16.3+-0.6
+     q bins 5-7.27, 7.27-10.6, 10.6-15.4, 15.4-22.4, 22.4-32.5, 32.5-47.3, 47.3-68.8, 68.8-100, 100-inf [%]:
+        R  : -18.9+-0.1, -8.3+-0.2, -3.1+-0.2, -0.9+-0.3, -0.6+-0.4, -1.9+-0.7, +0.2+-1.0, +1.6+-1.7, -1.7+-3.6
+        R_s: -18.8+-0.1, -8.0+-0.2, -3.0+-0.2, -0.7+-0.2, -0.6+-0.3, -1.0+-0.5, -0.6+-0.8, +1.0+-1.3, +0.2+-2.3
+     consistency R vs R_s over 106 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 209.1
+     consistency R_p vs R_s over 106 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 139.5
+     median bootstrap error per bin (N_exp >= 10): R 0.0156, R_p 0.0104, R_s 0.0063; bins with N_exp < 1: 19 holding 0 credited halos
+     [10 s]
+  [prod_keepnr] tiles 1548; halos with q' >= 1.9 without an isolated copy (Q2 tiles): 0; halos whose blended and isolated outcome differ at e = 5: 63002 of 498761 credited in either
+  [prod_keepnr] q > 5: N_det 469618, N_exp 472959.0, N_iso 472177; count change N_det/N_exp - 1 = -0.71 +- 0.07%; N_det/N_iso - 1 = -0.54 +- 0.06%; R_s (tile-halo weights) -0.54 +- 0.06%, R_s (full-sky model weights) -0.54 +- 0.06%; check N_iso/N_exp - 1 = -0.17 +- 0.07%
+     coarse z bins 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0 [%]:
+        R  : -0.9+-0.8, -0.7+-0.1, -0.7+-0.1, -1.1+-0.2, +0.3+-0.5, +3.3+-1.2
+        R_p: -0.6+-0.6, -0.9+-0.1, -0.5+-0.1, -0.3+-0.2, +1.4+-0.4, +2.1+-1.0
+        R_s: -0.9+-0.5, -0.9+-0.1, -0.6+-0.1, -0.1+-0.1, +0.9+-0.2, +2.5+-0.6
+     q bins 5-7.27, 7.27-10.6, 10.6-15.4, 15.4-22.4, 22.4-32.5, 32.5-47.3, 47.3-68.8, 68.8-100, 100-inf [%]:
+        R  : -0.9+-0.1, -0.9+-0.2, +0.0+-0.2, +0.2+-0.3, -0.1+-0.4, -1.6+-0.6, +0.2+-1.0, +1.6+-1.7, -1.7+-3.6
+        R_s: -0.7+-0.1, -0.6+-0.1, +0.2+-0.2, +0.4+-0.2, -0.2+-0.3, -0.8+-0.5, -0.6+-0.8, +1.0+-1.3, +0.2+-2.3
+     consistency R vs R_s over 106 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 208.2
+     consistency R_p vs R_s over 106 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 152.4
+     median bootstrap error per bin (N_exp >= 10): R 0.0157, R_p 0.0103, R_s 0.0060; bins with N_exp < 1: 19 holding 0 credited halos
+     [13 s]
+  [szifi3000_none] tiles 324; halos with q' >= 1.9 without an isolated copy (Q2 tiles): 0; halos whose blended and isolated outcome differ at e = 5: 11282 of 83554 credited in either
+  [szifi3000_none] q > 5: N_det 75941, N_exp 80094.0, N_iso 79885; count change N_det/N_exp - 1 = -5.19 +- 0.17%; N_det/N_iso - 1 = -4.94 +- 0.14%; R_s (tile-halo weights) -4.94 +- 0.14%, R_s (full-sky model weights) -4.93 +- 0.14%; check N_iso/N_exp - 1 = -0.26 +- 0.18%
+     coarse z bins 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0 [%]:
+        R  : -4.8+-1.8, -4.2+-0.3, -5.1+-0.2, -6.9+-0.5, -9.0+-1.1, -6.4+-3.0
+        R_p: -5.2+-1.3, -4.4+-0.2, -5.0+-0.2, -5.8+-0.4, -6.6+-0.9, -7.4+-2.6
+        R_s: -5.2+-1.2, -4.4+-0.2, -5.0+-0.2, -5.7+-0.3, -6.6+-0.6, -7.7+-1.6
+     q bins 5-7.27, 7.27-10.6, 10.6-15.4, 15.4-22.4, 22.4-32.5, 32.5-47.3, 47.3-68.8, 68.8-100, 100-inf [%]:
+        R  : -7.4+-0.3, -3.0+-0.4, -1.5+-0.6, +0.4+-0.7, -1.5+-1.0, +0.6+-1.3, +0.7+-2.4, -0.6+-4.8, +14.8+-nan
+        R_s: -7.3+-0.2, -2.3+-0.4, -1.2+-0.4, +0.2+-0.5, -1.3+-0.7, +0.2+-0.9, -0.6+-1.3, +0.0+-0.0, +0.0+-0.0
+     consistency R vs R_s over 87 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 89.1
+     consistency R_p vs R_s over 87 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 86.4
+     median bootstrap error per bin (N_exp >= 10): R 0.0282, R_p 0.0184, R_s 0.0112; bins with N_exp < 1: 35 holding 3 credited halos
+     [4 s]
+  [szifi12000_none] tiles 324; halos with q' >= 1.9 without an isolated copy (Q2 tiles): 0; halos whose blended and isolated outcome differ at e = 5: 13883 of 105816 credited in either
+  [szifi12000_none] q > 5: N_det 97413, N_exp 100592.9, N_iso 100336; count change N_det/N_exp - 1 = -3.16 +- 0.15%; N_det/N_iso - 1 = -2.91 +- 0.11%; R_s (tile-halo weights) -2.91 +- 0.12%, R_s (full-sky model weights) -2.91 +- 0.12%; check N_iso/N_exp - 1 = -0.26 +- 0.16%
+     coarse z bins 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0 [%]:
+        R  : -4.5+-1.8, -3.0+-0.2, -2.6+-0.2, -4.6+-0.4, -4.9+-0.9, -3.7+-2.4
+        R_p: -3.6+-1.4, -3.0+-0.2, -2.6+-0.2, -3.4+-0.3, -3.2+-0.6, -6.3+-1.7
+        R_s: -3.7+-1.1, -3.0+-0.2, -2.6+-0.1, -3.3+-0.2, -3.5+-0.4, -4.6+-1.0
+     q bins 5-7.27, 7.27-10.6, 10.6-15.4, 15.4-22.4, 22.4-32.5, 32.5-47.3, 47.3-68.8, 68.8-100, 100-inf [%]:
+        R  : -4.7+-0.3, -1.6+-0.4, -0.5+-0.5, -0.6+-0.7, +0.4+-1.0, -2.9+-1.5, +1.9+-2.6, +1.9+-3.4, -3.3+-nan
+        R_s: -4.4+-0.2, -1.5+-0.3, +0.0+-0.4, +0.0+-0.5, -0.0+-0.7, -0.6+-1.1, -1.1+-1.8, -1.7+-1.9, +0.0+-0.0
+     consistency R vs R_s over 91 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 91.7
+     consistency R_p vs R_s over 91 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 52.2
+     median bootstrap error per bin (N_exp >= 10): R 0.0270, R_p 0.0187, R_s 0.0111; bins with N_exp < 1: 32 holding 1 credited halos
+     [4 s]
+  [prod_none_q2] tiles 324; halos with q' >= 1.9 without an isolated copy (Q2 tiles): 0; halos whose blended and isolated outcome differ at e = 5: 13304 of 104287 credited in either
+  [prod_none_q2] q > 5: N_det 96544, N_exp 98986.5, N_iso 98726; count change N_det/N_exp - 1 = -2.47 +- 0.16%; N_det/N_iso - 1 = -2.21 +- 0.12%; R_s (tile-halo weights) -2.21 +- 0.12%, R_s (full-sky model weights) -2.21 +- 0.12%; check N_iso/N_exp - 1 = -0.26 +- 0.16%
+     coarse z bins 0.01-0.1, 0.1-0.5, 0.5-1.0, 1.0-1.5, 1.5-2.0, 2.0-3.0 [%]:
+        R  : -3.4+-1.8, -2.3+-0.2, -2.0+-0.2, -3.8+-0.4, -4.0+-0.9, -1.4+-2.5
+        R_p: -2.5+-1.4, -2.4+-0.2, -2.0+-0.2, -2.6+-0.3, -2.3+-0.7, -2.5+-1.9
+        R_s: -2.8+-1.1, -2.3+-0.2, -2.0+-0.1, -2.5+-0.2, -2.3+-0.4, -2.3+-1.1
+     q bins 5-7.27, 7.27-10.6, 10.6-15.4, 15.4-22.4, 22.4-32.5, 32.5-47.3, 47.3-68.8, 68.8-100, 100-inf [%]:
+        R  : -3.8+-0.3, -1.1+-0.4, -0.1+-0.5, -0.4+-0.7, -0.1+-1.0, -2.6+-1.5, +0.5+-2.3, +2.8+-4.0, -12.4+-nan
+        R_s: -3.5+-0.2, -1.1+-0.3, +0.7+-0.4, +0.3+-0.5, -0.5+-0.7, -1.1+-1.0, -0.1+-1.1, +0.0+-0.0, +0.0+-0.0
+     consistency R vs R_s over 91 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 95.2
+     consistency R_p vs R_s over 91 bins with N_exp >= 10: chi^2 (diagonal, bootstrap errors of the difference) = 53.7
+     median bootstrap error per bin (N_exp >= 10): R 0.0275, R_p 0.0195, R_s 0.0110; bins with N_exp < 1: 31 holding 1 credited halos
+     [3 s]
+  step 3a's preview recomputed, prod, tiles 0-323: N_det(q > 5) 96544; with step 3a's selection (production finder's injection fits) N_exp 98010.1 -> -1.50 +- 0.16%; with this variant's virtual kernel N_exp 98986.5 -> -2.47 +- 0.16% (kernel change -0.99% in N_exp)
+  step 3a's preview recomputed, szifi3000, tiles 0-99: N_det(q > 5) 23360; with step 3a's selection (production finder's injection fits) N_exp 24785.9 -> -5.75 +- 0.30%; with this variant's virtual kernel N_exp 24668.6 -> -5.30 +- 0.30% (kernel change +0.48% in N_exp)
+  step 3a's preview recomputed, szifi3000, tiles 0-323: N_det(q > 5) 75941; with step 3a's selection (production finder's injection fits) N_exp 80466.2 -> -5.62 +- 0.17%; with this variant's virtual kernel N_exp 80094.0 -> -5.19 +- 0.17% (kernel change +0.46% in N_exp)
+  step 3a's preview recomputed, szifi12000, tiles 0-323: N_det(q > 5) 97413; with step 3a's selection (production finder's injection fits) N_exp 98622.0 -> -1.23 +- 0.16%; with this variant's virtual kernel N_exp 100592.9 -> -3.16 +- 0.15% (kernel change -1.96% in N_exp)
+done [135 s]; peak RSS 4.92 GB
+      135.86 real       129.49 user         4.38 sys
+          4920737792  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              869891  page reclaims
+                 451  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               43078  voluntary context switches
+               15205  involuntary context switches
+       1059856365401  instructions retired
+        411772649668  cycles elapsed
+          4649168000  peak memory footprint

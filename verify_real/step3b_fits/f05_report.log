@@ -1,0 +1,168 @@
+(1) ML S8 bias [sigma]: MINE (my model + fitter + my R_s) | build R_s with my model and fitter | BUILD (fits.json, R_s); build's tile-bootstrap error (lin.json); my bootstrap error (my R_s, linearised)
+  production, merge none (headline)    q>5 baseline SO40  a: -2.15 | -2.15 | -2.16 (+-0.11; mine +-0.11);  d: +0.40 | +0.36 | +0.36 (+-0.05; mine +-0.06);  e: +0.52 | +0.45 | +0.47 (+-0.09; mine +-0.10)
+  production, merge none (headline)    q>5 baseline full  a: -3.40 | -3.41 | -3.41 (+-0.17; mine +-0.18);  d: +0.67 | +0.59 | +0.58 (+-0.10; mine +-0.11);  e: +0.82 | +0.71 | +0.74 (+-0.14; mine +-0.16)
+  production, merge none (headline)    q>5 goal     SO40  a: -4.17 | -4.17 | -4.18 (+-0.12; mine +-0.12);  d: +0.71 | +0.66 | +0.66 (+-0.07; mine +-0.07);  e: +0.76 | +0.68 | +0.71 (+-0.10; mine +-0.12)
+  production, merge none (headline)    q>5 goal     full  a: -6.59 | -6.59 | -6.60 (+-0.19; mine +-0.19);  d: +1.13 | +1.03 | +1.03 (+-0.12; mine +-0.14);  e: +1.21 | +1.07 | +1.12 (+-0.16; mine +-0.18)
+  production, merge none (headline)    q>6 baseline SO40  a: -0.75 | -0.73 | -0.73 (+-0.11; mine +-0.11);  d: +0.09 | +0.05 | +0.05 (+-0.05; mine +-0.06);  e: +0.15 | +0.10 | +0.10 (+-0.09; mine +-0.10)
+  production, merge none (headline)    q>6 baseline full  a: -1.19 | -1.16 | -1.16 (+-0.17; mine +-0.17);  d: +0.17 | +0.10 | +0.10 (+-0.09; mine +-0.10);  e: +0.24 | +0.16 | +0.16 (+-0.14; mine +-0.16)
+  production, merge none (headline)    q>6 goal     SO40  a: -1.54 | -1.57 | -1.57 (+-0.11; mine +-0.11);  d: +0.26 | +0.26 | +0.26 (+-0.05; mine +-0.06);  e: +0.24 | +0.28 | +0.28 (+-0.09; mine +-0.10)
+  production, merge none (headline)    q>6 goal     full  a: -2.44 | -2.48 | -2.48 (+-0.17; mine +-0.17);  d: +0.37 | +0.40 | +0.40 (+-0.10; mine +-0.11);  e: +0.38 | +0.44 | +0.44 (+-0.14; mine +-0.16)
+  SZiFi defaults                       q>5 baseline SO40  a: -4.77 |   -   | -4.83 (+-0.26; mine +-0.26);  d: +0.20 |   -   | +0.17 (+-0.13; mine +-0.13);  e: -0.10 |   -   | -0.03 (+-0.19; mine +-0.22)
+  SZiFi defaults                       q>5 baseline full  a: -7.54 |   -   | -7.64 (+-0.41; mine +-0.42);  d: +0.15 |   -   | +0.14 (+-0.21; mine +-0.23);  e: -0.16 |   -   | -0.05 (+-0.30; mine +-0.36)
+  SZiFi defaults                       q>5 goal     SO40  a: -8.11 |   -   | -8.05 (+-0.26; mine +-0.26);  d: +1.06 |   -   | +1.02 (+-0.14; mine +-0.15);  e: +1.39 |   -   | +1.25 (+-0.21; mine +-0.24)
+  SZiFi defaults                       q>5 goal     full  a: -12.83 |   -   | -12.73 (+-0.41; mine +-0.41);  d: +1.76 |   -   | +1.70 (+-0.25; mine +-0.28);  e: +2.19 |   -   | +1.97 (+-0.33; mine +-0.38)
+  SZiFi defaults                       q>6 baseline SO40  a: -2.07 |   -   | -2.09 (+-0.24; mine +-0.24);  d: -0.04 |   -   | -0.05 (+-0.11; mine +-0.13);  e: -0.07 |   -   | -0.20 (+-0.18; mine +-0.21)
+  SZiFi defaults                       q>6 baseline full  a: -3.27 |   -   | -3.30 (+-0.38; mine +-0.37);  d: -0.08 |   -   | -0.14 (+-0.18; mine +-0.20);  e: -0.11 |   -   | -0.31 (+-0.29; mine +-0.33)
+  SZiFi defaults                       q>6 goal     SO40  a: -3.59 |   -   | -3.62 (+-0.25; mine +-0.26);  d: +0.23 |   -   | +0.22 (+-0.12; mine +-0.13);  e: +0.08 |   -   | +0.24 (+-0.19; mine +-0.22)
+  SZiFi defaults                       q>6 goal     full  a: -5.68 |   -   | -5.73 (+-0.40; mine +-0.41);  d: +0.26 |   -   | +0.33 (+-0.21; mine +-0.23);  e: +0.13 |   -   | +0.37 (+-0.29; mine +-0.35)
+  production, fof 10'                  q>5 baseline SO40  a: -13.22 |   -   | -13.25 (+-0.13; mine +-0.14);  d: +1.06 |   -   | +1.04 (+-0.06; mine +-0.07);  e: +1.68 |   -   | +1.59 (+-0.10; mine +-0.12)
+  production, fof 10'                  q>5 baseline full  a: -20.91 |   -   | -20.96 (+-0.21; mine +-0.22);  d: +1.80 |   -   | +1.82 (+-0.11; mine +-0.13);  e: +2.65 |   -   | +2.51 (+-0.16; mine +-0.18)
+  production, fof 10'                  q>5 goal     SO40  a: -25.90 |   -   | -25.95 (+-0.15; mine +-0.15);  d: +2.70 |   -   | +2.62 (+-0.08; mine +-0.09);  e: +4.75 |   -   | +4.74 (+-0.12; mine +-0.14)
+  production, fof 10'                  q>5 goal     full  a: -40.94 |   -   | -41.04 (+-0.24; mine +-0.24);  d: +5.05 |   -   | +4.95 (+-0.15; mine +-0.17);  e: +6.32 |   -   | +7.49 (+-0.19; mine +-0.22)
+  production, fof 10'                  q>6 baseline SO40  a: -6.39 |   -   | -6.40 (+-0.12; mine +-0.13);  d: +0.32 |   -   | +0.29 (+-0.06; mine +-0.07);  e: +0.46 |   -   | +0.43 (+-0.10; mine +-0.11)
+  production, fof 10'                  q>6 baseline full  a: -10.11 |   -   | -10.11 (+-0.19; mine +-0.20);  d: +0.53 |   -   | +0.46 (+-0.10; mine +-0.11);  e: +0.73 |   -   | +0.69 (+-0.15; mine +-0.18)
+  production, fof 10'                  q>6 goal     SO40  a: -13.15 |   -   | -13.20 (+-0.13; mine +-0.14);  d: +1.04 |   -   | +1.04 (+-0.06; mine +-0.07);  e: +1.52 |   -   | +1.53 (+-0.10; mine +-0.12)
+  production, fof 10'                  q>6 goal     full  a: -20.79 |   -   | -20.87 (+-0.21; mine +-0.21);  d: +1.73 |   -   | +1.79 (+-0.11; mine +-0.13);  e: +2.40 |   -   | +2.42 (+-0.16; mine +-0.19)
+  prod_none: mine - build over 24 fits: max |diff| 0.100 sigma; in units of the build's bootstrap error: max |.| 0.90, mean +0.29
+     model + fitter (build R_s, my model - build): max |diff| 0.052, mean -0.004; estimator (my R_s - build R_s, both my model): max |diff| 0.139, mean +0.033
+  szifi3000_none: mine - build over 24 fits: max |diff| 0.243 sigma; in units of the build's bootstrap error: max |.| 0.83, mean +0.07
+  prod_fof10: mine - build over 24 fits: max |diff| 1.167 sigma; in units of the build's bootstrap error: max |.| 6.11, mean +0.03
+  parameters at a bound (mine): [('prod_fof10', 'goal', 5.0, 'SO40', 'e', ['slnY']), ('prod_fof10', 'goal', 5.0, 'full', 'e', ['slnY'])]
+  parameters at a bound (build): [('prod_fof10', 'goal', 5.0, 'SO40', 'e', ['slnY']), ('prod_fof10', 'goal', 5.0, 'full', 'd', ['slnY']), ('prod_fof10', 'goal', 5.0, 'full', 'e', ['slnY'])]
+
+(1b) Om / s8 bias [sigma], headline, q_cut 5, ML (mine | build)
+  baseline SO40: a: -1.21/+0.55 | -1.22/+0.56;  d: +0.25/+0.54 | +0.21/+0.51;  e: +0.44/+0.64 | +0.39/+0.59
+  baseline full: a: -1.92/+0.87 | -1.93/+0.88;  d: +0.49/+0.89 | +0.40/+0.81;  e: +0.69/+1.01 | +0.61/+0.93
+  goal     SO40: a: -2.39/+1.14 | -2.39/+1.14;  d: +0.40/+1.09 | +0.34/+1.07;  e: +0.57/+1.10 | +0.51/+1.06
+  goal     full: a: -3.77/+1.80 | -3.78/+1.81;  d: +0.73/+1.72 | +0.63/+1.65;  e: +0.89/+1.74 | +0.81/+1.67
+
+(2) headline ML fits with each estimator, q_cut 5, S8 [sigma]: mine (my R, R_p, R_s; my model) | build (fits.json)
+  baseline R : a SO40: -2.40 | -2.41;  a full: -3.80 | -3.81;  d SO40: +0.46 | +0.46;  d full: +0.87 | +0.85;  e SO40: +0.77 | +0.80;  e full: +1.21 | +1.27
+  baseline Rp: a SO40: -2.17 | -2.17;  a full: -3.43 | -3.43;  d SO40: +0.36 | +0.36;  d full: +0.62 | +0.62;  e SO40: +0.51 | +0.53;  e full: +0.81 | +0.84
+  baseline Rs: a SO40: -2.15 | -2.16;  a full: -3.40 | -3.41;  d SO40: +0.40 | +0.36;  d full: +0.67 | +0.58;  e SO40: +0.52 | +0.47;  e full: +0.82 | +0.74
+  goal     R : a SO40: -4.03 | -4.04;  a full: -6.37 | -6.38;  d SO40: +0.90 | +0.89;  d full: +1.63 | +1.69;  e SO40: +1.35 | +1.35;  e full: +2.13 | +2.13
+  goal     Rp: a SO40: -4.17 | -4.17;  a full: -6.59 | -6.60;  d SO40: +0.67 | +0.67;  d full: +1.05 | +1.06;  e SO40: +0.70 | +0.73;  e full: +1.10 | +1.16
+  goal     Rs: a SO40: -4.17 | -4.18;  a full: -6.59 | -6.60;  d SO40: +0.71 | +0.66;  d full: +1.13 | +1.03;  e SO40: +0.76 | +0.71;  e full: +1.21 | +1.12
+
+(3) linearised S8 bias +- tile bootstrap, q_cut 5 (my model): my R_s | build R_s | my R (bilin) | my R_p  -- vs the build's lin.json (R_s, R, R_p)
+  prod_none       baseline SO40 a: -2.14+-0.113 | -2.14+-0.108 | -2.39+-0.163 | -2.15+-0.113  [build -2.14+-0.108, R -2.39+-0.162, R_p -2.16+-0.110];  d: +0.38+-0.060 | +0.35+-0.055 | +0.43+-0.096 | +0.34+-0.064  [build +0.34+-0.055, R +0.43+-0.097, R_p +0.34+-0.063];  e: +0.46+-0.101 | +0.39+-0.089 | +0.62+-0.171 | +0.43+-0.114  [build +0.39+-0.088, R +0.61+-0.171, R_p +0.43+-0.112]
+  prod_none       baseline full a: -3.38+-0.179 | -3.39+-0.171 | -3.78+-0.257 | -3.41+-0.179  [build -3.39+-0.171, R -3.79+-0.257, R_p -3.41+-0.174];  d: +0.62+-0.109 | +0.54+-0.097 | +0.76+-0.179 | +0.56+-0.119  [build +0.54+-0.096, R +0.74+-0.179, R_p +0.57+-0.115];  e: +0.73+-0.160 | +0.62+-0.140 | +0.98+-0.271 | +0.68+-0.180  [build +0.62+-0.139, R +0.96+-0.271, R_p +0.68+-0.177]
+  prod_none       goal     SO40 a: -4.13+-0.121 | -4.13+-0.120 | -4.00+-0.161 | -4.13+-0.120  [build -4.14+-0.120, R -4.00+-0.162, R_p -4.13+-0.121];  d: +0.65+-0.073 | +0.62+-0.069 | +0.81+-0.105 | +0.63+-0.077  [build +0.61+-0.068, R +0.81+-0.104, R_p +0.62+-0.078];  e: +0.67+-0.115 | +0.59+-0.103 | +1.11+-0.168 | +0.62+-0.125  [build +0.58+-0.102, R +1.12+-0.168, R_p +0.61+-0.126]
+  prod_none       goal     full a: -6.53+-0.192 | -6.53+-0.190 | -6.32+-0.254 | -6.53+-0.190  [build -6.54+-0.190, R -6.33+-0.256, R_p -6.54+-0.191];  d: +1.01+-0.138 | +0.93+-0.126 | +1.44+-0.199 | +0.96+-0.147  [build +0.92+-0.125, R +1.45+-0.198, R_p +0.95+-0.148];  e: +1.06+-0.182 | +0.93+-0.162 | +1.76+-0.266 | +0.98+-0.197  [build +0.92+-0.161, R +1.77+-0.266, R_p +0.97+-0.199]
+  prod_none_q2    baseline SO40 a: -1.88+-0.237 | -1.90+-0.230 | -2.31+-0.367 | -1.88+-0.233  [build -1.90+-0.230, R -2.31+-0.362, R_p -1.89+-0.232];  d: +0.25+-0.123 | +0.21+-0.116 | +0.16+-0.219 | +0.13+-0.135  [build +0.21+-0.115, R +0.15+-0.226, R_p +0.13+-0.135];  e: +0.15+-0.220 | +0.10+-0.190 | +0.05+-0.386 | +0.03+-0.241  [build +0.10+-0.189, R +0.03+-0.399, R_p +0.03+-0.250]
+  prod_none_q2    baseline full a: -2.98+-0.375 | -3.00+-0.364 | -3.65+-0.580 | -2.98+-0.368  [build -3.00+-0.364, R -3.66+-0.573, R_p -2.98+-0.367];  d: +0.31+-0.227 | +0.25+-0.206 | +0.17+-0.405 | +0.13+-0.248  [build +0.25+-0.204, R +0.16+-0.418, R_p +0.14+-0.251];  e: +0.23+-0.347 | +0.16+-0.300 | +0.08+-0.611 | +0.04+-0.381  [build +0.16+-0.298, R +0.05+-0.630, R_p +0.05+-0.396]
+  prod_none_q2    goal     SO40 a: -4.36+-0.275 | -4.34+-0.266 | -4.27+-0.364 | -4.29+-0.269  [build -4.35+-0.266, R -4.28+-0.369, R_p -4.30+-0.266];  d: +0.84+-0.158 | +0.73+-0.145 | +0.71+-0.229 | +0.77+-0.171  [build +0.72+-0.144, R +0.72+-0.223, R_p +0.77+-0.170];  e: +0.95+-0.248 | +0.77+-0.219 | +0.93+-0.374 | +0.86+-0.277  [build +0.77+-0.218, R +0.95+-0.371, R_p +0.86+-0.281]
+  prod_none_q2    goal     full a: -6.89+-0.434 | -6.87+-0.421 | -6.75+-0.576 | -6.79+-0.425  [build -6.88+-0.421, R -6.76+-0.583, R_p -6.79+-0.421];  d: +1.36+-0.298 | +1.14+-0.268 | +1.23+-0.440 | +1.24+-0.327  [build +1.14+-0.265, R +1.26+-0.430, R_p +1.24+-0.329];  e: +1.50+-0.392 | +1.21+-0.346 | +1.46+-0.592 | +1.36+-0.438  [build +1.21+-0.344, R +1.51+-0.586, R_p +1.36+-0.445]
+  szifi3000_none  baseline SO40 a: -4.71+-0.264 | -4.76+-0.259 | -4.95+-0.327 | -4.74+-0.259  [build -4.77+-0.259, R -4.96+-0.334, R_p -4.75+-0.261];  d: +0.17+-0.132 | +0.15+-0.126 | -0.02+-0.209 | -0.04+-0.150  [build +0.14+-0.125, R -0.03+-0.206, R_p -0.04+-0.148];  e: -0.08+-0.225 | -0.04+-0.192 | -0.25+-0.378 | -0.36+-0.271  [build -0.04+-0.192, R -0.27+-0.380, R_p -0.37+-0.267]
+  szifi3000_none  baseline full a: -7.45+-0.417 | -7.53+-0.410 | -7.83+-0.518 | -7.49+-0.410  [build -7.54+-0.410, R -7.84+-0.529, R_p -7.50+-0.413];  d: +0.11+-0.233 | +0.12+-0.213 | -0.16+-0.384 | -0.24+-0.277  [build +0.11+-0.212, R -0.18+-0.380, R_p -0.24+-0.273];  e: -0.13+-0.356 | -0.06+-0.304 | -0.39+-0.597 | -0.57+-0.429  [build -0.06+-0.304, R -0.43+-0.600, R_p -0.59+-0.423]
+  szifi3000_none  goal     SO40 a: -7.96+-0.261 | -7.88+-0.256 | -7.62+-0.333 | -7.79+-0.255  [build -7.89+-0.256, R -7.63+-0.345, R_p -7.80+-0.250];  d: +0.91+-0.151 | +0.88+-0.140 | +0.84+-0.216 | +0.90+-0.161  [build +0.87+-0.138, R +0.84+-0.211, R_p +0.89+-0.160];  e: +1.00+-0.243 | +0.94+-0.213 | +1.06+-0.368 | +1.01+-0.275  [build +0.92+-0.211, R +1.07+-0.364, R_p +1.00+-0.273]
+  szifi3000_none  goal     full a: -12.58+-0.413 | -12.46+-0.405 | -12.05+-0.526 | -12.31+-0.403  [build -12.48+-0.405, R -12.07+-0.545, R_p -12.33+-0.396];  d: +1.45+-0.279 | +1.38+-0.251 | +1.42+-0.413 | +1.44+-0.305  [build +1.36+-0.247, R +1.42+-0.405, R_p +1.42+-0.302];  e: +1.59+-0.384 | +1.48+-0.336 | +1.67+-0.581 | +1.60+-0.434  [build +1.46+-0.334, R +1.68+-0.576, R_p +1.58+-0.431]
+  prod_fof10      baseline SO40 a: -12.74+-0.140 | -12.75+-0.135 | -13.00+-0.163 | -12.79+-0.134  [build -12.77+-0.135, R -13.02+-0.159, R_p -12.80+-0.131];  d: +0.84+-0.070 | +0.81+-0.065 | +0.89+-0.097 | +0.80+-0.073  [build +0.80+-0.065, R +0.87+-0.097, R_p +0.79+-0.073];  e: +0.93+-0.116 | +0.87+-0.103 | +1.08+-0.174 | +0.90+-0.129  [build +0.85+-0.103, R +1.05+-0.172, R_p +0.89+-0.128]
+  prod_fof10      baseline full a: -20.15+-0.221 | -20.16+-0.213 | -20.55+-0.258 | -20.22+-0.212  [build -20.19+-0.213, R -20.58+-0.252, R_p -20.24+-0.206];  d: +1.31+-0.125 | +1.25+-0.114 | +1.45+-0.182 | +1.26+-0.135  [build +1.22+-0.113, R +1.41+-0.180, R_p +1.24+-0.133];  e: +1.48+-0.184 | +1.37+-0.163 | +1.71+-0.275 | +1.43+-0.204  [build +1.34+-0.162, R +1.66+-0.273, R_p +1.40+-0.203]
+  prod_fof10      goal     SO40 a: -24.42+-0.154 | -24.42+-0.151 | -24.28+-0.164 | -24.38+-0.144  [build -24.45+-0.151, R -24.32+-0.163, R_p -24.41+-0.143];  d: +1.92+-0.089 | +1.92+-0.083 | +2.08+-0.106 | +1.96+-0.089  [build +1.90+-0.082, R +2.06+-0.108, R_p +1.93+-0.090];  e: +2.00+-0.141 | +1.98+-0.122 | +2.48+-0.171 | +2.08+-0.144  [build +1.94+-0.121, R +2.45+-0.173, R_p +2.05+-0.143]
+  prod_fof10      goal     full a: -38.62+-0.244 | -38.61+-0.238 | -38.39+-0.259 | -38.54+-0.228  [build -38.66+-0.238, R -38.45+-0.257, R_p -38.59+-0.225];  d: +3.00+-0.168 | +2.99+-0.150 | +3.46+-0.202 | +3.09+-0.171  [build +2.94+-0.148, R +3.42+-0.204, R_p +3.04+-0.170];  e: +3.16+-0.222 | +3.14+-0.193 | +3.92+-0.270 | +3.30+-0.228  [build +3.07+-0.191, R +3.88+-0.273, R_p +3.24+-0.227]
+
+(4) p06b split of the linearised S8 bias (R_s, q_cut 5): amplitude + z tilt + q shape = sum; mine (my R_s) | build (lin.json)
+  prod_none       baseline SO40 a: mine -1.93 +0.07 -0.28 = -2.14 | build R_s, my model -1.93 +0.07 -0.28 = -2.14 | build -1.93 +0.07 -0.28 = -2.14
+  prod_none       baseline SO40 d: mine -0.10 +0.17 +0.31 = +0.38 | build R_s, my model -0.10 +0.13 +0.31 = +0.35 | build -0.10 +0.14 +0.31 = +0.34
+  prod_none       baseline full a: mine -3.06 +0.12 -0.44 = -3.38 | build R_s, my model -3.05 +0.11 -0.44 = -3.39 | build -3.06 +0.11 -0.44 = -3.39
+  prod_none       baseline full d: mine -0.10 +0.31 +0.41 = +0.62 | build R_s, my model -0.10 +0.24 +0.40 = +0.54 | build -0.10 +0.24 +0.40 = +0.54
+  prod_none       goal     SO40 a: mine -3.71 +0.02 -0.44 = -4.13 | build R_s, my model -3.71 +0.02 -0.44 = -4.13 | build -3.72 +0.02 -0.44 = -4.14
+  prod_none       goal     SO40 d: mine -0.14 +0.12 +0.67 = +0.65 | build R_s, my model -0.14 +0.08 +0.67 = +0.62 | build -0.14 +0.09 +0.66 = +0.61
+  prod_none       goal     full a: mine -5.87 +0.04 -0.70 = -6.53 | build R_s, my model -5.87 +0.03 -0.70 = -6.53 | build -5.88 +0.03 -0.70 = -6.54
+  prod_none       goal     full d: mine -0.12 +0.21 +0.93 = +1.01 | build R_s, my model -0.12 +0.12 +0.93 = +0.93 | build -0.12 +0.12 +0.91 = +0.92
+  prod_fof10      baseline SO40 a: mine -12.26 +0.78 -1.26 = -12.74 | build R_s, my model -12.25 +0.77 -1.26 = -12.75 | build -12.27 +0.77 -1.26 = -12.77
+  prod_fof10      baseline SO40 d: mine -0.63 +0.16 +1.30 = +0.84 | build R_s, my model -0.63 +0.14 +1.30 = +0.81 | build -0.63 +0.14 +1.29 = +0.80
+  prod_fof10      baseline full a: mine -19.38 +1.23 -2.00 = -20.15 | build R_s, my model -19.38 +1.21 -2.00 = -20.16 | build -19.40 +1.21 -1.99 = -20.19
+  prod_fof10      baseline full d: mine -0.61 +0.28 +1.64 = +1.31 | build R_s, my model -0.61 +0.21 +1.64 = +1.25 | build -0.61 +0.22 +1.61 = +1.22
+  prod_fof10      goal     SO40 a: mine -23.29 +1.01 -2.15 = -24.42 | build R_s, my model -23.28 +1.01 -2.15 = -24.42 | build -23.31 +1.01 -2.14 = -24.45
+  prod_fof10      goal     SO40 d: mine -0.87 +0.09 +2.70 = +1.92 | build R_s, my model -0.87 +0.08 +2.71 = +1.92 | build -0.87 +0.08 +2.68 = +1.90
+  prod_fof10      goal     full a: mine -36.82 +1.60 -3.40 = -38.62 | build R_s, my model -36.81 +1.60 -3.39 = -38.61 | build -36.86 +1.59 -3.39 = -38.66
+  prod_fof10      goal     full d: mine -0.76 +0.09 +3.67 = +3.00 | build R_s, my model -0.76 +0.07 +3.68 = +2.99 | build -0.76 +0.07 +3.63 = +2.94
+  szifi3000_none  baseline SO40 a: mine -4.89 +0.67 -0.50 = -4.71 | build R_s, my model -4.89 +0.63 -0.50 = -4.76 | build -4.90 +0.63 -0.50 = -4.77
+  szifi3000_none  baseline SO40 d: mine -0.27 +0.09 +0.35 = +0.17 | build R_s, my model -0.27 +0.05 +0.37 = +0.15 | build -0.27 +0.05 +0.37 = +0.14
+  szifi3000_none  baseline full a: mine -7.73 +1.06 -0.78 = -7.45 | build R_s, my model -7.73 +0.99 -0.79 = -7.53 | build -7.74 +0.99 -0.79 = -7.54
+  szifi3000_none  baseline full d: mine -0.26 -0.05 +0.42 = +0.11 | build R_s, my model -0.26 -0.07 +0.45 = +0.12 | build -0.27 -0.07 +0.45 = +0.11
+  szifi3000_none  goal     SO40 a: mine -7.80 +0.63 -0.78 = -7.96 | build R_s, my model -7.79 +0.69 -0.78 = -7.88 | build -7.80 +0.69 -0.78 = -7.89
+  szifi3000_none  goal     SO40 d: mine -0.33 +0.26 +0.98 = +0.91 | build R_s, my model -0.33 +0.22 +0.99 = +0.88 | build -0.33 +0.22 +0.98 = +0.87
+  szifi3000_none  goal     full a: mine -12.34 +0.99 -1.24 = -12.58 | build R_s, my model -12.32 +1.09 -1.23 = -12.46 | build -12.34 +1.09 -1.23 = -12.48
+  szifi3000_none  goal     full d: mine -0.30 +0.40 +1.34 = +1.45 | build R_s, my model -0.30 +0.33 +1.34 = +1.38 | build -0.30 +0.33 +1.33 = +1.36
+
+(4b) nuisance shifts of the ML fit, config d, q_cut 5 [sigma]: (1-b) / alpha / slnY -- mine (my R_s) | build R_s with my model | build
+  prod_none       baseline SO40: -0.18/+1.12/-0.24 | -0.14/+1.09/-0.22 | -0.14/+1.08/-0.22; chi2min mine 2.92 vs build 2.68
+  prod_none       baseline full: -0.39/+1.76/-0.31 | -0.32/+1.68/-0.30 | -0.32/+1.68/-0.30; chi2min mine 7.21 vs build 6.63
+  prod_none       goal     SO40: -0.27/+1.97/-0.65 | -0.22/+1.95/-0.67 | -0.22/+1.95/-0.67; chi2min mine 6.44 vs build 6.33
+  prod_none       goal     full: -0.57/+3.05/-0.94 | -0.46/+2.98/-0.99 | -0.47/+2.99/-0.98; chi2min mine 15.94 vs build 15.71
+  szifi3000_none  baseline SO40: +0.09/+1.77/-0.13 | - | +0.05/+1.68/-0.01; chi2min mine 6.15 vs build 5.44
+  szifi3000_none  baseline full: +0.20/+2.56/-0.23 | - | +0.12/+2.44/-0.02; chi2min mine 15.34 vs build 13.60
+  szifi3000_none  goal     SO40: -0.45/+3.39/-0.76 | - | -0.41/+3.36/-0.75; chi2min mine 16.77 vs build 15.80
+  szifi3000_none  goal     full: -0.98/+5.26/-1.06 | - | -0.91/+5.22/-1.06; chi2min mine 41.40 vs build 39.05
+  prod_fof10      baseline SO40: -0.46/+4.84/-0.26 | - | -0.42/+4.84/-0.29; chi2min mine 33.86 vs build 33.55
+  prod_fof10      baseline full: -1.03/+7.42/-0.28 | - | -1.03/+7.47/-0.33; chi2min mine 83.97 vs build 83.13
+  prod_fof10      goal     SO40: -1.30/+9.50/-2.16 | - | -1.19/+9.50/-2.24; chi2min mine 105.71 vs build 105.48
+  prod_fof10      goal     full: -2.95/+15.15/-3.35 | - | -2.84/+15.14/-3.78; chi2min mine 259.78 vs build 258.44
+
+(5) goodness-of-fit power (ML, R_s, q_cut 5), max over configs a, d, e: mine | build
+  prod_none       baseline SO40: a 0.10|0.09, d 0.07|0.07, e 0.07|0.07;  full: a 0.21|0.19, d 0.11|0.11, e 0.11|0.11
+  prod_none       goal     SO40: a 0.21|0.21, d 0.11|0.10, e 0.10|0.10;  full: a 0.62|0.61, d 0.24|0.24, e 0.24|0.24
+  szifi3000_none  baseline SO40: a 0.24|0.22, d 0.10|0.10, e 0.10|0.10;  full: a 0.70|0.65, d 0.23|0.20, e 0.23|0.20
+  szifi3000_none  goal     SO40: a 0.74|0.73, d 0.26|0.24, e 0.25|0.23;  full: a 1.00|1.00, d 0.72|0.68, e 0.71|0.68
+  prod_fof10      baseline SO40: a 1.00|1.00, d 0.59|0.58, e 0.57|0.57;  full: a 1.00|1.00, d 0.99|0.99, e 0.99|0.99
+  prod_fof10      goal     SO40: a 1.00|1.00, d 1.00|1.00, e 1.00|1.00;  full: a 1.00|1.00, d 1.00|1.00, e 1.00|1.00
+
+(6) ML vs linearised (mine, R_s fits): ratio ML / lin of the S8 bias for |bias| >= 0.1
+  66 fits: median |ML - lin| / |ML| 0.085; > 10%: 30; largest: [(2.38, 'prod_fof10', 'goal', 5.0, 'SO40', 'e'), (2.0, 'prod_fof10', 'goal', 5.0, 'full', 'e'), (1.86, 'prod_fof10', 'goal', 6.0, 'SO40', 'e'), (1.86, 'prod_fof10', 'goal', 6.0, 'full', 'e'), (1.8, 'prod_fof10', 'baseline', 5.0, 'SO40', 'e'), (1.8, 'prod_fof10', 'baseline', 5.0, 'full', 'e')]
+  ML started at the truth vs at the linearised point (headline d, e, q_cut 5): max |diff| 0.0000 sigma over 8 fits
+
+(7) self route (my model fitted to its own expectation): max |bias| over parameters
+  goal     d: max |ml bias| 0.0e+00, lin 0.0e+00, from truth 0.0e+00
+  baseline e: max |ml bias| 0.0e+00, lin 0.0e+00, from truth 0.0e+00
+  baseline d: max |ml bias| 0.0e+00, lin 0.0e+00, from truth 0.0e+00
+  goal     e: max |ml bias| 0.0e+00, lin 0.0e+00, from truth 0.0e+00
+  baseline a: max |ml bias| 1.3e-05, lin 0.0e+00, from truth 1.3e-05
+  goal     a: max |ml bias| 1.2e-05, lin 0.0e+00, from truth 1.2e-05
+
+(8) analytic analyst Phi(sqrt(q'^2 + 3) - e), zero below q' = 2, q_cut 5: S8 bias [sigma] (i) blended = (ii) isolated + blending (i) - (ii)
+    mine: my model, my measured-kernel expectation, my R_s [build R_s in brackets] | build (fits_analytic_cl.json); measured-kernel analyst (ML, R_s): mine | build
+  prod      baseline SO40 
+        a: -8.46+-0.11 = -6.26 + -2.20 [-2.20] | -8.45 = -6.25 + -2.20; K-analyst -2.15 | -2.16; power (i) 0.67|0.67, bound []
+        d: +0.49+-0.06 = +0.06 + +0.42 [+0.39] | +0.47 = +0.06 + +0.40; K-analyst +0.40 | +0.36; power (i) 0.22|0.22, bound []
+        e: +0.39+-0.10 = -0.18 + +0.57 [+0.51] | +0.38 = -0.17 + +0.56; K-analyst +0.52 | +0.47; power (i) 0.22|0.22, bound []
+  prod      baseline full 
+        a: -13.37+-0.18 = -9.90 + -3.47 [-3.48] | -13.37 = -9.88 + -3.48; K-analyst -3.40 | -3.41; power (i) 1.00|1.00, bound []
+        d: +0.68+-0.11 = -0.04 + +0.72 [+0.64] | +0.64 = -0.03 + +0.67; K-analyst +0.67 | +0.58; power (i) 0.64|0.63, bound []
+        e: +0.62+-0.15 = -0.29 + +0.91 [+0.80] | +0.61 = -0.27 + +0.88; K-analyst +0.82 | +0.74; power (i) 0.64|0.63, bound []
+  prod      goal     SO40 
+        a: -13.14+-0.12 = -8.89 + -4.25 [-4.25] | -13.15 = -8.89 + -4.26; K-analyst -4.17 | -4.18; power (i) 0.98|0.98, bound []
+        d: +0.85+-0.07 = +0.06 + +0.79 [+0.75] | +0.82 = +0.06 + +0.76; K-analyst +0.71 | +0.66; power (i) 0.49|0.49, bound []
+        e: +0.57+-0.11 = -0.38 + +0.95 [+0.88] | +0.55 = -0.38 + +0.93; K-analyst +0.76 | +0.71; power (i) 0.49|0.49, bound []
+  prod      goal     full 
+        a: -20.78+-0.19 = -14.06 + -6.72 [-6.72] | -20.79 = -14.05 + -6.74; K-analyst -6.59 | -6.60; power (i) 1.00|1.00, bound []
+        d: +1.12+-0.13 = -0.17 + +1.29 [+1.17] | +1.07 = -0.19 + +1.26; K-analyst +1.13 | +1.03; power (i) 0.97|0.97, bound []
+        e: +0.91+-0.17 = -0.60 + +1.51 [+1.36] | +0.87 = -0.61 + +1.47; K-analyst +1.21 | +1.12; power (i) 0.97|0.97, bound []
+  szifi3000 baseline SO40 
+        a: -12.39+-0.26 = -7.49 + -4.90 [-4.95] | -12.45 = -7.49 + -4.96; K-analyst -4.77 | -4.83; power (i) 0.99|0.99, bound []
+        d: +0.33+-0.13 = +0.04 + +0.29 [+0.23] | +0.29 = +0.04 + +0.25; K-analyst +0.20 | +0.17; power (i) 0.44|0.42, bound []
+        e: -0.36+-0.22 = -0.39 + +0.03 [+0.07] | -0.31 = -0.39 + +0.08; K-analyst -0.10 | -0.03; power (i) 0.43|0.42, bound []
+  szifi3000 baseline full 
+        a: -19.59+-0.41 = -11.85 + -7.74 [-7.83] | -19.69 = -11.84 + -7.85; K-analyst -7.54 | -7.64; power (i) 1.00|1.00, bound []
+        d: +0.18+-0.23 = -0.15 + +0.33 [+0.30] | +0.18 = -0.15 + +0.32; K-analyst +0.15 | +0.14; power (i) 0.95|0.94, bound []
+        e: -0.58+-0.34 = -0.62 + +0.04 [+0.11] | -0.49 = -0.62 + +0.13; K-analyst -0.16 | -0.05; power (i) 0.95|0.94, bound []
+  szifi3000 goal     SO40 
+        a: -18.47+-0.25 = -10.14 + -8.33 [-8.25] | -18.40 = -10.14 + -8.27; K-analyst -8.11 | -8.05; power (i) 1.00|1.00, bound []
+        d: +1.30+-0.15 = +0.17 + +1.14 [+1.08] | +1.31 = +0.16 + +1.14; K-analyst +1.06 | +1.02; power (i) 0.84|0.83, bound []
+        e: +1.43+-0.23 = -0.33 + +1.76 [+1.64] | +1.29 = -0.35 + +1.63; K-analyst +1.39 | +1.25; power (i) 0.84|0.83, bound []
+  szifi3000 goal     full 
+        a: -29.20+-0.40 = -16.03 + -13.18 [-13.04] | -29.09 = -16.03 + -13.07; K-analyst -12.83 | -12.73; power (i) 1.00|1.00, bound []
+        d: +1.97+-0.27 = -0.02 + +1.99 [+1.88] | +1.96 = -0.04 + +1.99; K-analyst +1.76 | +1.70; power (i) 1.00|1.00, bound []
+        e: +2.26+-0.37 = -0.52 + +2.78 [+2.59] | +2.03 = -0.55 + +2.58; K-analyst +2.19 | +1.97; power (i) 1.00|1.00, bound []
+
+(9) the model's kernel interpolation: ML S8 bias with my model using the build's bilinear kernel interpolation ('mlb') vs my default PCHIP-in-q' model ('ml'), headline, q_cut 5: data = build R_s | my R_s; build (fits.json)
+  baseline SO40 d: build R_s bilin +0.362 / pchip +0.363; my R_s bilin +0.401 / pchip +0.401; build +0.360;  e: build R_s bilin +0.448 / pchip +0.448; my R_s bilin +0.519 / pchip +0.519; build +0.466
+  baseline full d: build R_s bilin +0.589 / pchip +0.589; my R_s bilin +0.671 / pchip +0.672; build +0.585;  e: build R_s bilin +0.708 / pchip +0.708; my R_s bilin +0.821 / pchip +0.821; build +0.737
+  goal     SO40 d: build R_s bilin +0.664 / pchip +0.664; my R_s bilin +0.708 / pchip +0.708; build +0.661;  e: build R_s bilin +0.676 / pchip +0.676; my R_s bilin +0.763 / pchip +0.764; build +0.709
+  goal     full d: build R_s bilin +1.029 / pchip +1.029; my R_s bilin +1.133 / pchip +1.134; build +1.034;  e: build R_s bilin +1.069 / pchip +1.069; my R_s bilin +1.207 / pchip +1.208; build +1.121
+
+(10) Fisher sigma(S8) at the truth, my model (smooth-Tinker08 grid) / build (fits.json), headline, q_cut 5 and 6
+  config a: 1.0018-1.0023 (8 fits); config d: 0.9956-1.0006 (8 fits); config e: 0.9886-0.9908 (8 fits)
+  first run with f01's grid (colossus' rounded Delta_m in Tinker08, 0.005 Om spacing; superseded): config d: 0.9746-0.9934 (16 fits); config e: 0.9310-0.9394 (13 fits)

@@ -1,0 +1,88 @@
+
+=================== [szifi, baseline] 60 tiles (60 x 100 deg^2) ===================
+r after the iteration at 0.5' / 4.45' / 15': 1.1349 / 1.1185 / 1.0490 (+- 0.0021 / 0.0015 / 0.0010); before: 1.1186 / 1.1771 / 1.1300
+per tile: q > 5 catalogue entries 176.33 +- 1.67; credited halos merge none 165.93 +- 1.48, closest 1' 165.73, fof 10' 155.73; 'no real cluster' entries 0.82% of all q > 5 entries (+- 0.09%)
+merging removes credited halos: closest 1' 0.12%, fof 10' 6.15%; credited with q' < 2: 0; credited halos missing from the stored rows (q' < 1.5): 0
+halos per tile 70959.1 +- 41.2 (sampler expectation for 100 deg^2: 71014.3)
+--- q_cut 5: N_det 9,956, N_exp 10,338.3, N_iso 10,365
+    count change at q > 5, R               : -3.70% +- 0.46%
+    count change at q > 5, R_p             : -3.95% +- 0.38%
+    count change at q > 5, N_iso/N_exp     : +0.26% +- 0.51%
+    count change at q > 5, R_s (N-route)   : -3.97% +- 0.38%
+    count change at q > 5, R_s closest1    : -4.08% +- nan%
+    count change at q > 5, R_p closest1    : -4.06% +- 0.38%
+    count change at q > 5, R closest1      : -3.81% +- nan%
+    count change at q > 5, R_s fof10       : -9.92% +- nan%
+    count change at q > 5, R_p fof10       : -9.85% +- 0.43%
+    count change at q > 5, R fof10         : -9.62% +- nan%
+    count change at q > 5, R_p + no real   : -3.11% +- 0.38%
+    count change at q > 5, R + no real     : -2.86% +- nan%
+    tiles 0-199 (60 tiles): R_p -3.95% +- 0.37%, R -3.70% +- 0.44% (tiles only)
+    R at q > 5 with the kernel resampled jointly (200 resamples): -3.70% +- 0.48%
+    step 3a's pooled injection selection on the own tiles: N_det / N_exp(3a) - 1 = -4.28% +- 0.45% (tiles only); own kernel N_exp / 3a N_exp - 1 = -0.61% +- 0.01%
+    R    by z (0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3): -1.9 +- 5.0, -2.8 +- 0.8, -3.7 +- 0.7, -6.3 +- 1.5, -6.8 +- 3.7, +1.0 +- 10.1 %
+    R    by q (5.0-7.3, 7.3-10.6, 10.6-15.4, 15.4-22.4, 22.4-32.5, 32.5-47.3, 47.3-68.8, 68.8-100.0, >100): -4.6 +- 0.9, -3.7 +- 1.0, -1.1 +- 1.3, -1.3 +- 2.2, +5.8 +- 2.5, -3.7 +- 3.9, -17.6 +- 10.5, +18.1 +- nan, +nan +- nan %
+    R_p  by z (0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3): -2.8 +- 3.6, -4.2 +- 0.6, -3.7 +- 0.5, -3.7 +- 1.0, -6.2 +- 2.7, -4.9 +- 7.1 %
+    R_p  by q (5.0-7.3, 7.3-10.6, 10.6-15.4, 15.4-22.4, 22.4-32.5, 32.5-47.3, 47.3-68.8, 68.8-100.0, >100): -5.6 +- 0.7, -2.4 +- 1.0, -0.9 +- 1.0, +1.2 +- 1.5, +2.9 +- 2.3, -6.1 +- 3.5, +0.0 +- 0.0, +0.0 +- nan, +nan +- nan %
+    R_s  by z: -3.1 +- 3.2, -4.3 +- 0.5, -3.4 +- 0.5, -4.3 +- 0.9, -6.4 +- 1.9, -6.7 +- 3.9 %
+    R_s  by q: -5.7 +- 0.8, -2.4 +- 1.0, -0.8 +- 0.9, +0.9 +- 1.6, +3.6 +- 2.7, -6.0 +- 3.3, +0.0 +- 0.0, +0.0 +- 0.0, +nan +- nan %
+    bins with N_exp >= 10: 58; chi2 of R_p - R_s (bootstrap error of the difference, same resamples) 44.9 for 58 bins; R - R_s: 69.5
+--- q_cut 6: N_det 6,481, N_exp 6,675.0, N_iso 6,645
+    count change at q > 6, R               : -2.91% +- 0.70%
+    count change at q > 6, R_p             : -2.47% +- 0.48%
+    count change at q > 6, N_iso/N_exp     : -0.45% +- 0.57%
+    count change at q > 6, R_s (N-route)   : -2.46% +- 0.46%
+    count change at q > 6, R_s closest1    : -2.53% +- nan%
+    count change at q > 6, R_p closest1    : -2.54% +- 0.48%
+    count change at q > 6, R closest1      : -2.98% +- nan%
+    count change at q > 6, R_s fof10       : -6.49% +- nan%
+    count change at q > 6, R_p fof10       : -6.50% +- 0.50%
+    count change at q > 6, R fof10         : -6.92% +- nan%
+    count change at q > 6, R_p + no real   : -2.45% +- 0.48%
+    count change at q > 6, R + no real     : -2.89% +- nan%
+    tiles 0-199 (60 tiles): R_p -2.47% +- 0.49%, R -2.91% +- 0.67% (tiles only)
+
+=================== [szifi, goal] 60 tiles (60 x 100 deg^2) ===================
+r after the iteration at 0.5' / 4.45' / 15': 1.1796 / 1.1713 / 1.0792 (+- 0.0023 / 0.0020 / 0.0013); before: 1.1606 / 1.2437 / 1.1756
+per tile: q > 5 catalogue entries 247.78 +- 2.18; credited halos merge none 234.88 +- 1.93, closest 1' 234.65, fof 10' 214.08; 'no real cluster' entries 0.67% of all q > 5 entries (+- 0.07%)
+merging removes credited halos: closest 1' 0.10%, fof 10' 8.86%; credited with q' < 2: 0; credited halos missing from the stored rows (q' < 1.5): 0
+halos per tile 70959.1 +- 41.2 (sampler expectation for 100 deg^2: 71014.3)
+--- q_cut 5: N_det 14,093, N_exp 14,887.9, N_iso 14,820
+    count change at q > 5, R               : -5.34% +- 0.36%
+    count change at q > 5, R_p             : -4.91% +- 0.40%
+    count change at q > 5, N_iso/N_exp     : -0.46% +- 0.37%
+    count change at q > 5, R_s (N-route)   : -4.97% +- 0.40%
+    count change at q > 5, R_s closest1    : -5.07% +- nan%
+    count change at q > 5, R_p closest1    : -5.00% +- 0.40%
+    count change at q > 5, R closest1      : -5.43% +- nan%
+    count change at q > 5, R_s fof10       : -13.50% +- nan%
+    count change at q > 5, R_p fof10       : -13.33% +- 0.39%
+    count change at q > 5, R fof10         : -13.72% +- nan%
+    count change at q > 5, R_p + no real   : -4.23% +- 0.42%
+    count change at q > 5, R + no real     : -4.67% +- nan%
+    tiles 0-199 (60 tiles): R_p -4.91% +- 0.38%, R -5.34% +- 0.35% (tiles only)
+    R at q > 5 with the kernel resampled jointly (200 resamples): -5.34% +- 0.42%
+    step 3a's pooled injection selection on the own tiles: N_det / N_exp(3a) - 1 = -6.09% +- 0.36% (tiles only); own kernel N_exp / 3a N_exp - 1 = -0.79% +- 0.01%
+    R    by z (0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3): -7.8 +- 4.2, -3.7 +- 0.6, -6.0 +- 0.6, -6.3 +- 1.0, -9.6 +- 2.9, -6.9 +- 6.6 %
+    R    by q (5.0-7.3, 7.3-10.6, 10.6-15.4, 15.4-22.4, 22.4-32.5, 32.5-47.3, 47.3-68.8, 68.8-100.0, >100): -7.7 +- 0.7, -2.5 +- 1.1, -2.0 +- 1.5, -0.7 +- 1.7, -0.1 +- 2.6, -2.0 +- 3.9, -5.1 +- 7.1, -0.0 +- nan, +0.0 +- nan %
+    R_p  by z (0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3): -11.0 +- 2.5, -3.8 +- 0.5, -5.0 +- 0.6, -6.4 +- 0.8, -7.0 +- 2.2, -10.8 +- 5.5 %
+    R_p  by q (5.0-7.3, 7.3-10.6, 10.6-15.4, 15.4-22.4, 22.4-32.5, 32.5-47.3, 47.3-68.8, 68.8-100.0, >100): -7.1 +- 0.7, -2.7 +- 0.7, -1.4 +- 1.1, -1.2 +- 1.2, +1.2 +- 1.6, +1.2 +- 1.2, +0.0 +- 0.0, +0.0 +- nan, +0.0 +- nan %
+    R_s  by z: -10.6 +- 2.4, -4.2 +- 0.5, -4.7 +- 0.5, -6.7 +- 0.8, -7.4 +- 1.7, -8.3 +- 5.3 %
+    R_s  by q: -7.2 +- 0.8, -2.5 +- 0.7, -1.7 +- 1.0, -0.6 +- 1.2, +0.1 +- 1.8, +1.1 +- 1.0, +0.0 +- 0.0, +0.0 +- 0.0, +0.0 +- 0.0 %
+    bins with N_exp >= 10: 68; chi2 of R_p - R_s (bootstrap error of the difference, same resamples) 48.6 for 67 bins; R - R_s: 60.6
+--- q_cut 6: N_det 9,467, N_exp 9,771.8, N_iso 9,787
+    count change at q > 6, R               : -3.12% +- 0.45%
+    count change at q > 6, R_p             : -3.27% +- 0.35%
+    count change at q > 6, N_iso/N_exp     : +0.16% +- 0.48%
+    count change at q > 6, R_s (N-route)   : -3.41% +- 0.32%
+    count change at q > 6, R_s closest1    : -3.48% +- nan%
+    count change at q > 6, R_p closest1    : -3.33% +- 0.35%
+    count change at q > 6, R closest1      : -3.18% +- nan%
+    count change at q > 6, R_s fof10       : -9.47% +- nan%
+    count change at q > 6, R_p fof10       : -9.21% +- 0.39%
+    count change at q > 6, R fof10         : -9.06% +- nan%
+    count change at q > 6, R_p + no real   : -3.24% +- 0.35%
+    count change at q > 6, R + no real     : -3.09% +- nan%
+    tiles 0-199 (60 tiles): R_p -3.27% +- 0.33%, R -3.12% +- 0.43% (tiles only)
+
+y06 done in 31 s

@@ -1,0 +1,23 @@
+  prod_fof10 goal     SO40 d: build ML S8 +2.6201 (lnL -53.223259, at bound []); re-optimised: from build solution: lnL -52.968534 (+2.55e-01), S8 +2.7948; from truth: lnL -53.003983 (+2.19e-01), S8 +2.4279 -> best S8 +2.7948, theta [np.float64(0.3252), np.float64(0.8381), np.float64(0.7638), np.float64(1.9182), np.float64(0.001)] [67 s]
+  prod_fof10 goal     SO40 e: build ML S8 +4.7381 (lnL -50.499193, at bound ['slnY']); re-optimised: from build solution: lnL -50.449894 (+4.93e-02), S8 +4.7062; from truth: lnL -55.892758 (+-5.39e+00), S8 -0.2175 -> best S8 +4.7062, theta [np.float64(0.3684), np.float64(0.8644), np.float64(0.659), np.float64(1.9608), np.float64(0.001)] [97 s]
+  prod_fof10 baseline SO40 e: build ML S8 +1.5861 (lnL -16.403562, at bound []); re-optimised: from build solution: lnL -16.403561 (+2.45e-07), S8 +1.5861; from truth: lnL -16.403562 (+-3.65e-07), S8 +1.5883 -> best S8 +1.5861, theta [np.float64(0.3357), np.float64(0.8333), np.float64(0.7309), np.float64(1.8828), np.float64(0.1735)] [163 s]
+  prod_fof10 baseline full e: build ML S8 +2.5079 (lnL -41.008904, at bound []); re-optimised: from build solution: lnL -41.008903 (+6.14e-07), S8 +2.5078; from truth: lnL -41.008903 (+6.13e-07), S8 +2.5078 -> best S8 +2.5078, theta [np.float64(0.3357), np.float64(0.8333), np.float64(0.7309), np.float64(1.8828), np.float64(0.1735)] [157 s]
+done [255 s]
+      255.98 real       479.72 user         2.57 sys
+          1371947008  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              317424  page reclaims
+                 513  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 992  voluntary context switches
+               60327  involuntary context switches
+          8275136721  instructions retired
+          2628280778  cycles elapsed
+            97076800  peak memory footprint

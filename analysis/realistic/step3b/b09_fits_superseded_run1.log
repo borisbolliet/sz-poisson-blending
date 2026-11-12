@@ -1,0 +1,788 @@
+b09: 616 ML fits on 6 processes
+   50/616 fits [81 s]
+   100/616 fits [179 s]
+   150/616 fits [248 s]
+   200/616 fits [322 s]
+   250/616 fits [400 s]
+   300/616 fits [472 s]
+   350/616 fits [590 s]
+   400/616 fits [691 s]
+   450/616 fits [763 s]
+   500/616 fits [833 s]
+   550/616 fits [906 s]
+   600/616 fits [985 s]
+
+######## q_cut = 5, SO40
+q5 SO40 a  prod_none        baseline cat  R : S8 -2.329 (lin -2.312)  Om -1.26  s8 +0.52 | sig(S8) 0.0010 |  | chi2min 23.77 power 0.384 [it 1, at bound [], polish shift 0.000]
+q5 SO40 a  prod_none        baseline cat  Rp: S8 -1.897 (lin -1.886)  Om -0.92  s8 +0.26 | sig(S8) 0.0010 |  | chi2min 11.20 power 0.165 [it 1, at bound [], polish shift 0.000]
+q5 SO40 a  prod_none        baseline cat  Rs: S8 -1.907 (lin -1.897)  Om -0.93  s8 +0.27 | sig(S8) 0.0010 |  | chi2min 5.73 power 0.098 [it 1, at bound [], polish shift 0.000]
+q5 SO40 a  prod_none        goal     cat  R : S8 -4.315 (lin -4.276)  Om -1.82  s8 +0.26 | sig(S8) 0.0008 |  | chi2min 33.79 power 0.582 [it 2, at bound [], polish shift 0.000]
+q5 SO40 a  prod_none        goal     cat  Rp: S8 -4.340 (lin -4.297)  Om -2.40  s8 +1.07 | sig(S8) 0.0008 |  | chi2min 20.53 power 0.321 [it 2, at bound [], polish shift 0.000]
+q5 SO40 a  prod_none        goal     cat  Rs: S8 -4.392 (lin -4.349)  Om -2.46  s8 +1.13 | sig(S8) 0.0008 |  | chi2min 16.53 power 0.249 [it 1, at bound [], polish shift 0.000]
+q5 SO40 a  prod_closest1    baseline cat  Rs: S8 -2.076 (lin -2.064)  Om -1.01  s8 +0.30 | sig(S8) 0.0010 |  | chi2min 6.36 power 0.105 [it 1, at bound [], polish shift 0.000]
+q5 SO40 a  prod_closest1    goal     cat  Rs: S8 -4.631 (lin -4.583)  Om -2.56  s8 +1.14 | sig(S8) 0.0008 |  | chi2min 18.19 power 0.278 [it 2, at bound [], polish shift 0.000]
+q5 SO40 a  prod_fof10       baseline cat  Rs: S8 -12.839 (lin -12.380)  Om -6.23  s8 +1.94 | sig(S8) 0.0010 |  | chi2min 91.09 power 0.996 [it 2, at bound [], polish shift 0.000]
+q5 SO40 a  prod_fof10       goal     cat  Rs: S8 -25.837 (lin -24.345)  Om -12.58  s8 +4.33 | sig(S8) 0.0008 |  | chi2min 314.14 power 1.000 [it 2, at bound [], polish shift 0.000]
+q5 SO40 a  prod_keepnr      baseline cat  Rs: S8 +0.392 (lin +0.392)  Om -0.23  s8 +0.55 | sig(S8) 0.0010 |  | chi2min 2.29 power 0.067 [it 1, at bound [], polish shift 0.000]
+q5 SO40 a  prod_keepnr      goal     cat  Rs: S8 -1.727 (lin -1.719)  Om -1.42  s8 +1.08 | sig(S8) 0.0008 |  | chi2min 4.87 power 0.089 [it 2, at bound [], polish shift 0.000]
+q5 SO40 a  szifi3000_none   baseline cat  Rs: S8 -4.832 (lin -4.767)  Om -2.03  s8 +0.22 | sig(S8) 0.0011 |  | chi2min 15.09 power 0.224 [it 2, at bound [], polish shift 0.000]
+q5 SO40 a  szifi3000_none   goal     cat  Rs: S8 -8.049 (lin -7.894)  Om -3.73  s8 +0.95 | sig(S8) 0.0009 |  | chi2min 42.18 power 0.728 [it 2, at bound [], polish shift 0.000]
+q5 SO40 a  szifi12000_none  baseline cat  Rs: S8 -2.728 (lin -2.708)  Om -1.36  s8 +0.44 | sig(S8) 0.0010 |  | chi2min 6.99 power 0.111 [it 2, at bound [], polish shift 0.000]
+q5 SO40 a  szifi12000_none  goal     cat  Rs: S8 -5.708 (lin -5.637)  Om -3.03  s8 +1.24 | sig(S8) 0.0008 |  | chi2min 22.76 power 0.364 [it 2, at bound [], polish shift 0.000]
+q5 SO40 a  prod_none        baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0010 |  | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 a  prod_none        goal     self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0008 |  | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 a  szifi3000_none   baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0011 |  | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 a  szifi3000_none   goal     self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0009 |  | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 a  szifi12000_none  baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0010 |  | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 a  szifi12000_none  goal     self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0008 |  | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 b  prod_none        baseline cat  R : S8 -1.843 (lin -1.812)  Om -1.94  s8 -1.36 | sig(S8) 0.0118 | omb:+1.72 | chi2min 21.09 power 0.333 [it 2, at bound [], polish shift 0.000]
+q5 SO40 b  prod_none        baseline cat  Rp: S8 -1.601 (lin -1.585)  Om -1.64  s8 -1.25 | sig(S8) 0.0118 | omb:+1.50 | chi2min 9.14 power 0.138 [it 2, at bound [], polish shift 0.000]
+q5 SO40 b  prod_none        baseline cat  Rs: S8 -1.556 (lin -1.553)  Om -1.61  s8 -1.21 | sig(S8) 0.0118 | omb:+1.45 | chi2min 3.78 power 0.079 [it 2, at bound [], polish shift 0.000]
+q5 SO40 b  prod_none        goal     cat  R : S8 -2.868 (lin -2.794)  Om -2.91  s8 -2.25 | sig(S8) 0.0096 | omb:+2.65 | chi2min 27.67 power 0.464 [it 2, at bound [], polish shift 0.000]
+q5 SO40 b  prod_none        goal     cat  Rp: S8 -2.642 (lin -2.630)  Om -2.88  s8 -1.70 | sig(S8) 0.0096 | omb:+2.40 | chi2min 15.38 power 0.230 [it 2, at bound [], polish shift 0.000]
+q5 SO40 b  prod_none        goal     cat  Rs: S8 -2.641 (lin -2.643)  Om -2.90  s8 -1.68 | sig(S8) 0.0096 | omb:+2.39 | chi2min 11.37 power 0.168 [it 2, at bound [], polish shift 0.000]
+q5 SO40 b  prod_closest1    baseline cat  Rs: S8 -1.653 (lin -1.650)  Om -1.71  s8 -1.28 | sig(S8) 0.0118 | omb:+1.54 | chi2min 4.17 power 0.083 [it 2, at bound [], polish shift 0.000]
+q5 SO40 b  prod_closest1    goal     cat  Rs: S8 -2.819 (lin -2.823)  Om -3.07  s8 -1.83 | sig(S8) 0.0096 | omb:+2.57 | chi2min 12.29 power 0.181 [it 2, at bound [], polish shift 0.000]
+q5 SO40 b  prod_fof10       baseline cat  Rs: S8 -7.786 (lin -7.582)  Om -7.89  s8 -6.25 | sig(S8) 0.0118 | omb:+8.21 | chi2min 46.57 power 0.792 [it 4, at bound [], polish shift 0.000]
+q5 SO40 b  prod_fof10       goal     cat  Rs: S8 -14.484 (lin -13.848)  Om -14.30  s8 -11.95 | sig(S8) 0.0096 | omb:+16.96 | chi2min 165.56 power 1.000 [it 5, at bound [], polish shift 0.000]
+q5 SO40 b  prod_keepnr      baseline cat  Rs: S8 +0.836 (lin +0.834)  Om +0.68  s8 +0.95 | sig(S8) 0.0118 | omb:-0.79 | chi2min 1.64 power 0.062 [it 2, at bound [], polish shift 0.000]
+q5 SO40 b  prod_keepnr      goal     cat  Rs: S8 -0.278 (lin -0.279)  Om -0.59  s8 +0.34 | sig(S8) 0.0096 | omb:+0.13 | chi2min 4.86 power 0.089 [it 2, at bound [], polish shift 0.000]
+q5 SO40 b  szifi3000_none   baseline cat  Rs: S8 -3.250 (lin -3.234)  Om -3.27  s8 -2.70 | sig(S8) 0.0129 | omb:+3.11 | chi2min 6.96 power 0.111 [it 3, at bound [], polish shift 0.000]
+q5 SO40 b  szifi3000_none   goal     cat  Rs: S8 -4.926 (lin -4.850)  Om -5.05  s8 -3.81 | sig(S8) 0.0107 | omb:+4.74 | chi2min 24.43 power 0.399 [it 3, at bound [], polish shift 0.000]
+q5 SO40 b  szifi12000_none  baseline cat  Rs: S8 -1.761 (lin -1.756)  Om -1.87  s8 -1.27 | sig(S8) 0.0116 | omb:+1.59 | chi2min 4.65 power 0.087 [it 2, at bound [], polish shift 0.000]
+q5 SO40 b  szifi12000_none  goal     cat  Rs: S8 -3.386 (lin -3.380)  Om -3.65  s8 -2.25 | sig(S8) 0.0095 | omb:+3.10 | chi2min 14.36 power 0.213 [it 3, at bound [], polish shift 0.000]
+q5 SO40 b  prod_none        baseline self - : S8 +0.000 (lin +0.000)  Om -0.00  s8 +0.00 | sig(S8) 0.0118 | omb:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 b  prod_none        goal     self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0096 | omb:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 b  szifi3000_none   baseline self - : S8 +0.000 (lin +0.000)  Om -0.00  s8 +0.00 | sig(S8) 0.0129 | omb:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 b  szifi3000_none   goal     self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0107 | omb:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 b  szifi12000_none  baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0116 | omb:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 b  szifi12000_none  goal     self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0095 | omb:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 c  prod_none        baseline cat  R : S8 -1.149 (lin -1.105)  Om -0.97  s8 -1.31 | sig(S8) 0.0185 | omb:+0.90 slnY:+0.03 | chi2min 21.09 power 0.335 [it 2, at bound [], polish shift 0.000]
+q5 SO40 c  prod_none        baseline cat  Rp: S8 -0.981 (lin -0.957)  Om -0.80  s8 -1.21 | sig(S8) 0.0185 | omb:+0.76 slnY:+0.05 | chi2min 9.14 power 0.138 [it 2, at bound [], polish shift 0.000]
+q5 SO40 c  prod_none        baseline cat  Rs: S8 -0.996 (lin -0.998)  Om -0.83  s8 -1.18 | sig(S8) 0.0185 | omb:+0.78 slnY:-0.01 | chi2min 3.78 power 0.079 [it 2, at bound [], polish shift 0.000]
+q5 SO40 c  prod_none        goal     cat  R : S8 -1.365 (lin -1.334)  Om -0.98  s8 -2.09 | sig(S8) 0.0145 | omb:+0.83 slnY:+0.64 | chi2min 27.22 power 0.457 [it 2, at bound [], polish shift 0.000]
+q5 SO40 c  prod_none        goal     cat  Rp: S8 -1.567 (lin -1.585)  Om -1.34  s8 -1.64 | sig(S8) 0.0145 | omb:+1.11 slnY:+0.24 | chi2min 15.32 power 0.230 [it 2, at bound [], polish shift 0.000]
+q5 SO40 c  prod_none        goal     cat  Rs: S8 -1.609 (lin -1.652)  Om -1.40  s8 -1.63 | sig(S8) 0.0145 | omb:+1.16 slnY:+0.19 | chi2min 11.34 power 0.168 [it 2, at bound [], polish shift 0.000]
+q5 SO40 c  prod_closest1    baseline cat  Rs: S8 -1.045 (lin -1.048)  Om -0.87  s8 -1.24 | sig(S8) 0.0185 | omb:+0.82 slnY:+0.01 | chi2min 4.17 power 0.083 [it 2, at bound [], polish shift 0.000]
+q5 SO40 c  prod_closest1    goal     cat  Rs: S8 -1.713 (lin -1.762)  Om -1.48  s8 -1.77 | sig(S8) 0.0145 | omb:+1.24 slnY:+0.21 | chi2min 12.24 power 0.181 [it 3, at bound [], polish shift 0.000]
+q5 SO40 c  prod_fof10       baseline cat  Rs: S8 -4.344 (lin -4.362)  Om -3.42  s8 -5.74 | sig(S8) 0.0185 | omb:+3.46 slnY:+0.76 | chi2min 46.06 power 0.788 [it 4, at bound [], polish shift 0.000]
+q5 SO40 c  prod_fof10       goal     cat  Rs: S8 -7.999 (lin -8.104)  Om -6.15  s8 -10.83 | sig(S8) 0.0145 | omb:+6.45 slnY:+1.92 | chi2min 161.93 power 1.000 [it 4, at bound [], polish shift 0.000]
+q5 SO40 c  prod_keepnr      baseline cat  Rs: S8 +0.702 (lin +0.699)  Om +0.54  s8 +0.97 | sig(S8) 0.0185 | omb:-0.60 slnY:+0.21 | chi2min 1.59 power 0.061 [it 2, at bound [], polish shift 0.000]
+q5 SO40 c  prod_keepnr      goal     cat  Rs: S8 +0.006 (lin +0.004)  Om -0.11  s8 +0.37 | sig(S8) 0.0145 | omb:-0.14 slnY:+0.24 | chi2min 4.79 power 0.089 [it 2, at bound [], polish shift 0.000]
+q5 SO40 c  szifi3000_none   baseline cat  Rs: S8 -1.876 (lin -1.914)  Om -1.46  s8 -2.54 | sig(S8) 0.0201 | omb:+1.42 slnY:+0.26 | chi2min 6.89 power 0.111 [it 3, at bound [], polish shift 0.000]
+q5 SO40 c  szifi3000_none   goal     cat  Rs: S8 -2.755 (lin -2.833)  Om -2.16  s8 -3.57 | sig(S8) 0.0162 | omb:+1.97 slnY:+0.63 | chi2min 24.03 power 0.393 [it 3, at bound [], polish shift 0.000]
+q5 SO40 c  szifi12000_none  baseline cat  Rs: S8 -1.012 (lin -1.021)  Om -0.84  s8 -1.21 | sig(S8) 0.0182 | omb:+0.72 slnY:+0.14 | chi2min 4.63 power 0.087 [it 2, at bound [], polish shift 0.000]
+q5 SO40 c  szifi12000_none  goal     cat  Rs: S8 -2.150 (lin -2.204)  Om -1.86  s8 -2.20 | sig(S8) 0.0143 | omb:+1.60 slnY:+0.13 | chi2min 14.35 power 0.214 [it 3, at bound [], polish shift 0.000]
+q5 SO40 c  prod_none        baseline self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0185 | omb:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 c  prod_none        goal     self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0145 | omb:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 c  szifi3000_none   baseline self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0201 | omb:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 c  szifi3000_none   goal     self - : S8 +0.000 (lin -0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0162 | omb:+0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 c  szifi12000_none  baseline self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0182 | omb:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 c  szifi12000_none  goal     self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0143 | omb:+0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 d  prod_none        baseline cat  R : S8 +0.162 (lin +0.149)  Om +0.07  s8 +0.27 | sig(S8) 0.0180 | omb:+0.02 alpha:+0.99 slnY:-0.07 | chi2min 20.62 power 0.327 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d  prod_none        baseline cat  Rp: S8 +0.140 (lin +0.134)  Om +0.10  s8 +0.17 | sig(S8) 0.0180 | omb:+0.02 alpha:+0.85 slnY:-0.04 | chi2min 8.76 power 0.134 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d  prod_none        baseline cat  Rs: S8 +0.218 (lin +0.209)  Om +0.14  s8 +0.29 | sig(S8) 0.0180 | omb:-0.00 alpha:+0.97 slnY:-0.17 | chi2min 3.24 power 0.075 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d  prod_none        goal     cat  R : S8 +0.804 (lin +0.720)  Om +0.74  s8 +0.75 | sig(S8) 0.0170 | omb:-0.50 alpha:+1.99 slnY:-0.11 | chi2min 23.80 power 0.390 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d  prod_none        goal     cat  Rp: S8 +0.845 (lin +0.773)  Om +0.54  s8 +1.19 | sig(S8) 0.0170 | omb:-0.39 alpha:+2.14 slnY:-0.66 | chi2min 11.54 power 0.171 [it 3, at bound [], polish shift 0.000]
+q5 SO40 d  prod_none        goal     cat  Rs: S8 +0.785 (lin +0.724)  Om +0.46  s8 +1.17 | sig(S8) 0.0170 | omb:-0.32 alpha:+2.10 slnY:-0.70 | chi2min 7.75 power 0.121 [it 3, at bound [], polish shift 0.000]
+q5 SO40 d  prod_closest1    baseline cat  Rs: S8 +0.242 (lin +0.232)  Om +0.15  s8 +0.33 | sig(S8) 0.0180 | omb:-0.02 alpha:+1.04 slnY:-0.18 | chi2min 3.52 power 0.077 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d  prod_closest1    goal     cat  Rs: S8 +0.808 (lin +0.741)  Om +0.48  s8 +1.20 | sig(S8) 0.0170 | omb:-0.32 alpha:+2.21 slnY:-0.72 | chi2min 8.34 power 0.128 [it 3, at bound [], polish shift 0.000]
+q5 SO40 d  prod_fof10       baseline cat  Rs: S8 +0.929 (lin +0.714)  Om +0.46  s8 +1.45 | sig(S8) 0.0180 | omb:-0.31 alpha:+4.67 slnY:-0.35 | chi2min 33.12 power 0.576 [it 3, at bound [], polish shift 0.000]
+q5 SO40 d  prod_fof10       goal     cat  Rs: S8 +2.364 (lin +1.865)  Om +1.19  s8 +3.85 | sig(S8) 0.0170 | omb:-0.94 alpha:+9.37 slnY:-2.43 | chi2min 105.01 power 0.999 [it 9, at bound ['slnY'], polish shift 0.000]
+q5 SO40 d  prod_keepnr      baseline cat  Rs: S8 -0.120 (lin -0.122)  Om -0.16  s8 -0.02 | sig(S8) 0.0180 | omb:-0.09 alpha:-0.56 slnY:+0.21 | chi2min 1.52 power 0.061 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d  prod_keepnr      goal     cat  Rs: S8 +0.304 (lin +0.294)  Om +0.11  s8 +0.57 | sig(S8) 0.0170 | omb:-0.30 alpha:+0.45 slnY:-0.07 | chi2min 4.55 power 0.087 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d  szifi3000_none   baseline cat  Rs: S8 +0.166 (lin +0.145)  Om +0.12  s8 +0.20 | sig(S8) 0.0184 | omb:+0.05 alpha:+1.68 slnY:-0.01 | chi2min 5.44 power 0.096 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d  szifi3000_none   goal     cat  Rs: S8 +1.017 (lin +0.873)  Om +0.66  s8 +1.35 | sig(S8) 0.0176 | omb:-0.41 alpha:+3.36 slnY:-0.75 | chi2min 15.80 power 0.239 [it 3, at bound [], polish shift 0.000]
+q5 SO40 d  szifi12000_none  baseline cat  Rs: S8 +0.313 (lin +0.297)  Om +0.19  s8 +0.43 | sig(S8) 0.0180 | omb:-0.11 alpha:+1.15 slnY:-0.17 | chi2min 3.66 power 0.078 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d  szifi12000_none  goal     cat  Rs: S8 +0.903 (lin +0.829)  Om +0.49  s8 +1.41 | sig(S8) 0.0170 | omb:-0.31 alpha:+2.60 slnY:-1.07 | chi2min 9.12 power 0.138 [it 3, at bound [], polish shift 0.000]
+q5 SO40 d  prod_none        baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0180 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 d  prod_none        goal     self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0170 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 d  szifi3000_none   baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0184 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 d  szifi3000_none   goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0176 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 d  szifi12000_none  baseline self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0180 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 d  szifi12000_none  goal     self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0170 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 d3 prod_none        baseline cat  R : S8 +0.200 (lin +0.188)  Om +0.09  s8 +0.29 | sig(S8) 0.0151 | omb:+0.01 alpha:+1.03 slnY:-0.07 | chi2min 20.62 power 0.327 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d3 prod_none        baseline cat  Rp: S8 +0.174 (lin +0.169)  Om +0.13  s8 +0.19 | sig(S8) 0.0151 | omb:+0.01 alpha:+0.89 slnY:-0.04 | chi2min 8.76 power 0.134 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d3 prod_none        baseline cat  Rs: S8 +0.258 (lin +0.250)  Om +0.17  s8 +0.31 | sig(S8) 0.0151 | omb:-0.00 alpha:+1.00 slnY:-0.18 | chi2min 3.24 power 0.075 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d3 prod_none        goal     cat  R : S8 +0.741 (lin +0.687)  Om +0.67  s8 +0.68 | sig(S8) 0.0144 | omb:-0.39 alpha:+1.97 slnY:-0.14 | chi2min 23.93 power 0.392 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d3 prod_none        goal     cat  Rp: S8 +0.840 (lin +0.788)  Om +0.48  s8 +1.18 | sig(S8) 0.0144 | omb:-0.31 alpha:+2.15 slnY:-0.70 | chi2min 11.62 power 0.172 [it 3, at bound [], polish shift 0.000]
+q5 SO40 d3 prod_none        goal     cat  Rs: S8 +0.797 (lin +0.750)  Om +0.42  s8 +1.18 | sig(S8) 0.0144 | omb:-0.26 alpha:+2.13 slnY:-0.74 | chi2min 7.80 power 0.122 [it 3, at bound [], polish shift 0.000]
+q5 SO40 d3 prod_closest1    baseline cat  Rs: S8 +0.282 (lin +0.273)  Om +0.18  s8 +0.35 | sig(S8) 0.0151 | omb:-0.01 alpha:+1.07 slnY:-0.19 | chi2min 3.52 power 0.077 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d3 prod_closest1    goal     cat  Rs: S8 +0.822 (lin +0.771)  Om +0.44  s8 +1.20 | sig(S8) 0.0144 | omb:-0.26 alpha:+2.24 slnY:-0.76 | chi2min 8.39 power 0.129 [it 3, at bound [], polish shift 0.000]
+q5 SO40 d3 prod_fof10       baseline cat  Rs: S8 +0.966 (lin +0.785)  Om +0.42  s8 +1.46 | sig(S8) 0.0151 | omb:-0.23 alpha:+4.78 slnY:-0.38 | chi2min 33.19 power 0.577 [it 3, at bound [], polish shift 0.000]
+q5 SO40 d3 prod_fof10       goal     cat  Rs: S8 +2.430 (lin +1.970)  Om +1.13  s8 +3.79 | sig(S8) 0.0144 | omb:-0.84 alpha:+9.51 slnY:-2.45 | chi2min 105.11 power 0.999 [it 8, at bound ['slnY'], polish shift 0.110]
+q5 SO40 d3 prod_keepnr      baseline cat  Rs: S8 -0.179 (lin -0.181)  Om -0.24  s8 -0.04 | sig(S8) 0.0151 | omb:-0.07 alpha:-0.59 slnY:+0.20 | chi2min 1.52 power 0.061 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d3 prod_keepnr      goal     cat  Rs: S8 +0.244 (lin +0.238)  Om +0.01  s8 +0.54 | sig(S8) 0.0144 | omb:-0.24 alpha:+0.41 slnY:-0.09 | chi2min 4.59 power 0.087 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d3 szifi3000_none   baseline cat  Rs: S8 +0.219 (lin +0.197)  Om +0.17  s8 +0.23 | sig(S8) 0.0155 | omb:+0.04 alpha:+1.74 slnY:-0.00 | chi2min 5.45 power 0.096 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d3 szifi3000_none   goal     cat  Rs: S8 +1.029 (lin +0.913)  Om +0.62  s8 +1.34 | sig(S8) 0.0149 | omb:-0.32 alpha:+3.41 slnY:-0.79 | chi2min 15.90 power 0.241 [it 3, at bound [], polish shift 0.000]
+q5 SO40 d3 szifi12000_none  baseline cat  Rs: S8 +0.327 (lin +0.314)  Om +0.19  s8 +0.43 | sig(S8) 0.0151 | omb:-0.09 alpha:+1.17 slnY:-0.18 | chi2min 3.67 power 0.079 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d3 szifi12000_none  goal     cat  Rs: S8 +0.940 (lin +0.882)  Om +0.47  s8 +1.44 | sig(S8) 0.0145 | omb:-0.25 alpha:+2.65 slnY:-1.11 | chi2min 9.17 power 0.139 [it 3, at bound [], polish shift 0.000]
+q5 SO40 d3 prod_none        baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0151 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 d3 prod_none        goal     self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0144 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 d3 szifi3000_none   baseline self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0155 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 d3 szifi3000_none   goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0149 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 d3 szifi12000_none  baseline self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0151 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 d3 szifi12000_none  goal     self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0145 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 d5 prod_none        baseline cat  R : S8 +0.135 (lin +0.122)  Om +0.05  s8 +0.25 | sig(S8) 0.0206 | omb:+0.02 alpha:+0.95 slnY:-0.07 | chi2min 20.62 power 0.327 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d5 prod_none        baseline cat  Rp: S8 +0.117 (lin +0.110)  Om +0.08  s8 +0.16 | sig(S8) 0.0206 | omb:+0.02 alpha:+0.82 slnY:-0.04 | chi2min 8.76 power 0.134 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d5 prod_none        baseline cat  Rs: S8 +0.191 (lin +0.182)  Om +0.12  s8 +0.28 | sig(S8) 0.0206 | omb:-0.01 alpha:+0.93 slnY:-0.17 | chi2min 3.24 power 0.075 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d5 prod_none        goal     cat  R : S8 +0.873 (lin +0.756)  Om +0.81  s8 +0.83 | sig(S8) 0.0191 | omb:-0.59 alpha:+2.01 slnY:-0.08 | chi2min 23.68 power 0.387 [it 3, at bound [], polish shift 0.000]
+q5 SO40 d5 prod_none        goal     cat  Rp: S8 +0.868 (lin +0.775)  Om +0.59  s8 +1.21 | sig(S8) 0.0191 | omb:-0.45 alpha:+2.13 slnY:-0.62 | chi2min 11.47 power 0.170 [it 3, at bound [], polish shift 0.000]
+q5 SO40 d5 prod_none        goal     cat  Rs: S8 +0.794 (lin +0.717)  Om +0.50  s8 +1.18 | sig(S8) 0.0191 | omb:-0.38 alpha:+2.09 slnY:-0.67 | chi2min 7.70 power 0.121 [it 3, at bound [], polish shift 0.000]
+q5 SO40 d5 prod_closest1    baseline cat  Rs: S8 +0.217 (lin +0.206)  Om +0.14  s8 +0.31 | sig(S8) 0.0206 | omb:-0.02 alpha:+1.01 slnY:-0.18 | chi2min 3.52 power 0.077 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d5 prod_closest1    goal     cat  Rs: S8 +0.815 (lin +0.731)  Om +0.52  s8 +1.20 | sig(S8) 0.0191 | omb:-0.38 alpha:+2.19 slnY:-0.69 | chi2min 8.29 power 0.128 [it 3, at bound [], polish shift 0.000]
+q5 SO40 d5 prod_fof10       baseline cat  Rs: S8 +0.940 (lin +0.675)  Om +0.52  s8 +1.46 | sig(S8) 0.0206 | omb:-0.39 alpha:+4.59 slnY:-0.32 | chi2min 33.05 power 0.574 [it 3, at bound [], polish shift 0.000]
+q5 SO40 d5 prod_fof10       goal     cat  Rs: S8 +2.952 (lin +1.821)  Om +1.87  s8 +4.32 | sig(S8) 0.0191 | omb:-1.59 alpha:+9.56 slnY:-2.27 | chi2min 103.26 power 0.999 [it 8, at bound [], polish shift 0.054]
+q5 SO40 d5 prod_keepnr      baseline cat  Rs: S8 -0.077 (lin -0.078)  Om -0.11  s8 -0.00 | sig(S8) 0.0206 | omb:-0.11 alpha:-0.52 slnY:+0.21 | chi2min 1.51 power 0.061 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d5 prod_keepnr      goal     cat  Rs: S8 +0.352 (lin +0.338)  Om +0.18  s8 +0.60 | sig(S8) 0.0191 | omb:-0.35 alpha:+0.48 slnY:-0.05 | chi2min 4.51 power 0.086 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d5 szifi3000_none   baseline cat  Rs: S8 +0.127 (lin +0.107)  Om +0.08  s8 +0.17 | sig(S8) 0.0211 | omb:+0.06 alpha:+1.62 slnY:-0.01 | chi2min 5.44 power 0.096 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d5 szifi3000_none   goal     cat  Rs: S8 +1.034 (lin +0.859)  Om +0.71  s8 +1.38 | sig(S8) 0.0200 | omb:-0.49 alpha:+3.33 slnY:-0.72 | chi2min 15.71 power 0.238 [it 3, at bound [], polish shift 0.000]
+q5 SO40 d5 szifi12000_none  baseline cat  Rs: S8 +0.311 (lin +0.290)  Om +0.20  s8 +0.43 | sig(S8) 0.0206 | omb:-0.13 alpha:+1.13 slnY:-0.16 | chi2min 3.65 power 0.078 [it 2, at bound [], polish shift 0.000]
+q5 SO40 d5 szifi12000_none  goal     cat  Rs: S8 +0.894 (lin +0.806)  Om +0.53  s8 +1.40 | sig(S8) 0.0191 | omb:-0.36 alpha:+2.56 slnY:-1.03 | chi2min 9.07 power 0.138 [it 3, at bound [], polish shift 0.000]
+q5 SO40 d5 prod_none        baseline self - : S8 +0.000 (lin -0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0206 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 d5 prod_none        goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0191 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 d5 szifi3000_none   baseline self - : S8 +0.000 (lin -0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0211 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 d5 szifi3000_none   goal     self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0200 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 d5 szifi12000_none  baseline self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0206 | omb:+0.00 alpha:-0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 d5 szifi12000_none  goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0191 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 e  prod_none        baseline cat  R : S8 +0.042 (lin +0.033)  Om -0.01  s8 +0.14 | sig(S8) 0.0356 | omb:+0.05 alpha:+0.73 slnY:-0.08 | chi2min 20.62 power 0.327 [it 2, at bound [], polish shift 0.000]
+q5 SO40 e  prod_none        baseline cat  Rp: S8 +0.037 (lin +0.032)  Om +0.01  s8 +0.08 | sig(S8) 0.0356 | omb:+0.04 alpha:+0.63 slnY:-0.05 | chi2min 8.76 power 0.134 [it 2, at bound [], polish shift 0.000]
+q5 SO40 e  prod_none        baseline cat  Rs: S8 +0.119 (lin +0.103)  Om +0.07  s8 +0.20 | sig(S8) 0.0356 | omb:-0.01 alpha:+0.75 slnY:-0.16 | chi2min 3.24 power 0.075 [it 2, at bound [], polish shift 0.000]
+q5 SO40 e  prod_none        goal     cat  R : S8 +1.251 (lin +0.955)  Om +1.21  s8 +1.22 | sig(S8) 0.0282 | omb:-0.99 alpha:+2.21 slnY:+0.09 | chi2min 23.33 power 0.380 [it 3, at bound [], polish shift 0.000]
+q5 SO40 e  prod_none        goal     cat  Rp: S8 +1.071 (lin +0.862)  Om +0.88  s8 +1.37 | sig(S8) 0.0282 | omb:-0.75 alpha:+2.18 slnY:-0.43 | chi2min 11.28 power 0.168 [it 3, at bound [], polish shift 0.000]
+q5 SO40 e  prod_none        goal     cat  Rs: S8 +0.927 (lin +0.766)  Om +0.72  s8 +1.26 | sig(S8) 0.0282 | omb:-0.61 alpha:+2.06 slnY:-0.50 | chi2min 7.57 power 0.119 [it 3, at bound [], polish shift 0.000]
+q5 SO40 e  prod_closest1    baseline cat  Rs: S8 +0.158 (lin +0.135)  Om +0.11  s8 +0.25 | sig(S8) 0.0356 | omb:-0.04 alpha:+0.83 slnY:-0.15 | chi2min 3.52 power 0.077 [it 2, at bound [], polish shift 0.000]
+q5 SO40 e  prod_closest1    goal     cat  Rs: S8 +0.945 (lin +0.774)  Om +0.74  s8 +1.29 | sig(S8) 0.0282 | omb:-0.62 alpha:+2.15 slnY:-0.52 | chi2min 8.16 power 0.126 [it 3, at bound [], polish shift 0.000]
+q5 SO40 e  prod_fof10       baseline cat  Rs: S8 +1.305 (lin +0.638)  Om +1.03  s8 +1.75 | sig(S8) 0.0356 | omb:-0.89 alpha:+4.30 slnY:-0.09 | chi2min 32.66 power 0.567 [it 4, at bound [], polish shift 0.000]
+q5 SO40 e  prod_fof10       goal     cat  Rs: S8 +4.378 (lin +1.856)  Om +3.45  s8 +5.75 | sig(S8) 0.0282 | omb:-2.75 alpha:+10.21 slnY:-2.13 | chi2min 100.84 power 0.999 [it 9, at bound [], polish shift 0.000]
+q5 SO40 e  prod_keepnr      baseline cat  Rs: S8 +0.086 (lin +0.088)  Om +0.07  s8 +0.11 | sig(S8) 0.0356 | omb:-0.19 alpha:-0.32 slnY:+0.25 | chi2min 1.50 power 0.061 [it 2, at bound [], polish shift 0.000]
+q5 SO40 e  prod_keepnr      goal     cat  Rs: S8 +0.563 (lin +0.524)  Om +0.45  s8 +0.75 | sig(S8) 0.0282 | omb:-0.54 alpha:+0.65 slnY:+0.06 | chi2min 4.41 power 0.085 [it 2, at bound [], polish shift 0.000]
+q5 SO40 e  szifi3000_none   baseline cat  Rs: S8 -0.032 (lin -0.039)  Om -0.06  s8 +0.03 | sig(S8) 0.0379 | omb:+0.14 alpha:+1.21 slnY:-0.05 | chi2min 5.43 power 0.095 [it 2, at bound [], polish shift 0.000]
+q5 SO40 e  szifi3000_none   goal     cat  Rs: S8 +1.246 (lin +0.921)  Om +1.02  s8 +1.57 | sig(S8) 0.0312 | omb:-0.83 alpha:+3.22 slnY:-0.50 | chi2min 15.42 power 0.233 [it 3, at bound [], polish shift 0.000]
+q5 SO40 e  szifi12000_none  baseline cat  Rs: S8 +0.388 (lin +0.315)  Om +0.32  s8 +0.49 | sig(S8) 0.0351 | omb:-0.28 alpha:+1.06 slnY:-0.07 | chi2min 3.62 power 0.078 [it 3, at bound [], polish shift 0.000]
+q5 SO40 e  szifi12000_none  goal     cat  Rs: S8 +0.971 (lin +0.804)  Om +0.71  s8 +1.42 | sig(S8) 0.0281 | omb:-0.58 alpha:+2.45 slnY:-0.84 | chi2min 8.96 power 0.136 [it 3, at bound [], polish shift 0.000]
+q5 SO40 e  prod_none        baseline self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0356 | omb:-0.00 alpha:+0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 e  prod_none        goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0282 | omb:-0.00 alpha:+0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 e  szifi3000_none   baseline self - : S8 +0.000 (lin +0.000)  Om -0.00  s8 +0.00 | sig(S8) 0.0379 | omb:+0.00 alpha:+0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 e  szifi3000_none   goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0312 | omb:-0.00 alpha:-0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 e  szifi12000_none  baseline self - : S8 +0.000 (lin -0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0351 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 SO40 e  szifi12000_none  goal     self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0281 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+
+######## q_cut = 5, full
+q5 full a  prod_none        baseline cat  R : S8 -3.683 (lin -3.656)  Om -1.99  s8 +0.82 | sig(S8) 0.0006 |  | chi2min 59.43 power 0.915 [it 2, at bound [], polish shift 0.000]
+q5 full a  prod_none        baseline cat  Rp: S8 -2.999 (lin -2.983)  Om -1.45  s8 +0.42 | sig(S8) 0.0006 |  | chi2min 28.01 power 0.469 [it 2, at bound [], polish shift 0.000]
+q5 full a  prod_none        baseline cat  Rs: S8 -3.015 (lin -3.000)  Om -1.46  s8 +0.43 | sig(S8) 0.0006 |  | chi2min 14.33 power 0.212 [it 2, at bound [], polish shift 0.000]
+q5 full a  prod_none        goal     cat  R : S8 -6.822 (lin -6.761)  Om -2.88  s8 +0.41 | sig(S8) 0.0005 |  | chi2min 84.47 power 0.992 [it 2, at bound [], polish shift 0.001]
+q5 full a  prod_none        goal     cat  Rp: S8 -6.863 (lin -6.795)  Om -3.79  s8 +1.69 | sig(S8) 0.0005 |  | chi2min 51.33 power 0.847 [it 2, at bound [], polish shift 0.000]
+q5 full a  prod_none        goal     cat  Rs: S8 -6.944 (lin -6.876)  Om -3.89  s8 +1.78 | sig(S8) 0.0005 |  | chi2min 41.32 power 0.714 [it 2, at bound [], polish shift 0.000]
+q5 full a  prod_closest1    baseline cat  Rs: S8 -3.282 (lin -3.263)  Om -1.60  s8 +0.48 | sig(S8) 0.0006 |  | chi2min 15.91 power 0.238 [it 2, at bound [], polish shift 0.000]
+q5 full a  prod_closest1    goal     cat  Rs: S8 -7.322 (lin -7.246)  Om -4.04  s8 +1.80 | sig(S8) 0.0005 |  | chi2min 45.48 power 0.776 [it 2, at bound [], polish shift 0.000]
+q5 full a  prod_fof10       baseline cat  Rs: S8 -20.300 (lin -19.574)  Om -9.85  s8 +3.06 | sig(S8) 0.0006 |  | chi2min 227.73 power 1.000 [it 2, at bound [], polish shift 0.000]
+q5 full a  prod_fof10       goal     cat  Rs: S8 -40.852 (lin -38.493)  Om -19.90  s8 +6.84 | sig(S8) 0.0005 |  | chi2min 785.36 power 1.000 [it 2, at bound [], polish shift 0.001]
+q5 full a  prod_keepnr      baseline cat  Rs: S8 +0.620 (lin +0.620)  Om -0.37  s8 +0.87 | sig(S8) 0.0006 |  | chi2min 5.71 power 0.098 [it 1, at bound [], polish shift 0.000]
+q5 full a  prod_keepnr      goal     cat  Rs: S8 -2.731 (lin -2.718)  Om -2.25  s8 +1.71 | sig(S8) 0.0005 |  | chi2min 12.18 power 0.179 [it 2, at bound [], polish shift 0.000]
+q5 full a  szifi3000_none   baseline cat  Rs: S8 -7.641 (lin -7.537)  Om -3.20  s8 +0.35 | sig(S8) 0.0007 |  | chi2min 37.73 power 0.654 [it 2, at bound [], polish shift 0.000]
+q5 full a  szifi3000_none   goal     cat  Rs: S8 -12.726 (lin -12.481)  Om -5.89  s8 +1.50 | sig(S8) 0.0006 |  | chi2min 105.46 power 0.999 [it 2, at bound [], polish shift 0.000]
+q5 full a  szifi12000_none  baseline cat  Rs: S8 -4.314 (lin -4.282)  Om -2.14  s8 +0.69 | sig(S8) 0.0006 |  | chi2min 17.48 power 0.265 [it 2, at bound [], polish shift 0.000]
+q5 full a  szifi12000_none  goal     cat  Rs: S8 -9.025 (lin -8.913)  Om -4.79  s8 +1.95 | sig(S8) 0.0005 |  | chi2min 56.90 power 0.897 [it 2, at bound [], polish shift 0.000]
+q5 full a  prod_none        baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0006 |  | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full a  prod_none        goal     self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0005 |  | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full a  szifi3000_none   baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0007 |  | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full a  szifi3000_none   goal     self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0006 |  | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full a  szifi12000_none  baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0006 |  | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full a  szifi12000_none  goal     self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0005 |  | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full b  prod_none        baseline cat  R : S8 -2.914 (lin -2.866)  Om -3.07  s8 -2.14 | sig(S8) 0.0074 | omb:+2.72 | chi2min 52.73 power 0.862 [it 2, at bound [], polish shift 0.000]
+q5 full b  prod_none        baseline cat  Rp: S8 -2.531 (lin -2.505)  Om -2.60  s8 -1.98 | sig(S8) 0.0074 | omb:+2.37 | chi2min 22.84 power 0.367 [it 2, at bound [], polish shift 0.000]
+q5 full b  prod_none        baseline cat  Rs: S8 -2.461 (lin -2.456)  Om -2.54  s8 -1.91 | sig(S8) 0.0074 | omb:+2.29 | chi2min 9.45 power 0.142 [it 2, at bound [], polish shift 0.000]
+q5 full b  prod_none        goal     cat  R : S8 -4.534 (lin -4.418)  Om -4.60  s8 -3.56 | sig(S8) 0.0061 | omb:+4.19 | chi2min 69.18 power 0.963 [it 2, at bound [], polish shift 0.000]
+q5 full b  prod_none        goal     cat  Rp: S8 -4.178 (lin -4.158)  Om -4.56  s8 -2.69 | sig(S8) 0.0061 | omb:+3.79 | chi2min 38.44 power 0.669 [it 2, at bound [], polish shift 0.000]
+q5 full b  prod_none        goal     cat  Rs: S8 -4.175 (lin -4.180)  Om -4.58  s8 -2.65 | sig(S8) 0.0061 | omb:+3.78 | chi2min 28.44 power 0.479 [it 2, at bound [], polish shift 0.000]
+q5 full b  prod_closest1    baseline cat  Rs: S8 -2.614 (lin -2.609)  Om -2.70  s8 -2.02 | sig(S8) 0.0074 | omb:+2.43 | chi2min 10.43 power 0.155 [it 2, at bound [], polish shift 0.000]
+q5 full b  prod_closest1    goal     cat  Rs: S8 -4.458 (lin -4.464)  Om -4.86  s8 -2.89 | sig(S8) 0.0061 | omb:+4.06 | chi2min 30.72 power 0.525 [it 2, at bound [], polish shift 0.000]
+q5 full b  prod_fof10       baseline cat  Rs: S8 -12.310 (lin -11.987)  Om -12.47  s8 -9.89 | sig(S8) 0.0074 | omb:+12.98 | chi2min 116.41 power 1.000 [it 5, at bound [], polish shift 0.000]
+q5 full b  prod_fof10       goal     cat  Rs: S8 -22.900 (lin -21.896)  Om -22.60  s8 -18.89 | sig(S8) 0.0061 | omb:+26.81 | chi2min 413.91 power 1.000 [it 6, at bound [], polish shift 0.002]
+q5 full b  prod_keepnr      baseline cat  Rs: S8 +1.322 (lin +1.319)  Om +1.08  s8 +1.50 | sig(S8) 0.0074 | omb:-1.25 | chi2min 4.11 power 0.082 [it 2, at bound [], polish shift 0.000]
+q5 full b  prod_keepnr      goal     cat  Rs: S8 -0.440 (lin -0.441)  Om -0.94  s8 +0.53 | sig(S8) 0.0061 | omb:+0.20 | chi2min 12.14 power 0.179 [it 2, at bound [], polish shift 0.000]
+q5 full b  szifi3000_none   baseline cat  Rs: S8 -5.139 (lin -5.113)  Om -5.16  s8 -4.27 | sig(S8) 0.0081 | omb:+4.91 | chi2min 17.41 power 0.265 [it 3, at bound [], polish shift 0.000]
+q5 full b  szifi3000_none   goal     cat  Rs: S8 -7.788 (lin -7.668)  Om -7.99  s8 -6.03 | sig(S8) 0.0068 | omb:+7.50 | chi2min 61.07 power 0.927 [it 3, at bound [], polish shift 0.000]
+q5 full b  szifi12000_none  baseline cat  Rs: S8 -2.784 (lin -2.777)  Om -2.95  s8 -2.01 | sig(S8) 0.0073 | omb:+2.52 | chi2min 11.62 power 0.171 [it 2, at bound [], polish shift 0.000]
+q5 full b  szifi12000_none  goal     cat  Rs: S8 -5.352 (lin -5.344)  Om -5.77  s8 -3.55 | sig(S8) 0.0060 | omb:+4.89 | chi2min 35.91 power 0.624 [it 3, at bound [], polish shift 0.003]
+q5 full b  prod_none        baseline self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0074 | omb:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full b  prod_none        goal     self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0061 | omb:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full b  szifi3000_none   baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0081 | omb:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full b  szifi3000_none   goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0068 | omb:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full b  szifi12000_none  baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0073 | omb:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full b  szifi12000_none  goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0060 | omb:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full c  prod_none        baseline cat  R : S8 -1.817 (lin -1.747)  Om -1.53  s8 -2.08 | sig(S8) 0.0117 | omb:+1.42 slnY:+0.04 | chi2min 52.73 power 0.864 [it 2, at bound [], polish shift 0.000]
+q5 full c  prod_none        baseline cat  Rp: S8 -1.551 (lin -1.513)  Om -1.26  s8 -1.91 | sig(S8) 0.0117 | omb:+1.20 slnY:+0.07 | chi2min 22.84 power 0.369 [it 2, at bound [], polish shift 0.000]
+q5 full c  prod_none        baseline cat  Rs: S8 -1.574 (lin -1.578)  Om -1.31  s8 -1.87 | sig(S8) 0.0117 | omb:+1.24 slnY:-0.02 | chi2min 9.45 power 0.142 [it 2, at bound [], polish shift 0.000]
+q5 full c  prod_none        goal     cat  R : S8 -2.158 (lin -2.108)  Om -1.55  s8 -3.30 | sig(S8) 0.0092 | omb:+1.31 slnY:+1.01 | chi2min 68.05 power 0.960 [it 2, at bound [], polish shift 0.000]
+q5 full c  prod_none        goal     cat  Rp: S8 -2.477 (lin -2.506)  Om -2.13  s8 -2.60 | sig(S8) 0.0092 | omb:+1.75 slnY:+0.38 | chi2min 38.30 power 0.668 [it 2, at bound [], polish shift 0.000]
+q5 full c  prod_none        goal     cat  Rs: S8 -2.544 (lin -2.612)  Om -2.21  s8 -2.57 | sig(S8) 0.0092 | omb:+1.83 slnY:+0.30 | chi2min 28.35 power 0.479 [it 3, at bound [], polish shift 0.000]
+q5 full c  prod_closest1    baseline cat  Rs: S8 -1.652 (lin -1.657)  Om -1.37  s8 -1.97 | sig(S8) 0.0117 | omb:+1.29 slnY:+0.01 | chi2min 10.43 power 0.155 [it 2, at bound [], polish shift 0.000]
+q5 full c  prod_closest1    goal     cat  Rs: S8 -2.709 (lin -2.787)  Om -2.33  s8 -2.80 | sig(S8) 0.0092 | omb:+1.96 slnY:+0.33 | chi2min 30.61 power 0.525 [it 3, at bound [], polish shift 0.000]
+q5 full c  prod_fof10       baseline cat  Rs: S8 -6.868 (lin -6.896)  Om -5.41  s8 -9.08 | sig(S8) 0.0117 | omb:+5.46 slnY:+1.20 | chi2min 115.15 power 1.000 [it 4, at bound [], polish shift 0.000]
+q5 full c  prod_fof10       goal     cat  Rs: S8 -12.648 (lin -12.813)  Om -9.72  s8 -17.12 | sig(S8) 0.0092 | omb:+10.19 slnY:+3.03 | chi2min 404.82 power 1.000 [it 4, at bound [], polish shift 0.000]
+q5 full c  prod_keepnr      baseline cat  Rs: S8 +1.109 (lin +1.105)  Om +0.85  s8 +1.53 | sig(S8) 0.0117 | omb:-0.95 slnY:+0.33 | chi2min 3.99 power 0.081 [it 2, at bound [], polish shift 0.000]
+q5 full c  prod_keepnr      goal     cat  Rs: S8 +0.009 (lin +0.007)  Om -0.17  s8 +0.58 | sig(S8) 0.0092 | omb:-0.22 slnY:+0.39 | chi2min 11.98 power 0.177 [it 2, at bound [], polish shift 0.000]
+q5 full c  szifi3000_none   baseline cat  Rs: S8 -2.967 (lin -3.026)  Om -2.30  s8 -4.01 | sig(S8) 0.0127 | omb:+2.24 slnY:+0.41 | chi2min 17.23 power 0.263 [it 3, at bound [], polish shift 0.000]
+q5 full c  szifi3000_none   goal     cat  Rs: S8 -4.356 (lin -4.479)  Om -3.42  s8 -5.65 | sig(S8) 0.0102 | omb:+3.12 slnY:+0.99 | chi2min 60.08 power 0.922 [it 3, at bound [], polish shift 0.000]
+q5 full c  szifi12000_none  baseline cat  Rs: S8 -1.600 (lin -1.615)  Om -1.32  s8 -1.91 | sig(S8) 0.0115 | omb:+1.15 slnY:+0.22 | chi2min 11.57 power 0.171 [it 2, at bound [], polish shift 0.000]
+q5 full c  szifi12000_none  goal     cat  Rs: S8 -3.399 (lin -3.486)  Om -2.94  s8 -3.48 | sig(S8) 0.0090 | omb:+2.54 slnY:+0.20 | chi2min 35.87 power 0.625 [it 3, at bound [], polish shift 0.000]
+q5 full c  prod_none        baseline self - : S8 +0.000 (lin +0.000)  Om -0.00  s8 +0.00 | sig(S8) 0.0117 | omb:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full c  prod_none        goal     self - : S8 +0.000 (lin -0.000)  Om +0.00  s8 -0.00 | sig(S8) 0.0092 | omb:-0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full c  szifi3000_none   baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0127 | omb:+0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full c  szifi3000_none   goal     self - : S8 +0.000 (lin -0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0102 | omb:+0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full c  szifi12000_none  baseline self - : S8 +0.000 (lin -0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0115 | omb:+0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full c  szifi12000_none  goal     self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0090 | omb:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full d  prod_none        baseline cat  R : S8 +0.178 (lin +0.156)  Om +0.06  s8 +0.36 | sig(S8) 0.0149 | omb:+0.04 alpha:+1.44 slnY:-0.11 | chi2min 51.55 power 0.854 [it 2, at bound [], polish shift 0.000]
+q5 full d  prod_none        baseline cat  Rp: S8 +0.152 (lin +0.141)  Om +0.10  s8 +0.23 | sig(S8) 0.0149 | omb:+0.04 alpha:+1.24 slnY:-0.06 | chi2min 21.90 power 0.352 [it 2, at bound [], polish shift 0.000]
+q5 full d  prod_none        baseline cat  Rs: S8 +0.269 (lin +0.252)  Om +0.17  s8 +0.41 | sig(S8) 0.0149 | omb:-0.01 alpha:+1.42 slnY:-0.27 | chi2min 8.09 power 0.125 [it 2, at bound [], polish shift 0.000]
+q5 full d  prod_none        goal     cat  R : S8 +1.514 (lin +1.261)  Om +1.42  s8 +1.45 | sig(S8) 0.0134 | omb:-1.10 alpha:+3.25 slnY:-0.06 | chi2min 58.90 power 0.915 [it 3, at bound [], polish shift 0.000]
+q5 full d  prod_none        goal     cat  Rp: S8 +1.433 (lin +1.244)  Om +1.04  s8 +1.96 | sig(S8) 0.0134 | omb:-0.83 alpha:+3.38 slnY:-0.92 | chi2min 28.51 power 0.484 [it 3, at bound [], polish shift 0.000]
+q5 full d  prod_none        goal     cat  Rs: S8 +1.288 (lin +1.138)  Om +0.87  s8 +1.88 | sig(S8) 0.0134 | omb:-0.69 alpha:+3.28 slnY:-1.00 | chi2min 19.14 power 0.299 [it 3, at bound [], polish shift 0.000]
+q5 full d  prod_closest1    baseline cat  Rs: S8 +0.311 (lin +0.291)  Om +0.20  s8 +0.46 | sig(S8) 0.0149 | omb:-0.04 alpha:+1.53 slnY:-0.28 | chi2min 8.81 power 0.134 [it 2, at bound [], polish shift 0.000]
+q5 full d  prod_closest1    goal     cat  Rs: S8 +1.319 (lin +1.157)  Om +0.89  s8 +1.92 | sig(S8) 0.0134 | omb:-0.69 alpha:+3.43 slnY:-1.03 | chi2min 20.61 power 0.327 [it 3, at bound [], polish shift 0.000]
+q5 full d  prod_fof10       baseline cat  Rs: S8 +1.553 (lin +1.026)  Om +0.96  s8 +2.36 | sig(S8) 0.0149 | omb:-0.77 alpha:+7.13 slnY:-0.45 | chi2min 82.39 power 0.990 [it 4, at bound [], polish shift 0.000]
+q5 full d  prod_fof10       goal     cat  Rs: S8 +4.502 (lin +2.851)  Om +2.90  s8 +6.75 | sig(S8) 0.0134 | omb:-2.45 alpha:+14.83 slnY:-3.78 | chi2min 257.33 power 1.000 [it 10, at bound ['slnY'], polish shift 0.000]
+q5 full d  prod_keepnr      baseline cat  Rs: S8 -0.059 (lin -0.060)  Om -0.10  s8 +0.03 | sig(S8) 0.0149 | omb:-0.20 alpha:-0.76 slnY:+0.35 | chi2min 3.77 power 0.079 [it 2, at bound [], polish shift 0.000]
+q5 full d  prod_keepnr      goal     cat  Rs: S8 +0.634 (lin +0.605)  Om +0.39  s8 +0.99 | sig(S8) 0.0134 | omb:-0.62 alpha:+0.81 slnY:-0.04 | chi2min 11.18 power 0.166 [it 2, at bound [], polish shift 0.000]
+q5 full d  szifi3000_none   baseline cat  Rs: S8 +0.144 (lin +0.114)  Om +0.08  s8 +0.23 | sig(S8) 0.0153 | omb:+0.12 alpha:+2.44 slnY:-0.02 | chi2min 13.60 power 0.203 [it 2, at bound [], polish shift 0.000]
+q5 full d  szifi3000_none   goal     cat  Rs: S8 +1.696 (lin +1.358)  Om +1.24  s8 +2.24 | sig(S8) 0.0142 | omb:-0.91 alpha:+5.22 slnY:-1.06 | chi2min 39.05 power 0.683 [it 3, at bound [], polish shift 0.000]
+q5 full d  szifi12000_none  baseline cat  Rs: S8 +0.498 (lin +0.456)  Om +0.35  s8 +0.69 | sig(S8) 0.0148 | omb:-0.25 alpha:+1.76 slnY:-0.23 | chi2min 9.11 power 0.138 [it 2, at bound [], polish shift 0.000]
+q5 full d  szifi12000_none  goal     cat  Rs: S8 +1.422 (lin +1.255)  Om +0.89  s8 +2.21 | sig(S8) 0.0134 | omb:-0.65 alpha:+4.00 slnY:-1.57 | chi2min 22.59 power 0.365 [it 3, at bound [], polish shift 0.000]
+q5 full d  prod_none        baseline self - : S8 +0.000 (lin -0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0149 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full d  prod_none        goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0134 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full d  szifi3000_none   baseline self - : S8 -0.000 (lin +0.000)  Om +0.00  s8 -0.00 | sig(S8) 0.0153 | omb:-0.00 alpha:-0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full d  szifi3000_none   goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0142 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full d  szifi12000_none  baseline self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0148 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full d  szifi12000_none  goal     self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0134 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full d3 prod_none        baseline cat  R : S8 +0.222 (lin +0.202)  Om +0.09  s8 +0.40 | sig(S8) 0.0127 | omb:+0.03 alpha:+1.52 slnY:-0.11 | chi2min 51.55 power 0.854 [it 2, at bound [], polish shift 0.000]
+q5 full d3 prod_none        baseline cat  Rp: S8 +0.193 (lin +0.183)  Om +0.13  s8 +0.26 | sig(S8) 0.0127 | omb:+0.03 alpha:+1.31 slnY:-0.06 | chi2min 21.90 power 0.352 [it 2, at bound [], polish shift 0.000]
+q5 full d3 prod_none        baseline cat  Rs: S8 +0.312 (lin +0.297)  Om +0.19  s8 +0.44 | sig(S8) 0.0127 | omb:-0.01 alpha:+1.49 slnY:-0.27 | chi2min 8.09 power 0.125 [it 2, at bound [], polish shift 0.000]
+q5 full d3 prod_none        goal     cat  R : S8 +1.354 (lin +1.181)  Om +1.25  s8 +1.28 | sig(S8) 0.0118 | omb:-0.90 alpha:+3.17 slnY:-0.13 | chi2min 59.27 power 0.918 [it 3, at bound [], polish shift 0.000]
+q5 full d3 prod_none        goal     cat  Rp: S8 +1.363 (lin +1.224)  Om +0.92  s8 +1.90 | sig(S8) 0.0118 | omb:-0.69 alpha:+3.38 slnY:-1.00 | chi2min 28.71 power 0.489 [it 3, at bound [], polish shift 0.000]
+q5 full d3 prod_none        goal     cat  Rs: S8 +1.250 (lin +1.135)  Om +0.78  s8 +1.86 | sig(S8) 0.0118 | omb:-0.58 alpha:+3.30 slnY:-1.07 | chi2min 19.28 power 0.302 [it 3, at bound [], polish shift 0.000]
+q5 full d3 prod_closest1    baseline cat  Rs: S8 +0.352 (lin +0.335)  Om +0.22  s8 +0.50 | sig(S8) 0.0127 | omb:-0.03 alpha:+1.60 slnY:-0.29 | chi2min 8.81 power 0.134 [it 2, at bound [], polish shift 0.000]
+q5 full d3 prod_closest1    goal     cat  Rs: S8 +1.283 (lin +1.158)  Om +0.80  s8 +1.90 | sig(S8) 0.0118 | omb:-0.58 alpha:+3.46 slnY:-1.10 | chi2min 20.75 power 0.330 [it 3, at bound [], polish shift 0.000]
+q5 full d3 prod_fof10       baseline cat  Rs: S8 +1.478 (lin +1.080)  Om +0.80  s8 +2.30 | sig(S8) 0.0127 | omb:-0.59 alpha:+7.29 slnY:-0.52 | chi2min 82.67 power 0.991 [it 3, at bound [], polish shift 0.000]
+q5 full d3 prod_fof10       goal     cat  Rs: S8 +4.568 (lin +2.891)  Om +2.84  s8 +6.73 | sig(S8) 0.0118 | omb:-2.39 alpha:+15.12 slnY:-3.82 | chi2min 258.21 power 1.000 [it 15, at bound ['slnY'], polish shift 0.679]
+q5 full d3 prod_keepnr      baseline cat  Rs: S8 -0.137 (lin -0.140)  Om -0.20  s8 -0.01 | sig(S8) 0.0127 | omb:-0.16 alpha:-0.84 slnY:+0.33 | chi2min 3.79 power 0.080 [it 2, at bound [], polish shift 0.000]
+q5 full d3 prod_keepnr      goal     cat  Rs: S8 +0.538 (lin +0.518)  Om +0.26  s8 +0.93 | sig(S8) 0.0118 | omb:-0.53 alpha:+0.74 slnY:-0.09 | chi2min 11.29 power 0.168 [it 2, at bound [], polish shift 0.000]
+q5 full d3 szifi3000_none   baseline cat  Rs: S8 +0.215 (lin +0.183)  Om +0.14  s8 +0.29 | sig(S8) 0.0129 | omb:+0.09 alpha:+2.58 slnY:-0.01 | chi2min 13.61 power 0.203 [it 2, at bound [], polish shift 0.000]
+q5 full d3 szifi3000_none   goal     cat  Rs: S8 +1.627 (lin +1.362)  Om +1.11  s8 +2.17 | sig(S8) 0.0123 | omb:-0.74 alpha:+5.28 slnY:-1.15 | chi2min 39.34 power 0.688 [it 3, at bound [], polish shift 0.000]
+q5 full d3 szifi12000_none  baseline cat  Rs: S8 +0.492 (lin +0.461)  Om +0.32  s8 +0.68 | sig(S8) 0.0126 | omb:-0.20 alpha:+1.80 slnY:-0.25 | chi2min 9.13 power 0.138 [it 2, at bound [], polish shift 0.000]
+q5 full d3 szifi12000_none  goal     cat  Rs: S8 +1.414 (lin +1.281)  Om +0.82  s8 +2.22 | sig(S8) 0.0118 | omb:-0.55 alpha:+4.06 slnY:-1.65 | chi2min 22.71 power 0.368 [it 3, at bound [], polish shift 0.000]
+q5 full d3 prod_none        baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0127 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full d3 prod_none        goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0118 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full d3 szifi3000_none   baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0129 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full d3 szifi3000_none   goal     self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0123 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full d3 szifi12000_none  baseline self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0126 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full d3 szifi12000_none  goal     self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0118 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full d5 prod_none        baseline cat  R : S8 +0.147 (lin +0.127)  Om +0.04  s8 +0.33 | sig(S8) 0.0166 | omb:+0.05 alpha:+1.37 slnY:-0.11 | chi2min 51.55 power 0.854 [it 2, at bound [], polish shift 0.000]
+q5 full d5 prod_none        baseline cat  Rp: S8 +0.128 (lin +0.116)  Om +0.08  s8 +0.20 | sig(S8) 0.0166 | omb:+0.04 alpha:+1.19 slnY:-0.06 | chi2min 21.90 power 0.352 [it 2, at bound [], polish shift 0.000]
+q5 full d5 prod_none        baseline cat  Rs: S8 +0.243 (lin +0.225)  Om +0.15  s8 +0.39 | sig(S8) 0.0166 | omb:-0.01 alpha:+1.37 slnY:-0.26 | chi2min 8.09 power 0.125 [it 2, at bound [], polish shift 0.000]
+q5 full d5 prod_none        goal     cat  R : S8 +1.638 (lin +1.321)  Om +1.55  s8 +1.58 | sig(S8) 0.0146 | omb:-1.23 alpha:+3.31 slnY:-0.01 | chi2min 58.67 power 0.914 [it 3, at bound [], polish shift 0.000]
+q5 full d5 prod_none        goal     cat  Rp: S8 +1.493 (lin +1.267)  Om +1.13  s8 +2.01 | sig(S8) 0.0146 | omb:-0.92 alpha:+3.39 slnY:-0.86 | chi2min 28.38 power 0.482 [it 3, at bound [], polish shift 0.000]
+q5 full d5 prod_none        goal     cat  Rs: S8 +1.326 (lin +1.149)  Om +0.94  s8 +1.90 | sig(S8) 0.0146 | omb:-0.76 alpha:+3.27 slnY:-0.95 | chi2min 19.05 power 0.297 [it 3, at bound [], polish shift 0.000]
+q5 full d5 prod_closest1    baseline cat  Rs: S8 +0.291 (lin +0.267)  Om +0.19  s8 +0.44 | sig(S8) 0.0166 | omb:-0.05 alpha:+1.48 slnY:-0.27 | chi2min 8.81 power 0.134 [it 2, at bound [], polish shift 0.000]
+q5 full d5 prod_closest1    goal     cat  Rs: S8 +1.358 (lin +1.166)  Om +0.96  s8 +1.94 | sig(S8) 0.0146 | omb:-0.77 alpha:+3.42 slnY:-0.98 | chi2min 20.52 power 0.325 [it 3, at bound [], polish shift 0.000]
+q5 full d5 prod_fof10       baseline cat  Rs: S8 +1.652 (lin +1.005)  Om +1.11  s8 +2.43 | sig(S8) 0.0166 | omb:-0.93 alpha:+7.04 slnY:-0.39 | chi2min 82.16 power 0.990 [it 4, at bound [], polish shift 0.000]
+q5 full d5 prod_fof10       goal     cat  Rs: S8 +4.565 (lin +2.851)  Om +3.07  s8 +6.78 | sig(S8) 0.0146 | omb:-2.60 alpha:+14.61 slnY:-3.75 | chi2min 256.06 power 1.000 [it 4, at bound ['slnY'], polish shift 0.080]
+q5 full d5 prod_keepnr      baseline cat  Rs: S8 -0.009 (lin -0.009)  Om -0.05  s8 +0.07 | sig(S8) 0.0166 | omb:-0.22 alpha:-0.71 slnY:+0.36 | chi2min 3.76 power 0.079 [it 2, at bound [], polish shift 0.000]
+q5 full d5 prod_keepnr      goal     cat  Rs: S8 +0.700 (lin +0.663)  Om +0.48  s8 +1.04 | sig(S8) 0.0146 | omb:-0.68 alpha:+0.87 slnY:-0.01 | chi2min 11.12 power 0.165 [it 2, at bound [], polish shift 0.000]
+q5 full d5 szifi3000_none   baseline cat  Rs: S8 +0.098 (lin +0.069)  Om +0.04  s8 +0.19 | sig(S8) 0.0171 | omb:+0.14 alpha:+2.33 slnY:-0.03 | chi2min 13.59 power 0.203 [it 2, at bound [], polish shift 0.000]
+q5 full d5 szifi3000_none   goal     cat  Rs: S8 +1.764 (lin +1.370)  Om +1.34  s8 +2.30 | sig(S8) 0.0155 | omb:-1.02 alpha:+5.18 slnY:-1.00 | chi2min 38.85 power 0.680 [it 3, at bound [], polish shift 0.000]
+q5 full d5 szifi12000_none  baseline cat  Rs: S8 +0.514 (lin +0.460)  Om +0.38  s8 +0.70 | sig(S8) 0.0165 | omb:-0.29 alpha:+1.73 slnY:-0.20 | chi2min 9.09 power 0.138 [it 2, at bound [], polish shift 0.000]
+q5 full d5 szifi12000_none  goal     cat  Rs: S8 +1.442 (lin +1.250)  Om +0.95  s8 +2.21 | sig(S8) 0.0146 | omb:-0.72 alpha:+3.96 slnY:-1.51 | chi2min 22.51 power 0.364 [it 3, at bound [], polish shift 0.000]
+q5 full d5 prod_none        baseline self - : S8 +0.000 (lin -0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0166 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full d5 prod_none        goal     self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0146 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full d5 szifi3000_none   baseline self - : S8 -0.000 (lin -0.000)  Om +0.00  s8 -0.00 | sig(S8) 0.0171 | omb:-0.00 alpha:-0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full d5 szifi3000_none   goal     self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0155 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full d5 szifi12000_none  baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0165 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full d5 szifi12000_none  goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0146 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full e  prod_none        baseline cat  R : S8 +0.067 (lin +0.052)  Om -0.01  s8 +0.23 | sig(S8) 0.0225 | omb:+0.08 alpha:+1.16 slnY:-0.12 | chi2min 51.55 power 0.854 [it 2, at bound [], polish shift 0.000]
+q5 full e  prod_none        baseline cat  Rp: S8 +0.059 (lin +0.050)  Om +0.02  s8 +0.13 | sig(S8) 0.0225 | omb:+0.07 alpha:+1.00 slnY:-0.08 | chi2min 21.90 power 0.352 [it 2, at bound [], polish shift 0.000]
+q5 full e  prod_none        baseline cat  Rs: S8 +0.188 (lin +0.162)  Om +0.12  s8 +0.32 | sig(S8) 0.0225 | omb:-0.02 alpha:+1.19 slnY:-0.25 | chi2min 8.09 power 0.125 [it 2, at bound [], polish shift 0.000]
+q5 full e  prod_none        goal     cat  R : S8 +1.978 (lin +1.509)  Om +1.91  s8 +1.92 | sig(S8) 0.0179 | omb:-1.57 alpha:+3.50 slnY:+0.15 | chi2min 58.34 power 0.912 [it 3, at bound [], polish shift 0.000]
+q5 full e  prod_none        goal     cat  Rp: S8 +1.693 (lin +1.362)  Om +1.39  s8 +2.16 | sig(S8) 0.0179 | omb:-1.18 alpha:+3.44 slnY:-0.68 | chi2min 28.19 power 0.478 [it 3, at bound [], polish shift 0.000]
+q5 full e  prod_none        goal     cat  Rs: S8 +1.466 (lin +1.212)  Om +1.14  s8 +2.00 | sig(S8) 0.0179 | omb:-0.97 alpha:+3.26 slnY:-0.79 | chi2min 18.93 power 0.295 [it 3, at bound [], polish shift 0.000]
+q5 full e  prod_closest1    baseline cat  Rs: S8 +0.250 (lin +0.213)  Om +0.17  s8 +0.39 | sig(S8) 0.0225 | omb:-0.07 alpha:+1.31 slnY:-0.24 | chi2min 8.80 power 0.134 [it 2, at bound [], polish shift 0.000]
+q5 full e  prod_closest1    goal     cat  Rs: S8 +1.495 (lin +1.223)  Om +1.17  s8 +2.03 | sig(S8) 0.0179 | omb:-0.98 alpha:+3.40 slnY:-0.82 | chi2min 20.40 power 0.323 [it 3, at bound [], polish shift 0.000]
+q5 full e  prod_fof10       baseline cat  Rs: S8 +2.064 (lin +1.008)  Om +1.63  s8 +2.77 | sig(S8) 0.0225 | omb:-1.41 alpha:+6.80 slnY:-0.14 | chi2min 81.66 power 0.990 [it 4, at bound [], polish shift 0.000]
+q5 full e  prod_fof10       goal     cat  Rs: S8 +6.922 (lin +2.934)  Om +5.45  s8 +9.10 | sig(S8) 0.0179 | omb:-4.35 alpha:+16.14 slnY:-3.37 | chi2min 252.09 power 1.000 [it 9, at bound [], polish shift 0.000]
+q5 full e  prod_keepnr      baseline cat  Rs: S8 +0.137 (lin +0.140)  Om +0.11  s8 +0.18 | sig(S8) 0.0225 | omb:-0.30 alpha:-0.51 slnY:+0.40 | chi2min 3.74 power 0.079 [it 2, at bound [], polish shift 0.000]
+q5 full e  prod_keepnr      goal     cat  Rs: S8 +0.891 (lin +0.828)  Om +0.71  s8 +1.18 | sig(S8) 0.0179 | omb:-0.86 alpha:+1.02 slnY:+0.09 | chi2min 11.02 power 0.164 [it 2, at bound [], polish shift 0.000]
+q5 full e  szifi3000_none   baseline cat  Rs: S8 -0.050 (lin -0.061)  Om -0.09  s8 +0.04 | sig(S8) 0.0240 | omb:+0.22 alpha:+1.91 slnY:-0.08 | chi2min 13.58 power 0.202 [it 2, at bound [], polish shift 0.000]
+q5 full e  szifi3000_none   goal     cat  Rs: S8 +1.970 (lin +1.456)  Om +1.62  s8 +2.48 | sig(S8) 0.0197 | omb:-1.31 alpha:+5.09 slnY:-0.79 | chi2min 38.56 power 0.675 [it 3, at bound [], polish shift 0.000]
+q5 full e  szifi12000_none  baseline cat  Rs: S8 +0.613 (lin +0.498)  Om +0.51  s8 +0.77 | sig(S8) 0.0222 | omb:-0.44 alpha:+1.68 slnY:-0.10 | chi2min 9.04 power 0.137 [it 3, at bound [], polish shift 0.000]
+q5 full e  szifi12000_none  goal     cat  Rs: S8 +1.535 (lin +1.272)  Om +1.12  s8 +2.24 | sig(S8) 0.0178 | omb:-0.91 alpha:+3.87 slnY:-1.34 | chi2min 22.41 power 0.362 [it 3, at bound [], polish shift 0.000]
+q5 full e  prod_none        baseline self - : S8 -0.000 (lin -0.000)  Om +0.00  s8 -0.00 | sig(S8) 0.0225 | omb:-0.00 alpha:-0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full e  prod_none        goal     self - : S8 +0.000 (lin -0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0179 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full e  szifi3000_none   baseline self - : S8 +0.000 (lin -0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0240 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full e  szifi3000_none   goal     self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0197 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full e  szifi12000_none  baseline self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0222 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q5 full e  szifi12000_none  goal     self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0178 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+
+######## q_cut = 6, SO40
+q6 SO40 a  prod_none        baseline cat  R : S8 -1.134 (lin -1.126)  Om -1.08  s8 +0.92 | sig(S8) 0.0013 |  | chi2min 16.04 power 0.240 [it 2, at bound [], polish shift 0.000]
+q6 SO40 a  prod_none        baseline cat  Rp: S8 -0.661 (lin -0.658)  Om -0.69  s8 +0.63 | sig(S8) 0.0013 |  | chi2min 7.13 power 0.113 [it 1, at bound [], polish shift 0.000]
+q6 SO40 a  prod_none        baseline cat  Rs: S8 -0.620 (lin -0.618)  Om -0.61  s8 +0.54 | sig(S8) 0.0013 |  | chi2min 1.69 power 0.062 [it 1, at bound [], polish shift 0.000]
+q6 SO40 a  prod_none        goal     cat  R : S8 -1.828 (lin -1.819)  Om -0.89  s8 +0.27 | sig(S8) 0.0010 |  | chi2min 16.14 power 0.242 [it 1, at bound [], polish shift 0.000]
+q6 SO40 a  prod_none        goal     cat  Rp: S8 -1.635 (lin -1.628)  Om -0.97  s8 +0.49 | sig(S8) 0.0010 |  | chi2min 11.55 power 0.170 [it 1, at bound [], polish shift 0.000]
+q6 SO40 a  prod_none        goal     cat  Rs: S8 -1.658 (lin -1.650)  Om -0.98  s8 +0.49 | sig(S8) 0.0010 |  | chi2min 4.04 power 0.081 [it 1, at bound [], polish shift 0.000]
+q6 SO40 a  prod_closest1    baseline cat  Rs: S8 -0.685 (lin -0.682)  Om -0.64  s8 +0.55 | sig(S8) 0.0013 |  | chi2min 1.74 power 0.062 [it 1, at bound [], polish shift 0.000]
+q6 SO40 a  prod_closest1    goal     cat  Rs: S8 -1.735 (lin -1.727)  Om -1.00  s8 +0.48 | sig(S8) 0.0010 |  | chi2min 4.29 power 0.084 [it 1, at bound [], polish shift 0.000]
+q6 SO40 a  prod_fof10       baseline cat  Rs: S8 -6.241 (lin -6.095)  Om -3.34  s8 +1.33 | sig(S8) 0.0013 |  | chi2min 22.24 power 0.354 [it 2, at bound [], polish shift 0.000]
+q6 SO40 a  prod_fof10       goal     cat  Rs: S8 -13.196 (lin -12.698)  Om -6.59  s8 +2.29 | sig(S8) 0.0010 |  | chi2min 92.74 power 0.997 [it 2, at bound [], polish shift 0.000]
+q6 SO40 a  prod_keepnr      baseline cat  Rs: S8 -0.493 (lin -0.492)  Om -0.56  s8 +0.54 | sig(S8) 0.0013 |  | chi2min 1.62 power 0.061 [it 1, at bound [], polish shift 0.000]
+q6 SO40 a  prod_keepnr      goal     cat  Rs: S8 -1.534 (lin -1.527)  Om -0.94  s8 +0.50 | sig(S8) 0.0010 |  | chi2min 3.52 power 0.077 [it 1, at bound [], polish shift 0.000]
+q6 SO40 a  szifi3000_none   baseline cat  Rs: S8 -2.088 (lin -2.073)  Om -0.78  s8 -0.06 | sig(S8) 0.0014 |  | chi2min 4.21 power 0.083 [it 2, at bound [], polish shift 0.000]
+q6 SO40 a  szifi3000_none   goal     cat  Rs: S8 -3.623 (lin -3.584)  Om -1.52  s8 +0.17 | sig(S8) 0.0012 |  | chi2min 7.90 power 0.122 [it 2, at bound [], polish shift 0.000]
+q6 SO40 a  szifi12000_none  baseline cat  Rs: S8 -0.842 (lin -0.839)  Om -0.53  s8 +0.29 | sig(S8) 0.0013 |  | chi2min 1.89 power 0.063 [it 1, at bound [], polish shift 0.000]
+q6 SO40 a  szifi12000_none  goal     cat  Rs: S8 -2.616 (lin -2.596)  Om -1.52  s8 +0.74 | sig(S8) 0.0010 |  | chi2min 5.25 power 0.093 [it 1, at bound [], polish shift 0.000]
+q6 SO40 a  prod_none        baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0013 |  | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 a  prod_none        goal     self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0010 |  | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 a  szifi3000_none   baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0014 |  | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 a  szifi3000_none   goal     self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0012 |  | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 a  szifi12000_none  baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0013 |  | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 a  szifi12000_none  goal     self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0010 |  | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 b  prod_none        baseline cat  R : S8 -0.150 (lin -0.139)  Om -0.42  s8 +0.32 | sig(S8) 0.0141 | omb:+0.05 | chi2min 16.04 power 0.241 [it 2, at bound [], polish shift 0.000]
+q6 SO40 b  prod_none        baseline cat  Rp: S8 -0.225 (lin -0.219)  Om -0.40  s8 +0.09 | sig(S8) 0.0141 | omb:+0.17 | chi2min 7.10 power 0.113 [it 2, at bound [], polish shift 0.000]
+q6 SO40 b  prod_none        baseline cat  Rs: S8 -0.245 (lin -0.243)  Om -0.39  s8 +0.04 | sig(S8) 0.0141 | omb:+0.19 | chi2min 1.65 power 0.062 [it 2, at bound [], polish shift 0.001]
+q6 SO40 b  prod_none        goal     cat  R : S8 -1.501 (lin -1.491)  Om -1.55  s8 -1.14 | sig(S8) 0.0114 | omb:+1.39 | chi2min 14.35 power 0.213 [it 2, at bound [], polish shift 0.000]
+q6 SO40 b  prod_none        goal     cat  Rp: S8 -1.047 (lin -1.048)  Om -1.17  s8 -0.63 | sig(S8) 0.0114 | omb:+0.93 | chi2min 10.73 power 0.159 [it 2, at bound [], polish shift 0.000]
+q6 SO40 b  prod_none        goal     cat  Rs: S8 -1.010 (lin -1.012)  Om -1.14  s8 -0.60 | sig(S8) 0.0114 | omb:+0.88 | chi2min 3.29 power 0.075 [it 2, at bound [], polish shift 0.000]
+q6 SO40 b  prod_closest1    baseline cat  Rs: S8 -0.279 (lin -0.276)  Om -0.43  s8 +0.01 | sig(S8) 0.0141 | omb:+0.22 | chi2min 1.69 power 0.062 [it 2, at bound [], polish shift 0.000]
+q6 SO40 b  prod_closest1    goal     cat  Rs: S8 -1.081 (lin -1.084)  Om -1.20  s8 -0.66 | sig(S8) 0.0114 | omb:+0.95 | chi2min 3.43 power 0.076 [it 2, at bound [], polish shift 0.000]
+q6 SO40 b  prod_fof10       baseline cat  Rs: S8 -3.705 (lin -3.648)  Om -3.96  s8 -2.62 | sig(S8) 0.0141 | omb:+3.52 | chi2min 12.41 power 0.183 [it 3, at bound [], polish shift 0.000]
+q6 SO40 b  prod_fof10       goal     cat  Rs: S8 -7.906 (lin -7.633)  Om -8.05  s8 -6.09 | sig(S8) 0.0114 | omb:+8.22 | chi2min 48.33 power 0.814 [it 4, at bound [], polish shift 0.000]
+q6 SO40 b  prod_keepnr      baseline cat  Rs: S8 -0.116 (lin -0.114)  Om -0.26  s8 +0.14 | sig(S8) 0.0141 | omb:+0.07 | chi2min 1.62 power 0.061 [it 1, at bound [], polish shift 0.000]
+q6 SO40 b  prod_keepnr      goal     cat  Rs: S8 -0.887 (lin -0.890)  Om -1.02  s8 -0.49 | sig(S8) 0.0114 | omb:+0.77 | chi2min 2.96 power 0.072 [it 2, at bound [], polish shift 0.001]
+q6 SO40 b  szifi3000_none   baseline cat  Rs: S8 -1.578 (lin -1.565)  Om -1.56  s8 -1.36 | sig(S8) 0.0154 | omb:+1.47 | chi2min 2.26 power 0.066 [it 2, at bound [], polish shift 0.000]
+q6 SO40 b  szifi3000_none   goal     cat  Rs: S8 -2.178 (lin -2.163)  Om -2.22  s8 -1.71 | sig(S8) 0.0128 | omb:+1.97 | chi2min 4.44 power 0.085 [it 2, at bound [], polish shift 0.000]
+q6 SO40 b  szifi12000_none  baseline cat  Rs: S8 -0.497 (lin -0.496)  Om -0.58  s8 -0.28 | sig(S8) 0.0138 | omb:+0.43 | chi2min 1.71 power 0.062 [it 2, at bound [], polish shift 0.000]
+q6 SO40 b  szifi12000_none  goal     cat  Rs: S8 -1.453 (lin -1.447)  Om -1.65  s8 -0.83 | sig(S8) 0.0113 | omb:+1.26 | chi2min 3.77 power 0.079 [it 2, at bound [], polish shift 0.000]
+q6 SO40 b  prod_none        baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0141 | omb:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 b  prod_none        goal     self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0114 | omb:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 b  szifi3000_none   baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0154 | omb:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 b  szifi3000_none   goal     self - : S8 +0.000 (lin +0.000)  Om -0.00  s8 +0.00 | sig(S8) 0.0128 | omb:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 b  szifi12000_none  baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0138 | omb:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 b  szifi12000_none  goal     self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0113 | omb:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 c  prod_none        baseline cat  R : S8 +0.156 (lin +0.154)  Om +0.07  s8 +0.40 | sig(S8) 0.0234 | omb:-0.24 slnY:+0.28 | chi2min 15.96 power 0.241 [it 2, at bound [], polish shift 0.000]
+q6 SO40 c  prod_none        baseline cat  Rp: S8 +0.135 (lin +0.128)  Om +0.11  s8 +0.19 | sig(S8) 0.0234 | omb:-0.21 slnY:+0.31 | chi2min 7.00 power 0.112 [it 2, at bound [], polish shift 0.000]
+q6 SO40 c  prod_none        baseline cat  Rs: S8 -0.077 (lin -0.074)  Om -0.11  s8 +0.06 | sig(S8) 0.0234 | omb:+0.02 slnY:+0.09 | chi2min 1.64 power 0.062 [it 2, at bound [], polish shift 0.000]
+q6 SO40 c  prod_none        goal     cat  R : S8 -0.737 (lin -0.733)  Om -0.56  s8 -1.05 | sig(S8) 0.0183 | omb:+0.49 slnY:+0.25 | chi2min 14.29 power 0.213 [it 2, at bound [], polish shift 0.000]
+q6 SO40 c  prod_none        goal     cat  Rp: S8 -0.538 (lin -0.546)  Om -0.46  s8 -0.59 | sig(S8) 0.0183 | omb:+0.35 slnY:+0.15 | chi2min 10.71 power 0.159 [it 2, at bound [], polish shift 0.000]
+q6 SO40 c  prod_none        goal     cat  Rs: S8 -0.616 (lin -0.627)  Om -0.56  s8 -0.58 | sig(S8) 0.0183 | omb:+0.45 slnY:+0.02 | chi2min 3.29 power 0.075 [it 2, at bound [], polish shift 0.000]
+q6 SO40 c  prod_closest1    baseline cat  Rs: S8 -0.084 (lin -0.081)  Om -0.11  s8 +0.04 | sig(S8) 0.0234 | omb:+0.02 slnY:+0.10 | chi2min 1.68 power 0.062 [it 2, at bound [], polish shift 0.000]
+q6 SO40 c  prod_closest1    goal     cat  Rs: S8 -0.653 (lin -0.666)  Om -0.58  s8 -0.64 | sig(S8) 0.0183 | omb:+0.47 slnY:+0.03 | chi2min 3.42 power 0.076 [it 2, at bound [], polish shift 0.000]
+q6 SO40 c  prod_fof10       baseline cat  Rs: S8 -1.790 (lin -1.838)  Om -1.45  s8 -2.29 | sig(S8) 0.0234 | omb:+1.20 slnY:+0.52 | chi2min 12.13 power 0.179 [it 3, at bound [], polish shift 0.000]
+q6 SO40 c  prod_fof10       goal     cat  Rs: S8 -4.383 (lin -4.338)  Om -3.50  s8 -5.63 | sig(S8) 0.0183 | omb:+3.45 slnY:+0.71 | chi2min 47.91 power 0.811 [it 4, at bound [], polish shift 0.000]
+q6 SO40 c  prod_keepnr      baseline cat  Rs: S8 +0.011 (lin +0.013)  Om -0.04  s8 +0.17 | sig(S8) 0.0234 | omb:-0.05 slnY:+0.10 | chi2min 1.61 power 0.061 [it 2, at bound [], polish shift 0.000]
+q6 SO40 c  prod_keepnr      goal     cat  Rs: S8 -0.550 (lin -0.559)  Om -0.51  s8 -0.48 | sig(S8) 0.0183 | omb:+0.40 slnY:+0.01 | chi2min 2.96 power 0.072 [it 2, at bound [], polish shift 0.000]
+q6 SO40 c  szifi3000_none   baseline cat  Rs: S8 -0.875 (lin -0.868)  Om -0.66  s8 -1.26 | sig(S8) 0.0256 | omb:+0.65 slnY:+0.09 | chi2min 2.25 power 0.066 [it 2, at bound [], polish shift 0.000]
+q6 SO40 c  szifi3000_none   goal     cat  Rs: S8 -1.225 (lin -1.236)  Om -0.97  s8 -1.62 | sig(S8) 0.0206 | omb:+0.87 slnY:+0.17 | chi2min 4.41 power 0.085 [it 2, at bound [], polish shift 0.000]
+q6 SO40 c  szifi12000_none  baseline cat  Rs: S8 -0.124 (lin -0.124)  Om -0.09  s8 -0.21 | sig(S8) 0.0229 | omb:+0.02 slnY:+0.21 | chi2min 1.66 power 0.062 [it 2, at bound [], polish shift 0.000]
+q6 SO40 c  szifi12000_none  goal     cat  Rs: S8 -0.908 (lin -0.911)  Om -0.83  s8 -0.81 | sig(S8) 0.0180 | omb:+0.66 slnY:+0.00 | chi2min 3.77 power 0.079 [it 2, at bound [], polish shift 0.000]
+q6 SO40 c  prod_none        baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0234 | omb:+0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 c  prod_none        goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0183 | omb:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 c  szifi3000_none   baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0256 | omb:+0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 c  szifi3000_none   goal     self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0206 | omb:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 c  szifi12000_none  baseline self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0229 | omb:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 c  szifi12000_none  goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0180 | omb:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 d  prod_none        baseline cat  R : S8 -0.095 (lin -0.085)  Om -0.22  s8 +0.12 | sig(S8) 0.0189 | omb:-0.08 alpha:-0.08 slnY:+0.20 | chi2min 15.99 power 0.242 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d  prod_none        baseline cat  Rp: S8 -0.016 (lin -0.014)  Om -0.07  s8 +0.07 | sig(S8) 0.0189 | omb:-0.10 alpha:+0.01 slnY:+0.20 | chi2min 7.02 power 0.113 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d  prod_none        baseline cat  Rs: S8 -0.025 (lin -0.024)  Om -0.11  s8 +0.10 | sig(S8) 0.0189 | omb:-0.02 alpha:+0.07 slnY:+0.07 | chi2min 1.64 power 0.062 [it 1, at bound [], polish shift 0.000]
+q6 SO40 d  prod_none        goal     cat  R : S8 +0.054 (lin +0.051)  Om +0.06  s8 +0.04 | sig(S8) 0.0183 | omb:-0.01 alpha:+0.62 slnY:+0.16 | chi2min 14.05 power 0.210 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d  prod_none        goal     cat  Rp: S8 +0.081 (lin +0.080)  Om +0.00  s8 +0.19 | sig(S8) 0.0183 | omb:-0.03 alpha:+0.52 slnY:+0.03 | chi2min 10.52 power 0.157 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d  prod_none        goal     cat  Rs: S8 +0.215 (lin +0.210)  Om +0.08  s8 +0.39 | sig(S8) 0.0183 | omb:-0.07 alpha:+0.72 slnY:-0.20 | chi2min 2.90 power 0.072 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d  prod_closest1    baseline cat  Rs: S8 -0.017 (lin -0.015)  Om -0.10  s8 +0.11 | sig(S8) 0.0189 | omb:-0.02 alpha:+0.09 slnY:+0.07 | chi2min 1.67 power 0.062 [it 1, at bound [], polish shift 0.000]
+q6 SO40 d  prod_closest1    goal     cat  Rs: S8 +0.213 (lin +0.207)  Om +0.08  s8 +0.38 | sig(S8) 0.0183 | omb:-0.06 alpha:+0.74 slnY:-0.19 | chi2min 3.02 power 0.073 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d  prod_fof10       baseline cat  Rs: S8 +0.215 (lin +0.187)  Om -0.04  s8 +0.52 | sig(S8) 0.0189 | omb:-0.11 alpha:+1.94 slnY:+0.13 | chi2min 9.65 power 0.145 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d  prod_fof10       goal     cat  Rs: S8 +0.981 (lin +0.753)  Om +0.35  s8 +1.75 | sig(S8) 0.0183 | omb:-0.33 alpha:+4.67 slnY:-0.61 | chi2min 34.82 power 0.608 [it 3, at bound [], polish shift 0.002]
+q6 SO40 d  prod_keepnr      baseline cat  Rs: S8 -0.025 (lin -0.024)  Om -0.11  s8 +0.10 | sig(S8) 0.0189 | omb:-0.03 alpha:+0.01 slnY:+0.07 | chi2min 1.61 power 0.061 [it 1, at bound [], polish shift 0.000]
+q6 SO40 d  prod_keepnr      goal     cat  Rs: S8 +0.203 (lin +0.198)  Om +0.06  s8 +0.38 | sig(S8) 0.0183 | omb:-0.06 alpha:+0.65 slnY:-0.20 | chi2min 2.63 power 0.070 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d  szifi3000_none   baseline cat  Rs: S8 -0.048 (lin -0.051)  Om +0.01  s8 -0.11 | sig(S8) 0.0193 | omb:+0.07 alpha:+0.64 slnY:+0.14 | chi2min 2.15 power 0.066 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d  szifi3000_none   goal     cat  Rs: S8 +0.225 (lin +0.209)  Om +0.12  s8 +0.32 | sig(S8) 0.0190 | omb:-0.06 alpha:+1.24 slnY:-0.14 | chi2min 3.43 power 0.076 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d  szifi12000_none  baseline cat  Rs: S8 -0.044 (lin -0.044)  Om -0.04  s8 -0.03 | sig(S8) 0.0189 | omb:-0.03 alpha:+0.11 slnY:+0.18 | chi2min 1.65 power 0.062 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d  szifi12000_none  goal     cat  Rs: S8 +0.235 (lin +0.224)  Om +0.03  s8 +0.51 | sig(S8) 0.0183 | omb:-0.06 alpha:+0.95 slnY:-0.26 | chi2min 3.15 power 0.074 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d  prod_none        baseline self - : S8 +0.000 (lin -0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0189 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 d  prod_none        goal     self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0183 | omb:+0.00 alpha:+0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 d  szifi3000_none   baseline self - : S8 +0.000 (lin -0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0193 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 d  szifi3000_none   goal     self - : S8 +0.000 (lin -0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0190 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 d  szifi12000_none  baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0189 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 d  szifi12000_none  goal     self - : S8 +0.000 (lin -0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0183 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 d3 prod_none        baseline cat  R : S8 -0.145 (lin -0.136)  Om -0.31  s8 +0.11 | sig(S8) 0.0159 | omb:-0.06 alpha:-0.10 slnY:+0.20 | chi2min 15.99 power 0.242 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d3 prod_none        baseline cat  Rp: S8 -0.060 (lin -0.057)  Om -0.13  s8 +0.05 | sig(S8) 0.0159 | omb:-0.08 alpha:-0.00 slnY:+0.20 | chi2min 7.03 power 0.113 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d3 prod_none        baseline cat  Rs: S8 -0.037 (lin -0.035)  Om -0.14  s8 +0.11 | sig(S8) 0.0159 | omb:-0.01 alpha:+0.07 slnY:+0.07 | chi2min 1.64 power 0.062 [it 1, at bound [], polish shift 0.000]
+q6 SO40 d3 prod_none        goal     cat  R : S8 +0.061 (lin +0.059)  Om +0.07  s8 +0.04 | sig(S8) 0.0154 | omb:-0.01 alpha:+0.64 slnY:+0.16 | chi2min 14.05 power 0.210 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d3 prod_none        goal     cat  Rp: S8 +0.084 (lin +0.084)  Om -0.01  s8 +0.19 | sig(S8) 0.0154 | omb:-0.02 alpha:+0.53 slnY:+0.03 | chi2min 10.52 power 0.157 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d3 prod_none        goal     cat  Rs: S8 +0.230 (lin +0.226)  Om +0.06  s8 +0.40 | sig(S8) 0.0154 | omb:-0.05 alpha:+0.73 slnY:-0.21 | chi2min 2.90 power 0.072 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d3 prod_closest1    baseline cat  Rs: S8 -0.029 (lin -0.028)  Om -0.14  s8 +0.11 | sig(S8) 0.0159 | omb:-0.02 alpha:+0.09 slnY:+0.07 | chi2min 1.67 power 0.062 [it 1, at bound [], polish shift 0.000]
+q6 SO40 d3 prod_closest1    goal     cat  Rs: S8 +0.229 (lin +0.224)  Om +0.07  s8 +0.39 | sig(S8) 0.0154 | omb:-0.05 alpha:+0.76 slnY:-0.20 | chi2min 3.02 power 0.073 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d3 prod_fof10       baseline cat  Rs: S8 +0.209 (lin +0.188)  Om -0.10  s8 +0.52 | sig(S8) 0.0159 | omb:-0.08 alpha:+1.97 slnY:+0.12 | chi2min 9.65 power 0.145 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d3 prod_fof10       goal     cat  Rs: S8 +1.013 (lin +0.823)  Om +0.27  s8 +1.77 | sig(S8) 0.0154 | omb:-0.25 alpha:+4.77 slnY:-0.65 | chi2min 34.89 power 0.609 [it 3, at bound [], polish shift 0.000]
+q6 SO40 d3 prod_keepnr      baseline cat  Rs: S8 -0.041 (lin -0.040)  Om -0.15  s8 +0.10 | sig(S8) 0.0159 | omb:-0.02 alpha:+0.01 slnY:+0.07 | chi2min 1.61 power 0.061 [it 1, at bound [], polish shift 0.000]
+q6 SO40 d3 prod_keepnr      goal     cat  Rs: S8 +0.215 (lin +0.211)  Om +0.05  s8 +0.39 | sig(S8) 0.0154 | omb:-0.05 alpha:+0.67 slnY:-0.21 | chi2min 2.63 power 0.070 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d3 szifi3000_none   baseline cat  Rs: S8 -0.028 (lin -0.031)  Om +0.04  s8 -0.10 | sig(S8) 0.0163 | omb:+0.05 alpha:+0.67 slnY:+0.15 | chi2min 2.15 power 0.066 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d3 szifi3000_none   goal     cat  Rs: S8 +0.245 (lin +0.229)  Om +0.12  s8 +0.33 | sig(S8) 0.0159 | omb:-0.04 alpha:+1.27 slnY:-0.14 | chi2min 3.43 power 0.076 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d3 szifi12000_none  baseline cat  Rs: S8 -0.065 (lin -0.064)  Om -0.07  s8 -0.04 | sig(S8) 0.0159 | omb:-0.02 alpha:+0.11 slnY:+0.18 | chi2min 1.65 power 0.062 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d3 szifi12000_none  goal     cat  Rs: S8 +0.256 (lin +0.247)  Om +0.01  s8 +0.53 | sig(S8) 0.0154 | omb:-0.04 alpha:+0.97 slnY:-0.27 | chi2min 3.16 power 0.074 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d3 prod_none        baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0159 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 d3 prod_none        goal     self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0154 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 d3 szifi3000_none   baseline self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0163 | omb:-0.00 alpha:+0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 d3 szifi3000_none   goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0159 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 d3 szifi12000_none  baseline self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0159 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 d3 szifi12000_none  goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0154 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 d5 prod_none        baseline cat  R : S8 -0.056 (lin -0.046)  Om -0.16  s8 +0.13 | sig(S8) 0.0218 | omb:-0.09 alpha:-0.07 slnY:+0.21 | chi2min 15.98 power 0.242 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d5 prod_none        baseline cat  Rp: S8 +0.020 (lin +0.021)  Om -0.02  s8 +0.08 | sig(S8) 0.0218 | omb:-0.12 alpha:+0.03 slnY:+0.21 | chi2min 7.01 power 0.113 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d5 prod_none        baseline cat  Rs: S8 -0.017 (lin -0.016)  Om -0.09  s8 +0.10 | sig(S8) 0.0218 | omb:-0.02 alpha:+0.07 slnY:+0.07 | chi2min 1.64 power 0.062 [it 1, at bound [], polish shift 0.000]
+q6 SO40 d5 prod_none        goal     cat  R : S8 +0.050 (lin +0.046)  Om +0.05  s8 +0.04 | sig(S8) 0.0209 | omb:-0.01 alpha:+0.60 slnY:+0.16 | chi2min 14.05 power 0.210 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d5 prod_none        goal     cat  Rp: S8 +0.081 (lin +0.079)  Om +0.01  s8 +0.18 | sig(S8) 0.0209 | omb:-0.04 alpha:+0.50 slnY:+0.03 | chi2min 10.52 power 0.157 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d5 prod_none        goal     cat  Rs: S8 +0.209 (lin +0.202)  Om +0.09  s8 +0.38 | sig(S8) 0.0209 | omb:-0.08 alpha:+0.70 slnY:-0.19 | chi2min 2.90 power 0.072 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d5 prod_closest1    baseline cat  Rs: S8 -0.006 (lin -0.005)  Om -0.08  s8 +0.11 | sig(S8) 0.0218 | omb:-0.03 alpha:+0.09 slnY:+0.07 | chi2min 1.67 power 0.062 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d5 prod_closest1    goal     cat  Rs: S8 +0.205 (lin +0.199)  Om +0.09  s8 +0.37 | sig(S8) 0.0209 | omb:-0.07 alpha:+0.73 slnY:-0.18 | chi2min 3.01 power 0.073 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d5 prod_fof10       baseline cat  Rs: S8 +0.227 (lin +0.190)  Om +0.01  s8 +0.52 | sig(S8) 0.0218 | omb:-0.13 alpha:+1.91 slnY:+0.14 | chi2min 9.64 power 0.145 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d5 prod_fof10       goal     cat  Rs: S8 +0.990 (lin +0.715)  Om +0.43  s8 +1.75 | sig(S8) 0.0209 | omb:-0.41 alpha:+4.59 slnY:-0.58 | chi2min 34.74 power 0.606 [it 3, at bound [], polish shift 0.001]
+q6 SO40 d5 prod_keepnr      baseline cat  Rs: S8 -0.013 (lin -0.011)  Om -0.08  s8 +0.10 | sig(S8) 0.0218 | omb:-0.03 alpha:+0.01 slnY:+0.07 | chi2min 1.61 power 0.061 [it 1, at bound [], polish shift 0.000]
+q6 SO40 d5 prod_keepnr      goal     cat  Rs: S8 +0.198 (lin +0.192)  Om +0.07  s8 +0.37 | sig(S8) 0.0209 | omb:-0.08 alpha:+0.64 slnY:-0.19 | chi2min 2.63 power 0.070 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d5 szifi3000_none   baseline cat  Rs: S8 -0.066 (lin -0.068)  Om -0.02  s8 -0.12 | sig(S8) 0.0222 | omb:+0.09 alpha:+0.62 slnY:+0.13 | chi2min 2.14 power 0.066 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d5 szifi3000_none   goal     cat  Rs: S8 +0.215 (lin +0.197)  Om +0.12  s8 +0.32 | sig(S8) 0.0217 | omb:-0.07 alpha:+1.21 slnY:-0.13 | chi2min 3.42 power 0.076 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d5 szifi12000_none  baseline cat  Rs: S8 -0.029 (lin -0.029)  Om -0.03  s8 -0.03 | sig(S8) 0.0217 | omb:-0.04 alpha:+0.12 slnY:+0.18 | chi2min 1.65 power 0.062 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d5 szifi12000_none  goal     cat  Rs: S8 +0.223 (lin +0.211)  Om +0.04  s8 +0.49 | sig(S8) 0.0209 | omb:-0.07 alpha:+0.92 slnY:-0.26 | chi2min 3.15 power 0.074 [it 2, at bound [], polish shift 0.000]
+q6 SO40 d5 prod_none        baseline self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0218 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 d5 prod_none        goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0209 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 d5 szifi3000_none   baseline self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0222 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 d5 szifi3000_none   goal     self - : S8 +0.000 (lin -0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0217 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 d5 szifi12000_none  baseline self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0217 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 d5 szifi12000_none  goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0209 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 e  prod_none        baseline cat  R : S8 +0.171 (lin +0.140)  Om +0.12  s8 +0.26 | sig(S8) 0.0419 | omb:-0.24 alpha:+0.09 slnY:+0.27 | chi2min 15.95 power 0.242 [it 2, at bound [], polish shift 0.000]
+q6 SO40 e  prod_none        baseline cat  Rp: S8 +0.249 (lin +0.200)  Om +0.23  s8 +0.26 | sig(S8) 0.0419 | omb:-0.29 alpha:+0.20 slnY:+0.29 | chi2min 6.97 power 0.112 [it 2, at bound [], polish shift 0.000]
+q6 SO40 e  prod_none        baseline cat  Rs: S8 +0.023 (lin +0.023)  Om -0.01  s8 +0.10 | sig(S8) 0.0419 | omb:-0.04 alpha:+0.08 slnY:+0.08 | chi2min 1.64 power 0.062 [it 2, at bound [], polish shift 0.000]
+q6 SO40 e  prod_none        goal     cat  R : S8 +0.042 (lin +0.032)  Om +0.04  s8 +0.04 | sig(S8) 0.0352 | omb:-0.02 alpha:+0.50 slnY:+0.15 | chi2min 14.05 power 0.210 [it 2, at bound [], polish shift 0.000]
+q6 SO40 e  prod_none        goal     cat  Rp: S8 +0.092 (lin +0.087)  Om +0.05  s8 +0.17 | sig(S8) 0.0352 | omb:-0.07 alpha:+0.44 slnY:+0.05 | chi2min 10.51 power 0.157 [it 2, at bound [], polish shift 0.000]
+q6 SO40 e  prod_none        goal     cat  Rs: S8 +0.225 (lin +0.207)  Om +0.15  s8 +0.36 | sig(S8) 0.0352 | omb:-0.14 alpha:+0.64 slnY:-0.13 | chi2min 2.89 power 0.072 [it 2, at bound [], polish shift 0.000]
+q6 SO40 e  prod_closest1    baseline cat  Rs: S8 +0.046 (lin +0.044)  Om +0.01  s8 +0.12 | sig(S8) 0.0419 | omb:-0.06 alpha:+0.11 slnY:+0.09 | chi2min 1.67 power 0.062 [it 2, at bound [], polish shift 0.000]
+q6 SO40 e  prod_closest1    goal     cat  Rs: S8 +0.217 (lin +0.198)  Om +0.15  s8 +0.35 | sig(S8) 0.0352 | omb:-0.14 alpha:+0.66 slnY:-0.13 | chi2min 3.01 power 0.073 [it 2, at bound [], polish shift 0.000]
+q6 SO40 e  prod_fof10       baseline cat  Rs: S8 +0.459 (lin +0.257)  Om +0.34  s8 +0.66 | sig(S8) 0.0419 | omb:-0.39 alpha:+1.78 slnY:+0.25 | chi2min 9.56 power 0.144 [it 4, at bound [], polish shift 0.000]
+q6 SO40 e  prod_fof10       goal     cat  Rs: S8 +1.417 (lin +0.684)  Om +1.05  s8 +2.05 | sig(S8) 0.0352 | omb:-0.97 alpha:+4.39 slnY:-0.30 | chi2min 34.32 power 0.599 [it 4, at bound [], polish shift 0.000]
+q6 SO40 e  prod_keepnr      baseline cat  Rs: S8 +0.050 (lin +0.049)  Om +0.02  s8 +0.12 | sig(S8) 0.0419 | omb:-0.07 alpha:+0.05 slnY:+0.09 | chi2min 1.61 power 0.061 [it 1, at bound [], polish shift 0.000]
+q6 SO40 e  prod_keepnr      goal     cat  Rs: S8 +0.217 (lin +0.201)  Om +0.14  s8 +0.36 | sig(S8) 0.0352 | omb:-0.14 alpha:+0.59 slnY:-0.13 | chi2min 2.62 power 0.069 [it 2, at bound [], polish shift 0.000]
+q6 SO40 e  szifi3000_none   baseline cat  Rs: S8 -0.199 (lin -0.187)  Om -0.18  s8 -0.23 | sig(S8) 0.0456 | omb:+0.21 alpha:+0.37 slnY:+0.03 | chi2min 2.12 power 0.065 [it 2, at bound [], polish shift 0.000]
+q6 SO40 e  szifi3000_none   goal     cat  Rs: S8 +0.236 (lin +0.189)  Om +0.18  s8 +0.32 | sig(S8) 0.0395 | omb:-0.15 alpha:+1.04 slnY:-0.08 | chi2min 3.41 power 0.076 [it 2, at bound [], polish shift 0.000]
+q6 SO40 e  szifi12000_none  baseline cat  Rs: S8 +0.044 (lin +0.040)  Om +0.05  s8 +0.03 | sig(S8) 0.0413 | omb:-0.08 alpha:+0.13 slnY:+0.19 | chi2min 1.65 power 0.062 [it 2, at bound [], polish shift 0.000]
+q6 SO40 e  szifi12000_none  goal     cat  Rs: S8 +0.226 (lin +0.194)  Om +0.12  s8 +0.44 | sig(S8) 0.0350 | omb:-0.13 alpha:+0.82 slnY:-0.20 | chi2min 3.14 power 0.074 [it 2, at bound [], polish shift 0.000]
+q6 SO40 e  prod_none        baseline self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0419 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 e  prod_none        goal     self - : S8 +0.000 (lin -0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0352 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 e  szifi3000_none   baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0456 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 e  szifi3000_none   goal     self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0395 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 e  szifi12000_none  baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0413 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 SO40 e  szifi12000_none  goal     self - : S8 -0.000 (lin -0.000)  Om +0.00  s8 -0.00 | sig(S8) 0.0350 | omb:-0.00 alpha:-0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+
+######## q_cut = 6, full
+q6 full a  prod_none        baseline cat  R : S8 -1.793 (lin -1.781)  Om -1.70  s8 +1.46 | sig(S8) 0.0008 |  | chi2min 40.11 power 0.695 [it 2, at bound [], polish shift 0.000]
+q6 full a  prod_none        baseline cat  Rp: S8 -1.044 (lin -1.040)  Om -1.09  s8 +1.00 | sig(S8) 0.0008 |  | chi2min 17.82 power 0.271 [it 1, at bound [], polish shift 0.000]
+q6 full a  prod_none        baseline cat  Rs: S8 -0.980 (lin -0.977)  Om -0.97  s8 +0.85 | sig(S8) 0.0008 |  | chi2min 4.22 power 0.083 [it 1, at bound [], polish shift 0.000]
+q6 full a  prod_none        goal     cat  R : S8 -2.891 (lin -2.876)  Om -1.41  s8 +0.42 | sig(S8) 0.0007 |  | chi2min 40.35 power 0.699 [it 1, at bound [], polish shift 0.000]
+q6 full a  prod_none        goal     cat  Rp: S8 -2.585 (lin -2.574)  Om -1.54  s8 +0.78 | sig(S8) 0.0007 |  | chi2min 28.87 power 0.486 [it 1, at bound [], polish shift 0.000]
+q6 full a  prod_none        goal     cat  Rs: S8 -2.621 (lin -2.609)  Om -1.55  s8 +0.78 | sig(S8) 0.0007 |  | chi2min 10.09 power 0.150 [it 1, at bound [], polish shift 0.000]
+q6 full a  prod_closest1    baseline cat  Rs: S8 -1.082 (lin -1.079)  Om -1.02  s8 +0.87 | sig(S8) 0.0008 |  | chi2min 4.35 power 0.084 [it 1, at bound [], polish shift 0.000]
+q6 full a  prod_closest1    goal     cat  Rs: S8 -2.744 (lin -2.730)  Om -1.59  s8 +0.76 | sig(S8) 0.0007 |  | chi2min 10.72 power 0.158 [it 1, at bound [], polish shift 0.000]
+q6 full a  prod_fof10       baseline cat  Rs: S8 -9.868 (lin -9.638)  Om -5.27  s8 +2.11 | sig(S8) 0.0008 |  | chi2min 55.61 power 0.887 [it 2, at bound [], polish shift 0.000]
+q6 full a  prod_fof10       goal     cat  Rs: S8 -20.864 (lin -20.078)  Om -10.42  s8 +3.62 | sig(S8) 0.0007 |  | chi2min 231.84 power 1.000 [it 2, at bound [], polish shift 0.000]
+q6 full a  prod_keepnr      baseline cat  Rs: S8 -0.780 (lin -0.778)  Om -0.89  s8 +0.85 | sig(S8) 0.0008 |  | chi2min 4.06 power 0.082 [it 1, at bound [], polish shift 0.000]
+q6 full a  prod_keepnr      goal     cat  Rs: S8 -2.425 (lin -2.414)  Om -1.48  s8 +0.78 | sig(S8) 0.0007 |  | chi2min 8.81 power 0.133 [it 1, at bound [], polish shift 0.000]
+q6 full a  szifi3000_none   baseline cat  Rs: S8 -3.302 (lin -3.277)  Om -1.24  s8 -0.10 | sig(S8) 0.0009 |  | chi2min 10.51 power 0.155 [it 2, at bound [], polish shift 0.000]
+q6 full a  szifi3000_none   goal     cat  Rs: S8 -5.729 (lin -5.667)  Om -2.41  s8 +0.27 | sig(S8) 0.0007 |  | chi2min 19.76 power 0.307 [it 2, at bound [], polish shift 0.000]
+q6 full a  szifi12000_none  baseline cat  Rs: S8 -1.331 (lin -1.327)  Om -0.84  s8 +0.46 | sig(S8) 0.0008 |  | chi2min 4.72 power 0.088 [it 1, at bound [], polish shift 0.000]
+q6 full a  szifi12000_none  goal     cat  Rs: S8 -4.136 (lin -4.104)  Om -2.41  s8 +1.18 | sig(S8) 0.0007 |  | chi2min 13.13 power 0.193 [it 1, at bound [], polish shift 0.000]
+q6 full a  prod_none        baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0008 |  | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full a  prod_none        goal     self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0007 |  | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full a  szifi3000_none   baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0009 |  | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full a  szifi3000_none   goal     self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0007 |  | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full a  szifi12000_none  baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0008 |  | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full a  szifi12000_none  goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0007 |  | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full b  prod_none        baseline cat  R : S8 -0.237 (lin -0.219)  Om -0.67  s8 +0.50 | sig(S8) 0.0089 | omb:+0.07 | chi2min 40.10 power 0.697 [it 2, at bound [], polish shift 0.000]
+q6 full b  prod_none        baseline cat  Rp: S8 -0.356 (lin -0.346)  Om -0.63  s8 +0.15 | sig(S8) 0.0089 | omb:+0.26 | chi2min 17.75 power 0.271 [it 2, at bound [], polish shift 0.000]
+q6 full b  prod_none        baseline cat  Rs: S8 -0.388 (lin -0.384)  Om -0.62  s8 +0.06 | sig(S8) 0.0089 | omb:+0.30 | chi2min 4.13 power 0.082 [it 2, at bound [], polish shift 0.000]
+q6 full b  prod_none        goal     cat  R : S8 -2.373 (lin -2.357)  Om -2.44  s8 -1.80 | sig(S8) 0.0072 | omb:+2.20 | chi2min 35.88 power 0.623 [it 2, at bound [], polish shift 0.001]
+q6 full b  prod_none        goal     cat  Rp: S8 -1.656 (lin -1.657)  Om -1.85  s8 -1.00 | sig(S8) 0.0072 | omb:+1.46 | chi2min 26.83 power 0.447 [it 2, at bound [], polish shift 0.000]
+q6 full b  prod_none        goal     cat  Rs: S8 -1.597 (lin -1.600)  Om -1.80  s8 -0.94 | sig(S8) 0.0072 | omb:+1.40 | chi2min 8.22 power 0.126 [it 2, at bound [], polish shift 0.000]
+q6 full b  prod_closest1    baseline cat  Rs: S8 -0.441 (lin -0.437)  Om -0.68  s8 +0.02 | sig(S8) 0.0089 | omb:+0.35 | chi2min 4.23 power 0.083 [it 2, at bound [], polish shift 0.000]
+q6 full b  prod_closest1    goal     cat  Rs: S8 -1.709 (lin -1.713)  Om -1.90  s8 -1.04 | sig(S8) 0.0072 | omb:+1.50 | chi2min 8.56 power 0.130 [it 2, at bound [], polish shift 0.000]
+q6 full b  prod_fof10       baseline cat  Rs: S8 -5.859 (lin -5.767)  Om -6.27  s8 -4.14 | sig(S8) 0.0089 | omb:+5.56 | chi2min 31.02 power 0.531 [it 3, at bound [], polish shift 0.000]
+q6 full b  prod_fof10       goal     cat  Rs: S8 -12.500 (lin -12.069)  Om -12.72  s8 -9.62 | sig(S8) 0.0072 | omb:+13.00 | chi2min 120.81 power 1.000 [it 4, at bound [], polish shift 0.000]
+q6 full b  prod_keepnr      baseline cat  Rs: S8 -0.183 (lin -0.180)  Om -0.42  s8 +0.23 | sig(S8) 0.0089 | omb:+0.11 | chi2min 4.04 power 0.082 [it 2, at bound [], polish shift 0.000]
+q6 full b  prod_keepnr      goal     cat  Rs: S8 -1.404 (lin -1.408)  Om -1.61  s8 -0.78 | sig(S8) 0.0072 | omb:+1.21 | chi2min 7.39 power 0.116 [it 2, at bound [], polish shift 0.000]
+q6 full b  szifi3000_none   baseline cat  Rs: S8 -2.495 (lin -2.474)  Om -2.46  s8 -2.14 | sig(S8) 0.0097 | omb:+2.32 | chi2min 5.65 power 0.097 [it 2, at bound [], polish shift 0.000]
+q6 full b  szifi3000_none   goal     cat  Rs: S8 -3.444 (lin -3.419)  Om -3.52  s8 -2.70 | sig(S8) 0.0081 | omb:+3.11 | chi2min 11.11 power 0.164 [it 2, at bound [], polish shift 0.000]
+q6 full b  szifi12000_none  baseline cat  Rs: S8 -0.786 (lin -0.784)  Om -0.92  s8 -0.44 | sig(S8) 0.0088 | omb:+0.68 | chi2min 4.28 power 0.084 [it 2, at bound [], polish shift 0.000]
+q6 full b  szifi12000_none  goal     cat  Rs: S8 -2.298 (lin -2.289)  Om -2.60  s8 -1.30 | sig(S8) 0.0071 | omb:+1.99 | chi2min 9.42 power 0.141 [it 2, at bound [], polish shift 0.000]
+q6 full b  prod_none        baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0089 | omb:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full b  prod_none        goal     self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0072 | omb:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full b  szifi3000_none   baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0097 | omb:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full b  szifi3000_none   goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0081 | omb:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full b  szifi12000_none  baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0088 | omb:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full b  szifi12000_none  goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0071 | omb:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full c  prod_none        baseline cat  R : S8 +0.247 (lin +0.243)  Om +0.10  s8 +0.63 | sig(S8) 0.0148 | omb:-0.38 slnY:+0.44 | chi2min 39.90 power 0.696 [it 2, at bound [], polish shift 0.000]
+q6 full c  prod_none        baseline cat  Rp: S8 +0.213 (lin +0.202)  Om +0.17  s8 +0.29 | sig(S8) 0.0148 | omb:-0.33 slnY:+0.48 | chi2min 17.49 power 0.268 [it 2, at bound [], polish shift 0.000]
+q6 full c  prod_none        baseline cat  Rs: S8 -0.122 (lin -0.117)  Om -0.17  s8 +0.09 | sig(S8) 0.0148 | omb:+0.03 slnY:+0.14 | chi2min 4.11 power 0.082 [it 2, at bound [], polish shift 0.000]
+q6 full c  prod_none        goal     cat  R : S8 -1.165 (lin -1.158)  Om -0.88  s8 -1.67 | sig(S8) 0.0115 | omb:+0.78 slnY:+0.40 | chi2min 35.71 power 0.622 [it 2, at bound [], polish shift 0.000]
+q6 full c  prod_none        goal     cat  Rp: S8 -0.850 (lin -0.863)  Om -0.73  s8 -0.93 | sig(S8) 0.0115 | omb:+0.56 slnY:+0.24 | chi2min 26.77 power 0.448 [it 2, at bound [], polish shift 0.000]
+q6 full c  prod_none        goal     cat  Rs: S8 -0.975 (lin -0.992)  Om -0.88  s8 -0.92 | sig(S8) 0.0115 | omb:+0.70 slnY:+0.03 | chi2min 8.22 power 0.126 [it 2, at bound [], polish shift 0.000]
+q6 full c  prod_closest1    baseline cat  Rs: S8 -0.133 (lin -0.128)  Om -0.18  s8 +0.07 | sig(S8) 0.0148 | omb:+0.03 slnY:+0.16 | chi2min 4.21 power 0.083 [it 2, at bound [], polish shift 0.000]
+q6 full c  prod_closest1    goal     cat  Rs: S8 -1.033 (lin -1.052)  Om -0.92  s8 -1.01 | sig(S8) 0.0115 | omb:+0.75 slnY:+0.05 | chi2min 8.56 power 0.131 [it 2, at bound [], polish shift 0.000]
+q6 full c  prod_fof10       baseline cat  Rs: S8 -2.830 (lin -2.907)  Om -2.29  s8 -3.62 | sig(S8) 0.0148 | omb:+1.90 slnY:+0.82 | chi2min 30.33 power 0.519 [it 3, at bound [], polish shift 0.000]
+q6 full c  prod_fof10       goal     cat  Rs: S8 -6.929 (lin -6.859)  Om -5.54  s8 -8.90 | sig(S8) 0.0115 | omb:+5.45 slnY:+1.12 | chi2min 119.76 power 1.000 [it 4, at bound [], polish shift 0.000]
+q6 full c  prod_keepnr      baseline cat  Rs: S8 +0.018 (lin +0.020)  Om -0.06  s8 +0.26 | sig(S8) 0.0148 | omb:-0.08 slnY:+0.15 | chi2min 4.02 power 0.082 [it 2, at bound [], polish shift 0.000]
+q6 full c  prod_keepnr      goal     cat  Rs: S8 -0.870 (lin -0.884)  Om -0.80  s8 -0.76 | sig(S8) 0.0115 | omb:+0.63 slnY:+0.01 | chi2min 7.39 power 0.117 [it 2, at bound [], polish shift 0.000]
+q6 full c  szifi3000_none   baseline cat  Rs: S8 -1.384 (lin -1.373)  Om -1.05  s8 -2.00 | sig(S8) 0.0162 | omb:+1.03 slnY:+0.15 | chi2min 5.63 power 0.097 [it 2, at bound [], polish shift 0.000]
+q6 full c  szifi3000_none   goal     cat  Rs: S8 -1.938 (lin -1.954)  Om -1.53  s8 -2.56 | sig(S8) 0.0130 | omb:+1.38 slnY:+0.27 | chi2min 11.03 power 0.163 [it 2, at bound [], polish shift 0.000]
+q6 full c  szifi12000_none  baseline cat  Rs: S8 -0.195 (lin -0.196)  Om -0.14  s8 -0.32 | sig(S8) 0.0145 | omb:+0.03 slnY:+0.33 | chi2min 4.16 power 0.083 [it 2, at bound [], polish shift 0.000]
+q6 full c  szifi12000_none  goal     cat  Rs: S8 -1.436 (lin -1.441)  Om -1.31  s8 -1.28 | sig(S8) 0.0114 | omb:+1.04 slnY:+0.01 | chi2min 9.42 power 0.142 [it 2, at bound [], polish shift 0.000]
+q6 full c  prod_none        baseline self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0148 | omb:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full c  prod_none        goal     self - : S8 +0.000 (lin -0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0115 | omb:+0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full c  szifi3000_none   baseline self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0162 | omb:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full c  szifi3000_none   goal     self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0130 | omb:+0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full c  szifi12000_none  baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0145 | omb:+0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full c  szifi12000_none  goal     self - : S8 +0.000 (lin -0.000)  Om +0.00  s8 -0.00 | sig(S8) 0.0114 | omb:-0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full d  prod_none        baseline cat  R : S8 -0.024 (lin -0.011)  Om -0.17  s8 +0.23 | sig(S8) 0.0158 | omb:-0.18 alpha:-0.08 slnY:+0.34 | chi2min 39.94 power 0.698 [it 2, at bound [], polish shift 0.000]
+q6 full d  prod_none        baseline cat  Rp: S8 +0.092 (lin +0.089)  Om +0.04  s8 +0.17 | sig(S8) 0.0158 | omb:-0.23 alpha:+0.07 slnY:+0.35 | chi2min 17.51 power 0.269 [it 2, at bound [], polish shift 0.000]
+q6 full d  prod_none        baseline cat  Rs: S8 -0.014 (lin -0.011)  Om -0.11  s8 +0.16 | sig(S8) 0.0158 | omb:-0.04 alpha:+0.11 slnY:+0.11 | chi2min 4.10 power 0.082 [it 2, at bound [], polish shift 0.000]
+q6 full d  prod_none        goal     cat  R : S8 +0.074 (lin +0.065)  Om +0.08  s8 +0.06 | sig(S8) 0.0150 | omb:-0.02 alpha:+0.92 slnY:+0.24 | chi2min 35.13 power 0.614 [it 2, at bound [], polish shift 0.000]
+q6 full d  prod_none        goal     cat  Rp: S8 +0.128 (lin +0.124)  Om +0.03  s8 +0.28 | sig(S8) 0.0150 | omb:-0.07 alpha:+0.78 slnY:+0.05 | chi2min 26.29 power 0.440 [it 2, at bound [], polish shift 0.000]
+q6 full d  prod_none        goal     cat  Rs: S8 +0.327 (lin +0.314)  Om +0.16  s8 +0.59 | sig(S8) 0.0150 | omb:-0.14 alpha:+1.09 slnY:-0.29 | chi2min 7.24 power 0.115 [it 2, at bound [], polish shift 0.000]
+q6 full d  prod_closest1    baseline cat  Rs: S8 +0.006 (lin +0.008)  Om -0.09  s8 +0.18 | sig(S8) 0.0158 | omb:-0.05 alpha:+0.15 slnY:+0.11 | chi2min 4.18 power 0.083 [it 2, at bound [], polish shift 0.000]
+q6 full d  prod_closest1    goal     cat  Rs: S8 +0.319 (lin +0.306)  Om +0.15  s8 +0.57 | sig(S8) 0.0150 | omb:-0.13 alpha:+1.12 slnY:-0.27 | chi2min 7.53 power 0.119 [it 2, at bound [], polish shift 0.000]
+q6 full d  prod_fof10       baseline cat  Rs: S8 +0.389 (lin +0.311)  Om +0.09  s8 +0.83 | sig(S8) 0.0158 | omb:-0.26 alpha:+2.96 slnY:+0.24 | chi2min 24.06 power 0.395 [it 2, at bound [], polish shift 0.000]
+q6 full d  prod_fof10       goal     cat  Rs: S8 +1.626 (lin +1.091)  Om +0.84  s8 +2.79 | sig(S8) 0.0150 | omb:-0.81 alpha:+7.13 slnY:-0.84 | chi2min 86.61 power 0.994 [it 3, at bound [], polish shift 0.000]
+q6 full d  prod_keepnr      baseline cat  Rs: S8 -0.000 (lin +0.002)  Om -0.10  s8 +0.17 | sig(S8) 0.0158 | omb:-0.06 alpha:+0.03 slnY:+0.11 | chi2min 4.02 power 0.082 [it 2, at bound [], polish shift 0.000]
+q6 full d  prod_keepnr      goal     cat  Rs: S8 +0.310 (lin +0.299)  Om +0.14  s8 +0.58 | sig(S8) 0.0150 | omb:-0.14 alpha:+1.00 slnY:-0.29 | chi2min 6.56 power 0.107 [it 2, at bound [], polish shift 0.000]
+q6 full d  szifi3000_none   baseline cat  Rs: S8 -0.135 (lin -0.139)  Om -0.07  s8 -0.21 | sig(S8) 0.0163 | omb:+0.16 alpha:+0.92 slnY:+0.19 | chi2min 5.35 power 0.095 [it 2, at bound [], polish shift 0.000]
+q6 full d  szifi3000_none   goal     cat  Rs: S8 +0.332 (lin +0.299)  Om +0.20  s8 +0.49 | sig(S8) 0.0158 | omb:-0.13 alpha:+1.86 slnY:-0.20 | chi2min 8.55 power 0.131 [it 2, at bound [], polish shift 0.000]
+q6 full d  szifi12000_none  baseline cat  Rs: S8 -0.021 (lin -0.021)  Om -0.02  s8 -0.03 | sig(S8) 0.0158 | omb:-0.07 alpha:+0.19 slnY:+0.29 | chi2min 4.12 power 0.083 [it 2, at bound [], polish shift 0.000]
+q6 full d  szifi12000_none  goal     cat  Rs: S8 +0.343 (lin +0.319)  Om +0.09  s8 +0.76 | sig(S8) 0.0150 | omb:-0.12 alpha:+1.42 slnY:-0.39 | chi2min 7.88 power 0.123 [it 2, at bound [], polish shift 0.000]
+q6 full d  prod_none        baseline self - : S8 -0.000 (lin -0.000)  Om +0.00  s8 -0.00 | sig(S8) 0.0158 | omb:-0.00 alpha:-0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full d  prod_none        goal     self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0150 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full d  szifi3000_none   baseline self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0163 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full d  szifi3000_none   goal     self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0158 | omb:-0.00 alpha:-0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full d  szifi12000_none  baseline self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0158 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full d  szifi12000_none  goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0150 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full d3 prod_none        baseline cat  R : S8 -0.102 (lin -0.087)  Om -0.28  s8 +0.20 | sig(S8) 0.0133 | omb:-0.14 alpha:-0.11 slnY:+0.33 | chi2min 39.96 power 0.699 [it 2, at bound [], polish shift 0.000]
+q6 full d3 prod_none        baseline cat  Rp: S8 +0.018 (lin +0.020)  Om -0.05  s8 +0.12 | sig(S8) 0.0133 | omb:-0.18 alpha:+0.04 slnY:+0.33 | chi2min 17.53 power 0.269 [it 2, at bound [], polish shift 0.000]
+q6 full d3 prod_none        baseline cat  Rs: S8 -0.030 (lin -0.028)  Om -0.15  s8 +0.16 | sig(S8) 0.0133 | omb:-0.03 alpha:+0.11 slnY:+0.11 | chi2min 4.10 power 0.082 [it 2, at bound [], polish shift 0.000]
+q6 full d3 prod_none        goal     cat  R : S8 +0.080 (lin +0.074)  Om +0.08  s8 +0.06 | sig(S8) 0.0128 | omb:-0.01 alpha:+0.96 slnY:+0.25 | chi2min 35.13 power 0.614 [it 2, at bound [], polish shift 0.000]
+q6 full d3 prod_none        goal     cat  Rp: S8 +0.127 (lin +0.124)  Om +0.02  s8 +0.29 | sig(S8) 0.0128 | omb:-0.06 alpha:+0.80 slnY:+0.05 | chi2min 26.29 power 0.440 [it 2, at bound [], polish shift 0.000]
+q6 full d3 prod_none        goal     cat  Rs: S8 +0.332 (lin +0.322)  Om +0.13  s8 +0.60 | sig(S8) 0.0128 | omb:-0.12 alpha:+1.12 slnY:-0.31 | chi2min 7.25 power 0.115 [it 2, at bound [], polish shift 0.000]
+q6 full d3 prod_closest1    baseline cat  Rs: S8 -0.014 (lin -0.012)  Om -0.13  s8 +0.18 | sig(S8) 0.0133 | omb:-0.04 alpha:+0.15 slnY:+0.11 | chi2min 4.18 power 0.083 [it 2, at bound [], polish shift 0.000]
+q6 full d3 prod_closest1    goal     cat  Rs: S8 +0.327 (lin +0.316)  Om +0.13  s8 +0.59 | sig(S8) 0.0128 | omb:-0.11 alpha:+1.16 slnY:-0.29 | chi2min 7.54 power 0.119 [it 2, at bound [], polish shift 0.000]
+q6 full d3 prod_fof10       baseline cat  Rs: S8 +0.353 (lin +0.299)  Om -0.01  s8 +0.82 | sig(S8) 0.0133 | omb:-0.20 alpha:+3.03 slnY:+0.21 | chi2min 24.10 power 0.395 [it 2, at bound [], polish shift 0.000]
+q6 full d3 prod_fof10       goal     cat  Rs: S8 +1.545 (lin +1.143)  Om +0.64  s8 +2.75 | sig(S8) 0.0128 | omb:-0.61 alpha:+7.27 slnY:-0.92 | chi2min 86.91 power 0.994 [it 3, at bound [], polish shift 0.004]
+q6 full d3 prod_keepnr      baseline cat  Rs: S8 -0.025 (lin -0.023)  Om -0.14  s8 +0.17 | sig(S8) 0.0133 | omb:-0.05 alpha:+0.02 slnY:+0.11 | chi2min 4.02 power 0.082 [it 2, at bound [], polish shift 0.000]
+q6 full d3 prod_keepnr      goal     cat  Rs: S8 +0.314 (lin +0.305)  Om +0.11  s8 +0.59 | sig(S8) 0.0128 | omb:-0.12 alpha:+1.02 slnY:-0.30 | chi2min 6.57 power 0.108 [it 2, at bound [], polish shift 0.000]
+q6 full d3 szifi3000_none   baseline cat  Rs: S8 -0.097 (lin -0.101)  Om -0.02  s8 -0.19 | sig(S8) 0.0136 | omb:+0.13 alpha:+0.99 slnY:+0.21 | chi2min 5.36 power 0.095 [it 2, at bound [], polish shift 0.000]
+q6 full d3 szifi3000_none   goal     cat  Rs: S8 +0.343 (lin +0.316)  Om +0.19  s8 +0.50 | sig(S8) 0.0133 | omb:-0.10 alpha:+1.93 slnY:-0.21 | chi2min 8.56 power 0.131 [it 2, at bound [], polish shift 0.000]
+q6 full d3 szifi12000_none  baseline cat  Rs: S8 -0.051 (lin -0.051)  Om -0.05  s8 -0.04 | sig(S8) 0.0133 | omb:-0.05 alpha:+0.18 slnY:+0.29 | chi2min 4.12 power 0.083 [it 2, at bound [], polish shift 0.000]
+q6 full d3 szifi12000_none  goal     cat  Rs: S8 +0.357 (lin +0.338)  Om +0.06  s8 +0.79 | sig(S8) 0.0128 | omb:-0.10 alpha:+1.47 slnY:-0.41 | chi2min 7.88 power 0.123 [it 2, at bound [], polish shift 0.000]
+q6 full d3 prod_none        baseline self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0133 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full d3 prod_none        goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0128 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full d3 szifi3000_none   baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0136 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full d3 szifi3000_none   goal     self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0133 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full d3 szifi12000_none  baseline self - : S8 -0.000 (lin -0.000)  Om +0.00  s8 -0.00 | sig(S8) 0.0133 | omb:-0.00 alpha:-0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full d3 szifi12000_none  goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0128 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full d5 prod_none        baseline cat  R : S8 +0.033 (lin +0.042)  Om -0.09  s8 +0.25 | sig(S8) 0.0179 | omb:-0.21 alpha:-0.04 slnY:+0.35 | chi2min 39.93 power 0.698 [it 2, at bound [], polish shift 0.000]
+q6 full d5 prod_none        baseline cat  Rp: S8 +0.149 (lin +0.138)  Om +0.10  s8 +0.21 | sig(S8) 0.0179 | omb:-0.27 alpha:+0.11 slnY:+0.36 | chi2min 17.48 power 0.269 [it 2, at bound [], polish shift 0.000]
+q6 full d5 prod_none        baseline cat  Rs: S8 -0.003 (lin -0.000)  Om -0.09  s8 +0.15 | sig(S8) 0.0179 | omb:-0.04 alpha:+0.11 slnY:+0.11 | chi2min 4.10 power 0.082 [it 2, at bound [], polish shift 0.000]
+q6 full d5 prod_none        goal     cat  R : S8 +0.070 (lin +0.060)  Om +0.07  s8 +0.06 | sig(S8) 0.0166 | omb:-0.02 alpha:+0.89 slnY:+0.24 | chi2min 35.13 power 0.614 [it 2, at bound [], polish shift 0.000]
+q6 full d5 prod_none        goal     cat  Rp: S8 +0.131 (lin +0.126)  Om +0.05  s8 +0.28 | sig(S8) 0.0166 | omb:-0.08 alpha:+0.76 slnY:+0.06 | chi2min 26.29 power 0.440 [it 2, at bound [], polish shift 0.000]
+q6 full d5 prod_none        goal     cat  Rs: S8 +0.328 (lin +0.313)  Om +0.17  s8 +0.58 | sig(S8) 0.0166 | omb:-0.16 alpha:+1.07 slnY:-0.27 | chi2min 7.23 power 0.115 [it 2, at bound [], polish shift 0.000]
+q6 full d5 prod_closest1    baseline cat  Rs: S8 +0.020 (lin +0.022)  Om -0.07  s8 +0.18 | sig(S8) 0.0179 | omb:-0.06 alpha:+0.15 slnY:+0.12 | chi2min 4.18 power 0.083 [it 2, at bound [], polish shift 0.000]
+q6 full d5 prod_closest1    goal     cat  Rs: S8 +0.320 (lin +0.303)  Om +0.17  s8 +0.56 | sig(S8) 0.0166 | omb:-0.15 alpha:+1.10 slnY:-0.26 | chi2min 7.53 power 0.119 [it 2, at bound [], polish shift 0.000]
+q6 full d5 prod_fof10       baseline cat  Rs: S8 +0.430 (lin +0.326)  Om +0.16  s8 +0.84 | sig(S8) 0.0179 | omb:-0.32 alpha:+2.91 slnY:+0.26 | chi2min 24.03 power 0.394 [it 3, at bound [], polish shift 0.000]
+q6 full d5 prod_fof10       goal     cat  Rs: S8 +1.738 (lin +1.073)  Om +1.01  s8 +2.86 | sig(S8) 0.0166 | omb:-0.97 alpha:+7.05 slnY:-0.75 | chi2min 86.35 power 0.994 [it 4, at bound [], polish shift 0.009]
+q6 full d5 prod_keepnr      baseline cat  Rs: S8 +0.017 (lin +0.019)  Om -0.07  s8 +0.17 | sig(S8) 0.0179 | omb:-0.07 alpha:+0.04 slnY:+0.12 | chi2min 4.02 power 0.082 [it 2, at bound [], polish shift 0.000]
+q6 full d5 prod_keepnr      goal     cat  Rs: S8 +0.313 (lin +0.300)  Om +0.16  s8 +0.57 | sig(S8) 0.0166 | omb:-0.16 alpha:+0.98 slnY:-0.27 | chi2min 6.55 power 0.107 [it 2, at bound [], polish shift 0.000]
+q6 full d5 szifi3000_none   baseline cat  Rs: S8 -0.167 (lin -0.168)  Om -0.11  s8 -0.24 | sig(S8) 0.0185 | omb:+0.19 alpha:+0.86 slnY:+0.17 | chi2min 5.34 power 0.095 [it 2, at bound [], polish shift 0.000]
+q6 full d5 szifi3000_none   goal     cat  Rs: S8 +0.331 (lin +0.293)  Om +0.22  s8 +0.49 | sig(S8) 0.0177 | omb:-0.15 alpha:+1.81 slnY:-0.19 | chi2min 8.55 power 0.131 [it 2, at bound [], polish shift 0.000]
+q6 full d5 szifi12000_none  baseline cat  Rs: S8 -0.000 (lin -0.002)  Om +0.00  s8 -0.01 | sig(S8) 0.0178 | omb:-0.08 alpha:+0.19 slnY:+0.29 | chi2min 4.12 power 0.083 [it 2, at bound [], polish shift 0.000]
+q6 full d5 szifi12000_none  goal     cat  Rs: S8 +0.338 (lin +0.312)  Om +0.11  s8 +0.74 | sig(S8) 0.0166 | omb:-0.14 alpha:+1.38 slnY:-0.38 | chi2min 7.87 power 0.123 [it 2, at bound [], polish shift 0.000]
+q6 full d5 prod_none        baseline self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0179 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full d5 prod_none        goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0166 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full d5 szifi3000_none   baseline self - : S8 -0.000 (lin -0.000)  Om +0.00  s8 -0.00 | sig(S8) 0.0185 | omb:-0.00 alpha:-0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full d5 szifi3000_none   goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0177 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full d5 szifi12000_none  baseline self - : S8 -0.000 (lin -0.000)  Om +0.00  s8 -0.00 | sig(S8) 0.0178 | omb:-0.00 alpha:-0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full d5 szifi12000_none  goal     self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0166 | omb:-0.00 alpha:-0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full e  prod_none        baseline cat  R : S8 +0.270 (lin +0.221)  Om +0.19  s8 +0.41 | sig(S8) 0.0265 | omb:-0.38 alpha:+0.15 slnY:+0.42 | chi2min 39.88 power 0.697 [it 3, at bound [], polish shift 0.000]
+q6 full e  prod_none        baseline cat  Rp: S8 +0.396 (lin +0.316)  Om +0.37  s8 +0.42 | sig(S8) 0.0265 | omb:-0.47 alpha:+0.31 slnY:+0.46 | chi2min 17.41 power 0.267 [it 3, at bound [], polish shift 0.000]
+q6 full e  prod_none        baseline cat  Rs: S8 +0.037 (lin +0.037)  Om -0.02  s8 +0.15 | sig(S8) 0.0265 | omb:-0.07 alpha:+0.12 slnY:+0.12 | chi2min 4.10 power 0.082 [it 2, at bound [], polish shift 0.000]
+q6 full e  prod_none        goal     cat  R : S8 +0.067 (lin +0.050)  Om +0.07  s8 +0.06 | sig(S8) 0.0223 | omb:-0.03 alpha:+0.78 slnY:+0.24 | chi2min 35.13 power 0.614 [it 2, at bound [], polish shift 0.000]
+q6 full e  prod_none        goal     cat  Rp: S8 +0.145 (lin +0.137)  Om +0.08  s8 +0.27 | sig(S8) 0.0223 | omb:-0.10 alpha:+0.70 slnY:+0.08 | chi2min 26.28 power 0.440 [it 2, at bound [], polish shift 0.000]
+q6 full e  prod_none        goal     cat  Rs: S8 +0.356 (lin +0.327)  Om +0.24  s8 +0.57 | sig(S8) 0.0223 | omb:-0.23 alpha:+1.02 slnY:-0.21 | chi2min 7.22 power 0.115 [it 2, at bound [], polish shift 0.000]
+q6 full e  prod_closest1    baseline cat  Rs: S8 +0.073 (lin +0.070)  Om +0.02  s8 +0.19 | sig(S8) 0.0265 | omb:-0.10 alpha:+0.17 slnY:+0.14 | chi2min 4.18 power 0.083 [it 2, at bound [], polish shift 0.000]
+q6 full e  prod_closest1    goal     cat  Rs: S8 +0.344 (lin +0.313)  Om +0.23  s8 +0.56 | sig(S8) 0.0223 | omb:-0.22 alpha:+1.04 slnY:-0.20 | chi2min 7.52 power 0.118 [it 2, at bound [], polish shift 0.000]
+q6 full e  prod_fof10       baseline cat  Rs: S8 +0.726 (lin +0.407)  Om +0.54  s8 +1.05 | sig(S8) 0.0265 | omb:-0.62 alpha:+2.82 slnY:+0.40 | chi2min 23.91 power 0.392 [it 4, at bound [], polish shift 0.000]
+q6 full e  prod_fof10       goal     cat  Rs: S8 +2.241 (lin +1.081)  Om +1.66  s8 +3.25 | sig(S8) 0.0223 | omb:-1.53 alpha:+6.93 slnY:-0.47 | chi2min 85.79 power 0.993 [it 4, at bound [], polish shift 0.000]
+q6 full e  prod_keepnr      baseline cat  Rs: S8 +0.079 (lin +0.077)  Om +0.02  s8 +0.19 | sig(S8) 0.0265 | omb:-0.12 alpha:+0.08 slnY:+0.14 | chi2min 4.01 power 0.082 [it 2, at bound [], polish shift 0.000]
+q6 full e  prod_keepnr      goal     cat  Rs: S8 +0.343 (lin +0.318)  Om +0.23  s8 +0.56 | sig(S8) 0.0223 | omb:-0.23 alpha:+0.94 slnY:-0.21 | chi2min 6.54 power 0.107 [it 2, at bound [], polish shift 0.000]
+q6 full e  szifi3000_none   baseline cat  Rs: S8 -0.315 (lin -0.296)  Om -0.28  s8 -0.36 | sig(S8) 0.0288 | omb:+0.34 alpha:+0.58 slnY:+0.05 | chi2min 5.29 power 0.094 [it 2, at bound [], polish shift 0.000]
+q6 full e  szifi3000_none   goal     cat  Rs: S8 +0.375 (lin +0.298)  Om +0.29  s8 +0.51 | sig(S8) 0.0250 | omb:-0.24 alpha:+1.65 slnY:-0.12 | chi2min 8.53 power 0.131 [it 3, at bound [], polish shift 0.000]
+q6 full e  szifi12000_none  baseline cat  Rs: S8 +0.070 (lin +0.063)  Om +0.07  s8 +0.05 | sig(S8) 0.0261 | omb:-0.12 alpha:+0.21 slnY:+0.30 | chi2min 4.12 power 0.083 [it 2, at bound [], polish shift 0.000]
+q6 full e  szifi12000_none  goal     cat  Rs: S8 +0.358 (lin +0.307)  Om +0.18  s8 +0.70 | sig(S8) 0.0221 | omb:-0.21 alpha:+1.29 slnY:-0.32 | chi2min 7.86 power 0.122 [it 2, at bound [], polish shift 0.000]
+q6 full e  prod_none        baseline self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 -0.00 | sig(S8) 0.0265 | omb:-0.00 alpha:-0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full e  prod_none        goal     self - : S8 +0.000 (lin +0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0223 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full e  szifi3000_none   baseline self - : S8 -0.000 (lin -0.000)  Om -0.00  s8 -0.00 | sig(S8) 0.0288 | omb:-0.00 alpha:+0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full e  szifi3000_none   goal     self - : S8 +0.000 (lin -0.000)  Om +0.00  s8 +0.00 | sig(S8) 0.0250 | omb:+0.00 alpha:+0.00 slnY:+0.00 | chi2min 0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full e  szifi12000_none  baseline self - : S8 -0.000 (lin +0.000)  Om -0.00  s8 +0.00 | sig(S8) 0.0261 | omb:+0.00 alpha:+0.00 slnY:-0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+q6 full e  szifi12000_none  goal     self - : S8 -0.000 (lin -0.000)  Om +0.00  s8 -0.00 | sig(S8) 0.0221 | omb:-0.00 alpha:-0.00 slnY:+0.00 | chi2min -0.00 power 0.050 [it 0, at bound [], polish shift 0.000]
+
+SANITY: naive model fitted to its own expectation: max |bias| over 168 fits and all free parameters 5.76e-10 sigma; max chi2min 4.40e-12
+ML vs linearised S8 bias over 374 fits with |bias| >= 0.1 sigma: median |ML - lin| / |ML| 0.031, max 0.576; 88 differ by more than 10%: [('prod_none', 'goal', 'R', 5.0, 'SO40', 'd', 0.804, 0.72), ('prod_fof10', 'baseline', 'Rs', 5.0, 'SO40', 'd', 0.929, 0.714), ('prod_fof10', 'goal', 'Rs', 5.0, 'SO40', 'd', 2.364, 1.865), ('szifi3000_none', 'baseline', 'Rs', 5.0, 'SO40', 'd', 0.166, 0.145), ('szifi3000_none', 'goal', 'Rs', 5.0, 'SO40', 'd', 1.017, 0.873), ('prod_fof10', 'baseline', 'Rs', 5.0, 'SO40', 'd3', 0.966, 0.785), ('prod_fof10', 'goal', 'Rs', 5.0, 'SO40', 'd3', 2.43, 1.97), ('szifi3000_none', 'goal', 'Rs', 5.0, 'SO40', 'd3', 1.029, 0.913), ('prod_none', 'goal', 'R', 5.0, 'SO40', 'd5', 0.873, 0.756), ('prod_none', 'goal', 'Rp', 5.0, 'SO40', 'd5', 0.868, 0.775), ('prod_closest1', 'goal', 'Rs', 5.0, 'SO40', 'd5', 0.815, 0.731), ('prod_fof10', 'baseline', 'Rs', 5.0, 'SO40', 'd5', 0.94, 0.675)]
+   max |ML - lin| over all 448 fits: 3.987 sigma; fits with a parameter at a bound: 5; data bins < 0 clipped: 0
+
+linearised biases and tile-bootstrap errors: 1120 rows [70 s]
+S8 bias (linearised) +- tile-bootstrap error, q_cut 5 [R | R_p | R_s]:
+  prod_none        baseline SO40: a: -2.31+-0.36 | -1.89+-0.23 | -1.90+-0.23;  b: -1.81+-0.34 | -1.58+-0.24 | -1.55+-0.21;  c: -1.10+-0.40 | -0.96+-0.30 | -1.00+-0.22;  d: +0.15+-0.23 | +0.13+-0.14 | +0.21+-0.12;  e: +0.03+-0.40 | +0.03+-0.25 | +0.10+-0.19
+  prod_none        baseline full: a: -3.66+-0.57 | -2.98+-0.37 | -3.00+-0.36;  b: -2.87+-0.55 | -2.51+-0.37 | -2.46+-0.33;  c: -1.75+-0.64 | -1.51+-0.47 | -1.58+-0.35;  d: +0.16+-0.42 | +0.14+-0.25 | +0.25+-0.20;  e: +0.05+-0.63 | +0.05+-0.40 | +0.16+-0.30
+  prod_none        goal     SO40: a: -4.28+-0.37 | -4.30+-0.27 | -4.35+-0.27;  b: -2.79+-0.31 | -2.63+-0.23 | -2.64+-0.21;  c: -1.33+-0.38 | -1.58+-0.27 | -1.65+-0.21;  d: +0.72+-0.22 | +0.77+-0.17 | +0.72+-0.14;  e: +0.95+-0.37 | +0.86+-0.28 | +0.77+-0.22
+  prod_none        goal     full: a: -6.76+-0.58 | -6.79+-0.42 | -6.88+-0.42;  b: -4.42+-0.49 | -4.16+-0.36 | -4.18+-0.34;  c: -2.11+-0.60 | -2.51+-0.43 | -2.61+-0.33;  d: +1.26+-0.43 | +1.24+-0.33 | +1.14+-0.27;  e: +1.51+-0.59 | +1.36+-0.45 | +1.21+-0.34
+  prod_closest1    baseline SO40: a: -2.48+-0.36 | -2.05+-0.23 | -2.06+-0.23;  b: -1.91+-0.34 | -1.68+-0.24 | -1.65+-0.21;  c: -1.15+-0.40 | -1.00+-0.30 | -1.05+-0.22;  d: +0.17+-0.22 | +0.15+-0.13 | +0.23+-0.12;  e: +0.06+-0.40 | +0.06+-0.25 | +0.13+-0.19
+  prod_closest1    baseline full: a: -3.92+-0.57 | -3.25+-0.36 | -3.26+-0.36;  b: -3.02+-0.55 | -2.66+-0.37 | -2.61+-0.33;  c: -1.82+-0.64 | -1.59+-0.47 | -1.66+-0.35;  d: +0.19+-0.41 | +0.17+-0.25 | +0.29+-0.20;  e: +0.09+-0.62 | +0.09+-0.39 | +0.21+-0.30
+  prod_closest1    goal     SO40: a: -4.51+-0.37 | -4.53+-0.26 | -4.58+-0.26;  b: -2.97+-0.31 | -2.81+-0.23 | -2.82+-0.21;  c: -1.44+-0.37 | -1.69+-0.27 | -1.76+-0.21;  d: +0.73+-0.22 | +0.78+-0.17 | +0.74+-0.14;  e: +0.95+-0.37 | +0.86+-0.28 | +0.77+-0.22
+  prod_closest1    goal     full: a: -7.14+-0.58 | -7.17+-0.42 | -7.25+-0.42;  b: -4.70+-0.48 | -4.44+-0.36 | -4.46+-0.34;  c: -2.28+-0.59 | -2.68+-0.43 | -2.79+-0.33;  d: +1.27+-0.43 | +1.25+-0.33 | +1.16+-0.27;  e: +1.51+-0.58 | +1.36+-0.44 | +1.22+-0.34
+  prod_fof10       baseline SO40: a: -12.79+-0.36 | -12.41+-0.28 | -12.38+-0.29;  b: -7.85+-0.33 | -7.64+-0.25 | -7.58+-0.23;  c: -4.51+-0.40 | -4.39+-0.32 | -4.36+-0.25;  d: +0.64+-0.23 | +0.63+-0.15 | +0.71+-0.14;  e: +0.53+-0.40 | +0.51+-0.29 | +0.64+-0.22
+  prod_fof10       baseline full: a: -20.23+-0.57 | -19.62+-0.44 | -19.57+-0.46;  b: -12.41+-0.52 | -12.08+-0.39 | -11.99+-0.36;  c: -7.13+-0.63 | -6.95+-0.51 | -6.90+-0.40;  d: +0.90+-0.42 | +0.88+-0.30 | +1.03+-0.24;  e: +0.83+-0.63 | +0.81+-0.46 | +1.01+-0.36
+  prod_fof10       goal     SO40: a: -24.28+-0.37 | -24.27+-0.31 | -24.35+-0.32;  b: -14.02+-0.31 | -13.92+-0.26 | -13.85+-0.26;  c: -7.82+-0.39 | -8.09+-0.31 | -8.10+-0.26;  d: +1.79+-0.22 | +1.86+-0.18 | +1.86+-0.16;  e: +1.94+-0.38 | +1.86+-0.30 | +1.86+-0.24
+  prod_fof10       goal     full: a: -38.39+-0.59 | -38.37+-0.48 | -38.49+-0.51;  b: -22.17+-0.50 | -22.01+-0.41 | -21.90+-0.41;  c: -12.37+-0.62 | -12.79+-0.49 | -12.81+-0.41;  d: +2.84+-0.43 | +2.85+-0.34 | +2.85+-0.29;  e: +3.06+-0.60 | +2.94+-0.47 | +2.93+-0.39
+  prod_keepnr      baseline SO40: a: -0.07+-0.37 | +0.37+-0.24 | +0.39+-0.24;  b: +0.64+-0.35 | +0.89+-0.26 | +0.83+-0.23;  c: +0.73+-0.43 | +0.92+-0.36 | +0.70+-0.25;  d: -0.16+-0.23 | -0.17+-0.15 | -0.12+-0.12;  e: +0.13+-0.42 | +0.16+-0.29 | +0.09+-0.20
+  prod_keepnr      baseline full: a: -0.11+-0.59 | +0.58+-0.38 | +0.62+-0.37;  b: +1.01+-0.56 | +1.41+-0.42 | +1.32+-0.36;  c: +1.16+-0.68 | +1.46+-0.57 | +1.10+-0.40;  d: -0.07+-0.44 | -0.07+-0.28 | -0.06+-0.22;  e: +0.21+-0.67 | +0.25+-0.46 | +0.14+-0.32
+  prod_keepnr      goal     SO40: a: -1.65+-0.37 | -1.68+-0.27 | -1.72+-0.27;  b: -0.40+-0.32 | -0.21+-0.25 | -0.28+-0.22;  c: +0.37+-0.40 | +0.14+-0.31 | +0.00+-0.22;  d: +0.31+-0.23 | +0.37+-0.18 | +0.29+-0.15;  e: +0.76+-0.39 | +0.68+-0.31 | +0.52+-0.23
+  prod_keepnr      goal     full: a: -2.62+-0.59 | -2.66+-0.43 | -2.72+-0.43;  b: -0.63+-0.51 | -0.33+-0.39 | -0.44+-0.35;  c: +0.59+-0.64 | +0.22+-0.49 | +0.01+-0.35;  d: +0.78+-0.44 | +0.77+-0.35 | +0.60+-0.27;  e: +1.20+-0.61 | +1.07+-0.49 | +0.83+-0.36
+  szifi3000_none   baseline SO40: a: -4.96+-0.33 | -4.75+-0.26 | -4.77+-0.26;  b: -3.38+-0.32 | -3.33+-0.23 | -3.23+-0.22;  c: -1.96+-0.38 | -2.04+-0.27 | -1.91+-0.21;  d: -0.03+-0.21 | -0.04+-0.15 | +0.14+-0.13;  e: -0.27+-0.38 | -0.37+-0.27 | -0.04+-0.19
+  szifi3000_none   baseline full: a: -7.84+-0.53 | -7.50+-0.41 | -7.54+-0.41;  b: -5.34+-0.50 | -5.26+-0.36 | -5.11+-0.34;  c: -3.10+-0.61 | -3.22+-0.42 | -3.03+-0.34;  d: -0.18+-0.38 | -0.24+-0.27 | +0.11+-0.21;  e: -0.43+-0.60 | -0.59+-0.42 | -0.06+-0.30
+  szifi3000_none   goal     SO40: a: -7.63+-0.34 | -7.80+-0.25 | -7.89+-0.26;  b: -5.11+-0.31 | -4.86+-0.23 | -4.85+-0.21;  c: -2.59+-0.37 | -2.74+-0.31 | -2.83+-0.23;  d: +0.84+-0.21 | +0.89+-0.16 | +0.87+-0.14;  e: +1.07+-0.36 | +1.00+-0.27 | +0.92+-0.21
+  szifi3000_none   goal     full: a: -12.07+-0.55 | -12.33+-0.40 | -12.48+-0.41;  b: -8.08+-0.49 | -7.68+-0.37 | -7.67+-0.33;  c: -4.09+-0.58 | -4.34+-0.49 | -4.48+-0.36;  d: +1.42+-0.41 | +1.42+-0.30 | +1.36+-0.25;  e: +1.68+-0.58 | +1.58+-0.43 | +1.46+-0.33
+  szifi12000_none  baseline SO40: a: -3.03+-0.36 | -2.69+-0.25 | -2.71+-0.25;  b: -2.07+-0.33 | -1.74+-0.24 | -1.76+-0.21;  c: -1.35+-0.42 | -0.93+-0.33 | -1.02+-0.20;  d: +0.26+-0.22 | +0.28+-0.14 | +0.30+-0.12;  e: +0.13+-0.40 | +0.35+-0.27 | +0.31+-0.18
+  szifi12000_none  baseline full: a: -4.79+-0.56 | -4.25+-0.39 | -4.28+-0.39;  b: -3.28+-0.53 | -2.75+-0.38 | -2.78+-0.33;  c: -2.14+-0.67 | -1.48+-0.52 | -1.61+-0.32;  d: +0.31+-0.42 | +0.46+-0.26 | +0.46+-0.21;  e: +0.20+-0.63 | +0.55+-0.42 | +0.50+-0.29
+  szifi12000_none  goal     SO40: a: -5.51+-0.36 | -5.58+-0.26 | -5.64+-0.26;  b: -3.55+-0.31 | -3.38+-0.21 | -3.38+-0.20;  c: -1.73+-0.37 | -2.14+-0.26 | -2.20+-0.20;  d: +0.96+-0.23 | +0.88+-0.17 | +0.83+-0.14;  e: +1.25+-0.37 | +0.90+-0.27 | +0.80+-0.21
+  szifi12000_none  goal     full: a: -8.70+-0.57 | -8.82+-0.41 | -8.91+-0.41;  b: -5.61+-0.49 | -5.35+-0.34 | -5.34+-0.32;  c: -2.73+-0.59 | -3.38+-0.42 | -3.49+-0.32;  d: +1.67+-0.44 | +1.36+-0.32 | +1.26+-0.26;  e: +1.98+-0.59 | +1.43+-0.43 | +1.27+-0.33
+precision target (bootstrap error of the S8 bias <= 0.1 sigma, SO40, headline configs d and e):
+  baseline d: R 0.226, R_p 0.135, R_s 0.115 -> NOT met with R_s
+  baseline e: R 0.399, R_p 0.250, R_s 0.189 -> NOT met with R_s
+  goal d: R 0.223, R_p 0.170, R_s 0.144 -> NOT met with R_s
+  goal e: R 0.371, R_p 0.281, R_s 0.218 -> NOT met with R_s
+injection-tile reference (pooled t03 + a02, b06): R_s / (1 + delta); linearised S8 bias, q_cut 5 (error: from delta's error)
+  baseline SO40 (delta = -0.26 +- 0.46%): a: -1.90 -> -1.53 +- 0.64;  d: +0.21 -> +0.23 +- 0.03;  e: +0.10 -> +0.10 +- 0.00
+  baseline full (delta = -0.26 +- 0.46%): a: -3.00 -> -2.42 +- 1.01;  d: +0.25 -> +0.27 +- 0.03;  e: +0.16 -> +0.17 +- 0.01
+  goal     SO40 (delta = -0.85 +- 0.44%): a: -4.35 -> -2.85 +- 0.78;  d: +0.72 -> +0.79 +- 0.03;  e: +0.77 -> +0.77 +- 0.00
+  goal     full (delta = -0.85 +- 0.44%): a: -6.88 -> -4.50 +- 1.23;  d: +1.14 -> +1.20 +- 0.03;  e: +1.21 -> +1.22 +- 0.01
+cell-grid check (headline): linearised S8 bias with R_s from every other q' node vs the full grid, q_cut 5 / 6
+  baseline SO40: a q5: -1.892 vs -1.897; a q6: -0.622 vs -0.618; d q5: +0.200 vs +0.209; d q6: -0.005 vs -0.024; e q5: +0.087 vs +0.103; e q6: +0.043 vs +0.023
+  baseline full: a q5: -2.992 vs -3.000; a q6: -0.983 vs -0.977; d q5: +0.234 vs +0.252; d q6: +0.017 vs -0.011; e q5: +0.138 vs +0.162; e q6: +0.067 vs +0.037
+  goal     SO40: a q5: -4.348 vs -4.349; a q6: -1.649 vs -1.650; d q5: +0.717 vs +0.724; d q6: +0.206 vs +0.210; e q5: +0.756 vs +0.766; e q6: +0.205 vs +0.207
+  goal     full: a q5: -6.875 vs -6.876; a q6: -2.608 vs -2.609; d q5: +1.125 vs +1.138; d q6: +0.309 vs +0.314; e q5: +1.195 vs +1.212; e q6: +0.324 vs +0.327
+split of the linearised S8 bias (R_s, q_cut 5): amplitude + z tilt + q shape = sum
+  prod_none        baseline SO40 a: -1.854 +0.234 -0.277 = -1.897
+  prod_none        baseline SO40 d: -0.095 +0.050 +0.254 = +0.209
+  prod_none        baseline SO40 e: -0.009 -0.044 +0.155 = +0.103
+  prod_none        baseline full a: -2.932 +0.370 -0.437 = -3.000
+  prod_none        baseline full d: -0.092 +0.021 +0.323 = +0.252
+  prod_none        baseline full e: -0.014 -0.069 +0.246 = +0.162
+  prod_none        goal     SO40 a: -3.956 +0.044 -0.436 = -4.349
+  prod_none        goal     SO40 d: -0.148 +0.229 +0.643 = +0.724
+  prod_none        goal     SO40 e: -0.004 +0.295 +0.476 = +0.766
+  prod_none        goal     full a: -6.255 +0.069 -0.689 = -6.876
+  prod_none        goal     full d: -0.130 +0.395 +0.873 = +1.138
+  prod_none        goal     full e: -0.006 +0.466 +0.752 = +1.212
+  prod_closest1    baseline SO40 a: -2.011 +0.241 -0.294 = -2.064
+  prod_closest1    baseline SO40 d: -0.103 +0.062 +0.274 = +0.232
+  prod_closest1    baseline SO40 e: -0.009 -0.023 +0.168 = +0.135
+  prod_closest1    baseline full a: -3.179 +0.381 -0.465 = -3.263
+  prod_closest1    baseline full d: -0.100 +0.043 +0.348 = +0.291
+  prod_closest1    baseline full e: -0.015 -0.037 +0.265 = +0.213
+  prod_closest1    goal     SO40 a: -4.201 +0.082 -0.464 = -4.583
+  prod_closest1    goal     SO40 d: -0.157 +0.221 +0.677 = +0.741
+  prod_closest1    goal     SO40 e: -0.004 +0.274 +0.504 = +0.774
+  prod_closest1    goal     full a: -6.642 +0.129 -0.734 = -7.246
+  prod_closest1    goal     full d: -0.138 +0.374 +0.920 = +1.157
+  prod_closest1    goal     full e: -0.007 +0.434 +0.796 = +1.223
+  prod_fof10       baseline SO40 a: -11.910 +0.756 -1.225 = -12.380
+  prod_fof10       baseline SO40 d: -0.611 +0.070 +1.255 = +0.714
+  prod_fof10       baseline SO40 e: -0.056 -0.020 +0.713 = +0.638
+  prod_fof10       baseline full a: -18.832 +1.195 -1.937 = -19.574
+  prod_fof10       baseline full d: -0.593 +0.053 +1.566 = +1.026
+  prod_fof10       baseline full e: -0.088 -0.031 +1.127 = +1.008
+  prod_fof10       goal     SO40 a: -23.277 +1.059 -2.127 = -24.345
+  prod_fof10       goal     SO40 d: -0.870 +0.107 +2.629 = +1.865
+  prod_fof10       goal     SO40 e: -0.024 -0.032 +1.912 = +1.856
+  prod_fof10       goal     full a: -36.804 +1.674 -3.363 = -38.493
+  prod_fof10       goal     full d: -0.764 +0.070 +3.545 = +2.851
+  prod_fof10       goal     full e: -0.037 -0.051 +3.022 = +2.934
+  prod_keepnr      baseline SO40 a: +0.781 -0.490 +0.101 = +0.392
+  prod_keepnr      baseline SO40 d: +0.040 -0.078 -0.083 = -0.122
+  prod_keepnr      baseline SO40 e: +0.004 +0.161 -0.077 = +0.088
+  prod_keepnr      baseline full a: +1.235 -0.775 +0.160 = +0.620
+  prod_keepnr      baseline full d: +0.039 +0.022 -0.121 = -0.060
+  prod_keepnr      baseline full e: +0.006 +0.255 -0.121 = +0.140
+  prod_keepnr      goal     SO40 a: -1.154 -0.502 -0.063 = -1.719
+  prod_keepnr      goal     SO40 d: -0.043 +0.150 +0.187 = +0.294
+  prod_keepnr      goal     SO40 e: -0.001 +0.428 +0.097 = +0.524
+  prod_keepnr      goal     full a: -1.824 -0.794 -0.100 = -2.718
+  prod_keepnr      goal     full d: -0.038 +0.417 +0.225 = +0.605
+  prod_keepnr      goal     full e: -0.002 +0.677 +0.153 = +0.828
+  szifi3000_none   baseline SO40 a: -4.896 +0.626 -0.497 = -4.767
+  szifi3000_none   baseline SO40 d: -0.270 +0.050 +0.366 = +0.145
+  szifi3000_none   baseline SO40 e: -0.025 -0.206 +0.192 = -0.039
+  szifi3000_none   baseline full a: -7.742 +0.990 -0.786 = -7.537
+  szifi3000_none   baseline full d: -0.267 -0.068 +0.449 = +0.114
+  szifi3000_none   baseline full e: -0.039 -0.326 +0.303 = -0.061
+  szifi3000_none   goal     SO40 a: -7.803 +0.690 -0.780 = -7.894
+  szifi3000_none   goal     SO40 d: -0.331 +0.223 +0.981 = +0.873
+  szifi3000_none   goal     SO40 e: -0.009 +0.205 +0.725 = +0.921
+  szifi3000_none   goal     full a: -12.338 +1.090 -1.233 = -12.481
+  szifi3000_none   goal     full d: -0.298 +0.327 +1.329 = +1.358
+  szifi3000_none   goal     full e: -0.014 +0.324 +1.147 = +1.456
+  szifi12000_none  baseline SO40 a: -2.604 +0.199 -0.304 = -2.708
+  szifi12000_none  baseline SO40 d: -0.130 +0.114 +0.314 = +0.297
+  szifi12000_none  baseline SO40 e: -0.011 +0.134 +0.192 = +0.315
+  szifi12000_none  baseline full a: -4.117 +0.315 -0.480 = -4.282
+  szifi12000_none  baseline full d: -0.125 +0.183 +0.399 = +0.456
+  szifi12000_none  baseline full e: -0.017 +0.212 +0.303 = +0.498
+  szifi12000_none  goal     SO40 a: -5.242 +0.131 -0.526 = -5.637
+  szifi12000_none  goal     SO40 d: -0.190 +0.336 +0.683 = +0.829
+  szifi12000_none  goal     SO40 e: -0.001 +0.309 +0.497 = +0.804
+  szifi12000_none  goal     full a: -8.288 +0.207 -0.831 = -8.913
+  szifi12000_none  goal     full d: -0.164 +0.497 +0.922 = +1.255
+  szifi12000_none  goal     full e: -0.001 +0.488 +0.785 = +1.272
+kernel convergence (headline, q_cut 5): linearised S8 bias with the even- / odd-tile kernels [R_s; R]:
+  baseline SO40 a: even -1.888 / odd -1.905 (diff +0.017); R: -1.761 / -2.781
+  baseline SO40 d: even +0.177 / odd +0.236 (diff -0.059); R: +0.108 / +0.173
+  baseline SO40 e: even +0.062 / odd +0.136 (diff -0.074); R: -0.134 / +0.210
+  baseline full a: even -2.986 / odd -3.012 (diff +0.026); R: -2.784 / -4.397
+  baseline full d: even +0.199 / odd +0.295 (diff -0.097); R: +0.020 / +0.280
+  baseline full e: even +0.098 / odd +0.215 (diff -0.116); R: -0.213 / +0.331
+  goal     SO40 a: even -4.364 / odd -4.332 (diff -0.032); R: -4.677 / -3.839
+  goal     SO40 d: even +0.728 / odd +0.692 (diff +0.036); R: +0.834 / +0.556
+  goal     SO40 e: even +0.748 / odd +0.731 (diff +0.018); R: +0.974 / +0.900
+  goal     full a: even -6.901 / odd -6.850 (diff -0.051); R: -7.394 / -6.069
+  goal     full d: even +1.133 / odd +1.085 (diff +0.048); R: +1.378 / +1.081
+  goal     full e: even +1.183 / odd +1.156 (diff +0.028); R: +1.539 / +1.423
+total 1090 s; cpu in fits 6023 s
+     1090.77 real      6082.12 user        20.19 sys
+          1301512192  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1484695  page reclaims
+                 554  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 768  voluntary context switches
+              150477  involuntary context switches
+       1036588802843  instructions retired
+        257212840586  cycles elapsed
+          1219252096  peak memory footprint

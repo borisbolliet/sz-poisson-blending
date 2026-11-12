@@ -1,0 +1,287 @@
+==================== baseline / prod (all tiles: 1548; 2010521 halos with q_true >= 1.5)
+  my sigma_Y vs the stored q_true: max |Y/sigma_Y/q_true - 1| = 5.95e-08; q' from Y500, theta500 and the tile's sigma_finder vs the stored q': max |rel| = 5.96e-08 (median 2.0e-08)
+  credited halos (merge none): Q2 tiles 64355, all tiles 307333; credited with q' < 2: 0; min q' of a credited halo 2.011
+  credited halos (merge fof10): Q2 tiles 59710, all tiles 284582; credited with q' < 2: 0; min q' of a credited halo 2.015
+  isolated copies credited with q' < 2: 0; halos with q' >= 1.9 without an isolated copy (Q2 tiles): 0
+  kernel at the halos (bilin): 1 s
+  kernel at the halos (alt): 2 s
+  ---- setup prod_none: 1548 tiles, merge none
+  halos whose blended and isolated outcome differ at e = 5: 38156 of 328534 credited above 5 in either; cells 26 x 105
+     R_s with fine cells: model-weighted q > 5 total -1.362% (standard cells -1.364%); max |dR| over bins with N_exp >= 10: 0.0753
+     R_s with coarse cells: model-weighted q > 5 total -1.363% (standard cells -1.364%); max |dR| over bins with N_exp >= 10: 0.0365
+/Users/boris/GitHub/sz-poisson-blending/verify_real/step3b_fits/f02_datavec.py:233: RuntimeWarning: invalid value encountered in divide
+  f"{np.abs(Net['bilin'] / bd_['Nexp'] - 1)[ok].max():.2e}, alt {np.abs(Net['alt'] / bd_['Nexp'] - 1)[ok].max():.2e}", flush=True)
+  [prod_none q>5] N_det 307333 (build 307333; max |bin diff| 0); N_iso 311579 (build 311579; max |bin diff| 0); N_exp bilin 312188.5 / alt 312122.4 (build 312188.5); max |rel bin diff| (N_exp >= 10): bilin 6.33e-09, alt 3.77e-03
+     my model mu (alt) vs build mu: total -3.00e-04, per bin with mu > 10: max |rel| 7.31e-03; bilinear model: total -2.03e-05, z > 0.1 max |rel| 9.71e-04, z < 0.1 total -3.85e-03
+     N_exp(tiles) / (my model mu x area) - 1 = -0.0193% (-0.11 Poisson sigma); per z bin chi^2 7.1 for 16 bins
+     R (bilin)       vs build, 99 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R (alt)         vs build, 99 bins with N_exp >= 10: max |diff| 0.0037, max |diff|/build error 0.34, rms 0.094
+     R_p             vs build, 99 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R_s (my cells)  vs build, 99 bins with N_exp >= 10: max |diff| 0.0548, max |diff|/build error 1.88, rms 0.633
+     q > 5 totals [%]: R bilin -1.56 +- 0.09; R alt -1.53 +- 0.09; R_p -1.36 +- 0.06; N_iso/N_exp -0.20 +- 0.09; R_s (N_exp weights) -1.36 +- 0.06; R_s (model weights) -1.36 +- 0.06
+     build R_s (model weights) -1.36%; difference mine - build -0.003 pp
+     R_s by coarse z (0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3) [%]: -3.59+-0.63 (build -3.25), -1.32+-0.09 (build -1.31), -1.27+-0.08 (build -1.30), -1.55+-0.15 (build -1.53), -1.72+-0.32 (build -1.65), -1.38+-0.96 (build -1.50)
+     R_s by q bin [%]: -2.33+-0.12 (build -2.32), -0.11+-0.16 (build -0.11), +0.16+-0.21 (build +0.14), +0.35+-0.27 (build +0.37), -0.25+-0.39 (build -0.36), -0.11+-0.54 (build +0.08), -0.78+-1.00 (build -0.70), -0.18+-1.39 (build -0.47), +0.00+-0.00 (build +0.00)
+     bootstrap error per bin, mine / build (R): median 0.997, 5-95% 0.964-1.033
+     bootstrap error per bin, mine / build (R_p): median 0.999, 5-95% 0.944-1.031
+     bootstrap error per bin, mine / build (R_s): median 1.214, 5-95% 0.851-1.454
+     R_p vs my R_s: chi^2 (diagonal, bootstrap errors of the difference) 79.5 for 98 bins
+     R (bilin) vs my R_s: chi^2 (diagonal, bootstrap errors of the difference) 115.7 for 99 bins
+     R_s with fine cells: model-weighted q > 6 total -0.491% (standard cells -0.494%); max |dR| over bins with N_exp >= 10: 0.0389
+     R_s with coarse cells: model-weighted q > 6 total -0.493% (standard cells -0.494%); max |dR| over bins with N_exp >= 10: 0.0445
+  [prod_none q>6] N_det 201773 (build 201773; max |bin diff| 0); N_iso 202773 (build 202773; max |bin diff| 0); N_exp bilin 202727.3 / alt 202696.4 (build 202727.3); max |rel bin diff| (N_exp >= 10): bilin 4.40e-09, alt 4.05e-03
+     my model mu (alt) vs build mu: total -1.91e-04, per bin with mu > 10: max |rel| 6.99e-03; bilinear model: total -2.98e-05, z > 0.1 max |rel| 1.03e-03, z < 0.1 total -4.75e-03
+     N_exp(tiles) / (my model mu x area) - 1 = -0.0057% (-0.03 Poisson sigma); per z bin chi^2 7.9 for 16 bins
+     R (bilin)       vs build, 96 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R (alt)         vs build, 96 bins with N_exp >= 10: max |diff| 0.0041, max |diff|/build error 0.39, rms 0.092
+     R_p             vs build, 96 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R_s (my cells)  vs build, 96 bins with N_exp >= 10: max |diff| 0.0438, max |diff|/build error 2.57, rms 0.849
+     [14 s; peak RSS 3.06 GB]
+  ---- setup prod_fof10: 1548 tiles, merge fof10
+  halos whose blended and isolated outcome differ at e = 5: 56059 of 326110 credited above 5 in either; cells 26 x 105
+  [prod_fof10 q>5] N_det 284582 (build 284582; max |bin diff| 0); N_iso 311579 (build 311579; max |bin diff| 0); N_exp bilin 312188.5 / alt 312122.4 (build 312188.5); max |rel bin diff| (N_exp >= 10): bilin 6.33e-09, alt 3.77e-03
+     my model mu (alt) vs build mu: total -3.00e-04, per bin with mu > 10: max |rel| 7.31e-03; bilinear model: total -2.03e-05, z > 0.1 max |rel| 9.71e-04, z < 0.1 total -3.85e-03
+     N_exp(tiles) / (my model mu x area) - 1 = -0.0193% (-0.11 Poisson sigma); per z bin chi^2 7.1 for 16 bins
+     R (bilin)       vs build, 99 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R (alt)         vs build, 99 bins with N_exp >= 10: max |diff| 0.0037, max |diff|/build error 0.33, rms 0.091
+     R_p             vs build, 99 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R_s (my cells)  vs build, 99 bins with N_exp >= 10: max |diff| 0.0513, max |diff|/build error 2.01, rms 0.648
+     q > 5 totals [%]: R bilin -8.84 +- 0.08; R alt -8.82 +- 0.08; R_p -8.66 +- 0.07; N_iso/N_exp -0.20 +- 0.09; R_s (N_exp weights) -8.65 +- 0.08; R_s (model weights) -8.65 +- 0.07
+     build R_s (model weights) -8.64%; difference mine - build -0.002 pp
+     R_s by coarse z (0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3) [%]: -9.29+-0.71 (build -9.18), -8.01+-0.11 (build -8.01), -8.69+-0.10 (build -8.70), -9.88+-0.19 (build -9.81), -10.33+-0.38 (build -10.50), -10.69+-1.13 (build -10.67)
+     R_s by q bin [%]: -12.52+-0.14 (build -12.51), -4.66+-0.17 (build -4.65), -1.54+-0.22 (build -1.56), -0.24+-0.27 (build -0.21), -0.46+-0.39 (build -0.59), -0.18+-0.55 (build +0.02), -0.78+-1.00 (build -0.70), -0.18+-1.39 (build -0.47), +0.00+-0.00 (build +0.00)
+     bootstrap error per bin, mine / build (R): median 0.998, 5-95% 0.962-1.033
+     bootstrap error per bin, mine / build (R_p): median 1.000, 5-95% 0.944-1.033
+     bootstrap error per bin, mine / build (R_s): median 1.214, 5-95% 0.851-1.453
+     R_p vs my R_s: chi^2 (diagonal, bootstrap errors of the difference) 72.1 for 98 bins
+     R (bilin) vs my R_s: chi^2 (diagonal, bootstrap errors of the difference) 110.0 for 99 bins
+  [prod_fof10 q>6] N_det 191811 (build 191811; max |bin diff| 0); N_iso 202773 (build 202773; max |bin diff| 0); N_exp bilin 202727.3 / alt 202696.4 (build 202727.3); max |rel bin diff| (N_exp >= 10): bilin 4.40e-09, alt 4.05e-03
+     my model mu (alt) vs build mu: total -1.91e-04, per bin with mu > 10: max |rel| 6.99e-03; bilinear model: total -2.98e-05, z > 0.1 max |rel| 1.03e-03, z < 0.1 total -4.75e-03
+     N_exp(tiles) / (my model mu x area) - 1 = -0.0057% (-0.03 Poisson sigma); per z bin chi^2 7.9 for 16 bins
+     R (bilin)       vs build, 96 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R (alt)         vs build, 96 bins with N_exp >= 10: max |diff| 0.0040, max |diff|/build error 0.39, rms 0.089
+     R_p             vs build, 96 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R_s (my cells)  vs build, 96 bins with N_exp >= 10: max |diff| 0.0440, max |diff|/build error 2.58, rms 0.833
+     [6 s; peak RSS 3.08 GB]
+==================== baseline / szifi3000 (q2 tiles: 324; 420832 halos with q_true >= 1.5)
+  my sigma_Y vs the stored q_true: max |Y/sigma_Y/q_true - 1| = 5.95e-08; q' from Y500, theta500 and the tile's sigma_finder vs the stored q': max |rel| = 5.95e-08 (median 2.0e-08)
+  credited halos (merge none): Q2 tiles 53247; credited with q' < 2: 0; min q' of a credited halo 2.036
+  credited halos (merge fof10): Q2 tiles 50115; credited with q' < 2: 0; min q' of a credited halo 2.036
+  isolated copies credited with q' < 2: 0; halos with q' >= 1.9 without an isolated copy (Q2 tiles): 0
+  kernel at the halos (bilin): 0 s
+  kernel at the halos (alt): 0 s
+  ---- setup szifi3000_none: 324 tiles, merge none
+  halos whose blended and isolated outcome differ at e = 5: 7240 of 57916 credited above 5 in either; cells 26 x 105
+     R_s with fine cells: model-weighted q > 5 total -3.770% (standard cells -3.781%); max |dR| over bins with N_exp >= 10: 0.0615
+     R_s with coarse cells: model-weighted q > 5 total -3.791% (standard cells -3.781%); max |dR| over bins with N_exp >= 10: 0.0597
+  [szifi3000_none q>5] N_det 53247 (build 53247; max |bin diff| 0); N_iso 55345 (build 55345; max |bin diff| 0); N_exp bilin 55431.9 / alt 55419.7 (build 55431.9); max |rel bin diff| (N_exp >= 10): bilin 6.35e-09, alt 4.50e-03
+     my model mu (alt) vs build mu: total -2.97e-04, per bin with mu > 10: max |rel| 7.30e-03; bilinear model: total -2.35e-05, z > 0.1 max |rel| 9.95e-04, z < 0.1 total -3.77e-03
+     N_exp(tiles) / (my model mu x area) - 1 = -0.0060% (-0.01 Poisson sigma); per z bin chi^2 5.1 for 16 bins
+     R (bilin)       vs build, 79 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R (alt)         vs build, 79 bins with N_exp >= 10: max |diff| 0.0043, max |diff|/build error 0.15, rms 0.045
+     R_p             vs build, 79 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R_s (my cells)  vs build, 79 bins with N_exp >= 10: max |diff| 0.0477, max |diff|/build error 1.80, rms 0.870
+     q > 5 totals [%]: R bilin -3.94 +- 0.21; R alt -3.92 +- 0.21; R_p -3.79 +- 0.15; N_iso/N_exp -0.16 +- 0.21; R_s (N_exp weights) -3.79 +- 0.16; R_s (model weights) -3.78 +- 0.15
+     build R_s (model weights) -3.78%; difference mine - build +0.003 pp
+     R_s by coarse z (0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3) [%]: -3.35+-1.49 (build -3.05), -3.33+-0.23 (build -3.30), -3.77+-0.22 (build -3.81), -4.54+-0.38 (build -4.78), -7.15+-0.91 (build -6.25), -8.98+-2.49 (build -7.59)
+     R_s by q bin [%]: -5.34+-0.29 (build -5.34), -2.06+-0.38 (build -2.08), -1.13+-0.49 (build -1.15), -0.51+-0.69 (build -0.49), +0.50+-0.89 (build +0.52), -1.19+-1.28 (build -1.16), +2.94+-3.24 (build +1.82), +0.00+-0.00 (build +0.00), +0.00+-0.00 (build +0.00)
+     bootstrap error per bin, mine / build (R): median 0.995, 5-95% 0.957-1.034
+     bootstrap error per bin, mine / build (R_p): median 1.000, 5-95% 0.000-1.042
+     bootstrap error per bin, mine / build (R_s): median 1.229, 5-95% 0.658-1.543
+     R_p vs my R_s: chi^2 (diagonal, bootstrap errors of the difference) 86.8 for 79 bins
+     R (bilin) vs my R_s: chi^2 (diagonal, bootstrap errors of the difference) 48.4 for 79 bins
+     R_s with fine cells: model-weighted q > 6 total -2.263% (standard cells -2.233%); max |dR| over bins with N_exp >= 10: 0.0606
+     R_s with coarse cells: model-weighted q > 6 total -2.239% (standard cells -2.233%); max |dR| over bins with N_exp >= 10: 0.1179
+  [szifi3000_none q>6] N_det 34990 (build 34990; max |bin diff| 0); N_iso 35800 (build 35800; max |bin diff| 0); N_exp bilin 35875.9 / alt 35869.2 (build 35875.9); max |rel bin diff| (N_exp >= 10): bilin 5.34e-09, alt 3.77e-03
+     my model mu (alt) vs build mu: total -2.04e-04, per bin with mu > 10: max |rel| 6.73e-03; bilinear model: total -3.31e-05, z > 0.1 max |rel| 6.89e-04, z < 0.1 total -4.61e-03
+     N_exp(tiles) / (my model mu x area) - 1 = -0.2201% (-0.42 Poisson sigma); per z bin chi^2 8.3 for 16 bins
+     R (bilin)       vs build, 75 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R (alt)         vs build, 75 bins with N_exp >= 10: max |diff| 0.0038, max |diff|/build error 0.15, rms 0.047
+     R_p             vs build, 75 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R_s (my cells)  vs build, 75 bins with N_exp >= 10: max |diff| 0.0674, max |diff|/build error 1.61, rms 0.631
+     [6 s; peak RSS 3.08 GB]
+==================== baseline / prod (all tiles: 1548; 2010521 halos with q_true >= 1.5)
+  my sigma_Y vs the stored q_true: max |Y/sigma_Y/q_true - 1| = 5.95e-08; q' from Y500, theta500 and the tile's sigma_finder vs the stored q': max |rel| = 5.96e-08 (median 2.0e-08)
+  credited halos (merge none): Q2 tiles 64355, all tiles 307333; credited with q' < 2: 0; min q' of a credited halo 2.011
+  credited halos (merge fof10): Q2 tiles 59710, all tiles 284582; credited with q' < 2: 0; min q' of a credited halo 2.015
+  isolated copies credited with q' < 2: 0; halos with q' >= 1.9 without an isolated copy (Q2 tiles): 0
+  kernel at the halos (bilin): 1 s
+  kernel at the halos (alt): 2 s
+  ---- setup prod_none_q2: 324 tiles, merge none
+  halos whose blended and isolated outcome differ at e = 5: 7945 of 68754 credited above 5 in either; cells 26 x 105
+  [prod_none_q2 q>5] N_det 64355 (build 64355; max |bin diff| 0); N_iso 65208 (build 65208; max |bin diff| 0); N_exp bilin 65346.9 / alt 65331.5 (build 65346.9); max |rel bin diff| (N_exp >= 10): bilin 8.03e-09, alt 3.76e-03
+     my model mu (alt) vs build mu: total -3.00e-04, per bin with mu > 10: max |rel| 7.31e-03; bilinear model: total -2.03e-05, z > 0.1 max |rel| 9.71e-04, z < 0.1 total -3.85e-03
+     N_exp(tiles) / (my model mu x area) - 1 = -0.0139% (-0.04 Poisson sigma); per z bin chi^2 4.9 for 16 bins
+     R (bilin)       vs build, 83 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R (alt)         vs build, 83 bins with N_exp >= 10: max |diff| 0.0042, max |diff|/build error 0.15, rms 0.049
+     R_p             vs build, 83 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R_s (my cells)  vs build, 83 bins with N_exp >= 10: max |diff| 0.0760, max |diff|/build error 2.39, rms 0.843
+     q > 5 totals [%]: R bilin -1.52 +- 0.20; R alt -1.49 +- 0.20; R_p -1.31 +- 0.13; N_iso/N_exp -0.21 +- 0.20; R_s (N_exp weights) -1.32 +- 0.13; R_s (model weights) -1.31 +- 0.13
+     build R_s (model weights) -1.31%; difference mine - build -0.005 pp
+     R_s by coarse z (0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3) [%]: -2.92+-1.23 (build -2.22), -1.17+-0.19 (build -1.17), -1.21+-0.20 (build -1.23), -1.72+-0.31 (build -1.75), -2.03+-0.73 (build -1.84), -4.24+-2.39 (build -3.51)
+     R_s by q bin [%]: -2.23+-0.24 (build -2.24), -0.06+-0.33 (build -0.00), -0.05+-0.46 (build -0.11), +0.07+-0.61 (build +0.05), +1.47+-0.88 (build +1.31), -1.54+-1.35 (build -0.99), -2.59+-2.34 (build -2.74), +0.00+-0.00 (build +0.00), +0.00+-0.00 (build +0.00)
+     bootstrap error per bin, mine / build (R): median 0.995, 5-95% 0.963-1.039
+     bootstrap error per bin, mine / build (R_p): median 1.006, 5-95% 0.096-1.035
+     bootstrap error per bin, mine / build (R_s): median 1.246, 5-95% 0.821-1.672
+     R_p vs my R_s: chi^2 (diagonal, bootstrap errors of the difference) 53.3 for 83 bins
+     R (bilin) vs my R_s: chi^2 (diagonal, bootstrap errors of the difference) 96.6 for 83 bins
+  [prod_none_q2 q>6] N_det 42180 (build 42180; max |bin diff| 0); N_iso 42296 (build 42296; max |bin diff| 0); N_exp bilin 42392.0 / alt 42384.9 (build 42392.0); max |rel bin diff| (N_exp >= 10): bilin 8.08e-09, alt 3.36e-03
+     my model mu (alt) vs build mu: total -1.91e-04, per bin with mu > 10: max |rel| 6.99e-03; bilinear model: total -2.98e-05, z > 0.1 max |rel| 1.03e-03, z < 0.1 total -4.75e-03
+     N_exp(tiles) / (my model mu x area) - 1 = -0.0998% (-0.21 Poisson sigma); per z bin chi^2 6.8 for 16 bins
+     R (bilin)       vs build, 81 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R (alt)         vs build, 81 bins with N_exp >= 10: max |diff| 0.0033, max |diff|/build error 0.15, rms 0.045
+     R_p             vs build, 81 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R_s (my cells)  vs build, 81 bins with N_exp >= 10: max |diff| 0.0680, max |diff|/build error 2.41, rms 0.813
+     [11 s; peak RSS 3.08 GB]
+==================== goal / prod (all tiles: 1548; 2949327 halos with q_true >= 1.5)
+  my sigma_Y vs the stored q_true: max |Y/sigma_Y/q_true - 1| = 5.96e-08; q' from Y500, theta500 and the tile's sigma_finder vs the stored q': max |rel| = 5.96e-08 (median 2.0e-08)
+  credited halos (merge none): Q2 tiles 96544, all tiles 462343; credited with q' < 2: 0; min q' of a credited halo 2.008
+  credited halos (merge fof10): Q2 tiles 85833, all tiles 410493; credited with q' < 2: 0; min q' of a credited halo 2.008
+  isolated copies credited with q' < 2: 0; halos with q' >= 1.9 without an isolated copy (Q2 tiles): 0
+  kernel at the halos (bilin): 2 s
+  kernel at the halos (alt): 3 s
+  ---- setup prod_none: 1548 tiles, merge none
+  halos whose blended and isolated outcome differ at e = 5: 63002 of 498761 credited above 5 in either; cells 26 x 105
+     R_s with fine cells: model-weighted q > 5 total -2.076% (standard cells -2.080%); max |dR| over bins with N_exp >= 10: 0.0585
+     R_s with coarse cells: model-weighted q > 5 total -2.079% (standard cells -2.080%); max |dR| over bins with N_exp >= 10: 0.0253
+  [prod_none q>5] N_det 462343 (build 462343; max |bin diff| 0); N_iso 472177 (build 472177; max |bin diff| 0); N_exp bilin 472959.0 / alt 472895.3 (build 472959.0); max |rel bin diff| (N_exp >= 10): bilin 5.42e-09, alt 4.56e-03
+     my model mu (alt) vs build mu: total -2.81e-04, per bin with mu > 10: max |rel| 8.27e-03; bilinear model: total -2.30e-05, z > 0.1 max |rel| 1.03e-03, z < 0.1 total -3.95e-03
+     N_exp(tiles) / (my model mu x area) - 1 = -0.0068% (-0.05 Poisson sigma); per z bin chi^2 7.0 for 16 bins
+     R (bilin)       vs build, 106 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R (alt)         vs build, 106 bins with N_exp >= 10: max |diff| 0.0043, max |diff|/build error 0.40, rms 0.118
+     R_p             vs build, 106 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R_s (my cells)  vs build, 106 bins with N_exp >= 10: max |diff| 0.0305, max |diff|/build error 1.56, rms 0.603
+     q > 5 totals [%]: R bilin -2.24 +- 0.07; R alt -2.23 +- 0.07; R_p -2.08 +- 0.05; N_iso/N_exp -0.17 +- 0.07; R_s (N_exp weights) -2.08 +- 0.05; R_s (model weights) -2.08 +- 0.05
+     build R_s (model weights) -2.08%; difference mine - build -0.001 pp
+     R_s by coarse z (0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3) [%]: -2.64+-0.56 (build -2.61), -2.12+-0.09 (build -2.11), -1.99+-0.07 (build -2.00), -2.19+-0.13 (build -2.19), -2.22+-0.24 (build -2.14), -2.35+-0.66 (build -2.67)
+     R_s by q bin [%]: -3.44+-0.11 (build -3.44), -0.59+-0.14 (build -0.59), +0.17+-0.17 (build +0.16), +0.37+-0.23 (build +0.38), -0.22+-0.31 (build -0.19), -0.71+-0.47 (build -0.81), -0.59+-0.79 (build -0.65), +0.34+-1.35 (build +1.01), +0.34+-1.63 (build +0.16)
+     bootstrap error per bin, mine / build (R): median 1.003, 5-95% 0.969-1.036
+     bootstrap error per bin, mine / build (R_p): median 0.997, 5-95% 0.947-1.038
+     bootstrap error per bin, mine / build (R_s): median 1.218, 5-95% 0.700-1.509
+     R_p vs my R_s: chi^2 (diagonal, bootstrap errors of the difference) 125.9 for 106 bins
+     R (bilin) vs my R_s: chi^2 (diagonal, bootstrap errors of the difference) 189.5 for 106 bins
+     R_s with fine cells: model-weighted q > 6 total -0.907% (standard cells -0.913%); max |dR| over bins with N_exp >= 10: 0.0724
+     R_s with coarse cells: model-weighted q > 6 total -0.915% (standard cells -0.913%); max |dR| over bins with N_exp >= 10: 0.0529
+  [prod_none q>6] N_det 310122 (build 310122; max |bin diff| 0); N_iso 312978 (build 312978; max |bin diff| 0); N_exp bilin 313663.7 / alt 313646.2 (build 313663.7); max |rel bin diff| (N_exp >= 10): bilin 5.51e-09, alt 5.08e-03
+     my model mu (alt) vs build mu: total -1.95e-04, per bin with mu > 10: max |rel| 8.20e-03; bilinear model: total -2.70e-05, z > 0.1 max |rel| 9.69e-04, z < 0.1 total -4.65e-03
+     N_exp(tiles) / (my model mu x area) - 1 = -0.0182% (-0.10 Poisson sigma); per z bin chi^2 8.9 for 16 bins
+     R (bilin)       vs build, 106 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R (alt)         vs build, 106 bins with N_exp >= 10: max |diff| 0.0050, max |diff|/build error 0.21, rms 0.066
+     R_p             vs build, 106 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R_s (my cells)  vs build, 106 bins with N_exp >= 10: max |diff| 0.0647, max |diff|/build error 3.20, rms 0.797
+     [18 s; peak RSS 3.20 GB]
+  ---- setup prod_fof10: 1548 tiles, merge fof10
+  halos whose blended and isolated outcome differ at e = 5: 103832 of 493251 credited above 5 in either; cells 26 x 105
+  [prod_fof10 q>5] N_det 410493 (build 410493; max |bin diff| 0); N_iso 472177 (build 472177; max |bin diff| 0); N_exp bilin 472959.0 / alt 472895.3 (build 472959.0); max |rel bin diff| (N_exp >= 10): bilin 5.42e-09, alt 4.56e-03
+     my model mu (alt) vs build mu: total -2.81e-04, per bin with mu > 10: max |rel| 8.27e-03; bilinear model: total -2.30e-05, z > 0.1 max |rel| 1.03e-03, z < 0.1 total -3.95e-03
+     N_exp(tiles) / (my model mu x area) - 1 = -0.0068% (-0.05 Poisson sigma); per z bin chi^2 7.0 for 16 bins
+     R (bilin)       vs build, 106 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R (alt)         vs build, 106 bins with N_exp >= 10: max |diff| 0.0036, max |diff|/build error 0.38, rms 0.109
+     R_p             vs build, 106 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R_s (my cells)  vs build, 106 bins with N_exp >= 10: max |diff| 0.0284, max |diff|/build error 1.50, rms 0.558
+     q > 5 totals [%]: R bilin -13.21 +- 0.07; R alt -13.20 +- 0.07; R_p -13.06 +- 0.06; N_iso/N_exp -0.17 +- 0.07; R_s (N_exp weights) -13.04 +- 0.07; R_s (model weights) -13.04 +- 0.07
+     build R_s (model weights) -13.04%; difference mine - build -0.002 pp
+     R_s by coarse z (0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3) [%]: -11.68+-0.70 (build -12.07), -12.34+-0.11 (build -12.32), -13.03+-0.09 (build -13.04), -14.14+-0.16 (build -14.11), -14.96+-0.30 (build -15.03), -16.21+-0.79 (build -16.28)
+     R_s by q bin [%]: -18.77+-0.12 (build -18.77), -7.96+-0.16 (build -7.95), -2.98+-0.19 (build -2.99), -0.75+-0.23 (build -0.75), -0.63+-0.32 (build -0.60), -0.94+-0.48 (build -1.04), -0.59+-0.79 (build -0.65), +0.34+-1.35 (build +1.01), +0.34+-1.63 (build +0.16)
+     bootstrap error per bin, mine / build (R): median 1.003, 5-95% 0.966-1.038
+     bootstrap error per bin, mine / build (R_p): median 0.998, 5-95% 0.950-1.035
+     bootstrap error per bin, mine / build (R_s): median 1.226, 5-95% 0.700-1.509
+     R_p vs my R_s: chi^2 (diagonal, bootstrap errors of the difference) 113.0 for 106 bins
+     R (bilin) vs my R_s: chi^2 (diagonal, bootstrap errors of the difference) 194.6 for 106 bins
+  [prod_fof10 q>6] N_det 285961 (build 285961; max |bin diff| 0); N_iso 312978 (build 312978; max |bin diff| 0); N_exp bilin 313663.7 / alt 313646.2 (build 313663.7); max |rel bin diff| (N_exp >= 10): bilin 5.51e-09, alt 5.08e-03
+     my model mu (alt) vs build mu: total -1.95e-04, per bin with mu > 10: max |rel| 8.20e-03; bilinear model: total -2.70e-05, z > 0.1 max |rel| 9.69e-04, z < 0.1 total -4.65e-03
+     N_exp(tiles) / (my model mu x area) - 1 = -0.0182% (-0.10 Poisson sigma); per z bin chi^2 8.9 for 16 bins
+     R (bilin)       vs build, 106 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R (alt)         vs build, 106 bins with N_exp >= 10: max |diff| 0.0048, max |diff|/build error 0.20, rms 0.063
+     R_p             vs build, 106 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R_s (my cells)  vs build, 106 bins with N_exp >= 10: max |diff| 0.0647, max |diff|/build error 3.20, rms 0.823
+     [6 s; peak RSS 3.26 GB]
+==================== goal / szifi3000 (q2 tiles: 324; 618269 halos with q_true >= 1.5)
+  my sigma_Y vs the stored q_true: max |Y/sigma_Y/q_true - 1| = 5.96e-08; q' from Y500, theta500 and the tile's sigma_finder vs the stored q': max |rel| = 5.95e-08 (median 2.0e-08)
+  credited halos (merge none): Q2 tiles 75941; credited with q' < 2: 0; min q' of a credited halo 2.075
+  credited halos (merge fof10): Q2 tiles 69572; credited with q' < 2: 0; min q' of a credited halo 2.075
+  isolated copies credited with q' < 2: 0; halos with q' >= 1.9 without an isolated copy (Q2 tiles): 0
+  kernel at the halos (bilin): 0 s
+  kernel at the halos (alt): 1 s
+  ---- setup szifi3000_none: 324 tiles, merge none
+  halos whose blended and isolated outcome differ at e = 5: 11282 of 83554 credited above 5 in either; cells 26 x 105
+     R_s with fine cells: model-weighted q > 5 total -4.931% (standard cells -4.937%); max |dR| over bins with N_exp >= 10: 0.0589
+     R_s with coarse cells: model-weighted q > 5 total -4.927% (standard cells -4.937%); max |dR| over bins with N_exp >= 10: 0.1158
+  [szifi3000_none q>5] N_det 75941 (build 75941; max |bin diff| 0); N_iso 79885 (build 79885; max |bin diff| 0); N_exp bilin 80094.0 / alt 80081.6 (build 80094.0); max |rel bin diff| (N_exp >= 10): bilin 7.87e-09, alt 4.39e-03
+     my model mu (alt) vs build mu: total -2.93e-04, per bin with mu > 10: max |rel| 8.34e-03; bilinear model: total -2.54e-05, z > 0.1 max |rel| 9.40e-04, z < 0.1 total -3.86e-03
+     N_exp(tiles) / (my model mu x area) - 1 = +0.0234% (+0.07 Poisson sigma); per z bin chi^2 5.1 for 16 bins
+     R (bilin)       vs build, 87 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R (alt)         vs build, 87 bins with N_exp >= 10: max |diff| 0.0037, max |diff|/build error 0.16, rms 0.061
+     R_p             vs build, 87 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R_s (my cells)  vs build, 87 bins with N_exp >= 10: max |diff| 0.0952, max |diff|/build error 2.24, rms 0.650
+     q > 5 totals [%]: R bilin -5.19 +- 0.17; R alt -5.17 +- 0.17; R_p -4.94 +- 0.14; N_iso/N_exp -0.26 +- 0.18; R_s (N_exp weights) -4.94 +- 0.14; R_s (model weights) -4.94 +- 0.14
+     build R_s (model weights) -4.93%; difference mine - build -0.007 pp
+     R_s by coarse z (0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3) [%]: -5.80+-1.26 (build -5.17), -4.42+-0.19 (build -4.39), -4.99+-0.19 (build -4.96), -5.60+-0.31 (build -5.72), -6.54+-0.63 (build -6.57), -7.62+-1.87 (build -7.70)
+     R_s by q bin [%]: -7.31+-0.24 (build -7.30), -2.37+-0.35 (build -2.35), -1.19+-0.42 (build -1.21), +0.30+-0.49 (build +0.25), -1.45+-0.71 (build -1.35), +0.29+-0.90 (build +0.20), -0.53+-0.83 (build -0.61), +0.00+-0.00 (build +0.00), +0.00+-0.00 (build +0.00)
+     bootstrap error per bin, mine / build (R): median 0.998, 5-95% 0.968-1.039
+     bootstrap error per bin, mine / build (R_p): median 0.997, 5-95% 0.000-1.039
+     bootstrap error per bin, mine / build (R_s): median 1.227, 5-95% 0.461-1.469
+     R_p vs my R_s: chi^2 (diagonal, bootstrap errors of the difference) 66.3 for 86 bins
+     R (bilin) vs my R_s: chi^2 (diagonal, bootstrap errors of the difference) 87.6 for 87 bins
+     R_s with fine cells: model-weighted q > 6 total -2.938% (standard cells -2.976%); max |dR| over bins with N_exp >= 10: 0.0530
+     R_s with coarse cells: model-weighted q > 6 total -2.981% (standard cells -2.976%); max |dR| over bins with N_exp >= 10: 0.0415
+  [szifi3000_none q>6] N_det 50970 (build 50970; max |bin diff| 0); N_iso 52542 (build 52542; max |bin diff| 0); N_exp bilin 52775.8 / alt 52771.3 (build 52775.8); max |rel bin diff| (N_exp >= 10): bilin 9.30e-09, alt 4.52e-03
+     my model mu (alt) vs build mu: total -2.08e-04, per bin with mu > 10: max |rel| 8.04e-03; bilinear model: total -3.10e-05, z > 0.1 max |rel| 1.00e-03, z < 0.1 total -4.56e-03
+     N_exp(tiles) / (my model mu x area) - 1 = +0.0151% (+0.03 Poisson sigma); per z bin chi^2 5.3 for 16 bins
+     R (bilin)       vs build, 84 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R (alt)         vs build, 84 bins with N_exp >= 10: max |diff| 0.0051, max |diff|/build error 0.14, rms 0.040
+     R_p             vs build, 84 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R_s (my cells)  vs build, 84 bins with N_exp >= 10: max |diff| 0.0463, max |diff|/build error 1.77, rms 0.619
+     [6 s; peak RSS 3.26 GB]
+==================== goal / prod (all tiles: 1548; 2949327 halos with q_true >= 1.5)
+  my sigma_Y vs the stored q_true: max |Y/sigma_Y/q_true - 1| = 5.96e-08; q' from Y500, theta500 and the tile's sigma_finder vs the stored q': max |rel| = 5.96e-08 (median 2.0e-08)
+  credited halos (merge none): Q2 tiles 96544, all tiles 462343; credited with q' < 2: 0; min q' of a credited halo 2.008
+  credited halos (merge fof10): Q2 tiles 85833, all tiles 410493; credited with q' < 2: 0; min q' of a credited halo 2.008
+  isolated copies credited with q' < 2: 0; halos with q' >= 1.9 without an isolated copy (Q2 tiles): 0
+  kernel at the halos (bilin): 2 s
+  kernel at the halos (alt): 3 s
+  ---- setup prod_none_q2: 324 tiles, merge none
+  halos whose blended and isolated outcome differ at e = 5: 13304 of 104287 credited above 5 in either; cells 26 x 105
+  [prod_none_q2 q>5] N_det 96544 (build 96544; max |bin diff| 0); N_iso 98726 (build 98726; max |bin diff| 0); N_exp bilin 98986.5 / alt 98972.5 (build 98986.5); max |rel bin diff| (N_exp >= 10): bilin 6.67e-09, alt 3.87e-03
+     my model mu (alt) vs build mu: total -2.81e-04, per bin with mu > 10: max |rel| 8.27e-03; bilinear model: total -2.30e-05, z > 0.1 max |rel| 1.03e-03, z < 0.1 total -3.95e-03
+     N_exp(tiles) / (my model mu x area) - 1 = -0.0125% (-0.04 Poisson sigma); per z bin chi^2 5.3 for 16 bins
+     R (bilin)       vs build, 91 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R (alt)         vs build, 91 bins with N_exp >= 10: max |diff| 0.0043, max |diff|/build error 0.19, rms 0.058
+     R_p             vs build, 91 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R_s (my cells)  vs build, 91 bins with N_exp >= 10: max |diff| 0.0705, max |diff|/build error 1.83, rms 0.627
+     q > 5 totals [%]: R bilin -2.47 +- 0.16; R alt -2.45 +- 0.16; R_p -2.21 +- 0.12; N_iso/N_exp -0.26 +- 0.16; R_s (N_exp weights) -2.22 +- 0.12; R_s (model weights) -2.22 +- 0.12
+     build R_s (model weights) -2.21%; difference mine - build -0.005 pp
+     R_s by coarse z (0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3) [%]: -2.85+-1.16 (build -2.76), -2.32+-0.18 (build -2.28), -2.02+-0.15 (build -2.04), -2.48+-0.26 (build -2.52), -2.42+-0.49 (build -2.25), -2.10+-1.30 (build -2.28)
+     R_s by q bin [%]: -3.54+-0.24 (build -3.52), -1.12+-0.33 (build -1.14), +0.71+-0.37 (build +0.70), +0.40+-0.53 (build +0.33), -0.43+-0.70 (build -0.49), -1.21+-0.91 (build -1.10), +0.09+-1.04 (build -0.12), +0.00+-0.00 (build +0.00), +0.00+-0.00 (build +0.00)
+     bootstrap error per bin, mine / build (R): median 1.000, 5-95% 0.958-1.035
+     bootstrap error per bin, mine / build (R_p): median 0.992, 5-95% 0.900-1.025
+     bootstrap error per bin, mine / build (R_s): median 1.217, 5-95% 0.577-1.547
+     R_p vs my R_s: chi^2 (diagonal, bootstrap errors of the difference) 62.5 for 91 bins
+     R (bilin) vs my R_s: chi^2 (diagonal, bootstrap errors of the difference) 103.6 for 91 bins
+  [prod_none_q2 q>6] N_det 64832 (build 64832; max |bin diff| 0); N_iso 65503 (build 65503; max |bin diff| 0); N_exp bilin 65668.8 / alt 65665.1 (build 65668.8); max |rel bin diff| (N_exp >= 10): bilin 5.32e-09, alt 2.94e-03
+     my model mu (alt) vs build mu: total -1.95e-04, per bin with mu > 10: max |rel| 8.20e-03; bilinear model: total -2.70e-05, z > 0.1 max |rel| 9.69e-04, z < 0.1 total -4.65e-03
+     N_exp(tiles) / (my model mu x area) - 1 = +0.0096% (+0.02 Poisson sigma); per z bin chi^2 5.3 for 16 bins
+     R (bilin)       vs build, 85 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R (alt)         vs build, 85 bins with N_exp >= 10: max |diff| 0.0030, max |diff|/build error 0.10, rms 0.036
+     R_p             vs build, 85 bins with N_exp >= 10: max |diff| 0.0000, max |diff|/build error 0.00, rms 0.000
+     R_s (my cells)  vs build, 85 bins with N_exp >= 10: max |diff| 0.0507, max |diff|/build error 1.84, rms 0.630
+     [13 s; peak RSS 3.26 GB]
+done [80 s]; peak RSS 3.26 GB
+       81.07 real        65.87 user         5.12 sys
+          3260989440  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              700428  page reclaims
+                  85  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               70897  voluntary context switches
+               42711  involuntary context switches
+        552159181463  instructions retired
+        214675747109  cycles elapsed
+          3006882368  peak memory footprint

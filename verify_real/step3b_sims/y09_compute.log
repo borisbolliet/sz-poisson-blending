@@ -1,0 +1,17 @@
+run                                 wall [s]   CPU [s]  parent max RSS [GB]  worker peak RSS [GB] swaps
+y01_bench                                102       102                 1.65                   nan 0
+y02_szifi                                648      1922                 1.41                  1.41 0
+y02_whitened                            1826      5314                 1.42                  1.42 0
+y02_whitened_b                          1665      4953                 1.39                  1.39 0
+y03_inject                              2020      5652                 1.08                  1.08 0
+y05_kernel_szifi                          10        10                 0.55                   nan 0
+y05_kernel_whitened                       71        70                 2.47                   nan 0
+y06_datavec_szifi                         32        32                 0.67                   nan 0
+y06_datavec_whitened                     247       247                 3.26                   nan 0
+y07_fits_szifi                           541       532                 1.94                   nan 0
+y07_fits_whitened                        529      1488                 2.12                   nan 0
+y08_validate                               3         2                 0.39                   nan 0
+y11_extra                                  5         5                 1.05                   nan 0
+y12_q4check                              654       653                 1.11                   nan 0
+total                                   8354     20982   (2.32 h wall summed, 5.83 CPU-h)
+Pooled runs used 3 worker processes (1 thread each); the largest concurrent bound is 3 x worker peak + parent.

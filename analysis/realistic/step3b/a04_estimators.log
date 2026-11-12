@@ -1,0 +1,131 @@
+==== prod_none baseline (1548 tiles), q_cut 5: linearised S8 bias [sigma]; R_s - R_p paired over the build's 2,000 tile-bootstrap resamples
+   SO40 a: R -2.395, R_p -2.157 +- 0.110, R_s -2.144 +- 0.108; R_s - R_p +0.012 +- 0.014 (+0.9 sigma)
+   SO40 d: R +0.425, R_p +0.342 +- 0.063, R_s +0.344 +- 0.055; R_s - R_p +0.002 +- 0.027 (+0.1 sigma)
+   SO40 e: R +0.609, R_p +0.433 +- 0.112, R_s +0.390 +- 0.088; R_s - R_p -0.043 +- 0.052 (-0.8 sigma)
+   full a: R -3.786, R_p -3.410 +- 0.174, R_s -3.390 +- 0.171; R_s - R_p +0.020 +- 0.023 (+0.9 sigma)
+   full d: R +0.744, R_p +0.565 +- 0.115, R_s +0.542 +- 0.096; R_s - R_p -0.023 +- 0.052 (-0.5 sigma)
+   full e: R +0.963, R_p +0.684 +- 0.177, R_s +0.616 +- 0.139; R_s - R_p -0.068 +- 0.083 (-0.8 sigma)
+   rebuilt R_s on the build's grid vs the stored R_s: max |diff| over bins with mu > 10: 5.11e-10
+   SO40 a: R_p -2.157 +- 0.107 (jackknife) | build (25 theta x 108 q'): -2.144 (- build grid +0.000 +- 0.000; - R_p +0.012 +- 0.013) | q' x2 finer: -2.145 (- build grid -0.001 +- 0.002; - R_p +0.012 +- 0.013) | theta x2 finer: -2.143 (- build grid +0.002 +- 0.006; - R_p +0.014 +- 0.011) | both finer: -2.143 (- build grid +0.002 +- 0.008; - R_p +0.014 +- 0.014) | q' x2 coarser: -2.146 (- build grid -0.002 +- 0.002; - R_p +0.011 +- 0.012)
+   SO40 d: R_p +0.342 +- 0.082 (jackknife) | build (25 theta x 108 q'): +0.344 (- build grid +0.000 +- 0.000; - R_p +0.002 +- 0.022) | q' x2 finer: +0.347 (- build grid +0.004 +- 0.004; - R_p +0.005 +- 0.023) | theta x2 finer: +0.350 (- build grid +0.006 +- 0.012; - R_p +0.008 +- 0.020) | both finer: +0.353 (- build grid +0.009 +- 0.016; - R_p +0.010 +- 0.021) | q' x2 coarser: +0.343 (- build grid -0.001 +- 0.002; - R_p +0.001 +- 0.022)
+   SO40 e: R_p +0.433 +- 0.125 (jackknife) | build (25 theta x 108 q'): +0.390 (- build grid +0.000 +- 0.000; - R_p -0.043 +- 0.044) | q' x2 finer: +0.393 (- build grid +0.003 +- 0.006; - R_p -0.039 +- 0.045) | theta x2 finer: +0.410 (- build grid +0.021 +- 0.025; - R_p -0.022 +- 0.033) | both finer: +0.412 (- build grid +0.022 +- 0.032; - R_p -0.021 +- 0.037) | q' x2 coarser: +0.387 (- build grid -0.002 +- 0.003; - R_p -0.045 +- 0.046)
+   full d: R_p +0.565 +- 0.141 (jackknife) | build (25 theta x 108 q'): +0.542 (- build grid +0.000 +- 0.000; - R_p -0.023 +- 0.041) | q' x2 finer: +0.547 (- build grid +0.005 +- 0.007; - R_p -0.018 +- 0.042) | theta x2 finer: +0.559 (- build grid +0.018 +- 0.025; - R_p -0.006 +- 0.032) | both finer: +0.562 (- build grid +0.021 +- 0.033; - R_p -0.003 +- 0.035) | q' x2 coarser: +0.539 (- build grid -0.002 +- 0.004; - R_p -0.026 +- 0.043)
+   full e: R_p +0.684 +- 0.197 (jackknife) | build (25 theta x 108 q'): +0.616 (- build grid +0.000 +- 0.000; - R_p -0.068 +- 0.070) | q' x2 finer: +0.622 (- build grid +0.006 +- 0.010; - R_p -0.062 +- 0.071) | theta x2 finer: +0.649 (- build grid +0.033 +- 0.040; - R_p -0.035 +- 0.053) | both finer: +0.651 (- build grid +0.035 +- 0.051; - R_p -0.033 +- 0.058) | q' x2 coarser: +0.612 (- build grid -0.004 +- 0.005; - R_p -0.072 +- 0.073)
+   [9 s; peak RSS 1.43 GB]
+==== prod_none goal (1548 tiles), q_cut 5: linearised S8 bias [sigma]; R_s - R_p paired over the build's 2,000 tile-bootstrap resamples
+   SO40 a: R -4.002, R_p -4.134 +- 0.121, R_s -4.137 +- 0.120; R_s - R_p -0.002 +- 0.013 (-0.2 sigma)
+   SO40 d: R +0.806, R_p +0.624 +- 0.078, R_s +0.610 +- 0.068; R_s - R_p -0.014 +- 0.030 (-0.5 sigma)
+   SO40 e: R +1.121, R_p +0.612 +- 0.126, R_s +0.583 +- 0.102; R_s - R_p -0.030 +- 0.054 (-0.6 sigma)
+   full a: R -6.327, R_p -6.537 +- 0.191, R_s -6.541 +- 0.190; R_s - R_p -0.004 +- 0.021 (-0.2 sigma)
+   full d: R +1.447, R_p +0.949 +- 0.148, R_s +0.916 +- 0.125; R_s - R_p -0.032 +- 0.061 (-0.5 sigma)
+   full e: R +1.773, R_p +0.968 +- 0.199, R_s +0.921 +- 0.161; R_s - R_p -0.047 +- 0.085 (-0.6 sigma)
+   rebuilt R_s on the build's grid vs the stored R_s: max |diff| over bins with mu > 10: 6.04e-10
+   SO40 a: R_p -4.134 +- 0.126 (jackknife) | build (25 theta x 108 q'): -4.137 (- build grid +0.000 +- 0.000; - R_p -0.002 +- 0.019) | q' x2 finer: -4.133 (- build grid +0.004 +- 0.002; - R_p +0.002 +- 0.018) | theta x2 finer: -4.143 (- build grid -0.006 +- 0.005; - R_p -0.009 +- 0.018) | both finer: -4.141 (- build grid -0.005 +- 0.005; - R_p -0.007 +- 0.018) | q' x2 coarser: -4.143 (- build grid -0.006 +- 0.003; - R_p -0.009 +- 0.018)
+   SO40 d: R_p +0.624 +- 0.075 (jackknife) | build (25 theta x 108 q'): +0.610 (- build grid +0.000 +- 0.000; - R_p -0.014 +- 0.034) | q' x2 finer: +0.604 (- build grid -0.006 +- 0.005; - R_p -0.020 +- 0.035) | theta x2 finer: +0.623 (- build grid +0.014 +- 0.015; - R_p -0.001 +- 0.027) | both finer: +0.623 (- build grid +0.013 +- 0.018; - R_p -0.002 +- 0.030) | q' x2 coarser: +0.613 (- build grid +0.003 +- 0.006; - R_p -0.011 +- 0.032)
+   SO40 e: R_p +0.612 +- 0.136 (jackknife) | build (25 theta x 108 q'): +0.583 (- build grid +0.000 +- 0.000; - R_p -0.030 +- 0.065) | q' x2 finer: +0.576 (- build grid -0.007 +- 0.008; - R_p -0.037 +- 0.065) | theta x2 finer: +0.601 (- build grid +0.019 +- 0.026; - R_p -0.011 +- 0.052) | both finer: +0.601 (- build grid +0.019 +- 0.029; - R_p -0.011 +- 0.056) | q' x2 coarser: +0.587 (- build grid +0.004 +- 0.009; - R_p -0.026 +- 0.061)
+   full d: R_p +0.949 +- 0.154 (jackknife) | build (25 theta x 108 q'): +0.916 (- build grid +0.000 +- 0.000; - R_p -0.032 +- 0.072) | q' x2 finer: +0.906 (- build grid -0.010 +- 0.010; - R_p -0.042 +- 0.073) | theta x2 finer: +0.940 (- build grid +0.024 +- 0.031; - R_p -0.008 +- 0.057) | both finer: +0.940 (- build grid +0.024 +- 0.035; - R_p -0.009 +- 0.062) | q' x2 coarser: +0.922 (- build grid +0.005 +- 0.011; - R_p -0.027 +- 0.067)
+   full e: R_p +0.968 +- 0.215 (jackknife) | build (25 theta x 108 q'): +0.921 (- build grid +0.000 +- 0.000; - R_p -0.047 +- 0.102) | q' x2 finer: +0.910 (- build grid -0.011 +- 0.012; - R_p -0.058 +- 0.103) | theta x2 finer: +0.951 (- build grid +0.030 +- 0.042; - R_p -0.017 +- 0.082) | both finer: +0.951 (- build grid +0.029 +- 0.046; - R_p -0.018 +- 0.088) | q' x2 coarser: +0.928 (- build grid +0.007 +- 0.014; - R_p -0.040 +- 0.096)
+   [9 s; peak RSS 2.57 GB]
+==== szifi3000_none baseline (324 tiles), q_cut 5: linearised S8 bias [sigma]; R_s - R_p paired over the build's 2,000 tile-bootstrap resamples
+   SO40 a: R -4.959, R_p -4.746 +- 0.261, R_s -4.767 +- 0.259; R_s - R_p -0.021 +- 0.041 (-0.5 sigma)
+   SO40 d: R -0.031, R_p -0.040 +- 0.148, R_s +0.145 +- 0.125; R_s - R_p +0.185 +- 0.065 (+2.9 sigma)
+   SO40 e: R -0.272, R_p -0.370 +- 0.267, R_s -0.039 +- 0.192; R_s - R_p +0.331 +- 0.134 (+2.5 sigma)
+   full a: R -7.841, R_p -7.504 +- 0.413, R_s -7.537 +- 0.410; R_s - R_p -0.034 +- 0.065 (-0.5 sigma)
+   full d: R -0.179, R_p -0.243 +- 0.273, R_s +0.114 +- 0.212; R_s - R_p +0.357 +- 0.130 (+2.7 sigma)
+   full e: R -0.430, R_p -0.585 +- 0.423, R_s -0.061 +- 0.304; R_s - R_p +0.524 +- 0.211 (+2.5 sigma)
+   rebuilt R_s on the build's grid vs the stored R_s: max |diff| over bins with mu > 10: 1.47e-09
+   SO40 a: R_p -4.746 +- 0.201 (jackknife) | build (25 theta x 108 q'): -4.767 (- build grid +0.000 +- 0.000; - R_p -0.021 +- 0.045) | q' x2 finer: -4.766 (- build grid +0.001 +- 0.014; - R_p -0.020 +- 0.047) | theta x2 finer: -4.761 (- build grid +0.006 +- 0.017; - R_p -0.015 +- 0.046) | both finer: -4.756 (- build grid +0.010 +- 0.021; - R_p -0.011 +- 0.045) | q' x2 coarser: -4.783 (- build grid -0.016 +- 0.010; - R_p -0.037 +- 0.047)
+   SO40 d: R_p -0.040 +- 0.118 (jackknife) | build (25 theta x 108 q'): +0.145 (- build grid +0.000 +- 0.000; - R_p +0.185 +- 0.057) | q' x2 finer: +0.144 (- build grid -0.001 +- 0.021; - R_p +0.184 +- 0.057) | theta x2 finer: +0.080 (- build grid -0.065 +- 0.028; - R_p +0.120 +- 0.053) | both finer: +0.088 (- build grid -0.056 +- 0.043; - R_p +0.129 +- 0.053) | q' x2 coarser: +0.148 (- build grid +0.003 +- 0.015; - R_p +0.188 +- 0.058)
+   SO40 e: R_p -0.370 +- 0.231 (jackknife) | build (25 theta x 108 q'): -0.039 (- build grid +0.000 +- 0.000; - R_p +0.331 +- 0.138) | q' x2 finer: -0.044 (- build grid -0.005 +- 0.035; - R_p +0.326 +- 0.133) | theta x2 finer: -0.151 (- build grid -0.113 +- 0.055; - R_p +0.219 +- 0.112) | both finer: -0.148 (- build grid -0.109 +- 0.079; - R_p +0.222 +- 0.115) | q' x2 coarser: -0.031 (- build grid +0.007 +- 0.023; - R_p +0.339 +- 0.136)
+   full d: R_p -0.243 +- 0.227 (jackknife) | build (25 theta x 108 q'): +0.114 (- build grid +0.000 +- 0.000; - R_p +0.357 +- 0.126) | q' x2 finer: +0.110 (- build grid -0.004 +- 0.038; - R_p +0.353 +- 0.122) | theta x2 finer: -0.009 (- build grid -0.123 +- 0.055; - R_p +0.234 +- 0.105) | both finer: +0.001 (- build grid -0.113 +- 0.083; - R_p +0.243 +- 0.107) | q' x2 coarser: +0.121 (- build grid +0.007 +- 0.027; - R_p +0.363 +- 0.125)
+   full e: R_p -0.585 +- 0.365 (jackknife) | build (25 theta x 108 q'): -0.061 (- build grid +0.000 +- 0.000; - R_p +0.524 +- 0.219) | q' x2 finer: -0.069 (- build grid -0.008 +- 0.055; - R_p +0.516 +- 0.211) | theta x2 finer: -0.240 (- build grid -0.178 +- 0.086; - R_p +0.346 +- 0.177) | both finer: -0.234 (- build grid -0.173 +- 0.125; - R_p +0.351 +- 0.182) | q' x2 coarser: -0.050 (- build grid +0.012 +- 0.037; - R_p +0.536 +- 0.215)
+   [6 s; peak RSS 2.57 GB]
+==== szifi3000_none goal (324 tiles), q_cut 5: linearised S8 bias [sigma]; R_s - R_p paired over the build's 2,000 tile-bootstrap resamples
+   SO40 a: R -7.633, R_p -7.799 +- 0.250, R_s -7.894 +- 0.256; R_s - R_p -0.095 +- 0.051 (-1.9 sigma)
+   SO40 d: R +0.841, R_p +0.893 +- 0.160, R_s +0.873 +- 0.138; R_s - R_p -0.020 +- 0.073 (-0.3 sigma)
+   SO40 e: R +1.066, R_p +0.998 +- 0.273, R_s +0.921 +- 0.211; R_s - R_p -0.077 +- 0.139 (-0.6 sigma)
+   full a: R -12.068, R_p -12.331 +- 0.396, R_s -12.481 +- 0.405; R_s - R_p -0.150 +- 0.081 (-1.9 sigma)
+   full d: R +1.422, R_p +1.424 +- 0.302, R_s +1.358 +- 0.247; R_s - R_p -0.066 +- 0.146 (-0.5 sigma)
+   full e: R +1.685, R_p +1.578 +- 0.431, R_s +1.456 +- 0.334; R_s - R_p -0.121 +- 0.220 (-0.6 sigma)
+   rebuilt R_s on the build's grid vs the stored R_s: max |diff| over bins with mu > 10: 9.69e-10
+   SO40 a: R_p -7.799 +- 0.289 (jackknife) | build (25 theta x 108 q'): -7.894 (- build grid +0.000 +- 0.000; - R_p -0.095 +- 0.052) | q' x2 finer: -7.884 (- build grid +0.010 +- 0.012; - R_p -0.085 +- 0.051) | theta x2 finer: -7.901 (- build grid -0.007 +- 0.016; - R_p -0.102 +- 0.046) | both finer: -7.895 (- build grid -0.001 +- 0.023; - R_p -0.096 +- 0.047) | q' x2 coarser: -7.911 (- build grid -0.017 +- 0.009; - R_p -0.112 +- 0.051)
+   SO40 d: R_p +0.893 +- 0.204 (jackknife) | build (25 theta x 108 q'): +0.873 (- build grid +0.000 +- 0.000; - R_p -0.020 +- 0.095) | q' x2 finer: +0.870 (- build grid -0.003 +- 0.016; - R_p -0.022 +- 0.095) | theta x2 finer: +0.892 (- build grid +0.019 +- 0.036; - R_p -0.000 +- 0.079) | both finer: +0.896 (- build grid +0.023 +- 0.044; - R_p +0.003 +- 0.080) | q' x2 coarser: +0.866 (- build grid -0.007 +- 0.013; - R_p -0.026 +- 0.096)
+   SO40 e: R_p +0.998 +- 0.321 (jackknife) | build (25 theta x 108 q'): +0.921 (- build grid +0.000 +- 0.000; - R_p -0.077 +- 0.153) | q' x2 finer: +0.913 (- build grid -0.008 +- 0.027; - R_p -0.085 +- 0.159) | theta x2 finer: +0.976 (- build grid +0.055 +- 0.062; - R_p -0.022 +- 0.126) | both finer: +0.974 (- build grid +0.053 +- 0.065; - R_p -0.024 +- 0.132) | q' x2 coarser: +0.922 (- build grid +0.001 +- 0.020; - R_p -0.076 +- 0.156)
+   full d: R_p +1.424 +- 0.374 (jackknife) | build (25 theta x 108 q'): +1.358 (- build grid +0.000 +- 0.000; - R_p -0.066 +- 0.178) | q' x2 finer: +1.350 (- build grid -0.008 +- 0.031; - R_p -0.074 +- 0.182) | theta x2 finer: +1.410 (- build grid +0.052 +- 0.071; - R_p -0.014 +- 0.144) | both finer: +1.412 (- build grid +0.054 +- 0.078; - R_p -0.013 +- 0.149) | q' x2 coarser: +1.353 (- build grid -0.005 +- 0.024; - R_p -0.072 +- 0.180)
+   full e: R_p +1.578 +- 0.507 (jackknife) | build (25 theta x 108 q'): +1.456 (- build grid +0.000 +- 0.000; - R_p -0.121 +- 0.242) | q' x2 finer: +1.443 (- build grid -0.013 +- 0.043; - R_p -0.135 +- 0.252) | theta x2 finer: +1.543 (- build grid +0.086 +- 0.098; - R_p -0.035 +- 0.199) | both finer: +1.540 (- build grid +0.083 +- 0.102; - R_p -0.038 +- 0.209) | q' x2 coarser: +1.458 (- build grid +0.001 +- 0.032; - R_p -0.120 +- 0.246)
+   [6 s; peak RSS 2.57 GB]
+==== szifi12000_none baseline (324 tiles), q_cut 5: linearised S8 bias [sigma]; R_s - R_p paired over the build's 2,000 tile-bootstrap resamples
+   SO40 a: R -3.027, R_p -2.685 +- 0.247, R_s -2.708 +- 0.249; R_s - R_p -0.022 +- 0.048 (-0.5 sigma)
+   SO40 d: R +0.256, R_p +0.283 +- 0.139, R_s +0.297 +- 0.118; R_s - R_p +0.014 +- 0.063 (+0.2 sigma)
+   SO40 e: R +0.125, R_p +0.348 +- 0.266, R_s +0.315 +- 0.184; R_s - R_p -0.033 +- 0.161 (-0.2 sigma)
+   full a: R -4.786, R_p -4.246 +- 0.391, R_s -4.282 +- 0.393; R_s - R_p -0.036 +- 0.076 (-0.5 sigma)
+   full d: R +0.308, R_p +0.463 +- 0.262, R_s +0.456 +- 0.206; R_s - R_p -0.006 +- 0.135 (-0.0 sigma)
+   full e: R +0.198, R_p +0.550 +- 0.420, R_s +0.498 +- 0.291; R_s - R_p -0.052 +- 0.255 (-0.2 sigma)
+   rebuilt R_s on the build's grid vs the stored R_s: max |diff| over bins with mu > 10: 1.61e-09
+   SO40 a: R_p -2.685 +- 0.156 (jackknife) | build (25 theta x 108 q'): -2.708 (- build grid +0.000 +- 0.000; - R_p -0.022 +- 0.034) | q' x2 finer: -2.722 (- build grid -0.014 +- 0.008; - R_p -0.037 +- 0.039) | theta x2 finer: -2.714 (- build grid -0.006 +- 0.012; - R_p -0.029 +- 0.029) | both finer: -2.724 (- build grid -0.016 +- 0.015; - R_p -0.038 +- 0.037) | q' x2 coarser: -2.707 (- build grid +0.001 +- 0.006; - R_p -0.022 +- 0.032)
+   SO40 d: R_p +0.283 +- 0.144 (jackknife) | build (25 theta x 108 q'): +0.297 (- build grid +0.000 +- 0.000; - R_p +0.014 +- 0.061) | q' x2 finer: +0.320 (- build grid +0.023 +- 0.015; - R_p +0.037 +- 0.063) | theta x2 finer: +0.281 (- build grid -0.016 +- 0.028; - R_p -0.002 +- 0.046) | both finer: +0.305 (- build grid +0.008 +- 0.039; - R_p +0.022 +- 0.049) | q' x2 coarser: +0.300 (- build grid +0.003 +- 0.012; - R_p +0.017 +- 0.058)
+   SO40 e: R_p +0.348 +- 0.225 (jackknife) | build (25 theta x 108 q'): +0.315 (- build grid +0.000 +- 0.000; - R_p -0.033 +- 0.120) | q' x2 finer: +0.347 (- build grid +0.032 +- 0.021; - R_p -0.001 +- 0.120) | theta x2 finer: +0.300 (- build grid -0.015 +- 0.050; - R_p -0.048 +- 0.090) | both finer: +0.331 (- build grid +0.016 +- 0.064; - R_p -0.017 +- 0.093) | q' x2 coarser: +0.310 (- build grid -0.005 +- 0.017; - R_p -0.038 +- 0.120)
+   full d: R_p +0.463 +- 0.253 (jackknife) | build (25 theta x 108 q'): +0.456 (- build grid +0.000 +- 0.000; - R_p -0.006 +- 0.118) | q' x2 finer: +0.496 (- build grid +0.040 +- 0.026; - R_p +0.033 +- 0.119) | theta x2 finer: +0.433 (- build grid -0.023 +- 0.054; - R_p -0.030 +- 0.084) | both finer: +0.473 (- build grid +0.017 +- 0.072; - R_p +0.010 +- 0.087) | q' x2 coarser: +0.457 (- build grid +0.000 +- 0.020; - R_p -0.006 +- 0.115)
+   full e: R_p +0.550 +- 0.356 (jackknife) | build (25 theta x 108 q'): +0.498 (- build grid +0.000 +- 0.000; - R_p -0.052 +- 0.189) | q' x2 finer: +0.548 (- build grid +0.050 +- 0.034; - R_p -0.002 +- 0.190) | theta x2 finer: +0.475 (- build grid -0.023 +- 0.079; - R_p -0.075 +- 0.142) | both finer: +0.524 (- build grid +0.026 +- 0.101; - R_p -0.026 +- 0.146) | q' x2 coarser: +0.491 (- build grid -0.007 +- 0.027; - R_p -0.060 +- 0.190)
+   [6 s; peak RSS 2.57 GB]
+==== szifi12000_none goal (324 tiles), q_cut 5: linearised S8 bias [sigma]; R_s - R_p paired over the build's 2,000 tile-bootstrap resamples
+   SO40 a: R -5.505, R_p -5.576 +- 0.257, R_s -5.637 +- 0.258; R_s - R_p -0.061 +- 0.038 (-1.6 sigma)
+   SO40 d: R +0.964, R_p +0.878 +- 0.166, R_s +0.829 +- 0.143; R_s - R_p -0.049 +- 0.067 (-0.7 sigma)
+   SO40 e: R +1.254, R_p +0.903 +- 0.270, R_s +0.804 +- 0.211; R_s - R_p -0.098 +- 0.125 (-0.8 sigma)
+   full a: R -8.705, R_p -8.817 +- 0.406, R_s -8.913 +- 0.407; R_s - R_p -0.096 +- 0.060 (-1.6 sigma)
+   full d: R +1.675, R_p +1.364 +- 0.318, R_s +1.255 +- 0.261; R_s - R_p -0.109 +- 0.139 (-0.8 sigma)
+   full e: R +1.983, R_p +1.427 +- 0.427, R_s +1.272 +- 0.334; R_s - R_p -0.155 +- 0.197 (-0.8 sigma)
+   rebuilt R_s on the build's grid vs the stored R_s: max |diff| over bins with mu > 10: 1.66e-09
+   SO40 a: R_p -5.576 +- 0.235 (jackknife) | build (25 theta x 108 q'): -5.637 (- build grid +0.000 +- 0.000; - R_p -0.061 +- 0.042) | q' x2 finer: -5.632 (- build grid +0.005 +- 0.011; - R_p -0.056 +- 0.045) | theta x2 finer: -5.651 (- build grid -0.014 +- 0.014; - R_p -0.074 +- 0.037) | both finer: -5.642 (- build grid -0.005 +- 0.024; - R_p -0.066 +- 0.038) | q' x2 coarser: -5.642 (- build grid -0.005 +- 0.006; - R_p -0.066 +- 0.041)
+   SO40 d: R_p +0.878 +- 0.136 (jackknife) | build (25 theta x 108 q'): +0.829 (- build grid +0.000 +- 0.000; - R_p -0.049 +- 0.067) | q' x2 finer: +0.825 (- build grid -0.004 +- 0.019; - R_p -0.054 +- 0.075) | theta x2 finer: +0.884 (- build grid +0.055 +- 0.034; - R_p +0.006 +- 0.054) | both finer: +0.873 (- build grid +0.044 +- 0.046; - R_p -0.005 +- 0.071) | q' x2 coarser: +0.830 (- build grid +0.000 +- 0.009; - R_p -0.049 +- 0.067)
+   SO40 e: R_p +0.903 +- 0.253 (jackknife) | build (25 theta x 108 q'): +0.804 (- build grid +0.000 +- 0.000; - R_p -0.098 +- 0.144) | q' x2 finer: +0.796 (- build grid -0.008 +- 0.027; - R_p -0.106 +- 0.154) | theta x2 finer: +0.914 (- build grid +0.110 +- 0.056; - R_p +0.012 +- 0.117) | both finer: +0.890 (- build grid +0.085 +- 0.074; - R_p -0.013 +- 0.131) | q' x2 coarser: +0.802 (- build grid -0.003 +- 0.015; - R_p -0.101 +- 0.147)
+   full d: R_p +1.364 +- 0.280 (jackknife) | build (25 theta x 108 q'): +1.255 (- build grid +0.000 +- 0.000; - R_p -0.109 +- 0.153) | q' x2 finer: +1.246 (- build grid -0.009 +- 0.034; - R_p -0.118 +- 0.167) | theta x2 finer: +1.377 (- build grid +0.122 +- 0.066; - R_p +0.013 +- 0.122) | both finer: +1.350 (- build grid +0.095 +- 0.088; - R_p -0.014 +- 0.147) | q' x2 coarser: +1.254 (- build grid -0.001 +- 0.017; - R_p -0.110 +- 0.156)
+   full e: R_p +1.427 +- 0.400 (jackknife) | build (25 theta x 108 q'): +1.272 (- build grid +0.000 +- 0.000; - R_p -0.155 +- 0.228) | q' x2 finer: +1.259 (- build grid -0.013 +- 0.043; - R_p -0.168 +- 0.244) | theta x2 finer: +1.446 (- build grid +0.174 +- 0.089; - R_p +0.019 +- 0.184) | both finer: +1.406 (- build grid +0.135 +- 0.116; - R_p -0.021 +- 0.208) | q' x2 coarser: +1.267 (- build grid -0.004 +- 0.024; - R_p -0.160 +- 0.233)
+   [6 s; peak RSS 2.57 GB]
+==== prod_fof10 baseline (1548 tiles), q_cut 5: linearised S8 bias [sigma]; R_s - R_p paired over the build's 2,000 tile-bootstrap resamples
+   SO40 a: R -13.015, R_p -12.803 +- 0.131, R_s -12.767 +- 0.135; R_s - R_p +0.036 +- 0.025 (+1.4 sigma)
+   SO40 d: R +0.871, R_p +0.792 +- 0.073, R_s +0.800 +- 0.065; R_s - R_p +0.007 +- 0.031 (+0.2 sigma)
+   SO40 e: R +1.051, R_p +0.886 +- 0.128, R_s +0.846 +- 0.103; R_s - R_p -0.041 +- 0.060 (-0.7 sigma)
+   full a: R -20.579, R_p -20.244 +- 0.206, R_s -20.186 +- 0.213; R_s - R_p +0.057 +- 0.040 (+1.4 sigma)
+   full d: R +1.409, R_p +1.242 +- 0.133, R_s +1.225 +- 0.113; R_s - R_p -0.017 +- 0.061 (-0.3 sigma)
+   full e: R +1.662, R_p +1.401 +- 0.203, R_s +1.337 +- 0.162; R_s - R_p -0.064 +- 0.095 (-0.7 sigma)
+   rebuilt R_s on the build's grid vs the stored R_s: max |diff| over bins with mu > 10: 6.73e-10
+   SO40 a: R_p -12.803 +- 0.144 (jackknife) | build (25 theta x 108 q'): -12.767 (- build grid +0.000 +- 0.000; - R_p +0.036 +- 0.022) | q' x2 finer: -12.762 (- build grid +0.005 +- 0.004; - R_p +0.041 +- 0.024) | theta x2 finer: -12.763 (- build grid +0.004 +- 0.006; - R_p +0.040 +- 0.022) | both finer: -12.756 (- build grid +0.011 +- 0.010; - R_p +0.047 +- 0.027) | q' x2 coarser: -12.790 (- build grid -0.023 +- 0.004; - R_p +0.013 +- 0.021)
+   SO40 d: R_p +0.792 +- 0.067 (jackknife) | build (25 theta x 108 q'): +0.800 (- build grid +0.000 +- 0.000; - R_p +0.007 +- 0.028) | q' x2 finer: +0.801 (- build grid +0.001 +- 0.006; - R_p +0.008 +- 0.028) | theta x2 finer: +0.802 (- build grid +0.003 +- 0.012; - R_p +0.010 +- 0.024) | both finer: +0.801 (- build grid +0.001 +- 0.019; - R_p +0.008 +- 0.023) | q' x2 coarser: +0.802 (- build grid +0.002 +- 0.005; - R_p +0.009 +- 0.030)
+   SO40 e: R_p +0.886 +- 0.114 (jackknife) | build (25 theta x 108 q'): +0.846 (- build grid +0.000 +- 0.000; - R_p -0.041 +- 0.064) | q' x2 finer: +0.845 (- build grid -0.001 +- 0.009; - R_p -0.041 +- 0.063) | theta x2 finer: +0.867 (- build grid +0.021 +- 0.028; - R_p -0.020 +- 0.048) | both finer: +0.862 (- build grid +0.017 +- 0.038; - R_p -0.024 +- 0.046) | q' x2 coarser: +0.851 (- build grid +0.005 +- 0.007; - R_p -0.035 +- 0.066)
+   full d: R_p +1.242 +- 0.117 (jackknife) | build (25 theta x 108 q'): +1.225 (- build grid +0.000 +- 0.000; - R_p -0.017 +- 0.060) | q' x2 finer: +1.225 (- build grid +0.001 +- 0.010; - R_p -0.016 +- 0.058) | theta x2 finer: +1.239 (- build grid +0.014 +- 0.027; - R_p -0.002 +- 0.045) | both finer: +1.235 (- build grid +0.011 +- 0.038; - R_p -0.006 +- 0.042) | q' x2 coarser: +1.229 (- build grid +0.005 +- 0.008; - R_p -0.012 +- 0.062)
+   full e: R_p +1.401 +- 0.180 (jackknife) | build (25 theta x 108 q'): +1.337 (- build grid +0.000 +- 0.000; - R_p -0.064 +- 0.101) | q' x2 finer: +1.336 (- build grid -0.001 +- 0.015; - R_p -0.065 +- 0.099) | theta x2 finer: +1.370 (- build grid +0.033 +- 0.044; - R_p -0.031 +- 0.075) | both finer: +1.363 (- build grid +0.026 +- 0.060; - R_p -0.038 +- 0.073) | q' x2 coarser: +1.345 (- build grid +0.008 +- 0.012; - R_p -0.056 +- 0.104)
+   [8 s; peak RSS 2.57 GB]
+==== prod_fof10 goal (1548 tiles), q_cut 5: linearised S8 bias [sigma]; R_s - R_p paired over the build's 2,000 tile-bootstrap resamples
+   SO40 a: R -24.316, R_p -24.409 +- 0.143, R_s -24.448 +- 0.151; R_s - R_p -0.039 +- 0.034 (-1.2 sigma)
+   SO40 d: R +2.063, R_p +1.931 +- 0.090, R_s +1.896 +- 0.082; R_s - R_p -0.035 +- 0.036 (-1.0 sigma)
+   SO40 e: R +2.453, R_p +2.048 +- 0.143, R_s +1.941 +- 0.121; R_s - R_p -0.107 +- 0.064 (-1.7 sigma)
+   full a: R -38.446, R_p -38.594 +- 0.225, R_s -38.656 +- 0.238; R_s - R_p -0.062 +- 0.053 (-1.2 sigma)
+   full d: R +3.424, R_p +3.037 +- 0.170, R_s +2.936 +- 0.148; R_s - R_p -0.102 +- 0.073 (-1.4 sigma)
+   full e: R +3.879, R_p +3.238 +- 0.227, R_s +3.070 +- 0.191; R_s - R_p -0.169 +- 0.101 (-1.7 sigma)
+   rebuilt R_s on the build's grid vs the stored R_s: max |diff| over bins with mu > 10: 5.81e-10
+   SO40 a: R_p -24.409 +- 0.121 (jackknife) | build (25 theta x 108 q'): -24.448 (- build grid +0.000 +- 0.000; - R_p -0.039 +- 0.037) | q' x2 finer: -24.436 (- build grid +0.012 +- 0.003; - R_p -0.027 +- 0.037) | theta x2 finer: -24.456 (- build grid -0.008 +- 0.006; - R_p -0.047 +- 0.035) | both finer: -24.444 (- build grid +0.004 +- 0.008; - R_p -0.035 +- 0.035) | q' x2 coarser: -24.487 (- build grid -0.039 +- 0.005; - R_p -0.078 +- 0.035)
+   SO40 d: R_p +1.931 +- 0.078 (jackknife) | build (25 theta x 108 q'): +1.896 (- build grid +0.000 +- 0.000; - R_p -0.035 +- 0.040) | q' x2 finer: +1.888 (- build grid -0.008 +- 0.007; - R_p -0.043 +- 0.040) | theta x2 finer: +1.896 (- build grid -0.000 +- 0.017; - R_p -0.035 +- 0.034) | both finer: +1.890 (- build grid -0.006 +- 0.022; - R_p -0.041 +- 0.034) | q' x2 coarser: +1.906 (- build grid +0.010 +- 0.010; - R_p -0.025 +- 0.037)
+   SO40 e: R_p +2.048 +- 0.112 (jackknife) | build (25 theta x 108 q'): +1.941 (- build grid +0.000 +- 0.000; - R_p -0.107 +- 0.072) | q' x2 finer: +1.930 (- build grid -0.012 +- 0.010; - R_p -0.118 +- 0.071) | theta x2 finer: +1.948 (- build grid +0.006 +- 0.028; - R_p -0.100 +- 0.062) | both finer: +1.937 (- build grid -0.005 +- 0.036; - R_p -0.111 +- 0.063) | q' x2 coarser: +1.959 (- build grid +0.018 +- 0.013; - R_p -0.089 +- 0.065)
+   full d: R_p +3.037 +- 0.137 (jackknife) | build (25 theta x 108 q'): +2.936 (- build grid +0.000 +- 0.000; - R_p -0.102 +- 0.082) | q' x2 finer: +2.921 (- build grid -0.015 +- 0.013; - R_p -0.117 +- 0.081) | theta x2 finer: +2.940 (- build grid +0.004 +- 0.033; - R_p -0.097 +- 0.070) | both finer: +2.927 (- build grid -0.008 +- 0.043; - R_p -0.110 +- 0.070) | q' x2 coarser: +2.956 (- build grid +0.020 +- 0.017; - R_p -0.081 +- 0.074)
+   full e: R_p +3.238 +- 0.177 (jackknife) | build (25 theta x 108 q'): +3.070 (- build grid +0.000 +- 0.000; - R_p -0.169 +- 0.113) | q' x2 finer: +3.051 (- build grid -0.018 +- 0.016; - R_p -0.187 +- 0.112) | theta x2 finer: +3.080 (- build grid +0.010 +- 0.044; - R_p -0.159 +- 0.098) | both finer: +3.062 (- build grid -0.007 +- 0.057; - R_p -0.176 +- 0.099) | q' x2 coarser: +3.098 (- build grid +0.028 +- 0.021; - R_p -0.141 +- 0.103)
+   [8 s; peak RSS 2.57 GB]
+done [58 s]; peak RSS 2.57 GB
+       59.33 real        56.53 user         2.27 sys
+          2566832128  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              324406  page reclaims
+                  81  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                4531  voluntary context switches
+                1046  involuntary context switches
+        668973091998  instructions retired
+        180431055794  cycles elapsed
+          2363103488  peak memory footprint

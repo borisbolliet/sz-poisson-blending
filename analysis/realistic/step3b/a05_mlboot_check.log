@@ -1,0 +1,27 @@
+baseline d: build, 60 resamples: std ML 0.047 / lin 0.045 = 1.051 (bootstrap over the 60: 16-84% 1.05-1.06); slope ML on lin 1.050; first 12 resamples: 1.056; the five blocks of 12: 1.06, 1.03, 1.04, 1.06, 1.06
+            same 12 resamples, verifier's model + fitter: ratio 1.041; build - verifier per resample: ML -0.001 (std 0.002), lin -0.002 (std 0.001)
+baseline e: build, 60 resamples: std ML 0.080 / lin 0.069 = 1.158 (bootstrap over the 60: 16-84% 1.14-1.17); slope ML on lin 1.151; first 12 resamples: 1.154; the five blocks of 12: 1.15, 1.13, 1.18, 1.17, 1.17
+            same 12 resamples, verifier's model + fitter: ratio 1.069; build - verifier per resample: ML +0.018 (std 0.007), lin -0.002 (std 0.003)
+goal     d: build, 60 resamples: std ML 0.077 / lin 0.071 = 1.089 (bootstrap over the 60: 16-84% 1.08-1.10); slope ML on lin 1.088; first 12 resamples: 1.089; the five blocks of 12: 1.09, 1.11, 1.07, 1.08, 1.10
+            same 12 resamples, verifier's model + fitter: ratio 1.073; build - verifier per resample: ML -0.001 (std 0.003), lin -0.005 (std 0.002)
+goal     e: build, 60 resamples: std ML 0.110 / lin 0.093 = 1.184 (bootstrap over the 60: 16-84% 1.17-1.20); slope ML on lin 1.179; first 12 resamples: 1.195; the five blocks of 12: 1.20, 1.26, 1.13, 1.14, 1.24
+            same 12 resamples, verifier's model + fitter: ratio 1.060; build - verifier per resample: ML +0.034 (std 0.010), lin -0.007 (std 0.003)
+peak RSS 0.03 GB
+        0.34 real         0.31 user         0.02 sys
+            34717696  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                3343  page reclaims
+                  80  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+                  37  involuntary context switches
+          3643262116  instructions retired
+          1001923165  cycles elapsed
+            21595136  peak memory footprint

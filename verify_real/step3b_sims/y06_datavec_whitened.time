@@ -1,0 +1,20 @@
+/Users/boris/GitHub/sz-poisson-blending/verify_real/step3b_sims/y06_datavec.py:202: RuntimeWarning: invalid value encountered in divide
+  qc_ = num.sum(0) / den.sum(0) - 1; qcb = numb.sum(1) / denb.sum(1) - 1
+      246.97 real       245.20 user         1.52 sys
+          3255435264  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              517934  page reclaims
+                 155  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1805  voluntary context switches
+                1890  involuntary context switches
+       1885519591059  instructions retired
+        776795539941  cycles elapsed
+          3020676800  peak memory footprint

@@ -1,0 +1,33 @@
+==================== baseline: 420832 halos with q_true >= 1.5 in 324 tiles (1299 per tile)
+  [prod] q > 5 catalogue entries 69496; real 68281; 'no real cluster' 1215 (1.75% of entries); credited halos: none 64355, closest1 64283, fof10 59710; credited halos outside the table (q_true < 1.5): 0, 0, 0; credited with q' < 2 (credit limit): 0
+     r after the iteration (mean over tiles) at 0.5' / 1.04' / 4.45' / 15': 1.0394 / 1.0449 / 1.0496 / 1.0240; tile-to-tile std 0.0027 / 0.0030 / 0.0040 / 0.0060   [4 s]
+  [szifi3000] q > 5 catalogue entries 56645; real 56128; 'no real cluster' 517 (0.91% of entries); credited halos: none 53247, closest1 53208, fof10 50115; credited halos outside the table (q_true < 1.5): 0, 0, 0; credited with q' < 2 (credit limit): 0
+     r after the iteration (mean over tiles) at 0.5' / 1.04' / 4.45' / 15': 1.1357 / 1.1400 / 1.1192 / 1.0489; tile-to-tile std 0.0168 / 0.0165 / 0.0127 / 0.0092   [3 s]
+  [szifi12000] q > 5 catalogue entries 71535; real 70136; 'no real cluster' 1399 (1.96% of entries); credited halos: none 66133, closest1 66076, fof10 61253; credited halos outside the table (q_true < 1.5): 0, 0, 0; credited with q' < 2 (credit limit): 0
+     r after the iteration (mean over tiles) at 0.5' / 1.04' / 4.45' / 15': 1.0193 / 1.0282 / 1.0446 / 1.0259; tile-to-tile std 0.0062 / 0.0068 / 0.0088 / 0.0094   [4 s]
+==================== goal: 618269 halos with q_true >= 1.5 in 324 tiles (1908 per tile)
+  [prod] q > 5 catalogue entries 103739; real 102185; 'no real cluster' 1554 (1.50% of entries); credited halos: none 96544, closest1 96409, fof10 85833; credited halos outside the table (q_true < 1.5): 0, 0, 0; credited with q' < 2 (credit limit): 0
+     r after the iteration (mean over tiles) at 0.5' / 1.04' / 4.45' / 15': 1.0531 / 1.0606 / 1.0674 / 1.0352; tile-to-tile std 0.0028 / 0.0032 / 0.0042 / 0.0059   [5 s]
+  [szifi3000] q > 5 catalogue entries 80138; real 79631; 'no real cluster' 507 (0.63% of entries); credited halos: none 75941, closest1 75875, fof10 69572; credited halos outside the table (q_true < 1.5): 0, 0, 0; credited with q' < 2 (credit limit): 0
+     r after the iteration (mean over tiles) at 0.5' / 1.04' / 4.45' / 15': 1.1800 / 1.1892 / 1.1714 / 1.0786; tile-to-tile std 0.0199 / 0.0201 / 0.0168 / 0.0108   [4 s]
+  [szifi12000] q > 5 catalogue entries 104543; real 102898; 'no real cluster' 1645 (1.57% of entries); credited halos: none 97413, closest1 97283, fof10 86544; credited halos outside the table (q_true < 1.5): 0, 0, 0; credited with q' < 2 (credit limit): 0
+     r after the iteration (mean over tiles) at 0.5' / 1.04' / 4.45' / 15': 1.0391 / 1.0520 / 1.0756 / 1.0471; tile-to-tile std 0.0073 / 0.0084 / 0.0114 / 0.0107   [5 s]
+done [25 s]; peak RSS 0.23 GB
+       25.68 real        22.89 user         1.35 sys
+           233799680  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               23927  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               15175  voluntary context switches
+                2112  involuntary context switches
+        308497816192  instructions retired
+         75485497045  cycles elapsed
+           192431872  peak memory footprint

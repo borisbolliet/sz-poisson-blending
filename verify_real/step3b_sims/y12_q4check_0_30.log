@@ -1,0 +1,48 @@
+  tile 0: done [22 s]
+  tile 1: done [44 s]
+  tile 2: done [66 s]
+  tile 3: done [88 s]
+  tile 4: done [109 s]
+  tile 5: done [131 s]
+  tile 6: done [154 s]
+  tile 7: done [176 s]
+  tile 8: done [198 s]
+  tile 9: done [219 s]
+  tile 10: done [241 s]
+  tile 11: done [263 s]
+  tile 12: done [286 s]
+  tile 13: done [308 s]
+  tile 14: done [330 s]
+  tile 15: done [351 s]
+  tile 16: done [373 s]
+  tile 17: done [395 s]
+  tile 18: done [416 s]
+  tile 19: done [438 s]
+  tile 20: done [460 s]
+  tile 21: done [481 s]
+  tile 22: done [503 s]
+  tile 23: done [525 s]
+  tile 24: done [546 s]
+  tile 25: done [568 s]
+  tile 26: done [589 s]
+  tile 27: done [611 s]
+  tile 28: done [632 s]
+  tile 29: done [653 s]
+
+[baseline] 1800 sparse clusters (tiles 0-29)
+  e = 4.0: painted 1458, virtual halo-free filter 1466 (painted-only 1, virtual-only 9), virtual injection filter 1459 (painted-only 0, virtual-only 1)
+  e = 4.1: painted 1432, virtual halo-free filter 1437 (painted-only 3, virtual-only 8), virtual injection filter 1431 (painted-only 2, virtual-only 1)
+  e = 4.5: painted 1321, virtual halo-free filter 1327 (painted-only 4, virtual-only 10), virtual injection filter 1322 (painted-only 1, virtual-only 2)
+  e = 5.0: painted 1175, virtual halo-free filter 1177 (painted-only 2, virtual-only 4), virtual injection filter 1176 (painted-only 0, virtual-only 1)
+  masked at iteration 0: 1485 clusters; q > 4 painted-only 1, virtual(halo-free)-only 1
+  not masked: 315 clusters; q > 4 painted-only 0, virtual(halo-free)-only 8
+
+[goal] 1800 sparse clusters (tiles 0-29)
+  e = 4.0: painted 1449, virtual halo-free filter 1454 (painted-only 2, virtual-only 7), virtual injection filter 1449 (painted-only 0, virtual-only 0)
+  e = 4.1: painted 1426, virtual halo-free filter 1428 (painted-only 0, virtual-only 2), virtual injection filter 1426 (painted-only 0, virtual-only 0)
+  e = 4.5: painted 1316, virtual halo-free filter 1317 (painted-only 1, virtual-only 2), virtual injection filter 1316 (painted-only 0, virtual-only 0)
+  e = 5.0: painted 1183, virtual halo-free filter 1185 (painted-only 2, virtual-only 4), virtual injection filter 1183 (painted-only 0, virtual-only 0)
+  masked at iteration 0: 1484 clusters; q > 4 painted-only 0, virtual(halo-free)-only 0
+  not masked: 316 clusters; q > 4 painted-only 2, virtual(halo-free)-only 7
+
+y12 done in 653 s

@@ -1,0 +1,105 @@
+=================== baseline ===================
+(A) totals at q_obs > 5 (paired: N_det = credited halos, merge none; N_iso = credited isolated copies); tile bootstrap 2000
+  build Q2               tiles   324: per tile N_det  198.63, N_iso  201.26, N_iso - N_det  2.63 +- 0.26; halos with q' 4-6  131.23 +- 0.61;  R_p = -1.31 +- 0.13%
+  build new tiles        tiles  1224: per tile N_det  198.51, N_iso  201.28, N_iso - N_det  2.77 +- 0.14; halos with q' 4-6  131.32 +- 0.32;  R_p = -1.38 +- 0.07%
+  build all              tiles  1548: per tile N_det  198.54, N_iso  201.28, N_iso - N_det  2.74 +- 0.12; halos with q' 4-6  131.30 +- 0.28;  R_p = -1.36 +- 0.06%
+  sims verifier          tiles   400: per tile N_det  198.39, N_iso  201.85, N_iso - N_det  3.46 +- 0.26; halos with q' 4-6  131.13 +- 0.62;  R_p = -1.71 +- 0.12%
+  sims - build (all): -0.35 pp
+(B) R_p by z (0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3) [%] (credited halos in brackets)
+  build Q2               R_p by z: -2.4+-1.2 (580), -1.2+-0.2 (24516), -1.2+-0.2 (28394), -1.9+-0.4 (8909), -1.2+-0.9 (1702), -2.7+-3.2 (254)
+  build new tiles        R_p by z: -3.5+-0.7 (2264), -1.4+-0.1 (92115), -1.3+-0.1 (108021), -1.4+-0.2 (33166), -1.9+-0.5 (6401), -0.2+-1.5 (1011)
+  build all              R_p by z: -3.3+-0.6 (2844), -1.4+-0.1 (116631), -1.3+-0.1 (136415), -1.5+-0.2 (42075), -1.8+-0.5 (8103), -0.7+-1.4 (1265)
+  sims verifier          R_p by z: -0.1+-1.2 (760), -1.6+-0.2 (29913), -1.8+-0.2 (35167), -1.8+-0.4 (11024), -2.1+-0.9 (2120), -0.3+-2.2 (372)
+(C) paired change (N_det - N_iso) / N_iso [%] at e = 5 per cell of theta500 [arcmin] x q'; +- tile bootstrap; [N_iso]
+  -- build all
+  theta \ q'                           2-4                     4-5                     5-6                     6-8                    8-15                15-10000
+             0-1    -0.78+-1.07 [  4463]  -3.80+-0.79 [  3787]  -2.44+-0.63 [  2914]  -0.68+-0.35 [  2367]  -0.23+-0.16 [   871]  +0.00+-0.00 [    24]
+             1-2    -0.82+-0.51 [ 20125]  -3.06+-0.30 [ 28269]  -2.03+-0.19 [ 29959]  -1.09+-0.08 [ 38307]  -0.31+-0.03 [ 29291]  -0.07+-0.04 [  4199]
+             2-4    -1.06+-0.79 [  8402]  -3.76+-0.39 [ 14756]  -2.24+-0.23 [ 18372]  -1.05+-0.09 [ 29673]  -0.35+-0.03 [ 35282]  -0.10+-0.03 [ 12264]
+             4-8    -0.23+-1.86 [  1327]  -4.46+-0.96 [  2378]  -1.86+-0.52 [  3234]  -0.90+-0.20 [  5325]  -0.40+-0.07 [  7835]  -0.09+-0.04 [  4568]
+            8-16    -4.37+-5.07 [   160] -10.14+-2.39 [   286]  -3.91+-1.58 [   384]  -1.14+-0.68 [   702]  -0.48+-0.22 [  1037]  +0.00+-0.00 [   664]
+         16-1000   -19.05+-10.70 [    21]  -8.00+-9.79 [    25]  -8.00+-3.86 [    50]  +1.41+-1.45 [    71]  -0.90+-0.92 [   111]  +0.00+-0.00 [    76]
+  -- sims verifier
+  theta \ q'                           2-4                     4-5                     5-6                     6-8                    8-15                15-10000
+             0-1    -3.91+-2.14 [  1151]  -3.00+-1.44 [  1033]  -1.68+-1.12 [   832]  -0.95+-0.75 [   630]  -0.51+-0.51 [   197]  +0.00+-0.00 [     9]
+             1-2    -3.52+-0.94 [  5177]  -4.35+-0.55 [  7314]  -2.01+-0.36 [  7910]  -1.05+-0.17 [  9982]  -0.31+-0.06 [  7515]  +0.00+-0.00 [  1091]
+             2-4    -2.60+-1.42 [  2190]  -2.57+-0.81 [  3700]  -2.67+-0.49 [  4800]  -1.07+-0.17 [  7500]  -0.47+-0.08 [  9076]  -0.06+-0.04 [  3184]
+             4-8    -1.49+-3.99 [   336]  -7.70+-2.02 [   636]  -1.76+-1.11 [   794]  -1.19+-0.40 [  1425]  -0.44+-0.14 [  2061]  +0.00+-0.00 [  1272]
+            8-16   +13.16+-13.80 [    38]  -1.25+-4.89 [    80]  -2.04+-2.43 [    98]  +0.55+-0.98 [   182]  +0.00+-0.00 [   268]  +0.00+-0.00 [   171]
+         16-1000    +0.00+-0.00 [     1] -28.57+-19.23 [     7]  -7.14+-6.99 [    14]  +0.00+-0.00 [    19]  +0.00+-0.00 [    31]  +0.00+-0.00 [    15]
+/Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3b/a01_paired_compare.py:105: RuntimeWarning: invalid value encountered in divide
+  pull = (fs - fa) / np.sqrt(ea ** 2 + es ** 2)
+  pulls sims - build per cell: chi^2 46.2 for 33 cells; largest |pull| 2.51 at theta 1'
+  flip rates per halo, build all: lost (copy credited, halo not) / gained, q' 4-5, 5-6, 6-8 by theta: 0-1': 5.1/3.7, 4.9/3.2, 1.6/1.0; 1-2': 5.3/4.2, 4.8/3.3, 1.8/0.8; 2-4': 5.7/4.2, 4.8/3.2, 1.6/0.6; 4-8': 5.5/3.7, 4.3/2.9, 1.5/0.7; 8-16': 5.8/1.5, 5.1/2.2, 2.2/1.1; 16-1000': 4.8/2.4, 6.0/0.0, 0.0/1.4
+  flip rates per halo, sims verifier: lost (copy credited, halo not) / gained, q' 4-5, 5-6, 6-8 by theta: 0-1': 4.8/3.7, 4.5/3.3, 2.0/1.1; 1-2': 5.5/3.8, 4.4/2.9, 1.8/0.8; 2-4': 5.3/4.3, 5.2/3.2, 1.6/0.6; 4-8': 6.9/3.6, 5.1/3.8, 1.8/0.6; 8-16': 4.2/3.7, 3.2/1.6, 0.5/1.1; 16-1000': 8.0/0.0, 4.8/0.0, 0.0/0.0
+(D) 4000 random 400-tile subsets of the build's 1,548 tiles: R_p total mean -1.36%, std 0.10%, fraction <= sims' -1.71%: 0.0003; R_p at z < 0.1 mean -3.27%, std 1.01%, fraction >= sims' -0.13%: 0.0008; both: 0.0000
+(E) halos per tile with q' in 3-6, by coarse z bin; and z < 0.1 halos with q' > 4 by theta500 (<4, 4-8, 8-16, >16')
+  build Q2          : 2.290, 95.682, 130.380, 49.373, 11.861, 2.318 | z < 0.1, q' > 4: 0.000, 0.247, 1.605, 0.250 | halos per tile (rows q' >= 1.9) 849.8
+  build new tiles   : 2.429, 95.421, 130.140, 49.761, 11.795, 2.306 | z < 0.1, q' > 4: 0.000, 0.290, 1.698, 0.270 | halos per tile (rows q' >= 1.9) 850.1
+  sims verifier     : 2.518, 94.980, 129.530, 50.148, 11.975, 2.333 | z < 0.1, q' > 4: 0.000, 0.270, 1.720, 0.282 | halos per tile (rows q' >= 1.9) 849.9
+(F) z < 0.1: per-tile N_iso - N_det (credited copies minus credited halos)
+  build Q2          : mean 0.0432 +- 0.0234 per tile (N_iso 1.833); values {np.float64(-1.0): np.int64(21), np.float64(0.0): np.int64(269), np.float64(1.0): np.int64(33), np.float64(2.0): np.int64(1)}; largest 5: [2. 1. 1. 1. 1.]; share of the net from the top 1% of tiles 0.29
+  build new tiles   : mean 0.0670 +- 0.0131 per tile (N_iso 1.917); values {np.float64(-2.0): np.int64(2), np.float64(-1.0): np.int64(71), np.float64(0.0): np.int64(1008), np.float64(1.0): np.int64(129), np.float64(2.0): np.int64(14)}; largest 5: [2. 2. 2. 2. 2.]; share of the net from the top 1% of tiles 0.29
+  sims verifier     : mean 0.0025 +- 0.0231 per tile (N_iso 1.903); values {np.float64(-2.0): np.int64(5), np.float64(-1.0): np.int64(26), np.float64(0.0): np.int64(333), np.float64(1.0): np.int64(35), np.float64(2.0): np.int64(1)}; largest 5: [2. 1. 1. 1. 1.]; share of the net from the top 1% of tiles 5.00
+=================== goal ===================
+(A) totals at q_obs > 5 (paired: N_det = credited halos, merge none; N_iso = credited isolated copies); tile bootstrap 2000
+  build Q2               tiles   324: per tile N_det  297.98, N_iso  304.71, N_iso - N_det  6.73 +- 0.38; halos with q' 4-6  194.63 +- 0.83;  R_p = -2.21 +- 0.12%
+  build new tiles        tiles  1224: per tile N_det  298.86, N_iso  305.11, N_iso - N_det  6.25 +- 0.18; halos with q' 4-6  194.98 +- 0.39;  R_p = -2.05 +- 0.06%
+  build all              tiles  1548: per tile N_det  298.67, N_iso  305.02, N_iso - N_det  6.35 +- 0.17; halos with q' 4-6  194.91 +- 0.35;  R_p = -2.08 +- 0.05%
+  sims verifier          tiles   400: per tile N_det  298.17, N_iso  304.82, N_iso - N_det  6.66 +- 0.31; halos with q' 4-6  193.80 +- 0.71;  R_p = -2.18 +- 0.10%
+  sims - build (all): -0.10 pp
+(B) R_p by z (0.01-0.1, 0.1-0.5, 0.5-1, 1-1.5, 1.5-2, 2-3) [%] (credited halos in brackets)
+  build Q2               R_p by z: -2.5+-1.4 (704), -2.4+-0.2 (33581), -2.0+-0.2 (43414), -2.6+-0.3 (15005), -2.3+-0.7 (3249), -2.5+-1.9 (591)
+  build new tiles        R_p by z: -2.4+-0.6 (2834), -2.1+-0.1 (127018), -1.9+-0.1 (164457), -2.3+-0.2 (56819), -1.6+-0.4 (12404), -3.3+-1.0 (2267)
+  build all              R_p by z: -2.4+-0.6 (3538), -2.1+-0.1 (160599), -1.9+-0.1 (207871), -2.4+-0.1 (71824), -1.8+-0.3 (15653), -3.1+-0.9 (2858)
+  sims verifier          R_p by z: -4.1+-1.1 (924), -2.1+-0.2 (41176), -2.1+-0.1 (53589), -2.1+-0.3 (18700), -3.4+-0.7 (4062), -3.3+-1.5 (815)
+(C) paired change (N_det - N_iso) / N_iso [%] at e = 5 per cell of theta500 [arcmin] x q'; +- tile bootstrap; [N_iso]
+/Users/boris/GitHub/sz-poisson-blending/.venv/lib/python3.12/site-packages/numpy/lib/_nanfunctions_impl.py:1845: RuntimeWarning: invalid value encountered in subtract
+  np.subtract(arr, avg, out=arr, casting='unsafe', where=where)
+  -- build all
+  theta \ q'                           2-4                     4-5                     5-6                     6-8                    8-15                15-10000
+             0-1    -2.99+-0.76 [  9119]  -4.57+-0.55 [  9033]  -2.46+-0.43 [  7594]  -1.63+-0.22 [  7102]  -0.38+-0.11 [  2931]  +0.00+-0.00 [   108]
+             1-2    -3.71+-0.44 [ 28159]  -4.59+-0.26 [ 42372]  -3.07+-0.16 [ 48023]  -1.27+-0.07 [ 63601]  -0.43+-0.03 [ 55304]  -0.07+-0.03 [  9710]
+             2-4    -4.12+-0.77 [  9529]  -4.99+-0.39 [ 17424]  -3.47+-0.23 [ 22955]  -1.27+-0.09 [ 37010]  -0.47+-0.03 [ 48665]  -0.13+-0.03 [ 20246]
+             4-8    -6.55+-2.03 [  1374]  -5.55+-0.96 [  2651]  -3.04+-0.58 [  3519]  -1.14+-0.21 [  6126]  -0.56+-0.08 [  9388]  -0.08+-0.04 [  6222]
+            8-16    +2.40+-5.43 [   167]  -7.77+-2.95 [   283]  -6.08+-1.66 [   411]  -1.72+-0.66 [   758]  -0.68+-0.24 [  1185]  +0.00+-0.00 [   825]
+         16-1000   +10.53+-17.61 [    19]  -6.25+-9.95 [    32]  +2.22+-7.07 [    45]  -2.56+-2.58 [    78]  -0.83+-0.83 [   121]  -1.14+-1.16 [    88]
+  -- sims verifier
+  theta \ q'                           2-4                     4-5                     5-6                     6-8                    8-15                15-10000
+             0-1    -3.36+-1.59 [  2348]  -3.85+-1.05 [  2336]  -3.40+-0.74 [  2032]  -1.68+-0.41 [  1900]  -0.27+-0.19 [   742]  +0.00+-0.00 [    36]
+             1-2    -3.30+-0.82 [  7282]  -5.60+-0.52 [ 11053]  -2.85+-0.30 [ 12196]  -1.26+-0.13 [ 16604]  -0.44+-0.06 [ 14196]  -0.12+-0.07 [  2595]
+             2-4    -4.47+-1.48 [  2463]  -5.73+-0.75 [  4485]  -2.87+-0.44 [  5778]  -1.09+-0.18 [  9558]  -0.52+-0.07 [ 12351]  -0.13+-0.05 [  5250]
+             4-8    -8.65+-3.84 [   347]  -7.93+-1.94 [   668]  -3.81+-1.09 [   892]  -3.09+-0.51 [  1616]  -0.44+-0.13 [  2479]  +0.00+-0.00 [  1678]
+            8-16   -12.24+-7.90 [    49] -12.20+-6.12 [    82]  -4.67+-3.30 [   107]  -1.07+-0.74 [   187]  -0.32+-0.33 [   311]  +0.00+-0.00 [   214]
+         16-1000   +50.00+- nan [     2] -16.67+- nan [     6]  -6.67+-6.59 [    15]  +0.00+-0.00 [    22]  -3.33+-3.44 [    30]  +0.00+-0.00 [    20]
+  pulls sims - build per cell: chi^2 37.0 for 32 cells; largest |pull| 3.55 at theta 4'
+  flip rates per halo, build all: lost (copy credited, halo not) / gained, q' 4-5, 5-6, 6-8 by theta: 0-1': 5.9/4.3, 5.7/3.9, 2.5/0.9; 1-2': 6.1/4.4, 5.7/3.5, 2.1/0.9; 2-4': 6.5/4.6, 6.0/3.4, 2.0/0.8; 4-8': 6.7/4.4, 5.6/3.3, 2.0/0.9; 8-16': 6.8/3.8, 7.0/2.3, 2.3/0.6; 16-1000': 6.8/4.5, 6.5/8.1, 3.6/1.2
+  flip rates per halo, sims verifier: lost (copy credited, halo not) / gained, q' 4-5, 5-6, 6-8 by theta: 0-1': 5.6/4.2, 5.5/3.1, 2.2/0.6; 1-2': 6.5/4.3, 5.8/3.7, 2.0/0.8; 2-4': 6.8/4.5, 5.6/3.5, 2.0/0.9; 4-8': 7.3/4.0, 5.8/2.9, 3.4/0.4; 8-16': 8.7/3.9, 6.3/2.8, 1.0/0.0; 16-1000': 11.5/7.7, 4.8/0.0, 0.0/0.0
+(D) 4000 random 400-tile subsets of the build's 1,548 tiles: R_p total mean -2.08%, std 0.09%, fraction <= sims' -2.18%: 0.1323; R_p at z < 0.1 mean -2.38%, std 0.96%, fraction >= sims' -4.15%: 0.9680; both: 0.1275
+(E) halos per tile with q' in 3-6, by coarse z bin; and z < 0.1 halos with q' > 4 by theta500 (<4, 4-8, 8-16, >16')
+  build Q2          : 2.812, 126.793, 189.639, 81.120, 21.608, 4.824 | z < 0.1, q' > 4: 0.000, 0.451, 1.889, 0.296 | halos per tile (rows q' >= 1.9) 1237.8
+  build new tiles   : 2.964, 127.319, 190.179, 81.163, 21.663, 4.967 | z < 0.1, q' > 4: 0.000, 0.529, 1.980, 0.283 | halos per tile (rows q' >= 1.9) 1237.6
+  sims verifier     : 3.042, 127.325, 188.630, 81.405, 21.705, 5.043 | z < 0.1, q' > 4: 0.000, 0.515, 2.038, 0.302 | halos per tile (rows q' >= 1.9) 1237.1
+(F) z < 0.1: per-tile N_iso - N_det (credited copies minus credited halos)
+  build Q2          : mean 0.0556 +- 0.0311 per tile (N_iso 2.228); values {np.float64(-2.0): np.int64(3), np.float64(-1.0): np.int64(30), np.float64(0.0): np.int64(240), np.float64(1.0): np.int64(48), np.float64(2.0): np.int64(3)}; largest 5: [2. 2. 2. 1. 1.]; share of the net from the top 1% of tiles 0.33
+  build new tiles   : mean 0.0564 +- 0.0151 per tile (N_iso 2.372); values {np.float64(-2.0): np.int64(7), np.float64(-1.0): np.int64(107), np.float64(0.0): np.int64(929), np.float64(1.0): np.int64(172), np.float64(2.0): np.int64(9)}; largest 5: [2. 2. 2. 2. 2.]; share of the net from the top 1% of tiles 0.30
+  sims verifier     : mean 0.1000 +- 0.0276 per tile (N_iso 2.410); values {np.float64(-2.0): np.int64(1), np.float64(-1.0): np.int64(32), np.float64(0.0): np.int64(300), np.float64(1.0): np.int64(61), np.float64(2.0): np.int64(5), np.float64(3.0): np.int64(1)}; largest 5: [3. 2. 2. 2. 2.]; share of the net from the top 1% of tiles 0.23
+done [11 s]; peak RSS 1.83 GB
+       11.13 real         6.41 user         2.14 sys
+          1831698432  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              133223  page reclaims
+                  87  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               21939  voluntary context switches
+                7395  involuntary context switches
+         63362947583  instructions retired
+         25924465445  cycles elapsed
+          1600000832  peak memory footprint

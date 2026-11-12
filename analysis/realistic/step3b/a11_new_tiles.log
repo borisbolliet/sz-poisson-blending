@@ -1,0 +1,29 @@
+=================== baseline ===================
+  build Q2 (324)                     tiles  324: R_p = -1.31 +- 0.13%; by z: -2.4+-1.3, -1.2+-0.2, -1.2+-0.2, -1.9+-0.4, -1.2+-1.0, -2.7+-3.2; N_iso - N_det per tile 2.63 +- 0.26 (std 4.75); slope with bright halos (q' > 20) -0.049 +- 0.101; fof 10' removes 7.22 +- 0.11% of the credited halos
+  build new tiles (1,224)            tiles 1224: R_p = -1.38 +- 0.07%; by z: -3.5+-0.7, -1.4+-0.1, -1.3+-0.1, -1.4+-0.2, -1.9+-0.5, -0.2+-1.4; N_iso - N_det per tile 2.77 +- 0.14 (std 4.93); slope with bright halos (q' > 20) +0.040 +- 0.057; fof 10' removes 7.45 +- 0.05% of the credited halos
+  sims verifier, its tiles 0-399     tiles  400: R_p = -1.71 +- 0.13%; by z: -0.1+-1.2, -1.6+-0.2, -1.8+-0.2, -1.8+-0.4, -2.1+-0.9, -0.3+-2.2; N_iso - N_det per tile 3.46 +- 0.26 (std 5.20); slope with bright halos (q' > 20) +0.350 +- 0.104; fof 10' removes 7.63 +- 0.10% of the credited halos
+  arbiter: verifier's generator, 400-799 tiles  400: R_p = -1.56 +- 0.12%; by z: -1.5+-1.2, -1.7+-0.2, -1.4+-0.2, -1.7+-0.4, -1.4+-0.9, -1.2+-2.4; N_iso - N_det per tile 3.15 +- 0.25 (std 4.98); slope with bright halos (q' > 20) +0.039 +- 0.113; fof 10' removes 7.41 +- 0.09% of the credited halos
+  build all (1,548)                  tiles 1548: R_p = -1.36 +- 0.06%; by z: -3.3+-0.6, -1.4+-0.1, -1.3+-0.1, -1.5+-0.2, -1.8+-0.5, -0.7+-1.3; N_iso - N_det per tile 2.74 +- 0.12 (std 4.89); slope with bright halos (q' > 20) +0.020 +- 0.050; fof 10' removes 7.40 +- 0.05% of the credited halos
+  verifier's generator, all 800      tiles  800: R_p = -1.64 +- 0.09%; by z: -0.8+-0.9, -1.6+-0.1, -1.6+-0.1, -1.7+-0.3, -1.8+-0.6, -0.7+-1.6; N_iso - N_det per tile 3.30 +- 0.18 (std 5.09); slope with bright halos (q' > 20) +0.214 +- 0.076; fof 10' removes 7.52 +- 0.07% of the credited halos
+  pooled: build + verifier's generator tiles 2348: R_p = -1.46 +- 0.05%; by z: -2.4+-0.5, -1.5+-0.1, -1.4+-0.1, -1.6+-0.1, -1.8+-0.4, -0.7+-1.1; N_iso - N_det per tile 2.93 +- 0.10 (std 4.97); slope with bright halos (q' > 20) +0.080 +- 0.042; fof 10' removes 7.44 +- 0.04% of the credited halos
+  new 400 tiles - build (per tile N_iso - N_det): +0.40 +- 0.28 (+1.45 sigma); R_p new - build -0.20 +- 0.14 pp
+  verifier's generator (800 tiles) - build (1,548): per tile +0.56 +- 0.22 (+2.56 sigma); R_p -0.28 +- 0.11 pp; z < 0.1: +2.5 +- 1.1 pp
+done [31 s]; peak RSS 1.30 GB
+       31.57 real        27.68 user         1.34 sys
+          1304494080  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              101960  page reclaims
+                 118  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               20905  voluntary context switches
+                4468  involuntary context switches
+        308049767409  instructions retired
+         90383608901  cycles elapsed
+          1044188992  peak memory footprint

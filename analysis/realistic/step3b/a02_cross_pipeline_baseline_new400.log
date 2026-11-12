@@ -1,0 +1,65 @@
+a02: the build's pipeline on the sims verifier's tiles 400..799, baseline, 3 processes
+  tile 402: 17.6 s (maps 8.3, realistic 4.2, copies 5.1; 1195 rows); worker peak RSS 1.63 GB [elapsed 18 s]
+  tile 409: 10.2 s (maps 4.5, realistic 4.2, copies 1.5; 1200 rows); worker peak RSS 1.69 GB [elapsed 49 s]
+  tile 420: 10.1 s (maps 4.8, realistic 3.8, copies 1.4; 1202 rows); worker peak RSS 1.65 GB [elapsed 80 s]
+  tile 430: 10.1 s (maps 4.7, realistic 4.0, copies 1.4; 1200 rows); worker peak RSS 1.69 GB [elapsed 119 s]
+  tile 441: 9.5 s (maps 4.4, realistic 3.8, copies 1.3; 1181 rows); worker peak RSS 1.71 GB [elapsed 149 s]
+  tile 450: 10.3 s (maps 4.5, realistic 4.3, copies 1.5; 1219 rows); worker peak RSS 1.65 GB [elapsed 180 s]
+  tile 460: 10.7 s (maps 4.9, realistic 4.4, copies 1.4; 1181 rows); worker peak RSS 1.71 GB [elapsed 219 s]
+  tile 470: 10.5 s (maps 4.8, realistic 4.2, copies 1.5; 1219 rows); worker peak RSS 1.65 GB [elapsed 254 s]
+  tile 480: 11.0 s (maps 4.8, realistic 4.5, copies 1.7; 1226 rows); worker peak RSS 1.75 GB [elapsed 295 s]
+  tile 490: 10.0 s (maps 3.9, realistic 4.6, copies 1.4; 1265 rows); worker peak RSS 1.75 GB [elapsed 336 s]
+  tile 500: 11.0 s (maps 5.0, realistic 4.6, copies 1.5; 1201 rows); worker peak RSS 1.75 GB [elapsed 370 s]
+  tile 510: 11.3 s (maps 4.9, realistic 4.7, copies 1.7; 1212 rows); worker peak RSS 1.64 GB [elapsed 405 s]
+  tile 520: 10.8 s (maps 4.8, realistic 4.3, copies 1.7; 1246 rows); worker peak RSS 1.75 GB [elapsed 446 s]
+  tile 530: 10.2 s (maps 4.8, realistic 4.0, copies 1.4; 1189 rows); worker peak RSS 1.75 GB [elapsed 478 s]
+  tile 540: 12.1 s (maps 5.5, realistic 5.0, copies 1.6; 1288 rows); worker peak RSS 1.64 GB [elapsed 512 s]
+  tile 550: 18.3 s (maps 8.0, realistic 5.0, copies 5.3; 1220 rows); worker peak RSS 1.71 GB [elapsed 561 s]
+  tile 561: 10.1 s (maps 4.5, realistic 4.0, copies 1.6; 1185 rows); worker peak RSS 1.71 GB [elapsed 594 s]
+  tile 568: 11.9 s (maps 5.1, realistic 4.9, copies 1.9; 1257 rows); worker peak RSS 1.72 GB [elapsed 627 s]
+  tile 581: 10.7 s (maps 5.0, realistic 4.0, copies 1.7; 1221 rows); worker peak RSS 1.72 GB [elapsed 669 s]
+  tile 590: 11.2 s (maps 5.0, realistic 4.6, copies 1.6; 1171 rows); worker peak RSS 1.72 GB [elapsed 703 s]
+  tile 599: 11.9 s (maps 5.2, realistic 5.1, copies 1.6; 1232 rows); worker peak RSS 1.71 GB [elapsed 736 s]
+  tile 611: 10.0 s (maps 4.3, realistic 4.2, copies 1.6; 1157 rows); worker peak RSS 1.72 GB [elapsed 776 s]
+  tile 620: 10.4 s (maps 4.7, realistic 3.9, copies 1.7; 1122 rows); worker peak RSS 1.72 GB [elapsed 809 s]
+  tile 630: 11.4 s (maps 4.9, realistic 5.0, copies 1.6; 1241 rows); worker peak RSS 1.74 GB [elapsed 855 s]
+  tile 640: 11.4 s (maps 5.3, realistic 4.5, copies 1.5; 1272 rows); worker peak RSS 1.63 GB [elapsed 892 s]
+  tile 650: 10.4 s (maps 4.6, realistic 4.1, copies 1.6; 1218 rows); worker peak RSS 1.71 GB [elapsed 925 s]
+  tile 660: 9.8 s (maps 4.6, realistic 3.8, copies 1.4; 1212 rows); worker peak RSS 1.74 GB [elapsed 963 s]
+  tile 670: 10.1 s (maps 4.3, realistic 4.1, copies 1.7; 1254 rows); worker peak RSS 1.74 GB [elapsed 993 s]
+  tile 680: 10.0 s (maps 4.5, realistic 4.1, copies 1.4; 1245 rows); worker peak RSS 1.71 GB [elapsed 1027 s]
+  tile 690: 9.8 s (maps 4.6, realistic 3.8, copies 1.5; 1218 rows); worker peak RSS 1.74 GB [elapsed 1062 s]
+  tile 700: 16.6 s (maps 7.8, realistic 3.7, copies 5.1; 1221 rows); worker peak RSS 1.70 GB [elapsed 1100 s]
+  tile 710: 10.0 s (maps 4.6, realistic 4.0, copies 1.4; 1206 rows); worker peak RSS 1.68 GB [elapsed 1136 s]
+  tile 720: 9.7 s (maps 4.3, realistic 4.0, copies 1.4; 1231 rows); worker peak RSS 1.68 GB [elapsed 1170 s]
+  tile 730: 9.8 s (maps 4.3, realistic 4.0, copies 1.5; 1202 rows); worker peak RSS 1.71 GB [elapsed 1200 s]
+  tile 740: 9.9 s (maps 4.5, realistic 4.0, copies 1.4; 1204 rows); worker peak RSS 1.68 GB [elapsed 1235 s]
+  tile 751: 9.8 s (maps 4.3, realistic 4.0, copies 1.4; 1192 rows); worker peak RSS 1.68 GB [elapsed 1270 s]
+  tile 759: 10.0 s (maps 4.3, realistic 4.0, copies 1.8; 1198 rows); worker peak RSS 1.71 GB [elapsed 1300 s]
+  tile 770: 9.6 s (maps 4.4, realistic 3.9, copies 1.3; 1157 rows); worker peak RSS 1.68 GB [elapsed 1334 s]
+  tile 780: 9.9 s (maps 4.4, realistic 4.1, copies 1.4; 1221 rows); worker peak RSS 1.71 GB [elapsed 1377 s]
+  tile 790: 10.4 s (maps 4.7, realistic 4.2, copies 1.4; 1248 rows); worker peak RSS 1.66 GB [elapsed 1408 s]
+  tile 799: 9.6 s (maps 4.5, realistic 3.8, copies 1.3; 1228 rows); worker peak RSS 1.66 GB [elapsed 1437 s]
+a02 done: 400 tiles in 1437 s wall; largest worker peak RSS 1.75 GB
+     1437.82 real      4278.07 user        22.63 sys
+          1754841088  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             6313667  page reclaims
+                1883  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                4849  voluntary context switches
+               57457  involuntary context switches
+          4818508525  instructions retired
+          2182613915  cycles elapsed
+            77563328  peak memory footprint
+/opt/homebrew/Cellar/python@3.12/3.12.9/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/resource_tracker.py:255: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+/opt/homebrew/Cellar/python@3.12/3.12.9/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/resource_tracker.py:268: UserWarning: resource_tracker: '/mp-snjeewfb': [Errno 2] No such file or directory
+  warnings.warn('resource_tracker: %r: %s' % (name, e))

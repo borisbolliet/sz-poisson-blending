@@ -1,0 +1,23 @@
+b15: new tiles 324..359 (36), production finder, 3 processes
+  tile 324: 19.4 s (baseline: realistic 4.7, halo-free 5.3; goal: realistic 5.5, halo-free 1.5); worker peak RSS 1.27 GB [elapsed 20 s]
+  tile 349: 13.9 s (baseline: realistic 3.8, halo-free 1.4; goal: realistic 5.3, halo-free 1.5); worker peak RSS 1.42 GB [elapsed 138 s]
+  tile 359: 14.2 s (baseline: realistic 4.1, halo-free 1.4; goal: realistic 5.4, halo-free 1.4); worker peak RSS 1.36 GB [elapsed 184 s]
+b15 done: 36 tiles in 184 s wall; largest worker peak RSS 1.42 GB
+      184.97 real       540.84 user         5.83 sys
+          1423835136  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1607269  page reclaims
+                 312  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 262  voluntary context switches
+               29832  involuntary context switches
+          4714017182  instructions retired
+          1682855069  cycles elapsed
+            77727168  peak memory footprint

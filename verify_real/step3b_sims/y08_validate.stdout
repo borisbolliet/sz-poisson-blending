@@ -1,0 +1,68 @@
+
+=================== [baseline] ===================
+(A) sparse injections: 12,000 clusters on 200 tiles; sigma_inj / sigma_free at 0.5' = +0.0145% +- 0.0021% (per set)
+    painted vs virtual copies (same Y, same sky), q > 4: 9,642 vs 9,690 (painted only 8, virtual only 56); ratio - 1 = -0.495% +- 0.083% (discordant pairs)
+    painted vs virtual copies (same Y, same sky), q > 5: 7,867 vs 7,870 (painted only 26, virtual only 29); ratio - 1 = -0.038% +- 0.094% (discordant pairs)
+    dq = q_painted - q_virtual at q 4-6: -0.0041 +- 0.0405 (n = 3566)
+    dq = q_painted - q_virtual at q 10-40: -0.0336 +- 0.0558 (n = 1659)
+    painted / kernel expectation - 1, q > 4: -0.30% +- 0.31% (raw); weighted like the realistic halos (q' 1.5-9): -0.26% +- 2.67%; virtual copies / kernel - 1: +0.20% +- 0.30%
+    painted / kernel expectation - 1, q > 5: -0.14% +- 0.37% (raw); weighted like the realistic halos (q' 1.5-9): +1.19% +- 2.45%; virtual copies / kernel - 1: -0.10% +- 0.37%
+    merge closest1: clusters whose q > 5 outcome changes 0 of 12,000 (q_obs changes: 5)
+    merge fof10: clusters whose q > 5 outcome changes 3 of 12,000 (q_obs changes: 25)
+(B) dense injections: 18,780 clusters on 120 tiles (64-225 per tile); sigma_dense / sigma_free - 1 at 0.5' / 4.45' / 15': +0.229% +- 0.018% / +0.307% +- 0.017% / +0.197% +- 0.022%
+    q > 4: painted dense / virtual halo-free filter        : -0.43% +- 0.08% (raw); weighted like the realistic halos -0.60% +- 0.33%
+    q > 4: virtual dense filter / virtual halo-free filter : -0.40% +- 0.07% (raw); weighted like the realistic halos -0.75% +- 0.27%
+    q > 4: painted dense / virtual dense filter            : -0.02% +- 0.06% (raw); weighted like the realistic halos +0.15% +- 0.23%
+    q > 4: painted dense / own kernel                      : -0.09% +- 0.33% (raw); weighted like the realistic halos -0.71% +- 1.53%
+    q > 5: painted dense / virtual halo-free filter        : +0.00% +- 0.12% (raw); weighted like the realistic halos +0.70% +- 0.45%
+    q > 5: virtual dense filter / virtual halo-free filter : -0.10% +- 0.10% (raw); weighted like the realistic halos -0.02% +- 0.33%
+    q > 5: painted dense / virtual dense filter            : +0.10% +- 0.09% (raw); weighted like the realistic halos +0.72% +- 0.35%
+    q > 5: painted dense / own kernel                      : +0.01% +- 0.45% (raw); weighted like the realistic halos +2.66% +- 1.87%
+    size  0.3':  4500 clusters; q > 5 painted 2219 vs virtual halo-free 2222 (-0.14%)
+    size  0.6':  4500 clusters; q > 5 painted 2294 vs virtual halo-free 2295 (-0.04%)
+    size  1.2':  4500 clusters; q > 5 painted 2320 vs virtual halo-free 2324 (-0.17%)
+    size  2.4':  2000 clusters; q > 5 painted 1054 vs virtual halo-free 1047 (+0.67%)
+    size  4.8':  2000 clusters; q > 5 painted 1080 vs virtual halo-free 1069 (+1.03%)
+    size  9.6':  1280 clusters; q > 5 painted 660 vs virtual halo-free 670 (-1.49%)
+(C) step 3a injections, size 0.3': 33,750 clusters on 150 tiles; credited q > 5 / own kernel - 1 = -0.32% +- 0.29%
+(C) step 3a injections, size 0.6': 33,750 clusters on 150 tiles; credited q > 5 / own kernel - 1 = -0.81% +- 0.31%
+(C) step 3a injections, size 1.2': 33,750 clusters on 150 tiles; credited q > 5 / own kernel - 1 = -0.26% +- 0.30%
+(C) step 3a injections, size 2.4': 33,750 clusters on 150 tiles; credited q > 5 / own kernel - 1 = -0.20% +- 0.28%
+(C) step 3a injections, size 4.8': 30,000 clusters on 300 tiles; credited q > 5 / own kernel - 1 = +0.55% +- 0.30%
+(C) step 3a injections, size 9.6': 28,800 clusters on 450 tiles; credited q > 5 / own kernel - 1 = -0.71% +- 0.28%
+(C) step 3a t03 + a02 pooled, credited q > 5 / own kernel - 1: -0.30% +- 0.12% (raw); weighted like the realistic halos: -0.06% +- 0.46%   [build with its kernel: -0.27 +- 0.12% / -0.30 +- 0.12%; weighted -0.3 +- 0.5% / -0.9 +- 0.4%]
+
+=================== [goal] ===================
+(A) sparse injections: 12,000 clusters on 200 tiles; sigma_inj / sigma_free at 0.5' = +0.0135% +- 0.0020% (per set)
+    painted vs virtual copies (same Y, same sky), q > 4: 9,676 vs 9,725 (painted only 7, virtual only 56); ratio - 1 = -0.504% +- 0.082% (discordant pairs)
+    painted vs virtual copies (same Y, same sky), q > 5: 7,859 vs 7,873 (painted only 23, virtual only 37); ratio - 1 = -0.178% +- 0.098% (discordant pairs)
+    dq = q_painted - q_virtual at q 4-6: -0.0026 +- 0.0371 (n = 3595)
+    dq = q_painted - q_virtual at q 10-40: -0.0304 +- 0.0501 (n = 1722)
+    painted / kernel expectation - 1, q > 4: -0.26% +- 0.29% (raw); weighted like the realistic halos (q' 1.5-9): +0.45% +- 1.84%; virtual copies / kernel - 1: +0.24% +- 0.29%
+    painted / kernel expectation - 1, q > 5: -0.60% +- 0.43% (raw); weighted like the realistic halos (q' 1.5-9): +0.67% +- 2.59%; virtual copies / kernel - 1: -0.42% +- 0.43%
+    merge closest1: clusters whose q > 5 outcome changes 0 of 12,000 (q_obs changes: 4)
+    merge fof10: clusters whose q > 5 outcome changes 0 of 12,000 (q_obs changes: 34)
+(B) dense injections: 18,780 clusters on 120 tiles (64-225 per tile); sigma_dense / sigma_free - 1 at 0.5' / 4.45' / 15': +0.212% +- 0.017% / +0.278% +- 0.016% / +0.176% +- 0.017%
+    q > 4: painted dense / virtual halo-free filter        : -0.38% +- 0.09% (raw); weighted like the realistic halos -0.42% +- 0.34%
+    q > 4: virtual dense filter / virtual halo-free filter : -0.39% +- 0.08% (raw); weighted like the realistic halos -0.47% +- 0.34%
+    q > 4: painted dense / virtual dense filter            : +0.02% +- 0.05% (raw); weighted like the realistic halos +0.05% +- 0.14%
+    q > 4: painted dense / own kernel                      : -0.41% +- 0.32% (raw); weighted like the realistic halos +0.68% +- 1.09%
+    q > 5: painted dense / virtual halo-free filter        : +0.05% +- 0.10% (raw); weighted like the realistic halos +0.08% +- 0.28%
+    q > 5: virtual dense filter / virtual halo-free filter : -0.21% +- 0.10% (raw); weighted like the realistic halos -0.28% +- 0.25%
+    q > 5: painted dense / virtual dense filter            : +0.26% +- 0.09% (raw); weighted like the realistic halos +0.36% +- 0.15%
+    q > 5: painted dense / own kernel                      : +0.31% +- 0.40% (raw); weighted like the realistic halos +1.69% +- 1.02%
+    size  0.3':  4500 clusters; q > 5 painted 2196 vs virtual halo-free 2196 (+0.00%)
+    size  0.6':  4500 clusters; q > 5 painted 2265 vs virtual halo-free 2270 (-0.22%)
+    size  1.2':  4500 clusters; q > 5 painted 2294 vs virtual halo-free 2296 (-0.09%)
+    size  2.4':  2000 clusters; q > 5 painted 1047 vs virtual halo-free 1046 (+0.10%)
+    size  4.8':  2000 clusters; q > 5 painted 1082 vs virtual halo-free 1071 (+1.03%)
+    size  9.6':  1280 clusters; q > 5 painted 661 vs virtual halo-free 661 (+0.00%)
+(C) step 3a injections, size 0.3': 33,750 clusters on 150 tiles; credited q > 5 / own kernel - 1 = -0.33% +- 0.30%
+(C) step 3a injections, size 0.6': 33,750 clusters on 150 tiles; credited q > 5 / own kernel - 1 = -0.66% +- 0.30%
+(C) step 3a injections, size 1.2': 33,750 clusters on 150 tiles; credited q > 5 / own kernel - 1 = -0.75% +- 0.29%
+(C) step 3a injections, size 2.4': 33,750 clusters on 150 tiles; credited q > 5 / own kernel - 1 = -0.40% +- 0.29%
+(C) step 3a injections, size 4.8': 30,000 clusters on 300 tiles; credited q > 5 / own kernel - 1 = +0.45% +- 0.29%
+(C) step 3a injections, size 9.6': 28,800 clusters on 450 tiles; credited q > 5 / own kernel - 1 = -0.65% +- 0.29%
+(C) step 3a t03 + a02 pooled, credited q > 5 / own kernel - 1: -0.40% +- 0.12% (raw); weighted like the realistic halos: -1.07% +- 0.45%   [build with its kernel: -0.27 +- 0.12% / -0.30 +- 0.12%; weighted -0.3 +- 0.5% / -0.9 +- 0.4%]
+
+y08 done in 2 s

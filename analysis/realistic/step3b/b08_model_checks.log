@@ -1,0 +1,86 @@
+tiles: 324 x 100 deg^2 = 32400 deg^2 = 0.7854 of the sky
+==================== prod / baseline: rbar(theta) at 0.5' / 1.04' / 2.15' / 4.45' / 9.23' / 15': 1.0394 / 1.0449 / 1.0503 / 1.0496 / 1.0371 / 1.0240
+  (1) q > 5: K-machinery with Phi(q' - e) 74,918.0 vs SmoothModelS(sigma_eff) 74,917.8; max |rel| per bin with > 1 count 5.8e-05
+  (1) q > 6: K-machinery with Phi(q' - e) 50,764.1 vs SmoothModelS(sigma_eff) 50,764.0; max |rel| per bin with > 1 count 5.5e-05
+  (2) q > 5, 1548 tiles: model x area 312,276.3 vs tiles' N_exp 312,188.5: -0.03% (-0.16 Poisson sigma); per z bin pulls: +0.6 -0.2 +0.3 -0.3 +0.9 -0.2 +0.1 +0.5 -0.2 -1.1 -0.3 -0.2 -0.7 -0.1 -1.3 +1.3; chi^2 7.1 for 16 bins; naive model full sky 83,219.1
+      z 0.01-0.1: tiles/model - 1 = +1.11% (Poisson 1.86%)
+      z 0.1-0.5: tiles/model - 1 = +0.13% (Poisson 0.29%)
+      z 0.5-1.0: tiles/model - 1 = -0.08% (Poisson 0.27%)
+      z 1.0-1.5: tiles/model - 1 = -0.18% (Poisson 0.48%)
+      z 1.5-2.0: tiles/model - 1 = -0.69% (Poisson 1.10%)
+      z 2.0-3.0: tiles/model - 1 = -2.32% (Poisson 2.73%)
+  (3) Q2 tiles: N_exp(q > 5) with each tile's r 65,346.9, with rbar for every halo 65,351.4 (+0.007%)
+==================== prod / goal: rbar(theta) at 0.5' / 1.04' / 2.15' / 4.45' / 9.23' / 15': 1.0531 / 1.0606 / 1.0682 / 1.0674 / 1.0515 / 1.0352
+  (1) q > 5: K-machinery with Phi(q' - e) 114,712.2 vs SmoothModelS(sigma_eff) 114,711.9; max |rel| per bin with > 1 count 5.9e-05
+  (1) q > 6: K-machinery with Phi(q' - e) 78,956.7 vs SmoothModelS(sigma_eff) 78,956.5; max |rel| per bin with > 1 count 5.9e-05
+  (2) q > 5, 1548 tiles: model x area 473,060.6 vs tiles' N_exp 472,959.0: -0.02% (-0.15 Poisson sigma); per z bin pulls: +0.3 +0.0 +0.6 -0.5 +0.9 -0.1 +0.0 +0.8 -0.6 -0.8 -0.4 -0.1 -0.5 -0.3 -1.4 +1.3; chi^2 7.4 for 16 bins; naive model full sky 126,066.9
+      z 0.01-0.1: tiles/model - 1 = +0.46% (Poisson 1.66%)
+      z 0.1-0.5: tiles/model - 1 = +0.13% (Poisson 0.25%)
+      z 0.5-1.0: tiles/model - 1 = -0.05% (Poisson 0.22%)
+      z 1.0-1.5: tiles/model - 1 = -0.15% (Poisson 0.37%)
+      z 1.5-2.0: tiles/model - 1 = -0.44% (Poisson 0.79%)
+      z 2.0-3.0: tiles/model - 1 = -1.62% (Poisson 1.84%)
+  (3) Q2 tiles: N_exp(q > 5) with each tile's r 98,986.5, with rbar for every halo 98,991.9 (+0.005%)
+==================== szifi3000 / baseline: rbar(theta) at 0.5' / 1.04' / 2.15' / 4.45' / 9.23' / 15': 1.1357 / 1.1400 / 1.1390 / 1.1192 / 1.0775 / 1.0489
+  (1) q > 5: K-machinery with Phi(q' - e) 64,326.8 vs SmoothModelS(sigma_eff) 64,326.6; max |rel| per bin with > 1 count 5.8e-05
+  (1) q > 6: K-machinery with Phi(q' - e) 43,307.3 vs SmoothModelS(sigma_eff) 43,307.2; max |rel| per bin with > 1 count 5.8e-05
+  (2) q > 5, 324 tiles: model x area 55,439.6 vs tiles' N_exp 55,431.9: -0.01% (-0.03 Poisson sigma); per z bin pulls: -0.5 +0.3 +0.3 -0.0 +0.7 -0.9 -0.4 -0.6 +0.3 -0.8 +1.0 +0.5 +0.2 -0.2 -0.9 -0.1; chi^2 5.1 for 16 bins; naive model full sky 70,587.8
+      z 0.01-0.1: tiles/model - 1 = -2.22% (Poisson 4.21%)
+      z 0.1-0.5: tiles/model - 1 = +0.41% (Poisson 0.68%)
+      z 0.5-1.0: tiles/model - 1 = -0.70% (Poisson 0.64%)
+      z 1.0-1.5: tiles/model - 1 = +1.31% (Poisson 1.17%)
+      z 1.5-2.0: tiles/model - 1 = +0.28% (Poisson 2.73%)
+      z 2.0-3.0: tiles/model - 1 = -6.51% (Poisson 6.99%)
+  (3) Q2 tiles: N_exp(q > 5) with each tile's r 55,431.9, with rbar for every halo 55,429.2 (-0.005%)
+==================== szifi3000 / goal: rbar(theta) at 0.5' / 1.04' / 2.15' / 4.45' / 9.23' / 15': 1.1800 / 1.1892 / 1.1931 / 1.1714 / 1.1175 / 1.0786
+  (1) q > 5: K-machinery with Phi(q' - e) 93,834.4 vs SmoothModelS(sigma_eff) 93,834.2; max |rel| per bin with > 1 count 6.3e-05
+  (1) q > 6: K-machinery with Phi(q' - e) 63,989.6 vs SmoothModelS(sigma_eff) 63,989.5; max |rel| per bin with > 1 count 5.5e-05
+  (2) q > 5, 324 tiles: model x area 80,086.3 vs tiles' N_exp 80,094.0: +0.01% (+0.03 Poisson sigma); per z bin pulls: -0.9 +0.5 +0.2 -0.3 +1.0 -0.5 -0.3 -0.5 +0.4 -0.8 +0.7 +0.2 -0.1 +0.1 -1.0 +0.2; chi^2 5.3 for 16 bins; naive model full sky 101,969.1
+      z 0.01-0.1: tiles/model - 1 = -3.43% (Poisson 3.84%)
+      z 0.1-0.5: tiles/model - 1 = +0.39% (Poisson 0.59%)
+      z 0.5-1.0: tiles/model - 1 = -0.39% (Poisson 0.53%)
+      z 1.0-1.5: tiles/model - 1 = +0.64% (Poisson 0.91%)
+      z 1.5-2.0: tiles/model - 1 = +0.04% (Poisson 2.01%)
+      z 2.0-3.0: tiles/model - 1 = -4.20% (Poisson 4.82%)
+  (3) Q2 tiles: N_exp(q > 5) with each tile's r 80,094.0, with rbar for every halo 80,073.2 (-0.026%)
+==================== szifi12000 / baseline: rbar(theta) at 0.5' / 1.04' / 2.15' / 4.45' / 9.23' / 15': 1.0193 / 1.0282 / 1.0391 / 1.0446 / 1.0368 / 1.0259
+  (1) q > 5: K-machinery with Phi(q' - e) 76,634.4 vs SmoothModelS(sigma_eff) 76,634.2; max |rel| per bin with > 1 count 5.8e-05
+  (1) q > 6: K-machinery with Phi(q' - e) 51,935.4 vs SmoothModelS(sigma_eff) 51,935.3; max |rel| per bin with > 1 count 5.5e-05
+  (2) q > 5, 324 tiles: model x area 67,533.8 vs tiles' N_exp 67,523.6: -0.02% (-0.04 Poisson sigma); per z bin pulls: -0.7 +0.4 +0.3 -0.1 +0.8 -0.7 -0.4 -0.6 +0.4 -0.9 +0.8 +0.3 +0.0 -0.0 -1.0 +0.1; chi^2 5.1 for 16 bins; naive model full sky 85,986.7
+      z 0.01-0.1: tiles/model - 1 = -2.63% (Poisson 4.05%)
+      z 0.1-0.5: tiles/model - 1 = +0.43% (Poisson 0.63%)
+      z 0.5-1.0: tiles/model - 1 = -0.57% (Poisson 0.58%)
+      z 1.0-1.5: tiles/model - 1 = +0.87% (Poisson 1.03%)
+      z 1.5-2.0: tiles/model - 1 = +0.06% (Poisson 2.32%)
+      z 2.0-3.0: tiles/model - 1 = -5.08% (Poisson 5.73%)
+  (3) Q2 tiles: N_exp(q > 5) with each tile's r 67,523.6, with rbar for every halo 67,524.8 (+0.002%)
+==================== szifi12000 / goal: rbar(theta) at 0.5' / 1.04' / 2.15' / 4.45' / 9.23' / 15': 1.0391 / 1.0520 / 1.0680 / 1.0756 / 1.0634 / 1.0471
+  (1) q > 5: K-machinery with Phi(q' - e) 115,409.8 vs SmoothModelS(sigma_eff) 115,409.5; max |rel| per bin with > 1 count 5.9e-05
+  (1) q > 6: K-machinery with Phi(q' - e) 79,349.1 vs SmoothModelS(sigma_eff) 79,348.9; max |rel| per bin with > 1 count 5.9e-05
+  (2) q > 5, 324 tiles: model x area 100,614.7 vs tiles' N_exp 100,592.9: -0.02% (-0.07 Poisson sigma); per z bin pulls: -1.0 +0.6 +0.3 -0.5 +1.1 -0.3 -0.3 -0.6 +0.4 -0.8 +0.5 -0.0 -0.3 +0.3 -0.9 +0.2; chi^2 5.6 for 16 bins; naive model full sky 128,106.6
+      z 0.01-0.1: tiles/model - 1 = -3.68% (Poisson 3.65%)
+      z 0.1-0.5: tiles/model - 1 = +0.38% (Poisson 0.54%)
+      z 0.5-1.0: tiles/model - 1 = -0.34% (Poisson 0.47%)
+      z 1.0-1.5: tiles/model - 1 = +0.33% (Poisson 0.79%)
+      z 1.5-2.0: tiles/model - 1 = -0.11% (Poisson 1.68%)
+      z 2.0-3.0: tiles/model - 1 = -3.18% (Poisson 3.91%)
+  (3) Q2 tiles: N_exp(q > 5) with each tile's r 100,592.9, with rbar for every halo 100,593.4 (+0.001%)
+done [5 s]
+        5.87 real         5.72 user         0.37 sys
+          1179222016  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               84693  page reclaims
+                 126  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1519  voluntary context switches
+                1120  involuntary context switches
+         63742711037  instructions retired
+         18801989302  cycles elapsed
+          1135119936  peak memory footprint

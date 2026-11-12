@@ -1,0 +1,40 @@
+  Om node 1/33 [2s]
+  Om node 6/33 [10s]
+  Om node 11/33 [18s]
+  Om node 16/33 [26s]
+  Om node 21/33 [34s]
+  Om node 26/33 [42s]
+  Om node 31/33 [50s]
+grid (33, 33, 96, 553) built in 53s; rho_c0 = 1.270528e+11 Msun/Mpc^3
+(0) smooth vs colossus' rounded Tinker08 at the fiducial: count-weighted mean |rel| 2.4e-04, max |rel| (d2N > 1e-3) 4.6e-03
+(1) fiducial: direct colossus at my nodes (Om 0.3111, s8 0.8102) vs szsim d2N_dzdlnM_fullsky:
+    z = 0.0443: max |rel| (d2N > 1e-3) = 2.6e-08
+    z = 0.4966: max |rel| (d2N > 1e-3) = 1.9e-09
+    z = 0.9966: max |rel| (d2N > 1e-3) = 7.8e-10
+    z = 1.9916: max |rel| (d2N > 1e-3) = 3.1e-10
+(2) tensor not-a-knot cubic spline at off-node points vs direct colossus (nodes with d2N > 1e-2):
+    Om=0.3111 s8=0.8102: max |rel| 6.4e-04; count-weighted mean |rel| 2.9e-06
+    Om=0.2963 s8=0.7891: max |rel| 1.5e-03; count-weighted mean |rel| 6.6e-06
+    Om=0.3297 s8=0.8456: max |rel| 2.0e-04; count-weighted mean |rel| 1.7e-06
+    Om=0.2457 s8=0.7712: max |rel| 1.6e-03; count-weighted mean |rel| 5.5e-06
+    Om=0.3689 s8=0.8647: max |rel| 6.5e-04; count-weighted mean |rel| 2.9e-06
+    Om=0.3912 s8=0.8873: max |rel| 2.0e-04; count-weighted mean |rel| 6.4e-06
+total 56s
+       56.62 real        56.02 user         0.42 sys
+           796262400  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               55552  page reclaims
+                  80  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 281  voluntary context switches
+                 798  involuntary context switches
+        794030212879  instructions retired
+        171527005295  cycles elapsed
+           773442048  peak memory footprint

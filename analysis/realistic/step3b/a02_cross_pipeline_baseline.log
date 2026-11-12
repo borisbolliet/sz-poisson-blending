@@ -1,0 +1,27 @@
+a02: the build's pipeline on the sims verifier's tiles 0..59, baseline, 3 processes
+  tile 1: 17.0 s (maps 7.8, realistic 4.2, copies 5.1; 1221 rows); worker peak RSS 1.66 GB [elapsed 18 s]
+  tile 9: 10.9 s (maps 5.3, realistic 4.1, copies 1.6; 1211 rows); worker peak RSS 1.76 GB [elapsed 49 s]
+  tile 20: 10.6 s (maps 4.8, realistic 4.3, copies 1.6; 1211 rows); worker peak RSS 1.68 GB [elapsed 80 s]
+  tile 30: 10.8 s (maps 4.9, realistic 4.5, copies 1.5; 1235 rows); worker peak RSS 1.72 GB [elapsed 120 s]
+  tile 40: 11.3 s (maps 5.1, realistic 4.7, copies 1.5; 1209 rows); worker peak RSS 1.76 GB [elapsed 154 s]
+  tile 50: 11.1 s (maps 4.9, realistic 4.6, copies 1.6; 1191 rows); worker peak RSS 1.68 GB [elapsed 187 s]
+  tile 59: 11.4 s (maps 4.7, realistic 4.9, copies 1.8; 1278 rows); worker peak RSS 1.76 GB [elapsed 221 s]
+a02 done: 60 tiles in 221 s wall; largest worker peak RSS 1.76 GB
+      221.41 real       655.64 user         3.70 sys
+          1761067008  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              985277  page reclaims
+                 315  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  96  voluntary context switches
+               11494  involuntary context switches
+          4623431306  instructions retired
+          1853558103  cycles elapsed
+            77563392  peak memory footprint

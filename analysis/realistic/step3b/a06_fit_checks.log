@@ -1,0 +1,30 @@
+(1) f_sky invariance of the ML point in configs without a prior (a, b, c, e): SO40 vs full-sky rows of fits.json
+  128 pairs: largest |theta_SO40 - theta_full| 1.58e-04 (('prod_none', 'baseline', 'R', 6.0, 'c', 'SO40')); full / SO40 S8-bias ratio 1.5708-1.5869 (sqrt(1/0.4) = 1.5811)
+  fof 10', goal, config e, SO40: S8 bias +4.738, theta [0.3689, 0.8647, 0.6581, 1.9608, 0.001], at bound ['slnY']
+  fof 10', goal, config e, full: S8 bias +7.492, theta [0.3689, 0.8647, 0.6581, 1.9608, 0.001], at bound ['slnY']
+(2) careful re-optimisation (1 processes)
+  prod_none  baseline SO40 d: build ML S8 +0.3597 (lnL -1.347188, at bound []); re-optimised: from build solution: lnL -1.347188 (+4.08e-09), S8 +0.3597; from truth: lnL -1.347188 (+4.16e-09), S8 +0.3597 -> best S8 +0.3597 [179 s]
+  prod_none  baseline SO40 e: build ML S8 +0.4662 (lnL -1.305144, at bound []); re-optimised: from build solution: lnL -1.305144 (+7.27e-07), S8 +0.4638; from truth: lnL -1.305144 (+7.27e-07), S8 +0.4638 -> best S8 +0.4638 [178 s]
+  prod_none  goal     SO40 d: build ML S8 +0.6610 (lnL -3.179886, at bound []); re-optimised: from build solution: lnL -3.179884 (+1.84e-06), S8 +0.6625; from truth: lnL -3.179884 (+1.84e-06), S8 +0.6625 -> best S8 +0.6625 [54 s]
+  prod_none  goal     SO40 e: build ML S8 +0.7092 (lnL -3.122383, at bound []); re-optimised: from build solution: lnL -3.122383 (+9.03e-08), S8 +0.7089; from truth: lnL -3.122381 (+1.29e-06), S8 +0.7124 -> best S8 +0.7124 [56 s]
+  prod_fof10 goal     full d: build ML S8 +4.9514 (lnL -131.092266, at bound ['slnY']); re-optimised: from build solution: lnL -130.870593 (+2.22e-01), S8 +4.9333; from truth: lnL -130.926349 (+1.66e-01), S8 +5.4214 -> best S8 +4.9333 [154 s]
+  prod_fof10 goal     full e: build ML S8 +7.4916 (lnL -126.247982, at bound ['slnY']); re-optimised: from build solution: lnL -126.124735 (+1.23e-01), S8 +7.4412; from truth: lnL -126.125677 (+1.22e-01), S8 +7.0640 -> best S8 +7.4412 [126 s]
+done [748 s]
+      749.04 real       745.91 user         2.49 sys
+          1022230528  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              212616  page reclaims
+                 158  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  36  voluntary context switches
+               11905  involuntary context switches
+          8196537181  instructions retired
+          3157334034  cycles elapsed
+           103024128  peak memory footprint

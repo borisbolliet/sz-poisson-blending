@@ -2,11 +2,12 @@
 
 This page summarises what has been done so far, what we found and what comes next.
 - **Idealised telescope (Q1–Q3):** details in [`REPORT.md`](REPORT.md).
-- **Realistic Simons Observatory setup:** details in [`analysis/realistic/step1/RESULTS.md`](analysis/realistic/step1/RESULTS.md), [`analysis/realistic/step2/RESULTS.md`](analysis/realistic/step2/RESULTS.md) and [`analysis/realistic/step3/RESULTS.md`](analysis/realistic/step3/RESULTS.md).
+- **Realistic Simons Observatory setup:** details in [`analysis/realistic/step1/RESULTS.md`](analysis/realistic/step1/RESULTS.md), [`analysis/realistic/step2/RESULTS.md`](analysis/realistic/step2/RESULTS.md), [`analysis/realistic/step3/RESULTS.md`](analysis/realistic/step3/RESULTS.md) (step 3a) and [`analysis/realistic/step3b/RESULTS.md`](analysis/realistic/step3b/RESULTS.md).
 
-Every number below comes from a script in this repository. Logs are committed for the realistic setup, the patch pictures and the finder timing test; the Q1–Q3 logs are kept locally. Every Q1–Q3 and step-1 result was checked independently before being reported. So was every step-2 and step-3a result, except a few that only one reviewer computed or checked:
+Every number below comes from a script in this repository. Logs are committed for the realistic setup, the patch pictures and the finder timing test; the Q1–Q3 logs are kept locally. Every Q1–Q3 and step-1 result was checked independently before being reported. So was every step-2, step-3a and step-3b result, except a few that only one reviewer computed or checked:
 - step 2: the arbiter's extra analyst setups, and the map check's Poisson realisations;
-- step 3a: the count-change preview with its selection calibration, and the class fractions and count change with SZiFi's default settings (the arbiter).
+- step 3a: the count-change preview with its selection calibration, and the class fractions and count change with SZiFi's default settings (the arbiter);
+- step 3b: the final headline on all tiles and the arbiter's targeted tests (the arbiter; for this report, its q > 5 biases in configs a, d and e were refitted with the fits check's code on the arbiter's data), and the fits with our re-implementation of SZiFi's SO-script setting (the builder only).
 
 Each RESULTS.md says, claim by claim, which check confirmed it. The patch pictures and the timing test carry only their own internal checks.
 
@@ -20,7 +21,8 @@ Each RESULTS.md says, claim by claim, which check confirmed it. The patch pictur
 | Realistic step 1 | Does blending survive with SO's forecast noise, the CMB and a six-channel filter? | done, verified: **yes; Y boosts and losses about halved** |
 | Realistic step 2 | Does the cosmology bias survive with the SO filter? | done, verified: **with the default analysis choices, Q3's S8 bias disappears when the Y–M relation is fitted (at most +0.6σ, SO-like, over all choices tried); with the relation fixed, +1.33σ to +1.85σ (SO-like), the opposite sign to Q3** |
 | Realistic step 3a | What does a real cluster finder do with blended peaks? | done, verified: **it credits each peak to its brighter cluster (like f_dom ≈ 0.7) and adds some blending by searching over position and size. It matches the step-2 cases whose S8 bias is +0.1σ to +0.4σ with the Y–M relation fitted and −0.6σ to −3.7σ with it fixed (SO-like; a preview read off step 2's table, for our finder's way of estimating the noise after masking)** |
-| Realistic step 3b | Cosmology fits with the finder's own catalogue | next (see the last section) |
+| Realistic step 3b | Cosmology fits with the finder's own catalogue | done, verified: **the catalogue holds 1.5% (baseline) and 2.1% (goal) fewer clusters at q > 5 than a no-blending analysis expects. S8 is biased by +0.32σ / +0.68σ with the Y–M relation fitted and −2.3σ / −4.2σ with it fixed (SO-like), and a goodness-of-fit test would rarely notice** |
+| SZiFi itself | Does SZiFi's own code confirm step 3a's re-implementation? | running (see the last section) |
 
 ---
 
@@ -267,9 +269,71 @@ S8 bias, SO-like survey, q > 5, default attribution rule (f_dom = 1), S/N divide
   - The SZiFi check found that our masking step is not SZiFi's. The arbiter wrote its own implementation of SZiFi's masking step, confirmed the effect and ran it on 100 tiles per noise level.
 - **Open:**
   - which masked-noise estimate an SO pipeline will use: it moves the count change from −0.8% to −4.7% (baseline);
-  - the selection calibration: calibrating on injection tiles or on noise-only tiles differs by about 1 point, and injection sets of the same size scatter more than expected;
+  - the selection calibration: calibrating on injection tiles or on noise-only tiles differs by about 1 point (settled in step 3b, below), and injection sets of the same size scatter more than expected;
   - SZiFi itself not yet run;
   - no foregrounds, halo clustering or masks; the halo population's SZ power is 2.65× SPT's.
+
+### Realistic SO telescope, step 3b: cosmology fits with the finder's own catalogue
+
+**Setup:**
+- **The analyst.** Step 3a read its cosmology off step 2's table. Here the finder's own catalogue is fitted by an analyst who models every cluster as isolated. The analyst knows the finder's noise level and how it selects isolated clusters: the best a no-blending analysis can do.
+- **The analyst's selection** comes from 1.3 million *virtual* isolated clusters per noise level and finder variant. Each one's filtered signal is added to the finder's final S/N maps of the same tile without halos (same CMB and noise). Then the finder's peak rules apply, and the cluster is credited if its own signal at the peak is at least 2σ. Sparse clusters painted into the same halo-free maps and found end to end agree with them: +0.00 ± 0.27% (baseline) and +0.27 ± 0.28% (goal) at q > 5.
+- **The finder's catalogue** comes from 2,348 (baseline) and 1,948 (goal) tiles of 100 deg²: step 3a's 324, 1,224 new tiles from 34 new full-sky skies, and 800 (baseline) or 400 (goal) tiles made with the sims check's generators. A halo counts once, at the S/N of its highest credited detection.
+- **Fits.** In each of step 2's 16 redshift × 9 S/N bins, the ratio of the catalogue's counts to the analyst's expectation multiplies the analyst's model counts. This gives noiseless mock data, as in step 2, which are fitted with step 2's configs a–e. Three finder variants are compared: our finder, and our re-implementation of SZiFi's masked-noise step with its default settings and with its SO script's setting (ℓ_sep = 12000). The SZiFi variants use step 3a's 324 tiles only, so their errors are 2–3 times larger.
+
+<p align="center"><img src="figures/realistic/step3b_bias_bars_goal.png" width="900"></p>
+
+*Bias in Ωm, σ8 and S8 for each fit configuration (rows a–e), SO goal noise, q > 5. Top: SO-like survey; bottom: full sky. Diamonds: step 2's default analysis. Grey bars: step 3a's preview. Blue: our finder (open circles: merged within 10′). Orange and green: our re-implementation of SZiFi's masking with its default and SO-script settings. Whiskers: error from the finite simulations. Our finder's points use the builder's 1,548 tiles, the SZiFi variants step 3a's 324. The final values for our finder on all tiles (table below) differ from the filled blue points by at most 0.06σ at SO-like size and 0.09σ on the full sky.*
+
+| S8 bias, q > 5, SO-like survey (full sky) | SO baseline | SO goal |
+|---|---|---|
+| count change against the no-blending expectation | **−1.46 ± 0.05%** | **−2.10 ± 0.05%** |
+| config d: Ωm, σ8, (1−b) with a 4% prior, α, σlnY | **+0.32 ± 0.04σ** (+0.50σ) | **+0.68 ± 0.06σ** (+1.06σ) |
+| config e: as d, no prior on (1−b) | +0.38 ± 0.07σ (+0.60σ) | +0.72 ± 0.09σ (+1.15σ) |
+| config a: Ωm and σ8 only | **−2.33 ± 0.09σ** (−3.68σ) | **−4.23 ± 0.10σ** (−6.69σ) |
+| q > 6 instead: config d / config a | +0.10σ / −0.88σ | +0.23σ / −1.56σ |
+
+*Our finder, no merging, all tiles. The ± is the error from the finite simulations; the choice of estimator adds at most 0.04σ at SO-like size and 0.07σ on the full sky.*
+
+**What step 3b shows:**
+- **S8 is biased even when the scaling relation is fitted.** The catalogue holds 1.46% (baseline) and 2.10% (goal) fewer clusters at q > 5 than the analyst expects. The loss is almost all at q = 5–7.3 (−2.4% / −3.5%). The fit absorbs it by steepening the Y–M slope α (+1.1σ / +2.0σ), which drags σ8 up. S8 is off by +0.32σ / +0.68σ in config d for an SO-like survey and +0.50σ / +1.06σ on the full sky. A goodness-of-fit test would rarely notice. At SO-like size its power is 0.07 / 0.10 in config d and at most 0.21 in any configuration.
+- **Why fewer clusters?** The finder measures S/N against its own noise level, which still holds the SZ of the halos it does not mask: 1.02–1.07 times the noise-only value. In these units a cluster's own CMB and instrument noise is less than one, while the analyst's isolated clusters scatter by one unit. So fewer faint clusters scatter above q = 5 than the analyst expects, and neighbours give back only part of the loss.
+- **With the relation fixed, the sign is negative, as in Q3.** Only Ωm and σ8 can absorb the deficit: S8 is off by −2.33σ / −4.23σ (SO-like). Step 2's default analysis had +1.33σ / +1.85σ, the opposite sign.
+- **The masked-noise estimate matters, most at goal depth.** Config d at goal is +0.68σ with our finder. With our re-implementation of SZiFi's masking it is +0.90σ (SO-script setting) and +1.02σ (default settings). Config a is −4.2σ, −5.7σ and −8.0σ. At baseline config d is +0.32σ, +0.31σ and −0.04 ± 0.15σ. The last value comes from the unsmoothed estimator, because the pooled one over-smooths for this variant.
+- **Do not merge at 10′.** Merging within 1′ changes config d by at most 0.03σ (SO-like). Merging within 10′ removes another 7.4% / 11.2% of real clusters. Then config d is +1.04σ / about +2.6σ to +2.8σ and config a −13σ / −26σ. A goodness-of-fit test would flag it in config a (power 1.00), less reliably in config d (0.58–1.00).
+- **The right no-blending reference is isolated clusters.** This settles step 3a's open question of which calibration to use. Isolated clusters on skies without halos, virtual or painted, give the same selection at q > 5.
+  - Any injection tile, dense or sparse, selects slightly fewer clusters near q = 4, below the q > 5 cut.
+  - Using step 3a's injection sets instead (expected counts 0.3% / 0.9% lower) would move config d by at most 0.06σ, but config a by +0.4σ / +1.5σ (± 0.6σ / ± 0.8σ).
+  - Step 3a's 0.8 / 1.2-point gap between its two calibrations was mostly statistical, plus its different detection criterion.
+  - A real analysis that calibrates by injecting clusters into the real maps would fold part of the confusion into its selection.
+- **The preview had the right sign but too small a config-d bias.** Config d lies 0.10σ (baseline) and 0.28σ (goal) above the upper end of step 3a's preview (+0.22σ / +0.40σ). It is close to the step-2 case with attribution f_dom = 0.5 and noise estimate (iii) (+0.35σ / +0.61σ). That case's count change has the finder's S/N shape, though not its total.
+- **A simple analytic selection function can be a bigger risk than blending.** Suppose the analyst uses Φ(√(q′² + k) − 5) instead of the measured selection, set to zero below q′ = 2.
+  - q′ is a cluster's true Y over the finder's noise level. k = 0 is steps 1–2's model; k = 2 or 3 corrects for the search over position and size, as in ACT-, SPT- and SZiFi-type analyses.
+  - This analyst sees almost the same blending effect, within 0.23σ in configs a and d.
+  - But the function adds its own error, before any blending. In config a it is +15.6σ / +17.8σ for k = 0 and −6.3σ / −8.9σ for k = 3, against about −2σ / −4σ from blending itself. k = 2 comes closest, at +1.8σ / +0.9σ.
+
+**Verification:**
+- **Fits check:** rebuilt the data vector from the build's per-halo tables with its own binning, kernel interpolation and estimator. It re-measured the selection with exactly painted clusters, and refitted with its own count model and fitter. Every headline count and bias was reproduced within its error.
+  - Its own estimator gave config d 0.04σ more. The arbiter traced this to the check's own discretisation, and the estimator choice is now quoted as an error of at most 0.04σ.
+  - It also found that the pooled estimator over-smooths for SZiFi's defaults at baseline, so that value now comes from the unsmoothed one.
+- **Sims check:** its own pipeline on 400 fresh tiles per noise level, from the halo sampler to the fits, plus its own injections. It reproduced the selection, the goal results and the SZiFi-default results (with its own re-implementation of SZiFi's masking, on 60 tiles). At baseline its count change was larger: −1.71 ± 0.13% against −1.36 ± 0.06%.
+- **Arbitration:**
+  - The builder's code on the sims check's own maps credits the same clusters (11,911 of 11,912). So the codes agree, and the gap comes from the tile samples.
+  - The arbiter made 400 more tiles with the sims check's generators and pooled all tiles for the final headline. This moved config d at baseline from +0.36σ to +0.32σ.
+  - It also confirmed the sims check's correction of the dense-injection explanation, and re-optimised the goal fits merged within 10′.
+- **For this report:** the q > 5 biases of configs a, d and e were refitted with the fits check's count model and fitter on the arbiter's pooled data ([`verify_real/step3b_report/`](verify_real/step3b_report/)).
+  - Configs a and d agree within 0.01σ.
+  - Config e comes out 0.01–0.03σ lower at SO-like size and up to 0.06σ lower on the full sky, the known difference between the two count models in config e.
+  - Weighted with the check's model counts, the count change is unchanged.
+- **Open:**
+  - The builder's tiles and the tiles made with the sims check's generators differ at baseline by 2.6σ (−1.36% against −1.64%), for an unknown reason. If the difference is real, the baseline biases carry about ±0.05σ (config d) and ±0.25σ (config a) more.
+  - Which masked-noise estimate an SO pipeline will use. Step 3b uses step 3a's re-implementation of SZiFi's masking; SZiFi itself is being run now.
+  - Config e at goal is at the 0.1σ precision target.
+  - The pooled estimator over-smooths for the SZiFi variants. It also assumes unclustered halos; with clustered halos (Websky) the per-bin estimator and many more tiles will be needed.
+  - At goal the per-bin and pooled estimators differ bin by bin more than expected (χ² 150 for 106 bins), although their config-d biases agree within 0.03σ.
+  - The goal fits merged within 10′ are uncertain by ±0.2σ (SO-like) and ±0.4σ (full sky).
+  - Not traced: why injection tiles lose clusters near q = 4, and the extra loss at z < 0.1 (−2.5% against about −1.5% elsewhere at baseline).
+  - No foregrounds, halo clustering or masks; the halo population's SZ power is 2.65× SPT's.
 
 ---
 
@@ -320,6 +384,10 @@ Only general scientific and cosmology libraries; everything SZ-specific is our o
   - the SZiFi-like finder, the tile simulator and the exact split of each detection into halos, CMB and noise;
   - noise-only and injection runs for the finder's own false detections and selection;
   - SZiFi's masked-noise step as an option, for comparison.
+- **Realistic SO, step 3b** ([`analysis/realistic/step3b/`](analysis/realistic/step3b/)):
+  - the analyst's selection from virtual isolated clusters, and its check with clusters painted into maps;
+  - three estimators of the finder's count change, two of them paired between each halo and its isolated copy (one per bin, one pooled over redshift);
+  - 1,224 more tiles, the cosmology fits (configs a–e) and an analyst with an analytic selection function.
 - **Pictures of patches** ([`analysis/visual/`](analysis/visual/)): the two figures at the top of this page.
 
 ### How every result is checked
@@ -335,13 +403,20 @@ Only general scientific and cosmology libraries; everything SZ-specific is our o
 
 ---
 
-## Next: cosmology with the finder's own catalogue (step 3b)
+## Next: SZiFi itself on our tiles
 
-Step 3a measured what a SZiFi-like finder does with blended peaks, but its cosmology numbers are read off step 2's table. Step 3b fits the finder's own counts:
-- **Selection.** Calibrate the finder's selection with one large injection set (at least 10⁵ clusters per noise level), for the whole distribution of measured S/N rather than only q > 5, and settle the unit-noise reference.
-- **Data vector.** Measure the finder's count change in step 2's 16 redshift × 9 S/N bins from the 324 tiles per noise level, and apply it to the model counts of an SO-like survey and of the full sky.
-- **Fits.** Redo configs a–e, for our finder and for SZiFi's default masking.
-- **Checks.** Two independent checks and an arbitration, as before; SZiFi itself on a subset of tiles if it can be run in our environment.
+Steps 3a and 3b used our own finder and our re-implementation of SZiFi's masking. SZiFi's own code now runs in a separate environment. It is being run on up to 30 of step 3a's tiles per noise level and on noise-only tiles, with four settings:
+- no inpainting;
+- its defaults (30 tiles);
+- its defaults with the SO example script's ℓ_sep = 12000;
+- the SO example script's full settings, as is and with an isotropic covariance.
+
+The settings other than the defaults use 2–10 tiles. The run checks:
+- whether SZiFi gives the same catalogue as our emulation before the masking step;
+- whether our re-implementation of its masking reproduces its noise level, its false detections and its number of q > 5 detections;
+- what SZiFi's SO example settings give.
+
+It has two independent checks and an arbitration, as before. Its answer bears on step 3b's open question: which masked-noise estimate an SO pipeline will use.
 
 **After that:**
 - foregrounds (CIB, radio, kSZ);

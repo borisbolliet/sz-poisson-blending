@@ -1,0 +1,148 @@
+S8 bias, own vs build (same estimator; errors = each side's tile bootstrap of the linearised bias)
+  production R_s             baseline a SO40 q5 [ML ]: own  -2.65 +- 0.24 | build  -2.16 +- 0.11 | diff -0.49 = -1.9 combined sigma
+  production R_p             baseline a SO40 q5 [ML ]: own  -2.65 +- 0.23 | build  -2.17 +- 0.11 | diff -0.48 = -1.9 combined sigma
+  production R               baseline a SO40 q5 [ML ]: own  -2.73 +- 0.31 | build  -2.41 +- 0.16 | diff -0.32 = -0.9 combined sigma
+  production R (joint boot)  baseline a SO40 q5 [lin]: own  -2.71 +- 0.34 | build  -2.39 +- 0.16 | diff -0.31 = -0.8 combined sigma
+  production R_s             baseline a full q5 [ML ]: own  -4.19 +- 0.37 | build  -3.41 +- 0.17 | diff -0.78 = -1.9 combined sigma
+  production R_p             baseline a full q5 [ML ]: own  -4.20 +- 0.37 | build  -3.43 +- 0.17 | diff -0.77 = -1.9 combined sigma
+  production R               baseline a full q5 [ML ]: own  -4.32 +- 0.49 | build  -3.81 +- 0.26 | diff -0.50 = -0.9 combined sigma
+  production R (joint boot)  baseline a full q5 [lin]: own  -4.28 +- 0.54 | build  -3.79 +- 0.26 | diff -0.49 = -0.8 combined sigma
+  production R_s             baseline d SO40 q5 [ML ]: own  +0.16 +- 0.12 | build  +0.36 +- 0.05 | diff -0.20 = -1.6 combined sigma
+  production R_p             baseline d SO40 q5 [ML ]: own  +0.11 +- 0.14 | build  +0.36 +- 0.06 | diff -0.25 = -1.7 combined sigma
+  production R               baseline d SO40 q5 [ML ]: own  -0.07 +- 0.19 | build  +0.46 +- 0.10 | diff -0.53 = -2.5 combined sigma
+  production R (joint boot)  baseline d SO40 q5 [lin]: own  -0.08 +- 0.19 | build  +0.43 +- 0.10 | diff -0.50 = -2.4 combined sigma
+  production R_s             baseline d full q5 [ML ]: own  +0.24 +- 0.21 | build  +0.58 +- 0.10 | diff -0.34 = -1.5 combined sigma
+  production R_p             baseline d full q5 [ML ]: own  +0.14 +- 0.25 | build  +0.62 +- 0.12 | diff -0.48 = -1.7 combined sigma
+  production R               baseline d full q5 [ML ]: own  -0.16 +- 0.36 | build  +0.85 +- 0.18 | diff -1.01 = -2.5 combined sigma
+  production R (joint boot)  baseline d full q5 [lin]: own  -0.17 +- 0.34 | build  +0.74 +- 0.18 | diff -0.92 = -2.4 combined sigma
+  production R_s             baseline e SO40 q5 [ML ]: own  +0.18 +- 0.19 | build  +0.47 +- 0.09 | diff -0.29 = -1.4 combined sigma
+  production R_p             baseline e SO40 q5 [ML ]: own  +0.08 +- 0.24 | build  +0.53 +- 0.11 | diff -0.46 = -1.7 combined sigma
+  production R               baseline e SO40 q5 [ML ]: own  -0.16 +- 0.35 | build  +0.80 +- 0.17 | diff -0.96 = -2.5 combined sigma
+  production R (joint boot)  baseline e SO40 q5 [lin]: own  -0.17 +- 0.32 | build  +0.61 +- 0.17 | diff -0.78 = -2.1 combined sigma
+  production R_s             baseline e full q5 [ML ]: own  +0.28 +- 0.30 | build  +0.74 +- 0.14 | diff -0.46 = -1.4 combined sigma
+  production R_p             baseline e full q5 [ML ]: own  +0.12 +- 0.38 | build  +0.84 +- 0.18 | diff -0.72 = -1.7 combined sigma
+  production R               baseline e full q5 [ML ]: own  -0.26 +- 0.56 | build  +1.27 +- 0.27 | diff -1.52 = -2.5 combined sigma
+  production R (joint boot)  baseline e full q5 [lin]: own  -0.28 +- 0.51 | build  +0.96 +- 0.27 | diff -1.24 = -2.1 combined sigma
+  production R_s q_cut 6     baseline a SO40 q6 [ML ]: own  -1.01 +- 0.25 | build  -0.73 +- 0.11 | diff -0.28 = -1.0 combined sigma
+  production R_s q_cut 6     baseline d SO40 q6 [ML ]: own  +0.23 +- 0.11 | build  +0.05 +- 0.05 | diff +0.17 = +1.4 combined sigma
+  production R_s q_cut 6     baseline e SO40 q6 [ML ]: own  +0.24 +- 0.18 | build  +0.10 +- 0.09 | diff +0.14 = +0.7 combined sigma
+  closest 1' R_s             baseline d SO40 q5 [ML ]: own  +0.18 +- 0.14 | build  +0.37 +- 0.05 | diff -0.18 = -1.2 combined sigma
+  fof 10' R_s                baseline d SO40 q5 [ML ]: own  +1.14 +- 0.16 | build  +1.04 +- 0.06 | diff +0.11 = +0.6 combined sigma
+  fof 10' R_s                baseline a SO40 q5 [ML ]: own -14.38 +- 0.27 | build -13.25 +- 0.13 | diff -1.12 = -3.8 combined sigma
+  + no real, R_p (lin)       baseline d SO40 q5 [lin]: own  -0.36 +- 0.15 | build  -0.05 +- 0.07 | diff -0.31 = -1.9 combined sigma
+  + no real, R_p (lin)       baseline a SO40 q5 [lin]: own  -0.18 +- 0.24 | build  +0.23 +- 0.12 | diff -0.42 = -1.5 combined sigma
+  SZiFi defaults R_s         baseline a SO40 q5 [ML ]: own  -5.67 +- 0.63 | build  -4.83 +- 0.26 | diff -0.84 = -1.2 combined sigma
+  SZiFi defaults R_p         baseline a SO40 q5 [lin]: own  -5.33 +- 0.64 | build  -4.75 +- 0.26 | diff -0.58 = -0.8 combined sigma
+  SZiFi defaults R_s         baseline a full q5 [ML ]: own  -8.96 +- 1.00 | build  -7.64 +- 0.41 | diff -1.32 = -1.2 combined sigma
+  SZiFi defaults R_p         baseline a full q5 [lin]: own  -8.43 +- 1.00 | build  -7.50 +- 0.41 | diff -0.92 = -0.8 combined sigma
+  SZiFi defaults R_s         baseline d SO40 q5 [ML ]: own  +0.42 +- 0.40 | build  +0.17 +- 0.13 | diff +0.26 = +0.6 combined sigma
+  SZiFi defaults R_p         baseline d SO40 q5 [lin]: own  +0.21 +- 0.37 | build  -0.04 +- 0.15 | diff +0.25 = +0.6 combined sigma
+  SZiFi defaults R_s         baseline d full q5 [ML ]: own  +0.35 +- 0.64 | build  +0.14 +- 0.21 | diff +0.20 = +0.3 combined sigma
+  SZiFi defaults R_p         baseline d full q5 [lin]: own  +0.13 +- 0.66 | build  -0.24 +- 0.27 | diff +0.37 = +0.5 combined sigma
+  SZiFi defaults R_s         baseline e SO40 q5 [ML ]: own  -0.16 +- 0.53 | build  -0.03 +- 0.19 | diff -0.13 = -0.2 combined sigma
+  SZiFi defaults R_p         baseline e SO40 q5 [lin]: own  -0.14 +- 0.64 | build  -0.37 +- 0.27 | diff +0.23 = +0.3 combined sigma
+  SZiFi defaults R_s         baseline e full q5 [ML ]: own  -0.25 +- 0.83 | build  -0.05 +- 0.30 | diff -0.20 = -0.2 combined sigma
+  SZiFi defaults R_p         baseline e full q5 [lin]: own  -0.22 +- 1.01 | build  -0.59 +- 0.42 | diff +0.37 = +0.3 combined sigma
+  production R_s             goal     a SO40 q5 [ML ]: own  -4.48 +- 0.21 | build  -4.18 +- 0.12 | diff -0.30 = -1.3 combined sigma
+  production R_p             goal     a SO40 q5 [ML ]: own  -4.42 +- 0.22 | build  -4.17 +- 0.12 | diff -0.25 = -1.0 combined sigma
+  production R               goal     a SO40 q5 [ML ]: own  -4.54 +- 0.31 | build  -4.04 +- 0.16 | diff -0.50 = -1.4 combined sigma
+  production R (joint boot)  goal     a SO40 q5 [lin]: own  -4.49 +- 0.31 | build  -4.00 +- 0.16 | diff -0.49 = -1.4 combined sigma
+  production R_s             goal     a full q5 [ML ]: own  -7.08 +- 0.33 | build  -6.60 +- 0.19 | diff -0.48 = -1.3 combined sigma
+  production R_p             goal     a full q5 [ML ]: own  -6.99 +- 0.35 | build  -6.60 +- 0.19 | diff -0.39 = -1.0 combined sigma
+  production R               goal     a full q5 [ML ]: own  -7.17 +- 0.49 | build  -6.38 +- 0.26 | diff -0.79 = -1.4 combined sigma
+  production R (joint boot)  goal     a full q5 [lin]: own  -7.10 +- 0.50 | build  -6.33 +- 0.26 | diff -0.77 = -1.4 combined sigma
+  production R_s             goal     d SO40 q5 [ML ]: own  +0.69 +- 0.16 | build  +0.66 +- 0.07 | diff +0.03 = +0.1 combined sigma
+  production R_p             goal     d SO40 q5 [ML ]: own  +0.62 +- 0.14 | build  +0.67 +- 0.08 | diff -0.06 = -0.3 combined sigma
+  production R               goal     d SO40 q5 [ML ]: own  +0.83 +- 0.20 | build  +0.89 +- 0.10 | diff -0.06 = -0.3 combined sigma
+  production R (joint boot)  goal     d SO40 q5 [lin]: own  +0.76 +- 0.22 | build  +0.81 +- 0.10 | diff -0.04 = -0.2 combined sigma
+  production R_s             goal     d full q5 [ML ]: own  +1.01 +- 0.29 | build  +1.03 +- 0.12 | diff -0.03 = -0.1 combined sigma
+  production R_p             goal     d full q5 [ML ]: own  +0.92 +- 0.27 | build  +1.06 +- 0.15 | diff -0.15 = -0.5 combined sigma
+  production R               goal     d full q5 [ML ]: own  +1.44 +- 0.37 | build  +1.69 +- 0.20 | diff -0.25 = -0.6 combined sigma
+  production R (joint boot)  goal     d full q5 [lin]: own  +1.27 +- 0.41 | build  +1.45 +- 0.20 | diff -0.17 = -0.4 combined sigma
+  production R_s             goal     e SO40 q5 [ML ]: own  +0.64 +- 0.24 | build  +0.71 +- 0.10 | diff -0.07 = -0.3 combined sigma
+  production R_p             goal     e SO40 q5 [ML ]: own  +0.59 +- 0.23 | build  +0.73 +- 0.13 | diff -0.15 = -0.6 combined sigma
+  production R               goal     e SO40 q5 [ML ]: own  +1.07 +- 0.31 | build  +1.35 +- 0.17 | diff -0.28 = -0.8 combined sigma
+  production R (joint boot)  goal     e SO40 q5 [lin]: own  +0.93 +- 0.34 | build  +1.12 +- 0.17 | diff -0.20 = -0.5 combined sigma
+  production R_s             goal     e full q5 [ML ]: own  +1.02 +- 0.38 | build  +1.12 +- 0.16 | diff -0.10 = -0.3 combined sigma
+  production R_p             goal     e full q5 [ML ]: own  +0.93 +- 0.37 | build  +1.16 +- 0.20 | diff -0.23 = -0.6 combined sigma
+  production R               goal     e full q5 [ML ]: own  +1.69 +- 0.49 | build  +2.13 +- 0.27 | diff -0.44 = -0.8 combined sigma
+  production R (joint boot)  goal     e full q5 [lin]: own  +1.46 +- 0.53 | build  +1.77 +- 0.27 | diff -0.31 = -0.5 combined sigma
+  production R_s q_cut 6     goal     a SO40 q6 [ML ]: own  -1.48 +- 0.22 | build  -1.57 +- 0.11 | diff +0.09 = +0.4 combined sigma
+  production R_s q_cut 6     goal     d SO40 q6 [ML ]: own  +0.11 +- 0.12 | build  +0.26 +- 0.05 | diff -0.15 = -1.2 combined sigma
+  production R_s q_cut 6     goal     e SO40 q6 [ML ]: own  +0.19 +- 0.19 | build  +0.28 +- 0.09 | diff -0.09 = -0.4 combined sigma
+  closest 1' R_s             goal     d SO40 q5 [ML ]: own  +0.71 +- 0.14 | build  +0.69 +- 0.07 | diff +0.01 = +0.1 combined sigma
+  fof 10' R_s                goal     d SO40 q5 [ML ]: own  +2.76 +- 0.17 | build  +2.62 +- 0.08 | diff +0.14 = +0.8 combined sigma
+  fof 10' R_s                goal     a SO40 q5 [ML ]: own -26.50 +- 0.27 | build -25.95 +- 0.15 | diff -0.54 = -1.7 combined sigma
+  + no real, R_p (lin)       goal     d SO40 q5 [lin]: own  +0.11 +- 0.16 | build  +0.17 +- 0.08 | diff -0.06 = -0.3 combined sigma
+  + no real, R_p (lin)       goal     a SO40 q5 [lin]: own  -1.71 +- 0.24 | build  -1.58 +- 0.13 | diff -0.13 = -0.5 combined sigma
+  SZiFi defaults R_s         goal     a SO40 q5 [ML ]: own  -7.69 +- 0.80 | build  -8.05 +- 0.26 | diff +0.36 = +0.4 combined sigma
+  SZiFi defaults R_p         goal     a SO40 q5 [lin]: own  -7.43 +- 0.74 | build  -7.80 +- 0.25 | diff +0.37 = +0.5 combined sigma
+  SZiFi defaults R_s         goal     a full q5 [ML ]: own -12.15 +- 1.26 | build -12.73 +- 0.41 | diff +0.57 = +0.4 combined sigma
+  SZiFi defaults R_p         goal     a full q5 [lin]: own -11.74 +- 1.18 | build -12.33 +- 0.40 | diff +0.59 = +0.5 combined sigma
+  SZiFi defaults R_s         goal     d SO40 q5 [ML ]: own  +0.87 +- 0.31 | build  +1.02 +- 0.14 | diff -0.15 = -0.4 combined sigma
+  SZiFi defaults R_p         goal     d SO40 q5 [lin]: own  +0.85 +- 0.32 | build  +0.89 +- 0.16 | diff -0.05 = -0.1 combined sigma
+  SZiFi defaults R_s         goal     d full q5 [ML ]: own  +1.56 +- 0.55 | build  +1.70 +- 0.25 | diff -0.14 = -0.2 combined sigma
+  SZiFi defaults R_p         goal     d full q5 [lin]: own  +1.47 +- 0.62 | build  +1.42 +- 0.30 | diff +0.04 = +0.1 combined sigma
+  SZiFi defaults R_s         goal     e SO40 q5 [ML ]: own  +1.24 +- 0.50 | build  +1.25 +- 0.21 | diff -0.01 = -0.0 combined sigma
+  SZiFi defaults R_p         goal     e SO40 q5 [lin]: own  +1.17 +- 0.64 | build  +1.00 +- 0.27 | diff +0.17 = +0.2 combined sigma
+  SZiFi defaults R_s         goal     e full q5 [ML ]: own  +1.96 +- 0.80 | build  +1.97 +- 0.33 | diff -0.01 = -0.0 combined sigma
+  SZiFi defaults R_p         goal     e full q5 [lin]: own  +1.84 +- 1.01 | build  +1.58 +- 0.43 | diff +0.27 = +0.2 combined sigma
+
+88 comparisons: mean pull -0.78, rms 1.25, |pull| > 2: 9, > 3: 1
+   + no real, R_p (lin)      : n  4, mean pull -1.06, max |pull| 1.88
+   SZiFi defaults R_p        : n 12, mean pull +0.12, max |pull| 0.85
+   SZiFi defaults R_s        : n 12, mean pull -0.15, max |pull| 1.23
+   closest 1' R_s            : n  2, mean pull -0.58, max |pull| 1.25
+   fof 10' R_s               : n  4, mean pull -1.03, max |pull| 3.77
+   production R              : n 12, mean pull -1.42, max |pull| 2.50
+   production R (joint boot) : n 12, mean pull -1.25, max |pull| 2.38
+   production R_p            : n 12, mean pull -1.21, max |pull| 1.89
+   production R_s            : n 12, mean pull -1.05, max |pull| 1.89
+   production R_s q_cut 6    : n  6, mean pull -0.02, max |pull| 1.43
+
+analytic analyst Phi(sqrt(q'^2 + k) - e), zero below q' = 2, production, SO40, ML S8 bias: own | build [(i) catalogue, (ii) isolated, (i) - (ii)]
+  baseline k=0 a: own  +12.84  +15.36  -2.52 (power 1.00) | build  +13.57  +15.61  -2.05 (power 1.00; boot of (i) 0.11)
+  baseline k=0 d: own   -0.91   -1.01  +0.10 (power 0.46) | build   -0.93   -1.19  +0.26 (power 0.59; boot of (i) 0.06)
+  baseline k=0 e: own   -0.47   -0.50  +0.03 (power 0.46) | build   -0.55   -0.73  +0.18 (power 0.59; boot of (i) 0.09)
+  baseline k=2 a: own   -1.16   +1.49  -2.64 (power 0.08) | build   -0.33   +1.82  -2.15 (power 0.07; boot of (i) 0.11)
+  baseline k=2 d: own   -0.10   -0.28  +0.19 (power 0.08) | build   -0.13   -0.48  +0.35 (power 0.06; boot of (i) 0.06)
+  baseline k=2 e: own   -0.06   -0.25  +0.19 (power 0.08) | build   -0.21   -0.55  +0.34 (power 0.06; boot of (i) 0.09)
+  baseline k=3 a: own   -9.37   -6.66  -2.71 (power 0.86) | build   -8.45   -6.25  -2.20 (power 0.67; boot of (i) 0.11)
+  baseline k=3 d: own   +0.53   +0.29  +0.24 (power 0.34) | build   +0.47   +0.06  +0.40 (power 0.22; boot of (i) 0.05)
+  baseline k=3 e: own   +0.59   +0.24  +0.35 (power 0.34) | build   +0.38   -0.17  +0.56 (power 0.22; boot of (i) 0.09)
+  goal     k=0 a: own  +13.27  +17.55  -4.28 (power 1.00) | build  +13.80  +17.78  -3.98 (power 1.00; boot of (i) 0.13)
+  goal     k=0 d: own   -1.24   -1.72  +0.48 (power 0.71) | build   -1.42   -1.85  +0.43 (power 0.72; boot of (i) 0.07)
+  goal     k=0 e: own   -1.08   -1.31  +0.24 (power 0.71) | build   -1.28   -1.52  +0.24 (power 0.71; boot of (i) 0.10)
+  goal     k=2 a: own   -3.87   +0.61  -4.48 (power 0.14) | build   -3.23   +0.94  -4.17 (power 0.10; boot of (i) 0.12)
+  goal     k=2 d: own   +0.03   -0.64  +0.67 (power 0.11) | build   -0.16   -0.77  +0.61 (power 0.09; boot of (i) 0.07)
+  goal     k=2 e: own   -0.25   -0.75  +0.50 (power 0.11) | build   -0.50   -1.01  +0.51 (power 0.09; boot of (i) 0.10)
+  goal     k=3 a: own  -13.88   -9.30  -4.58 (power 1.00) | build  -13.15   -8.89  -4.26 (power 0.98; boot of (i) 0.12)
+  goal     k=3 d: own   +1.02   +0.21  +0.81 (power 0.56) | build   +0.82   +0.06  +0.76 (power 0.49; boot of (i) 0.07)
+  goal     k=3 e: own   +0.86   -0.01  +0.87 (power 0.56) | build   +0.55   -0.38  +0.93 (power 0.49; boot of (i) 0.09)
+
+analytic analyst WITHOUT the zero below q' = 2 (floor Phi(sqrt(k) - 5): k = 2 1.68e-04, k = 3 5.42e-04); own ML fits, SO40:
+  baseline anz2_cat  a: S8    -7.15 (lin    -7.18); at bound []; polish shift 0.00; chi2 481.4
+  baseline anz2_iso  a: S8    -4.45 (lin    -4.52); at bound []; polish shift 0.00; chi2 409.8
+  baseline anz2_cat  d: S8    -7.65 (lin    -8.71); at bound []; polish shift 0.00; chi2 175.2
+  baseline anz2_cat  e: S8   -11.58 (lin   -11.46); at bound ['slnY']; polish shift 0.12; chi2 118.6
+  baseline anz2_iso  e: S8   -11.10 (lin   -11.25); at bound ['slnY']; polish shift 0.06; chi2 100.5
+  baseline anz3_cat  a: S8   -27.82 (lin   -26.83); at bound []; polish shift 0.00; chi2 2923.4
+  baseline anz2_iso  d: S8    -7.44 (lin    -8.65); at bound []; polish shift 0.00; chi2 151.3
+  baseline anz3_iso  a: S8   -24.93 (lin   -24.28); at bound []; polish shift 0.00; chi2 2719.7
+  baseline anz3_cat  e: S8   -26.98 (lin   -26.81); at bound ['omb']; polish shift 4.33; chi2 413.7
+  baseline anz3_cat  d: S8   -25.04 (lin   -24.15); at bound []; polish shift 0.00; chi2 578.7
+  goal     anz2_cat  a: S8   -10.19 (lin   -10.13); at bound []; polish shift 0.00; chi2 406.9
+  goal     anz2_cat  d: S8    -5.82 (lin    -6.79); at bound []; polish shift 0.00; chi2 163.2
+  baseline anz3_iso  d: S8   -24.31 (lin   -23.68); at bound []; polish shift 0.00; chi2 525.9
+  goal     anz2_cat  e: S8    -8.99 (lin    -9.39); at bound ['slnY']; polish shift 0.00; chi2 134.8
+  goal     anz2_iso  a: S8    -5.64 (lin    -5.69); at bound []; polish shift 0.00; chi2 287.8
+  goal     anz2_iso  e: S8    -8.46 (lin    -9.01); at bound []; polish shift 0.00; chi2 90.6
+  goal     anz2_iso  d: S8    -5.65 (lin    -6.71); at bound []; polish shift 0.00; chi2 117.7
+  goal     anz3_cat  a: S8   -31.83 (lin   -30.68); at bound []; polish shift 0.00; chi2 2538.9
+  goal     anz3_cat  d: S8   -20.54 (lin   -21.82); at bound []; polish shift 0.00; chi2 603.8
+  goal     anz3_iso  a: S8   -27.08 (lin   -26.40); at bound []; polish shift 0.00; chi2 2212.7
+  baseline anz3_iso  e: S8   -26.58 (lin   -26.21); at bound ['omb']; polish shift 7.84; chi2 364.5
+  goal     anz3_iso  d: S8   -19.86 (lin   -21.11); at bound []; polish shift 0.00; chi2 505.6
+  goal     anz3_iso  e: S8   -23.55 (lin   -23.53); at bound ['omb']; polish shift 2.23; chi2 360.3
+  goal     anz3_cat  e: S8   -23.69 (lin   -24.44); at bound ['omb']; polish shift 3.07; chi2 448.1
+  (i) S8 bias range -31.83 to -5.82; fits at a bound 7 of 24; with the zero: 0 of 36

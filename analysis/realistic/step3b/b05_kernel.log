@@ -1,0 +1,91 @@
+==================== prod / baseline: 1296000 virtual clusters on 324 noise-only tiles (51840 per theta node)
+  noise-only tiles: r = sigma_finder / sigma_Y after the iteration at 0.5' / 4.45' / 15': 0.9948 / 0.9925 / 0.9891 (tile-to-tile std 0.0023)
+  noise peaks per 100 deg^2 (final catalogue), q > 4 / 4.5 / 5, merge none / closest 1' / fof 10': 50.98 / 7.69 / 0.82; 46.62 / 7.15 / 0.78; 45.67 / 7.11 / 0.78
+  credit limit: credited fraction (q_obs > 4) at q' = 1, 1.5, 1.75, max over theta nodes: 0.0000, 0.0000, 0.0000 (40316 clusters); at q' = 2: 0.0000
+  clusters per (theta, q') node: q' 2-10: 435-611 (mean 533); q' 10.5-27.5: 147-239; log-uniform (model) per theta node: 7444-7797
+  Monte Carlo error of K(e = 5) at the q' 2-10 nodes: median 0.0072, max 0.0227
+  monotone fix (PAVA): max |K - measured| over the measured nodes 0.0325; in units of the binomial error (with a pseudo-count of 1/4): max 6.60, rms 0.19; nodes moved by > 2 errors: 65 of 48925
+  monotone fix: N_exp(q > 5) over the realistic halos with the measured (non-monotone) fractions instead: +0.009%
+  model (lambda q' + eps) vs measured nodes q' 20-27.5: pulls over all theta nodes and edges (errors with a pseudo-count): rms 0.34, max |pull| 6.89, |pull| > 3: 9 of 7600; model - measured: mean -0.0004, max |.| 0.080
+  model self-consistency in log-q' bins (25-400; edges >= 22): observed - model fraction: rms 0.0018, max |.| 0.012; pulls rms 0.48, max |pull| 3.01 (1125 comparisons)
+  efficiency lambda (median) and eps (mean) at q' 25-40 / 100-160 / 240-400 for theta 0.24', 3.8', 61': 0.9685, +0.05 / 0.9691, +0.03 / 0.9683, -0.02; 0.9873, +0.09 / 0.9868, +0.06 / 0.9875, -0.04; 0.8059, +0.11 / 0.8075, +0.02 / 0.8077, +0.01
+  log-uniform clusters (q' 25-400): not credited 0; efficiency lambda per node (median): 0.969 0.976 0.982 0.987 0.993 0.970 0.807 (nodes [0.24, 0.6, 1.51, 3.81, 9.6, 24.19, 60.96]); eps mean +0.038, std 1.008
+  window check (tiles 0-7, 2x window): q_obs identical for 32000 of 32000 clusters; changed across q = 5: 0; max |dq| 0.00e+00
+  accuracy of the virtual response (tile 0, 2 clusters per node, +-2W window): max |virtual - exact| / peak = 4.9e-04 (angle-averaged tables alone: 3.6e-03; at theta <= 2.4': 8.3e-04)
+  half-split: N_exp(q > 5) over the realistic halos with the full / even-tile / odd-tile kernels: 65346.9 / 64968.7 / 65678.3; even/odd - 1 = -1.081% (one realisation of a difference whose std is 2x the full kernel's error, see the bootstrap below); per coarse z bin (even/odd - 1): +0.19%, -0.30%, -1.48%, -1.98%, -1.40%, -0.25%
+  second split (tiles 0-161 / 162-323): N_exp 65418.5 / 65239.0, ratio - 1 = +0.275%
+  kernel bootstrap (60 resamples of the 324 noise-only tiles): N_exp(q > 5) relative std 0.217% (mean of resamples / full - 1 = -0.022%)
+  saved kernel_prod_baseline.npz [40 s]
+==================== prod / goal: 1296000 virtual clusters on 324 noise-only tiles (51840 per theta node)
+  noise-only tiles: r = sigma_finder / sigma_Y after the iteration at 0.5' / 4.45' / 15': 0.9950 / 0.9927 / 0.9895 (tile-to-tile std 0.0021)
+  noise peaks per 100 deg^2 (final catalogue), q > 4 / 4.5 / 5, merge none / closest 1' / fof 10': 55.43 / 8.35 / 0.87; 50.70 / 7.77 / 0.83; 49.63 / 7.75 / 0.83
+  credit limit: credited fraction (q_obs > 4) at q' = 1, 1.5, 1.75, max over theta nodes: 0.0000, 0.0000, 0.0000 (39787 clusters); at q' = 2: 0.0000
+  clusters per (theta, q') node: q' 2-10: 456-617 (mean 533); q' 10.5-27.5: 149-237; log-uniform (model) per theta node: 7381-7844
+  Monte Carlo error of K(e = 5) at the q' 2-10 nodes: median 0.0069, max 0.0228
+  monotone fix (PAVA): max |K - measured| over the measured nodes 0.0272; in units of the binomial error (with a pseudo-count of 1/4): max 6.21, rms 0.19; nodes moved by > 2 errors: 72 of 48925
+  monotone fix: N_exp(q > 5) over the realistic halos with the measured (non-monotone) fractions instead: +0.015%
+  model (lambda q' + eps) vs measured nodes q' 20-27.5: pulls over all theta nodes and edges (errors with a pseudo-count): rms 0.36, max |pull| 6.00, |pull| > 3: 18 of 7600; model - measured: mean -0.0004, max |.| 0.090
+  model self-consistency in log-q' bins (25-400; edges >= 22): observed - model fraction: rms 0.0022, max |.| 0.016; pulls rms 0.55, max |pull| 3.53 (1125 comparisons)
+  efficiency lambda (median) and eps (mean) at q' 25-40 / 100-160 / 240-400 for theta 0.24', 3.8', 61': 0.9654, +0.03 / 0.9659, +0.02 / 0.9644, -0.02; 0.9852, +0.13 / 0.9858, +0.02 / 0.9857, +0.03; 0.8126, +0.16 / 0.8142, -0.01 / 0.8144, -0.03
+  log-uniform clusters (q' 25-400): not credited 0; efficiency lambda per node (median): 0.965 0.974 0.980 0.985 0.992 0.971 0.814 (nodes [0.24, 0.6, 1.51, 3.81, 9.6, 24.19, 60.96]); eps mean +0.037, std 1.007
+  window check (tiles 0-7, 2x window): q_obs identical for 32000 of 32000 clusters; changed across q = 5: 0; max |dq| 0.00e+00
+  accuracy of the virtual response (tile 0, 2 clusters per node, +-2W window): max |virtual - exact| / peak = 5.7e-04 (angle-averaged tables alone: 3.5e-03; at theta <= 2.4': 8.5e-04)
+  half-split: N_exp(q > 5) over the realistic halos with the full / even-tile / odd-tile kernels: 98986.5 / 99154.2 / 98788.6; even/odd - 1 = +0.370% (one realisation of a difference whose std is 2x the full kernel's error, see the bootstrap below); per coarse z bin (even/odd - 1): +1.05%, +0.61%, +0.03%, +0.76%, +0.12%, +2.45%
+  second split (tiles 0-161 / 162-323): N_exp 98815.7 / 99103.4, ratio - 1 = -0.290%
+  kernel bootstrap (60 resamples of the 324 noise-only tiles): N_exp(q > 5) relative std 0.212% (mean of resamples / full - 1 = +0.016%)
+  saved kernel_prod_goal.npz [42 s]
+==================== szifi3000 / baseline: 1296000 virtual clusters on 324 noise-only tiles (51840 per theta node)
+  noise-only tiles: r = sigma_finder / sigma_Y after the iteration at 0.5' / 4.45' / 15': 1.0254 / 1.0074 / 0.9859 (tile-to-tile std 0.0108)
+  noise peaks per 100 deg^2 (final catalogue), q > 4 / 4.5 / 5, merge none / closest 1' / fof 10': 38.09 / 5.41 / 0.52; 34.88 / 5.02 / 0.50; 34.33 / 5.00 / 0.49
+  credit limit: credited fraction (q_obs > 4) at q' = 1, 1.5, 1.75, max over theta nodes: 0.0000, 0.0000, 0.0000 (40316 clusters); at q' = 2: 0.0000
+  clusters per (theta, q') node: q' 2-10: 435-611 (mean 533); q' 10.5-27.5: 147-239; log-uniform (model) per theta node: 7444-7797
+  Monte Carlo error of K(e = 5) at the q' 2-10 nodes: median 0.0069, max 0.0227
+  monotone fix (PAVA): max |K - measured| over the measured nodes 0.0306; in units of the binomial error (with a pseudo-count of 1/4): max 6.60, rms 0.19; nodes moved by > 2 errors: 67 of 48925
+  monotone fix: N_exp(q > 5) over the realistic halos with the measured (non-monotone) fractions instead: +0.011%
+  model (lambda q' + eps) vs measured nodes q' 20-27.5: pulls over all theta nodes and edges (errors with a pseudo-count): rms 0.33, max |pull| 6.24, |pull| > 3: 11 of 7600; model - measured: mean -0.0004, max |.| 0.095
+  model self-consistency in log-q' bins (25-400; edges >= 22): observed - model fraction: rms 0.0018, max |.| 0.012; pulls rms 0.48, max |pull| 2.97 (1125 comparisons)
+  efficiency lambda (median) and eps (mean) at q' 25-40 / 100-160 / 240-400 for theta 0.24', 3.8', 61': 0.9679, +0.05 / 0.9685, +0.03 / 0.9677, -0.02; 0.9874, +0.09 / 0.9871, +0.07 / 0.9877, -0.04; 0.8090, +0.10 / 0.8106, +0.01 / 0.8107, +0.02
+  log-uniform clusters (q' 25-400): not credited 0; efficiency lambda per node (median): 0.968 0.976 0.982 0.987 0.993 0.973 0.810 (nodes [0.24, 0.6, 1.51, 3.81, 9.6, 24.19, 60.96]); eps mean +0.037, std 0.994
+  window check (tiles 0-7, 2x window): q_obs identical for 32000 of 32000 clusters; changed across q = 5: 0; max |dq| 0.00e+00
+  accuracy of the virtual response (tile 0, 2 clusters per node, +-2W window): max |virtual - exact| / peak = 5.0e-04 (angle-averaged tables alone: 3.7e-03; at theta <= 2.4': 8.1e-04)
+  half-split: N_exp(q > 5) over the realistic halos with the full / even-tile / odd-tile kernels: 55431.9 / 55195.2 / 55627.9; even/odd - 1 = -0.778% (one realisation of a difference whose std is 2x the full kernel's error, see the bootstrap below); per coarse z bin (even/odd - 1): -0.20%, -0.07%, -1.35%, -1.31%, +0.61%, +1.29%
+  second split (tiles 0-161 / 162-323): N_exp 55468.8 / 55376.1, ratio - 1 = +0.167%
+  kernel bootstrap (60 resamples of the 324 noise-only tiles): N_exp(q > 5) relative std 0.219% (mean of resamples / full - 1 = -0.016%)
+  saved kernel_szifi3000_baseline.npz [40 s]
+==================== szifi3000 / goal: 1296000 virtual clusters on 324 noise-only tiles (51840 per theta node)
+  noise-only tiles: r = sigma_finder / sigma_Y after the iteration at 0.5' / 4.45' / 15': 1.0319 / 1.0135 / 0.9885 (tile-to-tile std 0.0126)
+  noise peaks per 100 deg^2 (final catalogue), q > 4 / 4.5 / 5, merge none / closest 1' / fof 10': 38.68 / 5.32 / 0.55; 35.49 / 4.96 / 0.52; 34.99 / 4.94 / 0.52
+  credit limit: credited fraction (q_obs > 4) at q' = 1, 1.5, 1.75, max over theta nodes: 0.0000, 0.0000, 0.0000 (39787 clusters); at q' = 2: 0.0000
+  clusters per (theta, q') node: q' 2-10: 456-617 (mean 533); q' 10.5-27.5: 149-237; log-uniform (model) per theta node: 7381-7844
+  Monte Carlo error of K(e = 5) at the q' 2-10 nodes: median 0.0067, max 0.0228
+  monotone fix (PAVA): max |K - measured| over the measured nodes 0.0263; in units of the binomial error (with a pseudo-count of 1/4): max 7.69, rms 0.19; nodes moved by > 2 errors: 66 of 48925
+  monotone fix: N_exp(q > 5) over the realistic halos with the measured (non-monotone) fractions instead: +0.016%
+  model (lambda q' + eps) vs measured nodes q' 20-27.5: pulls over all theta nodes and edges (errors with a pseudo-count): rms 0.37, max |pull| 9.29, |pull| > 3: 17 of 7600; model - measured: mean -0.0003, max |.| 0.101
+  model self-consistency in log-q' bins (25-400; edges >= 22): observed - model fraction: rms 0.0022, max |.| 0.015; pulls rms 0.55, max |pull| 3.29 (1125 comparisons)
+  efficiency lambda (median) and eps (mean) at q' 25-40 / 100-160 / 240-400 for theta 0.24', 3.8', 61': 0.9648, +0.02 / 0.9652, +0.02 / 0.9639, -0.02; 0.9854, +0.13 / 0.9860, +0.02 / 0.9859, +0.03; 0.8173, +0.15 / 0.8192, -0.01 / 0.8193, -0.03
+  log-uniform clusters (q' 25-400): not credited 0; efficiency lambda per node (median): 0.964 0.974 0.980 0.986 0.992 0.975 0.819 (nodes [0.24, 0.6, 1.51, 3.81, 9.6, 24.19, 60.96]); eps mean +0.035, std 0.990
+  window check (tiles 0-7, 2x window): q_obs identical for 32000 of 32000 clusters; changed across q = 5: 0; max |dq| 0.00e+00
+  accuracy of the virtual response (tile 0, 2 clusters per node, +-2W window): max |virtual - exact| / peak = 5.2e-04 (angle-averaged tables alone: 3.5e-03; at theta <= 2.4': 8.4e-04)
+  half-split: N_exp(q > 5) over the realistic halos with the full / even-tile / odd-tile kernels: 80094.0 / 80304.8 / 79862.7; even/odd - 1 = +0.553% (one realisation of a difference whose std is 2x the full kernel's error, see the bootstrap below); per coarse z bin (even/odd - 1): +0.63%, +0.83%, +0.29%, +0.71%, +0.21%, +1.70%
+  second split (tiles 0-161 / 162-323): N_exp 79863.3 / 80290.2, ratio - 1 = -0.532%
+  kernel bootstrap (60 resamples of the 324 noise-only tiles): N_exp(q > 5) relative std 0.228% (mean of resamples / full - 1 = +0.012%)
+  saved kernel_szifi3000_goal.npz [41 s]
+done [164 s]; peak RSS 0.43 GB
+      164.64 real       162.85 user         1.27 sys
+           431308800  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               68747  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                4764  voluntary context switches
+                4805  involuntary context switches
+       1262003988547  instructions retired
+        491600464756  cycles elapsed
+           396019904  peak memory footprint

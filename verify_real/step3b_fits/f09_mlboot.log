@@ -1,0 +1,27 @@
+f09: 48 ML fits on 1 processes
+   20/48 [629 s]
+   40/48 [1493 s]
+headline, q_cut 5, SO40: std(ML S8 bias) / std(linearised S8 bias) over the same resamples; slope of ML on lin; mean ML - lin
+  baseline d build resamples (12): std ML 0.051, std lin 0.049, ratio 1.041; slope 1.040; mean ML - lin +0.015; at a bound 0
+  baseline e build resamples (12): std ML 0.065, std lin 0.061, ratio 1.069; slope 1.060; mean ML - lin +0.052; at a bound 0
+  goal     d build resamples (12): std ML 0.059, std lin 0.055, ratio 1.073; slope 1.071; mean ML - lin +0.049; at a bound 0
+  goal     e build resamples (12): std ML 0.076, std lin 0.072, ratio 1.060; slope 1.053; mean ML - lin +0.087; at a bound 0
+total 1874 s
+     1874.17 real      3661.23 user        32.75 sys
+           928120832  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              569331  page reclaims
+                 358  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 969  voluntary context switches
+             1637796  involuntary context switches
+           727114405  instructions retired
+           424956642  cycles elapsed
+            19825728  peak memory footprint

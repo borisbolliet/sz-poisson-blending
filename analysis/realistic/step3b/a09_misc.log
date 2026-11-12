@@ -1,0 +1,43 @@
+(5) 25 build logs with a /usr/bin/time block: sum of wall 18410 s (5.11 h), CPU (user + sys) 76064 s (21.13 CPU-h); largest maximum RSS 4.92 GB
+    [0 s; peak RSS 0.11 GB]
+(4) baseline szifi12000 (324 Q2 tiles): R_p(q > 5) = -1.81 +- 0.14%
+(4) baseline szifi3000  (324 Q2 tiles): R_p(q > 5) = -3.79 +- 0.16%
+(4) baseline prod       (324 Q2 tiles): R_p(q > 5) = -1.31 +- 0.13%
+(4) baseline production closest1 (1,548 tiles): R_p(q > 5) = -1.47 +- 0.06%; credited halos removed by the merge: Q2 tiles 0.11%, new tiles 0.11%, all 0.11%
+(4) baseline production fof10 (1,548 tiles): R_p(q > 5) = -8.66 +- 0.07%; credited halos removed by the merge: Q2 tiles 7.22%, new tiles 7.45%, all 7.40%
+(4) baseline production + 'no real cluster' entries (1,548 tiles): R_p(q > 5) = +0.51 +- 0.07%; such entries 1.87% of credited + no-real
+(4) goal szifi12000 (324 Q2 tiles): R_p(q > 5) = -2.91 +- 0.12%
+(4) goal szifi3000  (324 Q2 tiles): R_p(q > 5) = -4.94 +- 0.14%
+(4) goal prod       (324 Q2 tiles): R_p(q > 5) = -2.21 +- 0.12%
+(4) goal production closest1 (1,548 tiles): R_p(q > 5) = -2.21 +- 0.05%; credited halos removed by the merge: Q2 tiles 0.14%, new tiles 0.13%, all 0.13%
+(4) goal production fof10 (1,548 tiles): R_p(q > 5) = -13.06 +- 0.06%; credited halos removed by the merge: Q2 tiles 11.09%, new tiles 11.25%, all 11.21%
+(4) goal production + 'no real cluster' entries (1,548 tiles): R_p(q > 5) = -0.54 +- 0.06%; such entries 1.55% of credited + no-real
+    [5 s; peak RSS 1.27 GB]
+(1) tile 0 baseline: SZiFi-defaults rerun vs step 3a's file: 349 final detections, same scales and pixels: True; max |dq| 0.0e+00; max |sigma ratio - 1| 0.0e+00; q > 5: 188 vs 188
+(1) tile 0 goal: SZiFi-defaults rerun vs step 3a's file: 434 final detections, same scales and pixels: True; max |dq| 0.0e+00; max |sigma ratio - 1| 0.0e+00; q > 5: 262 vs 262
+    [9 s; peak RSS 1.64 GB]
+(2) l_sep 12000, halo-free tiles 0-7, baseline: r(0.5') rerun 0.9805 +- 0.0015; max |rerun / stored - 1| 0.0e+00; stored mean over all 324 tiles 0.9764 (claim 0.976)
+(2) l_sep 12000, halo-free tiles 0-7, goal: r(0.5') rerun 0.9752 +- 0.0021; max |rerun / stored - 1| 0.0e+00; stored mean over all 324 tiles 0.9744 (claim 0.974)
+    [30 s; peak RSS 1.84 GB]
+(3) tile 7 baseline: virtual vs exact own S/N over +-2W, max / peak: with the lattice harmonics 4.1e-04 (worst node 4.80'); angle-averaged tables alone 3.6e-03; theta <= 2.4': 3.8e-04 / 7.4e-04
+(3) tile 7 goal: virtual vs exact own S/N over +-2W, max / peak: with the lattice harmonics 5.0e-04 (worst node 3.81'); angle-averaged tables alone 3.5e-03; theta <= 2.4': 4.6e-04 / 7.2e-04
+    [30 s; peak RSS 1.99 GB]
+done [74 s]
+       74.47 real        70.96 user         1.70 sys
+          1985347584  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              226064  page reclaims
+                 149  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               16090  voluntary context switches
+                1271  involuntary context switches
+        756348624930  instructions retired
+        226375080152  cycles elapsed
+          1517606336  peak memory footprint

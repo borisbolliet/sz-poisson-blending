@@ -1,0 +1,69 @@
+b15: new tiles 360..1547 (1188), production finder, 5 processes
+  tile 363: 20.4 s (baseline: realistic 4.9, halo-free 5.1; goal: realistic 6.3, halo-free 1.7); worker peak RSS 1.35 GB [elapsed 21 s]
+  tile 385: 15.8 s (baseline: realistic 4.6, halo-free 1.6; goal: realistic 5.9, halo-free 1.7); worker peak RSS 1.35 GB [elapsed 101 s]
+  tile 410: 16.5 s (baseline: realistic 4.5, halo-free 1.6; goal: realistic 6.5, halo-free 1.8); worker peak RSS 1.41 GB [elapsed 182 s]
+  tile 435: 16.2 s (baseline: realistic 4.4, halo-free 1.5; goal: realistic 6.5, halo-free 1.7); worker peak RSS 1.39 GB [elapsed 261 s]
+  tile 461: 15.2 s (baseline: realistic 4.6, halo-free 1.7; goal: realistic 5.3, halo-free 1.7); worker peak RSS 1.43 GB [elapsed 343 s]
+  tile 485: 16.4 s (baseline: realistic 4.6, halo-free 1.5; goal: realistic 6.4, halo-free 2.1); worker peak RSS 1.43 GB [elapsed 423 s]
+  tile 510: 19.9 s (baseline: realistic 4.7, halo-free 5.1; goal: realistic 5.9, halo-free 1.7); worker peak RSS 1.51 GB [elapsed 508 s]
+  tile 535: 16.1 s (baseline: realistic 4.8, halo-free 1.6; goal: realistic 6.2, halo-free 1.5); worker peak RSS 1.51 GB [elapsed 588 s]
+  tile 561: 15.1 s (baseline: realistic 4.2, halo-free 1.6; goal: realistic 5.7, halo-free 1.7); worker peak RSS 1.51 GB [elapsed 669 s]
+  tile 585: 16.3 s (baseline: realistic 4.4, halo-free 1.6; goal: realistic 6.2, halo-free 2.1); worker peak RSS 1.41 GB [elapsed 751 s]
+  tile 610: 15.5 s (baseline: realistic 4.4, halo-free 1.8; goal: realistic 5.7, halo-free 1.6); worker peak RSS 1.41 GB [elapsed 833 s]
+  tile 635: 18.4 s (baseline: realistic 5.1, halo-free 1.8; goal: realistic 6.9, halo-free 2.2); worker peak RSS 1.41 GB [elapsed 920 s]
+  tile 660: 21.2 s (baseline: realistic 5.2, halo-free 5.1; goal: realistic 6.3, halo-free 1.7); worker peak RSS 1.51 GB [elapsed 1008 s]
+  tile 685: 18.0 s (baseline: realistic 4.7, halo-free 1.8; goal: realistic 7.1, halo-free 2.4); worker peak RSS 1.52 GB [elapsed 1097 s]
+  tile 710: 16.1 s (baseline: realistic 5.1, halo-free 1.4; goal: realistic 5.9, halo-free 1.7); worker peak RSS 1.52 GB [elapsed 1181 s]
+  tile 736: 16.8 s (baseline: realistic 4.7, halo-free 1.9; goal: realistic 6.3, halo-free 1.8); worker peak RSS 1.52 GB [elapsed 1266 s]
+  tile 760: 17.6 s (baseline: realistic 4.5, halo-free 1.5; goal: realistic 7.4, halo-free 2.1); worker peak RSS 1.52 GB [elapsed 1352 s]
+  tile 785: 18.4 s (baseline: realistic 5.1, halo-free 1.7; goal: realistic 7.4, halo-free 1.9); worker peak RSS 1.52 GB [elapsed 1443 s]
+  tile 810: 20.3 s (baseline: realistic 4.7, halo-free 5.4; goal: realistic 5.8, halo-free 1.7); worker peak RSS 1.52 GB [elapsed 1529 s]
+  tile 835: 19.5 s (baseline: realistic 5.6, halo-free 1.9; goal: realistic 7.9, halo-free 2.1); worker peak RSS 1.52 GB [elapsed 1617 s]
+  tile 861: 16.7 s (baseline: realistic 4.4, halo-free 1.7; goal: realistic 7.0, halo-free 1.7); worker peak RSS 1.52 GB [elapsed 1705 s]
+  tile 885: 16.8 s (baseline: realistic 4.9, halo-free 1.9; goal: realistic 6.2, halo-free 1.8); worker peak RSS 1.52 GB [elapsed 1788 s]
+  tile 912: 14.3 s (baseline: realistic 3.9, halo-free 1.4; goal: realistic 5.4, halo-free 1.8); worker peak RSS 1.52 GB [elapsed 1871 s]
+  tile 936: 17.0 s (baseline: realistic 4.7, halo-free 1.7; goal: realistic 6.5, halo-free 1.9); worker peak RSS 1.52 GB [elapsed 1954 s]
+  tile 960: 21.3 s (baseline: realistic 4.8, halo-free 5.4; goal: realistic 6.4, halo-free 2.1); worker peak RSS 1.29 GB [elapsed 2046 s]
+  tile 985: 17.2 s (baseline: realistic 4.9, halo-free 1.7; goal: realistic 6.7, halo-free 1.9); worker peak RSS 1.31 GB [elapsed 2133 s]
+  tile 1010: 16.3 s (baseline: realistic 4.3, halo-free 1.6; goal: realistic 6.7, halo-free 1.6); worker peak RSS 1.34 GB [elapsed 2215 s]
+  tile 1035: 16.1 s (baseline: realistic 4.8, halo-free 1.5; goal: realistic 6.2, halo-free 1.7); worker peak RSS 1.35 GB [elapsed 2295 s]
+  tile 1060: 17.1 s (baseline: realistic 5.1, halo-free 1.5; goal: realistic 6.6, halo-free 1.8); worker peak RSS 1.35 GB [elapsed 2378 s]
+  tile 1085: 14.8 s (baseline: realistic 4.6, halo-free 1.4; goal: realistic 5.3, halo-free 1.5); worker peak RSS 1.35 GB [elapsed 2458 s]
+  tile 1110: 19.7 s (baseline: realistic 4.6, halo-free 5.2; goal: realistic 5.5, halo-free 1.6); worker peak RSS 1.51 GB [elapsed 2541 s]
+  tile 1135: 15.8 s (baseline: realistic 4.9, halo-free 1.6; goal: realistic 6.0, halo-free 1.5); worker peak RSS 1.52 GB [elapsed 2619 s]
+  tile 1160: 17.2 s (baseline: realistic 5.2, halo-free 1.6; goal: realistic 6.6, halo-free 1.7); worker peak RSS 1.52 GB [elapsed 2705 s]
+  tile 1185: 20.2 s (baseline: realistic 5.5, halo-free 2.8; goal: realistic 7.1, halo-free 2.5); worker peak RSS 1.52 GB [elapsed 2798 s]
+  tile 1210: 19.6 s (baseline: realistic 5.7, halo-free 2.0; goal: realistic 7.1, halo-free 2.5); worker peak RSS 1.52 GB [elapsed 2891 s]
+  tile 1234: 17.2 s (baseline: realistic 4.6, halo-free 1.7; goal: realistic 6.8, halo-free 1.9); worker peak RSS 1.53 GB [elapsed 2982 s]
+  tile 1260: 23.0 s (baseline: realistic 5.6, halo-free 6.0; goal: realistic 6.4, halo-free 2.0); worker peak RSS 1.38 GB [elapsed 3086 s]
+  tile 1285: 18.2 s (baseline: realistic 5.8, halo-free 1.7; goal: realistic 6.8, halo-free 1.8); worker peak RSS 1.33 GB [elapsed 3184 s]
+  tile 1310: 17.4 s (baseline: realistic 5.1, halo-free 1.7; goal: realistic 6.5, halo-free 2.0); worker peak RSS 1.38 GB [elapsed 3270 s]
+  tile 1335: 16.8 s (baseline: realistic 4.8, halo-free 1.6; goal: realistic 6.5, halo-free 1.9); worker peak RSS 1.40 GB [elapsed 3359 s]
+  tile 1360: 14.7 s (baseline: realistic 4.1, halo-free 1.8; goal: realistic 5.1, halo-free 1.6); worker peak RSS 1.40 GB [elapsed 3442 s]
+  tile 1385: 16.3 s (baseline: realistic 4.8, halo-free 1.5; goal: realistic 6.1, halo-free 1.9); worker peak RSS 1.36 GB [elapsed 3523 s]
+  tile 1410: 17.4 s (baseline: realistic 4.9, halo-free 1.6; goal: realistic 6.7, halo-free 2.0); worker peak RSS 1.36 GB [elapsed 3611 s]
+  tile 1435: 21.0 s (baseline: realistic 5.8, halo-free 2.1; goal: realistic 8.4, halo-free 2.4); worker peak RSS 1.26 GB [elapsed 3718 s]
+  tile 1460: 19.9 s (baseline: realistic 5.8, halo-free 1.8; goal: realistic 7.7, halo-free 2.1); worker peak RSS 1.32 GB [elapsed 3811 s]
+  tile 1485: 19.8 s (baseline: realistic 6.0, halo-free 2.0; goal: realistic 7.2, halo-free 2.3); worker peak RSS 1.36 GB [elapsed 3908 s]
+  tile 1510: 18.5 s (baseline: realistic 5.1, halo-free 2.0; goal: realistic 6.5, halo-free 2.8); worker peak RSS 1.32 GB [elapsed 4007 s]
+  tile 1535: 17.6 s (baseline: realistic 5.1, halo-free 1.8; goal: realistic 6.7, halo-free 2.0); worker peak RSS 1.44 GB [elapsed 4100 s]
+  tile 1547: 18.1 s (baseline: realistic 5.4, halo-free 1.6; goal: realistic 6.9, halo-free 2.2); worker peak RSS 1.33 GB [elapsed 4136 s]
+b15 done: 1188 tiles in 4136 s wall; largest worker peak RSS 1.56 GB
+     4137.25 real     20095.86 user       323.08 sys
+          1560117248  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            65773297  page reclaims
+                5737  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               27743  voluntary context switches
+             3738723  involuntary context switches
+          5884121420  instructions retired
+          3283778975  cycles elapsed
+            77727168  peak memory footprint

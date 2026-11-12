@@ -1,0 +1,102 @@
+
+=== [whitened, baseline] 400 tiles; virtual placements 800,000 (32000-32000 per theta node), each on 368 q' values -> 294,400,000 evaluations ===
+(1) credited virtual entries with q' < 2: 0 of 5,600,000 (q' = [0.0, 1.0, 1.5, 1.6, 1.7, 1.8, 1.9])
+    window doubled (500 placements x 368 q' on 8 tiles): 0 of 1,472,000 entries changed
+    largest offset of a credited q > 4 peak from its cluster [arcmin] per theta node: 0.24:1.3 0.30:1.2 0.38:1.3 0.48:1.3 0.60:1.4 0.76:1.5 0.95:1.4 1.20:1.4 1.51:1.5 1.90:1.5 2.40:1.6 3.02:1.7 3.81:1.8 4.80:2.1 6.05:2.1 7.62:2.4 9.60:2.7 12.10:2.9 15.24:3.1 19.20:3.5 24.19:3.6 30.48:4.1 38.40:4.4 48.38:4.8 60.96:5.3
+(2) monotone fix: max |K - Kraw| 0.0000; N_exp(q > 5) changes by +0.0000%
+    N_exp of the own realistic halos (485,990 rows with q' >= 1.5): q > 4 129,154.7, q > 5 80,491.4
+(3) kernel MC error on N_exp (100 tile-bootstrap resamples of the kernel, halos fixed): q > 4 0.097%, q > 5 0.108%
+    even vs odd tiles' half kernels: N_exp(q > 5) differs by +0.049% (expected scatter of a half difference ~ 2 x 0.108% = 0.215%)
+    MC error of K(e = 5) per node at q' = 5: median 0.0027
+(4) build (prod) vs own kernel, K(e = 5), q' = 2-12: per theta node max |dK| (own - build) and pull dK / own MC error at the max:
+    theta   0.24': max |dK| 0.0300 at q' 4.1 (own 0.2113, build 0.2414, own MC err 0.0026); mean dK over q' 3-7 +0.0001
+    theta   0.30': max |dK| 0.0461 at q' 5.1 (own 0.5698, build 0.5237, own MC err 0.0026); mean dK over q' 3-7 +0.0025
+    theta   0.38': max |dK| 0.0334 at q' 5.4 (own 0.6888, build 0.7222, own MC err 0.0021); mean dK over q' 3-7 -0.0009
+    theta   0.48': max |dK| 0.0269 at q' 5.5 (own 0.7227, build 0.7495, own MC err 0.0027); mean dK over q' 3-7 -0.0036
+    theta   0.60': max |dK| 0.0340 at q' 6.0 (own 0.8675, build 0.8335, own MC err 0.0017); mean dK over q' 3-7 +0.0018
+    theta   0.76': max |dK| 0.0556 at q' 5.0 (own 0.5623, build 0.6179, own MC err 0.0023); mean dK over q' 3-7 -0.0063
+    theta   0.95': max |dK| 0.0233 at q' 5.1 (own 0.6068, build 0.6301, own MC err 0.0031); mean dK over q' 3-7 -0.0016
+    theta   1.20': max |dK| 0.0341 at q' 4.4 (own 0.3508, build 0.3848, own MC err 0.0023); mean dK over q' 3-7 -0.0006
+    theta   1.51': max |dK| 0.0330 at q' 4.6 (own 0.4333, build 0.4663, own MC err 0.0033); mean dK over q' 3-7 -0.0013
+    theta   1.90': max |dK| 0.0432 at q' 5.0 (own 0.5908, build 0.5477, own MC err 0.0027); mean dK over q' 3-7 +0.0016
+    theta   2.40': max |dK| 0.0277 at q' 5.0 (own 0.5925, build 0.5648, own MC err 0.0023); mean dK over q' 3-7 -0.0026
+    theta   3.02': max |dK| 0.0408 at q' 5.1 (own 0.6296, build 0.6704, own MC err 0.0030); mean dK over q' 3-7 -0.0045
+    theta   3.81': max |dK| 0.0248 at q' 4.2 (own 0.3054, build 0.3303, own MC err 0.0020); mean dK over q' 3-7 -0.0034
+    theta   4.80': max |dK| 0.0536 at q' 5.0 (own 0.6015, build 0.6552, own MC err 0.0027); mean dK over q' 3-7 -0.0046
+    theta   6.05': max |dK| 0.0330 at q' 3.7 (own 0.1658, build 0.1988, own MC err 0.0027); mean dK over q' 3-7 -0.0074
+    theta   7.62': max |dK| 0.0270 at q' 4.3 (own 0.3474, build 0.3204, own MC err 0.0025); mean dK over q' 3-7 +0.0017
+    theta   9.60': max |dK| 0.0497 at q' 5.0 (own 0.6033, build 0.6530, own MC err 0.0028); mean dK over q' 3-7 -0.0049
+    theta  12.10': max |dK| 0.0435 at q' 4.0 (own 0.2481, build 0.2047, own MC err 0.0023); mean dK over q' 3-7 +0.0049
+    theta  15.24': max |dK| 0.0353 at q' 5.0 (own 0.6011, build 0.5659, own MC err 0.0023); mean dK over q' 3-7 +0.0057
+    theta  19.20': max |dK| 0.0409 at q' 4.4 (own 0.3608, build 0.3199, own MC err 0.0027); mean dK over q' 3-7 -0.0025
+    theta  24.19': max |dK| 0.0381 at q' 5.0 (own 0.5492, build 0.5111, own MC err 0.0023); mean dK over q' 3-7 +0.0037
+    theta  30.48': max |dK| 0.0328 at q' 6.0 (own 0.8179, build 0.8506, own MC err 0.0025); mean dK over q' 3-7 -0.0044
+    theta  38.40': max |dK| 0.0279 at q' 5.1 (own 0.4625, build 0.4347, own MC err 0.0033); mean dK over q' 3-7 -0.0019
+    theta  48.38': max |dK| 0.0264 at q' 6.9 (own 0.8876, build 0.9140, own MC err 0.0016); mean dK over q' 3-7 -0.0008
+    theta  60.96': max |dK| 0.0380 at q' 6.0 (own 0.5708, build 0.6088, own MC err 0.0030); mean dK over q' 3-7 -0.0023
+    build's raw kernel counts vs own K, e = 4, q' 2-12, 25 theta nodes: chi2 1113.3 for 1206 nodes; credited counts summed over theta, q' 2-4: 50094 vs 49867.7 (+1.3 sd); q' 4-6: 177617 vs 177279.4 (+2.1 sd); q' 6-7.5: 159320 vs 159337.6 (-0.5 sd); q' 7.5-12: 295233 vs 295237.9 (-1.0 sd)
+    build's raw kernel counts vs own K, e = 5, q' 2-12, 25 theta nodes: chi2 1407.7 for 1418 nodes; credited counts summed over theta, q' 2-4: 11858 vs 11802.4 (+0.5 sd); q' 4-6: 111320 vs 111001.4 (+1.5 sd); q' 6-7.5: 150459 vs 150294.9 (+1.8 sd); q' 7.5-12: 294693 vs 294707.2 (-0.6 sd)
+    build's raw kernel counts vs own K, e = 6, q' 2-12, 25 theta nodes: chi2 1843.4 for 1588 nodes; credited counts summed over theta, q' 2-4: 1306 vs 1282.4 (+0.7 sd); q' 4-6: 42900 vs 42865.1 (+0.2 sd); q' 6-7.5: 117083 vs 117006.9 (+0.5 sd); q' 7.5-12: 289716 vs 289632.4 (+1.2 sd)
+    N_exp(q > 4) of the own halos with the build's kernel / own kernel - 1 = +0.624% (own kernel MC 0.097%; build's claim 0.21-0.23%; combined 0.240%)
+    N_exp(q > 5) of the own halos with the build's kernel / own kernel - 1 = +0.301% (own kernel MC 0.108%; build's claim 0.21-0.23%; combined 0.245%)
+    per q bin (q_cut 5) build / own - 1: +0.39% +0.26% -0.24% +0.61% +0.50% -0.18% +0.14% -0.31% +1.94%
+    per coarse z bin build / own - 1: +0.02% +0.12% +0.34% +0.54% +0.92% +1.03%
+    subset theta<0.6': N_exp(q>5) own      23.7; build / own - 1 = +2.15%; own MC 1.09%; build's half kernels differ by -1.35% (full-kernel MC ~ half of that)
+    subset 0.6-1.2'  : N_exp(q>5) own    9809.2; build / own - 1 = +1.15%; own MC 0.27%; build's half kernels differ by -3.25% (full-kernel MC ~ half of that)
+    subset z 1.5-2   : N_exp(q>5) own    2127.4; build / own - 1 = +0.92%; own MC 0.31%; build's half kernels differ by -1.60% (full-kernel MC ~ half of that)
+    subset z 2-3     : N_exp(q>5) own     367.7; build / own - 1 = +1.03%; own MC 0.27%; build's half kernels differ by -0.11% (full-kernel MC ~ half of that)
+    subset z<0.1     : N_exp(q>5) own     764.4; build / own - 1 = +0.02%; own MC 0.12%; build's half kernels differ by +0.04% (full-kernel MC ~ half of that)
+    N_exp(q > 5) build / own - 1 by theta500 of the halos: [0-0.6'] +2.15% [0.6-1.2'] +1.15% [1.2-2.4'] +0.11% [2.4-4.8'] +0.29% [4.8-9.6'] +0.44% [9.6-1e+02'] -0.15%
+(5) halo-free r_free at 0.5' / 4.45' / 15': 0.9947 / 0.9923 / 0.9887 (tile scatter 0.0023); noise peaks per 100 deg^2 (merge none) q > 4 / 4.5 / 5: 51.7 / 7.82 / 0.907 +- 0.048; q > 5 closest 1': 0.848
+
+=== [whitened, goal] 400 tiles; virtual placements 800,000 (32000-32000 per theta node), each on 368 q' values -> 294,400,000 evaluations ===
+(1) credited virtual entries with q' < 2: 0 of 5,600,000 (q' = [0.0, 1.0, 1.5, 1.6, 1.7, 1.8, 1.9])
+    window doubled (500 placements x 368 q' on 8 tiles): 0 of 1,472,000 entries changed
+    largest offset of a credited q > 4 peak from its cluster [arcmin] per theta node: 0.24:1.2 0.30:1.2 0.38:1.2 0.48:1.3 0.60:1.3 0.76:1.2 0.95:1.4 1.20:1.3 1.51:1.4 1.90:1.5 2.40:1.5 3.02:1.6 3.81:1.8 4.80:1.8 6.05:2.0 7.62:2.3 9.60:2.4 12.10:2.5 15.24:2.7 19.20:3.0 24.19:3.5 30.48:3.6 38.40:4.0 48.38:4.2 60.96:4.6
+(2) monotone fix: max |K - Kraw| 0.0000; N_exp(q > 5) changes by +0.0000%
+    N_exp of the own realistic halos (700,321 rows with q' >= 1.5): q > 4 192,527.9, q > 5 121,889.5
+(3) kernel MC error on N_exp (100 tile-bootstrap resamples of the kernel, halos fixed): q > 4 0.104%, q > 5 0.107%
+    even vs odd tiles' half kernels: N_exp(q > 5) differs by -0.374% (expected scatter of a half difference ~ 2 x 0.107% = 0.213%)
+    MC error of K(e = 5) per node at q' = 5: median 0.0028
+(4) build (prod) vs own kernel, K(e = 5), q' = 2-12: per theta node max |dK| (own - build) and pull dK / own MC error at the max:
+    theta   0.24': max |dK| 0.0351 at q' 4.1 (own 0.2087, build 0.1737, own MC err 0.0022); mean dK over q' 3-7 +0.0028
+    theta   0.30': max |dK| 0.0364 at q' 4.6 (own 0.3761, build 0.4125, own MC err 0.0030); mean dK over q' 3-7 -0.0030
+    theta   0.38': max |dK| 0.0441 at q' 5.0 (own 0.5404, build 0.4963, own MC err 0.0025); mean dK over q' 3-7 +0.0030
+    theta   0.48': max |dK| 0.0415 at q' 5.5 (own 0.7187, build 0.6772, own MC err 0.0023); mean dK over q' 3-7 +0.0083
+    theta   0.60': max |dK| 0.0516 at q' 5.0 (own 0.5516, build 0.6032, own MC err 0.0027); mean dK over q' 3-7 +0.0016
+    theta   0.76': max |dK| 0.0370 at q' 5.0 (own 0.5619, build 0.5989, own MC err 0.0026); mean dK over q' 3-7 -0.0068
+    theta   0.95': max |dK| 0.0307 at q' 5.0 (own 0.5700, build 0.5392, own MC err 0.0019); mean dK over q' 3-7 -0.0014
+    theta   1.20': max |dK| 0.0336 at q' 5.0 (own 0.5759, build 0.6095, own MC err 0.0019); mean dK over q' 3-7 -0.0031
+    theta   1.51': max |dK| 0.0351 at q' 5.9 (own 0.8585, build 0.8234, own MC err 0.0021); mean dK over q' 3-7 -0.0001
+    theta   1.90': max |dK| 0.0162 at q' 5.6 (own 0.7883, build 0.7722, own MC err 0.0026); mean dK over q' 3-7 +0.0002
+    theta   2.40': max |dK| 0.0295 at q' 4.0 (own 0.2335, build 0.2040, own MC err 0.0018); mean dK over q' 3-7 +0.0020
+    theta   3.02': max |dK| 0.0376 at q' 4.5 (own 0.4033, build 0.4409, own MC err 0.0026); mean dK over q' 3-7 -0.0008
+    theta   3.81': max |dK| 0.0378 at q' 4.5 (own 0.4062, build 0.4440, own MC err 0.0030); mean dK over q' 3-7 -0.0042
+    theta   4.80': max |dK| 0.0405 at q' 5.3 (own 0.7031, build 0.7436, own MC err 0.0027); mean dK over q' 3-7 -0.0020
+    theta   6.05': max |dK| 0.0261 at q' 5.1 (own 0.6393, build 0.6654, own MC err 0.0029); mean dK over q' 3-7 +0.0008
+    theta   7.62': max |dK| 0.0292 at q' 4.4 (own 0.3805, build 0.4096, own MC err 0.0020); mean dK over q' 3-7 -0.0025
+    theta   9.60': max |dK| 0.0339 at q' 4.8 (own 0.5336, build 0.5675, own MC err 0.0024); mean dK over q' 3-7 +0.0003
+    theta  12.10': max |dK| 0.0245 at q' 5.4 (own 0.7436, build 0.7191, own MC err 0.0021); mean dK over q' 3-7 +0.0010
+    theta  15.24': max |dK| 0.0448 at q' 5.8 (own 0.8427, build 0.8876, own MC err 0.0019); mean dK over q' 3-7 -0.0069
+    theta  19.20': max |dK| 0.0285 at q' 4.0 (own 0.2244, build 0.1959, own MC err 0.0023); mean dK over q' 3-7 +0.0015
+    theta  24.19': max |dK| 0.0322 at q' 5.2 (own 0.6141, build 0.6463, own MC err 0.0029); mean dK over q' 3-7 -0.0055
+    theta  30.48': max |dK| 0.0337 at q' 4.9 (own 0.4605, build 0.4268, own MC err 0.0026); mean dK over q' 3-7 +0.0041
+    theta  38.40': max |dK| 0.0281 at q' 5.2 (own 0.5047, build 0.5328, own MC err 0.0022); mean dK over q' 3-7 +0.0023
+    theta  48.38': max |dK| 0.0364 at q' 4.4 (own 0.1892, build 0.2257, own MC err 0.0023); mean dK over q' 3-7 -0.0030
+    theta  60.96': max |dK| 0.0275 at q' 5.1 (own 0.3053, build 0.2778, own MC err 0.0034); mean dK over q' 3-7 +0.0016
+    build's raw kernel counts vs own K, e = 4, q' 2-12, 25 theta nodes: chi2 1128.9 for 1207 nodes; credited counts summed over theta, q' 2-4: 49959 vs 49812.8 (+0.8 sd); q' 4-6: 177218 vs 177275.0 (-0.4 sd); q' 6-7.5: 158609 vs 158617.2 (-0.3 sd); q' 7.5-12: 294532 vs 294532.4 (-0.1 sd)
+    build's raw kernel counts vs own K, e = 5, q' 2-12, 25 theta nodes: chi2 1526.2 for 1414 nodes; credited counts summed over theta, q' 2-4: 11652 vs 11664.6 (-0.1 sd); q' 4-6: 111012 vs 110814.5 (+0.9 sd); q' 6-7.5: 149593 vs 149595.3 (-0.0 sd); q' 7.5-12: 294030 vs 294018.5 (+0.5 sd)
+    build's raw kernel counts vs own K, e = 6, q' 2-12, 25 theta nodes: chi2 1514.2 for 1581 nodes; credited counts summed over theta, q' 2-4: 1282 vs 1239.4 (+1.2 sd); q' 4-6: 42533 vs 42524.2 (+0.1 sd); q' 6-7.5: 116290 vs 116308.2 (-0.1 sd); q' 7.5-12: 288989 vs 288980.5 (+0.1 sd)
+    N_exp(q > 4) of the own halos with the build's kernel / own kernel - 1 = +0.080% (own kernel MC 0.104%; build's claim 0.21-0.23%; combined 0.243%)
+    N_exp(q > 5) of the own halos with the build's kernel / own kernel - 1 = +0.323% (own kernel MC 0.107%; build's claim 0.21-0.23%; combined 0.244%)
+    per q bin (q_cut 5) build / own - 1: +0.42% +0.19% +0.42% -0.35% +0.48% -0.09% +0.12% -0.32% +1.07%
+    per coarse z bin build / own - 1: +0.04% -0.06% +0.37% +0.92% +0.99% -0.20%
+    subset theta<0.6': N_exp(q>5) own     120.2; build / own - 1 = -2.32%; own MC 1.04%; build's half kernels differ by +10.52% (full-kernel MC ~ half of that)
+    subset 0.6-1.2'  : N_exp(q>5) own   21415.9; build / own - 1 = +1.34%; own MC 0.27%; build's half kernels differ by +0.69% (full-kernel MC ~ half of that)
+    subset z 1.5-2   : N_exp(q>5) own    4167.6; build / own - 1 = +0.99%; own MC 0.34%; build's half kernels differ by +0.11% (full-kernel MC ~ half of that)
+    subset z 2-3     : N_exp(q>5) own     800.8; build / own - 1 = -0.20%; own MC 0.35%; build's half kernels differ by +2.22% (full-kernel MC ~ half of that)
+    subset z<0.1     : N_exp(q>5) own     954.4; build / own - 1 = +0.04%; own MC 0.10%; build's half kernels differ by +0.93% (full-kernel MC ~ half of that)
+    N_exp(q > 5) build / own - 1 by theta500 of the halos: [0-0.6'] -2.32% [0.6-1.2'] +1.34% [1.2-2.4'] +0.11% [2.4-4.8'] +0.12% [4.8-9.6'] +0.05% [9.6-1e+02'] +0.03%
+(5) halo-free r_free at 0.5' / 4.45' / 15': 0.9948 / 0.9925 / 0.9892 (tile scatter 0.0022); noise peaks per 100 deg^2 (merge none) q > 4 / 4.5 / 5: 56.4 / 8.35 / 0.965 +- 0.051; q > 5 closest 1': 0.930
+
+y05 done in 70 s

@@ -1,0 +1,54 @@
+seed 10: tiles exist (pids 324-359)
+seed 11: N_fullsky 29292972 (expected 29295487, -0.46 sigma); band halos 2554376; pids 360-395 [12.1 s]
+seed 12: N_fullsky 29293883 (expected 29295487, -0.30 sigma); band halos 2554171; pids 396-431 [9.0 s]
+seed 13: N_fullsky 29296519 (expected 29295487, +0.19 sigma); band halos 2558965; pids 432-467 [9.6 s]
+seed 14: N_fullsky 29295355 (expected 29295487, -0.02 sigma); band halos 2555816; pids 468-503 [9.0 s]
+seed 15: N_fullsky 29292508 (expected 29295487, -0.55 sigma); band halos 2553436; pids 504-539 [8.9 s]
+seed 16: N_fullsky 29292265 (expected 29295487, -0.60 sigma); band halos 2556521; pids 540-575 [8.8 s]
+seed 17: N_fullsky 29287025 (expected 29295487, -1.56 sigma); band halos 2556017; pids 576-611 [8.8 s]
+seed 18: N_fullsky 29301272 (expected 29295487, +1.07 sigma); band halos 2555427; pids 612-647 [9.5 s]
+seed 19: N_fullsky 29301325 (expected 29295487, +1.08 sigma); band halos 2557376; pids 648-683 [9.0 s]
+seed 20: N_fullsky 29301912 (expected 29295487, +1.19 sigma); band halos 2554305; pids 684-719 [8.8 s]
+seed 21: N_fullsky 29299915 (expected 29295487, +0.82 sigma); band halos 2556092; pids 720-755 [8.8 s]
+seed 22: N_fullsky 29303387 (expected 29295487, +1.46 sigma); band halos 2557397; pids 756-791 [9.4 s]
+seed 23: N_fullsky 29292921 (expected 29295487, -0.47 sigma); band halos 2555649; pids 792-827 [9.2 s]
+seed 24: N_fullsky 29293591 (expected 29295487, -0.35 sigma); band halos 2559207; pids 828-863 [8.7 s]
+seed 25: N_fullsky 29298795 (expected 29295487, +0.61 sigma); band halos 2554532; pids 864-899 [8.8 s]
+seed 26: N_fullsky 29299306 (expected 29295487, +0.71 sigma); band halos 2554600; pids 900-935 [8.8 s]
+seed 27: N_fullsky 29297494 (expected 29295487, +0.37 sigma); band halos 2557082; pids 936-971 [8.8 s]
+seed 28: N_fullsky 29302169 (expected 29295487, +1.23 sigma); band halos 2556291; pids 972-1007 [9.2 s]
+seed 29: N_fullsky 29289700 (expected 29295487, -1.07 sigma); band halos 2554815; pids 1008-1043 [9.1 s]
+seed 30: N_fullsky 29297207 (expected 29295487, +0.32 sigma); band halos 2553372; pids 1044-1079 [8.9 s]
+seed 31: N_fullsky 29302319 (expected 29295487, +1.26 sigma); band halos 2557122; pids 1080-1115 [8.5 s]
+seed 32: N_fullsky 29307637 (expected 29295487, +2.24 sigma); band halos 2558724; pids 1116-1151 [8.5 s]
+seed 33: N_fullsky 29295215 (expected 29295487, -0.05 sigma); band halos 2558364; pids 1152-1187 [8.5 s]
+seed 34: N_fullsky 29296049 (expected 29295487, +0.10 sigma); band halos 2556869; pids 1188-1223 [8.5 s]
+seed 35: N_fullsky 29291299 (expected 29295487, -0.77 sigma); band halos 2556258; pids 1224-1259 [8.5 s]
+seed 36: N_fullsky 29291457 (expected 29295487, -0.74 sigma); band halos 2556069; pids 1260-1295 [8.4 s]
+seed 37: N_fullsky 29292363 (expected 29295487, -0.58 sigma); band halos 2557951; pids 1296-1331 [8.5 s]
+seed 38: N_fullsky 29292880 (expected 29295487, -0.48 sigma); band halos 2555063; pids 1332-1367 [8.4 s]
+seed 39: N_fullsky 29299255 (expected 29295487, +0.70 sigma); band halos 2557414; pids 1368-1403 [8.4 s]
+seed 40: N_fullsky 29292098 (expected 29295487, -0.63 sigma); band halos 2555006; pids 1404-1439 [8.4 s]
+seed 41: N_fullsky 29290295 (expected 29295487, -0.96 sigma); band halos 2555202; pids 1440-1475 [8.4 s]
+seed 42: N_fullsky 29281914 (expected 29295487, -2.51 sigma); band halos 2555307; pids 1476-1511 [8.4 s]
+seed 43: N_fullsky 29296612 (expected 29295487, +0.21 sigma); band halos 2557767; pids 1512-1547 [8.4 s]
+halos per tile: new 71003.6 +- 7.7 (1224 tiles), Q2 tiles 71027.3 +- 16.3; Poisson expectation per tile 71014.3
+done [294 s]; peak RSS 2.93 GB
+      294.07 real       286.47 user         5.06 sys
+          2926837760  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1505631  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                6604  voluntary context switches
+               15534  involuntary context switches
+       2767066152653  instructions retired
+        914305097808  cycles elapsed
+          3056295360  peak memory footprint
