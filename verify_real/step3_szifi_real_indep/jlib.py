@@ -6,11 +6,13 @@ SZiFi detection at pixel (i, j) is placed at (i - 1/2, j - 1/2); a finder detect
 Interior: distance to every edge >= 9' (18 pixels), half open: positions in [17.5, 1181.5) on both axes, 1164 samples
 per axis for both catalogues, 582' x 582' = 94.09 deg^2.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os
 import numpy as np
 from scipy.spatial import cKDTree
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
 BRUNS = os.path.join(ROOT, "data_real", "step3_szifi_real", "runs")

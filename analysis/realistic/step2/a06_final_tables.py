@@ -5,9 +5,11 @@ data_real/step2/fits.json (build, p06), fits_arbiter_effiii.json (a04), fits_arb
 (3) envelope of configs d and e over all MMF analyst choices; goodness-of-fit power there.
 Output: a06_final_tables.log
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, json
 HERE = os.path.dirname(os.path.abspath(__file__))
-D2 = "/Users/boris/GitHub/sz-poisson-blending/data_real/step2"
+D2 = (_ROOT + "/data_real/step2")
 LOG = open(os.path.join(HERE, "a06_final_tables.log"), "w")
 
 

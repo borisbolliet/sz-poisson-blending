@@ -13,6 +13,8 @@ Errors: delete-one-region jackknife (HEALPix nside=2, 48 regions per sky, all sk
 run_pass.py follows (primaries with true q > 0.5): N_det - N_lowq; per-region <delta> sums allow a
 jackknife error on the mean boost (despali16 extra skies).
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 NREG_JK = 48
 import os, sys, glob, json
 os.environ.setdefault("OMP_NUM_THREADS", "2")
@@ -25,7 +27,7 @@ import blendlib as bl
 from szsim import signal as sg, cosmo_hmf as ch
 
 DD = os.path.join(ch.DATA_DIR, "robustness")
-FIG = "/Users/boris/GitHub/sz-poisson-blending/figures/robustness"; os.makedirs(FIG, exist_ok=True)
+FIG = (_ROOT + "/figures/robustness"); os.makedirs(FIG, exist_ok=True)
 ARC = ch.ARCMIN
 
 

@@ -10,6 +10,8 @@ The std of every mmf.get_mmf_q_map call is recorded (own wrapper).  Nothing is c
 used (its values are compared at the end, as data).
 Usage: /Users/boris/GitHub/szifi-venv/bin/python -I -B j03_analytic.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys, time, copy, io, contextlib, resource
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
@@ -84,7 +86,7 @@ res["thetas"] = J.THETAS
 np.savez(os.path.join(OUT, "j03_analytic.npz"), **res)
 
 # ---- compare with the build's z04 (data_real/step3_szifi_real/analytic_sigma.npz, read as data)
-b = np.load("/Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/analytic_sigma.npz")
+b = np.load((_ROOT + "/data_real/step3_szifi_real/analytic_sigma.npz"))
 for mode in ("baseline", "goal"):
     d = res[f"sigana_{mode}"] / b[f"{mode}_S0"] - 1
     print(f"  {mode:8s}: verifier / build (z04, S0 setup) - 1: max |.| {np.abs(d).max():.1e} (" +

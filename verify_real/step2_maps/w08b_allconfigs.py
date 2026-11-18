@@ -2,12 +2,14 @@
 SO40 and full sky, q_cut 5: the part of any map-vs-build bias difference that is due to the P(D) kernel itself.
 Bootstrap over patches (2000).  Also the correlation of these differences across configs (they share the skies).
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMBA_NUM_THREADS"):
     os.environ[_v] = "3"
 import numpy as np
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, f"{ROOT}/analysis/realistic/step2")
 import s2lib as S                                       # noqa: E402  (naive model and fitter only)

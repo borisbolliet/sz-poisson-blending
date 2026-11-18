@@ -12,6 +12,8 @@ Fixes relative to c03_analysis.py:
     deviance, run to convergence (Newton decrement < tol) and reporting convergence; multi-start wrapper.
   * fits are done directly at each f_sky (no sqrt(f_sky) rescaling), priors centred on the truth.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys
 os.environ.setdefault("NUMBA_NUM_THREADS", "1"); os.environ.setdefault("OMP_NUM_THREADS", "1")
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -23,7 +25,7 @@ import cosmolib as cl
 from c02_grid import S8, OM, OMB, SL, FIDP, SIG_P18
 from colossus.cosmology import cosmology
 
-D = "/Users/boris/GitHub/sz-poisson-blending/data_cosmo"
+D = (_ROOT + "/data_cosmo")
 PN = ["sigma8", "Om", "1-b", "sigma_lnY"]
 NODES = [S8, OM, OMB, SL]
 ZE, QE = cl.ZEDGES, cl.QEDGES

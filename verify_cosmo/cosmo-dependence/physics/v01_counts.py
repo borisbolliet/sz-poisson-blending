@@ -1,7 +1,9 @@
 """Compare independent naive counts and mean y with the stored grid; log slopes of ytot and N_single."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import time, numpy as np
 from v_lib import counts
-D = "/Users/boris/GitHub/sz-poisson-blending/data_cosmo"
+D = (_ROOT + "/data_cosmo")
 G = dict(np.load(f"{D}/c02_grid.npz")); E = dict(np.load(f"{D}/c02_extra.npz"))
 def gi(S, p): return int(np.argmin(np.abs(S["params"] - np.array(p)).sum(1)))
 t = time.time()

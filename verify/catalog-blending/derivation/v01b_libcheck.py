@@ -1,4 +1,6 @@
 """Spot-check the szsim library sigma_Y / cross_response and the analysis rho table against v01 kernel."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import numpy as np
 from szsim import signal as sg
 import v01_kernel as K
@@ -8,11 +10,11 @@ for t in (0.25, 1, 3, 10, 30):
     sl = float(m.sigma_Y(t)); sv = K.sigY(t)[0]
     print(f"theta={t:5}': sigma_Y lib {sl:.5e} verifier {sv:.5e} rel {sl/sv-1:+.2e};  DC exact (lib sigma) {sl*sl*K.RATIO**2/K.NW:.3f}")
 # analysis table DC printout used linear interp in ln theta of DC -> check
-T = np.load("/Users/boris/GitHub/sz-poisson-blending/data/blending/rho_table.npz")
+T = np.load((_ROOT + "/data/blending/rho_table.npz"))
 dcn = T["sigY"] ** 2 * K.RATIO ** 2 / K.NW
 print("analysis-style interp of DC (linear in ln th):", np.round(np.interp(np.log([0.25, 1, 3, 10, 30]), np.log(T["th"]), dcn), 3))
 # rho spot checks: library exact vs verifier exact vs analysis table (trilinear)
-import sys; sys.path.insert(0, "/Users/boris/GitHub/sz-poisson-blending/analysis/blending")
+import sys; sys.path.insert(0, (_ROOT + "/analysis/blending"))
 rng = np.random.default_rng(3)
 errs = []
 for k in range(25):

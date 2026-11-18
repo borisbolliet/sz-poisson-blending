@@ -1,7 +1,9 @@
 """Multi-start spread of the converged fits (r02_fits.json), with sigma_lnY folded to |sigma_lnY|
 (the model depends on sigma_lnY only through exp(sigma_lnY x) with symmetric x, so -s and +s are identical)."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import json, numpy as np
-J = json.load(open("/Users/boris/GitHub/sz-poisson-blending/data_cosmo/r02_fits.json"))
+J = json.load(open((_ROOT + "/data_cosmo/r02_fits.json")))
 res = J["res"]
 groups = {}
 for r in res:

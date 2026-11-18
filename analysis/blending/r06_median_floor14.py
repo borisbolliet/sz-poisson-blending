@@ -5,6 +5,8 @@ Bright-tail check of P(D) with many skies: random points, neighbours M>1e14 only
 The 8 full M>1e13 skies sit ~2 sigma low in the M>1e14 Y-sum, and the tail P(delta>t>~5) is set by
 the same rare bright clusters, so test the tail on 60 independent floor-1e14 skies instead.
 Errors: sky-to-sky scatter / sqrt(N_sky)."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys, time
 os.environ.setdefault("NUMBA_NUM_THREADS", "2"); os.environ.setdefault("OMP_NUM_THREADS", "2")
 import numpy as np
@@ -27,7 +29,7 @@ ybar2 = []
 seeds = list(range(101, 111)) + list(range(3001, 3051))
 for isky, s in enumerate(seeds):
     if s <= 110:
-        cat = sampler.load_catalog(f"/Users/boris/GitHub/sz-poisson-blending/data/catalogs/cat_M1e14_seed{s}.npz",
+        cat = sampler.load_catalog(f"{_ROOT}/data/catalogs/cat_M1e14_seed{s}.npz",
                                    fields=["ra", "dec", "Y500", "theta500"])
     else:
         cat = sampler.draw_catalog(s, Mmin=1e14, fields=("ra", "dec", "Y500", "theta500"))

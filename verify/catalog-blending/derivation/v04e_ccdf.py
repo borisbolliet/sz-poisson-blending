@@ -1,9 +1,11 @@
 """Verifier random-point CCDF of delta (3 skies, own kernel) vs the analysis' analytic FFT P(D) CCDF.
 Errors: region jackknife (48 regions x 3 skies)."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import glob, numpy as np, healpy as hp
 d0 = np.load("v01_kernel.npz"); TH, SIG = d0["TH"], d0["SIG"]
 sig = lambda t: np.exp(np.interp(np.log(t), np.log(TH), np.log(SIG)))
-A = np.load("/Users/boris/GitHub/sz-poisson-blending/data/blending/analytic.npz")
+A = np.load((_ROOT + "/data/blending/analytic.npz"))
 FL = {"1e13": [0, 1, 2], "3e13": [1, 2], "1e14": [2]}
 files = sorted(glob.glob("v03_sky*.npz")); ds = [np.load(f) for f in files]
 zs = []; ztail = []

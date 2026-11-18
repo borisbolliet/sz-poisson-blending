@@ -12,13 +12,15 @@ Tables (Hankel transforms of the library template g(u) = szsim.signal.template_h
 Both are tabulated on a log-theta grid (dln theta = 0.04) and a linear r grid per theta node and are interpolated
 bilinearly (linear in ln theta at fixed r).
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os
 import numpy as np
 import numba as nb
 from scipy.special import j0
 from szsim import signal as sg, cosmo_hmf as ch
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 DATA = f"{ROOT}/data/q2_maps"
 ARC = ch.ARCMIN
 PIX = 0.25

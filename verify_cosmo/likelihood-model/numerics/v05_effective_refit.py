@@ -6,11 +6,13 @@ Delta chi2 = sum (N - N_b)^2 / N_b (full sky) and x0.4 for 40% sky.
  F_c05 : c05 eff form  q + b0 + b1 L + N(0, max(1 + v0 + v1 L, 0.05))  (variance may drop below 1)
  F_exp : q + b0 + b1 L + N(0, exp(a + c L))                            (positive, may be < 1)
  SN    : skew-normal, parameterised by (b, log omega, alpha) with several starts"""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys
 os.environ["NUMBA_NUM_THREADS"] = "2"; os.environ["OMP_NUM_THREADS"] = "2"
 import numpy as np
 from scipy.optimize import minimize
-sys.path.insert(0, "/Users/boris/GitHub/sz-poisson-blending/analysis/cosmo/likelihood")
+sys.path.insert(0, (_ROOT + "/analysis/cosmo/likelihood"))
 import cclib as cc
 
 C = np.load(f"{cc.OUT}/counts_fid.npz")

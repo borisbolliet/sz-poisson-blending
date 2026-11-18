@@ -1,6 +1,8 @@
 """Sky-to-sky scatter of monopole-convention statistics (q_cut=4,5; floor 1e13; c=1) over the analysis' 8 MC skies
 (their stored sums; mu = verifier exact formula).  Compares the between-sky error of the mean with the
 region-jackknife error, to judge whether the quoted jackknife errors capture sky-level fluctuations."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import numpy as np, healpy as hp
 import v01_kernel as K
 YBAR = np.array([8.97647742e-08, 1.20306859e-07, 1.48898975e-07])
@@ -11,7 +13,7 @@ per = {qc: {k: [] for k in CLAIM[qc]} for qc in CLAIM}
 pooled = {qc: {k: ([], []) for k in CLAIM[qc]} for qc in CLAIM}
 labs = []
 for s in range(1, 9):
-    d = np.load(f"/Users/boris/GitHub/sz-poisson-blending/data/blending/mc_sky{s}.npz")
+    d = np.load(f"{_ROOT}/data/blending/mc_sky{s}.npz")
     th = d["p_theta500"].astype(float); sA = sig(th)
     q = d["p_q"].astype(float); qo = d["p_q_obs"].astype(float)
     dl = d["D"].sum(1) / sA; xm = d["xmax"].max(1) / sA

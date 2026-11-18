@@ -1,9 +1,11 @@
 """Why does the analysis var_c (x<500) at thA=1.10' (1.135 for M>1e14) exceed the exact (untruncated) Parseval
 variance (1.110)?  Compare int 2 pi s rho^2 ds from the ANALYSIS rho table (trilinear interpolation, re-implemented
 here) with the exact Parseval value, as a function of theta_B, then population-weight."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import numpy as np
 import v01_kernel as K
-T = np.load("/Users/boris/GitHub/sz-poisson-blending/data/blending/rho_table.npz")
+T = np.load((_ROOT + "/data/blending/rho_table.npz"))
 th, t, rho, RBt = T["th"], T["t"], T["rho"], float(T["R_BEAM"])
 lth0, dl = np.log(th[0]), np.log(th[1] / th[0])
 def tri(thA, thB, s):

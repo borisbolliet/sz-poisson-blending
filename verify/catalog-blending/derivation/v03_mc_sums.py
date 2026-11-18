@@ -4,6 +4,8 @@ pixel buckets per theta tier; primaries grouped by nside-256 pixel, one query_di
 For each primary A (q_A>0.5) and each mass class c: D[c] = sum_{B!=A} rho(thA,thB,s) Y_B,
 xm[c] = max_B rho Y_B.  Also random points at fixed theta_A.
 Usage: python v03_mc_sums.py seed   (stored catalogue cat_M1e13_seed{seed}.npz)"""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, time, resource
 os.environ.setdefault("NUMBA_NUM_THREADS", "2"); os.environ.setdefault("OMP_NUM_THREADS", "2")
 import numpy as np, numba as nb, healpy as hp
@@ -113,7 +115,7 @@ def sums(qx, qy, qz, qth, qself, tiers):
 def main():
     seed = int(sys.argv[1])
     t0 = time.time()
-    f = np.load(f"/Users/boris/GitHub/sz-poisson-blending/data/catalogs/cat_M1e13_seed{seed}.npz")
+    f = np.load(f"{_ROOT}/data/catalogs/cat_M1e13_seed{seed}.npz")
     ra = f["ra"].astype(np.float64); dec = f["dec"].astype(np.float64)
     x, y, z = hp.ang2vec(ra, dec, lonlat=True).T.astype(np.float32)
     del ra, dec

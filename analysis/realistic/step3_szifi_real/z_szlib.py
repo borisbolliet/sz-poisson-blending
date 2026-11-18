@@ -20,12 +20,15 @@ What the driver adds around SZiFi (nothing inside SZiFi is changed):
   * SZiFi's merging also stores healpy's one-pair angular distance (shape (1,)) into a scalar, which numpy 2.5 refuses;
     healpy_angdist_adapter() returns that one-element result as a scalar in this process.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
+_SZIFI = os.environ.get("SZIFI_DIR") or os.path.join(os.path.dirname(_ROOT), "szifi")  # portable-paths
 import os, sys, time, copy, json, io, resource, contextlib, gc
 sys.dont_write_bytecode = True
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 OUT = os.path.join(ROOT, "data_real", "step3_szifi_real")
-SZIFI = "/Users/boris/GitHub/szifi"
+SZIFI = _SZIFI
 os.environ["NUMBA_CACHE_DIR"] = os.path.join(OUT, "out", "numba_cache_szifi")
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMBA_NUM_THREADS", "MKL_NUM_THREADS"):
     os.environ[_v] = "1"

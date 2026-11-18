@@ -1,6 +1,8 @@
 """Verifier: compare independent direct-MC blending (v01) with the claimed cosmolib grid (c02_grid.npz)."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import numpy as np, glob
-G = dict(np.load("/Users/boris/GitHub/sz-poisson-blending/data_cosmo/c02_grid.npz"))
+G = dict(np.load((_ROOT + "/data_cosmo/c02_grid.npz")))
 pts = [(0.81, 0.31, 0.8, 0.17), (0.75, 0.31, 0.8, 0.17), (0.87, 0.31, 0.8, 0.17), (0.81, 0.35, 0.8, 0.17), (0.81, 0.31, 0.9, 0.17)]
 ref = {}
 for p in pts:

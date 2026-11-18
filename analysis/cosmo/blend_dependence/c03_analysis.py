@@ -3,6 +3,8 @@ Inputs: data_cosmo/c02_grid.npz (3^4 grid), data_cosmo/c02_extra.npz (FD steps, 
 Likelihood: Poisson counts in (z, q_obs) bins, 8 z bins (0.01-3) x 10 q bins (5-inf), Asimov data (no noise),
 full sky (N_det ~ 84.5k) and f_sky = 0.4.  All numbers printed.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, time
 os.environ.setdefault("NUMBA_NUM_THREADS", "3"); os.environ.setdefault("OMP_NUM_THREADS", "3")
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -11,7 +13,7 @@ import numpy as np
 import cosmolib as cl
 from c02_grid import S8, OM, OMB, SL, FIDP, STEP, SIG_P18
 
-D = "/Users/boris/GitHub/sz-poisson-blending/data_cosmo"
+D = (_ROOT + "/data_cosmo")
 G = dict(np.load(f"{D}/c02_grid.npz"))
 E = dict(np.load(f"{D}/c02_extra.npz"))
 PN = ["sigma8", "Om", "1-b", "sigma_lnY"]

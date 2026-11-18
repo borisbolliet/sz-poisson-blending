@@ -14,6 +14,8 @@ runs; and the size of the convention differences between the build's tiles and S
     (c) l range [100, 20000] inside the grid's l range (max 30547): share of the grid's modes outside it.
 Usage: /Users/boris/GitHub/szifi-venv/bin/python -I -B c05_trace.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys, json, time
 sys.dont_write_bytecode = True
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -21,7 +23,7 @@ sys.path.insert(0, HERE)
 import numpy as np                                   # noqa: E402
 import vc_model as M                                 # noqa: E402
 
-BR = "/Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/runs"
+BR = (_ROOT + "/data_real/step3_szifi_real/runs")
 t0 = time.time()
 RUNS = {"S0": "S0_baseline_real_000", "S1": "S1_baseline_real_000", "S2": "S2_baseline_real_000",
         "S3": "smokeS3_baseline_real_000", "S3i": "S3i_baseline_real_000", "S3it0": "S3it0_baseline_real_033"}

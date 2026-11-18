@@ -7,12 +7,14 @@ follow EXACTLY from sigma(M,z) -> s sigma(M,z) (s = sigma8/sigma8_fid; dln sigma
 Checked at the end against direct colossus calls at off-node (Om, s8) points.
 Output: data_cosmo/hmf_grid.npz
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, time
 os.environ.setdefault("OMP_NUM_THREADS", "1")
 import numpy as np
 from multiprocessing import Pool
 
-OUT = "/Users/boris/GitHub/sz-poisson-blending/data_cosmo/hmf_grid.npz"
+OUT = (_ROOT + "/data_cosmo/hmf_grid.npz")
 OM = np.round(np.arange(0.20, 0.4501, 0.0125), 5)          # 21 nodes
 S8 = np.round(np.arange(0.62, 1.0201, 0.02), 5)            # 21 nodes
 Z = np.round(0.01 + 0.01 * np.arange(300), 5)              # 0.01 .. 3.00

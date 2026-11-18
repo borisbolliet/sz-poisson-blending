@@ -15,6 +15,9 @@ Only names of SZiFi's functions are printed (file:line(function)), never its cod
 Usage (from the repository root):
   MallocLargeCache=0 /Users/boris/GitHub/szifi-venv/bin/python -I -B analysis/realistic/szifi_review/p01_profile.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
+_SZIFI = os.environ.get("SZIFI_DIR") or os.path.join(os.path.dirname(_ROOT), "szifi")  # portable-paths
 import os, sys, io, cProfile, pstats
 sys.dont_write_bytecode = True
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -139,6 +142,6 @@ for line in s.getvalue().splitlines():
     if line.strip().startswith("ncalls"):
         started = True
     if started and line.strip():
-        for pre in ("/Users/boris/GitHub/szifi/", os.path.dirname(os.path.dirname(np.__file__)) + "/", ROOT + "/"):
+        for pre in ((_SZIFI + "/"), os.path.dirname(os.path.dirname(np.__file__)) + "/", ROOT + "/"):
             line = line.replace(pre, "")
         print("  " + line[:170])

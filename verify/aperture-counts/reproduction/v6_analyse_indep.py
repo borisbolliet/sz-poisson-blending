@@ -1,6 +1,8 @@
 """V6: aggregate the independent MC (v3) and compare to the Poisson predictions, using BOTH my independent Nbar
 (nbar_indep.json, v1) and the authors' Nbar (nbar.json).  Errors: sky-to-sky std / sqrt(R), floored at the
 binomial error of the analytic P with ncen*R trials."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import glob, json, os
 import numpy as np
 from scipy import stats
@@ -9,7 +11,7 @@ H = os.path.dirname(os.path.abspath(__file__))
 S = [np.load(f, allow_pickle=True).item() for f in sorted(glob.glob(os.path.join(H, "indep_mc", "sky_*.npy")))]
 R = len(S)
 NBi = json.load(open(os.path.join(H, "nbar_indep.json")))
-NBa = json.load(open("/Users/boris/GitHub/sz-poisson-blending/data/q1_aperture/nbar.json"))
+NBa = json.load(open((_ROOT + "/data/q1_aperture/nbar.json")))
 TH = np.array([0.5, 1, 2, 5, 10.0]); AM = np.pi / 180 / 60; p = np.sin(TH * AM / 2) ** 2
 P3 = 1 - 3 * np.sqrt(3) / (4 * np.pi)
 mapi = {"d4": "det4", "d5": "det5", "d6": "det6", "m14": "M1e14", "m3": "M3e13", "d5z": "det5_z1.0-3.0"}

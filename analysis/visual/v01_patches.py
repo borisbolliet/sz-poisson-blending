@@ -14,12 +14,14 @@ scales; detections = peaks of the max-over-scales MMF SNR map, q > 5, merged wit
   Check: discrete-grid MMF sigma vs the library sigma_Y (szsim.instrument.MMFModel).
 Outputs: figures/visual/patch_idealised.png, figures/visual/patch_so.png; log: v01_patches.log
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys, time
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMBA_NUM_THREADS"):
     os.environ[_v] = "2"
 import numpy as np
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 sys.path.insert(0, f"{ROOT}/analysis/q2_maps")
 import q2lib as L                                              # noqa: E402
 from scipy import fft as sfft                                  # noqa: E402

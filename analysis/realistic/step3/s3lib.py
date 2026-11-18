@@ -5,11 +5,13 @@ channel maps are   tSZ (painted, szsim.finder.paint_y)  +  CMB (seed SEED_CMB + 
 the same unit draws for baseline and goal, only the white amplitudes differ).  All three components are kept apart,
 so every filtered value splits exactly into tSZ + CMB + noise.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, time, resource
 import numpy as np
 import numba as nb
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 sys.path.insert(0, ROOT)
 sys.path.insert(0, f"{ROOT}/analysis/q2_maps")
 import q2lib as L                                  # noqa: E402

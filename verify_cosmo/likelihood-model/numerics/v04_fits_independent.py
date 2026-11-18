@@ -6,11 +6,13 @@ naive counts verified independently in v01).
    Gauss-Newton Fisher), (b) expected Fisher at the FIDUCIAL (truth) point -> bias/sigma_fid
  - linear-response prediction of the bias: dp = F^-1 J^T (D/mu - 1) at the fiducial (first-order check)
 usage: v04_fits_independent.py SETUP KIND FSKY"""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, time
 os.environ["NUMBA_NUM_THREADS"] = "2"; os.environ["OMP_NUM_THREADS"] = "2"
 import numpy as np
 from scipy.optimize import minimize
-sys.path.insert(0, "/Users/boris/GitHub/sz-poisson-blending/analysis/cosmo/likelihood")
+sys.path.insert(0, (_ROOT + "/analysis/cosmo/likelihood"))
 import cclib as cc
 
 C = np.load(f"{cc.OUT}/counts_fid.npz")

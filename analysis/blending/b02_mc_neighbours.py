@@ -8,6 +8,8 @@ halo is the same as that of a random point) -> direct test of the P(D) predictio
 Also: brute-force check of the zone search for 150 primaries (sky 1 only).
 Usage: python b02_mc_neighbours.py seed [seed ...]   (seeds 1-3: stored catalogues; others: drawn)
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys, time, json, resource
 os.environ.setdefault("NUMBA_NUM_THREADS", "2")
 os.environ.setdefault("OMP_NUM_THREADS", "2")
@@ -21,7 +23,7 @@ from szsim import sampler, signal as sg, cosmo_hmf as ch
 
 Q_PRIM = 0.5
 TIERS = [0.0, 2.0, 10.0, 1e9]
-CAT = "/Users/boris/GitHub/sz-poisson-blending/data/catalogs/cat_M1e13_seed{}.npz"
+CAT = (_ROOT + "/data/catalogs/cat_M1e13_seed{}.npz")
 FIELDS = ["ra", "dec", "M500", "Y500", "theta500", "q", "q_obs"]
 
 

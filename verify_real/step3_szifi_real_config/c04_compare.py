@@ -12,6 +12,8 @@ are to numerically irrelevant changes of the configuration.
     and SZiFi with map_dtype float64 (iteration 0).
 Usage: /Users/boris/GitHub/szifi-venv/bin/python -I -B c04_compare.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys, json
 sys.dont_write_bytecode = True
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -19,7 +21,7 @@ sys.path.insert(0, HERE)
 import numpy as np                                   # noqa: E402
 import vc_szifi as V                                 # noqa: E402  (only make_params and paths; SZiFi is not run here)
 
-BR = "/Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/runs"
+BR = (_ROOT + "/data_real/step3_szifi_real/runs")
 MR = V.RUND
 
 
@@ -166,8 +168,8 @@ print("    (q > 4, all of the tile inside the 8' buffer) for: S1g (= build), S1 
 print("    [100, 30600]: no empty bins; the extra modes carry noise only and no template power at large theta), against")
 print("    the arbiter's a01 'szifi' emulation of the same tile (stored, finder template, periodic tile) and the production")
 print("    finder's iteration-0 catalogue (stored, periodic tile, whole tile).")
-A01 = "/Users/boris/GitHub/sz-poisson-blending/data_real/step3/arbiter"
-TIL = "/Users/boris/GitHub/sz-poisson-blending/data_real/step3/tiles"
+A01 = (_ROOT + "/data_real/step3/arbiter")
+TIL = (_ROOT + "/data_real/step3/tiles")
 print("    (S1g = our run where present, else the build's stored S1 run of that tile, which our S1g reproduces bit for bit)")
 summ = {"baseline": [], "goal": []}
 for mode in ("baseline", "goal"):

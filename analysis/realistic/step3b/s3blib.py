@@ -20,11 +20,13 @@ the noise-only S/N cube in a window around it; the finder's peak rules (szsim.fi
 along both map axes, SZiFi's scale rules) are applied inside the window; a peak is credited when the cluster's own
 filtered S/N there is >= 2 (t05's 'real cluster' rule: c_p >= 2 sigma); q_obs = the highest credited peak.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, time, resource
 import numpy as np
 import numba as nb
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 for _p in (f"{ROOT}/analysis/realistic/step3", ROOT):
     if _p not in sys.path:
         sys.path.insert(0, _p)

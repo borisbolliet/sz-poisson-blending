@@ -15,6 +15,9 @@ cluster_finder.find_clusters.  Around it, own code only:
     and never read in between (mmf.py find_clusters).  'norelease' switches this off.
 Output: out/runs/CFG_MODE_KIND_PID.npz (catalogues of both iterations with pixel indices, sigma, spectra, f, params).
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
+_SZIFI = os.environ.get("SZIFI_DIR") or os.path.join(os.path.dirname(_ROOT), "szifi")  # portable-paths
 import os, sys, time, json, copy, io, contextlib, resource
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
@@ -23,7 +26,7 @@ os.environ["MPLCONFIGDIR"] = os.path.join(OUT, "mpl")
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMBA_NUM_THREADS"):
     os.environ[_v] = "1"
 sys.dont_write_bytecode = True
-SZIFI = "/Users/boris/GitHub/szifi"
+SZIFI = _SZIFI
 if SZIFI not in sys.path:
     sys.path.insert(0, SZIFI)
 import numpy as np

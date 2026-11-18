@@ -4,11 +4,13 @@ and, at the end, the maximum of the sum.  Stops when no such process has run for
 data_real/step3_szifi_real/out/STOP_memwatch exists.
 Usage: python3 -I -B z05_memwatch.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, re, subprocess, time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SLEEP = float(os.environ.get("MEMWATCH_SLEEP", "10"))
-STOP = "/Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/out/STOP_memwatch"
+STOP = (_ROOT + "/data_real/step3_szifi_real/out/STOP_memwatch")
 PAT = re.compile(r"step3_szifi_real|z0[0-9][a-z_0-9]*\.py|z1[0-9][a-z_0-9]*\.py")
 me = os.getpid()
 

@@ -13,13 +13,15 @@ lmax = 12000/14000 showed 10-40% differences at l > 5000, see the log of that at
 s01_camb_cmb.log).  Beyond l = 22000 (never used by the l <= 20000 filters) a power law fitted on [18000, 22000].
 Output: data_real/cmb_lensed_TT_camb.npz  (ell, cl_uK2 [C_l in uK^2], extrapolation slope/amplitude).
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, time, json
 for v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "NUMBA_NUM_THREADS"):
     os.environ[v] = "4"
 import numpy as np
 import camb
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 OUT = f"{ROOT}/data_real/cmb_lensed_TT_camb.npz"
 from colossus.cosmology import cosmology
 P18 = cosmology.cosmologies["planck18"]

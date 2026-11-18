@@ -1,6 +1,8 @@
 """Verifier: worst (z,q) bins, claimed C vs independent MC; and chi2 impact of the differences on the likelihood."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import numpy as np
-G = dict(np.load("/Users/boris/GitHub/sz-poisson-blending/data_cosmo/c02_grid.npz"))
+G = dict(np.load((_ROOT + "/data_cosmo/c02_grid.npz")))
 for p in [(0.81, 0.31, 0.8, 0.17), (0.87, 0.31, 0.8, 0.17)]:
     j = int(np.abs(G["params"] - np.array(p)).max(1).argmin())
     V = np.load(f"v01_{p[0]}_{p[1]}_{p[2]}_{p[3]}_s11.npz"); Cb, Cs = V["Cb"], V["Cs"]

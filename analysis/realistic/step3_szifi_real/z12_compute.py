@@ -3,10 +3,12 @@ CPU, maximum resident set size, peak memory footprint), the per-run wall times o
 the runs, and the maxima of the concurrent memory sums recorded by z05_memwatch.
 Usage: python3 -I -B z12_compute.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, re, glob, time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-RUND = "/Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/runs"
+RUND = (_ROOT + "/data_real/step3_szifi_real/runs")
 rows = []
 for fn in sorted(glob.glob(os.path.join(HERE, "*.log"))):
     s = open(fn).read()
@@ -46,7 +48,7 @@ def dsize(p):
     return sum(os.path.getsize(os.path.join(a, f)) for a, _, fs in os.walk(p) for f in fs) / 1e6
 
 
-D = "/Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real"
+D = (_ROOT + "/data_real/step3_szifi_real")
 print(f"\ndata_real/step3_szifi_real/: {dsize(D):.0f} MB in all; runs/ {dsize(RUND):.0f} MB; analytic_shells.npz "
       f"{os.path.getsize(os.path.join(D, 'analytic_shells.npz')) / 1e6:.0f} MB; out/ {dsize(os.path.join(D, 'out')):.1f} MB")
 for fn in sorted(glob.glob(os.path.join(HERE, "z05_memwatch*.log"))):

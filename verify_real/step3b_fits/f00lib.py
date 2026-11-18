@@ -16,6 +16,8 @@ Count model (adapted from verify_real/step2_catalogue/vcmodel.py, which was writ
 Fitter: Nelder-Mead on the exact Poisson lnL (+ Gaussian prior) in Fisher-whitened coordinates, restarted, then Newton
 with the finite-difference Hessian of lnL; linearised estimator F^-1 J^T (d - mu)/mu.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys
 _NT = os.environ.get("VF_THREADS", "1")
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMBA_NUM_THREADS",
@@ -26,7 +28,7 @@ from scipy.special import ndtr
 from scipy.signal import fftconvolve
 from scipy.interpolate import CubicSpline, PchipInterpolator
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 HERE = os.path.dirname(os.path.abspath(__file__))

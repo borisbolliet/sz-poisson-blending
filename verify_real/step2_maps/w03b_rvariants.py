@@ -6,11 +6,13 @@ build's 48 nodes, for w04's extra map-sigma variants:
 each divided by the measured noise-only std (so that r = 1 without halos), linear in ln theta between the 12 measured
 nodes (0.25-40.5') and constant beyond.  Output: out/w03_rvariants.npz
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os
 import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 d = np.load(os.path.join(HERE, "out", "w03_noise.npz"))
 out = {}
 lines = []

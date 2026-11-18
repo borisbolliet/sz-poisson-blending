@@ -1,11 +1,13 @@
 """Re-run of the c01 numerical closure (zero-rate kernel vs Phi; G-interpolated vs exact naive counts) without
 overwriting data_cosmo, plus a pure-Gaussian kernel test with a NON-zero shift and width (y = N(-0.3, 1.5^2)):
 G built by build_G from a single small-x rate (Gaussian path) vs the exact Gaussian counts."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys
 os.environ["NUMBA_NUM_THREADS"] = "1"; os.environ["OMP_NUM_THREADS"] = "1"
 import numpy as np
 from scipy.special import ndtr
-sys.path.insert(0, "/Users/boris/GitHub/sz-poisson-blending/analysis/cosmo/likelihood")
+sys.path.insert(0, (_ROOT + "/analysis/cosmo/likelihood"))
 import cclib as cc
 A = np.load(f"{cc.ROOT}/data/blending/analytic.npz")
 Z = dict(W=np.zeros_like(A["W"][:2]), WX=np.zeros_like(A["W"][:2]), WX2=np.zeros_like(A["W"][:2]),

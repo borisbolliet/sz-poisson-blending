@@ -1,9 +1,11 @@
 """Check of the M>1e13 N_det(q>5) offsets seen in the shared-seed passes (planck_like -2.77 sigma, base +2.07):
 fresh szsim draws (new seeds) for planck-like and base, and the same seeds 2001-2005 to confirm the pass numbers."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, time
 os.environ.setdefault("OMP_NUM_THREADS", "2"); os.environ.setdefault("NUMBA_NUM_THREADS", "2")
 import numpy as np
-sys.path.insert(0, "/Users/boris/GitHub/sz-poisson-blending/analysis/robustness")
+sys.path.insert(0, (_ROOT + "/analysis/robustness"))
 import configs as C
 from szsim import sampler, signal as sg
 t0 = time.time()

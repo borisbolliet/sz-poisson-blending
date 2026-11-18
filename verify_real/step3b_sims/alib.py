@@ -1,11 +1,13 @@
 """Step 3b verification, lens 'sims': analysis helpers (no finder code).  Loads the per-tile outputs of y02 (each npz
 read once, only the keys needed), builds the kernel, N_det / N_exp / N_iso per (z, q_obs) bin and tile bootstraps.
 Bins: step 2's (cosmolib.default_bins: 16 z bins 0.01-3, 9 q_obs bins from q_cut, the last q > 100)."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys, glob
 import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 OUT = os.path.join(HERE, "out")
 sys.path.insert(0, f"{ROOT}/analysis/cosmo/bias")
 import cosmolib as CL                                   # noqa: E402  (bins only)

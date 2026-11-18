@@ -8,11 +8,14 @@
     repository line that equals one of them (file and line number).
 Usage: python3 -I -B zA07_copycheck.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
+_SZIFI = os.environ.get("SZIFI_DIR") or os.path.join(os.path.dirname(_ROOT), "szifi")  # portable-paths
 import os, re, subprocess, time
 
 t0 = time.time()
-SZ = "/Users/boris/GitHub/szifi"
-REPO = "/Users/boris/GitHub/sz-poisson-blending"
+SZ = _SZIFI
+REPO = _ROOT
 st = subprocess.run(["git", "-C", SZ, "status", "--short"], capture_output=True, text=True)
 print(f"(1) git -C {SZ} status --short: exit {st.returncode}, output {st.stdout!r}")
 pyc = [os.path.join(d, x) for d, ds, fs in os.walk(SZ) if ".git" not in d for x in ds if x == "__pycache__"]

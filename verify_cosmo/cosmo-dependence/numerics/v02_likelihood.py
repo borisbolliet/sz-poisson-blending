@@ -3,6 +3,8 @@ nonlinear biases, emulator) from the stored c02 arrays, plus an independent naiv
 astropy background) to (a) test cosmology propagation in cosmolib.naive counts and (b) redo nonlinear fits with
 scipy.optimize (Poisson -lnL), checking convergence.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, itertools, time
 os.environ["NUMBA_NUM_THREADS"] = "2"; os.environ["OMP_NUM_THREADS"] = "2"
 import numpy as np
@@ -12,7 +14,7 @@ HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
 from v01_mc_blend import population, ZE, QE
 from szsim import signal as sg
 
-D = "/Users/boris/GitHub/sz-poisson-blending/data_cosmo"
+D = (_ROOT + "/data_cosmo")
 G = dict(np.load(f"{D}/c02_grid.npz")); E = dict(np.load(f"{D}/c02_extra.npz"))
 FID = np.array([0.81, 0.31, 0.8, 0.17]); STEP = np.array([0.01, 0.01, 0.02, 0.03]); SP = (0.006, 0.0073)
 NODES = [[0.75, 0.81, 0.87], [0.27, 0.31, 0.35], [0.7, 0.8, 0.9], [0.1, 0.17, 0.3]]

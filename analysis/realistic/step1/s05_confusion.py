@@ -14,12 +14,14 @@ Variants: lmin = 36; filter whose noise model includes the tSZ power (N_y -> N_y
 MMF noise is estimated from the data.
 Outputs: data_real/confusion_var.npz.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, time
 for v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "NUMBA_NUM_THREADS"):
     os.environ[v] = "4"
 import numpy as np
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 sys.path.insert(0, f"{ROOT}/analysis/blending")
 import blendlib as bl                                       # noqa: E402
 from szsim import instrument as ins, signal as sg          # noqa: E402

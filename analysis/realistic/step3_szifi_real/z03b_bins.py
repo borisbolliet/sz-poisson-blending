@@ -3,10 +3,12 @@ arrays z03_decouple.py stored (data_real/step3_szifi_real/z03_decouple.npz): how
 below and above l = 1000, and how well the other bins agree.
 Usage: python3 -I -B z03b_bins.py   (numpy only)
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os
 import numpy as np
 
-d = np.load("/Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/z03_decouple.npz")
+d = np.load((_ROOT + "/data_real/step3_szifi_real/z03_decouple.npz"))
 l0, none, own = d["l0"], d["none"], d["own"]
 dd = np.arange(6)
 allb = (l0 >= 72) & (l0 < 20000)

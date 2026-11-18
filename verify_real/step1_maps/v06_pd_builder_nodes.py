@@ -10,12 +10,14 @@ Per run (baseline, goal, white, baseline_sub, goal_sub) and node:
   * primary populations H(theta node, q node): the build's pl.primary_population on these nodes, full z range and
     per z bin (own z-restricted copy, same algorithm) for the redshift tilt.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys, time
 for v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS"):
     os.environ[v] = "1"
 os.environ["NUMBA_NUM_THREADS"] = "4"
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 sys.path.insert(0, f"{ROOT}/analysis/realistic/step1")
 import numpy as np                                     # noqa: E402
 from scipy.special import ndtr                         # noqa: E402

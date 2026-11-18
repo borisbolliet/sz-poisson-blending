@@ -1,9 +1,11 @@
 """Fixed-correction bias at the grid edge sigma8=0.87 (case B, C) with trust-region least_squares from several starts,
 and chi2 of the claimed linear-Fisher shifted point under the same model.  Data = C_direct(truth) x Nn_mine(truth)."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import numpy as np
 from scipy.optimize import least_squares
 from v_lib import counts
-D = "/Users/boris/GitHub/sz-poisson-blending/data_cosmo"
+D = (_ROOT + "/data_cosmo")
 G = dict(np.load(f"{D}/c02_grid.npz"))
 def C(p):
     j = int(np.argmin(np.abs(G["params"] - np.array(p)).sum(1))); n = G["Nzq_n"][j]

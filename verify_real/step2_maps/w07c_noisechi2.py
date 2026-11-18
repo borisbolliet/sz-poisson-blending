@@ -1,10 +1,12 @@
 """w07c: how much of the map-route chi2_min is the map vector's own sampling noise?  For a data vector N0 + Delta_map
 whose Delta_map carries bootstrap noise of variance var_i per bin, the Asimov deviance gains about
 sum_i f_sky var_i / N0_i (minus what the free parameters absorb).  Compared with chi2_min of the map-route and build fits."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys, json
 import numpy as np
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 d = np.load(os.path.join(HERE, "out", "w04_delta.npz"))
 fits = json.load(open(os.path.join(HERE, "out", "w04_fits.json")))
 bf = json.load(open(f"{ROOT}/data_real/step2/fits.json"))

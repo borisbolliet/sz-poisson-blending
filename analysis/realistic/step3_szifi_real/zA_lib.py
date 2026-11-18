@@ -25,10 +25,12 @@ Outputs: data_real/step3_szifi_real/arbiter/runs/VAR_MODE_KIND_PID.npz (same key
 'zero_oob', 'periodic', 'pad', 'n_oob', 'edge_cov' = fraction of the tile's boundary pixels inside the iteration-1
 cluster mask, 'mask_boundary' = the mask on the 4 boundary rows/columns).
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, time, json
 sys.dont_write_bytecode = True
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 AOUT = os.path.join(ROOT, "data_real", "step3_szifi_real", "arbiter")
 if HERE not in sys.path:
     sys.path.insert(0, HERE)

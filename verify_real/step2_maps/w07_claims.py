@@ -3,11 +3,13 @@ biases; w03: noise estimators; w06: Poisson realisations) with the build's step-
 'map lin' = linearised Fisher estimator on Delta_map (bootstrap 1 sigma); 'map ML' = ML fit on N0 + Delta_map;
 'pull' = (map - build) / bootstrap sigma, with the build's value for the SAME primaries (q_A >= 0.5) where available.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, json
 import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 OUT = os.path.join(HERE, "out")
 lin = json.load(open(os.path.join(OUT, "w04_lin.json")))
 fits = json.load(open(os.path.join(OUT, "w04_fits.json")))

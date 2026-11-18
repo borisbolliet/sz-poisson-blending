@@ -12,6 +12,8 @@ tile-bootstrap errors (R, R_p: 2000 resamples; R_s: 200 N-route resamples added 
 joint kernel+data resamples); the self check (model fitted to its own expectation) and the amplitude / z tilt / q shape
 split of p06b.  Output: out/fits_<METHOD>.json.   Usage: python y07_fits.py METHOD NPROC
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys, time, json
 HERE = os.path.dirname(os.path.abspath(__file__))
 os.environ.setdefault("NUMBA_CACHE_DIR", os.path.join(HERE, "out", "numba_cache"))
@@ -19,7 +21,7 @@ for v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_
     os.environ[v] = "1"
 sys.dont_write_bytecode = True
 import numpy as np
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 sys.path.insert(0, f"{ROOT}/analysis/realistic/step2")
 sys.path.insert(0, HERE)
 import s2lib as S                                   # noqa: E402  (step 2's fit machinery, read-only)

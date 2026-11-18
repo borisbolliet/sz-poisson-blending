@@ -19,6 +19,8 @@ The build's szsim.instrument is imported ONLY for the filter: N_y(l), ILC weight
 Conventions: maps (n, n) indexed [iy, ix], pixel j centred at (j + 1/2) pix; rfft2 layout (n, n//2+1);
 l in rad^-1; angles in arcmin at the interface; Y500 in arcmin^2; y dimensionless; channel maps in uK_CMB.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os
 NTHREADS = 4
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS",
@@ -30,7 +32,7 @@ from scipy.integrate import quad
 from scipy.special import i0e, j0
 import numba as nb
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
 os.makedirs(OUT, exist_ok=True)

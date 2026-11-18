@@ -9,10 +9,12 @@ non-overlapping 10 deg wide patches per sky, i.e. 108 independent patches from s
 Local shape distortion of the mapping is 1/cos(dec) in X and cos(dec) in Y: <= 0.38% at the band edge.
 Each patch is later treated as a periodic torus (FFT), which keeps the process exactly homogeneous Poisson.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import numpy as np, json, os, time
 from szsim import sampler
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 L = 10.0
 FIELDS = ["z", "M500", "Y500", "theta500", "q"]
 out = {}

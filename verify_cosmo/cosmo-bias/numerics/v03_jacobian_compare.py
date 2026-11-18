@@ -1,10 +1,12 @@
 """Why do config-b Fisher errors differ by ~2x between cosmolib (HMF grid) and the independent direct-colossus model?
 Compare Jacobian columns (per bin) and Fisher matrices, with several finite-difference steps for both models."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys
 os.environ["OMP_NUM_THREADS"] = "2"
 import numpy as np
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, "/Users/boris/GitHub/sz-poisson-blending/analysis/cosmo/bias")
+sys.path.insert(0, (_ROOT + "/analysis/cosmo/bias"))
 import cosmolib as CL
 import v01_indep_model as V
 

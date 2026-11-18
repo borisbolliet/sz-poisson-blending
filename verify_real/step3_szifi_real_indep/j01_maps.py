@@ -17,6 +17,8 @@ What this script does:
      in-band |k| shell (SZiFi's units: microK^2 sr per mode) for the verifier's own analytic sigma of SZiFi's filter.
 Output: out/j01_ref.npz, out/maps/*.npy.  Usage: .venv/bin/python -I -B j01_maps.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys, time, resource
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
@@ -24,7 +26,7 @@ os.environ["NUMBA_CACHE_DIR"] = os.path.join(OUT, "numba_cache_proj")
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMBA_NUM_THREADS"):
     os.environ[_v] = "1"
 sys.dont_write_bytecode = True
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 for _p in (os.path.join(ROOT, "analysis", "realistic", "step3"), os.path.join(ROOT, "analysis", "q2_maps"), ROOT):
     if _p not in sys.path:
         sys.path.insert(0, _p)

@@ -1,6 +1,6 @@
 #!/bin/bash
 # waits for the fiducial batch (sky_1011) and the fits (out/fits_mine.json), then runs the S8-truth skies (3 threads)
-cd /Users/boris/GitHub/sz-poisson-blending/verify_real/step2_catalogue
+cd "$(dirname "$0")"
 until [ -f out/fits_mine.json ]; do sleep 20; done
 for s8 in 0.7365 0.8543; do
   for k in 1 2 3; do

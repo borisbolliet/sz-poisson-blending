@@ -13,6 +13,9 @@ The binned auto spectra (own periodogram, 6 channels averaged) of A and B are co
 mean squared jump across the periodic tile boundary is measured.  No division by f (that step is the same for A and B).
 Usage: /Users/boris/GitHub/szifi-venv/bin/python -I -B j12_edge_test.py   (run alone: about 0.6 GB)
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
+_SZIFI = os.environ.get("SZIFI_DIR") or os.path.join(os.path.dirname(_ROOT), "szifi")  # portable-paths
 import os, sys, time, io, contextlib, resource
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
@@ -21,7 +24,7 @@ os.environ["MPLCONFIGDIR"] = os.path.join(OUT, "mpl")
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMBA_NUM_THREADS"):
     os.environ[_v] = "1"
 sys.dont_write_bytecode = True
-sys.path.insert(0, "/Users/boris/GitHub/szifi")
+sys.path.insert(0, _SZIFI)
 import numpy as np
 from szifi import maps, mmf, cat      # noqa: E402
 

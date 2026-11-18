@@ -13,6 +13,8 @@ New in step 2:
     attribution (dominance) rule x_B = rho_AB(s) Y_B / sigma_A < fdom q_A;
   * dominance search (numba): brightest single-neighbour contribution x_max at every primary, own pair search.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys
 NTHREADS = int(os.environ.get("VNTHREADS", "3"))
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMBA_NUM_THREADS"):
@@ -22,7 +24,7 @@ import numba as nb                                     # noqa: E402
 import scipy.fft as sfft                               # noqa: E402
 from scipy.special import j0, ndtr                     # noqa: E402
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
 os.makedirs(OUT, exist_ok=True)

@@ -1,6 +1,8 @@
 """B1 check: MC pair fractions on the 3 stored full skies (own KD-tree on detections) vs Poisson formula
 with the verifier's own Sigma_det (v02), and the size-aware merge radius with own s_infl (v01 kernel).
 Analytic f_phys from own colossus population (detection-weighted theta distribution)."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import numpy as np, healpy as hp
 from scipy.spatial import cKDTree
 from scipy.special import ndtr
@@ -48,7 +50,7 @@ for qc in QC:
 # MC
 res = {}
 for seed in (1, 2, 3):
-    f = np.load(f"/Users/boris/GitHub/sz-poisson-blending/data/catalogs/cat_M1e13_seed{seed}.npz")
+    f = np.load(f"{_ROOT}/data/catalogs/cat_M1e13_seed{seed}.npz")
     qo = f["q_obs"]; sel = np.nonzero(qo > 4)[0]; del qo
     ra = f["ra"][sel].astype(float); dec = f["dec"][sel].astype(float); th = f["theta500"][sel].astype(float); qo = f["q_obs"][sel].astype(float)
     v = hp.ang2vec(ra, dec, lonlat=True)

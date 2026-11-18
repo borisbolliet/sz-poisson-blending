@@ -11,13 +11,15 @@ and expected full-sky detections.
     Y-M relation, scatter); white case must reproduce 85,912 at q>5 (szsim/README).
 Outputs: data_real/sigmaY_mmf.npz; numbers in the log.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, time, json
 for v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "NUMBA_NUM_THREADS"):
     os.environ[v] = "4"
 import numpy as np
 from szsim import instrument as ins, signal as sg
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 TH = np.geomspace(0.1, 100.0, 61)
 QC = [4.0, 5.0, 6.0, 7.0]
 

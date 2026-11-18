@@ -1,10 +1,12 @@
 """Independent likelihood checks.  Naive counts: my v_lib (exact z-bin integration).  Blending correction
 C(z,q) = Nzq_b/Nzq_n taken from the stored direct runs (c02_grid/c02_extra) or my own quadratic interpolation
 of ln C on the 3^4 grid.  Poisson Asimov likelihood minimised with scipy (Powell + polish), NOT Gauss-Newton."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import sys, time, numpy as np
 from scipy.optimize import minimize
 from v_lib import counts
-D = "/Users/boris/GitHub/sz-poisson-blending/data_cosmo"
+D = (_ROOT + "/data_cosmo")
 G = dict(np.load(f"{D}/c02_grid.npz")); E = dict(np.load(f"{D}/c02_extra.npz"))
 FID = np.array([0.81, 0.31, 0.8, 0.17]); NODES = [[.75, .81, .87], [.27, .31, .35], [.7, .8, .9], [.1, .17, .3]]
 PN = ["s8", "Om", "1-b", "slnY"]; SP = (0.006, 0.0073)

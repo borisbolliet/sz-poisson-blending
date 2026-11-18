@@ -1,12 +1,14 @@
 """Config b (Om, s8, 1-b free), SO40, q>5, Asimov 'self' data: profile likelihood in s8 for MY converged model and
 for cosmolib's NaiveModel. Compare the Delta chi2 = 1 half-width with each model's own small-step Fisher sigma(s8),
 and the cosmolib Fisher vs finite-difference step size."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys
 os.environ.setdefault("OMP_NUM_THREADS", "2")
 import numpy as np
 from scipy.optimize import minimize
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, "/Users/boris/GitHub/sz-poisson-blending/analysis/cosmo/bias")
+sys.path.insert(0, (_ROOT + "/analysis/cosmo/bias"))
 import vmodel as V, cosmolib as CL
 fsky = 0.4; Mo = CL.NaiveModel(5.0)
 models = {"mine": lambda t: V.counts(t, 5.0, fsky), "cosmolib": lambda t: Mo.counts(t, fsky)}

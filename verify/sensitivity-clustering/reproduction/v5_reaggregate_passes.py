@@ -1,8 +1,10 @@
 """V5: re-read the analysis' stored pass files (data/robustness/pass_*.npz) to check C6 at 0.5' (below the beam)
 and the per-sky spread behind the C4 despali16 outlier; also the q<0.5 exclusion in the MC N_det."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import glob, json, os
 import numpy as np
-DD = "/Users/boris/GitHub/sz-poisson-blending/data/robustness"
+DD = (_ROOT + "/data/robustness")
 ARC = np.pi / 180 / 60
 
 

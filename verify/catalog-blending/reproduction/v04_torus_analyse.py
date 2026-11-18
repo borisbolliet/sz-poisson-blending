@@ -1,9 +1,11 @@
 """V04: blending statistics from the independent torus MC (v02) vs the analysis' analytic values (analytic.npz)."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, glob, sys
 import numpy as np
 import indep_model as im
 
-A = dict(np.load("/Users/boris/GitHub/sz-poisson-blending/data/blending/analytic.npz"))
+A = dict(np.load((_ROOT + "/data/blending/analytic.npz")))
 H = A["H"]; QC = list(A["QCUTS"]); EPSA = list(A["EPS"]); FL = list(A["FLOORS"])
 FLOORS = {"1e13": [0, 1, 2], "3e13": [1, 2], "1e14": [2]}
 files = sorted(glob.glob(os.path.join(im.HERE, "torus", "patch_*.npz")))

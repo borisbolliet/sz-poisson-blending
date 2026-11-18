@@ -22,6 +22,8 @@ K_mine(e) = fraction of clusters with q_obs > e, compared with the build's table
 Kraw and n at discrete nodes; the interpolated table at q' = 33, which comes from the build's bright-end model).
 Usage: f03_kernel.py VARIANT NPROC     Output: out/f03/k_VARIANT_MODE_PID.npz, log.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys, time
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMBA_NUM_THREADS"):
     os.environ[_v] = "1"
@@ -29,7 +31,7 @@ HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
 import numpy as np
 import numba as nb
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 sys.path.insert(0, ROOT)
 OUTD = os.path.join(HERE, "out", "f03")
 D3B = os.path.join(ROOT, "data_real", "step3b")

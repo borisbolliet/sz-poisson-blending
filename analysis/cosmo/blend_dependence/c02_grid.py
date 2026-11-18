@@ -3,6 +3,8 @@ usage: c02_grid.py grid|extra
   grid : full 3^4 grid  sigma8 {0.75,0.81,0.87} x Om {0.27,0.31,0.35} x (1-b) {0.7,0.8,0.9} x sigma_lnY {0.1,0.17,0.3}
   extra: fiducial finite-difference steps (for Fisher), Planck18 +-1/3 sigma points, random interior test points
 Output: data_cosmo/c02_<name>.npz"""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, time
 os.environ["NUMBA_NUM_THREADS"] = "1"; os.environ["OMP_NUM_THREADS"] = "1"
 os.environ["OPENBLAS_NUM_THREADS"] = "1"; os.environ["MKL_NUM_THREADS"] = "1"
@@ -58,7 +60,7 @@ def main():
     with Pool(3) as pool:
         res = pool.map(work, pts, chunksize=1)
     out = {k: np.array([r[k] for r in res]) for k in res[0]}
-    np.savez(f"/Users/boris/GitHub/sz-poisson-blending/data_cosmo/c02_{name}.npz", **out)
+    np.savez(f"{_ROOT}/data_cosmo/c02_{name}.npz", **out)
     print(f"done {time.time()-t0:.0f}s")
 
 

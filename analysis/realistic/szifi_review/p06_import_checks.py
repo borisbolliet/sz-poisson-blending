@@ -6,9 +6,12 @@ pixell interface) emits once all warnings are switched back on.
 Usage (from the repository root):
   /Users/boris/GitHub/szifi-venv/bin/python -I -B analysis/realistic/szifi_review/p06_import_checks.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
+_SZIFI = os.environ.get("SZIFI_DIR") or os.path.join(os.path.dirname(_ROOT), "szifi")  # portable-paths
 import sys, warnings, importlib
 sys.dont_write_bytecode = True
-sys.path.insert(0, "/Users/boris/GitHub/szifi")
+sys.path.insert(0, _SZIFI)
 import numpy as _np
 with warnings.catch_warnings(record=True) as w_ctrl:
     _np.sqrt(_np.array([-1.0]))

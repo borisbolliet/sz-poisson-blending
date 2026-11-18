@@ -1,12 +1,14 @@
 """V8 (C5/C6): identical white-noise realisations filtered with (a) the claim's continuous-Hankel filter bank
 (q2lib.filter_bank) and (b) my discrete real-space templates.  Compare the filtered maps pixel by pixel and the
 single-scale (0.5') peak counts, so that an implementation difference can be told apart from sample variance."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys
 os.environ.setdefault("OMP_NUM_THREADS", "2"); os.environ.setdefault("NUMBA_NUM_THREADS", "2")
 import numpy as np
 from scipy import fft as sfft
 from scipy.ndimage import maximum_filter
-sys.path.insert(0, "/Users/boris/GitHub/sz-poisson-blending/analysis/q2_maps")
+sys.path.insert(0, (_ROOT + "/analysis/q2_maps"))
 import q2lib as Q
 import indep_lib as I
 

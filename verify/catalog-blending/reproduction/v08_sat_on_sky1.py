@@ -1,5 +1,7 @@
 """V08: my satellite logic (candidates q_B>=q_A, my exact-ish rho_pairs) applied to the analysis' stored sky 1,
 q_cut = 5 and 7, to separate code differences from population/geometry differences."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys
 os.environ["OMP_NUM_THREADS"] = "2"
 import numpy as np
@@ -10,7 +12,7 @@ from szsim import sampler
 src = sys.argv[1] if len(sys.argv) > 1 else "theirs:1"
 kind, sd = src.split(":"); sd = int(sd)
 if kind == "theirs":
-    cat = sampler.load_catalog(f"/Users/boris/GitHub/sz-poisson-blending/data/catalogs/cat_M1e13_seed{sd}.npz",
+    cat = sampler.load_catalog(f"{_ROOT}/data/catalogs/cat_M1e13_seed{sd}.npz",
                                fields=["ra", "dec", "Y500", "theta500", "q", "q_obs"])
     s = cat["q"] > 2.0
     C = {k: cat[k][s].astype(float) for k in cat if k != "meta"}

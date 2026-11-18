@@ -1,9 +1,11 @@
 """Monte Carlo check of the catalogue blended kernel K_b(theta, q_A; e) = P(dominant and q_obs > e) of c03 (FFT).
 Neighbours with x > 0.02 drawn explicitly (Poisson number, x from the W-weighted bin means), x < 0.02 as a Gaussian,
 unit noise, map mean mu_exact removed; lost if any neighbour has x >= q_A."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import numpy as np, time
 from scipy.special import ndtr
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 d = np.load(f"{ROOT}/data/blending/analytic.npz")
 k = np.load(f"{ROOT}/data_cosmo/kernel_catalogue.npz")
 Kb, QA, E = k["Kb"], k["QA"], k["EDGES"]

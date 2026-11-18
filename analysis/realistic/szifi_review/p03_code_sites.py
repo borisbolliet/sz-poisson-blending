@@ -9,10 +9,13 @@ spectral bins that lie wholly outside the l range, on our tiles and on the tiles
 
 Usage (from the repository root): .venv/bin/python -I -B analysis/realistic/szifi_review/p03_code_sites.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
+_SZIFI = os.environ.get("SZIFI_DIR") or os.path.join(os.path.dirname(_ROOT), "szifi")  # portable-paths
 import os, subprocess
 import numpy as np
 
-SZ = "/Users/boris/GitHub/szifi"
+SZ = _SZIFI
 COMMIT = "73626fb084adc4e664f7322aaff573e6f0df21ea"
 
 # (review item, file, line, identifier expected on that line)

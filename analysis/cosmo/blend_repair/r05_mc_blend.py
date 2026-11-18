@@ -9,12 +9,14 @@ Shared (cosmology-independent) pieces: rho table + rho_at (blendlib), sigma_Y(th
 
 usage: v01_mc_blend.py sigma8 Om omb slnY nprim seed
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, time
 os.environ["NUMBA_NUM_THREADS"] = "1"; os.environ["OMP_NUM_THREADS"] = "1"
 import numpy as np
 import numba as nb
 from scipy.special import ndtr, ndtri
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 sys.path.insert(0, os.path.join(ROOT, "analysis", "blending"))
 import blendlib as bl
 from szsim import signal as sg
@@ -216,7 +218,7 @@ def main():
     print("C(q) summed over z:", np.round(Cq, 4), "\n  err:", np.round(Cq_b.std(0, ddof=1) / np.sqrt(nbat), 4))
     print("C(z) summed over q:", np.round(Cb.sum((0, 2)) / Cs.sum((0, 2)), 4))
     print(f"done {time.time()-t0:.0f}s")
-    np.savez(os.path.join("/Users/boris/GitHub/sz-poisson-blending/data_cosmo",
+    np.savez(os.path.join((_ROOT + "/data_cosmo"),
                           f"r05_mc_{s8}_{Om}_{omb}_{slnY}_s{seed}.npz"), C=C, Cb=Cb, Cs=Cs, Nn=Nn,
              Nsingle=Nsingle, ytot=ybar * sg.RATIO_5R500, **{k: np.array(v) for k, v in res.items()})
 

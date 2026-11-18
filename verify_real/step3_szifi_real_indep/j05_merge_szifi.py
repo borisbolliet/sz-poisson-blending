@@ -17,6 +17,9 @@ the verifier's own two adapters, which change no merging logic:
     single distance (numpy 2.5 no longer stores a length-1 array into one element).
 Usage: /Users/boris/GitHub/szifi-venv/bin/python -I -B j05_merge_szifi.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
+_SZIFI = os.environ.get("SZIFI_DIR") or os.path.join(os.path.dirname(_ROOT), "szifi")  # portable-paths
 import os, sys, time, io, contextlib, traceback
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
@@ -25,7 +28,7 @@ os.environ["MPLCONFIGDIR"] = os.path.join(OUT, "mpl")
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMBA_NUM_THREADS"):
     os.environ[_v] = "1"
 sys.dont_write_bytecode = True
-sys.path.insert(0, "/Users/boris/GitHub/szifi")
+sys.path.insert(0, _SZIFI)
 import numpy as np
 import healpy as hp
 import sklearn
@@ -33,7 +36,7 @@ import szifi                                  # noqa: E402
 from szifi import cat, sphere, maps           # noqa: E402
 
 t0 = time.time()
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 N, DX = 1200, 0.5 / 60.0 / 180.0 * np.pi
 TH = np.geomspace(0.5, 15.0, 15)
 PIX = maps.pixel(N, DX)

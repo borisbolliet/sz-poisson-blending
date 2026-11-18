@@ -1,10 +1,12 @@
 """Compare the independent direct-MC (r05_mc_blend.py, 2e6 primaries, seed 41) with cosmolib (c02 grid) at sigma8=0.75/0.81/0.87."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import numpy as np
-G = dict(np.load("/Users/boris/GitHub/sz-poisson-blending/data_cosmo/c02_grid.npz"))
+G = dict(np.load((_ROOT + "/data_cosmo/c02_grid.npz")))
 ks = [tuple(np.round(p, 6)) for p in G["params"]]
 mc = {}
 for s in (0.75, 0.81, 0.87):
-    M = np.load(f"/Users/boris/GitHub/sz-poisson-blending/data_cosmo/r05_mc_{s}_0.31_0.8_0.17_s41.npz")
+    M = np.load(f"{_ROOT}/data_cosmo/r05_mc_{s}_0.31_0.8_0.17_s41.npz")
     j = ks.index((s, 0.31, 0.8, 0.17)); mc[s] = M
     for k in ("ratio", "B2_10", "B3", "lost", "ybias"):
         v, e = M[k]; c = G[k][j]

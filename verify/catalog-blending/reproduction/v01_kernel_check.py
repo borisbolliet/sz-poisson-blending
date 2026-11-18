@@ -1,9 +1,11 @@
 """V01: independent sigma_Y, rho, DC response, ybar, mu vs the analysis (table + analytic.npz)."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys
 os.environ["OMP_NUM_THREADS"] = "2"; os.environ["NUMBA_NUM_THREADS"] = "2"
 import numpy as np
 import indep_model as im
-sys.path.insert(0, "/Users/boris/GitHub/sz-poisson-blending/analysis/blending")
+sys.path.insert(0, (_ROOT + "/analysis/blending"))
 import blendlib as bl
 from szsim import signal as sg
 

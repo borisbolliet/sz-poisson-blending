@@ -4,13 +4,16 @@ SZiFi's own 'SOgoal_simple' experiment) is handed to cluster_finder with (a) the
 the paths SZiFi would open, and (b) the same plus 'snr_weighting' = False; we report the first exception raised.
 Usage: /Users/boris/GitHub/szifi-venv/bin/python -I -B c05b_defaults.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
+_SZIFI = os.environ.get("SZIFI_DIR") or os.path.join(os.path.dirname(_ROOT), "szifi")  # portable-paths
 import os, sys, copy, io, contextlib, traceback
 sys.dont_write_bytecode = True
 HERE = os.path.dirname(os.path.abspath(__file__))
 os.environ["NUMBA_CACHE_DIR"] = os.path.join(HERE, "out", "numba_cache")
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMBA_NUM_THREADS"):
     os.environ[_v] = "1"
-sys.path.insert(0, "/Users/boris/GitHub/szifi")
+sys.path.insert(0, _SZIFI)
 import numpy as np                                    # noqa: E402
 import szifi                                          # noqa: E402
 from szifi import expt                                # noqa: E402
@@ -42,4 +45,4 @@ for lab, extra in (("(a) defaults as shipped", {}), ("(b) defaults + snr_weighti
         print(f"{lab}: ran without an exception")
     except Exception as e:                            # report the first exception and where it was raised
         tb = traceback.extract_tb(e.__traceback__)[-1]
-        print(f"{lab}: {type(e).__name__} {e!s:.80} at {os.path.relpath(tb.filename, '/Users/boris/GitHub/szifi')}:{tb.lineno}")
+        print(f"{lab}: {type(e).__name__} {e!s:.80} at {os.path.relpath(tb.filename, _SZIFI)}:{tb.lineno}")

@@ -19,13 +19,15 @@ and the same linearised estimator applied to the build's Delta).
 Output: out/w04_delta.npz, out/w04_fits.json
 Env: NBOOT (2000), FIT_CFGS ("a,b,c,d,e"), EXTRA_R (optional npz with r arrays from w03 for analyst variants)
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys, glob, json, time
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMBA_NUM_THREADS"):
     os.environ[_v] = os.environ.get("W04_THREADS", "3")
 import numpy as np
 from scipy.special import ndtr
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
 sys.path.insert(0, f"{ROOT}/analysis/realistic/step2")

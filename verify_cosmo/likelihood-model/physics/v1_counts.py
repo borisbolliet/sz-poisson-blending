@@ -1,4 +1,6 @@
 """V1: independent recomputation of naive and blended dN/dz/dq at the fiducial; comparison with c02."""
+import tempfile  # portable-paths
+_TMP = tempfile.gettempdir()  # portable-paths
 import time, json
 import numpy as np
 import vlib as v
@@ -31,5 +33,5 @@ print("q marginal rel diff [%]:", np.round(100 * (qm_b / qm_n - 1), 2))
 print("q 5-6 marginal pull full / 40%%: %.2f / %.2f" % ((qm_b[0] - qm_n[0]) / np.sqrt(qm_n[0]), (qm_b[0] - qm_n[0]) * 0.4 / np.sqrt(0.4 * qm_n[0])))
 zm_n, zm_b = Nn.sum(1), Nb.sum(1)
 print("z marginal rel diff [%]:", np.round(100 * (zm_b / zm_n - 1), 2))
-np.savez("/private/tmp/claude-501/-Users-boris-GitHub/0935154e-1cde-4eab-ab64-4515ca671a83/scratchpad/v1_counts.npz", Nn=Nn, Nb=Nb)
+np.savez((_TMP + "/v1_counts.npz"), Nn=Nn, Nb=Nb)
 print(f"done {time.time()-t0:.0f}s")

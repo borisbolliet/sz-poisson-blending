@@ -10,6 +10,9 @@
     large cluster only).
 Usage: /Users/boris/GitHub/szifi-venv/bin/python -I -B c01_model_check.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
+_SZIFI = os.environ.get("SZIFI_DIR") or os.path.join(os.path.dirname(_ROOT), "szifi")  # portable-paths
 import os, sys, time
 sys.dont_write_bytecode = True
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -18,7 +21,7 @@ import numpy as np                                   # noqa: E402
 import vc_model as M                                 # noqa: E402
 
 t0 = time.time()
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 print("(1) Arnaud+10 shape, truncated at 5 R500, unit spherical Y500")
 print(f"  Y(5R500)/Y500 = {M.RATIO5:.10f};  g(0) by projection-slice quadrature = {M.ghat(0.0)[0]:.10f}  "
       f"(rel. diff {M.ghat(0.0)[0] / M.RATIO5 - 1:+.1e})")
@@ -44,7 +47,7 @@ inst = np.load(os.path.join(ROOT, "data_real", "step3_szifi_real", "instrument.n
 print("  our SED [uK/y]:          " + " ".join(f"{x:13.6f}" for x in sed))
 print("  build instrument.npz:    " + " ".join(f"{x:13.6f}" for x in inst["tsz_sed_uK"]))
 print(f"    max |ours/build - 1| = {np.abs(sed / inst['tsz_sed_uK'] - 1).max():.1e}")
-sys.path.insert(0, "/Users/boris/GitHub/szifi")
+sys.path.insert(0, _SZIFI)
 from szifi import expt                                # noqa: E402  (read SZiFi's SOgoal_simple values at run time)
 sz_goal_sed = np.asarray(expt.experiment("SOgoal_simple").tsz_sed, float)
 print(f"    max |ours/SZiFi SOgoal_simple - 1| = {np.abs(sed / sz_goal_sed - 1).max():.1e}")

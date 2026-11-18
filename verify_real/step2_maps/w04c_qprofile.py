@@ -1,9 +1,11 @@
 """w04c: Delta per q_obs bin (summed over z), map vs build (same primaries q_A >= 0.5), q_cut 5, full sky, with the
 bootstrap sigma: shows that w04b's q-profile chi2 needs bins with more than a handful of objects (q > 100 holds ~8)."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os
 import numpy as np
 HERE = os.path.dirname(os.path.abspath(__file__))
-R = "/Users/boris/GitHub/sz-poisson-blending/data_real/step2"
+R = (_ROOT + "/data_real/step2")
 d = np.load(os.path.join(HERE, "out", "w04_delta.npz"))
 out = open(os.path.join(HERE, "w04c_qprofile.log"), "w")
 def log(s):

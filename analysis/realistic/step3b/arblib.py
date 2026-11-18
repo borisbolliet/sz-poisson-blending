@@ -6,11 +6,13 @@ Per-halo dict keys: t (tile index), z, th (theta500 [arcmin]), qp (q' in the fin
 qo_fof10 (q_obs of the highest credited detection, -inf if not credited), qiso (isolated copy, -inf if not credited or
 no copy), plus 'ntiles'.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, glob
 import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 OUT = os.path.join(ROOT, "data_real", "step3b")
 ARB = os.path.join(OUT, "arbiter")
 SIMS = os.path.join(ROOT, "verify_real", "step3b_sims", "out")

@@ -1,9 +1,11 @@
 """Convergence check of the ignore-blending fits (cases B, C): trust-region least_squares on Poisson deviance
 residuals (my naive model), and chi2 of the claimed fit points and of my Nelder-Mead points under my model."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import numpy as np
 from scipy.optimize import least_squares
 from v_lib import counts
-D = "/Users/boris/GitHub/sz-poisson-blending/data_cosmo"
+D = (_ROOT + "/data_cosmo")
 G = dict(np.load(f"{D}/c02_grid.npz"))
 FID = np.array([0.81, 0.31, 0.8, 0.17])
 j = int(np.argmin(np.abs(G["params"] - FID).sum(1)))

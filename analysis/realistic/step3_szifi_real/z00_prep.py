@@ -12,10 +12,12 @@ Writes data_real/step3_szifi_real/
                    sigma, step 2's noise normalisations (i), (ii), (iii) at the 15 scales, and the tile lists.
 Usage: python -I -B z00_prep.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, time
 sys.dont_write_bytecode = True
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 OUT = os.path.join(ROOT, "data_real", "step3_szifi_real")
 os.environ["NUMBA_CACHE_DIR"] = os.path.join(OUT, "out", "numba_cache_proj")
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMBA_NUM_THREADS", "MKL_NUM_THREADS"):

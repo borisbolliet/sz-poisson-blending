@@ -15,13 +15,15 @@ SZiFi, sigma_Y for a01 and the finder); interior = equal-area window >= 9' from 
 Errors: error of the mean over tiles (paired where stated) or 2000 tile-bootstrap resamples for count ratios.
 Usage: python -I -B zA05_analysis.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, json, time
 sys.dont_write_bytecode = True
 import numpy as np
 from scipy.spatial import cKDTree
 
 t0 = time.time()
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 OUT = os.path.join(ROOT, "data_real", "step3_szifi_real")
 ARUN, BRUN = os.path.join(OUT, "arbiter", "runs"), os.path.join(OUT, "runs")
 CRUN = os.path.join(ROOT, "verify_real", "step3_szifi_real_config", "out", "runs")

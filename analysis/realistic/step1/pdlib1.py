@@ -12,12 +12,14 @@ Generalises analysis/blending/blendlib.py + b03_analytic.py (which assume rho >=
     exactly as b03 (B2, B2neg, B3 = boosted, lost, satellites) plus the mean Y bias of detections.
 Units: arcmin, Y500 in arcmin^2, x in units of sigma_Y(theta_A).
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, time
 import numpy as np
 import numba as nb
 from scipy.special import ndtr
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 sys.path.insert(0, f"{ROOT}/analysis/blending")
 import blendlib as bl                                          # noqa: E402
 from szsim import signal as sg, cosmo_hmf as ch, instrument as ins   # noqa: E402

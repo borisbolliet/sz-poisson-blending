@@ -2,11 +2,13 @@
 (data_cosmo/G_<truth>_coarse.npz, saved by c06); fit model = population at the trial cosmology with G held at the
 fiducial (G_fid_coarse.npz).  Free: Om0, sigma8 (scaling relation fixed).  Optimiser: scipy Nelder-Mead on Cash;
 error: observed Hessian.  Also (a) the count change at the truth from holding G at the fiducial."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys
 os.environ["NUMBA_NUM_THREADS"] = "2"; os.environ["OMP_NUM_THREADS"] = "2"
 import numpy as np
 from scipy.optimize import minimize
-sys.path.insert(0, "/Users/boris/GitHub/sz-poisson-blending/analysis/cosmo/likelihood")
+sys.path.insert(0, (_ROOT + "/analysis/cosmo/likelihood"))
 import cclib as cc
 
 C = np.load(f"{cc.OUT}/counts_fid.npz"); ZE, QE = C["ZE"], C["QE"]; nz = len(ZE) - 1

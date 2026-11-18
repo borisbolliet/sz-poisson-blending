@@ -7,9 +7,11 @@
   _spectra : SZiFi's own auto spectra after / before the iteration (mean over channels and tiles) versus l.
 Usage: python -I -B z11_figures.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys
 sys.dont_write_bytecode = True
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 OUT = os.path.join(ROOT, "data_real", "step3_szifi_real")
 FIG = os.path.join(ROOT, "figures", "realistic")
 os.environ["MPLCONFIGDIR"] = os.path.join(OUT, "out", "mplconfig")

@@ -3,11 +3,13 @@ dominant rows (+1.0 +- 145.3) and the naive kernel with the no-blending control 
 Both share the SAME map noise N, so the blending effect proper is tested by the paired difference
     measured  [H(q_cat | dominant) - H((own+N)/sig)]   vs   model [M_blended - M_naive]
 with a patch bootstrap of the paired residual (common noise cancels).  Same rows, bins and kernel as c03c."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys
 os.environ["NUMBA_NUM_THREADS"] = "1"; os.environ["OMP_NUM_THREADS"] = "1"
 import numpy as np
 from scipy.stats import chi2 as chi2d
-sys.path.insert(0, "/Users/boris/GitHub/sz-poisson-blending/analysis/cosmo/likelihood")
+sys.path.insert(0, (_ROOT + "/analysis/cosmo/likelihood"))
 import cclib as cc
 
 D = np.load(f"{cc.OUT}/map_detections.npz")

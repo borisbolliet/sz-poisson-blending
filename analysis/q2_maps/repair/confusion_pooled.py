@@ -1,7 +1,9 @@
 """REPAIR (C7): filtered-map variance of the [1e13,1e14) halo component (A+B) over S1/S2/ALL patches vs the analytic
 Poisson one-halo variance stored by analysis_noise.py (noise_confusion.json, an_AB)."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import json, numpy as np
-D = "/Users/boris/GitHub/sz-poisson-blending/data/q2_maps"
+D = (_ROOT + "/data/q2_maps")
 an = np.array(json.load(open(f"{D}/noise_confusion.json"))["confusion"]["an_AB"])
 V = []
 for p in range(324):

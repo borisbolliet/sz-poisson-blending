@@ -1,5 +1,7 @@
 """V2: analytic mean tSZ ybar (own HMF integration) per mass slice vs the claimed patch-0 values (C4), plus the
 patch-to-patch distribution of ybar in the claim's 108 patches (from their patch_out means) and in mine."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import glob
 import numpy as np
 from scipy.special import ndtr
@@ -16,7 +18,7 @@ for lo, hi in [(1e13, 3e13), (3e13, 1e14), (1e14, 1e16), (1e13, 1e16)]:
     ybar = (w * Ym * np.exp(I.SIGLNY ** 2 / 2) * I.RATIO * s).sum() * SR_PER_ARCMIN2
     print(f"analytic ybar  M in [{lo:.0e},{hi:.0e}): {ybar:.4e}")
 # claimed patches
-P = "/Users/boris/GitHub/sz-poisson-blending/data/q2_maps/patch_out"
+P = (_ROOT + "/data/q2_maps/patch_out")
 m = np.array([np.load(f"{P}/patch_{p:03d}.npz")["means"][:3] for p in range(108)])
 for j, lab in enumerate(["1e13-3e13", "3e13-1e14", ">=1e14"]):
     print(f"claimed pipeline 108 patches, painted mean {lab}: mean {m[:, j].mean():.4e}  median {np.median(m[:, j]):.4e}  min {m[:, j].min():.3e} max {m[:, j].max():.3e}")

@@ -3,6 +3,8 @@ Uses vmodel.py (own model). Blending changes Delta taken from data_cosmo/truth_c
 and data_cosmo/truth_maps.npz (maps), as relative changes applied to MY naive expectation.
 usage: v01_bias.py [qcut] [configs] [routes]
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, time
 os.environ.setdefault("OMP_NUM_THREADS", "2")
 import numpy as np
@@ -11,7 +13,7 @@ from scipy.stats import chi2, ncx2
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import vmodel as V
 
-DC = "/Users/boris/GitHub/sz-poisson-blending/data_cosmo"
+DC = (_ROOT + "/data_cosmo")
 qc = float(sys.argv[1]) if len(sys.argv) > 1 else 5.0
 CONF = {"a": ([0, 1], {}), "b": ([0, 1, 2], {}), "c": ([0, 1, 2, 4], {}),
         "d": ([0, 1, 2, 3, 4], {2: 0.032}), "e": ([0, 1, 2, 3, 4], {})}

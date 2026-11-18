@@ -1,9 +1,11 @@
 """Diagnose Fisher differences between my model (vmodel) and cosmolib for config b; Jacobian comparison."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys
 os.environ.setdefault("OMP_NUM_THREADS", "2")
 import numpy as np
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, "/Users/boris/GitHub/sz-poisson-blending/analysis/cosmo/bias")
+sys.path.insert(0, (_ROOT + "/analysis/cosmo/bias"))
 import vmodel as V
 import cosmolib as CL
 qc = 5.0; fsky = 0.4

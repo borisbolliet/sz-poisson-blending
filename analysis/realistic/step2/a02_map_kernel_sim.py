@@ -18,9 +18,11 @@ type-2 NUFFT read-out, its Hankel rho tables and pair search for the brightest s
 Seeds: [2026, 11, 13, 5, p] (the maps verifier used [2026, 11, 12, 2, p]).
 Usage: a02_map_kernel_sim.py P0 NPATCH   (VNTHREADS threads).  Output: data_real/step2/a02_mapkernel/patch_<p>.npz
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, time, resource
 os.environ.setdefault("VNTHREADS", "3")
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 sys.path.insert(0, f"{ROOT}/verify_real/step2_maps")
 import vlib2 as W                                      # noqa: E402  (read-only use of the maps verifier's code)
 from vlib2 import V, np                                 # noqa: E402

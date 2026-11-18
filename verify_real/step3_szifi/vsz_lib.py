@@ -37,6 +37,8 @@ build's tiles.  Every SZiFi behaviour emulated here is listed with the SZiFi fun
 The tiles are regenerated with the build's own simulator (szsim.finder, analysis/realistic/step3/s3lib.py) from their
 seeds; v00_regen_check.py shows that this reproduces the stored catalogues.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys, resource
 HERE = os.path.dirname(os.path.abspath(__file__))
 os.environ.setdefault("NUMBA_CACHE_DIR", os.path.join(HERE, "out", "numba_cache"))
@@ -47,7 +49,7 @@ from scipy import fft as sfft
 from scipy import integrate, ndimage
 from scipy.interpolate import interp1d
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 for _p in (os.path.join(ROOT, "analysis", "q2_maps"), os.path.join(ROOT, "analysis", "realistic", "step3"), ROOT):
     if _p not in sys.path:
         sys.path.insert(0, _p)

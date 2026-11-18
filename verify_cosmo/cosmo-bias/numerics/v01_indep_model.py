@@ -5,12 +5,16 @@ Simpson in lnM, own Y-M / theta500 / selection), used to check
  (3) a full Gauss-Newton ML for config a and b with the independent model.
 Only sigma_Y(theta500) is taken from szsim (library, validated earlier).
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
+import tempfile  # portable-paths
+_TMP = tempfile.gettempdir()  # portable-paths
 import os, sys, time
 os.environ["OMP_NUM_THREADS"] = "2"
 import numpy as np
 from scipy.special import ndtr
 from scipy.integrate import simpson
-sys.path.insert(0, "/Users/boris/GitHub/sz-poisson-blending/analysis/cosmo/bias")
+sys.path.insert(0, (_ROOT + "/analysis/cosmo/bias"))
 import cosmolib as CL
 from szsim import signal as sg
 from colossus.cosmology import cosmology
@@ -95,7 +99,7 @@ if __name__ == "__main__":
     sc = float(tm["fullsky_deg2"] / tm["area_deg2"])
     D = {"cat": tc["D_q5"], "map_clean": (tm["clean5"] - tm["iso5"]).sum(0) * sc, "map": (tm["map5"] - tm["iso5"]).sum(0) * sc}
     Jall = jac(NAMES, 5.0)
-    np.savez("/private/tmp/claude-501/-Users-boris-GitHub/0935154e-1cde-4eab-ab64-4515ca671a83/scratchpad/v01_jac.npz", J=Jall, mu=mu_f)
+    np.savez((_TMP + "/v01_jac.npz"), J=Jall, mu=mu_f)
     print(f"[{time.time()-t0:.0f}s] jacobian done")
     cfg = {"a": (["Om", "s8"], {}), "b": (["Om", "s8", "omb"], {}), "c": (["Om", "s8", "omb", "slnY"], {}),
            "d": (NAMES, {"omb": 0.032}), "e": (NAMES, {})}

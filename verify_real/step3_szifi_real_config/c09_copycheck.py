@@ -11,11 +11,14 @@
         each target's token stream; reported as the longest common token run per target.
 Usage: /Users/boris/GitHub/szifi-venv/bin/python -I -B c09_copycheck.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
+_SZIFI = os.environ.get("SZIFI_DIR") or os.path.join(os.path.dirname(_ROOT), "szifi")  # portable-paths
 import os, re, sys, subprocess
 sys.dont_write_bytecode = True
 HERE = os.path.dirname(os.path.abspath(__file__))
-SZIFI = "/Users/boris/GitHub/szifi"
-BUILD = "/Users/boris/GitHub/sz-poisson-blending/analysis/realistic/step3_szifi_real"
+SZIFI = _SZIFI
+BUILD = (_ROOT + "/analysis/realistic/step3_szifi_real")
 
 
 def sh(cmd):

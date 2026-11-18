@@ -2,6 +2,8 @@
 naive+eff (4 free confusion params, no prior).  Optimiser: scipy least_squares (trust region) on Poisson deviance
 residuals + prior residuals (different algorithm from c05's damped Gauss-Newton).  Fisher at best fit AND at truth;
 linear-response (Fisher) bias prediction for comparison with the non-linear fit."""
+import tempfile  # portable-paths
+_TMP = tempfile.gettempdir()  # portable-paths
 import sys, time, json
 import numpy as np
 from scipy.optimize import least_squares
@@ -120,4 +122,4 @@ if __name__ == "__main__":
               f"noisy-data GoF: P(chi2>dof+lam) under null {pmean:.3f}, power at p<0.05 = {power:.2f}")
         out[f"{fs}|{S}|{kind}"] = dict(names=names, best=p.tolist(), sigma=sig.tolist(), sigma_truth=sig0.tolist(),
                                        bias=b.tolist(), bias_lin=(dlin / sig0).tolist(), chi2=c2, S8=bS8, c2d=c2d)
-        json.dump(out, open("/private/tmp/claude-501/-Users-boris-GitHub/0935154e-1cde-4eab-ab64-4515ca671a83/scratchpad/v2_fits_%s.json" % ("all" if len(sys.argv) == 1 else "sub"), "w"), indent=1)
+        json.dump(out, open((_TMP + "/v2_fits_%s.json") % ("all" if len(sys.argv) == 1 else "sub"), "w"), indent=1)

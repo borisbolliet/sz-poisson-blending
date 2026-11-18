@@ -15,6 +15,8 @@ nodes of the rho table and the 259 q nodes of b03 (data/blending/analytic.npz), 
 
 Units: M500c Msun (h-free), angles arcmin, Y arcmin^2.  Threads: capped by the caller (NUMBA_NUM_THREADS).
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, time, math
 import numpy as np
 import numba as nb
@@ -22,7 +24,7 @@ from scipy.special import ndtr
 from colossus.cosmology import cosmology
 from colossus.lss import mass_function
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 sys.path.insert(0, f"{ROOT}/analysis/blending")
 import blendlib as bl                                    # noqa: E402
 from szsim import signal as sg, cosmo_hmf as ch          # noqa: E402

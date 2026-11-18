@@ -7,12 +7,14 @@ Conventions
 * surface density Sigma = Nbar / (4 pi) [sr^-1], Nbar = expected full-sky count of the population
 * mu(theta) = Sigma * A(theta) = Nbar * (1 - cos theta) / 2
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os
 import numpy as np
 from scipy.stats import poisson
 from scipy.special import gammainc
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 DATA = os.path.join(ROOT, "data", "q1_aperture")
 FIG = os.path.join(ROOT, "figures", "q1_aperture")
 ARCMIN = np.pi / (180 * 60)

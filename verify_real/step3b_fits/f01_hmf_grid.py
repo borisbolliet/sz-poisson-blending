@@ -9,11 +9,13 @@ Stored: ln d2N/dz/dlnM (full sky, h-free), ln E(z), ln D_A(z) [Mpc], rho_c0.
 Checks: (1) fiducial vs szsim's d2N_dzdlnM_fullsky (the sampler of the tiles); (2) the tensor cubic-spline interpolation
 at off-node points vs direct colossus.  Output: out/hmf_grid_f01.npz
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys, time
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMBA_NUM_THREADS"):
     os.environ[_v] = "1"
 import numpy as np
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 sys.path.insert(0, ROOT)
 HERE = os.path.dirname(os.path.abspath(__file__))
 from colossus.cosmology import cosmology

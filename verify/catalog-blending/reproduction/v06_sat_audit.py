@@ -2,17 +2,19 @@
 as satellites at q_cut=7 (q_obs>7, xmax>=q), find the dominating neighbour(s) by brute force over all halos
 with q_B >= q_A and recompute x_B with my independent exact rho; also audit a random sample of
 non-satellites with large xmax/q."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys
 os.environ["OMP_NUM_THREADS"] = "2"; os.environ["NUMBA_NUM_THREADS"] = "2"
 import numpy as np
 import indep_model as im
-sys.path.insert(0, "/Users/boris/GitHub/sz-poisson-blending/analysis/blending")
+sys.path.insert(0, (_ROOT + "/analysis/blending"))
 import blendlib as bl
 from szsim import sampler, signal as sg
 
 m = sg.SZModel(); tab = bl.load_rho_table()
-d = np.load("/Users/boris/GitHub/sz-poisson-blending/data/blending/mc_sky1.npz")
-cat = sampler.load_catalog("/Users/boris/GitHub/sz-poisson-blending/data/catalogs/cat_M1e13_seed1.npz",
+d = np.load((_ROOT + "/data/blending/mc_sky1.npz"))
+cat = sampler.load_catalog((_ROOT + "/data/catalogs/cat_M1e13_seed1.npz"),
                            fields=["ra", "dec", "Y500", "theta500", "q", "M500"])
 q = d["p_q"].astype(float); qo = d["p_q_obs"].astype(float); th = d["p_theta500"].astype(float)
 sig = m.sigma_Y(th); xm = (d["xmax"] / sig[:, None]).max(1)

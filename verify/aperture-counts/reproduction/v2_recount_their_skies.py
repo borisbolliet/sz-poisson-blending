@@ -1,13 +1,15 @@
 """V2: re-derive, from the authors' own catalogues (same seeds 1001..), the per-sky statistics stored by
 q1_mc_fullsky.py, using brute-force sorted-window counting instead of cKDTree. Any bug in self-exclusion,
 k+1 querying, pair halving or triangle counting shows up as a mismatch.  usage: v2 seed0 seed1"""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import sys, os, time
 import numpy as np
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from bf_common import SortedPts, counts, triangles
 from szsim import sampler
 
-DATA = "/Users/boris/GitHub/sz-poisson-blending/data/q1_aperture/fullsky"
+DATA = (_ROOT + "/data/q1_aperture/fullsky")
 THETAS = np.array([0.5, 0.75, 1, 1.5, 2, 3, 5, 7.5, 10, 15, 20, 30, 45, 60.0])
 TH10 = THETAS[THETAS <= 10]
 

@@ -14,11 +14,13 @@ Checks:
  (3) time to paint a full stored patch.
 Output: data_real/step3/paint_tables.npz
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, time
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMBA_NUM_THREADS"):
     os.environ[_v] = "1"
 import numpy as np
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 sys.path.insert(0, ROOT)
 sys.path.insert(0, f"{ROOT}/analysis/q2_maps")
 from szsim import finder as F, signal as sg      # noqa: E402

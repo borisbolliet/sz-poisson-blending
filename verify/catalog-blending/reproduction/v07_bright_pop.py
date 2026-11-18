@@ -1,4 +1,6 @@
 """V07: compare the bright/large-halo population: my model grid vs analysis catalogue sky 1."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os
 os.environ["OMP_NUM_THREADS"] = "2"
 import numpy as np
@@ -8,7 +10,7 @@ ze, lme, dens = im.hmf_grid(); cc = im.cell_counts(ze, lme, dens)
 zc = 0.5 * (ze[1:] + ze[:-1]); Mc = np.exp(0.5 * (lme[1:] + lme[:-1])); Z, MM = np.meshgrid(zc, Mc, indexing="ij")
 TH = im.theta500(MM, Z); Q = im.Ymed(MM, Z) / im.sigmaY_fast(TH)
 AREA = 4 * np.pi / im.ARCMIN ** 2
-cat = sampler.load_catalog("/Users/boris/GitHub/sz-poisson-blending/data/catalogs/cat_M1e13_seed1.npz", fields=["theta500", "q", "z", "M500"])
+cat = sampler.load_catalog((_ROOT + "/data/catalogs/cat_M1e13_seed1.npz"), fields=["theta500", "q", "z", "M500"])
 for t in (5, 10, 20, 40):
     print(f"N(theta500>{t}'): mine expected {cc[TH>t].sum()*AREA:9.1f}   sky1 {np.sum(cat['theta500']>t)}")
 for qq in (10, 50, 200):

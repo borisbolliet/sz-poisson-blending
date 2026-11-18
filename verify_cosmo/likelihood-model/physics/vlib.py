@@ -2,6 +2,8 @@
 Population: colossus Tinker08 M500c directly, Gauss-Legendre in z (per analysis z bin) and lnM,
 Gauss-Hermite in lnY.  sigma_Y from szsim (instrument only).  Blended kernel: data_cosmo/G_fid_b03rates.npz
 interpolated with my own numpy trilinear code."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os
 os.environ.setdefault("OMP_NUM_THREADS", "2"); os.environ.setdefault("NUMBA_NUM_THREADS", "2")
 import numpy as np
@@ -10,7 +12,7 @@ from colossus.cosmology import cosmology
 from colossus.lss import mass_function
 from szsim import signal as sg
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 SZ = sg.SZModel()
 ARC = np.pi / 180 / 60
 CKMS = 299792.458

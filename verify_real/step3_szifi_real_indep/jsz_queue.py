@@ -7,10 +7,13 @@ large blocks are returned to the system, which keeps SZiFi's peak RSS lower).  E
 /usr/bin/time report go to out/stdout/TAG.log; this queue prints one line per job.
 Usage: python -I -B jsz_queue.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
+_SZIFI_VENV = os.environ.get("SZIFI_VENV") or os.path.join(os.path.dirname(_ROOT), "szifi-venv")  # portable-paths
 import os, sys, time, subprocess, re
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
-PY = "/Users/boris/GitHub/szifi-venv/bin/python"
+PY = (_SZIFI_VENV + "/bin/python")
 QF, DF, SF = os.path.join(OUT, "queue.txt"), os.path.join(OUT, "queue_done.txt"), os.path.join(OUT, "queue_stop")
 
 

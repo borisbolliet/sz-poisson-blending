@@ -3,10 +3,12 @@
 Reference b03 numbers (analysis/blending/b03_analytic.log, convention c=1, neighbour floor 1e13, q_cut = 5):
 B2(0.1) = 0.1623, B2(0.2) = 0.10514, B3 = 0.08122, lost/N_single = 0.09028, B2neg(0.1) = 0.05733, N_det_b = 84,494.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, json
 import numpy as np
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 DR = f"{ROOT}/data_real"
 RUNS = [("white", "old white (new signed code)"), ("baseline", "SO baseline MMF"), ("goal", "SO goal MMF")]
 

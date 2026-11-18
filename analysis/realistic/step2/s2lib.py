@@ -14,11 +14,13 @@ Conventions (as step 1 / s09 and Q3 / c03):
   so  K'(theta, q'; e) = P(dominant at q_A = r q', q_A + n + delta - mu > r e),   q' = Y / sigma_eff,
   and the naive model is q' + N(0,1).
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys
 import numpy as np
 from scipy.special import ndtr
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 for _p in (f"{ROOT}/analysis/realistic/step1", f"{ROOT}/analysis/blending", f"{ROOT}/analysis/cosmo/bias", ROOT):
     if _p not in sys.path:
         sys.path.insert(0, _p)

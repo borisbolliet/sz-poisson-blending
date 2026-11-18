@@ -2,13 +2,15 @@
 Own: out/fits_<METHOD>.json (y07), out/datavec_*.npz (y06).  Build: data_real/step3b/fits.json, lin.json,
 fits_analytic_cl.json (read as data).  Pull = (own - build) / sqrt(own_err^2 + build_err^2), errors = tile-bootstrap
 errors of the linearised S8 bias of each side (same estimator, setup, config, survey)."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys, json
 import numpy as np
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import vlib3b as V
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 B3 = f"{ROOT}/data_real/step3b"
 log = V.Tee(os.path.join(HERE, "y10_compare.log"))
 bml = json.load(open(f"{B3}/fits.json")); blin = json.load(open(f"{B3}/lin.json"))

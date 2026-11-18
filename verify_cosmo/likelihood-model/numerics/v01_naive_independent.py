@@ -4,6 +4,8 @@ lognormal scatter integrated with 64-node Gauss-Hermite, Phi via scipy.  Only th
 (colossus) and sigma_Y(theta) (szsim instrument) are shared.
 Checks: (1) fiducial counts vs data_cosmo/counts_fid.npz Nn (12 z x 10 q bins)
         (2) cosmology propagation: ratio N(cosmo)/N(fid) at (Om0+0.02) and (sigma8+0.03), mine vs cclib."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys
 os.environ["NUMBA_NUM_THREADS"] = "2"; os.environ["OMP_NUM_THREADS"] = "2"
 import numpy as np
@@ -12,7 +14,7 @@ from astropy.cosmology import FlatLambdaCDM
 import astropy.units as u
 from colossus.cosmology import cosmology
 from colossus.lss import mass_function
-sys.path.insert(0, "/Users/boris/GitHub/sz-poisson-blending/analysis/cosmo/likelihood")
+sys.path.insert(0, (_ROOT + "/analysis/cosmo/likelihood"))
 import cclib as cc
 from szsim import signal as sg
 

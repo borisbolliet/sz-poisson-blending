@@ -1,6 +1,6 @@
 #!/bin/bash
 # waits for the fits (out/fits_mine.json), then: vc10 random points (3 threads), then the S8-truth skies (3 threads)
-cd /Users/boris/GitHub/sz-poisson-blending/verify_real/step2_catalogue
+cd "$(dirname "$0")"
 until [ -f out/fits_mine.json ]; do sleep 20; done
 VC_THREADS=3 /usr/bin/time -l ../../.venv/bin/python vc10_randpts.py > vc10_randpts.log 2>&1
 for s8 in 0.7365 0.8543; do

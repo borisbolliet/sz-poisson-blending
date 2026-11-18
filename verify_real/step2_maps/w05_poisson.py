@@ -13,13 +13,15 @@ Tests: mean bias (blended) vs the Asimov bias of the build (p06: a +1.33, d -0.0
 the paired difference blend - null (blending shift in the presence of Poisson noise, free of the non-linear fit bias).
 Env: NR (default 200), R0 (0), NPROC (1).  Output: out/w05_poisson_<R0>.npz
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys, time, json
 NPROC = int(os.environ.get("NPROC", "1"))
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMBA_NUM_THREADS"):
     os.environ[_v] = "1"
 import numpy as np
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, f"{ROOT}/analysis/realistic/step2")
 NR = int(os.environ.get("NR", "200"))

@@ -1,15 +1,17 @@
 """Per-primary comparison of the verifier's neighbour sums (own kernel + own search) with the analysis'
 stored sums (data/blending/mc_sky{1,2,3}.npz) for the same catalogue halos; and the q_cut=4 'lost' /
 N_det_b/N_single computed from each set with the same mu (verifier exact formula)."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import numpy as np
 import v01_kernel as K
 YBAR = np.array([8.97647742e-08, 1.20306859e-07, 1.48898975e-07])
 d0 = np.load("v01_kernel.npz"); TH, SIG = d0["TH"], d0["SIG"]
 sig = lambda t: np.exp(np.interp(np.log(t), np.log(TH), np.log(SIG)))
-A = np.load("/Users/boris/GitHub/sz-poisson-blending/data/blending/analytic.npz")
+A = np.load((_ROOT + "/data/blending/analytic.npz"))
 tot = {"mine": [], "theirs": []}
 for s in (1, 2, 3):
-    me = np.load(f"v03_sky{s}.npz"); th_ = np.load(f"/Users/boris/GitHub/sz-poisson-blending/data/blending/mc_sky{s}.npz")
+    me = np.load(f"v03_sky{s}.npz"); th_ = np.load(f"{_ROOT}/data/blending/mc_sky{s}.npz")
     assert np.array_equal(me["p_idx"], th_["p_idx"]), "primary sets differ"
     Dm, Dt = me["D"], th_["D"]
     r = Dm.sum(1) / Dt.sum(1)

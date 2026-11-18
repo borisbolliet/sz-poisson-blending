@@ -1,11 +1,13 @@
 """Independent chi2_min (Asimov deviance) and GOF power for config a and b, cat and map_clean, SO40 and full sky,
 with the direct-colossus model (Gauss-Newton ML with safe-step Jacobians); compare with c09_table.log."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys
 os.environ["OMP_NUM_THREADS"] = "2"
 import numpy as np
 from scipy.stats import chi2, ncx2
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, "/Users/boris/GitHub/sz-poisson-blending/analysis/cosmo/bias")
+sys.path.insert(0, (_ROOT + "/analysis/cosmo/bias"))
 import cosmolib as CL
 import v01_indep_model as V
 

@@ -4,10 +4,13 @@ Prints: Python and package versions of the SZiFi venv, the clone's HEAD and 'git
 .pyc inside the clone, and where 'import szifi' resolves.  Read-only.
 Usage: /Users/boris/GitHub/szifi-venv/bin/python -I -B c00_env.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
+_SZIFI = os.environ.get("SZIFI_DIR") or os.path.join(os.path.dirname(_ROOT), "szifi")  # portable-paths
 import os, sys, subprocess
 sys.dont_write_bytecode = True
 HERE = os.path.dirname(os.path.abspath(__file__))
-SZIFI = "/Users/boris/GitHub/szifi"
+SZIFI = _SZIFI
 os.environ["NUMBA_CACHE_DIR"] = os.path.join(HERE, "out", "numba_cache")
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMBA_NUM_THREADS"):
     os.environ[_v] = "1"

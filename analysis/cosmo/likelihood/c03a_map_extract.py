@@ -2,10 +2,12 @@
 all halos M>=1e13 painted, l=0 removed) with their primary's z, and the catalogue-level rows (filter at the
 scale k_own nearest to theta500, true position, actual map noise and actual painted neighbours) with z.
 Output: data_cosmo/map_detections.npz (read-only use of data/q2_maps)."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys
 os.environ.setdefault("OMP_NUM_THREADS", "3")
 import numpy as np
-sys.path.insert(0, "/Users/boris/GitHub/sz-poisson-blending/analysis/q2_maps")
+sys.path.insert(0, (_ROOT + "/analysis/q2_maps"))
 import q2lib as L
 
 PIDS = list(range(324))
@@ -37,7 +39,7 @@ zr = np.empty(len(R))
 for ip_ in np.unique(R[:, 0].astype(int)):
     s = R[:, 0].astype(int) == ip_
     zr[s] = L.load_patch(PIDS[ip_])["z"][R[s, 1].astype(int)]
-np.savez(f"/Users/boris/GitHub/sz-poisson-blending/data_cosmo/map_detections.npz", det=det, rows=R, rows_z=zr,
+np.savez(f"{_ROOT}/data_cosmo/map_detections.npz", det=det, rows=R, rows_z=zr,
          THETA_K=L.THETA_K, area_deg2=len(PIDS) * (L.LBOX / 60) ** 2)
 print(f"detections Q>=4: {len(det)}, Q>=5: {(det[:,1]>=5).sum()} ({(det[:,1]>=5).sum()/(len(PIDS)*100):.4f}/deg^2), "
       f"duplicates among Q>=5: {det[det[:,1]>=5,5].mean():.4f}; catalogue rows {len(R)}")

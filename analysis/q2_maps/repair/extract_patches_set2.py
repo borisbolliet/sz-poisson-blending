@@ -2,10 +2,12 @@
 cut exactly as in extract_patches.py (X=ra, Y=(180/pi) sin dec, |Y|<5 deg, 36 patches per sky).  Noise seeds in
 q2lib.process_patch are 10000+pid, so they do not overlap with the original 108 patches either.
 Only the band is kept (full-sky arrays are discarded after the cut)."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import numpy as np, time, sys
 from szsim import sampler, cosmo_hmf as ch
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 L = 10.0
 FIELDS = ["z", "M500", "Y500", "theta500", "q"]
 out = {}

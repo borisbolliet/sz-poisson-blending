@@ -282,7 +282,7 @@ PROGRESS.md   progress report: results so far, methods, next steps
 CONCLUSIONS.md   current conclusions;  SZIFI_REVIEW.md: review of the SZiFi cluster finder (bugs, improvements, speed)
 ```
 
-Simulated catalogues and maps (`data/`, ~7 GB, `data_cosmo/`, ~0.5 GB, and `data_real/`, ~2 GB) are not included. Regenerate them with `szsim` and the scripts in `analysis/`; each figure's script is listed in `REPORT.md`.
+Simulated catalogues and maps (`data/`, ~7 GB, `data_cosmo/`, ~0.5 GB, and `data_real/`, ~6.5 GB) are not included. Regenerate them with `szsim` and the scripts in `analysis/`; each figure's script is listed in `REPORT.md`.
 
 **Requirements:** Python 3.12 with numpy, scipy, colossus, numba, healpy, matplotlib, astropy, camb (for the SO setup) and emcee (for the MCMC).
 
@@ -290,3 +290,7 @@ Simulated catalogues and maps (`data/`, ~7 GB, `data_cosmo/`, ~0.5 GB, and `data
 uv venv --python 3.12 .venv
 uv pip install --python .venv/bin/python numpy scipy colossus numba healpy matplotlib astropy camb emcee
 ```
+
+`requirements.txt` pins the exact versions we used. The SZiFi runs use a separate environment, pinned in `requirements-szifi.txt`.
+
+**Running on another machine.** The scripts find the repository from their own location, so the clone can sit anywhere. SZiFi is expected next to it, as on our machine: its clone in `../szifi` and its environment in `../szifi-venv`. Set `SZIFI_DIR` and `SZIFI_VENV` to use other places.

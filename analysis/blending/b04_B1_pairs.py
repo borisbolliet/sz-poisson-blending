@@ -12,6 +12,8 @@ For unequal sizes we use d_merge = s_infl(thA) + s_infl(thB).  Analytic:
     f = < 1 - exp( - int dSigma_det(thB) A_cap(s_infl(thA) + s_infl(thB)) ) >_{A in det}
 MC: stored full skies (M>1e13, seeds 1-3) + floor-1e14 skies (stored 101-110 + drawn 1001-1040).
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys, time
 os.environ.setdefault("OMP_NUM_THREADS", "2"); os.environ.setdefault("NUMBA_NUM_THREADS", "2")
 import numpy as np
@@ -33,7 +35,7 @@ from szsim import sampler, signal as sg, cosmo_hmf as ch
 QCUTS = [4.0, 5.0, 6.0, 7.0]
 THB = np.array([0.5, 1.0, 1.5, 2.0, 3.0, 4.0, 5.0])
 KMAX = 3
-CATS = "/Users/boris/GitHub/sz-poisson-blending/data/catalogs/"
+CATS = (_ROOT + "/data/catalogs/")
 
 
 def unitvec(ra, dec):

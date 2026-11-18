@@ -1,4 +1,6 @@
 """Figures for the cosmology dependence of blending -> figures/cosmo/blend_dependence_*.png"""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import numpy as np
@@ -7,8 +9,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from c02_grid import S8, OM, OMB, SL, FIDP
 
-D = "/Users/boris/GitHub/sz-poisson-blending/data_cosmo"
-FIG = "/Users/boris/GitHub/sz-poisson-blending/figures/cosmo"
+D = (_ROOT + "/data_cosmo")
+FIG = (_ROOT + "/figures/cosmo")
 os.makedirs(FIG, exist_ok=True)
 G = dict(np.load(f"{D}/c02_grid.npz"))
 PN = [r"$\sigma_8$", r"$\Omega_m$", r"$1-b$", r"$\sigma_{\ln Y}$"]

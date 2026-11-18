@@ -2,6 +2,8 @@
 patches, skies 4-9) agree?  Uses the per-patch metric sums saved by analysis_blend.py (PIDS=0:324, TAG=_ALL).
 For each disputed metric: S1 and S2 ratios with bootstrap errors, S1-S2 in sigma, and the chi2 of the 9 per-sky ratios
 around the pooled value using per-sky bootstrap errors (tests whether bootstrap errors cover sky-to-sky scatter)."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys
 import numpy as np
 from scipy.stats import chi2 as chi2d
@@ -14,7 +16,7 @@ METRICS = ["n_det", "prim_1", "prim_eq_near", "cont10", "cont20", "gross10", "gr
            "h_detectable", "h_detected", "h_merged", "h_unres", "h_faded", "h_gain",
            "cat_cont10", "cat_cont20", "cat_den", "cat_boost", "cat_pos_det", "single_expect"]
 mi = {m: i for i, m in enumerate(METRICS)}
-ACC = np.load("/Users/boris/GitHub/sz-poisson-blending/data/q2_maps/blend_acc_ALL.npy")   # (VARS x RULES, 324, 4, nmet)
+ACC = np.load((_ROOT + "/data/q2_maps/blend_acc_ALL.npy"))   # (VARS x RULES, 324, 4, nmet)
 VR = [(v, r) for v in ["V13", "V3e13", "V14"] for r in ["R1", "R2", "R3"]]
 rng = np.random.default_rng(7)
 def rat(A, num, den, iq, P):

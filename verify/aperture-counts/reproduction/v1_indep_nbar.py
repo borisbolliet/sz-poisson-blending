@@ -6,6 +6,8 @@ trapezoid in the lnY deviate).  The only szsim ingredient reused is sigma_Y(thet
 validated in the build phase, outside the scope of these claims) - and it is cross-checked at the
 point-source limit against the closed form sqrt(4 pi sigma_b^2) * noise / RATIO.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import json, time
 import numpy as np
 from scipy.special import ndtr
@@ -17,7 +19,7 @@ cosmo = cosmology.setCosmology("planck18")
 h = cosmo.h
 C = 299792.458
 AM = np.pi / 180 / 60
-NB = json.load(open("/Users/boris/GitHub/sz-poisson-blending/data/q1_aperture/nbar.json"))
+NB = json.load(open((_ROOT + "/data/q1_aperture/nbar.json")))
 
 
 def dVdzdOm(z):          # Mpc^3/sr
@@ -141,5 +143,5 @@ print(f"P(exists M>3e14 pair <0.5') = {1-np.exp(-m314*mu(m314,0.5)/2):.4f}")
 for tdeg in [1 / 60, 1, 6.3, 19.8, 61]:
     t = np.radians(tdeg)
     print(f"flat/cap-1 at {tdeg:.3f} deg = {np.pi*t**2/(2*np.pi*(1-np.cos(t)))-1:.4e} (theta^2/12 = {t**2/12:.4e})")
-json.dump(res, open("/Users/boris/GitHub/sz-poisson-blending/verify/aperture-counts/reproduction/nbar_indep.json", "w"), indent=1)
+json.dump(res, open((_ROOT + "/verify/aperture-counts/reproduction/nbar_indep.json"), "w"), indent=1)
 print(f"time {time.time()-t0:.1f}s")

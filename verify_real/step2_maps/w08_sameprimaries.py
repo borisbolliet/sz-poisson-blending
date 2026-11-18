@@ -10,13 +10,15 @@ term is identical).  Errors: bootstrap over patches.  Also per q_A class and per
 the difference (linearised, build's naive model).
 Output: w08_sameprimaries.log
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys, glob, json, time
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMBA_NUM_THREADS"):
     os.environ[_v] = os.environ.get("W08_THREADS", "3")
 import numpy as np
 from scipy.special import ndtr
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
 sys.path.insert(0, HERE)

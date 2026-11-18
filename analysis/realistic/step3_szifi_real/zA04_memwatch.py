@@ -3,9 +3,11 @@ folder) and their sum; one line per minute, and at the end the maximum of the su
 such process has run for 3 minutes or when data_real/step3_szifi_real/arbiter/out/STOP_memwatch exists.
 Usage: python3 -I -B zA04_memwatch.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, re, subprocess, time
 
-STOP = "/Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/arbiter/out/STOP_memwatch"
+STOP = (_ROOT + "/data_real/step3_szifi_real/arbiter/out/STOP_memwatch")
 PAT = re.compile(r"(zA[0-9]{2}[a-z_0-9]*\.py)")
 me = os.getpid()
 t_start = time.time()

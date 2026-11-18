@@ -1,10 +1,12 @@
 """REPAIR (C1): patch counts of all 324 patches (9 independent full skies) vs full-sky intensity x 100 deg^2,
 var/mean per mass threshold, and a dispersion test on 412 equal-area 10 deg x (10 deg in Y) cells covering a fresh
 full sky (seed 4, redrawn) to test whether the sampler's positions are Poisson (var/mean = 1)."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import numpy as np
 from scipy.stats import chi2 as chi2d
 from szsim import sampler
-D = "/Users/boris/GitHub/sz-poisson-blending/data/q2_maps"
+D = (_ROOT + "/data/q2_maps")
 fs = 100.0 / (4 * np.pi * (180 / np.pi) ** 2)
 M = {}
 with np.load(f"{D}/patches_10deg_M1e13.npz") as f:

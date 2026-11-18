@@ -16,6 +16,8 @@ Per primary A (every halo of the sky, low-q ones subsampled with weights):
 Histograms: CCDF S(z bin, edge) = sum_A w_A E_scatter[1(dom) Phi(q_A + delta - mu - r e)] and the single-cluster
 analogue Phi(q_A / r - e); bin counts are CCDF differences.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys, math, time
 _NT = os.environ.get("VC_THREADS", "4")
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMBA_NUM_THREADS",
@@ -24,7 +26,7 @@ for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB
 import numpy as np
 import numba as nb
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 HERE = os.path.dirname(os.path.abspath(__file__))
 DERIV = f"{ROOT}/verify_real/step1_derivation"
 if ROOT not in sys.path:

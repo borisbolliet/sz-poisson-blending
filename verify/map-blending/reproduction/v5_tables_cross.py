@@ -1,9 +1,11 @@
 """V5 (C2): compare the claim's painting / response tables (data/q2_maps/tables.npz) with my independently built ones
 (real-space I0 beam convolution for painting; own Hankel for responses) at random (k, theta, r)."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import numpy as np
 import indep_lib as I
 
-T = np.load("/Users/boris/GitHub/sz-poisson-blending/data/q2_maps/tables.npz")
+T = np.load((_ROOT + "/data/q2_maps/tables.npz"))
 paint_c, resp_c, rP_c, rR_c = T["paint"], T["resp"], T["rP"], T["rR"]
 lnth0_c, dlnth_c = float(T["lnth0"]), float(T["dlnth"])
 assert np.allclose(T["theta_k"], I.THK)

@@ -4,17 +4,21 @@
 (3) Poisson realisations, config b, SO40, self data: scatter of the TRUE ML (Nelder-Mead on cosmolib lnL),
     vs the default-step Fisher sigma and the safe-step one.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
+import tempfile  # portable-paths
+_TMP = tempfile.gettempdir()  # portable-paths
 import os, sys, json, time
 os.environ["OMP_NUM_THREADS"] = "2"
 import numpy as np
 from scipy.optimize import minimize
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, "/Users/boris/GitHub/sz-poisson-blending/analysis/cosmo/bias")
+sys.path.insert(0, (_ROOT + "/analysis/cosmo/bias"))
 import cosmolib as CL
 import v01_indep_model as V
 
 t0 = time.time()
-J_ind = np.load("/private/tmp/claude-501/-Users-boris-GitHub/0935154e-1cde-4eab-ab64-4515ca671a83/scratchpad/v01_jac.npz")
+J_ind = np.load((_TMP + "/v01_jac.npz"))
 Jind, muind = J_ind["J"], J_ind["mu"]
 CFG = {"a": (["Om", "s8"], {}), "b": (["Om", "s8", "omb"], {}), "c": (["Om", "s8", "omb", "slnY"], {}),
        "d": (["Om", "s8", "omb", "alpha", "slnY"], {"omb": 0.032}), "d3": (["Om", "s8", "omb", "alpha", "slnY"], {"omb": 0.024}),

@@ -1,9 +1,11 @@
 """Which Jacobian column (s8 or 1-b) drives the config-b Fisher difference; per-bin dlnN/d(1-b) comparison."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys
 os.environ.setdefault("OMP_NUM_THREADS", "2")
 import numpy as np
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, "/Users/boris/GitHub/sz-poisson-blending/analysis/cosmo/bias")
+sys.path.insert(0, (_ROOT + "/analysis/cosmo/bias"))
 import vmodel as V, cosmolib as CL
 fsky = 0.4; Mo = CL.NaiveModel(5.0)
 fm = lambda t: V.counts(t, 5.0, fsky); ft = lambda t: Mo.counts(t, fsky)

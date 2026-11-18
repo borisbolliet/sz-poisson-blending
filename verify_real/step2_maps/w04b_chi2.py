@@ -6,12 +6,14 @@
   (2) full-covariance chi2 on aggregated cells: 6 z groups x 3 q_obs groups (5-10.6, 10.6-32.5, > 32.5);
   (3) same for the redshift profile alone (6 z groups, all q) and the q profile alone (9 q bins, all z).
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os
 import numpy as np
 from scipy.stats import chi2 as C2
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 d = np.load(os.path.join(HERE, "out", "w04_delta.npz"))
 f = open(os.path.join(HERE, "w04b_chi2.log"), "w")
 

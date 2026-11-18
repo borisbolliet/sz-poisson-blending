@@ -12,6 +12,8 @@ Nothing is imported from szsim or q2lib.  Different methods are used on purpose:
   * peaks: scipy.ndimage.maximum_filter(mode='wrap'); merging with a periodic cKDTree.
 Units: arcmin, Y in arcmin^2, masses in Msun (h-free).
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os
 import numpy as np
 import numba as nb
@@ -20,7 +22,7 @@ from scipy.integrate import quad
 from colossus.cosmology import cosmology
 from colossus.lss import mass_function
 
-OUT = "/Users/boris/GitHub/sz-poisson-blending/verify/map-blending/reproduction/out"
+OUT = (_ROOT + "/verify/map-blending/reproduction/out")
 os.makedirs(OUT, exist_ok=True)
 COS = cosmology.setCosmology("planck18")
 H = COS.h

@@ -7,13 +7,15 @@ Claim E1: SZiFi's sigma_vec at the first scale is 0 with 'maxima_lomem'.  The ve
 mmf.get_mmf_q_map returns at every scale; the build recovered sigma(0.5') as y0/q from the catalogue.
 Usage: .venv/bin/python -I -B j02_repro.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys, json, glob
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
 sys.dont_write_bytecode = True
 import numpy as np
 
-BUILD = "/Users/boris/GitHub/sz-poisson-blending/data_real/step3_szifi_real/runs"
+BUILD = (_ROOT + "/data_real/step3_szifi_real/runs")
 REPRO = [("S1", "baseline", "real", 11), ("S2", "goal", "noise", 22), ("S3it0", "goal", "real", 33)]
 
 

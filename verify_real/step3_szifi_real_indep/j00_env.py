@@ -2,6 +2,9 @@
 
 Usage: /Users/boris/GitHub/szifi-venv/bin/python -I -B j00_env.py  (after j01_maps.py, which writes the maps)
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
+_SZIFI = os.environ.get("SZIFI_DIR") or os.path.join(os.path.dirname(_ROOT), "szifi")  # portable-paths
 import os, sys, copy, io, contextlib, traceback, subprocess, importlib
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
@@ -10,7 +13,7 @@ os.environ["MPLCONFIGDIR"] = os.path.join(OUT, "mpl")
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMBA_NUM_THREADS"):
     os.environ[_v] = "1"
 sys.dont_write_bytecode = True
-SZIFI = "/Users/boris/GitHub/szifi"
+SZIFI = _SZIFI
 sys.path.insert(0, SZIFI)
 import numpy as np
 

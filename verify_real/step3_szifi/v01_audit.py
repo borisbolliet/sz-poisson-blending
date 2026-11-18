@@ -4,10 +4,13 @@ SZiFi's source files are opened as TEXT only (nothing from the clone is imported
 script prints the relevant SZiFi lines (file:line) and an automatic check that the quoted pattern is present.
 The verdict for each item is written in the log after the quotes.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
+_SZIFI = os.environ.get("SZIFI_DIR") or os.path.join(os.path.dirname(_ROOT), "szifi")  # portable-paths
 import os, re, sys
 import numpy as np
 
-SZ = "/Users/boris/GitHub/szifi"
+SZ = _SZIFI
 SRC = {f: open(os.path.join(SZ, f)).read().splitlines() for f in
        ("szifi/params.py", "szifi/spec.py", "szifi/mmf.py", "szifi/maps.py", "szifi/model.py", "szifi/cat.py",
         "test_files/run_szifi_planck.py", "test_files/run_szifi_so_car.py", "surveys/data_planck.py")}

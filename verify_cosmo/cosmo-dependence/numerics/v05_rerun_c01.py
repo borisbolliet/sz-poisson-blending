@@ -2,9 +2,11 @@
 (data/blending/analytic.npz, read only) at the exact baseline: Planck18 (sigma8=0.8102, Om=0.3111),
 (1-b)=0.8, sigma_lnY=0.173, neighbour floor 1e13, map mean removed, q_cut=5.
 Also compares the fast P(D) grid (PD_FAST) with the b03 grid (PD_B03)."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, time
 os.environ.setdefault("NUMBA_NUM_THREADS", "2"); os.environ.setdefault("OMP_NUM_THREADS", "2")
-sys.path.insert(0, "/Users/boris/GitHub/sz-poisson-blending/analysis/cosmo/blend_dependence")
+sys.path.insert(0, (_ROOT + "/analysis/cosmo/blend_dependence"))
 import numpy as np
 import cosmolib as cl
 

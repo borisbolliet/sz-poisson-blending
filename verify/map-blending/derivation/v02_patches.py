@@ -1,12 +1,14 @@
 """C1: independent equal-area patch cut of the stored full-sky catalogues; counts, var/mean, patch ybar; check the
 catalogue's q and Y scatter against our own model."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys
 os.environ["OMP_NUM_THREADS"] = "2"
 sys.path.insert(0, os.path.dirname(__file__))
 import numpy as np
 import own_model as om
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 lam_full = {1e13: 29295478.0, 3e13: None, 1e14: 396387.0}   # from our own v01 midpoint integral
 counts = {m: [] for m in (1e13, 3e13, 1e14, 3e14)}
 qcounts = {q: [] for q in (4, 5, 6, 7)}

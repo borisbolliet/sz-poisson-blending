@@ -8,12 +8,14 @@ Shared (cosmology-independent) pieces: rho table + rho_at (blendlib), sigma_Y(th
 
 usage: v01_mc_blend.py sigma8 Om omb slnY nprim seed
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, time
 os.environ["NUMBA_NUM_THREADS"] = "2"; os.environ["OMP_NUM_THREADS"] = "2"
 import numpy as np
 import numba as nb
 from scipy.special import ndtr, ndtri
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 sys.path.insert(0, os.path.join(ROOT, "analysis", "blending"))
 import blendlib as bl
 from szsim import signal as sg

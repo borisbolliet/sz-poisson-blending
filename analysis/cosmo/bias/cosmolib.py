@@ -9,12 +9,14 @@ Naive (single-cluster) model, as in szsim.SZModel.p_det:
     mu[zb, qb] = fsky * int dz dlnM d2N/dzdlnM(Om,s8) P(q_obs in qb | q0, slnY)
 The cluster z is the true z of the halo (spectroscopic/photometric z of the counterpart).
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os
 import numpy as np
 from scipy.interpolate import make_interp_spline, BSpline, CubicSpline
 from scipy.special import ndtr
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 DC = f"{ROOT}/data_cosmo"
 ARCMIN = np.pi / 180.0 / 60.0
 PNAMES = ["Om", "s8", "omb", "alpha", "slnY"]

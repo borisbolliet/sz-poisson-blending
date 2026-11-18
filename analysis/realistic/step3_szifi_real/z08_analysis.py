@@ -16,9 +16,11 @@ Arbiter rerun (2026-11-12): interior made equal-area for both position grids (in
 data_real/step3_szifi_real/arbiter/z08_summary.json.  The build's original output is z08_analysis_build_original.log.
 Usage: python -I -B z08_analysis.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, time, json
 sys.dont_write_bytecode = True
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 OUT = os.path.join(ROOT, "data_real", "step3_szifi_real")
 RUND = os.path.join(OUT, "runs")
 import numpy as np

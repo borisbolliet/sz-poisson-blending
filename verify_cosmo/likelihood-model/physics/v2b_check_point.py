@@ -1,8 +1,10 @@
 """V2b: evaluate my -2lnL (Poisson + priors) for the S2 naive fit at c05's reported best fit vs my best fit."""
+import tempfile  # portable-paths
+_TMP = tempfile.gettempdir()  # portable-paths
 import json, numpy as np, v2_fits as F, vlib as v
 popf = v.population(nd=F.ND); NB = v.counts_blended(popf).ravel()
 names = F.SETUPS["S2"]; pc, ps = F.prior_vecs(names)
-mine = json.load(open('/private/tmp/claude-501/-Users-boris-GitHub/0935154e-1cde-4eab-ab64-4515ca671a83/scratchpad/v2_fits_all.json'))["1.0|S2|naive"]["best"]
+mine = json.load(open((_TMP + '/v2_fits_all.json')))["1.0|S2|naive"]["best"]
 c05 = json.load(open(v.ROOT + "/data_cosmo/cosmo_bias_fsky1.0.json"))
 key = [k for k in c05 if k.startswith("fsky1.0|S2") and k.endswith("|naive")][0]
 theirs = c05[key]["best"]

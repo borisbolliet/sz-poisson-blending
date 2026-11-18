@@ -19,6 +19,8 @@ Own code (different numerical routes from the build where possible):
 Geometry as the build (needed to compare on its tiles): tile 600' x 600', N = 1200 pixels of 0.5'; sample (iy, ix) at
 (y, x) = (0.5 iy, 0.5 ix) arcmin; axis 0 = y.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys, time, resource
 NTH = int(os.environ.get("VNTHREADS", "1"))
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMBA_NUM_THREADS"):
@@ -30,7 +32,7 @@ from scipy.special import j0, ndtr                   # noqa: E402
 from scipy.interpolate import CubicSpline            # noqa: E402
 import finufft                                       # noqa: E402
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
 os.makedirs(OUT, exist_ok=True)

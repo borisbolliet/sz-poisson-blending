@@ -14,11 +14,14 @@ actually interpolates are recomputed by SZiFi's own get_binned_spec (also the bi
 Usage (before importing szifi):  import vsz_stubs; vsz_stubs.install(); import szifi
 SZiFi itself is never modified: the clone is only added to the end of sys.path.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
+_SZIFI = os.environ.get("SZIFI_DIR") or os.path.join(os.path.dirname(_ROOT), "szifi")  # portable-paths
 import sys
 import types
 import numpy as np
 
-SZIFI_ROOT = "/Users/boris/GitHub/szifi"
+SZIFI_ROOT = _SZIFI
 
 
 def _missing(name):

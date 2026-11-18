@@ -6,9 +6,11 @@ iteration (dotted).  Bottom: the paired excess over a01, r_SZiFi - r_a01, with t
 dotted: the same difference at iteration 0 (SZiFi's pixel-sampled template; no iteration involved).
 Usage: python -I -B zA06_figure.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys
 sys.dont_write_bytecode = True
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 OUT = os.path.join(ROOT, "data_real", "step3_szifi_real")
 FIG = os.path.join(ROOT, "figures", "realistic")
 os.environ["MPLCONFIGDIR"] = os.path.join(OUT, "arbiter", "out", "mplconfig")

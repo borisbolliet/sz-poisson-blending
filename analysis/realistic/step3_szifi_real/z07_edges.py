@@ -17,9 +17,11 @@ Positions: a finder detection at pixel (iy, ix) sits at (iy, ix); SZiFi reports 
     sqrt(N_bin)) has p > 0.05, for both noise levels.  The analysis interior is b + 1'.
 Usage: python -I -B z07_edges.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, time
 sys.dont_write_bytecode = True
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 OUT = os.path.join(ROOT, "data_real", "step3_szifi_real")
 import numpy as np
 from scipy.spatial import cKDTree

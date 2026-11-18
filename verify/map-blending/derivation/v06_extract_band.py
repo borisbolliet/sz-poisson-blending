@@ -1,7 +1,9 @@
 """Own cut of the stored full-sky catalogues into 108 equal-area 10x10 deg patches (x=ra-10p, y=(180/pi)sin dec+5, arcmin),
 saved for running OUR pipeline on the SAME halos as the analysis (only noise differs)."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import numpy as np
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 out = {}
 for seed in (1, 2, 3):
     with np.load(f"{ROOT}/data/catalogs/cat_M1e13_seed{seed}.npz") as f:
@@ -17,4 +19,4 @@ for seed in (1, 2, 3):
         for k in d:
             out[f"p{pid}_{k}"] = d[k][m]
     print("seed", seed, sel.sum(), flush=True)
-np.savez("/Users/boris/GitHub/sz-poisson-blending/verify/map-blending/derivation/band_patches.npz", **out)
+np.savez((_ROOT + "/verify/map-blending/derivation/band_patches.npz"), **out)

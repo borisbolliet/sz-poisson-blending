@@ -3,11 +3,13 @@ compound-Poisson sum: for selected (theta node, q_A node), draw Poisson counts i
 (data/blending/analytic.npz, all three mass classes, x < q_A only), delta = sum n_j xbar_j, y = N(0,1) + delta - mu.
 No FFT, no Gaussian small-x approximation.  Compare the CDF of y with G/P_dom, and P_dom with exp(-Lambda(x>=q_A)).
 Also report the sign/size of the median shift and the skewness."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os
 os.environ["OMP_NUM_THREADS"] = "2"
 import numpy as np
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 A = np.load(f"{ROOT}/data/blending/analytic.npz")
 K = np.load(f"{ROOT}/data_cosmo/G_fid_b03rates.npz")
 G, Pdom, mu, th, QN, TG = K["G"], K["Pdom"], K["mu"], K["th"], K["qnodes"], K["tgrid"]

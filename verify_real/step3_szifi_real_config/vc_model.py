@@ -20,6 +20,8 @@ Contents
     and the response kappa = (SZiFi's estimate of y0 for a painted unit-y0 cluster at a half-integer pixel position) /
     1, i.e. kappa = cross / norm with cross = (dx^2 / N^2) sum_k Ghat(k) Yhat(k) a^T B_paint C^-1 B_szifi a.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import numpy as np
 from scipy import integrate
 from scipy.interpolate import interp1d
@@ -292,7 +294,7 @@ def so_noise(ell, mode):
     return Nn
 
 
-def cmb_cl(ell, path="/Users/boris/GitHub/sz-poisson-blending/data_real/cmb_lensed_TT_camb.npz"):
+def cmb_cl(ell, path=(_ROOT + "/data_real/cmb_lensed_TT_camb.npz")):
     d = np.load(path)
     out = np.interp(np.asarray(ell, float), d["ell"].astype(float), d["cl_uK2"])
     out[np.asarray(ell) < 2] = 0.

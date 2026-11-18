@@ -5,11 +5,13 @@
 (c) Correlation structure of the 'chi2/dof' tests: correlation of z(P0) and z(P1) and across nested theta.
 (d) C12: 6-sky no-floor z for det5|M3e13 P(N=0) at 10'.
 (e) Own p3 MC using rejection sampling in a square (different from the authors' polar method)."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import glob, json, os
 import numpy as np
 from scipy import stats
 
-D = "/Users/boris/GitHub/sz-poisson-blending/data/q1_aperture"
+D = (_ROOT + "/data/q1_aperture")
 NB = json.load(open(os.path.join(D, "nbar.json")))
 S = [np.load(f, allow_pickle=True).item() for f in sorted(glob.glob(os.path.join(D, "fullsky", "sky_*.npy")))]
 R = len(S)

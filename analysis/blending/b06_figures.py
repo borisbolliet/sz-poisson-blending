@@ -1,4 +1,6 @@
 """Figures for the blending analysis -> figures/blending/*.png"""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys
 import numpy as np
 import matplotlib
@@ -9,7 +11,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import blendlib as bl
 
-FIG = "/Users/boris/GitHub/sz-poisson-blending/figures/blending"
+FIG = (_ROOT + "/figures/blending")
 os.makedirs(FIG, exist_ok=True)
 CAT = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300"]
 plt.rcParams.update({"font.size": 9, "axes.spines.top": False, "axes.spines.right": False,

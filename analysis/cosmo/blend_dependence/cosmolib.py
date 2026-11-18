@@ -15,12 +15,14 @@ Speed-up relative to b03 (validated in c01_validate.py against data/blending/ana
   convolutions of (n, nY, nY^2) with (K, K rho, K rho^2): totals of the first two moments are exact.
 Everything h-free, angles arcmin, Y500 arcmin^2, masses Msun.  Nothing is written to data/.
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys
 import numpy as np
 import numba as nb
 from scipy.special import ndtr
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 sys.path.insert(0, os.path.join(ROOT, "analysis", "blending"))
 import blendlib as bl                          # noqa: E402  (rho table, rho_at)
 from szsim import signal as sg, cosmo_hmf as ch  # noqa: E402

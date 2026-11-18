@@ -8,11 +8,13 @@
 Distances for the check in (1): flat, in arcmin, from the pixel positions (0.5' pixels).
 Usage: .venv/bin/python -I -B j06_merge_compare.py
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys, time
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
 sys.dont_write_bytecode = True
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 sys.path.insert(0, ROOT)
 sys.path.insert(0, HERE)
 import numpy as np

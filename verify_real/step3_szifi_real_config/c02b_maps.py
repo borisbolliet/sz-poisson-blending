@@ -2,10 +2,12 @@
 finder against the stored outputs) and write their float32 maps to out/maps/real_MODE_PID.npy.
 Usage: /Users/boris/GitHub/sz-poisson-blending/.venv/bin/python -I -B c02b_maps.py PID [PID ...]
 """
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # portable-paths
 import os, sys, time, resource
 sys.dont_write_bytecode = True
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 os.environ["NUMBA_CACHE_DIR"] = os.path.join(HERE, "out", "numba_cache_proj")
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMBA_NUM_THREADS", "MKL_NUM_THREADS"):
     os.environ[_v] = "1"

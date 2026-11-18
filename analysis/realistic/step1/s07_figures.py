@@ -1,4 +1,6 @@
 """Step 1 / s07: figures -> figures/realistic/step1_*.png (data from data_real/, written by s01-s06)."""
+import os  # portable-paths
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))  # portable-paths
 import os, sys, json
 for v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS"):
     os.environ[v] = "4"
@@ -8,7 +10,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from szsim import instrument as ins, signal as sg
 
-ROOT = "/Users/boris/GitHub/sz-poisson-blending"
+ROOT = _ROOT
 FIG = f"{ROOT}/figures/realistic"
 DR = f"{ROOT}/data_real"
 os.makedirs(FIG, exist_ok=True)
